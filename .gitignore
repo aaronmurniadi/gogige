@@ -1,0 +1,24 @@
+# Camera GenApi dumps (examples/dump-xml)
+examples/**/*.xml
+examples/**/*.log
+examples/**/*.jpg
+
+# Build / test
+bin/
+dist/
+*.exe
+*.test
+*.out
+coverage.out
+coverage.html
+# Go
+go.work
+go.work.sum
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+# Secrets
+.env
+.env.*
