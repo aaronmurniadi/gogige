@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Consolidate agent rules: merge `.agents/rules/*.mdc` (architecture, package layout, GVCP/GVSP/GenApi phases, Go conventions, perf guardrails) into a single root `AGENTS.md`; `ROADMAP.md` refs now point at the corresponding `AGENTS.md` sections
+- Relocate the `commit-changes` skill from `.cursor/skills/` to `.agents/skills/`
 
 ## [0.6.0] - 2026-08-08
 
