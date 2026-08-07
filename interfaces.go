@@ -6,7 +6,7 @@ import "context"
 type Device interface {
 	IP() string
 	Features() Features
-	StartGrabber(ctx context.Context) (Grabber, error)
+	StartGrabber(ctx context.Context, opts ...GrabOption) (Grabber, error)
 	Close() error
 }
 
@@ -23,6 +23,8 @@ type Features interface {
 // Grabber is a live GVSP acquisition stream.
 type Grabber interface {
 	Grab(ctx context.Context) (Sample, error)
+	GrabAll(ctx context.Context) ([]Sample, error)
+	SetImageKind(ImageKind)
 	Pause(ctx context.Context) error
 	Resume(ctx context.Context) error
 	Close() error

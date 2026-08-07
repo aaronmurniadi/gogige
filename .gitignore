@@ -3,6 +3,16 @@ examples/**/*.xml
 examples/**/*.log
 examples/**/*.jpg
 
+# Example binaries from `go build .`
+examples/smoke/smoke
+examples/features/features
+examples/grab-images/grab-images
+examples/grab/grab
+examples/stream-measurements/stream-measurements
+examples/dump-xml/dump-xml
+examples/configure-volume-tcp/configure-volume-tcp
+examples/websocket-stream/websocket-stream
+
 # Build / test
 bin/
 dist/

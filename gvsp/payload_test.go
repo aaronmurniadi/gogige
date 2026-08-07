@@ -39,12 +39,80 @@ func TestBSCFRoundTrip(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	if s.ImageKind != ImageColor {
+		t.Fatalf("kind=%v", s.ImageKind)
+	}
 	jpeg, err := color.EncodeJPEG(s.RawColor, s.Width, s.Height, s.PixelFormat, 60)
 	if err != nil {
 		t.Fatal(err)
 	}
 	if len(jpeg) < 2 || jpeg[0] != 0xff || jpeg[1] != 0xd8 {
 		t.Fatalf("bad jpeg")
+	}
+}
+
+func TestBSCFSelectDepth(t *testing.T) {
+	w, h := 2, 2
+	depth := make([]byte, w*h*2)
+	for i := range depth {
+		depth[i] = byte(i * 17)
+	}
+	colorPix := []byte{
+		0, 0, 255, 0, 255, 0,
+		255, 0, 0, 128, 128, 128,
+	}
+	buf := BuildTestBSCFImages([]ImageBlock{
+		{Kind: ImageDepth, Data: depth, Width: w, Height: h, PixelFormat: color.PixelFormatMono16},
+		{Kind: ImageColor, Data: colorPix, Width: w, Height: h, PixelFormat: color.PixelFormatBGR8},
+	}, nil)
+
+	s, err := SampleFromBSCF(buf)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if s.PixelFormat != color.PixelFormatBGR8 || len(s.RawColor) != len(colorPix) {
+		t.Fatalf("default: fmt=0x%x len=%d want BGR color", s.PixelFormat, len(s.RawColor))
+	}
+
+	d, err := SampleFromBSCFKind(buf, ImageDepth)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if d.ImageKind != ImageDepth || d.PixelFormat != color.PixelFormatMono16 || len(d.RawColor) != len(depth) {
+		t.Fatalf("depth: kind=%v fmt=0x%x len=%d", d.ImageKind, d.PixelFormat, len(d.RawColor))
+	}
+	jpeg, err := color.EncodeJPEG(d.RawColor, d.Width, d.Height, d.PixelFormat, 60)
+	if err != nil || len(jpeg) < 2 {
+		t.Fatalf("depth jpeg: %v len=%d", err, len(jpeg))
+	}
+
+	_, err = SampleFromBSCFKind(buf, ImageMono)
+	if err == nil {
+		t.Fatal("expected missing mono error")
+	}
+
+	all, err := SampleAllFromBSCF(buf)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(all) != 2 {
+		t.Fatalf("all=%d", len(all))
+	}
+	if all[0].ImageKind != ImageDepth || all[1].ImageKind != ImageColor {
+		t.Fatalf("kinds %v %v", all[0].ImageKind, all[1].ImageKind)
+	}
+	if !IsBSCF(buf) {
+		t.Fatal("IsBSCF")
+	}
+}
+
+func TestParseImageKind(t *testing.T) {
+	k, err := ParseImageKind("Depth")
+	if err != nil || k != ImageDepth {
+		t.Fatalf("got %v %v", k, err)
+	}
+	if ImageColor.String() != "color" {
+		t.Fatal(ImageColor.String())
 	}
 }
 
@@ -71,8 +139,8 @@ func TestBSCFPrefersColorOverDepth(t *testing.T) {
 	}
 	depthOff := uint32(bscfHeaderV1)
 	colorOff := depthOff + uint32(len(depth))
-	writeBlock(0, blockTypeImage, depthOff, uint32(len(depth)), w, h, 5, 0x01100007) // Depth
-	writeBlock(1, blockTypeImage, colorOff, uint32(len(colorPix)), w, h, imageTypeColor, color.PixelFormatBGR8)
+	writeBlock(0, blockTypeImage, depthOff, uint32(len(depth)), w, h, uint32(ImageDepth), 0x01100007)
+	writeBlock(1, blockTypeImage, colorOff, uint32(len(colorPix)), w, h, uint32(ImageColor), color.PixelFormatBGR8)
 	buf := append(append(hdr, depth...), colorPix...)
 	s, err := SampleFromBSCF(buf)
 	if err != nil {

@@ -20,7 +20,13 @@ func main() {
 	n := flag.Int("n", 3, "number of frames to capture")
 	dir := flag.String("dir", ".", "directory for frame-*.jpg")
 	timeout := flag.Duration("timeout", 5*time.Second, "per-frame grab timeout")
+	image := flag.String("image", "color", "BSCF image: color|depth|mono")
 	flag.Parse()
+
+	kind, err := gige.ParseImageKind(*image)
+	if err != nil {
+		fatal(err)
+	}
 
 	ip, err := resolveIP(*ipFlag)
 	if err != nil {
@@ -39,7 +45,7 @@ func main() {
 	}
 	defer dev.Close()
 
-	g, err := dev.StartGrabber(ctx)
+	g, err := dev.StartGrabber(ctx, gige.GrabImageKind(kind))
 	if err != nil {
 		fatal(err)
 	}
@@ -56,8 +62,8 @@ func main() {
 		if err := os.WriteFile(path, sample.JPEG, 0o644); err != nil {
 			fatal(err)
 		}
-		fmt.Printf("%s  %dx%d  packs=%d  L=%.3f W=%.3f H=%.3f stable=%v\n",
-			path, sample.Width, sample.Height, sample.PackCount,
+		fmt.Printf("%s  %s  %dx%d  packs=%d  L=%.3f W=%.3f H=%.3f stable=%v\n",
+			path, sample.ImageKind, sample.Width, sample.Height, sample.PackCount,
 			sample.Length, sample.WidthMm, sample.HeightMm, sample.Stable)
 	}
 }

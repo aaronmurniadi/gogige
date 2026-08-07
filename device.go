@@ -12,11 +12,12 @@ import (
 )
 
 type device struct {
-	ip     string
-	cam    *Camera
-	log    Logger
-	mu     sync.Mutex
-	closed bool
+	ip        string
+	cam       *Camera
+	log       Logger
+	imageKind ImageKind
+	mu        sync.Mutex
+	closed    bool
 }
 
 // Logger returns the device logger (used by live/grab via type assertion).
@@ -32,7 +33,7 @@ func Open(ctx context.Context, ip string, opts ...Option) (Device, error) {
 	if ip == "" {
 		return nil, errors.New("gige: ip address must not be empty")
 	}
-	cfg := openConfig{logger: NopLogger{}, timeout: 2 * time.Second}
+	cfg := openConfig{logger: NopLogger{}, timeout: 2 * time.Second, imageKind: ImageColor}
 	for _, o := range opts {
 		o(&cfg)
 	}
@@ -43,14 +44,18 @@ func Open(ctx context.Context, ip string, opts ...Option) (Device, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &device{ip: ip, cam: cam, log: cfg.logger}, nil
+	kind := cfg.imageKind
+	if kind == ImageUnknown {
+		kind = ImageColor
+	}
+	return &device{ip: ip, cam: cam, log: cfg.logger, imageKind: kind}, nil
 }
 
 func (d *device) IP() string { return d.ip }
 
 func (d *device) Features() Features { return cameraFeatures{c: d.cam} }
 
-func (d *device) StartGrabber(ctx context.Context) (Grabber, error) {
+func (d *device) StartGrabber(ctx context.Context, opts ...GrabOption) (Grabber, error) {
 	d.mu.Lock()
 	defer d.mu.Unlock()
 	if d.closed {
@@ -60,6 +65,10 @@ func (d *device) StartGrabber(ctx context.Context) (Grabber, error) {
 		return nil, err
 	}
 	s := NewFromCamera(d.cam)
+	s.imageKind = d.imageKind
+	for _, o := range opts {
+		o(s)
+	}
 	if err := s.Open(d.ip); err != nil {
 		return nil, err
 	}

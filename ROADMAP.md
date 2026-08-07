@@ -39,7 +39,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `gvcp/register_map.go`         | [x]    | GenCP ABRM 0x0000–0x0250 + GigE Vision ABRM/SBRM                     |
 | `gvsp/frame.go`                | [x]    | Frame + reassembly helper                                                |
 | `gvsp/receiver.go`             | [~]    | UDP receive path; ordered payloads use pool (OOO still allocates)        |
-| `gvsp/payload.go`              | [~]    | BSCF vendor payload + `Sample`; Image/Multi-Part/GenDC still pending     |
+| `gvsp/payload.go`              | [~]    | BSCF + `ImageKind` / `GrabAll`; Image/Multi-Part/GenDC still pending     |
 | `gvsp/buffer_pool.go`          | [x]    | Pre-allocated frame buffers + `Frame.Release()`                          |
 | `gvsp/resend.go`               | [x]    | Missing-packet tracking + `RESEND_CMD` via `Stream.SetResender`          |
 | `genapi/camera_description.go` | [x]    | FirstURL fetch + zip/deflate XML                                         |
@@ -54,8 +54,8 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `cmd/gogige-stream/`           | [x]    | CLI N-frame JPEG + BSCF measurements                                     |
 | `camera.go`                    | [x]    | High-level `Camera` + feature setters                                    |
 | `discovery.go`                 | [x]    | Root `Discover` → `gvcp.Discover`                                        |
-| `stream.go`                    | [~]    | `Session` / Grabber; not yet `StartStream` + `Frames()` channel API      |
-| `options.go`                   | [x]    | `WithLogger` / `WithTimeout`                                             |
+| `stream.go`                    | [~]    | `Session` / `Grab` / `GrabAll`; not yet `StartStream` + `Frames()`       |
+| `options.go`                   | [x]    | `WithLogger` / `WithTimeout` / `WithImageKind` / `GrabImageKind` |
 
 ### Layout debt (outside target tree)
 
@@ -117,7 +117,7 @@ Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, `gvsp.mdc`. Payload-type
 | `PAYLOAD_TYPE_CHUNK_DATA` / `CHUNK_ONLY`     | [ ]    | GenTL v1.2 / v1.4                                       |
 | `PAYLOAD_TYPE_MULTI_PART`                    | [ ]    | GenTL v1.5                                              |
 | `PAYLOAD_TYPE_GENDC`                         | [ ]    | GenTL v1.6 + GenDC 1.1                                  |
-| Vendor BSCF payload                          | [x]    | Huaray/Dahua; stays in `payload.go` alongside standards |
+| Vendor BSCF payload                          | [x]    | Huaray/Dahua; `ImageKind` select (color/depth/mono) in `payload.go` |
 
 #### GenDC 1.1 checklist (`GenDC.h`)
 
@@ -135,6 +135,7 @@ Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, `gvsp.mdc`. Payload-type
 | Pixel format                  | ID             | EncodeJPEG | Notes                |
 | ----------------------------- | -------------- | ---------- | -------------------- |
 | `Mono8`                       | `0x01080001`   | [x]        |                      |
+| `Mono16`                      | `0x01100007`   | [x]        | High-byte JPEG preview |
 | `RGB8`                        | `0x02180014`   | [x]        |                      |
 | `BGR8`                        | `0x02180015`   | [x]        | Default / heuristic  |
 | `YUV422_8` (YUYV)             | `0x02100032`   | [x]        |                      |
@@ -196,3 +197,4 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 - **2026-08-08** — Phase 2 MTU/SCPS: `gvsp.PathMTU` + `PacketSizeForMTU`; `SO_RCVBUF` 16MiB with warn below 8MiB; acquisition RMW on `0x0D04`.
 - **2026-08-08** — Phase 1 complete: GenCP ABRM + GigE ABRM in `register_map.go`; PENDING_ACK `temporary_timeout`; `SyncImplementationEndianness` on TakeControl + GenApi device byte-order for WriteMem.
 - **2026-08-08** — Examples: `examples/smoke`, `examples/features`; CLI `cmd/gogige-stream`.
+- **2026-08-08** — BSCF `ImageKind` (color/depth/mono): parse all image blocks; `GrabImageKind` / `WithImageKind` / `SetImageKind`; Mono16 JPEG preview.

@@ -28,12 +28,22 @@ func WithOnSample(fn func(Sample)) LiveOption {
 	return func(l *Live) { l.onSample = fn }
 }
 
+// WithLiveImageKind selects which BSCF image Live grabs (color/depth/mono).
+func WithLiveImageKind(k ImageKind) LiveOption {
+	return func(l *Live) {
+		if k != ImageUnknown {
+			l.imageKind = k
+		}
+	}
+}
+
 // Live keeps a Grabber open and publishes Samples (optionally to a FrameSink).
 type Live struct {
-	dev      Device
-	sink     FrameSink
-	onSample func(Sample)
-	log      Logger
+	dev       Device
+	sink      FrameSink
+	onSample  func(Sample)
+	log       Logger
+	imageKind ImageKind
 
 	lifeMu  sync.Mutex
 	running bool
@@ -48,7 +58,7 @@ type Live struct {
 
 // NewLive builds a Live preview/capture loop over an already-opened Device.
 func NewLive(dev Device, opts ...LiveOption) *Live {
-	l := &Live{dev: dev, log: NopLogger{}}
+	l := &Live{dev: dev, log: NopLogger{}, imageKind: ImageColor}
 	if lg, ok := dev.(hasLogger); ok {
 		if log := lg.Logger(); log != nil {
 			l.log = log
@@ -237,7 +247,7 @@ func (l *Live) loop(parent context.Context, stop, done chan struct{}) {
 		l.lifeMu.Lock()
 		g := l.grabber
 		if g == nil {
-			ng, err := l.dev.StartGrabber(parent)
+			ng, err := l.dev.StartGrabber(parent, GrabImageKind(l.imageKind))
 			if err != nil {
 				l.lifeMu.Unlock()
 				acqOn = false

@@ -11,12 +11,13 @@ import (
 const (
 	PixelFormatYUV422 = 0x02100032
 	PixelFormatMono8  = 0x01080001
+	PixelFormatMono16 = 0x01100007
 	PixelFormatBGR8   = 0x02180015
 	PixelFormatRGB8   = 0x02180014
 )
 
 // EncodeJPEG converts camera payload bytes to JPEG.
-// Supports YUV422_8 (YUYV), BGR8, RGB8, Mono8.
+// Supports YUV422_8 (YUYV), BGR8, RGB8, Mono8, Mono16 (high byte preview).
 func EncodeJPEG(raw []byte, w, h int, pixelFormat uint32, quality int) ([]byte, error) {
 	rgba, err := toRGBA(raw, w, h, pixelFormat)
 	if err != nil {
@@ -67,6 +68,18 @@ func toRGBA(raw []byte, w, h int, pixelFormat uint32) (*image.RGBA, error) {
 		}
 		for i, o := 0, 0; i < need; i, o = i+1, o+4 {
 			v := raw[i]
+			rgba.Pix[o+0] = v
+			rgba.Pix[o+1] = v
+			rgba.Pix[o+2] = v
+			rgba.Pix[o+3] = 255
+		}
+	case PixelFormatMono16:
+		need := w * h * 2
+		if len(raw) < need {
+			return nil, fmt.Errorf("gige: mono16 short (%d < %d)", len(raw), need)
+		}
+		for i, o := 0, 0; i < need; i, o = i+2, o+4 {
+			v := raw[i+1] // LE Mono16 → high byte preview
 			rgba.Pix[o+0] = v
 			rgba.Pix[o+1] = v
 			rgba.Pix[o+2] = v

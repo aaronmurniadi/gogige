@@ -23,16 +23,27 @@ type Session struct {
 	ownCam     bool // if true, Close() closes cam
 	ip         string
 	packetSize int
+	imageKind  ImageKind
 
 	hb *gvcp.Heartbeat
 }
 
 // NewSession returns an empty GVSP session (Connects on Open if no camera set).
-func NewSession() *Session { return &Session{} }
+func NewSession() *Session { return &Session{imageKind: ImageColor} }
 
 // NewFromCamera returns a Session that streams using cam without taking ownership.
 func NewFromCamera(cam *Camera) *Session {
-	return &Session{cam: cam}
+	return &Session{cam: cam, imageKind: ImageColor}
+}
+
+// SetImageKind selects which BSCF image block Grab returns (color/depth/mono).
+func (s *Session) SetImageKind(k ImageKind) {
+	if s == nil || k == ImageUnknown {
+		return
+	}
+	s.mu.Lock()
+	s.imageKind = k
+	s.mu.Unlock()
 }
 
 // Open connects (if needed), starts GVSP, and begins acquisition.
@@ -226,34 +237,27 @@ func (s *Session) Opened() bool { return s.opened.Load() }
 // Grab implements Grabber: receives one GVSP frame, parses BSCF, returns JPEG Sample.
 func (s *Session) Grab(ctx context.Context) (Sample, error) {
 	sample := Sample{PackCount: -1}
-	if err := ctx.Err(); err != nil {
+	data, meta, err := s.recvFrame(ctx)
+	if err != nil {
 		return sample, err
-	}
-	timeout := time.Second
-	if dl, ok := ctx.Deadline(); ok {
-		timeout = time.Until(dl)
-		if timeout <= 0 {
-			return sample, context.DeadlineExceeded
-		}
 	}
 	s.mu.Lock()
-	defer s.mu.Unlock()
-	if !s.opened.Load() || s.stream == nil {
-		return sample, errors.New("gige: stream not open")
+	kind := s.imageKind
+	s.mu.Unlock()
+	if kind == ImageUnknown {
+		kind = ImageColor
 	}
-	frame, err := s.stream.Recv(timeout)
+	sample, err = SampleFromBSCFKind(data, kind)
 	if err != nil {
-		return sample, err
-	}
-	defer frame.Release()
-	sample, err = SampleFromBSCF(frame.Data)
-	if err != nil {
-		// Copy off the pooled buffer before Release; JPEG path needs ownership.
-		raw := append([]byte(nil), frame.Data...)
-		sample.RawColor = raw
-		sample.Width = int(frame.Width)
-		sample.Height = int(frame.Height)
-		sample.PixelFormat = frame.PixelFormat
+		if gvsp.IsBSCF(data) {
+			return sample, err
+		}
+		// Non-BSCF payload.
+		sample.RawColor = data
+		sample.Width = meta.width
+		sample.Height = meta.height
+		sample.PixelFormat = meta.pixelFormat
+		sample.ImageKind = kind
 		if sample.Width == 0 || sample.Height == 0 {
 			return sample, fmt.Errorf("gige: grab: %w", err)
 		}
@@ -264,4 +268,86 @@ func (s *Session) Grab(ctx context.Context) (Sample, error) {
 	}
 	sample.JPEG = jpeg
 	return sample, nil
+}
+
+// GrabAll receives one GVSP frame and returns a JPEG Sample for every BSCF image block
+// (color, depth, mono, …). Non-BSCF payloads yield a single sample.
+func (s *Session) GrabAll(ctx context.Context) ([]Sample, error) {
+	data, meta, err := s.recvFrame(ctx)
+	if err != nil {
+		return nil, err
+	}
+	var samples []Sample
+	if gvsp.IsBSCF(data) {
+		samples, err = SampleAllFromBSCF(data)
+		if err != nil {
+			return nil, err
+		}
+	} else {
+		samples = []Sample{{
+			RawColor:    data,
+			Width:       meta.width,
+			Height:      meta.height,
+			PixelFormat: meta.pixelFormat,
+			ImageKind:   ImageUnknown,
+			PackCount:   -1,
+		}}
+	}
+	out := make([]Sample, 0, len(samples))
+	var errs []error
+	for _, sample := range samples {
+		if sample.Width <= 0 || sample.Height <= 0 || len(sample.RawColor) == 0 {
+			continue
+		}
+		jpeg, jerr := color.EncodeJPEG(sample.RawColor, sample.Width, sample.Height, sample.PixelFormat, 60)
+		if jerr != nil {
+			errs = append(errs, fmt.Errorf("%s: %w", sample.ImageKind, jerr))
+			continue
+		}
+		sample.JPEG = jpeg
+		out = append(out, sample)
+	}
+	if len(out) == 0 {
+		if len(errs) > 0 {
+			return nil, fmt.Errorf("gige: grab all: %w", errors.Join(errs...))
+		}
+		return nil, errors.New("gige: grab all: no usable images")
+	}
+	return out, nil
+}
+
+type frameMeta struct {
+	width, height int
+	pixelFormat   uint32
+}
+
+// recvFrame takes one GVSP frame and returns an owned copy of the payload.
+func (s *Session) recvFrame(ctx context.Context) ([]byte, frameMeta, error) {
+	var meta frameMeta
+	if err := ctx.Err(); err != nil {
+		return nil, meta, err
+	}
+	timeout := time.Second
+	if dl, ok := ctx.Deadline(); ok {
+		timeout = time.Until(dl)
+		if timeout <= 0 {
+			return nil, meta, context.DeadlineExceeded
+		}
+	}
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	if !s.opened.Load() || s.stream == nil {
+		return nil, meta, errors.New("gige: stream not open")
+	}
+	frame, err := s.stream.Recv(timeout)
+	if err != nil {
+		return nil, meta, err
+	}
+	defer frame.Release()
+	meta = frameMeta{
+		width:       int(frame.Width),
+		height:      int(frame.Height),
+		pixelFormat: frame.PixelFormat,
+	}
+	return append([]byte(nil), frame.Data...), meta, nil
 }
