@@ -40,6 +40,17 @@ func TestParseDiscoveryAckShortFallsBackToSourceIP(t *testing.T) {
 	}
 }
 
+func TestIPv4Broadcast(t *testing.T) {
+	got := ipv4Broadcast(net.IPv4(192, 168, 1, 100), net.CIDRMask(24, 32))
+	if !got.Equal(net.IPv4(192, 168, 1, 255)) {
+		t.Fatalf("got %v", got)
+	}
+	got = ipv4Broadcast(net.IPv4(10, 111, 160, 252), net.CIDRMask(21, 32))
+	if !got.Equal(net.IPv4(10, 111, 167, 255)) {
+		t.Fatalf("/21 got %v", got)
+	}
+}
+
 func TestHeartbeatStop(t *testing.T) {
 	// Dial a black-hole UDP port; StartHeartbeat must still be stoppable.
 	g, err := DialGVCP("127.0.0.1", 50*time.Millisecond)

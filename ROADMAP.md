@@ -33,7 +33,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | Path                           | Status | Notes                                                                    |
 | ------------------------------ | ------ | ------------------------------------------------------------------------ |
 | `gvcp/client.go`               | [x]    | Control channel, register R/W                                            |
-| `gvcp/discovery.go`            | [x]    | Broadcast + DISCOVERY_ACK ABRM fields (MAC, serial, names)               |
+| `gvcp/discovery.go`            | [x]    | Per-iface bind + directed/limited broadcast; DISCOVERY_ACK ABRM parse    |
 | `gvcp/heartbeat.go`            | [x]    | `PulseHeartbeat` + background tick at `HeartbeatTimeout/2`               |
 | `gvcp/packet.go`               | [x]    | Header encode + cmd constants                                            |
 | `gvcp/register_map.go`         | [x]    | Bootstrap / stream-channel addresses                                     |
@@ -50,7 +50,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `genapi/port.go`               | [ ]    | Explicit Port binding layer → `gvcp.Port`                                |
 | `gentl/cti.go`                 | [ ]    | Optional GenTL `.cti` loader (`dlopen` / CGO)                            |
 | `gentl/types.go`               | [ ]    | Mirror `GenTL.h` handles / enums                                         |
-| `cmd/gogige-discover/`         | [ ]    | CLI discovery utility                                                    |
+| `cmd/gogige-discover/`         | [x]    | CLI discovery utility                                                    |
 | `cmd/gogige-stream/`           | [ ]    | CLI stream capture utility                                               |
 | `camera.go`                    | [x]    | High-level `Camera` + feature setters                                    |
 | `discovery.go`                 | [x]    | Root `Discover` → `gvcp.Discover`                                        |
@@ -95,7 +95,7 @@ Refs: `_references/GenCP/…`, architecture + `gvcp.mdc`. GigE Vision packet fra
 | ---------------------------------------------------------- | ------ | -------------------------------------------------- |
 | READ/WRITE REG/MEM + PENDING_ACK                           | [x]    | GenCP memory/register cmds over UDP/3956           |
 | CCP take/leave control                                     | [x]    | Access privilege / CCP                             |
-| DISCOVERY_CMD broadcast                                    | [x]    | GigE discovery                                     |
+| DISCOVERY_CMD broadcast                                    | [x]    | Per-iface bind + directed + limited broadcast      |
 | Full DISCOVERY_ACK TLV parse                               | [x]    | ABRM dump in ACK: MAC, serial, manufacturer, model, user name |
 | Background heartbeat goroutine                             | [x]    | `HeartbeatTimeout/2`; pulse CCP                        |
 | `ImplementationEndianness` (`0x020C`) aware reg sync       | [ ]    | `0` = BE, `0xFFFFFFFF` = LE for device regs        |
