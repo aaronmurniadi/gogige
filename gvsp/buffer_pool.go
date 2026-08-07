@@ -1,9 +1,9 @@
 package gvsp
 
-// Default pool sizing for GigE frames (enough for ~1080p BGR8 + headroom).
+// Default pool sizing for GigE frames (covers ~5MP Mono8 / BSCF ~6.5MiB + headroom).
 const (
 	DefaultPoolFrames = 8
-	DefaultFrameSize  = 4 << 20 // 4 MiB
+	DefaultFrameSize  = 8 << 20 // 8 MiB
 )
 
 // BufferPool is a fixed set of pre-sized frame buffers for zero-alloc reuse.

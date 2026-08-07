@@ -156,9 +156,19 @@ func (s *Stream) appendPayload(fb *frameBuild, packetID uint32, data []byte) {
 			if fb.buf == nil {
 				fb.buf = s.pool.Get()
 			}
-			if len(fb.buf)+len(data) > cap(fb.buf) {
-				fb.broken = true
-				return
+			need := len(fb.buf) + len(data)
+			if need > cap(fb.buf) {
+				capHint := need
+				if c := cap(fb.buf) * 2; c > capHint {
+					capHint = c
+				}
+				nb := make([]byte, len(fb.buf), capHint)
+				copy(nb, fb.buf)
+				if fb.pool != nil {
+					fb.pool.Put(fb.buf)
+					fb.pool = nil
+				}
+				fb.buf = nb
 			}
 			fb.buf = append(fb.buf, data...)
 			fb.nextPkt++

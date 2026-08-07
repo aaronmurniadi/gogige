@@ -60,6 +60,20 @@ func TestGVSPDropsIncomplete(t *testing.T) {
 	}
 }
 
+func TestGVSPGrowsUndersizedPool(t *testing.T) {
+	s := &Stream{frames: map[uint64]*frameBuild{}, pool: NewBufferPool(2, 8)}
+	s.handlePacket(EncodeGVSPPayload(1, 1, gvspContentPayload, []byte("abcdefghijkl"))) // 12 > 8
+	s.handlePacket(EncodeGVSPPayload(1, 2, gvspContentTrailer, nil))
+	f, err := s.Recv(50 * time.Millisecond)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if string(f.Data) != "abcdefghijkl" {
+		t.Fatalf("got %q", f.Data)
+	}
+	f.Release()
+}
+
 func TestGVSPAssemble(t *testing.T) {
 	s := &Stream{frames: map[uint64]*frameBuild{}, pool: NewBufferPool(2, 256)}
 	leader := make([]byte, 36)
