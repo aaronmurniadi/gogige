@@ -41,7 +41,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `gvsp/receiver.go`             | [~]    | UDP receive path; ordered payloads use pool (OOO still allocates)        |
 | `gvsp/payload.go`              | [~]    | BSCF vendor payload + `Sample`; Image/Multi-Part/GenDC still pending     |
 | `gvsp/buffer_pool.go`          | [x]    | Pre-allocated frame buffers + `Frame.Release()`                          |
-| `gvsp/resend.go`               | [ ]    | Missing-packet tracking + `RESEND_CMD`                                   |
+| `gvsp/resend.go`               | [x]    | Missing-packet tracking + `RESEND_CMD` via `Stream.SetResender`          |
 | `genapi/camera_description.go` | [x]    | FirstURL fetch + zip/deflate XML                                         |
 | `genapi/evaluator.go`          | [x]    | SwissKnife formula evaluator                                             |
 | `genapi/nodemap.go`            | [x]    | Parse + feature get/set (monolithic)                                     |
@@ -111,8 +111,8 @@ Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, `gvsp.mdc`. Payload-type
 | Leader / payload / trailer reassembly        | [x]    | Standard + extended (EI) headers                        |
 | 64-bit `block_id` / packet ID tracking       | [~]    | GEV 2.0 extended ID path present                        |
 | Zero-alloc hot path + ring buffers           | [~]    | `buffer_pool.go` + in-order path; OOO/oversize still alloc |
-| MTU / `GevSCPSPacketSize` + `SO_RCVBUF` warn | [ ]    | SFNC `GevSCPSPacketSize`                                |
-| Packet resend (`RESEND_CMD`)                 | [ ]    | Missing `packet_id` before trailer timeout              |
+| MTU / `GevSCPSPacketSize` + `SO_RCVBUF` warn | [x]    | Path MTU → negotiate SCPS (device clamp); 16MiB rcvbuf warn |
+| Packet resend (`RESEND_CMD`)                 | [x]    | Gap detect + `gvcp.RequestResend`; hold frame past trailer until filled |
 | `PAYLOAD_TYPE_IMAGE`                         | [~]    | Image leader fields; not typed as GenTL enum yet        |
 | `PAYLOAD_TYPE_CHUNK_DATA` / `CHUNK_ONLY`     | [ ]    | GenTL v1.2 / v1.4                                       |
 | `PAYLOAD_TYPE_MULTI_PART`                    | [ ]    | GenTL v1.5                                              |
@@ -192,3 +192,5 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 - **2026-08-08** — Cleared layout debt: `vision/bscf` → `gvsp/payload.go`; `vision/color` → `internal/color`; removed `vision/`.
 - **2026-08-08** — Enriched roadmap from `_references/` (GenCP/GenApi/GenTL/GenDC/SFNC/PFNC); noted missing GigE Vision PDF.
 - **2026-08-08** — Phase 1/2 practical slice: DISCOVERY_ACK ABRM parse, `gvcp.StartHeartbeat` (`HeartbeatTimeout/2`), `gvsp/buffer_pool.go` + `Frame.Release`.
+- **2026-08-08** — Phase 2 packet resend: `gvsp` gap tracking + hole-fill reassembly; `gvcp.EncodePacketResend` / `RequestResend`; Session wires resender.
+- **2026-08-08** — Phase 2 MTU/SCPS: `gvsp.PathMTU` + `PacketSizeForMTU`; `SO_RCVBUF` 16MiB with warn below 8MiB; acquisition RMW on `0x0D04`.

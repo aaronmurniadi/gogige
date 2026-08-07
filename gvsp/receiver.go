@@ -17,9 +17,11 @@ const (
 
 // Stream receives GVSP packets and reassembles frames.
 type Stream struct {
-	conn *net.UDPConn
-	port int
-	pool *BufferPool
+	conn   *net.UDPConn
+	port   int
+	pool   *BufferPool
+	resend ResendFunc
+	rcvBuf int
 
 	mu     sync.Mutex
 	frames map[uint64]*frameBuild
@@ -43,8 +45,22 @@ func ListenStreamPool(port int, pool *BufferPool) (*Stream, error) {
 		pool = NewBufferPool(DefaultPoolFrames, DefaultFrameSize)
 	}
 	s := &Stream{conn: conn, port: la.Port, pool: pool, frames: map[uint64]*frameBuild{}}
+	if _, err := s.SetRecvBuffer(DefaultRecvBufSize); err != nil {
+		_ = conn.Close()
+		return nil, err
+	}
 	go s.readLoop()
 	return s, nil
+}
+
+// SetResender registers a GVCP PACKETRESEND_CMD sender. nil disables resend.
+func (s *Stream) SetResender(fn ResendFunc) {
+	if s == nil {
+		return
+	}
+	s.mu.Lock()
+	s.resend = fn
+	s.mu.Unlock()
 }
 
 // Port returns the local UDP port.
@@ -82,9 +98,6 @@ func (s *Stream) handlePacket(pkt []byte) {
 	if status&0x8000 != 0 {
 		return
 	}
-	// EI flag is bit 31 of packet_infos (offset 4), NOT bit 7 of the
-	// 16-bit block ID. Using pkt[2]&0x80 mis-parses every standard
-	// frame once block ID reaches ≥0x8000 (BSCF payload eaten as frame ID).
 	infos := binary.BigEndian.Uint32(pkt[4:])
 	ext := infos&0x80000000 != 0
 	var (
@@ -117,11 +130,11 @@ func (s *Stream) handlePacket(pkt []byte) {
 			id:      frameID,
 			parts:   map[uint32][]byte{},
 			pool:    s.pool,
-			ordered: true,
 			nextPkt: 1,
 		}
 		s.frames[frameID] = fb
 	}
+	fb.extended = ext
 
 	switch content {
 	case gvspContentLeader:
@@ -132,58 +145,112 @@ func (s *Stream) handlePacket(pkt []byte) {
 		}
 	case gvspContentPayload:
 		s.appendPayload(fb, packetID, data)
-	case gvspContentTrailer:
-		fb.done = true
-		frame := assembleFrame(fb)
-		if frame != nil {
-			if s.last != nil {
-				s.last.Release()
-			}
-			s.last = frame
+		if fb.trailerPkt != 0 {
+			s.tryFinish(frameID, fb)
 		}
-		delete(s.frames, frameID)
+	case gvspContentTrailer:
+		fb.trailerPkt = packetID
+		s.requestMissing(fb)
+		s.tryFinish(frameID, fb)
 	}
 }
 
-// appendPayload copies payload into the pooled contiguous buffer when packets
-// arrive in order; otherwise falls back to per-packet parts (allocates).
-func (s *Stream) appendPayload(fb *frameBuild, packetID uint32, data []byte) {
-	if fb.broken {
+func (s *Stream) tryFinish(frameID uint64, fb *frameBuild) {
+	frame := assembleFrame(fb)
+	if frame == nil {
 		return
 	}
-	if fb.ordered {
-		if packetID == fb.nextPkt {
-			if fb.buf == nil {
-				fb.buf = s.pool.Get()
-			}
-			need := len(fb.buf) + len(data)
-			if need > cap(fb.buf) {
-				capHint := need
-				if c := cap(fb.buf) * 2; c > capHint {
-					capHint = c
-				}
-				nb := make([]byte, len(fb.buf), capHint)
-				copy(nb, fb.buf)
-				if fb.pool != nil {
-					fb.pool.Put(fb.buf)
-					fb.pool = nil
-				}
-				fb.buf = nb
-			}
-			fb.buf = append(fb.buf, data...)
-			fb.nextPkt++
-			return
-		}
-		// Cannot split a contiguous ordered buffer back into packets.
-		if fb.buf != nil {
-			fb.broken = true
-			return
-		}
-		fb.ordered = false
+	if s.last != nil {
+		s.last.Release()
 	}
-	cp := make([]byte, len(data))
-	copy(cp, data)
-	fb.parts[packetID] = cp
+	s.last = frame
+	delete(s.frames, frameID)
+}
+
+func (s *Stream) requestMissing(fb *frameBuild) {
+	if s.resend == nil || fb == nil {
+		return
+	}
+	var to uint32
+	switch {
+	case fb.trailerPkt >= 2:
+		to = fb.trailerPkt - 1
+	default:
+		return
+	}
+	for _, r := range fb.missingPayloadRanges(1, to) {
+		s.resend(fb.id, r.First, r.Last, fb.extended)
+		if r.Last+1 > fb.resendNext {
+			fb.resendNext = r.Last + 1
+		}
+	}
+}
+
+func (s *Stream) requestGap(fb *frameBuild, first, last uint32) {
+	if s.resend == nil || last < first {
+		return
+	}
+	if first < fb.resendNext {
+		first = fb.resendNext
+	}
+	if last < first {
+		return
+	}
+	s.resend(fb.id, first, last, fb.extended)
+	fb.resendNext = last + 1
+}
+
+// appendPayload copies payload into the pooled contiguous buffer when possible;
+// out-of-order packets are held in parts and trigger PACKETRESEND for the gap.
+func (s *Stream) appendPayload(fb *frameBuild, packetID uint32, data []byte) {
+	if fb.broken || packetID == 0 {
+		return
+	}
+	if packetID < fb.nextPkt {
+		return // duplicate already flushed
+	}
+	if packetID > fb.nextPkt {
+		if _, ok := fb.parts[packetID]; !ok {
+			cp := make([]byte, len(data))
+			copy(cp, data)
+			fb.parts[packetID] = cp
+		}
+		s.requestGap(fb, fb.nextPkt, packetID-1)
+		return
+	}
+
+	s.appendContiguous(fb, data)
+	fb.nextPkt++
+	for {
+		p, ok := fb.parts[fb.nextPkt]
+		if !ok {
+			break
+		}
+		delete(fb.parts, fb.nextPkt)
+		s.appendContiguous(fb, p)
+		fb.nextPkt++
+	}
+}
+
+func (s *Stream) appendContiguous(fb *frameBuild, data []byte) {
+	if fb.buf == nil {
+		fb.buf = s.pool.Get()
+	}
+	need := len(fb.buf) + len(data)
+	if need > cap(fb.buf) {
+		capHint := need
+		if c := cap(fb.buf) * 2; c > capHint {
+			capHint = c
+		}
+		nb := make([]byte, len(fb.buf), capHint)
+		copy(nb, fb.buf)
+		if fb.pool != nil {
+			fb.pool.Put(fb.buf)
+			fb.pool = nil
+		}
+		fb.buf = nb
+	}
+	fb.buf = append(fb.buf, data...)
 }
 
 // Recv waits up to timeout for a complete frame.

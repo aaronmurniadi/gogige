@@ -23,19 +23,50 @@ const (
 	gvcpCmdBye          = 0x0004
 	gvcpCmdDiscovery    = 0x0002
 	gvcpCmdDiscoveryAck = 0x0003
+	gvcpCmdPacketResend = 0x0040
+
+	gvcpFlagExtendedIDs = 0x10
 
 	gvcpDataSizeMax = 512
 	gvcpHeaderSize  = 8
+
+	gvspPacketIDMask = 0x00ffffff
 )
 
 func encodeGVCPHeader(cmd uint16, dataSize uint16, id uint16) []byte {
+	return encodeGVCPHeaderFlags(cmd, dataSize, id, gvcpFlagAckRequired)
+}
+
+func encodeGVCPHeaderFlags(cmd uint16, dataSize uint16, id uint16, flags byte) []byte {
 	b := make([]byte, gvcpHeaderSize)
 	b[0] = gvcpPacketTypeCMD
-	b[1] = gvcpFlagAckRequired
+	b[1] = flags
 	binary.BigEndian.PutUint16(b[2:], cmd)
 	binary.BigEndian.PutUint16(b[4:], dataSize)
 	binary.BigEndian.PutUint16(b[6:], id)
 	return b
+}
+
+// EncodePacketResend builds a GVCP PACKETRESEND_CMD (0x0040).
+// No ACK is required. extended selects GigE Vision 2.0 64-bit block_id layout.
+func EncodePacketResend(reqID, streamChannel uint16, blockID uint64, first, last uint32, extended bool) []byte {
+	if extended {
+		const dataSize = 20
+		req := encodeGVCPHeaderFlags(gvcpCmdPacketResend, dataSize, reqID, gvcpFlagExtendedIDs)
+		var data [20]byte
+		binary.BigEndian.PutUint32(data[0:], uint32(streamChannel)<<16)
+		binary.BigEndian.PutUint32(data[4:], first)
+		binary.BigEndian.PutUint32(data[8:], last)
+		binary.BigEndian.PutUint64(data[12:], blockID)
+		return append(req, data[:]...)
+	}
+	const dataSize = 12
+	req := encodeGVCPHeaderFlags(gvcpCmdPacketResend, dataSize, reqID, 0)
+	var data [12]byte
+	binary.BigEndian.PutUint32(data[0:], uint32(streamChannel)<<16|uint32(blockID&0xffff))
+	binary.BigEndian.PutUint32(data[4:], first&gvspPacketIDMask)
+	binary.BigEndian.PutUint32(data[8:], last&gvspPacketIDMask)
+	return append(req, data[:]...)
 }
 
 func gvcpErrorName(code byte) string {

@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-08-08
+
+### Added
+- GVSP packet resend: gap detection, hole-fill reassembly past trailer, `gvcp.EncodePacketResend` / `RequestResend`, and `Stream.SetResender` (Session wires channel 0)
+- Path MTU discovery (`gvsp.PathMTU` / `PacketSizeForMTU`) and `GevSCPSPacketSize` negotiate with device clamp (RMW on `0x0D04`)
+- `SO_RCVBUF` default 16 MiB on the stream socket with warn when the kernel grants less than 8 MiB
+- `Camera.Logger()` for stream setup / clamp / rcvbuf warnings
+
+### Changed
+- Trailer no longer finalizes a frame until missing payload packets are filled (or resend is disabled and the contiguous prefix is complete)
+
 ## [0.1.0] - 2026-08-08
 
 ### Changed

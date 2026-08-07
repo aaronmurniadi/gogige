@@ -264,3 +264,21 @@ func (g *GVCP) LocalAddr() *net.UDPAddr {
 	a, _ := g.conn.LocalAddr().(*net.UDPAddr)
 	return a
 }
+
+// RequestResend sends PACKETRESEND_CMD for inclusive packet_id range [first, last].
+// Fire-and-forget: cameras do not ACK; resent GVSP packets arrive on the stream socket.
+func (g *GVCP) RequestResend(streamChannel uint16, blockID uint64, first, last uint32, extended bool) error {
+	g.mu.Lock()
+	defer g.mu.Unlock()
+	if g.closed || g.conn == nil {
+		return errors.New("gige: gvcp closed")
+	}
+	if last < first {
+		return nil
+	}
+	req := EncodePacketResend(g.nextIDLocked(), streamChannel, blockID, first, last, extended)
+	if _, err := g.conn.Write(req); err != nil {
+		return fmt.Errorf("gige: packet resend: %w", err)
+	}
+	return nil
+}

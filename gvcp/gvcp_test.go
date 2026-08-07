@@ -79,3 +79,33 @@ func TestEncodeReadMemAlign(t *testing.T) {
 		t.Fatalf("aligned size=%d want 8", size)
 	}
 }
+
+func TestEncodePacketResend(t *testing.T) {
+	pkt := EncodePacketResend(9, 0, 0x1234, 2, 5, false)
+	if len(pkt) != 20 {
+		t.Fatalf("len=%d", len(pkt))
+	}
+	if pkt[0] != gvcpPacketTypeCMD || pkt[1] != 0 {
+		t.Fatalf("hdr %x %x", pkt[0], pkt[1])
+	}
+	if binary.BigEndian.Uint16(pkt[2:]) != gvcpCmdPacketResend {
+		t.Fatalf("cmd=%x", binary.BigEndian.Uint16(pkt[2:]))
+	}
+	if binary.BigEndian.Uint32(pkt[8:]) != 0x1234 {
+		t.Fatalf("channel|block=%x", binary.BigEndian.Uint32(pkt[8:]))
+	}
+	if binary.BigEndian.Uint32(pkt[12:]) != 2 || binary.BigEndian.Uint32(pkt[16:]) != 5 {
+		t.Fatalf("first/last")
+	}
+
+	ext := EncodePacketResend(1, 0, 0x1122334455667788, 1, 3, true)
+	if len(ext) != 28 {
+		t.Fatalf("ext len=%d", len(ext))
+	}
+	if ext[1] != gvcpFlagExtendedIDs {
+		t.Fatalf("flags=%x", ext[1])
+	}
+	if binary.BigEndian.Uint64(ext[20:]) != 0x1122334455667788 {
+		t.Fatalf("block64")
+	}
+}

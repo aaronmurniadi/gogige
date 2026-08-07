@@ -16,12 +16,13 @@ import (
 
 // Session is a persistent GVSP stream session. It implements Grabber.
 type Session struct {
-	cam    *Camera
-	stream *gvsp.Stream
-	opened atomic.Bool
-	mu     sync.Mutex
-	ownCam bool // if true, Close() closes cam
-	ip     string
+	cam        *Camera
+	stream     *gvsp.Stream
+	opened     atomic.Bool
+	mu         sync.Mutex
+	ownCam     bool // if true, Close() closes cam
+	ip         string
+	packetSize int
 
 	hb *gvcp.Heartbeat
 }
@@ -55,6 +56,15 @@ func (s *Session) Open(ip string) error {
 		return err
 	}
 	s.stream = stream
+	if g := s.cam.GVCP(); g != nil {
+		stream.SetResender(func(blockID uint64, first, last uint32, extended bool) {
+			_ = g.RequestResend(0, blockID, first, last, extended)
+		})
+	}
+	if got := stream.RecvBuffer(); got > 0 && got < gvsp.MinRecvBufSize {
+		s.cam.Logger().Warn("gvsp SO_RCVBUF below recommended",
+			"got", got, "min", gvsp.MinRecvBufSize, "want", gvsp.DefaultRecvBufSize)
+	}
 
 	local := s.cam.GVCP().LocalAddr()
 	if local == nil || local.IP == nil {
@@ -66,11 +76,27 @@ func (s *Session) Open(ip string) error {
 	if destIP.IsUnspecified() {
 		destIP = firstIPv4()
 	}
-	if err := gvcp.StartAcquisition(s.cam.GVCP(), s.cam, destIP, stream.Port(), 1500); err != nil {
+	camIP := net.ParseIP(ip)
+	if camIP == nil {
+		camIP = net.ParseIP(s.cam.IP)
+	}
+	mtu := gvsp.PathMTU(camIP)
+	want := gvsp.PacketSizeForMTU(mtu)
+	if err := gvcp.StartAcquisition(s.cam.GVCP(), s.cam, destIP, stream.Port(), want); err != nil {
 		stream.Close()
 		s.stream = nil
 		return err
 	}
+	s.packetSize = want
+	if reg, err := s.cam.GVCP().ReadReg(gvcp.Stream0PacketSize); err == nil {
+		s.packetSize = int(reg & 0xffff)
+	}
+	if s.packetSize < want {
+		s.cam.Logger().Warn("GevSCPSPacketSize clamped by device",
+			"want", want, "got", s.packetSize, "path_mtu", mtu)
+	}
+	s.cam.Logger().Info("gvsp stream setup",
+		"mtu", mtu, "scps", s.packetSize, "rcvbuf", stream.RecvBuffer())
 	s.startHeartbeatLocked()
 	s.opened.Store(true)
 	return nil
@@ -154,7 +180,12 @@ func (s *Session) ResumeStreaming() error {
 	if destIP.IsUnspecified() {
 		destIP = firstIPv4()
 	}
-	return gvcp.StartAcquisition(s.cam.GVCP(), s.cam, destIP, s.stream.Port(), 1500)
+	ps := s.packetSize
+	if ps <= 0 {
+		ps = gvsp.PacketSizeForMTU(gvsp.PathMTU(net.ParseIP(s.ip)))
+		s.packetSize = ps
+	}
+	return gvcp.StartAcquisition(s.cam.GVCP(), s.cam, destIP, s.stream.Port(), ps)
 }
 
 // Pause implements Grabber.

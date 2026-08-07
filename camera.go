@@ -87,6 +87,14 @@ func (c *Camera) GVCP() *gvcp.GVCP {
 	return c.gvcp
 }
 
+// Logger returns the camera logger (never nil).
+func (c *Camera) Logger() Logger {
+	if c == nil || c.log == nil {
+		return NopLogger{}
+	}
+	return c.log
+}
+
 // NodeMap returns the loaded GenICam map.
 func (c *Camera) NodeMap() *genapi.NodeMap { return c.nodes }
 
