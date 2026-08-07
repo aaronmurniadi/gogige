@@ -1,4 +1,4 @@
-module github.com/aaronmurniadi/gogige/examples/grab-images
+module github.com/aaronmurniadi/gogige/examples/grab-components
 
 go 1.26.3
 

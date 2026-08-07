@@ -6,7 +6,7 @@ examples/**/*.jpg
 # Example binaries from `go build .`
 examples/smoke/smoke
 examples/features/features
-examples/grab-images/grab-images
+examples/grab-components/grab-components
 examples/grab/grab
 examples/stream-measurements/stream-measurements
 examples/dump-xml/dump-xml

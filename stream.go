@@ -23,26 +23,26 @@ type Session struct {
 	ownCam     bool // if true, Close() closes cam
 	ip         string
 	packetSize int
-	imageKind  ImageKind
+	component  Component
 
 	hb *gvcp.Heartbeat
 }
 
 // NewSession returns an empty GVSP session (Connects on Open if no camera set).
-func NewSession() *Session { return &Session{imageKind: ImageColor} }
+func NewSession() *Session { return &Session{component: ComponentColor} }
 
 // NewFromCamera returns a Session that streams using cam without taking ownership.
 func NewFromCamera(cam *Camera) *Session {
-	return &Session{cam: cam, imageKind: ImageColor}
+	return &Session{cam: cam, component: ComponentColor}
 }
 
-// SetImageKind selects which BSCF image block Grab returns (color/depth/mono).
-func (s *Session) SetImageKind(k ImageKind) {
-	if s == nil || k == ImageUnknown {
+// SetComponent selects which BSCF/SFNC component Grab returns (color/depth/mono).
+func (s *Session) SetComponent(c Component) {
+	if s == nil || c == ComponentUnknown {
 		return
 	}
 	s.mu.Lock()
-	s.imageKind = k
+	s.component = c
 	s.mu.Unlock()
 }
 
@@ -242,12 +242,12 @@ func (s *Session) Grab(ctx context.Context) (Sample, error) {
 		return sample, err
 	}
 	s.mu.Lock()
-	kind := s.imageKind
+	kind := s.component
 	s.mu.Unlock()
-	if kind == ImageUnknown {
-		kind = ImageColor
+	if kind == ComponentUnknown {
+		kind = ComponentColor
 	}
-	sample, err = SampleFromBSCFKind(data, kind)
+	sample, err = SampleFromBSCFComponent(data, kind)
 	if err != nil {
 		if gvsp.IsBSCF(data) {
 			return sample, err
@@ -257,7 +257,7 @@ func (s *Session) Grab(ctx context.Context) (Sample, error) {
 		sample.Width = meta.width
 		sample.Height = meta.height
 		sample.PixelFormat = meta.pixelFormat
-		sample.ImageKind = kind
+		sample.Component = kind
 		if sample.Width == 0 || sample.Height == 0 {
 			return sample, fmt.Errorf("gige: grab: %w", err)
 		}
@@ -270,7 +270,7 @@ func (s *Session) Grab(ctx context.Context) (Sample, error) {
 	return sample, nil
 }
 
-// GrabAll receives one GVSP frame and returns a JPEG Sample for every BSCF image block
+// GrabAll receives one GVSP frame and returns a JPEG Sample for every BSCF component
 // (color, depth, mono, …). Non-BSCF payloads yield a single sample.
 func (s *Session) GrabAll(ctx context.Context) ([]Sample, error) {
 	data, meta, err := s.recvFrame(ctx)
@@ -289,7 +289,7 @@ func (s *Session) GrabAll(ctx context.Context) ([]Sample, error) {
 			Width:       meta.width,
 			Height:      meta.height,
 			PixelFormat: meta.pixelFormat,
-			ImageKind:   ImageUnknown,
+			Component:   ComponentUnknown,
 			PackCount:   -1,
 		}}
 	}
@@ -301,7 +301,7 @@ func (s *Session) GrabAll(ctx context.Context) ([]Sample, error) {
 		}
 		jpeg, jerr := color.EncodeJPEG(sample.RawColor, sample.Width, sample.Height, sample.PixelFormat, 60)
 		if jerr != nil {
-			errs = append(errs, fmt.Errorf("%s: %w", sample.ImageKind, jerr))
+			errs = append(errs, fmt.Errorf("%s: %w", sample.Component, jerr))
 			continue
 		}
 		sample.JPEG = jpeg
@@ -311,7 +311,7 @@ func (s *Session) GrabAll(ctx context.Context) ([]Sample, error) {
 		if len(errs) > 0 {
 			return nil, fmt.Errorf("gige: grab all: %w", errors.Join(errs...))
 		}
-		return nil, errors.New("gige: grab all: no usable images")
+		return nil, errors.New("gige: grab all: no usable components")
 	}
 	return out, nil
 }

@@ -39,7 +39,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `gvcp/register_map.go`         | [x]    | GenCP ABRM 0x0000–0x0250 + GigE Vision ABRM/SBRM                     |
 | `gvsp/frame.go`                | [x]    | Frame + reassembly helper                                                |
 | `gvsp/receiver.go`             | [~]    | UDP receive path; ordered payloads use pool (OOO still allocates)        |
-| `gvsp/payload.go`              | [~]    | BSCF + `ImageKind` / `GrabAll`; Image/Multi-Part/GenDC still pending     |
+| `gvsp/payload.go`              | [~]    | BSCF + `Component` / `GrabAll`; Image/Multi-Part/GenDC still pending     |
 | `gvsp/buffer_pool.go`          | [x]    | Pre-allocated frame buffers + `Frame.Release()`                          |
 | `gvsp/resend.go`               | [x]    | Missing-packet tracking + `RESEND_CMD` via `Stream.SetResender`          |
 | `genapi/camera_description.go` | [x]    | FirstURL fetch + zip/deflate XML                                         |
@@ -55,7 +55,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `camera.go`                    | [x]    | High-level `Camera` + feature setters                                    |
 | `discovery.go`                 | [x]    | Root `Discover` → `gvcp.Discover`                                        |
 | `stream.go`                    | [~]    | `Session` / `Grab` / `GrabAll`; not yet `StartStream` + `Frames()`       |
-| `options.go`                   | [x]    | `WithLogger` / `WithTimeout` / `WithImageKind` / `GrabImageKind` |
+| `options.go`                   | [x]    | `WithLogger` / `WithTimeout` / `WithComponent` / `GrabComponent` |
 
 ### Layout debt (outside target tree)
 
@@ -117,7 +117,7 @@ Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, `gvsp.mdc`. Payload-type
 | `PAYLOAD_TYPE_CHUNK_DATA` / `CHUNK_ONLY`     | [ ]    | GenTL v1.2 / v1.4                                       |
 | `PAYLOAD_TYPE_MULTI_PART`                    | [ ]    | GenTL v1.5                                              |
 | `PAYLOAD_TYPE_GENDC`                         | [ ]    | GenTL v1.6 + GenDC 1.1                                  |
-| Vendor BSCF payload                          | [x]    | Huaray/Dahua; `ImageKind` select (color/depth/mono) in `payload.go` |
+| Vendor BSCF payload                          | [x]    | Huaray/Dahua; `Component` select (color/depth/mono) in `payload.go` |
 
 #### GenDC 1.1 checklist (`GenDC.h`)
 
@@ -197,4 +197,4 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 - **2026-08-08** — Phase 2 MTU/SCPS: `gvsp.PathMTU` + `PacketSizeForMTU`; `SO_RCVBUF` 16MiB with warn below 8MiB; acquisition RMW on `0x0D04`.
 - **2026-08-08** — Phase 1 complete: GenCP ABRM + GigE ABRM in `register_map.go`; PENDING_ACK `temporary_timeout`; `SyncImplementationEndianness` on TakeControl + GenApi device byte-order for WriteMem.
 - **2026-08-08** — Examples: `examples/smoke`, `examples/features`; CLI `cmd/gogige-stream`.
-- **2026-08-08** — BSCF `ImageKind` (color/depth/mono): parse all image blocks; `GrabImageKind` / `WithImageKind` / `SetImageKind`; Mono16 JPEG preview.
+- **2026-08-08** — BSCF/SFNC `Component` (color/depth/mono): parse all component blocks; `GrabComponent` / `WithComponent` / `SetComponent`; Mono16 JPEG preview.

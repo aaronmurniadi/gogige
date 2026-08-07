@@ -5,6 +5,18 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-08-08
+
+### Changed
+- Rename BSCF `ImageKind` API to SFNC-style `Component` (`ComponentColor` / `ComponentDepth` / `ComponentMono`)
+- Options/methods: `WithComponent`, `GrabComponent`, `SetComponent`, `WithLiveComponent`, `ParseComponent`, `SampleFromBSCFComponent`
+- CLI flags `-image` → `-component`; example `grab-images` → `grab-components`
+- `ParseComponent` also accepts `range` (depth) and `intensity` (mono)
+
+### Added
+- `Live.SetComponent` / `Live.Component` for mid-stream component switch
+- `examples/websocket-stream -component color|depth|mono`
+
 ## [0.4.0] - 2026-08-08
 
 ### Added

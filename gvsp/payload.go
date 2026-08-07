@@ -22,48 +22,50 @@ const (
 	packDetSize = 1472
 )
 
-// ImageKind is Huaray/Dahua BSCF Image::ImageType (Frame.h iota).
-type ImageKind uint32
+// Component is a GenICam/SFNC-style imaging component selector.
+// Wire values follow Huaray/Dahua BSCF Image::ImageType (Frame.h iota);
+// Color/Mono ≈ Intensity, Depth ≈ Range in GenDC.
+type Component uint32
 
 const (
-	ImageUnknown ImageKind = 0
-	ImageMono    ImageKind = 1 // gray / mono sensor
-	ImageDepth   ImageKind = 5
-	ImageColor   ImageKind = 6
+	ComponentUnknown Component = 0
+	ComponentMono    Component = 1 // gray / mono sensor
+	ComponentDepth   Component = 5 // GenDC Range
+	ComponentColor   Component = 6
 )
 
-// ParseImageKind maps names used by CLIs / options ("color", "depth", "mono").
-func ParseImageKind(s string) (ImageKind, error) {
+// ParseComponent maps names used by CLIs / options ("color", "depth", "mono").
+func ParseComponent(s string) (Component, error) {
 	switch strings.ToLower(strings.TrimSpace(s)) {
 	case "", "color", "colour":
-		return ImageColor, nil
-	case "depth":
-		return ImageDepth, nil
-	case "mono", "gray", "grey":
-		return ImageMono, nil
+		return ComponentColor, nil
+	case "depth", "range":
+		return ComponentDepth, nil
+	case "mono", "gray", "grey", "intensity":
+		return ComponentMono, nil
 	default:
-		return 0, fmt.Errorf("gige: unknown image kind %q (want color|depth|mono)", s)
+		return 0, fmt.Errorf("gige: unknown component %q (want color|depth|mono)", s)
 	}
 }
 
-func (k ImageKind) String() string {
-	switch k {
-	case ImageMono:
+func (c Component) String() string {
+	switch c {
+	case ComponentMono:
 		return "mono"
-	case ImageDepth:
+	case ComponentDepth:
 		return "depth"
-	case ImageColor:
+	case ComponentColor:
 		return "color"
-	case ImageUnknown:
+	case ComponentUnknown:
 		return "unknown"
 	default:
-		return fmt.Sprintf("image(%d)", uint32(k))
+		return fmt.Sprintf("component(%d)", uint32(c))
 	}
 }
 
-// ImageBlock is one BSCF image payload (mono / depth / colour / …).
-type ImageBlock struct {
-	Kind        ImageKind
+// ComponentBlock is one BSCF component payload (mono / depth / colour / …).
+type ComponentBlock struct {
+	Component   Component
 	Data        []byte
 	Width       int
 	Height      int
@@ -73,11 +75,11 @@ type ImageBlock struct {
 // Sample is one grabbed frame: JPEG (filled by caller) + volume fields from BSCF.
 type Sample struct {
 	JPEG        []byte
-	RawColor    []byte // selected image bytes (name kept for API compat)
+	RawColor    []byte // selected component bytes (name kept for API compat)
 	Width       int
 	Height      int
 	PixelFormat uint32
-	ImageKind   ImageKind
+	Component   Component
 	PackCount   int
 	Length      float64
 	WidthMm     float64
@@ -87,30 +89,30 @@ type Sample struct {
 
 // BSCFFrame is a parsed BSCF multi-result chunk.
 type BSCFFrame struct {
-	Version   int32
-	Width     int32
-	Height    int32
-	ID        int32
-	Images    []ImageBlock
-	Color     []byte // convenience: ImageColor bytes (may be nil)
-	ColorW    int
-	ColorH    int
-	ColorFmt  uint32
-	PackCount int
-	Packs     []PackDet
+	Version    int32
+	Width      int32
+	Height     int32
+	ID         int32
+	Components []ComponentBlock
+	Color      []byte // convenience: ComponentColor bytes (may be nil)
+	ColorW     int
+	ColorH     int
+	ColorFmt   uint32
+	PackCount  int
+	Packs      []PackDet
 }
 
-// Image returns the first block of kind, or false if absent.
-func (f *BSCFFrame) Image(kind ImageKind) (ImageBlock, bool) {
+// Block returns the first block for component c, or false if absent.
+func (f *BSCFFrame) Block(c Component) (ComponentBlock, bool) {
 	if f == nil {
-		return ImageBlock{}, false
+		return ComponentBlock{}, false
 	}
-	for _, im := range f.Images {
-		if im.Kind == kind {
-			return im, true
+	for _, b := range f.Components {
+		if b.Component == c {
+			return b, true
 		}
 	}
-	return ImageBlock{}, false
+	return ComponentBlock{}, false
 }
 
 // PackDet is PackDetVolumeInfo / ScVolumePackInfo fields we care about.
@@ -160,7 +162,7 @@ func ParseBSCF(buf []byte) (*BSCFFrame, error) {
 		blockSize := binary.LittleEndian.Uint32(buf[off+8:])
 		bw := int(binary.LittleEndian.Uint32(buf[off+12:]))
 		bh := int(binary.LittleEndian.Uint32(buf[off+16:]))
-		imgType := ImageKind(binary.LittleEndian.Uint32(buf[off+20:]))
+		comp := Component(binary.LittleEndian.Uint32(buf[off+20:]))
 		imgFmt := binary.LittleEndian.Uint32(buf[off+32:])
 		// PackLocResult: Huaray stores pack count at +36; +40 is unused/0 on DS5131.
 		packCount := int(binary.LittleEndian.Uint32(buf[off+36:]))
@@ -184,15 +186,15 @@ func ParseBSCF(buf []byte) (*BSCFFrame, error) {
 			}
 			cp := make([]byte, len(payload))
 			copy(cp, payload)
-			im := ImageBlock{
-				Kind:        imgType,
+			blk := ComponentBlock{
+				Component:   comp,
 				Data:        cp,
 				Width:       bw,
 				Height:      bh,
 				PixelFormat: imgFmt,
 			}
-			f.Images = append(f.Images, im)
-			if imgType == ImageColor {
+			f.Components = append(f.Components, blk)
+			if comp == ComponentColor {
 				f.Color = cp
 				f.ColorW = bw
 				f.ColorH = bh
@@ -235,63 +237,63 @@ func parsePackDet(b []byte) PackDet {
 	return pd
 }
 
-// SampleFromBSCF extracts Sample volume fields + colour image (default).
+// SampleFromBSCF extracts Sample volume fields + colour component (default).
 func SampleFromBSCF(buf []byte) (Sample, error) {
-	return SampleFromBSCFKind(buf, ImageColor)
+	return SampleFromBSCFComponent(buf, ComponentColor)
 }
 
-// SampleFromBSCFKind extracts Sample for the given BSCF image kind.
-// ImageColor remains the default for preview; Depth/Mono pick those blocks when present.
-func SampleFromBSCFKind(buf []byte, kind ImageKind) (Sample, error) {
-	if kind == ImageUnknown {
-		kind = ImageColor
+// SampleFromBSCFComponent extracts Sample for the given BSCF/SFNC component.
+// ComponentColor is the default preview; Depth/Mono select those blocks when present.
+func SampleFromBSCFComponent(buf []byte, c Component) (Sample, error) {
+	if c == ComponentUnknown {
+		c = ComponentColor
 	}
 	f, err := ParseBSCF(buf)
 	if err != nil {
-		return Sample{PackCount: -1, ImageKind: kind}, err
+		return Sample{PackCount: -1, Component: c}, err
 	}
-	return sampleFromFrame(f, kind)
+	return sampleFromFrame(f, c)
 }
 
-// SampleAllFromBSCF returns one Sample per usable image block in the BSCF
+// SampleAllFromBSCF returns one Sample per usable component block in the BSCF
 // (skips zero-size / empty placeholders). Pack metrics are copied onto each.
 func SampleAllFromBSCF(buf []byte) ([]Sample, error) {
 	f, err := ParseBSCF(buf)
 	if err != nil {
 		return nil, err
 	}
-	out := make([]Sample, 0, len(f.Images))
-	for _, im := range f.Images {
-		if im.Width <= 0 || im.Height <= 0 || len(im.Data) == 0 {
+	out := make([]Sample, 0, len(f.Components))
+	for _, blk := range f.Components {
+		if blk.Width <= 0 || blk.Height <= 0 || len(blk.Data) == 0 {
 			continue
 		}
-		out = append(out, sampleFromImage(f, im))
+		out = append(out, sampleFromBlock(f, blk))
 	}
 	if len(out) == 0 {
-		return nil, errors.New("gige: bscf has no usable image blocks")
+		return nil, errors.New("gige: bscf has no usable component blocks")
 	}
 	return out, nil
 }
 
-func sampleFromFrame(f *BSCFFrame, kind ImageKind) (Sample, error) {
-	im, ok := f.Image(kind)
+func sampleFromFrame(f *BSCFFrame, c Component) (Sample, error) {
+	blk, ok := f.Block(c)
 	if !ok {
-		return Sample{PackCount: -1, ImageKind: kind}, fmt.Errorf("gige: bscf %s image empty", kind)
+		return Sample{PackCount: -1, Component: c}, fmt.Errorf("gige: bscf %s component empty", c)
 	}
-	s := sampleFromImage(f, im)
+	s := sampleFromBlock(f, blk)
 	if len(s.RawColor) == 0 {
-		return s, errors.New("gige: bscf image empty")
+		return s, errors.New("gige: bscf component empty")
 	}
 	return s, nil
 }
 
-func sampleFromImage(f *BSCFFrame, im ImageBlock) Sample {
+func sampleFromBlock(f *BSCFFrame, blk ComponentBlock) Sample {
 	s := Sample{
-		RawColor:    im.Data,
-		Width:       im.Width,
-		Height:      im.Height,
-		PixelFormat: im.PixelFormat,
-		ImageKind:   im.Kind,
+		RawColor:    blk.Data,
+		Width:       blk.Width,
+		Height:      blk.Height,
+		PixelFormat: blk.PixelFormat,
+		Component:   blk.Component,
 		PackCount:   f.PackCount,
 	}
 	if len(f.Packs) > 0 {
@@ -314,47 +316,47 @@ func IsBSCF(buf []byte) bool {
 
 // BuildTestBSCF builds a minimal V1 BSCF for tests (colour + optional packs).
 func BuildTestBSCF(color []byte, w, h int, fmtPix uint32, packs []PackDet) []byte {
-	return BuildTestBSCFImages([]ImageBlock{{
-		Kind: ImageColor, Data: color, Width: w, Height: h, PixelFormat: fmtPix,
+	return BuildTestBSCFComponents([]ComponentBlock{{
+		Component: ComponentColor, Data: color, Width: w, Height: h, PixelFormat: fmtPix,
 	}}, packs)
 }
 
-// BuildTestBSCFImages builds a V1 BSCF with the given image blocks + optional packs.
-func BuildTestBSCFImages(images []ImageBlock, packs []PackDet) []byte {
+// BuildTestBSCFComponents builds a V1 BSCF with the given component blocks + optional packs.
+func BuildTestBSCFComponents(blocks []ComponentBlock, packs []PackDet) []byte {
 	hdr := make([]byte, bscfHeaderV1)
 	binary.LittleEndian.PutUint32(hdr[0:], bscfMagic)
 	binary.LittleEndian.PutUint32(hdr[4:], 1) // version
-	nBlocks := len(images)
+	nBlocks := len(blocks)
 	if len(packs) > 0 {
 		nBlocks++
 	}
 	binary.LittleEndian.PutUint32(hdr[8:], uint32(nBlocks))
 	w, h := 0, 0
-	if len(images) > 0 {
-		w, h = images[0].Width, images[0].Height
+	if len(blocks) > 0 {
+		w, h = blocks[0].Width, blocks[0].Height
 	}
 	binary.LittleEndian.PutUint32(hdr[12:], uint32(w))
 	binary.LittleEndian.PutUint32(hdr[16:], uint32(h))
 	binary.LittleEndian.PutUint32(hdr[20:], 1) // id
 
 	payload := make([]byte, 0)
-	writeBlock := func(i int, dataType, offset, size uint32, bw, bh int, imgType ImageKind, imgFmt uint32, packCount int) {
+	writeBlock := func(i int, dataType, offset, size uint32, bw, bh int, comp Component, imgFmt uint32, packCount int) {
 		off := 24 + i*bscfBlockStride
 		binary.LittleEndian.PutUint32(hdr[off:], dataType)
 		binary.LittleEndian.PutUint32(hdr[off+4:], offset)
 		binary.LittleEndian.PutUint32(hdr[off+8:], size)
 		binary.LittleEndian.PutUint32(hdr[off+12:], uint32(bw))
 		binary.LittleEndian.PutUint32(hdr[off+16:], uint32(bh))
-		binary.LittleEndian.PutUint32(hdr[off+20:], uint32(imgType))
+		binary.LittleEndian.PutUint32(hdr[off+20:], uint32(comp))
 		binary.LittleEndian.PutUint32(hdr[off+32:], imgFmt)
 		binary.LittleEndian.PutUint32(hdr[off+36:], uint32(packCount))
 		binary.LittleEndian.PutUint32(hdr[off+40:], 0)
 	}
 	off := uint32(bscfHeaderV1)
-	for i, im := range images {
-		writeBlock(i, blockTypeImage, off, uint32(len(im.Data)), im.Width, im.Height, im.Kind, im.PixelFormat, 0)
-		payload = append(payload, im.Data...)
-		off += uint32(len(im.Data))
+	for i, blk := range blocks {
+		writeBlock(i, blockTypeImage, off, uint32(len(blk.Data)), blk.Width, blk.Height, blk.Component, blk.PixelFormat, 0)
+		payload = append(payload, blk.Data...)
+		off += uint32(len(blk.Data))
 	}
 	if len(packs) > 0 {
 		packOff := off
@@ -371,7 +373,7 @@ func BuildTestBSCFImages(images []ImageBlock, packs []PackDet) []byte {
 			binary.LittleEndian.PutUint32(pd[1276:], st)
 			payload = append(payload, pd...)
 		}
-		writeBlock(len(images), blockTypePackLocResult, packOff, uint32(len(packs)*packDetSize), 0, 0, 0, 0, len(packs))
+		writeBlock(len(blocks), blockTypePackLocResult, packOff, uint32(len(packs)*packDetSize), 0, 0, 0, 0, len(packs))
 	}
 	return append(hdr, payload...)
 }

@@ -39,8 +39,8 @@ func TestBSCFRoundTrip(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if s.ImageKind != ImageColor {
-		t.Fatalf("kind=%v", s.ImageKind)
+	if s.Component != ComponentColor {
+		t.Fatalf("component=%v", s.Component)
 	}
 	jpeg, err := color.EncodeJPEG(s.RawColor, s.Width, s.Height, s.PixelFormat, 60)
 	if err != nil {
@@ -61,9 +61,9 @@ func TestBSCFSelectDepth(t *testing.T) {
 		0, 0, 255, 0, 255, 0,
 		255, 0, 0, 128, 128, 128,
 	}
-	buf := BuildTestBSCFImages([]ImageBlock{
-		{Kind: ImageDepth, Data: depth, Width: w, Height: h, PixelFormat: color.PixelFormatMono16},
-		{Kind: ImageColor, Data: colorPix, Width: w, Height: h, PixelFormat: color.PixelFormatBGR8},
+	buf := BuildTestBSCFComponents([]ComponentBlock{
+		{Component: ComponentDepth, Data: depth, Width: w, Height: h, PixelFormat: color.PixelFormatMono16},
+		{Component: ComponentColor, Data: colorPix, Width: w, Height: h, PixelFormat: color.PixelFormatBGR8},
 	}, nil)
 
 	s, err := SampleFromBSCF(buf)
@@ -74,19 +74,19 @@ func TestBSCFSelectDepth(t *testing.T) {
 		t.Fatalf("default: fmt=0x%x len=%d want BGR color", s.PixelFormat, len(s.RawColor))
 	}
 
-	d, err := SampleFromBSCFKind(buf, ImageDepth)
+	d, err := SampleFromBSCFComponent(buf, ComponentDepth)
 	if err != nil {
 		t.Fatal(err)
 	}
-	if d.ImageKind != ImageDepth || d.PixelFormat != color.PixelFormatMono16 || len(d.RawColor) != len(depth) {
-		t.Fatalf("depth: kind=%v fmt=0x%x len=%d", d.ImageKind, d.PixelFormat, len(d.RawColor))
+	if d.Component != ComponentDepth || d.PixelFormat != color.PixelFormatMono16 || len(d.RawColor) != len(depth) {
+		t.Fatalf("depth: component=%v fmt=0x%x len=%d", d.Component, d.PixelFormat, len(d.RawColor))
 	}
 	jpeg, err := color.EncodeJPEG(d.RawColor, d.Width, d.Height, d.PixelFormat, 60)
 	if err != nil || len(jpeg) < 2 {
 		t.Fatalf("depth jpeg: %v len=%d", err, len(jpeg))
 	}
 
-	_, err = SampleFromBSCFKind(buf, ImageMono)
+	_, err = SampleFromBSCFComponent(buf, ComponentMono)
 	if err == nil {
 		t.Fatal("expected missing mono error")
 	}
@@ -98,21 +98,25 @@ func TestBSCFSelectDepth(t *testing.T) {
 	if len(all) != 2 {
 		t.Fatalf("all=%d", len(all))
 	}
-	if all[0].ImageKind != ImageDepth || all[1].ImageKind != ImageColor {
-		t.Fatalf("kinds %v %v", all[0].ImageKind, all[1].ImageKind)
+	if all[0].Component != ComponentDepth || all[1].Component != ComponentColor {
+		t.Fatalf("components %v %v", all[0].Component, all[1].Component)
 	}
 	if !IsBSCF(buf) {
 		t.Fatal("IsBSCF")
 	}
 }
 
-func TestParseImageKind(t *testing.T) {
-	k, err := ParseImageKind("Depth")
-	if err != nil || k != ImageDepth {
-		t.Fatalf("got %v %v", k, err)
+func TestParseComponent(t *testing.T) {
+	c, err := ParseComponent("Depth")
+	if err != nil || c != ComponentDepth {
+		t.Fatalf("got %v %v", c, err)
 	}
-	if ImageColor.String() != "color" {
-		t.Fatal(ImageColor.String())
+	c, err = ParseComponent("range")
+	if err != nil || c != ComponentDepth {
+		t.Fatalf("range: %v %v", c, err)
+	}
+	if ComponentColor.String() != "color" {
+		t.Fatal(ComponentColor.String())
 	}
 }
 
@@ -127,20 +131,20 @@ func TestBSCFPrefersColorOverDepth(t *testing.T) {
 	binary.LittleEndian.PutUint32(hdr[0:], bscfMagic)
 	binary.LittleEndian.PutUint32(hdr[4:], 1)
 	binary.LittleEndian.PutUint32(hdr[8:], 2)
-	writeBlock := func(i int, dataType, offset, size uint32, bw, bh int, imgType, imgFmt uint32) {
+	writeBlock := func(i int, dataType, offset, size uint32, bw, bh int, comp, imgFmt uint32) {
 		off := 24 + i*bscfBlockStride
 		binary.LittleEndian.PutUint32(hdr[off:], dataType)
 		binary.LittleEndian.PutUint32(hdr[off+4:], offset)
 		binary.LittleEndian.PutUint32(hdr[off+8:], size)
 		binary.LittleEndian.PutUint32(hdr[off+12:], uint32(bw))
 		binary.LittleEndian.PutUint32(hdr[off+16:], uint32(bh))
-		binary.LittleEndian.PutUint32(hdr[off+20:], imgType)
+		binary.LittleEndian.PutUint32(hdr[off+20:], comp)
 		binary.LittleEndian.PutUint32(hdr[off+32:], imgFmt)
 	}
 	depthOff := uint32(bscfHeaderV1)
 	colorOff := depthOff + uint32(len(depth))
-	writeBlock(0, blockTypeImage, depthOff, uint32(len(depth)), w, h, uint32(ImageDepth), 0x01100007)
-	writeBlock(1, blockTypeImage, colorOff, uint32(len(colorPix)), w, h, uint32(ImageColor), color.PixelFormatBGR8)
+	writeBlock(0, blockTypeImage, depthOff, uint32(len(depth)), w, h, uint32(ComponentDepth), 0x01100007)
+	writeBlock(1, blockTypeImage, colorOff, uint32(len(colorPix)), w, h, uint32(ComponentColor), color.PixelFormatBGR8)
 	buf := append(append(hdr, depth...), colorPix...)
 	s, err := SampleFromBSCF(buf)
 	if err != nil {

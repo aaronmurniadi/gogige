@@ -15,30 +15,30 @@ type (
 	Stream    = gvsp.Stream
 	Frame     = gvsp.Frame
 	Sample    = gvsp.Sample
-	ImageKind = gvsp.ImageKind
+	Component = gvsp.Component
 )
 
-// BSCF image kinds (Huaray Frame.h ImageType).
+// SFNC-style imaging components (BSCF ImageType wire values).
 const (
-	ImageUnknown = gvsp.ImageUnknown
-	ImageMono    = gvsp.ImageMono
-	ImageDepth   = gvsp.ImageDepth
-	ImageColor   = gvsp.ImageColor
+	ComponentUnknown = gvsp.ComponentUnknown
+	ComponentMono    = gvsp.ComponentMono
+	ComponentDepth   = gvsp.ComponentDepth
+	ComponentColor   = gvsp.ComponentColor
 )
 
 // Re-exports of common constructors / parsers.
 var (
-	DialGVCP           = gvcp.DialGVCP
-	ParseNodeMap       = genapi.ParseNodeMap
-	FetchXML           = genapi.FetchXML
-	ListenStream       = gvsp.ListenStream
-	SampleFromBSCF     = gvsp.SampleFromBSCF
-	SampleFromBSCFKind = gvsp.SampleFromBSCFKind
-	SampleAllFromBSCF  = gvsp.SampleAllFromBSCF
-	ParseBSCF          = gvsp.ParseBSCF
-	ParseImageKind     = gvsp.ParseImageKind
-	IsBSCF             = gvsp.IsBSCF
-	EncodeJPEG         = color.EncodeJPEG
-	StartAcquisition   = gvcp.StartAcquisition
-	StopAcquisition    = gvcp.StopAcquisition
+	DialGVCP                = gvcp.DialGVCP
+	ParseNodeMap            = genapi.ParseNodeMap
+	FetchXML                = genapi.FetchXML
+	ListenStream            = gvsp.ListenStream
+	SampleFromBSCF          = gvsp.SampleFromBSCF
+	SampleFromBSCFComponent = gvsp.SampleFromBSCFComponent
+	SampleAllFromBSCF       = gvsp.SampleAllFromBSCF
+	ParseBSCF               = gvsp.ParseBSCF
+	ParseComponent          = gvsp.ParseComponent
+	IsBSCF                  = gvsp.IsBSCF
+	EncodeJPEG              = color.EncodeJPEG
+	StartAcquisition        = gvcp.StartAcquisition
+	StopAcquisition         = gvcp.StopAcquisition
 )

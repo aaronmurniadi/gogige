@@ -8,7 +8,7 @@ type Option func(*openConfig)
 type openConfig struct {
 	logger    Logger
 	timeout   time.Duration
-	imageKind ImageKind
+	component Component
 }
 
 // WithLogger sets the logger used by this device (default: NopLogger).
@@ -29,12 +29,12 @@ func WithTimeout(d time.Duration) Option {
 	}
 }
 
-// WithImageKind selects which BSCF image block GrabJPEG uses (color/depth/mono).
-// Default: ImageColor.
-func WithImageKind(k ImageKind) Option {
+// WithComponent selects which BSCF/SFNC component GrabJPEG uses (color/depth/mono).
+// Default: ComponentColor.
+func WithComponent(comp Component) Option {
 	return func(c *openConfig) {
-		if k != ImageUnknown {
-			c.imageKind = k
+		if comp != ComponentUnknown {
+			c.component = comp
 		}
 	}
 }
@@ -42,11 +42,11 @@ func WithImageKind(k ImageKind) Option {
 // GrabOption configures StartGrabber / Session.
 type GrabOption func(*Session)
 
-// GrabImageKind selects which BSCF image block Session.Grab decodes.
-func GrabImageKind(k ImageKind) GrabOption {
+// GrabComponent selects which BSCF/SFNC component Session.Grab decodes.
+func GrabComponent(comp Component) GrabOption {
 	return func(s *Session) {
-		if s != nil && k != ImageUnknown {
-			s.imageKind = k
+		if s != nil && comp != ComponentUnknown {
+			s.component = comp
 		}
 	}
 }

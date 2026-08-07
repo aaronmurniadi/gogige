@@ -1,4 +1,4 @@
-// Grab-images discovers BSCF image modes in one frame and writes a JPEG for each.
+// Grab-components discovers BSCF/SFNC components in one frame and writes a JPEG for each.
 //
 //	go run .                  # discover first camera
 //	go run . -ip 192.168.1.108 -dir ./out
@@ -18,7 +18,7 @@ import (
 
 func main() {
 	ipFlag := flag.String("ip", "", "camera IP (empty = first GigE discovery hit)")
-	dir := flag.String("dir", ".", "directory for <kind>.jpg")
+	dir := flag.String("dir", ".", "directory for <component>.jpg")
 	timeout := flag.Duration("timeout", 5*time.Second, "grab timeout")
 	flag.Parse()
 
@@ -52,16 +52,16 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("available modes (%d):\n", len(samples))
+	fmt.Printf("available components (%d):\n", len(samples))
 	for _, s := range samples {
 		fmt.Printf("  %-8s  %dx%d  pixfmt=0x%08x  jpeg=%dB\n",
-			s.ImageKind, s.Width, s.Height, s.PixelFormat, len(s.JPEG))
+			s.Component, s.Width, s.Height, s.PixelFormat, len(s.JPEG))
 	}
 
 	for _, s := range samples {
-		name := s.ImageKind.String()
+		name := s.Component.String()
 		if name == "" || name == "unknown" {
-			name = "image"
+			name = "component"
 		}
 		path := filepath.Join(*dir, name+".jpg")
 		if err := os.WriteFile(path, s.JPEG, 0o644); err != nil {

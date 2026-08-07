@@ -1,7 +1,8 @@
 // Live camera preview over WebSocket, with a browser page at /.
 //
-//	go run .                  # discover first camera
-//	go run . -ip 192.168.1.108
+//	go run .                         # discover first camera, color stream
+//	go run . -component depth            # depth preview
+//	go run . -ip 192.168.1.108 -component mono
 //
 // Open http://127.0.0.1:8080/ — JPEG frames on /ws; send text "freeze"/"resume".
 package main
@@ -27,7 +28,13 @@ var content embed.FS
 func main() {
 	ip := flag.String("ip", "", "camera IP (empty = first GigE discovery hit)")
 	addr := flag.String("addr", "127.0.0.1:8080", "HTTP listen address")
+	component := flag.String("component", "color", "component: color|depth|mono")
 	flag.Parse()
+
+	kind, err := gige.ParseComponent(*component)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	cameraIP, err := resolveIP(*ip)
 	if err != nil {
@@ -50,11 +57,11 @@ func main() {
 	}
 	mux.Handle("/", http.FileServer(http.FS(static)))
 
-	live := gige.NewLive(dev, gige.WithSink(hub))
+	live := gige.NewLive(dev, gige.WithSink(hub), gige.WithLiveComponent(kind))
 	live.Start(ctx)
 	defer live.Stop()
 
-	log.Printf("open http://%s/  (ws://%s/ws)", *addr, *addr)
+	log.Printf("streaming %s — open http://%s/  (ws://%s/ws)", kind, *addr, *addr)
 	log.Fatal(http.ListenAndServe(*addr, mux))
 }
 

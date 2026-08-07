@@ -45,10 +45,11 @@ devs, err := gige.Discover(ctx, 2*time.Second)
 Live + preview (app owns the sink):
 
 ```go
-live := gige.NewLive(dev, gige.WithSink(gige.JPEGFunc(hub.Broadcast)))
+live := gige.NewLive(dev, gige.WithSink(gige.JPEGFunc(hub.Broadcast)), gige.WithLiveComponent(gige.ComponentDepth))
 live.Start(ctx)
 defer live.Stop()
 sample := live.LatestSample() // filter/validate in the app
+// live.SetComponent(gige.ComponentColor) // switch mid-stream
 ```
 
 ## Package layout
@@ -74,7 +75,7 @@ Omit `-ip` to pick the first camera from GigE discovery (or pass `-ip` explicitl
 - Full stack smoke (CCP/heartbeat/XML/stream/pause/live): [`examples/smoke`](examples/smoke)
 - GenICam `Has` / `ApplyControlPair` / `Execute`: [`examples/features`](examples/features)
 - One-shot color JPEG to disk: [`examples/grab`](examples/grab)
-- Discover BSCF modes (color/depth/mono) and grab all: [`examples/grab-images`](examples/grab-images)
+- Discover BSCF components (color/depth/mono) and grab all: [`examples/grab-components`](examples/grab-components)
 - Stream measurements only: [`examples/stream-measurements`](examples/stream-measurements)
 - Dump GenICam XML: [`examples/dump-xml`](examples/dump-xml)
 - Configure volume TCP preset: [`examples/configure-volume-tcp`](examples/configure-volume-tcp)

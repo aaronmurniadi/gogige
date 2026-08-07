@@ -15,7 +15,7 @@ type device struct {
 	ip        string
 	cam       *Camera
 	log       Logger
-	imageKind ImageKind
+	component Component
 	mu        sync.Mutex
 	closed    bool
 }
@@ -33,7 +33,7 @@ func Open(ctx context.Context, ip string, opts ...Option) (Device, error) {
 	if ip == "" {
 		return nil, errors.New("gige: ip address must not be empty")
 	}
-	cfg := openConfig{logger: NopLogger{}, timeout: 2 * time.Second, imageKind: ImageColor}
+	cfg := openConfig{logger: NopLogger{}, timeout: 2 * time.Second, component: ComponentColor}
 	for _, o := range opts {
 		o(&cfg)
 	}
@@ -44,11 +44,11 @@ func Open(ctx context.Context, ip string, opts ...Option) (Device, error) {
 	if err != nil {
 		return nil, err
 	}
-	kind := cfg.imageKind
-	if kind == ImageUnknown {
-		kind = ImageColor
+	kind := cfg.component
+	if kind == ComponentUnknown {
+		kind = ComponentColor
 	}
-	return &device{ip: ip, cam: cam, log: cfg.logger, imageKind: kind}, nil
+	return &device{ip: ip, cam: cam, log: cfg.logger, component: kind}, nil
 }
 
 func (d *device) IP() string { return d.ip }
@@ -65,7 +65,7 @@ func (d *device) StartGrabber(ctx context.Context, opts ...GrabOption) (Grabber,
 		return nil, err
 	}
 	s := NewFromCamera(d.cam)
-	s.imageKind = d.imageKind
+	s.component = d.component
 	for _, o := range opts {
 		o(s)
 	}

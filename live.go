@@ -28,11 +28,11 @@ func WithOnSample(fn func(Sample)) LiveOption {
 	return func(l *Live) { l.onSample = fn }
 }
 
-// WithLiveImageKind selects which BSCF image Live grabs (color/depth/mono).
-func WithLiveImageKind(k ImageKind) LiveOption {
+// WithLiveComponent selects which BSCF/SFNC component Live grabs (color/depth/mono).
+func WithLiveComponent(c Component) LiveOption {
 	return func(l *Live) {
-		if k != ImageUnknown {
-			l.imageKind = k
+		if c != ComponentUnknown {
+			l.component = c
 		}
 	}
 }
@@ -43,7 +43,7 @@ type Live struct {
 	sink      FrameSink
 	onSample  func(Sample)
 	log       Logger
-	imageKind ImageKind
+	component Component
 
 	lifeMu  sync.Mutex
 	running bool
@@ -58,7 +58,7 @@ type Live struct {
 
 // NewLive builds a Live preview/capture loop over an already-opened Device.
 func NewLive(dev Device, opts ...LiveOption) *Live {
-	l := &Live{dev: dev, log: NopLogger{}, imageKind: ImageColor}
+	l := &Live{dev: dev, log: NopLogger{}, component: ComponentColor}
 	if lg, ok := dev.(hasLogger); ok {
 		if log := lg.Logger(); log != nil {
 			l.log = log
@@ -68,6 +68,29 @@ func NewLive(dev Device, opts ...LiveOption) *Live {
 		o(l)
 	}
 	return l
+}
+
+// Component returns the BSCF/SFNC component Live is decoding.
+func (l *Live) Component() Component {
+	if l == nil {
+		return ComponentUnknown
+	}
+	l.lifeMu.Lock()
+	defer l.lifeMu.Unlock()
+	return l.component
+}
+
+// SetComponent switches the BSCF/SFNC component for subsequent grabs (no reconnect).
+func (l *Live) SetComponent(c Component) {
+	if l == nil || c == ComponentUnknown {
+		return
+	}
+	l.lifeMu.Lock()
+	defer l.lifeMu.Unlock()
+	l.component = c
+	if l.grabber != nil {
+		l.grabber.SetComponent(c)
+	}
 }
 
 // Start begins the grab loop. Safe to call again after Stop (reopens grabber).
@@ -247,7 +270,7 @@ func (l *Live) loop(parent context.Context, stop, done chan struct{}) {
 		l.lifeMu.Lock()
 		g := l.grabber
 		if g == nil {
-			ng, err := l.dev.StartGrabber(parent, GrabImageKind(l.imageKind))
+			ng, err := l.dev.StartGrabber(parent, GrabComponent(l.component))
 			if err != nil {
 				l.lifeMu.Unlock()
 				acqOn = false
