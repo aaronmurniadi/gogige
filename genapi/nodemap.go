@@ -484,11 +484,11 @@ func (nm *NodeMap) writeIntReg(n *gcNode, v int64) error {
 		return nil
 	case 8:
 		var b [8]byte
-		binary.BigEndian.PutUint64(b[:], uint64(v))
+		deviceOrder(nm.port).PutUint64(b[:], uint64(v))
 		return nm.port.WriteMem(addr, b[:])
 	case 2:
 		var b [2]byte
-		binary.BigEndian.PutUint16(b[:], uint16(v))
+		deviceOrder(nm.port).PutUint16(b[:], uint16(v))
 		return nm.port.WriteMem(addr, b[:])
 	case 1:
 		return nm.port.WriteMem(addr, []byte{byte(v)})
@@ -505,13 +505,14 @@ func (nm *NodeMap) writeFloatReg(n *gcNode, v float64) error {
 	if err != nil {
 		return err
 	}
+	order := deviceOrder(nm.port)
 	if length >= 8 {
 		var b [8]byte
-		binary.BigEndian.PutUint64(b[:], math.Float64bits(v))
+		order.PutUint64(b[:], math.Float64bits(v))
 		return nm.port.WriteMem(addr, b[:])
 	}
 	var b [4]byte
-	binary.BigEndian.PutUint32(b[:], math.Float32bits(float32(v)))
+	order.PutUint32(b[:], math.Float32bits(float32(v)))
 	return nm.port.WriteMem(addr, b[:])
 }
 
@@ -540,4 +541,16 @@ func (nm *NodeMap) writeStringReg(n *gcNode, val string) error {
 func (nm *NodeMap) Has(name string) bool {
 	_, err := nm.lookup(name)
 	return err == nil
+}
+
+func deviceOrder(port gvcp.Port) binary.ByteOrder {
+	type orderer interface {
+		DeviceByteOrder() binary.ByteOrder
+	}
+	if o, ok := port.(orderer); ok {
+		if order := o.DeviceByteOrder(); order != nil {
+			return order
+		}
+	}
+	return binary.BigEndian
 }

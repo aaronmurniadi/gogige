@@ -24,9 +24,10 @@ type GVCP struct {
 	addr    *net.UDPAddr
 	timeout time.Duration
 
-	mu     sync.Mutex
-	reqID  uint16
-	closed bool
+	mu          sync.Mutex
+	reqID       uint16
+	closed      bool
+	deviceOrder binary.ByteOrder // non-bootstrap device regs (default BE)
 }
 
 // DialGVCP connects to a camera's GVCP endpoint (UDP 3956).
@@ -46,7 +47,13 @@ func DialGVCP(ip string, timeout time.Duration) (*GVCP, error) {
 		return nil, fmt.Errorf("gige: dial %s: %w", ip, err)
 	}
 	_ = conn.SetDeadline(time.Now().Add(timeout))
-	return &GVCP{conn: conn, addr: raddr, timeout: timeout, reqID: 1}, nil
+	return &GVCP{
+		conn:        conn,
+		addr:        raddr,
+		timeout:     timeout,
+		reqID:       1,
+		deviceOrder: binary.BigEndian,
+	}, nil
 }
 
 // Close releases the UDP socket and attempts a BYE.
@@ -108,7 +115,8 @@ func (g *GVCP) transact(req []byte, expectCmd uint16) ([]byte, error) {
 			continue
 		}
 		if cmd == gvcpCmdPendingAck {
-			_ = g.conn.SetDeadline(time.Now().Add(g.timeout))
+			wait := pendingAckTimeout(buf[gvcpHeaderSize:gvcpHeaderSize+size], g.timeout)
+			_ = g.conn.SetDeadline(time.Now().Add(wait))
 			continue
 		}
 		if pktType == gvcpPacketTypeError || (pktType&0x80) != 0 {
@@ -228,6 +236,8 @@ func (g *GVCP) TakeControl() error {
 	for attempt := 0; attempt < 8; attempt++ {
 		err = g.WriteReg(gvbsCCP, gvbsCCPControl)
 		if err == nil {
+			// Probe GenCP ImplementationEndianness once control is held.
+			_ = g.SyncImplementationEndianness()
 			return nil
 		}
 		if !strings.Contains(err.Error(), "ACCESS_DENIED") {

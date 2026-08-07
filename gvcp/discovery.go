@@ -11,18 +11,10 @@ import (
 	"time"
 )
 
-// DISCOVERY_ACK body mirrors ABRM from 0x0000 (GigE Vision). Minimum useful size
+// DISCOVERY_ACK body mirrors GigE Vision ABRM from 0x0000. Minimum useful size
 // covers through User-defined name (0x00E8 + 16).
 const (
 	discoveryAckMinSize = 0x00F8
-
-	abrmMACHigh      = 0x0008
-	abrmMACLow       = 0x000C
-	abrmCurrentIP    = 0x0024
-	abrmManufacturer = 0x0048
-	abrmModel        = 0x0068
-	abrmSerial       = 0x00D8
-	abrmUserName     = 0x00E8
 
 	abrmName32 = 32
 	abrmName16 = 16
@@ -201,19 +193,19 @@ func parseDiscoveryAck(payload []byte, sourceIP string) DiscoveredDevice {
 	if len(payload) < discoveryAckMinSize {
 		return d
 	}
-	hi := binary.BigEndian.Uint32(payload[abrmMACHigh:])
-	lo := binary.BigEndian.Uint32(payload[abrmMACLow:])
+	hi := binary.BigEndian.Uint32(payload[gevMACHigh:])
+	lo := binary.BigEndian.Uint32(payload[gevMACLow:])
 	d.MAC = fmt.Sprintf("%02x:%02x:%02x:%02x:%02x:%02x",
 		byte(hi>>8), byte(hi),
 		byte(lo>>24), byte(lo>>16), byte(lo>>8), byte(lo))
 
-	if ip4 := payload[abrmCurrentIP : abrmCurrentIP+4]; !(ip4[0] == 0 && ip4[1] == 0 && ip4[2] == 0 && ip4[3] == 0) {
+	if ip4 := payload[gevCurrentIP : gevCurrentIP+4]; !(ip4[0] == 0 && ip4[1] == 0 && ip4[2] == 0 && ip4[3] == 0) {
 		d.IP = net.IP(ip4).String()
 	}
-	d.Manufacturer = cString(payload[abrmManufacturer : abrmManufacturer+abrmName32])
-	d.Model = cString(payload[abrmModel : abrmModel+abrmName32])
-	d.Serial = cString(payload[abrmSerial : abrmSerial+abrmName16])
-	d.UserName = cString(payload[abrmUserName : abrmUserName+abrmName16])
+	d.Manufacturer = cString(payload[gevManufacturerName : gevManufacturerName+abrmName32])
+	d.Model = cString(payload[gevModelName : gevModelName+abrmName32])
+	d.Serial = cString(payload[gevSerialNumber : gevSerialNumber+abrmName16])
+	d.UserName = cString(payload[gevUserDefinedName : gevUserDefinedName+abrmName16])
 	return d
 }
 

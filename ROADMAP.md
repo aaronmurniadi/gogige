@@ -36,7 +36,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `gvcp/discovery.go`            | [x]    | Per-iface bind + directed/limited broadcast; DISCOVERY_ACK ABRM parse    |
 | `gvcp/heartbeat.go`            | [x]    | `PulseHeartbeat` + background tick at `HeartbeatTimeout/2`               |
 | `gvcp/packet.go`               | [x]    | Header encode + cmd constants                                            |
-| `gvcp/register_map.go`         | [x]    | Bootstrap / stream-channel addresses                                     |
+| `gvcp/register_map.go`         | [x]    | GenCP ABRM 0x0000–0x0250 + GigE Vision ABRM/SBRM                     |
 | `gvsp/frame.go`                | [x]    | Frame + reassembly helper                                                |
 | `gvsp/receiver.go`             | [~]    | UDP receive path; ordered payloads use pool (OOO still allocates)        |
 | `gvsp/payload.go`              | [~]    | BSCF vendor payload + `Sample`; Image/Multi-Part/GenDC still pending     |
@@ -98,9 +98,9 @@ Refs: `_references/GenCP/…`, architecture + `gvcp.mdc`. GigE Vision packet fra
 | DISCOVERY_CMD broadcast                                    | [x]    | Per-iface bind + directed + limited broadcast      |
 | Full DISCOVERY_ACK TLV parse                               | [x]    | ABRM dump in ACK: MAC, serial, manufacturer, model, user name |
 | Background heartbeat goroutine                             | [x]    | `HeartbeatTimeout/2`; pulse CCP                        |
-| `ImplementationEndianness` (`0x020C`) aware reg sync       | [ ]    | `0` = BE, `0xFFFFFFFF` = LE for device regs        |
-| PENDING_ACK extends read deadline from `temporary_timeout` | [~]    | Today: bump deadline; parse timeout field TBD      |
-| Bootstrap map completeness (`0x0000–0x0250`)               | [~]    | Subset in `register_map.go`; grow as features need |
+| `ImplementationEndianness` (`0x020C`) aware reg sync       | [x]    | Probe on TakeControl; ignore non-0/0xFFFFFFFF (GigE FirstURL overlap) |
+| PENDING_ACK extends read deadline from `temporary_timeout` | [x]    | GenCP Table 12: reserved(2)+timeout_ms(2); fallback to client timeout |
+| Bootstrap map completeness (`0x0000–0x0250`)               | [x]    | GenCP ABRM + GigE Vision ABRM/SBRM constants in `register_map.go` |
 
 ### Phase 2 — GVSP (+ GenDC 1.1, PFNC 2.4)
 
@@ -194,3 +194,4 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 - **2026-08-08** — Phase 1/2 practical slice: DISCOVERY_ACK ABRM parse, `gvcp.StartHeartbeat` (`HeartbeatTimeout/2`), `gvsp/buffer_pool.go` + `Frame.Release`.
 - **2026-08-08** — Phase 2 packet resend: `gvsp` gap tracking + hole-fill reassembly; `gvcp.EncodePacketResend` / `RequestResend`; Session wires resender.
 - **2026-08-08** — Phase 2 MTU/SCPS: `gvsp.PathMTU` + `PacketSizeForMTU`; `SO_RCVBUF` 16MiB with warn below 8MiB; acquisition RMW on `0x0D04`.
+- **2026-08-08** — Phase 1 complete: GenCP ABRM + GigE ABRM in `register_map.go`; PENDING_ACK `temporary_timeout`; `SyncImplementationEndianness` on TakeControl + GenApi device byte-order for WriteMem.

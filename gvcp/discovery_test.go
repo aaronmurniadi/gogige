@@ -10,13 +10,13 @@ import (
 func TestParseDiscoveryAck(t *testing.T) {
 	payload := make([]byte, discoveryAckMinSize)
 	// MAC 00:11:22:33:44:55 → high=0x0011, low=0x22334455
-	binary.BigEndian.PutUint32(payload[abrmMACHigh:], 0x00000011)
-	binary.BigEndian.PutUint32(payload[abrmMACLow:], 0x22334455)
-	copy(payload[abrmCurrentIP:], net.IPv4(192, 168, 1, 42).To4())
-	copy(payload[abrmManufacturer:], []byte("AcmeCam\x00"))
-	copy(payload[abrmModel:], []byte("Model-X\x00"))
-	copy(payload[abrmSerial:], []byte("SN123\x00"))
-	copy(payload[abrmUserName:], []byte("line1\x00"))
+	binary.BigEndian.PutUint32(payload[gevMACHigh:], 0x00000011)
+	binary.BigEndian.PutUint32(payload[gevMACLow:], 0x22334455)
+	copy(payload[gevCurrentIP:], net.IPv4(192, 168, 1, 42).To4())
+	copy(payload[gevManufacturerName:], []byte("AcmeCam\x00"))
+	copy(payload[gevModelName:], []byte("Model-X\x00"))
+	copy(payload[gevSerialNumber:], []byte("SN123\x00"))
+	copy(payload[gevUserDefinedName:], []byte("line1\x00"))
 
 	d := parseDiscoveryAck(payload, "10.0.0.1")
 	if d.IP != "192.168.1.42" {
