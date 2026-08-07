@@ -31,7 +31,7 @@ func main() {
 	component := flag.String("component", "color", "component: color|depth|mono")
 	flag.Parse()
 
-	kind, err := gige.ParseComponent(*component)
+	kind, err := gogige.ParseComponent(*component)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -42,7 +42,7 @@ func main() {
 	}
 
 	ctx := context.Background()
-	dev, err := gige.Open(ctx, cameraIP)
+	dev, err := gogige.Open(ctx, cameraIP)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -57,7 +57,7 @@ func main() {
 	}
 	mux.Handle("/", http.FileServer(http.FS(static)))
 
-	live := gige.NewLive(dev, gige.WithSink(hub), gige.WithLiveComponent(kind))
+	live := gogige.NewLive(dev, gogige.WithSink(hub), gogige.WithLiveComponent(kind))
 	live.Start(ctx)
 	defer live.Stop()
 
@@ -147,13 +147,13 @@ func (h *hub) serveWS(w http.ResponseWriter, r *http.Request) {
 	h.mu.Unlock()
 }
 
-var _ gige.FrameSink = (*hub)(nil)
+var _ gogige.FrameSink = (*hub)(nil)
 
 func resolveIP(ip string) (string, error) {
 	if ip != "" {
 		return ip, nil
 	}
-	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	devs, err := gogige.Discover(context.Background(), 2*time.Second)
 	if err != nil {
 		return "", err
 	}

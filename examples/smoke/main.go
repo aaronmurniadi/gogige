@@ -123,7 +123,7 @@ func phase2Stream(ip string, n int, outDir string, liveFor time.Duration) error 
 	ctx, cancel := context.WithTimeout(context.Background(), 60*time.Second)
 	defer cancel()
 
-	dev, err := gige.Open(ctx, ip, gige.WithLogger(printLogger{}), gige.WithTimeout(3*time.Second))
+	dev, err := gogige.Open(ctx, ip, gogige.WithLogger(printLogger{}), gogige.WithTimeout(3*time.Second))
 	if err != nil {
 		return fmt.Errorf("Open: %w", err)
 	}
@@ -187,7 +187,7 @@ func phase2Stream(ip string, n int, outDir string, liveFor time.Duration) error 
 	if liveFor > 0 {
 		fmt.Printf("Live OnSample for %s…\n", liveFor)
 		var count int
-		live := gige.NewLive(dev, gige.WithOnSample(func(s gige.Sample) {
+		live := gogige.NewLive(dev, gogige.WithOnSample(func(s gogige.Sample) {
 			count++
 			if count <= 3 || count%10 == 0 {
 				fmt.Printf("  live[%d] packs=%d L=%.2f\n", count, s.PackCount, s.Length)
@@ -222,7 +222,7 @@ func resolveIP(ip string) (string, error) {
 	if ip != "" {
 		return ip, nil
 	}
-	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	devs, err := gogige.Discover(context.Background(), 2*time.Second)
 	if err != nil {
 		return "", err
 	}

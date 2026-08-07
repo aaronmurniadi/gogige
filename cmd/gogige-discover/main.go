@@ -17,7 +17,7 @@ func main() {
 	timeout := flag.Duration("timeout", 2*time.Second, "how long to wait for DISCOVERY_ACK")
 	flag.Parse()
 
-	devs, err := gige.Discover(context.Background(), *timeout)
+	devs, err := gogige.Discover(context.Background(), *timeout)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "discover: %v\n", err)
 		os.Exit(1)

@@ -1,4 +1,4 @@
-package gige
+package gogige
 
 import "context"
 

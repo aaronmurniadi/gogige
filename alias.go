@@ -1,4 +1,4 @@
-package gige
+package gogige
 
 import (
 	"github.com/aaronmurniadi/gogige/genapi"

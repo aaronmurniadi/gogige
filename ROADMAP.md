@@ -77,7 +77,7 @@ for frame := range stream.Frames() { frame.Release() }
 
 | Item                                  | Status | Notes                                                       |
 | ------------------------------------- | ------ | ----------------------------------------------------------- |
-| Package name `gogige` (today: `gige`) | [ ]    | Align import path package name                              |
+| Package name `gogige` (was `gige`)    | [x]    | Renamed; name now matches import path                       |
 | `OpenDevice`                          | [ ]    | Today: `Open` → `Device`                                    |
 | `SetInteger` / `SetEnum` on camera    | [~]    | Exists as `SetIntFeature` / `SetStringFeature` / `Features` |
 | `StartStream` + `<-chan *Frame`       | [ ]    | Today: `StartGrabber` + `Grab`                              |
@@ -198,3 +198,4 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 - **2026-08-08** — Phase 1 complete: GenCP ABRM + GigE ABRM in `register_map.go`; PENDING_ACK `temporary_timeout`; `SyncImplementationEndianness` on TakeControl + GenApi device byte-order for WriteMem.
 - **2026-08-08** — Examples: `examples/smoke`, `examples/features`; CLI `cmd/gogige-stream`.
 - **2026-08-08** — BSCF/SFNC `Component` (color/depth/mono): parse all component blocks; `GrabComponent` / `WithComponent` / `SetComponent`; Mono16 JPEG preview.
+- **2026-08-08** — Root package `gige` → `gogige`; name now matches import path. Phase 4 happy path documented in `doc.go` (`OpenDevice` / `StartStream` / `Frames`).

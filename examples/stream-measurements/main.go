@@ -30,7 +30,7 @@ func main() {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt)
 	defer stop()
 
-	dev, err := gige.Open(ctx, cameraIP)
+	dev, err := gogige.Open(ctx, cameraIP)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -63,7 +63,7 @@ func main() {
 }
 
 // Caller-owned filter — the library does not validate measurements.
-func okMeasurement(s gige.Sample, requireStable bool) bool {
+func okMeasurement(s gogige.Sample, requireStable bool) bool {
 	if s.PackCount != 1 || s.Length <= 0 || s.WidthMm <= 0 || s.HeightMm <= 0 {
 		return false
 	}
@@ -74,7 +74,7 @@ func resolveIP(ip string) (string, error) {
 	if ip != "" {
 		return ip, nil
 	}
-	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	devs, err := gogige.Discover(context.Background(), 2*time.Second)
 	if err != nil {
 		return "", err
 	}

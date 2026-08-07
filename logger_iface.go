@@ -1,4 +1,4 @@
-package gige
+package gogige
 
 // Logger is a minimal structured logger. Default is a no-op.
 type Logger interface {

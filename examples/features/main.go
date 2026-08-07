@@ -35,7 +35,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	cam, err := gige.Connect(ip)
+	cam, err := gogige.Connect(ip)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -45,7 +45,7 @@ func main() {
 		fmt.Printf("Has(%s)=%v\n", name, cam.Has(name))
 	}
 	for _, pair := range sets {
-		if err := gige.ApplyControlPair(cam, pair); err != nil {
+		if err := gogige.ApplyControlPair(cam, pair); err != nil {
 			log.Fatalf("set %s: %v", pair, err)
 		}
 		fmt.Printf("set %s: ok\n", pair)
@@ -70,7 +70,7 @@ func resolveIP(ip string) (string, error) {
 	if ip != "" {
 		return ip, nil
 	}
-	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	devs, err := gogige.Discover(context.Background(), 2*time.Second)
 	if err != nil {
 		return "", err
 	}

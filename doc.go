@@ -1,12 +1,19 @@
-// Package gige is a pure-Go GigE Vision client.
+// Package gogige is a pure-Go GigE Vision client.
 //
-// Happy path (root package):
+// Happy path (Phase 4):
 //
-//	dev, err := gige.Open(ctx, "192.168.1.10")
-//	defer dev.Close()
-//	g, err := dev.StartGrabber(ctx)
-//	defer g.Close()
-//	sample, err := g.Grab(ctx)
+//	cam, err := gogige.OpenDevice(ctx, "192.168.1.10")
+//	defer cam.Close()
+//	_ = cam.SetInteger("Width", 1920)
+//	_ = cam.SetEnum("PixelFormat", "Mono8")
+//	stream, err := cam.StartStream(ctx)
+//	defer stream.Stop()
+//	for frame := range stream.Frames() {
+//		// use frame.Data
+//		frame.Release()
+//	}
+//
+// Sample/JPEG path (Huaray BSCF): Device.StartGrabber → Grabber.Grab.
 //
 // Protocol packages:
 //   - gvcp — GigE Vision Control Protocol
@@ -15,4 +22,4 @@
 //
 // Device discovery (broadcast) lives on this root package: Discover.
 // Preview sinks are app-owned (see examples/websocket-stream).
-package gige // import "github.com/aaronmurniadi/gogige"
+package gogige // import "github.com/aaronmurniadi/gogige"

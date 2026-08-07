@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2026-08-08
+
+### Changed
+- Rename root package `gige` → `gogige` so the package name matches its import path `github.com/aaronmurniadi/gogige` (breaking: importers must update `gige.X` → `gogige.X`)
+- `doc.go` now documents the Phase 4 happy path (`gogige.OpenDevice` / `StartStream` / `Frames`) as the primary API; Grabber/JPEG path noted as BSCF-specific
+- All examples and `cmd/` CLIs updated to the new package name
+
 ## [0.5.0] - 2026-08-08
 
 ### Changed

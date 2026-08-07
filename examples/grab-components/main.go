@@ -33,7 +33,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), *timeout+3*time.Second)
 	defer cancel()
 
-	dev, err := gige.Open(ctx, ip, gige.WithTimeout(*timeout))
+	dev, err := gogige.Open(ctx, ip, gogige.WithTimeout(*timeout))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -75,7 +75,7 @@ func resolveIP(ip string) (string, error) {
 	if ip != "" {
 		return ip, nil
 	}
-	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	devs, err := gogige.Discover(context.Background(), 2*time.Second)
 	if err != nil {
 		return "", err
 	}

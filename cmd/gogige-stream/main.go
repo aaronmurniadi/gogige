@@ -23,7 +23,7 @@ func main() {
 	component := flag.String("component", "color", "component: color|depth|mono")
 	flag.Parse()
 
-	kind, err := gige.ParseComponent(*component)
+	kind, err := gogige.ParseComponent(*component)
 	if err != nil {
 		fatal(err)
 	}
@@ -39,13 +39,13 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(*n+2)*(*timeout))
 	defer cancel()
 
-	dev, err := gige.Open(ctx, ip, gige.WithLogger(stdioLog{}), gige.WithTimeout(*timeout))
+	dev, err := gogige.Open(ctx, ip, gogige.WithLogger(stdioLog{}), gogige.WithTimeout(*timeout))
 	if err != nil {
 		fatal(err)
 	}
 	defer dev.Close()
 
-	g, err := dev.StartGrabber(ctx, gige.GrabComponent(kind))
+	g, err := dev.StartGrabber(ctx, gogige.GrabComponent(kind))
 	if err != nil {
 		fatal(err)
 	}
@@ -87,7 +87,7 @@ func resolveIP(ip string) (string, error) {
 	if ip != "" {
 		return ip, nil
 	}
-	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	devs, err := gogige.Discover(context.Background(), 2*time.Second)
 	if err != nil {
 		return "", err
 	}

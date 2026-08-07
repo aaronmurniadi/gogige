@@ -39,7 +39,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
-	jpeg, err := gige.GrabJPEG(ctx, cameraIP)
+	jpeg, err := gogige.GrabJPEG(ctx, cameraIP)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -53,7 +53,7 @@ func resolveIP(ip string) (string, error) {
 	if ip != "" {
 		return ip, nil
 	}
-	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	devs, err := gogige.Discover(context.Background(), 2*time.Second)
 	if err != nil {
 		return "", err
 	}
@@ -64,7 +64,7 @@ func resolveIP(ip string) (string, error) {
 	return devs[0].IP, nil
 }
 
-func deviceLabel(d gige.DeviceInfo) string {
+func deviceLabel(d gogige.DeviceInfo) string {
 	s := d.Manufacturer
 	if d.Model != "" {
 		if s != "" {

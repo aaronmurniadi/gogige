@@ -29,7 +29,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
 
-	dev, err := gige.Open(ctx, cameraIP)
+	dev, err := gogige.Open(ctx, cameraIP)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -45,7 +45,7 @@ func resolveIP(ip string) (string, error) {
 	if ip != "" {
 		return ip, nil
 	}
-	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	devs, err := gogige.Discover(context.Background(), 2*time.Second)
 	if err != nil {
 		return "", err
 	}
@@ -56,7 +56,7 @@ func resolveIP(ip string) (string, error) {
 	return devs[0].IP, nil
 }
 
-func configureVolumeTCP(dev gige.Device, tcpPort int64) error {
+func configureVolumeTCP(dev gogige.Device, tcpPort int64) error {
 	if tcpPort <= 0 {
 		tcpPort = 3100
 	}
@@ -92,7 +92,7 @@ func configureVolumeTCP(dev gige.Device, tcpPort int64) error {
 	return nil
 }
 
-func applyFeaturePair(f gige.Features, pair string) error {
+func applyFeaturePair(f gogige.Features, pair string) error {
 	eq := strings.IndexByte(pair, '=')
 	if eq <= 0 || eq == len(pair)-1 {
 		return fmt.Errorf("bad control pair %q", pair)
