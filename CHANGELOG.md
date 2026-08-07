@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.1] - 2026-08-08
+
+### Changed
+- Consolidate agent rules: merge `.agents/rules/*.mdc` (architecture, package layout, GVCP/GVSP/GenApi phases, Go conventions, perf guardrails) into a single root `AGENTS.md`; `ROADMAP.md` refs now point at the corresponding `AGENTS.md` sections
+
 ## [0.6.0] - 2026-08-08
 
 ### Changed
@@ -70,4 +75,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - GigE Vision local references: `GigE_Vision_for_Realtime_MV_11052010.pdf`, `GigE_Features_Reference.pdf`
 - Root `.gitignore` for example camera dumps (`*.xml` / `*.jpg` / `*.log` under `examples/`)
-- Cursor skill `.cursor/skills/commit-changes` for topic-split commits, changelog, roadmap, and version bumps
+- Cursor skill `.agents/skills/commit-changes` for topic-split commits, changelog, roadmap, and version bumps

@@ -1,6 +1,6 @@
 # ROADMAP
 
-Progress tracker against `.cursor/rules` and the EMVA/AIA specs under `_references/` (gitignored).
+Progress tracker against `AGENTS.md` and the EMVA/AIA specs under `_references/` (gitignored).
 
 Legend: `[x]` done · `[ ]` not started · `[~]` partial
 
@@ -89,7 +89,7 @@ for frame := range stream.Frames() { frame.Release() }
 
 ### Phase 1 — GVCP / GenCP 1.3.1
 
-Refs: `_references/GenCP/…`, architecture + `gvcp.mdc`. GigE Vision packet framing still needs the AIA PDF.
+Refs: `_references/GenCP/…`, architecture + GVCP section of `AGENTS.md`. GigE Vision packet framing still needs the AIA PDF.
 
 | Item                                                       | Status | Spec cue                                           |
 | ---------------------------------------------------------- | ------ | -------------------------------------------------- |
@@ -104,7 +104,7 @@ Refs: `_references/GenCP/…`, architecture + `gvcp.mdc`. GigE Vision packet fra
 
 ### Phase 2 — GVSP (+ GenDC 1.1, PFNC 2.4)
 
-Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, `gvsp.mdc`. Payload-type IDs also appear in `GenTL.h` (`PAYLOAD_TYPE_*`).
+Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, GVSP section of `AGENTS.md`. Payload-type IDs also appear in `GenTL.h` (`PAYLOAD_TYPE_*`).
 
 | Item                                         | Status | Spec cue                                                |
 | -------------------------------------------- | ------ | ------------------------------------------------------- |
@@ -145,7 +145,7 @@ Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, `gvsp.mdc`. Payload-type
 
 ### Phase 3 — GenApi 2.1.1 (+ SFNC 2.7 naming)
 
-Refs: `_references/GenApi/GenICam_Standard_v2_1_1.pdf`, `_references/SFNC/GenICam_SFNC_v2_7.pdf`, `genapi.mdc`.
+Refs: `_references/GenApi/GenICam_Standard_v2_1_1.pdf`, `_references/SFNC/GenICam_SFNC_v2_7.pdf`, GenApi section of `AGENTS.md`.
 
 | Item                                                             | Status     | Spec cue                                                                     |
 | ---------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------- | ---- | --- | ------------------------ |
