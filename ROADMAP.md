@@ -51,7 +51,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `gentl/cti.go`                 | [ ]    | Optional GenTL `.cti` loader (`dlopen` / CGO)                            |
 | `gentl/types.go`               | [ ]    | Mirror `GenTL.h` handles / enums                                         |
 | `cmd/gogige-discover/`         | [x]    | CLI discovery utility                                                    |
-| `cmd/gogige-stream/`           | [ ]    | CLI stream capture utility                                               |
+| `cmd/gogige-stream/`           | [x]    | CLI N-frame JPEG + BSCF measurements                                     |
 | `camera.go`                    | [x]    | High-level `Camera` + feature setters                                    |
 | `discovery.go`                 | [x]    | Root `Discover` → `gvcp.Discover`                                        |
 | `stream.go`                    | [~]    | `Session` / Grabber; not yet `StartStream` + `Frames()` channel API      |
@@ -167,7 +167,7 @@ Refs: `_references/GenTL/GenTL.h`, `GenICam_GenTL_1_6.pdf`, GenTL SFNC 1.2.
 | ----------------------------------------- | ------ | ----------------------- |
 | Channel stream API + buffer release       | [ ]    | Phase 4 consumer API    |
 | Optional `gentl/` CGO producer / consumer | [ ]    | See module ladder below |
-| `cmd/` CLIs                               | [ ]    | discover / stream       |
+| `cmd/` CLIs                               | [~]    | discover done; stream done                  |
 
 #### GenTL module ladder (`GenTL.h`)
 
@@ -195,3 +195,4 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 - **2026-08-08** — Phase 2 packet resend: `gvsp` gap tracking + hole-fill reassembly; `gvcp.EncodePacketResend` / `RequestResend`; Session wires resender.
 - **2026-08-08** — Phase 2 MTU/SCPS: `gvsp.PathMTU` + `PacketSizeForMTU`; `SO_RCVBUF` 16MiB with warn below 8MiB; acquisition RMW on `0x0D04`.
 - **2026-08-08** — Phase 1 complete: GenCP ABRM + GigE ABRM in `register_map.go`; PENDING_ACK `temporary_timeout`; `SyncImplementationEndianness` on TakeControl + GenApi device byte-order for WriteMem.
+- **2026-08-08** — Examples: `examples/smoke`, `examples/features`; CLI `cmd/gogige-stream`.

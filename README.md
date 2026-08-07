@@ -71,11 +71,14 @@ sample := live.LatestSample() // filter/validate in the app
 
 Omit `-ip` to pick the first camera from GigE discovery (or pass `-ip` explicitly).
 
+- Full stack smoke (CCP/heartbeat/XML/stream/pause/live): [`examples/smoke`](examples/smoke)
+- GenICam `Has` / `ApplyControlPair` / `Execute`: [`examples/features`](examples/features)
 - One-shot color JPEG to disk: [`examples/grab`](examples/grab)
 - Stream measurements only: [`examples/stream-measurements`](examples/stream-measurements)
 - Dump GenICam XML: [`examples/dump-xml`](examples/dump-xml)
 - Configure volume TCP preset: [`examples/configure-volume-tcp`](examples/configure-volume-tcp)
 - Browser live stream: [`examples/websocket-stream`](examples/websocket-stream)
 - CLI discover: [`cmd/gogige-discover`](cmd/gogige-discover)
+- CLI N-frame capture: [`cmd/gogige-stream`](cmd/gogige-stream)
 
 Logging: `gige.WithLogger(...)` or `gige.Zerolog(z)`. Default is a no-op.
