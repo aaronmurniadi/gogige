@@ -20,7 +20,7 @@ Target versions from architecture rules, mapped to local artifacts:
 | SFNC             | 2.7       | `_references/SFNC/GenICam_SFNC_v2_7.pdf`                                          | Feature names (`AcquisitionStart`, `GevSCPSPacketSize`, …) |
 | PFNC             | 2.4       | `_references/SFNC/PFNC.h`, `GenICam_PFNC_2_4.pdf`, `GenICamPixelFormatValues.pdf` | `internal/color`, pixel format IDs                         |
 | CLProtocol       | 1.2       | `_references/GenApi/GenICam_CLProtocol_Standard_v1.2.pdf`                         | Out of scope (Camera Link)                                 |
-| GigE Vision      | 2.0 / 2.1 | **missing from `_references/`**                                                   | `gvcp/`, `gvsp/` — add AIA GigE Vision PDF when available  |
+| GigE Vision      | 2.0 / 2.1 | `_references/GigE_Vision_for_Realtime_MV_11052010.pdf`, `GigE_Features_Reference.pdf` | `gvcp/`, `gvsp/`                                           |
 
 Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL/GenTL.h`, `SFNC/PFNC.h`.
 
