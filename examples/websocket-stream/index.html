@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>gogige live stream</title>
+  <style>
+    :root { color-scheme: dark; font-family: ui-sans-serif, system-ui, sans-serif; }
+    body { margin: 0; background: #111; color: #eee; min-height: 100vh; display: grid; place-items: center; }
+    main { width: min(96vw, 1280px); }
+    h1 { font-size: 1rem; font-weight: 600; margin: 0 0 .75rem; opacity: .8; }
+    .stage { background: #000; border: 1px solid #333; aspect-ratio: 16 / 10; display: grid; place-items: center; overflow: hidden; }
+    img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    .bar { display: flex; gap: .5rem; align-items: center; margin-top: .75rem; flex-wrap: wrap; }
+    button { background: #222; color: #eee; border: 1px solid #444; padding: .4rem .8rem; cursor: pointer; }
+    button:hover { background: #333; }
+    #status { font-size: .85rem; opacity: .7; margin-left: auto; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>gogige websocket stream</h1>
+    <div class="stage"><img id="frame" alt="camera frame" /></div>
+    <div class="bar">
+      <button id="freeze" type="button">Freeze</button>
+      <button id="resume" type="button">Resume</button>
+      <span id="status">connecting…</span>
+    </div>
+  </main>
+  <script>
+    const img = document.getElementById("frame");
+    const status = document.getElementById("status");
+    const proto = location.protocol === "https:" ? "wss:" : "ws:";
+    const ws = new WebSocket(proto + "//" + location.host + "/ws");
+    ws.binaryType = "arraybuffer";
+    let url;
+
+    ws.onopen = () => { status.textContent = "live"; };
+    ws.onclose = () => { status.textContent = "disconnected"; };
+    ws.onerror = () => { status.textContent = "error"; };
+    ws.onmessage = (ev) => {
+      if (typeof ev.data === "string") {
+        status.textContent = ev.data.includes("freeze") ? "frozen" : "live";
+        return;
+      }
+      const blob = new Blob([ev.data], { type: "image/jpeg" });
+      if (url) URL.revokeObjectURL(url);
+      url = URL.createObjectURL(blob);
+      img.src = url;
+    };
+
+    document.getElementById("freeze").onclick = () => {
+      ws.send("freeze");
+      status.textContent = "frozen";
+    };
+    document.getElementById("resume").onclick = () => {
+      ws.send("resume");
+      status.textContent = "live";
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+---
+description: Enforce gogige package and directory layout
+alwaysApply: true
+---
+
+# Package Layout
+
+Enforce the following project package layout:
+
+```
+gogige/
+├── .cursor/
+│   └── rules/
+├── cmd/
+│   ├── gogige-discover/         # CLI discovery utility
+│   └── gogige-stream/           # CLI stream capture utility
+├── gvcp/                        # GigE Vision Control Protocol (GenCP)
+│   ├── client.go                # Control channel client, register read/write
+│   ├── discovery.go             # UDP broadcast DISCOVERY_CMD and parser
+│   ├── heartbeat.go             # Background heartbeat maintenance thread
+│   ├── packet.go                # GVCP packet serialization / deserialization
+│   └── register_map.go          # Device Bootstrap Register Map (ABRM/SBRM)
+├── gvsp/                        # GigE Vision Streaming Protocol
+│   ├── buffer_pool.go           # Lock-free/ring frame buffer management
+│   ├── frame.go                 # Frame construction & metadata handling
+│   ├── payload.go               # Payload parsing (Image, Multi-Part, GenDC)
+│   ├── receiver.go              # Hot-path UDP frame receiver (zero-alloc)
+│   └── resend.go                # Packet resend logic (RESEND_CMD generation)
+├── genapi/                      # GenICam GenApi XML Module
+│   ├── camera_description.go    # Manifest parsing & zip/deflate decompression
+│   ├── evaluator.go             # SwissKnife / IntSwissKnife expression parser
+│   ├── node.go                  # Core Node interface and attributes
+│   ├── nodemap.go               # GenApi NodeMap tree structure
+│   ├── types.go                 # Node types (IntReg, MaskedInt, Category, etc.)
+│   └── port.go                  # Port binding GenApi nodes -> GVCP client
+├── gentl/                       # Optional GenTL Producer/Consumer CGO bindings
+│   ├── cti.go                   # .cti shared library interface loader
+│   └── types.go                 # GenTL C-interface bindings
+├── camera.go                    # High-Level Camera abstraction API
+├── discovery.go                 # High-Level Network Discovery API
+├── stream.go                    # High-Level Frame Stream Channel API
+├── options.go                   # Functional Option patterns for gogige Config
+├── go.mod
+└── go.sum
+```
+
+Target layout is enforced for protocol packages (`gvcp/`, `gvsp/`, `genapi/`) and root high-level files (`camera.go`, `discovery.go`, `stream.go`, `options.go`). Track missing files and Phase 4 API gaps in `ROADMAP.md`. Prefer target names for all new code; do not reintroduce `control/` or `vision/gvsp`.
