@@ -1,6 +1,7 @@
 // Live camera preview over WebSocket, with a browser page at /.
 //
-//	go run . -ip 192.168.1.10
+//	go run .                  # discover first camera
+//	go run . -ip 192.168.1.108
 //
 // Open http://127.0.0.1:8080/ — JPEG frames on /ws; send text "freeze"/"resume".
 package main
@@ -9,6 +10,7 @@ import (
 	"context"
 	"embed"
 	"flag"
+	"fmt"
 	"io/fs"
 	"log"
 	"net/http"
@@ -23,12 +25,17 @@ import (
 var content embed.FS
 
 func main() {
-	ip := flag.String("ip", "127.0.0.1", "camera IP")
+	ip := flag.String("ip", "", "camera IP (empty = first GigE discovery hit)")
 	addr := flag.String("addr", "127.0.0.1:8080", "HTTP listen address")
 	flag.Parse()
 
+	cameraIP, err := resolveIP(*ip)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	ctx := context.Background()
-	dev, err := gige.Open(ctx, *ip)
+	dev, err := gige.Open(ctx, cameraIP)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -134,3 +141,18 @@ func (h *hub) serveWS(w http.ResponseWriter, r *http.Request) {
 }
 
 var _ gige.FrameSink = (*hub)(nil)
+
+func resolveIP(ip string) (string, error) {
+	if ip != "" {
+		return ip, nil
+	}
+	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	if err != nil {
+		return "", err
+	}
+	if len(devs) == 0 {
+		return "", fmt.Errorf("no cameras found; pass -ip")
+	}
+	log.Printf("discovered %s", devs[0].IP)
+	return devs[0].IP, nil
+}

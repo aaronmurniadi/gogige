@@ -1,6 +1,7 @@
 // Apply the Huaray volume-camera TCP transfer control preset.
 //
-//	go run . -ip 192.168.1.10 -tcp 3100
+//	go run .                  # discover first camera
+//	go run . -ip 192.168.1.108 -tcp 3100
 package main
 
 import (
@@ -16,14 +17,19 @@ import (
 )
 
 func main() {
-	ip := flag.String("ip", "192.168.1.10", "camera IP")
+	ip := flag.String("ip", "", "camera IP (empty = first GigE discovery hit)")
 	tcp := flag.Int64("tcp", 3100, "TCP result port")
 	flag.Parse()
+
+	cameraIP, err := resolveIP(*ip)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
 
-	dev, err := gige.Open(ctx, *ip)
+	dev, err := gige.Open(ctx, cameraIP)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -32,7 +38,22 @@ func main() {
 	if err := configureVolumeTCP(dev, *tcp); err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("configured %s tcp=%d\n", *ip, *tcp)
+	fmt.Printf("configured %s tcp=%d\n", cameraIP, *tcp)
+}
+
+func resolveIP(ip string) (string, error) {
+	if ip != "" {
+		return ip, nil
+	}
+	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	if err != nil {
+		return "", err
+	}
+	if len(devs) == 0 {
+		return "", fmt.Errorf("no cameras found; pass -ip")
+	}
+	fmt.Printf("discovered %s\n", devs[0].IP)
+	return devs[0].IP, nil
 }
 
 func configureVolumeTCP(dev gige.Device, tcpPort int64) error {

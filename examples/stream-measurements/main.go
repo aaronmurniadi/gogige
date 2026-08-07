@@ -1,6 +1,7 @@
 // Stream volume measurements in a loop (no image output).
 //
-//	go run . -ip 192.168.1.10
+//	go run .                  # discover first camera
+//	go run . -ip 192.168.1.108
 package main
 
 import (
@@ -16,15 +17,20 @@ import (
 )
 
 func main() {
-	ip := flag.String("ip", "192.168.1.10", "camera IP")
+	ip := flag.String("ip", "", "camera IP (empty = first GigE discovery hit)")
 	validOnly := flag.Bool("valid", false, "print only single-pack readings with positive dimensions")
 	stable := flag.Bool("stable", false, "with -valid, also require Stable")
 	flag.Parse()
 
+	cameraIP, err := resolveIP(*ip)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt)
 	defer stop()
 
-	dev, err := gige.Open(ctx, *ip)
+	dev, err := gige.Open(ctx, cameraIP)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -62,4 +68,19 @@ func okMeasurement(s gige.Sample, requireStable bool) bool {
 		return false
 	}
 	return !requireStable || s.Stable
+}
+
+func resolveIP(ip string) (string, error) {
+	if ip != "" {
+		return ip, nil
+	}
+	devs, err := gige.Discover(context.Background(), 2*time.Second)
+	if err != nil {
+		return "", err
+	}
+	if len(devs) == 0 {
+		return "", fmt.Errorf("no cameras found; pass -ip")
+	}
+	fmt.Printf("discovered %s\n", devs[0].IP)
+	return devs[0].IP, nil
 }
