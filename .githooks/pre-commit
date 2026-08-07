@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Run gofmt + unit tests before allowing a commit.
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+export CGO_ENABLED="${CGO_ENABLED:-0}"
+
+staged_go="$(git diff --cached --name-only --diff-filter=ACM -- '*.go' || true)"
+if [[ -n "$staged_go" ]]; then
+	# shellcheck disable=SC2086
+	unformatted="$(gofmt -l $staged_go || true)"
+	if [[ -n "$unformatted" ]]; then
+		echo "gofmt needed on:" >&2
+		echo "$unformatted" >&2
+		echo "Run: gofmt -w <files>" >&2
+		exit 1
+	fi
+fi
+
+echo "pre-commit: go test ./..."
+go test ./...

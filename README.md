@@ -8,6 +8,14 @@ Pure-Go GigE Vision client (`package gige`) for Huaray/Dahua 3D volume cameras.
 go get github.com/aaronmurniadi/gogige
 ```
 
+## Pre-commit
+
+Once per clone, point git at the versioned hooks (runs `gofmt` on staged `.go` files, then `go test ./...`):
+
+```bash
+git config core.hooksPath .githooks
+```
+
 ## Quick start
 
 ```go
@@ -61,10 +69,13 @@ sample := live.LatestSample() // filter/validate in the app
 
 ## Examples
 
+Omit `-ip` to pick the first camera from GigE discovery (or pass `-ip` explicitly).
+
 - One-shot color JPEG to disk: [`examples/grab`](examples/grab)
 - Stream measurements only: [`examples/stream-measurements`](examples/stream-measurements)
 - Dump GenICam XML: [`examples/dump-xml`](examples/dump-xml)
 - Configure volume TCP preset: [`examples/configure-volume-tcp`](examples/configure-volume-tcp)
 - Browser live stream: [`examples/websocket-stream`](examples/websocket-stream)
+- CLI discover: [`cmd/gogige-discover`](cmd/gogige-discover)
 
 Logging: `gige.WithLogger(...)` or `gige.Zerolog(z)`. Default is a no-op.
