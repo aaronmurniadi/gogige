@@ -199,3 +199,4 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 - **2026-08-08** — Examples: `examples/smoke`, `examples/features`; CLI `cmd/gogige-stream`.
 - **2026-08-08** — BSCF/SFNC `Component` (color/depth/mono): parse all component blocks; `GrabComponent` / `WithComponent` / `SetComponent`; Mono16 JPEG preview.
 - **2026-08-08** — Root package `gige` → `gogige`; name now matches import path. Phase 4 happy path documented in `doc.go` (`OpenDevice` / `StartStream` / `Frames`).
+- **2026-08-08** — GenApi introspection reads (`Kind`, `EnumEntries`, `CurrentEnum`, `ReadInteger`, `ReadBoolean`) + `Session.GrabComponents`; new `examples/probe-streams` and `examples/configure-camera`.

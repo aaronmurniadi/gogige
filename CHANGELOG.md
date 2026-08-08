@@ -5,6 +5,18 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.0] - 2026-08-08
+
+### Added
+- GenICam introspection reads: `NodeMap.Kind`, `NodeMap.EnumEntries`, `NodeMap.CurrentEnum`, `NodeMap.ReadInteger`, `NodeMap.ReadBoolean`, plus `Camera.BooleanFeature` — probe feature kinds, enumeration entries/current value, and integer/boolean values without exposing the whole tree
+- `Session.GrabComponents`: receive one frame and return raw BSCF components (Data, dimensions, pixel format) without JPEG encoding; non-BSCF payloads come back as a single `ComponentUnknown` sample — enables probing what a camera actually streams
+- New example `examples/probe-streams`: probes stream features (pixel formats, payload/chunk/component), sets `PixelFormat`, grabs one frame, and reports per-component JPEG encodability
+- New example `examples/configure-camera` (replaces `configure-volume-tcp`): reads the Huaray volume-camera `ImageStoreEnable`, toggles it, then restores it via `BooleanFeature` + `ApplyControlPair`
+
+### Changed
+- All examples simplified to a single `main` with inline GigE discovery (dump-xml, features, grab, grab-components, smoke, stream-measurements, websocket-stream); removed `resolveIP`/`deviceLabel` helpers
+- `.gitignore` now ignores example and `cmd/` build artifacts generically instead of listing binaries one by one
+
 ## [0.6.1] - 2026-08-08
 
 ### Changed
