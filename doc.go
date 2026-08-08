@@ -16,10 +16,19 @@
 // Sample/JPEG path (Huaray BSCF): Device.StartGrabber → Grabber.Grab.
 //
 // Protocol packages:
-//   - gvcp — GigE Vision Control Protocol
+//   - gvcp — GigE Vision Control Protocol (GenCP)
 //   - genapi — GenICam GenApi XML / node map
 //   - gvsp — GigE Vision Streaming Protocol
+//   - gentl — GenTL constants (no CGO)
 //
-// Device discovery (broadcast) lives on this root package: Discover.
-// Preview sinks are app-owned (see examples/websocket-stream).
+// References
+//
+//   - GigE Vision for Realtime MV (2010)
+//   - GenICam GenCP Standard v1.3.1
+//   - GenICam Standard v2.1.1
+//   - GenICam GenApi Standard v2.1.1
+//   - GenICam GenTL Standard v1.6
+//   - GenICam GenDC Standard v1.1
+//   - GenICam SFNC v2.7
+//   - https://www.emva.org/standards-technical-documents/
 package gogige // import "github.com/aaronmurniadi/gogige"
