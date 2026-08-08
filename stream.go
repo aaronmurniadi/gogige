@@ -316,6 +316,28 @@ func (s *Session) GrabAll(ctx context.Context) ([]Sample, error) {
 	return out, nil
 }
 
+// GrabComponents receives one GVSP frame and returns its BSCF components without
+// JPEG encoding (raw Data, dimensions, pixel format). Non-BSCF payloads yield a
+// single Sample with ComponentUnknown and no JPEG. Useful to probe what a camera
+// is actually streaming beyond the JPEG color path.
+func (s *Session) GrabComponents(ctx context.Context) ([]Sample, error) {
+	data, meta, err := s.recvFrame(ctx)
+	if err != nil {
+		return nil, err
+	}
+	if gvsp.IsBSCF(data) {
+		return gvsp.SampleAllFromBSCF(data)
+	}
+	return []Sample{{
+		RawColor:    data,
+		Width:       meta.width,
+		Height:      meta.height,
+		PixelFormat: meta.pixelFormat,
+		Component:   ComponentUnknown,
+		PackCount:   -1,
+	}}, nil
+}
+
 type frameMeta struct {
 	width, height int
 	pixelFormat   uint32
