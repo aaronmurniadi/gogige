@@ -1,27 +1,36 @@
 package gogige
 
 import (
+	"context"
 	"fmt"
-
-	"github.com/rs/zerolog"
+	"log/slog"
 )
 
-type zerologAdapter struct{ z zerolog.Logger }
+type slogAdapter struct{ z *slog.Logger }
 
-// Zerolog wraps a zerolog.Logger as a Logger.
-func Zerolog(z zerolog.Logger) Logger { return zerologAdapter{z: z} }
+// Slog wraps a log/slog.Logger as a Logger. Pass slog.Default() or any handler:
+//
+//	gogige.Open(ctx, ip, gogige.WithLogger(gogige.Slog(slog.Default())))
+func Slog(z *slog.Logger) Logger { return slogAdapter{z: z} }
 
-func (a zerologAdapter) Debug(msg string, kv ...any) { a.event(a.z.Debug(), msg, kv...) }
-func (a zerologAdapter) Info(msg string, kv ...any)  { a.event(a.z.Info(), msg, kv...) }
-func (a zerologAdapter) Warn(msg string, kv ...any)  { a.event(a.z.Warn(), msg, kv...) }
-func (a zerologAdapter) Error(msg string, kv ...any) { a.event(a.z.Error(), msg, kv...) }
+func (a slogAdapter) Debug(msg string, kv ...any) { a.log(slog.LevelDebug, msg, kv...) }
+func (a slogAdapter) Info(msg string, kv ...any)  { a.log(slog.LevelInfo, msg, kv...) }
+func (a slogAdapter) Warn(msg string, kv ...any)  { a.log(slog.LevelWarn, msg, kv...) }
+func (a slogAdapter) Error(msg string, kv ...any) { a.log(slog.LevelError, msg, kv...) }
 
-func (a zerologAdapter) event(e *zerolog.Event, msg string, kv ...any) {
-	for i := 0; i+1 < len(kv); i += 2 {
-		key := fmt.Sprint(kv[i])
-		e = e.Interface(key, kv[i+1])
+func (a slogAdapter) log(level slog.Level, msg string, kv ...any) {
+	if a.z == nil {
+		return
 	}
-	e.Msg(msg)
+	attrs := make([]slog.Attr, 0, len(kv)/2)
+	for i := 0; i+1 < len(kv); i += 2 {
+		key, ok := kv[i].(string)
+		if !ok {
+			key = fmt.Sprint(kv[i])
+		}
+		attrs = append(attrs, slog.Any(key, kv[i+1]))
+	}
+	a.z.LogAttrs(context.Background(), level, msg, attrs...)
 }
 
-var _ Logger = zerologAdapter{}
+var _ Logger = slogAdapter{}
