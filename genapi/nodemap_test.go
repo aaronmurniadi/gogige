@@ -211,3 +211,116 @@ func TestIntrospection(t *testing.T) {
 		t.Fatal(err)
 	}
 }
+
+func TestConstraintPointers(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <IntReg Name="FrameRateReg"><Address>0x1000</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+  <IntReg Name="FrameRateMinReg"><Address>0x1004</Address><Length>4</Length><AccessMode>RO</AccessMode></IntReg>
+  <IntReg Name="FrameRateMaxReg"><Address>0x1008</Address><Length>4</Length><AccessMode>RO</AccessMode></IntReg>
+  <Integer Name="FrameRateMin"><pValue>FrameRateMinReg</pValue></Integer>
+  <Integer Name="FrameRateMax"><pValue>FrameRateMaxReg</pValue></Integer>
+  <Integer Name="FrameRate">
+    <pValue>FrameRateReg</pValue>
+    <pMin>FrameRateMin</pMin>
+    <pMax>FrameRateMax</pMax>
+  </Integer>
+  <Integer Name="StaticConstraints">
+    <Address>0x2000</Address>
+    <Length>4</Length>
+    <AccessMode>RW</AccessMode>
+    <Min>10</Min>
+    <Max>100</Max>
+    <Inc>5</Inc>
+  </Integer>
+</RegisterDescription>`
+
+	port := &memPort{regs: map[uint32]uint32{
+		0x1004: 1,   // FrameRateMin
+		0x1008: 120, // FrameRateMax
+	}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	// Test pMin pointer
+	minVal, hasMin, err := nm.GetMin("FrameRate")
+	if err != nil {
+		t.Fatalf("GetMin error: %v", err)
+	}
+	if !hasMin {
+		t.Fatal("FrameRate should have min constraint")
+	}
+	if minVal != 1 {
+		t.Fatalf("FrameRate min=%d, want 1", minVal)
+	}
+
+	// Test pMax pointer
+	maxVal, hasMax, err := nm.GetMax("FrameRate")
+	if err != nil {
+		t.Fatalf("GetMax error: %v", err)
+	}
+	if !hasMax {
+		t.Fatal("FrameRate should have max constraint")
+	}
+	if maxVal != 120 {
+		t.Fatalf("FrameRate max=%d, want 120", maxVal)
+	}
+
+	// Test pInc (should not have)
+	incVal, hasInc, err := nm.GetInc("FrameRate")
+	if err != nil {
+		t.Fatalf("GetInc error: %v", err)
+	}
+	if hasInc {
+		t.Fatalf("FrameRate should not have inc constraint, got %d", incVal)
+	}
+
+	// Test static constraints
+	staticMin, hasStaticMin, err := nm.GetMin("StaticConstraints")
+	if err != nil {
+		t.Fatalf("GetMin(StaticConstraints) error: %v", err)
+	}
+	if !hasStaticMin {
+		t.Fatal("StaticConstraints should have min")
+	}
+	if staticMin != 10 {
+		t.Fatalf("StaticConstraints min=%d, want 10", staticMin)
+	}
+
+	staticMax, hasStaticMax, err := nm.GetMax("StaticConstraints")
+	if err != nil {
+		t.Fatalf("GetMax(StaticConstraints) error: %v", err)
+	}
+	if !hasStaticMax {
+		t.Fatal("StaticConstraints should have max")
+	}
+	if staticMax != 100 {
+		t.Fatalf("StaticConstraints max=%d, want 100", staticMax)
+	}
+
+	staticInc, hasStaticInc, err := nm.GetInc("StaticConstraints")
+	if err != nil {
+		t.Fatalf("GetInc(StaticConstraints) error: %v", err)
+	}
+	if !hasStaticInc {
+		t.Fatal("StaticConstraints should have inc")
+	}
+	if staticInc != 5 {
+		t.Fatalf("StaticConstraints inc=%d, want 5", staticInc)
+	}
+
+	// Test GetConstraints combined
+	min, max, inc, hasMin, hasMax, hasInc, err := nm.GetConstraints("FrameRate")
+	if err != nil {
+		t.Fatalf("GetConstraints error: %v", err)
+	}
+	if !hasMin || !hasMax || hasInc {
+		t.Fatalf("FrameRate constraints: hasMin=%v hasMax=%v hasInc=%v", hasMin, hasMax, hasInc)
+	}
+	if min != 1 || max != 120 {
+		t.Fatalf("FrameRate: min=%d max=%d", min, max)
+	}
+	_ = inc // unused; FrameRate doesn't have Inc constraint
+}
