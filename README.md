@@ -76,6 +76,7 @@ Omit `-ip` to pick the first camera from GigE discovery (or pass `-ip` explicitl
 - GenICam `Has` / `ApplyControlPair` / `Execute`: [`examples/features`](examples/features)
 - One-shot color JPEG to disk: [`examples/grab`](examples/grab)
 - Discover BSCF components (color/depth/mono) and grab all: [`examples/grab-components`](examples/grab-components)
+- Probe available stream types (pixel formats, payload/chunk/component features, per-frame JPEG encodability): [`examples/probe-streams`](examples/probe-streams)
 - Stream measurements only: [`examples/stream-measurements`](examples/stream-measurements)
 - Dump GenICam XML: [`examples/dump-xml`](examples/dump-xml)
 - Configure volume TCP preset: [`examples/configure-volume-tcp`](examples/configure-volume-tcp)
