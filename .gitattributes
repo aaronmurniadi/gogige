@@ -1,0 +1,5 @@
+# Reference spec docs are third-party materials (GenApi/GenCP/GenTL/GenDC/SFNC
+# PDFs + headers), not project source: keep them out of release archives and
+# language stats / code search.
+_references/** linguist-vendored
+_references/** export-ignore
