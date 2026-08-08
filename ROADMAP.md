@@ -1,6 +1,6 @@
 # ROADMAP
 
-Progress tracker against `AGENTS.md` and the EMVA/AIA specs under `_references/` (gitignored).
+Progress tracker against `AGENTS.md` and GiGE Vision specs under `_references/`.
 
 Legend: `[x]` done · `[ ]` not started · `[~]` partial
 
