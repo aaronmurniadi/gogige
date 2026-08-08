@@ -2,6 +2,10 @@
 // discovery, CCP, ImplementationEndianness, heartbeat, FirstURL/XML, high-level Open,
 // stream MTU/SCPS (via logger), grab + BSCF Sample, pause/resume, optional Live OnSample.
 //
+// The logger will show stream setup details including negotiated packet size.
+// If the device has a lower MTU than the path (e.g., 1500 vs 9000), the negotiated
+// size will be the device-supported value (normal, not a warning).
+//
 //	go run .                              # discover first camera
 //	go run . -ip 192.168.1.108 -frames 3 -out ./out
 package main
