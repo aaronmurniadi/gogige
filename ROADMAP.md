@@ -44,10 +44,10 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `gvsp/resend.go`               | [x]    | Missing-packet tracking + `RESEND_CMD` via `Stream.SetResender`          |
 | `genapi/camera_description.go` | [x]    | FirstURL fetch + zip/deflate XML                                         |
 | `genapi/evaluator.go`          | [x]    | SwissKnife formula evaluator                                             |
-| `genapi/nodemap.go`            | [x]    | Parse + feature get/set (monolithic)                                     |
-| `genapi/node.go`               | [ ]    | Extract core Node interface from nodemap                                 |
-| `genapi/types.go`              | [ ]    | Typed node kinds (IntReg, MaskedInt, Category, …)                        |
-| `genapi/port.go`               | [ ]    | Explicit Port binding layer → `gvcp.Port`                                |
+| `genapi/nodemap.go`            | [x]    | Parse + feature get/set (orchestration layer)                            |
+| `genapi/node.go`               | [x]    | Core Node interface + gcNode struct + attributes                         |
+| `genapi/types.go`              | [x]    | Node parsing: nodeFields, parseNodeXML, parseNodeMapXML stream           |
+| `genapi/port.go`               | [x]    | Port binding layer: portAdapter → gvcp.Port I/O + byte order             |
 | `gentl/cti.go`                 | [ ]    | Optional GenTL `.cti` loader (`dlopen` / CGO)                            |
 | `gentl/types.go`               | [ ]    | Mirror `GenTL.h` handles / enums                                         |
 | `cmd/gogige-discover/`         | [x]    | CLI discovery utility                                                    |
@@ -150,14 +150,14 @@ Refs: `_references/GenApi/GenICam_Standard_v2_1_1.pdf`, `_references/SFNC/GenICa
 | Item                                                             | Status     | Spec cue                                                                     |
 | ---------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------- | ---- | --- | ------------------------ |
 | Local:/HTTP XML fetch + unzip                                    | [x]        | FirstURL / device memory                                                     |
-| Core node kinds + set/get                                        | [~]        | Integer, Boolean, Float, String, Enum, Command, \*Reg, SwissKnife, Converter |
+| Core node kinds + set/get                                        | [x]        | Integer, Boolean, Float, String, Enum, Command, \*Reg, SwissKnife, Converter |
 | `Category` / `StructReg` as first-class types                    | [ ]        | Parsed skip today                                                            |
-| Pointers: `pAddress`, `pMin`/`pMax`/`pInc`, `pValue`             | [~]        | `pAddress`/`pValue` used; min/max/inc TBD                                    |
+| Pointers: `pAddress`, `pMin`/`pMax`/`pInc`, `pValue`             | [x]        | `pAddress`/`pValue` + `pMin`/`pMax`/`pInc` implemented; min/max/inc static values |
 | `pIsImplemented` / `pIsAvailable` / `pIsLocked` / `pInvalidator` | [ ]        | Cache invalidation                                                           |
 | ManifestTable (`0x01D0`) path                                    | [ ]        | Preferred over FirstURL when present                                         |
 | SwissKnife ops (`+ - \* / % \*\* &                               | ^ << >> && |                                                                              | ?:`) | [~] | Subset in `evaluator.go` |
 | SwissKnife funcs (`SQRT`, `FLOOR`, `CEIL`, `ABS`)                | [~]        | Verify against Standard § formula grammar                                    |
-| Dedicated `port.go` binding + endianness                         | [ ]        | Port node → `gvcp.Port` Read/Write                                           |
+| Dedicated `port.go` binding + endianness                         | [x]        | Port node → `gvcp.Port` Read/Write; complete with byte order awareness       |
 | SFNC-required features for streaming                             | [~]        | `AcquisitionStart/Stop` used; formal Gev\* coverage TBD                      |
 
 ### Phase 4 — High-level + GenTL 1.6
@@ -189,6 +189,8 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 
 ## Migration log
 
+- **2026-08-08** — Phase 3: Constraint pointers (pMin, pMax, pInc) complete. Added Node.GetConstraints(), NodeMap.GetMin/Max/Inc() methods. Parser now extracts Min/Max/Inc static values + pMin/pMax/pInc feature references. Enables parameter bounds validation. Test: TestConstraintPointers.
+- **2026-08-08** — GenApi refactoring complete: `node.go` (Node interface + gcNode), `types.go` (node parsing: nodeFields, parseNodeXML, parseNodeMapXML), `port.go` (portAdapter binding → gvcp.Port); `nodemap.go` now clean orchestration layer; zero-alloc architecture with explicit separation of concerns per AGENTS.md.
 - **2026-08-08** — Phase 4 API: `OpenDevice` → `*Camera`, `Camera.SetInteger` / `SetEnum`, `Camera.StartStream` → `Stream.Frames()` channel of pooled `*gvsp.Frame` with `Stop`/`Pause`/`Resume` (`framestream.go`); `Stream` alias → `GVSPStream`. New `examples/frames`.
 - **2026-08-08** — Enforced package layout: `control/gvcp` → `gvcp/`, `control/genicam` → `genapi/`, `vision/gvsp` → `gvsp/`; lifted camera/device/session/grab/live into root `gige` package (`camera.go`, `stream.go`, `options.go`, …).
 - **2026-08-08** — Cleared layout debt: `vision/bscf` → `gvsp/payload.go`; `vision/color` → `internal/color`; removed `vision/`.

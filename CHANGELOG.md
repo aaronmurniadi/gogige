@@ -5,6 +5,16 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] - 2026-08-08
+
+### Added
+- GenApi Phase 3 completion: constraint pointers (`pMin`, `pMax`, `pInc`) now resolved alongside static constraint values (`Min`, `Max`, `Inc`). `NodeMap.GetMin` / `GetMax` / `GetInc` methods enable parameter bounds validation. Constraint pointer nodes (typically SwissKnife formulas) are evaluated using the existing formula evaluator, falling back to static values when pointers are not present
+- GenApi module refactoring: split monolithic `nodemap.go` into four focused modules per AGENTS.md architectural hierarchy: `node.go` (core Node interface + gcNode), `types.go` (XML parsing pipeline), `port.go` (gvcp.Port binding + byte order), `nodemap.go` (high-level orchestration). Zero-allocation design maintained throughout
+- Test: `TestConstraintPointers` validates both pointer-based and static constraint parsing and resolution
+
+### Changed
+- `Node` interface extended with `GetConstraints()` method returning all constraint fields (pMin, pMax, pInc, Min, Max, Inc)
+
 ## [0.9.0] - 2026-08-08
 
 ### Added
