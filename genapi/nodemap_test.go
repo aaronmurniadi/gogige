@@ -151,3 +151,63 @@ func TestPAddressSum(t *testing.T) {
 		t.Fatalf("regs=%v", port.regs)
 	}
 }
+
+func TestIntrospection(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription xmlns="http://www.genapi.org/GenApi/Version_1_1">
+  <IntReg Name="PixelFormatReg"><Address>0x1000</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+  <Enumeration Name="PixelFormat">
+    <EnumEntry Name="Mono8"><Value>0x1080001</Value></EnumEntry>
+    <EnumEntry Name="RGB8"><Value>0x2180014</Value></EnumEntry>
+    <EnumEntry Name="YUV422_8"><Value>0x2100032</Value></EnumEntry>
+    <pValue>PixelFormatReg</pValue>
+  </Enumeration>
+  <Integer Name="Width"><pValue>WidthReg</pValue></Integer>
+  <IntReg Name="WidthReg"><Address>0x2000</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+</RegisterDescription>`
+	port := &memPort{regs: map[uint32]uint32{0x1000: 0x02180014, 0x2000: 1920}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if got := nm.Has("PixelFormat"); !got {
+		t.Fatal("PixelFormat should exist")
+	}
+	if got := nm.Has("Nope"); got {
+		t.Fatal("Nope should not exist")
+	}
+	if got := nm.Kind("PixelFormat"); got != "Enumeration" {
+		t.Fatalf("Kind=%q", got)
+	}
+	if got := nm.Kind("Nope"); got != "" {
+		t.Fatalf("Kind(Nope)=%q", got)
+	}
+	entries, err := nm.EnumEntries("PixelFormat")
+	if err != nil {
+		t.Fatal(err)
+	}
+	want := []string{"Mono8", "RGB8", "YUV422_8"}
+	if len(entries) != len(want) || entries[0] != want[0] || entries[1] != want[1] || entries[2] != want[2] {
+		t.Fatalf("entries=%v want=%v", entries, want)
+	}
+	if _, err := nm.EnumEntries("Width"); err == nil {
+		t.Fatal("EnumEntries on non-enum should fail")
+	}
+	cur, err := nm.CurrentEnum("PixelFormat")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if cur != "RGB8" {
+		t.Fatalf("CurrentEnum=%q", cur)
+	}
+	w, err := nm.ReadInteger("Width")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if w != 1920 {
+		t.Fatalf("Width=%d", w)
+	}
+	if _, err := nm.ReadInteger("PixelFormat"); err != nil {
+		t.Fatal(err)
+	}
+}

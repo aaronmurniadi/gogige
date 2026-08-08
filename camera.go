@@ -108,6 +108,11 @@ func (c *Camera) SetBooleanFeature(name string, v bool) error {
 	return c.nodes.SetBoolean(name, v)
 }
 
+// BooleanFeature reads the current value of a boolean GenICam feature.
+func (c *Camera) BooleanFeature(name string) (bool, error) {
+	return c.nodes.ReadBoolean(name)
+}
+
 // SetIntFeature sets an integer GenICam feature.
 func (c *Camera) SetIntFeature(name string, v int64) error {
 	return c.nodes.SetInteger(name, v)

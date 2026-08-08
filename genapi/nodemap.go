@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"io"
 	"math"
+	"sort"
 	"strconv"
 	"strings"
 
@@ -271,6 +272,25 @@ func (nm *NodeMap) SetBoolean(name string, v bool) error {
 		iv = 1
 	}
 	return nm.writeIntegerish(n, iv)
+}
+
+// ReadBoolean returns the current value of a Boolean feature.
+func (nm *NodeMap) ReadBoolean(name string) (bool, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return false, err
+	}
+	if n.Kind != "Boolean" {
+		return false, fmt.Errorf("gige: feature %s is %s, not Boolean", name, n.Kind)
+	}
+	if n.PValue == "" {
+		return false, fmt.Errorf("gige: feature %s has no pValue", name)
+	}
+	v, err := nm.evalIntegerValue(n.PValue, 0)
+	if err != nil {
+		return false, err
+	}
+	return v != 0, nil
 }
 
 // SetInteger sets an Integer feature.
@@ -541,6 +561,63 @@ func (nm *NodeMap) writeStringReg(n *gcNode, val string) error {
 func (nm *NodeMap) Has(name string) bool {
 	_, err := nm.lookup(name)
 	return err == nil
+}
+
+// Kind returns the GenApi node kind of a feature ("Enumeration", "Integer", …),
+// or "" when the feature does not exist.
+func (nm *NodeMap) Kind(name string) string {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return ""
+	}
+	return n.Kind
+}
+
+// EnumEntries returns the sorted EnumEntry names of an Enumeration feature.
+// It is useful for probing available values (e.g. PixelFormat, PayloadType).
+func (nm *NodeMap) EnumEntries(name string) ([]string, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return nil, err
+	}
+	if n.Kind != "Enumeration" {
+		return nil, fmt.Errorf("gige: feature %s is %s, not Enumeration", name, n.Kind)
+	}
+	keys := make([]string, 0, len(n.Entries))
+	for k := range n.Entries {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	return keys, nil
+}
+
+// CurrentEnum reads an Enumeration feature and returns the matching entry name,
+// or "" when the current register value matches no declared entry.
+func (nm *NodeMap) CurrentEnum(name string) (string, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return "", err
+	}
+	if n.Kind != "Enumeration" {
+		return "", fmt.Errorf("gige: feature %s is %s, not Enumeration", name, n.Kind)
+	}
+	v, err := nm.evalIntegerValue(name, 0)
+	if err != nil {
+		return "", err
+	}
+	for k, ev := range n.Entries {
+		if uint64(ev) == v {
+			return k, nil
+		}
+	}
+	return "", nil
+}
+
+// ReadInteger returns the current value of an Integer-like feature
+// (Integer, IntReg, MaskedIntReg, SwissKnife/Converter or Enumeration).
+func (nm *NodeMap) ReadInteger(name string) (int64, error) {
+	v, err := nm.evalIntegerValue(name, 0)
+	return int64(v), err
 }
 
 func deviceOrder(port gvcp.Port) binary.ByteOrder {
