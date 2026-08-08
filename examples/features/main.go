@@ -1,4 +1,4 @@
-// Features exercises GenICam Has / ApplyControlPair / Execute via Camera.Connect.
+// Features exercises GenICam Has / ApplyControlPair / Execute via OpenDevice.
 //
 //	go run . -has Width -has AcquisitionStart
 //	go run . -set DeviceUserID=line1
@@ -43,7 +43,7 @@ func main() {
 		fmt.Printf("discovered %s @ %s\n", devs[0].Model, deviceIP)
 	}
 
-	cam, err := gogige.Connect(deviceIP)
+	cam, err := gogige.OpenDevice(context.Background(), deviceIP, gogige.WithTimeout(3*time.Second))
 	if err != nil {
 		log.Fatal(err)
 	}

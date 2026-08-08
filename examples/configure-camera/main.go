@@ -32,7 +32,7 @@ func main() {
 		fmt.Printf("%s\n", deviceName)
 	}
 
-	cam, err := gogige.Connect(deviceIP)
+	cam, err := gogige.OpenDevice(context.Background(), deviceIP, gogige.WithTimeout(3*time.Second))
 	if err != nil {
 		log.Fatal(err)
 	}

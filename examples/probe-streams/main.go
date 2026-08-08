@@ -57,7 +57,7 @@ func main() {
 		log.Printf("discovered %s @ %s", devs[0].Model, cameraIP)
 	}
 
-	cam, err := gogige.Connect(cameraIP)
+	cam, err := gogige.OpenDevice(context.Background(), cameraIP, gogige.WithTimeout(3*time.Second))
 	if err != nil {
 		log.Fatal(err)
 	}
