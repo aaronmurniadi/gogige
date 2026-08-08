@@ -1,6 +1,6 @@
 module github.com/aaronmurniadi/gogige/examples/features
 
-go 1.26.3
+go 1.23
 
 require github.com/aaronmurniadi/gogige v0.0.0
 
