@@ -158,3 +158,113 @@ func TestBSCFPrefersColorOverDepth(t *testing.T) {
 		t.Fatalf("jpeg: %v len=%d", err, len(jpeg))
 	}
 }
+
+func TestIsGenDCPayload(t *testing.T) {
+	buf := []byte{0x47, 0x4E, 0x44, 0x43}
+	if !IsGenDCPayload(buf) {
+		t.Fatal("expected GenDC signature detection")
+	}
+	buf2 := []byte{0x42, 0x53, 0x43, 0x46}
+	if IsGenDCPayload(buf2) {
+		t.Fatal("expected non-GenDC detection")
+	}
+}
+
+func TestMultiPartPayload(t *testing.T) {
+	hdr := make([]byte, 8)
+	binary.BigEndian.PutUint32(hdr[0:], 1)
+	binary.BigEndian.PutUint32(hdr[4:], 0)
+
+	part := make([]byte, 32)
+	binary.BigEndian.PutUint32(part[0:], 0x00000000)
+	binary.BigEndian.PutUint64(part[4:], 40)
+	binary.BigEndian.PutUint64(part[12:], 12)
+	binary.BigEndian.PutUint32(part[20:], 4)
+	binary.BigEndian.PutUint32(part[24:], 3)
+	binary.BigEndian.PutUint32(part[28:], 0x01080001)
+
+	imgData := make([]byte, 12)
+	for i := range imgData {
+		imgData[i] = byte(i)
+	}
+
+	buf := append(append(hdr, part...), imgData...)
+
+	payload, err := ParseMultiPartPayload(buf)
+	if err != nil {
+		t.Fatalf("ParseMultiPartPayload failed: %v", err)
+	}
+	if payload.Header.NumParts != 1 {
+		t.Fatalf("numParts=%d", payload.Header.NumParts)
+	}
+	if len(payload.Parts) != 1 {
+		t.Fatalf("parts len=%d", len(payload.Parts))
+	}
+	if payload.Parts[0].PartType != 0x00000000 {
+		t.Fatalf("partType=0x%x", payload.Parts[0].PartType)
+	}
+	if payload.Parts[0].Width != 3 {
+		t.Fatalf("width=%d", payload.Parts[0].Width)
+	}
+	if payload.Parts[0].Height != 4 {
+		t.Fatalf("height=%d", payload.Parts[0].Height)
+	}
+	if len(payload.Parts[0].Data) != 12 {
+		t.Fatalf("data len=%d", len(payload.Parts[0].Data))
+	}
+
+	partImg, ok := payload.GetPartByType(0x00000000)
+	if !ok {
+		t.Fatal("GetPartByType not found")
+	}
+	if partImg.Width != 3 {
+		t.Fatalf("width=%d", partImg.Width)
+	}
+}
+
+func TestChunkPayload(t *testing.T) {
+	hdr := make([]byte, 16)
+	binary.BigEndian.PutUint64(hdr[0:], 100)
+	binary.BigEndian.PutUint32(hdr[8:], 1)
+	binary.BigEndian.PutUint32(hdr[12:], 0)
+
+	chunk := make([]byte, 16)
+	binary.BigEndian.PutUint32(chunk[0:], 0x00000001)
+	binary.BigEndian.PutUint32(chunk[4:], 16)
+	binary.BigEndian.PutUint32(chunk[8:], 8)
+	binary.BigEndian.PutUint16(chunk[12:], 1)
+	binary.BigEndian.PutUint16(chunk[14:], 0)
+
+	chunkData := make([]byte, 8)
+	binary.BigEndian.PutUint64(chunkData, 1234567890)
+
+	buf := append(append(hdr, chunk...), chunkData...)
+
+	payload, err := ParseChunkPayload(buf)
+	if err != nil {
+		t.Fatalf("ParseChunkPayload failed: %v", err)
+	}
+	if payload.Header.ChunkCount != 1 {
+		t.Fatalf("chunkCount=%d", payload.Header.ChunkCount)
+	}
+	if len(payload.Chunks) != 1 {
+		t.Fatalf("chunks len=%d", len(payload.Chunks))
+	}
+	if payload.Chunks[0].ChunkID != 0x00000001 {
+		t.Fatalf("chunkID=0x%x", payload.Chunks[0].ChunkID)
+	}
+	if payload.Chunks[0].Size != 8 {
+		t.Fatalf("chunkSize=%d", payload.Chunks[0].Size)
+	}
+	if len(payload.Chunks[0].Data) != 8 {
+		t.Fatalf("chunkData len=%d", len(payload.Chunks[0].Data))
+	}
+
+	chunkTs, ok := payload.GetChunkByID(0x00000001)
+	if !ok {
+		t.Fatal("GetChunkByID not found")
+	}
+	if chunkTs.ChunkID != 0x00000001 {
+		t.Fatalf("chunkID=0x%x", chunkTs.ChunkID)
+	}
+}

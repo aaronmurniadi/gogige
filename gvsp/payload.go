@@ -377,3 +377,60 @@ func BuildTestBSCFComponents(blocks []ComponentBlock, packs []PackDet) []byte {
 	}
 	return append(hdr, payload...)
 }
+
+// ParsePayloadByType parses a payload based on its type
+// Returns: data, format, width, height, isPacked, error
+func ParsePayloadByType(data []byte, payloadType uint32) ([]byte, uint32, int, int, bool, error) {
+	switch payloadType {
+	case 0x80000008: // PAYLOAD_TYPE_GENDC
+		return ParseGenDCPayload(data)
+	case 0x80000007: // PAYLOAD_TYPE_MULTI_PART
+		return ParseMultiPartPayloadAsImage(data)
+	case 0x80000009: // PAYLOAD_TYPE_CHUNK_DATA
+		return ParseChunkPayloadAsImage(data)
+	default:
+		// Default to treating as raw image data
+		return data, 0, 0, 0, false, nil
+	}
+}
+
+// ParseGenDCPayload parses GenDC payload and returns image data
+func ParseGenDCPayload(data []byte) ([]byte, uint32, int, int, bool, error) {
+	if !IsGenDCPayload(data) {
+		return nil, 0, 0, 0, false, fmt.Errorf("gige: not a GenDC payload")
+	}
+	payload, err := ParseGenDcPayload(data)
+	if err != nil {
+		return nil, 0, 0, 0, false, err
+	}
+	if len(payload.Components) == 0 {
+		return nil, 0, 0, 0, false, fmt.Errorf("gige: no components in GenDC payload")
+	}
+	c := payload.Components[0]
+	return c.Data, c.Format, c.Width, c.Height, false, nil
+}
+
+// ParseMultiPartPayloadAsImage parses multi-part payload and returns first image part
+func ParseMultiPartPayloadAsImage(data []byte) ([]byte, uint32, int, int, bool, error) {
+	payload, err := ParseMultiPartPayload(data)
+	if err != nil {
+		return nil, 0, 0, 0, false, err
+	}
+	if len(payload.Parts) == 0 {
+		return nil, 0, 0, 0, false, fmt.Errorf("gige: no parts in multi-part payload")
+	}
+	// Find first image part
+	for _, part := range payload.Parts {
+		if part.PartType == MultiPartPartTypeImage && len(part.Data) > 0 {
+			return part.Data, part.PixelFormat, int(part.Width), int(part.Height), false, nil
+		}
+	}
+	return nil, 0, 0, 0, false, fmt.Errorf("gige: no image part in multi-part payload")
+}
+
+// ParseChunkPayloadAsImage parses chunk data payload and returns image data
+func ParseChunkPayloadAsImage(data []byte) ([]byte, uint32, int, int, bool, error) {
+	// Chunk data doesn't contain image data directly, only chunk metadata
+	// The actual image is separate; return nil for now
+	return nil, 0, 0, 0, false, fmt.Errorf("gige: chunk data payload contains no image data")
+}

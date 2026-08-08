@@ -9,15 +9,17 @@ import (
 
 // GigE Vision pixel format IDs (PFNC).
 const (
-	PixelFormatYUV422 = 0x02100032
-	PixelFormatMono8  = 0x01080001
-	PixelFormatMono16 = 0x01100007
-	PixelFormatBGR8   = 0x02180015
-	PixelFormatRGB8   = 0x02180014
+	PixelFormatYUV422_8      = 0x02100032 // YUYV
+	PixelFormatYUV422_8_UYVY = 0x0210001F // UYVY
+	PixelFormatYUV422        = PixelFormatYUV422_8
+	PixelFormatMono8         = 0x01080001
+	PixelFormatMono16        = 0x01100007
+	PixelFormatBGR8          = 0x02180015
+	PixelFormatRGB8          = 0x02180014
 )
 
 // EncodeJPEG converts camera payload bytes to JPEG.
-// Supports YUV422_8 (YUYV), BGR8, RGB8, Mono8, Mono16 (high byte preview).
+// Supports YUV422_8 (YUYV/UYVY), BGR8, RGB8, Mono8, Mono16 (high byte preview).
 func EncodeJPEG(raw []byte, w, h int, pixelFormat uint32, quality int) ([]byte, error) {
 	rgba, err := toRGBA(raw, w, h, pixelFormat)
 	if err != nil {
@@ -85,7 +87,7 @@ func toRGBA(raw []byte, w, h int, pixelFormat uint32) (*image.RGBA, error) {
 			rgba.Pix[o+2] = v
 			rgba.Pix[o+3] = 255
 		}
-	case PixelFormatYUV422:
+	case PixelFormatYUV422_8:
 		need := w * h * 2
 		if len(raw) < need {
 			return nil, fmt.Errorf("gige: yuv422 short (%d < %d)", len(raw), need)
@@ -93,6 +95,20 @@ func toRGBA(raw []byte, w, h int, pixelFormat uint32) (*image.RGBA, error) {
 		for x := 0; x < w*h; x += 2 {
 			i := x * 2
 			y0, u, y1, v := int(raw[i]), int(raw[i+1]), int(raw[i+2]), int(raw[i+3])
+			r0, g0, b0 := yuvToRGB(y0, u, v)
+			r1, g1, b1 := yuvToRGB(y1, u, v)
+			o := x * 4
+			rgba.Pix[o+0], rgba.Pix[o+1], rgba.Pix[o+2], rgba.Pix[o+3] = r0, g0, b0, 255
+			rgba.Pix[o+4], rgba.Pix[o+5], rgba.Pix[o+6], rgba.Pix[o+7] = r1, g1, b1, 255
+		}
+	case PixelFormatYUV422_8_UYVY:
+		need := w * h * 2
+		if len(raw) < need {
+			return nil, fmt.Errorf("gige: uyvy short (%d < %d)", len(raw), need)
+		}
+		for x := 0; x < w*h; x += 2 {
+			i := x * 2
+			u, y0, v, y1 := int(raw[i]), int(raw[i+1]), int(raw[i+2]), int(raw[i+3])
 			r0, g0, b0 := yuvToRGB(y0, u, v)
 			r1, g1, b1 := yuvToRGB(y1, u, v)
 			o := x * 4
@@ -107,7 +123,7 @@ func toRGBA(raw []byte, w, h int, pixelFormat uint32) (*image.RGBA, error) {
 		}
 		need2 := w * h * 2
 		if len(raw) >= need2 {
-			return toRGBA(raw, w, h, PixelFormatYUV422)
+			return toRGBA(raw, w, h, PixelFormatYUV422_8)
 		}
 		return nil, fmt.Errorf("gige: unsupported pixel format 0x%08x", pixelFormat)
 	}
