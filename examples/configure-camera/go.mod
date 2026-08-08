@@ -1,4 +1,4 @@
-module github.com/aaronmurniadi/gogige/examples/configure-volume-tcp
+module github.com/aaronmurniadi/gogige/examples/configure-camera
 
 go 1.26.3
 

@@ -79,7 +79,7 @@ Omit `-ip` to pick the first camera from GigE discovery (or pass `-ip` explicitl
 - Probe available stream types (pixel formats, payload/chunk/component features, per-frame JPEG encodability): [`examples/probe-streams`](examples/probe-streams)
 - Stream measurements only: [`examples/stream-measurements`](examples/stream-measurements)
 - Dump GenICam XML: [`examples/dump-xml`](examples/dump-xml)
-- Configure volume TCP preset: [`examples/configure-volume-tcp`](examples/configure-volume-tcp)
+- Configure volume TCP preset: [`examples/configure-camera`](examples/configure-camera)
 - Browser live stream: [`examples/websocket-stream`](examples/websocket-stream)
 - CLI discover: [`cmd/gogige-discover`](cmd/gogige-discover)
 - CLI N-frame capture: [`cmd/gogige-stream`](cmd/gogige-stream)
