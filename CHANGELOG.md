@@ -12,8 +12,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GenApi module refactoring: split monolithic `nodemap.go` into four focused modules per AGENTS.md architectural hierarchy: `node.go` (core Node interface + gcNode), `types.go` (XML parsing pipeline), `port.go` (gvcp.Port binding + byte order), `nodemap.go` (high-level orchestration). Zero-allocation design maintained throughout
 - Test: `TestConstraintPointers` validates both pointer-based and static constraint parsing and resolution
 
+### Fixed
+- **GVCP packet size negotiation** (`gvcp.StartAcquisition`): now returns the actual negotiated packet size instead of discarding it. Previously, when device rejected the requested packet size (e.g., 9000) and fell back to 1500 via binary search, the fallback value was ignored. This caused the warning "GevSCPSPacketSize clamped by device" to be logged even when the negotiation succeeded at a lower size. Now the negotiated size is returned and used, eliminating false warnings. Actual post-acquisition downgrades (device changing the size after acquisition starts) are still warned
+- `Session.ResumeStreaming` now updates `s.packetSize` with the actual negotiated value
+
 ### Changed
 - `Node` interface extended with `GetConstraints()` method returning all constraint fields (pMin, pMax, pInc, Min, Max, Inc)
+- `gvcp.StartAcquisition` signature changed: now returns `(actualPacketSize int, err error)` instead of `error` only
 
 ## [0.9.0] - 2026-08-08
 
