@@ -11,28 +11,32 @@ type Commander interface {
 	Execute(name string) error
 }
 
-func StartAcquisition(g *GVCP, cmd Commander, destIP net.IP, destPort, packetSize int) error {
+func StartAcquisition(g *GVCP, cmd Commander, destIP net.IP, destPort, packetSize int) (int, error) {
 	if g == nil {
-		return errors.New("gige: no gvcp")
+		return 0, errors.New("gige: no gvcp")
 	}
 	ip4 := destIP.To4()
 	if ip4 == nil {
-		return errors.New("gige: need IPv4 stream destination")
+		return 0, errors.New("gige: need IPv4 stream destination")
 	}
 	ipVal := binary.BigEndian.Uint32(ip4)
 	if err := g.WriteReg(Stream0IP, ipVal); err != nil {
-		return err
+		return 0, err
 	}
 	if err := g.WriteReg(Stream0Port, uint32(destPort)); err != nil {
-		return err
+		return 0, err
 	}
-	if _, err := NegotiatePacketSize(g, packetSize); err != nil {
-		return err
+	actualSize, err := NegotiatePacketSize(g, packetSize)
+	if err != nil {
+		return 0, err
 	}
 	if cmd != nil && cmd.Has("AcquisitionStart") {
-		return cmd.Execute("AcquisitionStart")
+		err := cmd.Execute("AcquisitionStart")
+		if err != nil {
+			return 0, err
+		}
 	}
-	return nil
+	return actualSize, nil
 }
 
 // NegotiatePacketSize programs GevSCPSPacketSize (low 16 bits of 0x0D04).

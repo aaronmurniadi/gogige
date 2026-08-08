@@ -95,18 +95,16 @@ func (s *Session) Open(ip string) error {
 	}
 	mtu := gvsp.PathMTU(camIP)
 	want := gvsp.PacketSizeForMTU(mtu)
-	if err := gvcp.StartAcquisition(s.cam.GVCP(), s.cam, destIP, stream.Port(), want); err != nil {
+	actual, err := gvcp.StartAcquisition(s.cam.GVCP(), s.cam, destIP, stream.Port(), want)
+	if err != nil {
 		stream.Close()
 		s.stream = nil
 		return err
 	}
-	s.packetSize = want
-	if reg, err := s.cam.GVCP().ReadReg(gvcp.Stream0PacketSize); err == nil {
-		s.packetSize = int(reg & 0xffff)
-	}
-	if s.packetSize < want {
-		s.cam.Logger().Warn("GevSCPSPacketSize clamped by device",
-			"want", want, "got", s.packetSize, "path_mtu", mtu)
+	s.packetSize = actual
+	if actual < want {
+		s.cam.Logger().Warn("GevSCPSPacketSize negotiated lower than path MTU",
+			"want", want, "actual", actual, "path_mtu", mtu)
 	}
 	s.cam.Logger().Info("gvsp stream setup",
 		"mtu", mtu, "scps", s.packetSize, "rcvbuf", stream.RecvBuffer())
@@ -198,7 +196,12 @@ func (s *Session) ResumeStreaming() error {
 		ps = gvsp.PacketSizeForMTU(gvsp.PathMTU(net.ParseIP(s.ip)))
 		s.packetSize = ps
 	}
-	return gvcp.StartAcquisition(s.cam.GVCP(), s.cam, destIP, s.stream.Port(), ps)
+	actual, err := gvcp.StartAcquisition(s.cam.GVCP(), s.cam, destIP, s.stream.Port(), ps)
+	if err != nil {
+		return err
+	}
+	s.packetSize = actual
+	return nil
 }
 
 // Pause implements Grabber.
