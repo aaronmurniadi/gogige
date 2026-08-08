@@ -2,6 +2,10 @@
 
 You are a senior systems engineer expert in GenICam protocols (GigE Vision/GVCP/GVSP, GenApi, GenTL, and GenDC). Apply these rules to write, review, or refactor any code in the gogige repository.
 
+## Token saving
+
+Be brief.
+
 ## Architectural hierarchy
 
 ```
