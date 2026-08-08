@@ -22,9 +22,17 @@ func main() {
 	stable := flag.Bool("stable", false, "with -valid, also require Stable")
 	flag.Parse()
 
-	cameraIP, err := resolveIP(*ip)
-	if err != nil {
-		log.Fatal(err)
+	cameraIP := *ip
+	if cameraIP == "" {
+		devs, err := gogige.Discover(context.Background(), 2*time.Second)
+		if err != nil {
+			log.Fatal(err)
+		}
+		if len(devs) == 0 {
+			log.Fatal("no cameras found; pass -ip")
+		}
+		cameraIP = devs[0].IP
+		fmt.Printf("discovered %s\n", cameraIP)
 	}
 
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt)
@@ -68,19 +76,4 @@ func okMeasurement(s gogige.Sample, requireStable bool) bool {
 		return false
 	}
 	return !requireStable || s.Stable
-}
-
-func resolveIP(ip string) (string, error) {
-	if ip != "" {
-		return ip, nil
-	}
-	devs, err := gogige.Discover(context.Background(), 2*time.Second)
-	if err != nil {
-		return "", err
-	}
-	if len(devs) == 0 {
-		return "", fmt.Errorf("no cameras found; pass -ip")
-	}
-	fmt.Printf("discovered %s\n", devs[0].IP)
-	return devs[0].IP, nil
 }

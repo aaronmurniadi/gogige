@@ -11,7 +11,6 @@ import (
 	"context"
 	"embed"
 	"flag"
-	"fmt"
 	"io/fs"
 	"log"
 	"net/http"
@@ -36,9 +35,17 @@ func main() {
 		log.Fatal(err)
 	}
 
-	cameraIP, err := resolveIP(*ip)
-	if err != nil {
-		log.Fatal(err)
+	cameraIP := *ip
+	if cameraIP == "" {
+		devs, err := gogige.Discover(context.Background(), 2*time.Second)
+		if err != nil {
+			log.Fatal(err)
+		}
+		if len(devs) == 0 {
+			log.Fatal("no cameras found; pass -ip")
+		}
+		cameraIP = devs[0].IP
+		log.Printf("discovered %s", cameraIP)
 	}
 
 	ctx := context.Background()
@@ -148,18 +155,3 @@ func (h *hub) serveWS(w http.ResponseWriter, r *http.Request) {
 }
 
 var _ gogige.FrameSink = (*hub)(nil)
-
-func resolveIP(ip string) (string, error) {
-	if ip != "" {
-		return ip, nil
-	}
-	devs, err := gogige.Discover(context.Background(), 2*time.Second)
-	if err != nil {
-		return "", err
-	}
-	if len(devs) == 0 {
-		return "", fmt.Errorf("no cameras found; pass -ip")
-	}
-	log.Printf("discovered %s", devs[0].IP)
-	return devs[0].IP, nil
-}

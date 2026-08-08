@@ -17,15 +17,24 @@ import (
 )
 
 func main() {
-	ipFlag := flag.String("ip", "", "camera IP (empty = first GigE discovery hit)")
+	ip := flag.String("ip", "", "camera IP (empty = first GigE discovery hit)")
 	dir := flag.String("dir", ".", "directory for <component>.jpg")
 	timeout := flag.Duration("timeout", 5*time.Second, "grab timeout")
 	flag.Parse()
 
-	ip, err := resolveIP(*ipFlag)
-	if err != nil {
-		log.Fatal(err)
+	deviceIP := *ip
+	if deviceIP == "" {
+		devs, err := gogige.Discover(context.Background(), 2*time.Second)
+		if err != nil {
+			log.Fatal(err)
+		}
+		if len(devs) == 0 {
+			log.Fatal("no cameras found; pass -ip")
+		}
+		deviceIP = devs[0].IP
+		fmt.Printf("discovered %s %s @ %s\n", devs[0].Manufacturer, devs[0].Model, deviceIP)
 	}
+
 	if err := os.MkdirAll(*dir, 0o755); err != nil {
 		log.Fatal(err)
 	}
@@ -33,7 +42,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), *timeout+3*time.Second)
 	defer cancel()
 
-	dev, err := gogige.Open(ctx, ip, gogige.WithTimeout(*timeout))
+	dev, err := gogige.Open(ctx, deviceIP, gogige.WithTimeout(*timeout))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -59,30 +68,14 @@ func main() {
 	}
 
 	for _, s := range samples {
-		name := s.Component.String()
-		if name == "" || name == "unknown" {
-			name = "component"
+		compName := s.Component.String()
+		if compName == "" || compName == "unknown" {
+			compName = "component"
 		}
-		path := filepath.Join(*dir, name+".jpg")
+		path := filepath.Join(*dir, compName+".jpg")
 		if err := os.WriteFile(path, s.JPEG, 0o644); err != nil {
 			log.Fatal(err)
 		}
 		fmt.Println("wrote", path)
 	}
-}
-
-func resolveIP(ip string) (string, error) {
-	if ip != "" {
-		return ip, nil
-	}
-	devs, err := gogige.Discover(context.Background(), 2*time.Second)
-	if err != nil {
-		return "", err
-	}
-	if len(devs) == 0 {
-		return "", fmt.Errorf("no cameras found; pass -ip")
-	}
-	d := devs[0]
-	fmt.Printf("discovered %s %s @ %s\n", d.Manufacturer, d.Model, d.IP)
-	return d.IP, nil
 }

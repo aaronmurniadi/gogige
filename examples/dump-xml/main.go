@@ -26,9 +26,25 @@ func main() {
 	timeout := flag.Duration("timeout", 5*time.Second, "GVCP timeout")
 	flag.Parse()
 
-	dev, err := resolveDevice(*ip)
+	devs, err := gvcp.Discover(context.Background(), 2*time.Second)
 	if err != nil {
 		log.Fatal(err)
+	}
+	var dev gvcp.DiscoveredDevice
+	if *ip != "" {
+		dev = gvcp.DiscoveredDevice{IP: *ip}
+		for _, d := range devs {
+			if d.IP == *ip {
+				dev = d
+				break
+			}
+		}
+	} else {
+		if len(devs) == 0 {
+			log.Fatal("no cameras found; pass -ip")
+		}
+		dev = devs[0]
+		fmt.Printf("discovered %s (%s)\n", dev.Model, dev.IP)
 	}
 
 	if err := os.MkdirAll(*dir, 0o755); err != nil {
@@ -59,25 +75,20 @@ func main() {
 
 	outName := *name
 	if outName == "" {
-		outName = defaultXMLName(dev)
+		vendor, serial := fileToken(dev.Manufacturer), fileToken(dev.Serial)
+		if vendor == "" {
+			vendor = "unknown"
+		}
+		if serial == "" {
+			serial = "unknown"
+		}
+		outName = vendor + "-" + serial + "-genicam.xml"
 	}
 	outPath := filepath.Join(*dir, outName)
 	if err := os.WriteFile(outPath, xmlData, 0o644); err != nil {
 		log.Fatal(err)
 	}
 	fmt.Printf("wrote %s (%d bytes)\n", outPath, len(xmlData))
-}
-
-func defaultXMLName(d gvcp.DiscoveredDevice) string {
-	vendor := fileToken(d.Manufacturer)
-	serial := fileToken(d.Serial)
-	if vendor == "" {
-		vendor = "unknown"
-	}
-	if serial == "" {
-		serial = "unknown"
-	}
-	return vendor + "-" + serial + "-genicam.xml"
 }
 
 // fileToken keeps letters/digits; other runs become a single '-'.
@@ -96,24 +107,4 @@ func fileToken(s string) string {
 		}
 	}
 	return strings.Trim(b.String(), "-")
-}
-
-func resolveDevice(ip string) (gvcp.DiscoveredDevice, error) {
-	devs, err := gvcp.Discover(context.Background(), 2*time.Second)
-	if err != nil {
-		return gvcp.DiscoveredDevice{}, err
-	}
-	if ip != "" {
-		for _, d := range devs {
-			if d.IP == ip {
-				return d, nil
-			}
-		}
-		return gvcp.DiscoveredDevice{IP: ip}, nil
-	}
-	if len(devs) == 0 {
-		return gvcp.DiscoveredDevice{}, fmt.Errorf("no cameras found; pass -ip")
-	}
-	fmt.Printf("discovered %s (%s)\n", devs[0].Model, devs[0].IP)
-	return devs[0], nil
 }

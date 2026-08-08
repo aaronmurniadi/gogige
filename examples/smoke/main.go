@@ -30,17 +30,25 @@ func main() {
 	hold := flag.Duration("hold", 2*time.Second, "how long to hold CCP with heartbeat before streaming")
 	liveFor := flag.Duration("live", 0, "if >0, also run Live+OnSample for this duration")
 	flag.Parse()
+	deviceIP := *ipFlag
+	if deviceIP == "" {
+		devs, err := gogige.Discover(context.Background(), 2*time.Second)
+		if err != nil {
+			log.Fatal(err)
+		}
+		if len(devs) == 0 {
+			log.Fatal("no cameras found; pass -ip")
+		}
+		d := devs[0]
+		deviceIP = d.IP
+		fmt.Printf("discovered %s %s sn=%s @ %s\n", d.Manufacturer, d.Model, d.Serial, d.IP)
+	}
+	fmt.Println("=== camera", deviceIP, "===")
 
-	ip, err := resolveIP(*ipFlag)
-	if err != nil {
+	if err := phase1Control(deviceIP, *hold); err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("=== camera", ip, "===")
-
-	if err := phase1Control(ip, *hold); err != nil {
-		log.Fatal(err)
-	}
-	if err := phase2Stream(ip, *frames, *outDir, *liveFor); err != nil {
+	if err := phase2Stream(deviceIP, *frames, *outDir, *liveFor); err != nil {
 		log.Fatal(err)
 	}
 	fmt.Println("SMOKE OK")
@@ -216,20 +224,4 @@ func logLine(level, msg string, kv ...any) {
 		fmt.Printf(" %v=%v", kv[i], kv[i+1])
 	}
 	fmt.Println()
-}
-
-func resolveIP(ip string) (string, error) {
-	if ip != "" {
-		return ip, nil
-	}
-	devs, err := gogige.Discover(context.Background(), 2*time.Second)
-	if err != nil {
-		return "", err
-	}
-	if len(devs) == 0 {
-		return "", fmt.Errorf("no cameras found; pass -ip")
-	}
-	d := devs[0]
-	fmt.Printf("discovered %s %s sn=%s @ %s\n", d.Manufacturer, d.Model, d.Serial, d.IP)
-	return d.IP, nil
 }

@@ -22,9 +22,17 @@ func main() {
 	name := flag.String("name", "", "output filename (default: frame-<unix>.jpg)")
 	flag.Parse()
 
-	cameraIP, err := resolveIP(*ip)
-	if err != nil {
-		log.Fatal(err)
+	cameraIP := *ip
+	if cameraIP == "" {
+		devs, err := gogige.Discover(context.Background(), 2*time.Second)
+		if err != nil {
+			log.Fatal(err)
+		}
+		if len(devs) == 0 {
+			log.Fatal("no cameras found; pass -ip")
+		}
+		cameraIP = devs[0].IP
+		fmt.Printf("discovered %s (%s)\n", devs[0].Model, cameraIP)
 	}
 
 	if err := os.MkdirAll(*dir, 0o755); err != nil {
@@ -47,39 +55,4 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println(outPath)
-}
-
-func resolveIP(ip string) (string, error) {
-	if ip != "" {
-		return ip, nil
-	}
-	devs, err := gogige.Discover(context.Background(), 2*time.Second)
-	if err != nil {
-		return "", err
-	}
-	if len(devs) == 0 {
-		return "", fmt.Errorf("no cameras found; pass -ip")
-	}
-	fmt.Printf("discovered %s (%s)\n", deviceLabel(devs[0]), devs[0].IP)
-	return devs[0].IP, nil
-}
-
-func deviceLabel(d gogige.DeviceInfo) string {
-	s := d.Manufacturer
-	if d.Model != "" {
-		if s != "" {
-			s += "-"
-		}
-		s += d.Model
-	}
-	if d.Serial != "" {
-		if s != "" {
-			s += "-"
-		}
-		s += d.Serial
-	}
-	if s == "" {
-		return d.IP
-	}
-	return s
 }

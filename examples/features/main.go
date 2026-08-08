@@ -17,7 +17,7 @@ import (
 )
 
 func main() {
-	ipFlag := flag.String("ip", "", "camera IP (empty = first discovery hit)")
+	ip := flag.String("ip", "", "camera IP (empty = first discovery hit)")
 	var hasNames, sets, execs multiFlag
 	flag.Var(&hasNames, "has", "feature name to probe with Has (repeatable)")
 	flag.Var(&sets, "set", "Name=value via ApplyControlPair (repeatable)")
@@ -30,12 +30,20 @@ func main() {
 		os.Exit(2)
 	}
 
-	ip, err := resolveIP(*ipFlag)
-	if err != nil {
-		log.Fatal(err)
+	deviceIP := *ip
+	if deviceIP == "" {
+		devs, err := gogige.Discover(context.Background(), 2*time.Second)
+		if err != nil {
+			log.Fatal(err)
+		}
+		if len(devs) == 0 {
+			log.Fatal("no cameras found; pass -ip")
+		}
+		deviceIP = devs[0].IP
+		fmt.Printf("discovered %s @ %s\n", devs[0].Model, deviceIP)
 	}
 
-	cam, err := gogige.Connect(ip)
+	cam, err := gogige.Connect(deviceIP)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -64,19 +72,4 @@ func (m *multiFlag) String() string { return fmt.Sprint([]string(*m)) }
 func (m *multiFlag) Set(v string) error {
 	*m = append(*m, v)
 	return nil
-}
-
-func resolveIP(ip string) (string, error) {
-	if ip != "" {
-		return ip, nil
-	}
-	devs, err := gogige.Discover(context.Background(), 2*time.Second)
-	if err != nil {
-		return "", err
-	}
-	if len(devs) == 0 {
-		return "", fmt.Errorf("no cameras found; pass -ip")
-	}
-	fmt.Printf("discovered %s @ %s\n", devs[0].Model, devs[0].IP)
-	return devs[0].IP, nil
 }
