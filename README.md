@@ -7,6 +7,12 @@ Pure-Go GigE Vision client (`package gige`) for Huaray/Dahua 3D volume cameras.
 ![Release](https://img.shields.io/badge/Release-v0.8.0-blue)
 ![Pure Go](https://img.shields.io/badge/Pure%20Go-Yes-green)
 
+> Tested on:
+
+| Manufacturer      | Model          | Description                                                                                        |
+| ----------------- | -------------- | -------------------------------------------------------------------------------------------------- |
+| Huaray Technology (iRAYPLE) | DS5131MG30CE   | 3D stereo industrial smart camera for machine vision, industrial automation, and precise depth measurement. |
+
 ## Table of Contents
 
 - [Features](#features)
