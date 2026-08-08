@@ -4,7 +4,7 @@ Pure-Go GigE Vision client (`package gige`) for Huaray/Dahua 3D volume cameras.
 
 ![Go Version](https://img.shields.io/badge/Go-1.23-blue)
 ![License](https://img.shields.io/badge/License-BSD--3--Clause-blue)
-![Release](https://img.shields.io/badge/Release-v0.8.0-blue)
+![Release](https://img.shields.io/badge/Release-v0.8.1-blue)
 ![Pure Go](https://img.shields.io/badge/Pure%20Go-Yes-green)
 
 > Tested on:

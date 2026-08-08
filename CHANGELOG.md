@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.1] - 2026-08-08
+
+### Changed
+- Library and all examples now declare `go 1.23` (was `1.26.3`); verified to build and pass tests with Go 1.23.12. `mise.toml` pins `go = "1.23"` so development tooling matches the module requirement
+
 ## [0.8.0] - 2026-08-08
 
 ### Added
