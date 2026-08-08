@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.0] - 2026-08-08
+
+### Added
+- `gogige.Slog(*slog.Logger)` adapter (stdlib `log/slog`): `gogige.WithLogger(gogige.Slog(slog.Default()))` is the new logging setup, so `github.com/rs/zerolog` is no longer a library dependency or a transitive dependency of any example
+
+### Changed
+- `gogige.Zerolog(...)` removed (breaking): replace `gogige.Zerolog(z)` with `gogige.Slog(...)` backed by `log/slog`; `go.mod`/`go.sum` dropped zerolog + `mattn/go-colorable`/`go-isatty`/`x/sys` from root and all example modules
+- `.githooks/pre-commit` now gofmt's the whole project (not just staged files) before `go test ./...`
+- `.gitattributes` marks `_references/**` linguist-vendored + export-ignore so third-party spec PDFs/headers stay out of release archives and language stats
+- README overhauled: shields badges, table of contents, features, project structure, contributing, and license sections; roadmap header wording updated
+
 ## [0.7.0] - 2026-08-08
 
 ### Added
