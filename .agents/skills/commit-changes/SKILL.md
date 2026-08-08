@@ -1,12 +1,12 @@
 ---
 name: commit-changes
-description: Commit all working-tree changes as brief, related-topic commits; update CHANGELOG.md with detail; mark completed ROADMAP.md items; bump the Go package version. Use only when explicitly invoked (e.g. /commit-changes or attach this skill).
+description: Commit all working-tree changes as brief, related-topic commits; update CHANGELOG.md with detail; mark completed ROADMAP.md items; bump the Go package version only when code changed. Use only when explicitly invoked (e.g. /commit-changes or attach this skill).
 disable-model-invocation: true
 ---
 
 # Commit Changes
 
-When explicitly invoked: commit **all** pending changes, split by topic, keep messages brief, put detail in `CHANGELOG.md`, sync `ROADMAP.md` if a point is done, and bump the Go package version.
+When explicitly invoked: commit **all** pending changes, split by topic, keep messages brief, put detail in `CHANGELOG.md`, sync `ROADMAP.md` if a point is done, and bump the Go package version when code changed.
 
 ## Workflow
 
@@ -23,7 +23,7 @@ When explicitly invoked: commit **all** pending changes, split by topic, keep me
 
 4. **ROADMAP.md**: if the change set fully completes a tracked item, flip `[ ]` / `[~]` → `[x]` and adjust Notes if needed. Partial progress → `[~]` only when clearly warranted. If nothing matches, leave ROADMAP alone.
 5. **Commit** each group (include matching CHANGELOG/ROADMAP hunks in the same commit when they document that group; leftover changelog/roadmap-only edits get their own brief docs commit).
-6. **Bump Go package version** (after content commits):
+6. **Bump Go package version** (after content commits). Skip entirely — no bump, no tag, no new CHANGELOG heading — when the change set contains **no code** (e.g. README/docs/.githooks/.gitattributes-only changes).
    - Semver from change set: breaking → major, feature → minor, fix/chore/docs → patch. No prior tag → start at `v0.1.0` (or next patch if already above).
    - Update `version.go` `Version` const if present; otherwise add root `version.go` with `package gogige` and `const Version = "X.Y.Z"`.
    - Record the version in the CHANGELOG heading for this release.
@@ -54,8 +54,8 @@ Follow the user's committing-changes-with-git rules: no config changes, no amend
 ```
 - [ ] All changes grouped by related topic
 - [ ] Brief message per commit
-- [ ] CHANGELOG.md updated with detail under new version
+- [ ] CHANGELOG.md updated with detail under new version (skipped for docs-only changes)
 - [ ] ROADMAP.md checked; completed items marked [x]
-- [ ] Version bumped (version.go + annotated tag vX.Y.Z)
+- [ ] Version bumped (version.go + annotated tag vX.Y.Z) — only when code changed
 - [ ] git status clean (or leftovers explained)
 ```
