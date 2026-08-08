@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.0] - 2026-08-08
+
+### Added
+- Phase 4 channel API: `gogige.OpenDevice` connects and returns `*Camera` directly; `Camera.SetInteger` / `Camera.SetEnum` feature setters; `Camera.StartStream` opens a GVSP channel delivering pooled frames over `Stream.Frames()` (`<-chan *gvsp.Frame`) with idempotent `Stop` plus `Pause` / `Resume`. `Stop` terminates the background loop promptly on context cancellation / Ctrl+C
+- New example `examples/frames`: the Phase 4 happy path (`OpenDevice` → `StartStream` → `range Frames` → `Release`), verified to exit cleanly on SIGINT
+
+### Changed
+- Protocol alias `Stream = gvsp.Stream` renamed `GVSPStream` so the root `Stream` name is now the Phase 4 channel type
+- Control examples (`configure-camera`, `features`, `probe-streams`) migrated from `gogige.Connect` to `gogige.OpenDevice` with a 3s GVCP timeout
+- `Session.recvFramePtr` hands pooled frames to the channel loop without copying (zero-copy delivery)
+
 ## [0.8.1] - 2026-08-08
 
 ### Changed

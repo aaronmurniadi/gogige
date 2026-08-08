@@ -1,4 +1,4 @@
 package gogige
 
 // Version is the library semver (no leading "v").
-const Version = "0.8.1"
+const Version = "0.9.0"
