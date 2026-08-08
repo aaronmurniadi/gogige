@@ -9,13 +9,13 @@ import (
 
 // Type aliases keep the root consumer API ergonomic for protocol types.
 type (
-	Port      = gvcp.Port
-	GVCP      = gvcp.GVCP
-	NodeMap   = genapi.NodeMap
-	Stream    = gvsp.Stream
-	Frame     = gvsp.Frame
-	Sample    = gvsp.Sample
-	Component = gvsp.Component
+	Port       = gvcp.Port
+	GVCP       = gvcp.GVCP
+	NodeMap    = genapi.NodeMap
+	GVSPStream = gvsp.Stream
+	Frame      = gvsp.Frame
+	Sample     = gvsp.Sample
+	Component  = gvsp.Component
 )
 
 // SFNC-style imaging components (BSCF ImageType wire values).

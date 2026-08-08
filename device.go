@@ -30,14 +30,8 @@ func (d *device) Logger() Logger {
 
 // Open connects to a GigE Vision camera and returns a Device.
 func Open(ctx context.Context, ip string, opts ...Option) (Device, error) {
-	if ip == "" {
-		return nil, errors.New("gige: ip address must not be empty")
-	}
-	cfg := openConfig{logger: NopLogger{}, timeout: 2 * time.Second, component: ComponentColor}
-	for _, o := range opts {
-		o(&cfg)
-	}
-	if err := ctx.Err(); err != nil {
+	cfg, err := resolveOpenConfig(ctx, ip, opts)
+	if err != nil {
 		return nil, err
 	}
 	cam, err := connectCamera(ip, cfg.timeout, cfg.logger)
@@ -49,6 +43,36 @@ func Open(ctx context.Context, ip string, opts ...Option) (Device, error) {
 		kind = ComponentColor
 	}
 	return &device{ip: ip, cam: cam, log: cfg.logger, component: kind}, nil
+}
+
+// OpenDevice connects to a GigE Vision camera and returns the Camera directly
+// (Phase 4 surface). Use Camera.SetInteger / SetEnum for control and
+// Camera.StartStream for live frames.
+func OpenDevice(ctx context.Context, ip string, opts ...Option) (*Camera, error) {
+	cfg, err := resolveOpenConfig(ctx, ip, opts)
+	if err != nil {
+		return nil, err
+	}
+	cam, err := connectCamera(ip, cfg.timeout, cfg.logger)
+	if err != nil {
+		return nil, err
+	}
+	return cam, nil
+}
+
+// resolveOpenConfig validates arguments and applies options shared by Open/OpenDevice.
+func resolveOpenConfig(ctx context.Context, ip string, opts []Option) (openConfig, error) {
+	if ip == "" {
+		return openConfig{}, errors.New("gige: ip address must not be empty")
+	}
+	cfg := openConfig{logger: NopLogger{}, timeout: 2 * time.Second, component: ComponentColor}
+	for _, o := range opts {
+		o(&cfg)
+	}
+	if err := ctx.Err(); err != nil {
+		return openConfig{}, err
+	}
+	return cfg, nil
 }
 
 func (d *device) IP() string { return d.ip }

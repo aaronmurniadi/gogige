@@ -14,6 +14,8 @@ import (
 	"github.com/aaronmurniadi/gogige/internal/color"
 )
 
+var errStreamNotOpen = errors.New("gige: stream not open")
+
 // Session is a persistent GVSP stream session. It implements Grabber.
 type Session struct {
 	cam        *Camera
@@ -359,7 +361,7 @@ func (s *Session) recvFrame(ctx context.Context) ([]byte, frameMeta, error) {
 	s.mu.Lock()
 	defer s.mu.Unlock()
 	if !s.opened.Load() || s.stream == nil {
-		return nil, meta, errors.New("gige: stream not open")
+		return nil, meta, errStreamNotOpen
 	}
 	frame, err := s.stream.Recv(timeout)
 	if err != nil {
@@ -372,4 +374,25 @@ func (s *Session) recvFrame(ctx context.Context) ([]byte, frameMeta, error) {
 		pixelFormat: frame.PixelFormat,
 	}
 	return append([]byte(nil), frame.Data...), meta, nil
+}
+
+// recvFramePtr returns the pooled GVSP frame directly (no copy). Caller owns it
+// and must Release() it. Used by the channel-based Stream API.
+func (s *Session) recvFramePtr(ctx context.Context) (*gvsp.Frame, error) {
+	if err := ctx.Err(); err != nil {
+		return nil, err
+	}
+	timeout := time.Second
+	if dl, ok := ctx.Deadline(); ok {
+		timeout = time.Until(dl)
+		if timeout <= 0 {
+			return nil, context.DeadlineExceeded
+		}
+	}
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	if !s.opened.Load() || s.stream == nil {
+		return nil, errStreamNotOpen
+	}
+	return s.stream.Recv(timeout)
 }

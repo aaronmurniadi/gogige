@@ -118,6 +118,16 @@ func (c *Camera) SetIntFeature(name string, v int64) error {
 	return c.nodes.SetInteger(name, v)
 }
 
+// SetInteger sets an integer GenICam feature (Phase 4 name).
+func (c *Camera) SetInteger(name string, v int64) error {
+	return c.SetIntFeature(name, v)
+}
+
+// SetEnum sets an enumeration GenICam feature (Phase 4 name).
+func (c *Camera) SetEnum(name, value string) error {
+	return c.SetStringFeature(name, value)
+}
+
 // SetFloatFeature sets a float GenICam feature.
 func (c *Camera) SetFloatFeature(name string, v float64) error {
 	return c.nodes.SetFloat(name, v)

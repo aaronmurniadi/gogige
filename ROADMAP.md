@@ -78,9 +78,9 @@ for frame := range stream.Frames() { frame.Release() }
 | Item                                  | Status | Notes                                                       |
 | ------------------------------------- | ------ | ----------------------------------------------------------- |
 | Package name `gogige` (was `gige`)    | [x]    | Renamed; name now matches import path                       |
-| `OpenDevice`                          | [ ]    | Today: `Open` → `Device`                                    |
-| `SetInteger` / `SetEnum` on camera    | [~]    | Exists as `SetIntFeature` / `SetStringFeature` / `Features` |
-| `StartStream` + `<-chan *Frame`       | [ ]    | Today: `StartGrabber` + `Grab`                              |
+| `OpenDevice`                          | [x]    | Returns `*Camera`; `Open`→`Device` kept for legacy consumers |
+| `SetInteger` / `SetEnum` on camera    | [x]    | `camera.go` (wrap `SetIntFeature` / `SetStringFeature`)     |
+| `StartStream` + `<-chan *Frame`       | [x]    | `framestream.go`; pooled frames, `Stop`/`Pause`/`Resume`    |
 | `frame.Release()` buffer return       | [x]    | `gvsp.BufferPool` + `Frame.Release`                         |
 
 ---
@@ -166,7 +166,7 @@ Refs: `_references/GenTL/GenTL.h`, `GenICam_GenTL_1_6.pdf`, GenTL SFNC 1.2.
 
 | Item                                      | Status | Spec cue                |
 | ----------------------------------------- | ------ | ----------------------- |
-| Channel stream API + buffer release       | [ ]    | Phase 4 consumer API    |
+| Channel stream API + buffer release       | [x]    | `OpenDevice` / `StartStream` / `Frames()` in `framestream.go` |
 | Optional `gentl/` CGO producer / consumer | [ ]    | See module ladder below |
 | `cmd/` CLIs                               | [~]    | discover done; stream done                  |
 
@@ -189,6 +189,7 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 
 ## Migration log
 
+- **2026-08-08** — Phase 4 API: `OpenDevice` → `*Camera`, `Camera.SetInteger` / `SetEnum`, `Camera.StartStream` → `Stream.Frames()` channel of pooled `*gvsp.Frame` with `Stop`/`Pause`/`Resume` (`framestream.go`); `Stream` alias → `GVSPStream`. New `examples/frames`.
 - **2026-08-08** — Enforced package layout: `control/gvcp` → `gvcp/`, `control/genicam` → `genapi/`, `vision/gvsp` → `gvsp/`; lifted camera/device/session/grab/live into root `gige` package (`camera.go`, `stream.go`, `options.go`, …).
 - **2026-08-08** — Cleared layout debt: `vision/bscf` → `gvsp/payload.go`; `vision/color` → `internal/color`; removed `vision/`.
 - **2026-08-08** — Enriched roadmap from `_references/` (GenCP/GenApi/GenTL/GenDC/SFNC/PFNC); noted missing GigE Vision PDF.
