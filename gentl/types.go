@@ -367,11 +367,37 @@ const (
 	SegmentInfoDataSize     = 4
 )
 
-// Invalid handle and infinite timeout values
+// Handles are opaque references to GenTL producer objects (void* in GenTL.h).
+// They are module-scoped, so distinct types keep the API type-safe at compile
+// time. The zero value of every handle type is the invalid handle.
+type (
+	// TL_HANDLE identifies an open Transport Layer (::TLOpen).
+	TL_HANDLE uintptr
+	// IF_HANDLE identifies an interface (::TLOpenInterface).
+	IF_HANDLE uintptr
+	// DEV_HANDLE identifies an opened device (::IFOpenDevice).
+	DEV_HANDLE uintptr
+	// DS_HANDLE identifies a data stream (::DevOpenDataStream).
+	DS_HANDLE uintptr
+	// PORT_HANDLE identifies a register-space access port. It may wrap a
+	// TL_HANDLE, IF_HANDLE, DEV_HANDLE, DS_HANDLE or BUFFER_HANDLE.
+	PORT_HANDLE uintptr
+	// BUFFER_HANDLE identifies an announced buffer (::DSAnnounceBuffer).
+	BUFFER_HANDLE uintptr
+	// EVENTSRC_HANDLE identifies a source for event registration.
+	EVENTSRC_HANDLE uintptr
+	// EVENT_HANDLE identifies a registered event (::GCRegisterEvent).
+	EVENT_HANDLE uintptr
+)
+
+// Invalid value (GENTL_INVALID_HANDLE) and infinite timeout (GENTL_INFINITE).
 const (
 	InvalidHandle = 0
 	Infinite      = 0xFFFFFFFFFFFFFFFF
 )
+
+// IsValidHandle reports whether h is a non-null opaque handle.
+func IsValidHandle[T ~uintptr](h T) bool { return h != 0 }
 
 // Version returns the GenTL standard version supported.
 func Version() (major, minor, subMinor int) {

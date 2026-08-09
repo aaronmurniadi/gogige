@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.13.1] - 2026-08-09
+
+### Added
+
+- `gentl` opaque handle types mirroring `GenTL.h` (`TL_HANDLE`, `IF_HANDLE`, `DEV_HANDLE`, `DS_HANDLE`, `PORT_HANDLE`, `BUFFER_HANDLE`, `EVENTSRC_HANDLE`, `EVENT_HANDLE`) plus `IsValidHandle` — no CGO, zero value is the invalid handle.
+
 ## [0.13.0] - 2026-08-09
 
 ### Added

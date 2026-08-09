@@ -49,7 +49,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `genapi/types.go`              | [x]    | Node parsing: nodeFields, parseNodeXML, parseNodeMapXML stream           |
 | `genapi/port.go`               | [x]    | Port binding layer: portAdapter → gvcp.Port I/O + byte order             |
 | `gentl/cti.go`                 | [ ]    | Optional GenTL `.cti` loader (`dlopen` / CGO)                            |
-| `gentl/types.go`               | [ ]    | Mirror `GenTL.h` handles / enums                                         |
+| `gentl/types.go`               | [x]    | Mirror `GenTL.h` handles / enums                                         |
 | `cmd/gogige-discover/`         | [x]    | CLI discovery utility                                                    |
 | `cmd/gogige-stream/`           | [x]    | CLI N-frame JPEG + BSCF measurements                                     |
 | `camera.go`                    | [x]    | High-level `Camera` + feature setters                                    |
