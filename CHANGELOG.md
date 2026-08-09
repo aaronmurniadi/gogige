@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.2] - 2026-08-09
+
+### Changed
+
+- Renamed the full-stack example `examples/smoke` → `examples/smoke-test` and expanded it into five sequential phases exercising the whole current stack on one camera: (1) raw GVCP control channel — CCP access privilege, byte order, register-map reads, heartbeat hold/pulse, FirstURL, GenApi XML build; (2) GenApi feature surface — `Has`/`Kind`, integer reads, `GetMin`/`GetMax`/`GetInc` constraints, `EnumEntries`/`CurrentEnum`, and non-destructive `SetInteger`/`SetEnum` round-trips; (3) streaming Session — `StartGrabber`/`Grab`, `GrabAll` component enumeration, `SetComponent`, `Pause`/`Resume`, JPEG write-out; (4) Phase-4 channel API `StartStream`/`Frames()`/`frame.Release()` (opt-in `-channel`); (5) `Live` preview with `OnSample`/`LatestSample` (opt-in `-live`).
+- The example module path is now `github.com/aaronmurniadi/gogige/examples/smoke-test`; README/ROADMAP references updated.
+
 ## [0.13.1] - 2026-08-09
 
 ### Added
