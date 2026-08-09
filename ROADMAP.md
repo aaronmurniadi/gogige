@@ -39,7 +39,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `gvcp/register_map.go`         | [x]    | GenCP ABRM 0x0000–0x0250 + GigE Vision ABRM/SBRM                     |
 | `gvsp/frame.go`                | [x]    | Frame + reassembly; `OOOPacketRing` zero-alloc OOO store (rare overflow map) |
 | `gvsp/receiver.go`             | [x]    | UDP receive path; OOO via ring, contiguous via pool                          |
-| `gvsp/payload.go`              | [~]    | BSCF + `Component` / `GrabAll`; Image/Multi-Part/GenDC still pending     |
+| `gvsp/payload.go`              | [x]    | BSCF + `Component` / `GrabAll`; payload-type dispatch (Image/Multi-Part/GenDC/Chunk) |
 | `gvsp/buffer_pool.go`          | [x]    | Pre-allocated frame buffers + `Frame.Release()`                          |
 | `gvsp/resend.go`               | [x]    | Missing-packet tracking + `RESEND_CMD` via `Stream.SetResender`          |
 | `genapi/camera_description.go` | [x]    | FirstURL fetch + zip/deflate XML                                         |
@@ -54,7 +54,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `cmd/gogige-stream/`           | [x]    | CLI N-frame JPEG + BSCF measurements                                     |
 | `camera.go`                    | [x]    | High-level `Camera` + feature setters                                    |
 | `discovery.go`                 | [x]    | Root `Discover` → `gvcp.Discover`                                        |
-| `stream.go`                    | [~]    | `Session` / `Grab` / `GrabAll`; not yet `StartStream` + `Frames()`       |
+| `stream.go`                    | [x]    | `Session` / `Grab` / `GrabAll`; `StartStream` + `Frames()` in `framestream.go` |
 | `options.go`                   | [x]    | `WithLogger` / `WithTimeout` / `WithComponent` / `GrabComponent` |
 
 ### Layout debt (outside target tree)
@@ -109,26 +109,26 @@ Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, GVSP section of `AGENTS.
 | Item                                         | Status | Spec cue                                                |
 | -------------------------------------------- | ------ | ------------------------------------------------------- |
 | Leader / payload / trailer reassembly        | [x]    | Standard + extended (EI) headers                        |
-| 64-bit `block_id` / packet ID tracking       | [~]    | GEV 2.0 extended ID path present                        |
+| 64-bit `block_id` / packet ID tracking       | [x]    | GEV 2.0 extended ID path present                        |
 | Zero-alloc hot path + ring buffers           | [x]    | `buffer_pool.go` + `OOOPacketRing`; OOO refill zero-alloc, overflow spills only past 256 pkts |
 | MTU / `GevSCPSPacketSize` + `SO_RCVBUF` warn | [x]    | Path MTU → negotiate SCPS (device clamp); 16MiB rcvbuf warn |
 | Packet resend (`RESEND_CMD`)                 | [x]    | Gap detect + `gvcp.RequestResend`; hold frame past trailer until filled |
-| `PAYLOAD_TYPE_IMAGE`                         | [~]    | Image leader fields; not typed as GenTL enum yet        |
-| `PAYLOAD_TYPE_CHUNK_DATA` / `CHUNK_ONLY`     | [ ]    | GenTL v1.2 / v1.4                                       |
-| `PAYLOAD_TYPE_MULTI_PART`                    | [ ]    | GenTL v1.5                                              |
-| `PAYLOAD_TYPE_GENDC`                         | [ ]    | GenTL v1.6 + GenDC 1.1                                  |
+| `PAYLOAD_TYPE_IMAGE`                         | [x]    | Leader payload-type field → `Frame.PayloadType`; GenTL enum constants in `payloadtype.go` |
+| `PAYLOAD_TYPE_CHUNK_DATA` / `CHUNK_ONLY`     | [x]    | GenTL v1.2 / v1.4; chunk-only dispatch                    |
+| `PAYLOAD_TYPE_MULTI_PART`                    | [x]    | GenTL v1.5; first image part dispatch                    |
+| `PAYLOAD_TYPE_GENDC`                         | [x]    | GenTL v1.6 + GenDC 1.1; container → image mapping         |
 | Vendor BSCF payload                          | [x]    | Huaray/Dahua; `Component` select (color/depth/mono) in `payload.go` |
 
 #### GenDC 1.1 checklist (`GenDC.h`)
 
 | Item                                                    | Status | Spec cue                     |
 | ------------------------------------------------------- | ------ | ---------------------------- |
-| Detect signature `GNDC` (`0x43444E47`)                  | [ ]    | `GDC_SIGNATURE`              |
-| Parse `GenDCContainerHeader` (v1.1)                     | [ ]    | `GDC_CONTAINER_HEADER`       |
-| Component headers (`Intensity`, `Range`, `Metadata`, …) | [ ]    | `GDC_*` component types      |
-| Part headers: 2D / JPEG / JPEG2000 / H264 / Chunk / XML | [ ]    | `GDC_2D_*`, `GDC_METADATA_*` |
-| Flow table header                                       | [ ]    | `GDC_FLOW_TABLE_HEADER`      |
-| Map GenDC 2D intensity → `Frame` / PFNC pixel format    | [ ]    | Component → part → buffer    |
+| Detect signature `GNDC` (`0x43444E47`)                  | [x]    | `GDC_SIGNATURE`              |
+| Parse `GenDCContainerHeader` (v1.1)                     | [x]    | `GDC_CONTAINER_HEADER`       |
+| Component headers (`Intensity`, `Range`, `Metadata`, …) | [x]    | `GDC_*` component types      |
+| Part headers: 2D / JPEG / JPEG2000 / H264 / Chunk / XML | [x]    | `GDC_2D_*`, `GDC_METADATA_*` |
+| Flow table header                                       | [x]    | `GDC_FLOW_TABLE_HEADER` (`FlowTableFromContainer`) |
+| Map GenDC 2D intensity → `Frame` / PFNC pixel format    | [x]    | Component → part → buffer (absolute DataOffset, SizeX/SizeY) |
 
 #### PFNC decode matrix (`PFNC.h` → `internal/color`)
 
@@ -139,9 +139,9 @@ Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, GVSP section of `AGENTS.
 | `RGB8`                        | `0x02180014`   | [x]        |                      |
 | `BGR8`                        | `0x02180015`   | [x]        | Default / heuristic  |
 | `YUV422_8` (YUYV)             | `0x02100032`   | [x]        |                      |
-| `YUV422_8_UYVY`               | `0x0210001F`   | [ ]        | Distinct packing     |
-| `BayerRG8` / other Bayer      | `0x01080009` … | [ ]        | Debayer before JPEG  |
-| Packed Mono/Bayer (10p/12p/…) | various        | [ ]        | As needed by devices |
+| `YUV422_8_UYVY`               | `0x0210001F`   | [x]        | Distinct packing     |
+| `BayerRG8` / other Bayer      | `0x01080009` … | [x]        | Debayer before JPEG (`DebayerToRGBA`) |
+| Packed Mono/Bayer (10p/12p/…) | various        | [x]        | `DecodeHighDepth` (LSB→MSB align) |
 
 ### Phase 3 — GenApi 2.1.1 (+ SFNC 2.7 naming)
 
@@ -188,6 +188,10 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 ---
 
 ## Migration log
+
+- **2026-08-09** — Fixed streaming OOM: OOO ring slots were preallocated at 8 MiB each (256 × 8 MiB ≈ 2 GiB per `frameBuild`), so the websocket/live examples ballooned to >10 GiB RSS and got SIGKILL'd. Slots now capped at 16 KiB (a single GVSP transport packet); `gvsp.Stream` additionally bounds concurrent in-flight frames (`maxInFlightFrames=64`) and evicts the oldest incomplete build when full.
+
+- **2026-08-09** — Phase 2 payload typing complete: GVSP payload-type constants + `Frame.PayloadType` from leader (`gvsp/payloadtype.go`); `ParsePayloadByType` dispatches GenDC/Multi-Part/Chunk/Image. GenDC flow table parsing (`internal/genDC`) + 2D part SizeX/SizeY + absolute DataOffset fix. PFNC decode matrix finished in `internal/color` (`DecodeHighDepth` for Bayer/packed Mono+Bayer).
 
 - **2026-08-09** — GVSP OOO zero-alloc: replaced `map[uint32][]byte` in `frameBuild` with pre-allocated `OOOPacketRing` (`gvsp/frame.go`), ring spills to a lazily-created overflow map only past `MaxOOOPackets` (256). `receiver.go` appendPayload uses ring `Put`/`Get`/`Delete`; `resend.go` adds `MissingPayloadRangesRing`. Fixed middle-delete ring compaction dropping the head packet; added `TestOOOPacketRing*` + `TestGVSPOutOfOrder`. Duplicate `frame_assemble.go` removed.
 

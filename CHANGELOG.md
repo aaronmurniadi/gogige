@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.13.0] - 2026-08-09
+
+### Added
+
+- GVSP payload type constants (GenTL/GigE Vision leader field IDs) in `gvsp/payloadtype.go`: `PayloadTypeImage`, `PayloadTypeChunkData`, `PayloadTypeChunkOnly`, `PayloadTypeMultiPart`, `PayloadTypeGenDC`, plus vendor aliases and `PayloadTypeName` / `IsPayloadType*` helpers.
+
+- `gvsp.Frame.PayloadType` populated from the GVSP leader payload-type-specific header; vendor/custom leaders (e.g. BSCF) keep it `0`.
+
+- GenDC flow table (`GDC_FLOW_TABLE_HEADER`) parsing: `internal/genDC` `IsFlowTable`, `ParseFlowTable`, `FlowTableFromContainer`; `gvsp.GenDCPayload.FlowTable`.
+
+- Correct 2D part dimension extraction (SizeX/SizeY) and absolute data-offset handling in GenDC parts; `ParsedGenDcComponent.Width/Height` now derived from the 2D part header.
+
+- PFNC decoder matrix completion in `internal/color`: Bayer8 debayering wired into `EncodeJPEG`, plus `DecodeHighDepth` for unpacked/packed Mono (10/12/14 bit) and packed/unpacked Bayer (10/12/14/16 bit) with LSB→MSB alignment.
+
+### Changed
+
+- `ParsePayloadByType` dispatches on the GVSP payload type constants instead of ad-hoc 0x800000xx values.
+
+### Fixed
+
+- GenDC part `DataOffset` now holds the absolute container data offset (from the part header) rather than the part-header position, so `ParseGenDcPayload` extracts the correct image bytes.
+
+- OOM on long-lived streams: `OOOPacketRing` pre-allocated every slot at `DefaultFrameSize` (8 MiB) — 256 slots × 8 MiB ≈ 2 GiB per in-flight `frameBuild` — ballooning RSS to >10 GiB on the websocket/live examples until the kernel killed the process. Slots are now capped at 16 KiB (one GVSP transport packet), and `gvsp.Stream` bounds concurrent in-flight frames (`maxInFlightFrames=64`), evicting the oldest incomplete build when full.
+
+### Tests
+- `TestPayloadTypeNames`, `TestParsePayloadByTypeDispatch`, `TestGVSPLeaderPayloadType`, `FlowParseGenDCContainer`/`TestParseFlowTable` (internal/genDC), and color Bayer/packed decode tests.
+
 ## [0.12.0] - 2026-08-09
 
 ### Changed

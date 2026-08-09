@@ -167,6 +167,7 @@ Bind Port nodes directly to `gvcp.Client` byte read/write calls (`Read(addr, len
 - Channel-based stream consumption (`<-chan *Frame`)
 - Standard library primitives over unvetted 3rd-party dependencies
 - Comprehensive Go error wrapping (`fmt.Errorf("...: %w", err)`)
+- Never use CGO; always implement in pure Go
 
 ## High-level API surface (Phase 4)
 
