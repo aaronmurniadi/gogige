@@ -11,6 +11,9 @@ type Frame struct {
 	Width       uint32
 	Height      uint32
 	PixelFormat uint32
+	// PayloadType is the GVSP leader payload type (see PayloadType*).
+	// 0 when the leader did not carry a recognized value (e.g. vendor BSCF).
+	PayloadType uint32
 	Data        []byte
 
 	pool *BufferPool
@@ -33,6 +36,7 @@ type frameBuild struct {
 	width       uint32
 	height      uint32
 	pixelFormat uint32
+	payloadType uint32
 	parts       *OOOPacketRing // zero-alloc OOO packet storage
 	buf         []byte         // pooled contiguous payload for packets [1, nextPkt)
 	nextPkt     uint32
@@ -196,6 +200,7 @@ func assembleFrame(fb *frameBuild) *Frame {
 		Width:       fb.width,
 		Height:      fb.height,
 		PixelFormat: fb.pixelFormat,
+		PayloadType: fb.payloadType,
 		Data:        data,
 		pool:        pool,
 	}
@@ -246,6 +251,7 @@ func assembleFromParts(fb *frameBuild) *Frame {
 		Width:       fb.width,
 		Height:      fb.height,
 		PixelFormat: fb.pixelFormat,
+		PayloadType: fb.payloadType,
 		Data:        data,
 		pool:        pool,
 	}

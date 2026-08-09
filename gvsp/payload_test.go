@@ -1,6 +1,7 @@
 package gvsp
 
 import (
+	"bytes"
 	"encoding/binary"
 	"testing"
 
@@ -266,5 +267,117 @@ func TestChunkPayload(t *testing.T) {
 	}
 	if chunkTs.ChunkID != 0x00000001 {
 		t.Fatalf("chunkID=0x%x", chunkTs.ChunkID)
+	}
+}
+
+// buildGenDCContainer mirrors the container built by internal/genDC tests:
+// one Intensity component, one 2D Mono8 part.
+func buildGenDCContainer(w, h int, pixels []byte) []byte {
+	var buf bytes.Buffer
+	hdr := make([]byte, 72)
+	binary.LittleEndian.PutUint32(hdr[0:], 0x43444E47)
+	hdr[4], hdr[5] = 1, 1
+	binary.LittleEndian.PutUint16(hdr[8:], 0x1000)
+	binary.LittleEndian.PutUint32(hdr[12:], 72)
+	binary.LittleEndian.PutUint32(hdr[52:], 1)
+	binary.LittleEndian.PutUint64(hdr[64:], 72)
+	buf.Write(hdr)
+
+	comp := make([]byte, 56)
+	binary.LittleEndian.PutUint16(comp[0:], 0x2000)
+	binary.LittleEndian.PutUint32(comp[4:], 56)
+	binary.LittleEndian.PutUint64(comp[32:], 1) // intensity
+	binary.LittleEndian.PutUint32(comp[40:], color.PixelFormatMono8)
+	binary.LittleEndian.PutUint16(comp[46:], 1)
+	binary.LittleEndian.PutUint64(comp[48:], 56)
+	buf.Write(comp)
+
+	dataAbs := 72 + 56 + 56
+	part := make([]byte, 56)
+	binary.LittleEndian.PutUint16(part[0:], 0x4200)
+	binary.LittleEndian.PutUint32(part[4:], 56)
+	binary.LittleEndian.PutUint32(part[8:], color.PixelFormatMono8)
+	binary.LittleEndian.PutUint64(part[24:], uint64(len(pixels)))
+	binary.LittleEndian.PutUint64(part[32:], uint64(dataAbs))
+	binary.LittleEndian.PutUint32(part[40:], uint32(w))
+	binary.LittleEndian.PutUint32(part[44:], uint32(h))
+	buf.Write(part)
+	buf.Write(pixels)
+	return buf.Bytes()
+}
+
+func TestPayloadTypeNames(t *testing.T) {
+	cases := map[uint32]string{
+		PayloadTypeImage:          "IMAGE",
+		PayloadTypeChunkData:      "CHUNK_DATA",
+		PayloadTypeChunkOnly:      "CHUNK_ONLY",
+		PayloadTypeMultiPart:      "MULTI_PART",
+		PayloadTypeGenDC:          "GENDC",
+		payloadTypeAliasGenDC:     "GENDC",
+		payloadTypeAliasMultiPart: "MULTI_PART",
+		payloadTypeAliasChunk:     "CHUNK_DATA",
+	}
+	for id, name := range cases {
+		if PayloadTypeName(id) != name {
+			t.Fatalf("name for 0x%08x: got %q want %q", id, PayloadTypeName(id), name)
+		}
+	}
+	_ = cases
+	if PayloadTypeName(0xdeadbeef) == "" {
+		t.Fatal("expected fallback name")
+	}
+	if !IsPayloadTypeGenDC(PayloadTypeGenDC) || !IsPayloadTypeGenDC(payloadTypeAliasGenDC) {
+		t.Fatal("IsPayloadTypeGenDC")
+	}
+	if !IsPayloadTypeMultiPart(PayloadTypeMultiPart) || !IsPayloadTypeMultiPart(payloadTypeAliasMultiPart) {
+		t.Fatal("IsPayloadTypeMultiPart")
+	}
+	if !IsPayloadTypeChunk(PayloadTypeChunkData) || !IsPayloadTypeChunk(PayloadTypeChunkOnly) || !IsPayloadTypeChunk(payloadTypeAliasChunk) {
+		t.Fatal("IsPayloadTypeChunk")
+	}
+}
+
+func TestParsePayloadByTypeDispatch(t *testing.T) {
+	// IMAGE passes through as raw data.
+	out, _, _, _, _, err := ParsePayloadByType([]byte{1, 2, 3}, PayloadTypeImage)
+	if err != nil || len(out) != 3 || out[0] != 1 {
+		t.Fatalf("image passthrough: %v %x", err, out)
+	}
+
+	pixels := make([]byte, 4*4)
+	for i := range pixels {
+		pixels[i] = byte(i)
+	}
+	container := buildGenDCContainer(4, 4, pixels)
+	for _, pt := range []uint32{PayloadTypeGenDC, payloadTypeAliasGenDC} {
+		out, fmtID, w, h, _, err := ParsePayloadByType(container, pt)
+		if err != nil {
+			t.Fatalf("gends 0x%x: %v", pt, err)
+		}
+		if !bytes.Equal(out, pixels) {
+			t.Fatalf("gends data mismatch")
+		}
+		if fmtID != color.PixelFormatMono8 || w != 4 || h != 4 {
+			t.Fatalf("gends meta %x %dx%d", fmtID, w, h)
+		}
+	}
+
+	// MULTI_PART routes to the multi-part parser.
+	hdr := make([]byte, 8)
+	binary.BigEndian.PutUint32(hdr[0:], 1)
+	part := make([]byte, 32)
+	binary.BigEndian.PutUint32(part[0:], 0)
+	binary.BigEndian.PutUint64(part[4:], 40)
+	binary.BigEndian.PutUint64(part[12:], 4)
+	binary.BigEndian.PutUint32(part[20:], 1)
+	binary.BigEndian.PutUint32(part[24:], 1)
+	binary.BigEndian.PutUint32(part[28:], color.PixelFormatMono8)
+	mp := append(append(hdr, part...), []byte{9, 8, 7, 6}...)
+	out, fmtID, w, h, _, err := ParsePayloadByType(mp, PayloadTypeMultiPart)
+	if err != nil {
+		t.Fatalf("mp: %v", err)
+	}
+	if len(out) != 4 || fmtID != color.PixelFormatMono8 || w != 1 || h != 1 {
+		t.Fatalf("mp result %x %dx%d", fmtID, w, h)
 	}
 }

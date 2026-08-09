@@ -6,6 +6,53 @@ import (
 	"time"
 )
 
+func putU32(b []byte, off int, v uint32) {
+	b[off] = byte(v >> 24)
+	b[off+1] = byte(v >> 16)
+	b[off+2] = byte(v >> 8)
+	b[off+3] = byte(v)
+}
+
+// TestGVSPLeaderPayloadType verifies the leader payload type reaches the frame,
+// while vendor/custom leaders (unknown payload bytes) keep PayloadType 0.
+func TestGVSPLeaderPayloadType(t *testing.T) {
+	s := &Stream{frames: map[uint64]*frameBuild{}, pool: NewBufferPool(2, 256)}
+	leader := make([]byte, 36)
+	putU32(leader, 0, PayloadTypeGenDC) // payload type at leader[0:4]
+	putU32(leader, 12, 0x01100007)
+	putU32(leader, 16, 4)
+	putU32(leader, 20, 4)
+	s.handlePacket(EncodeGVSPPayload(1, 0, gvspContentLeader, leader))
+	s.handlePacket(EncodeGVSPPayload(1, 1, gvspContentPayload, []byte("GNDC")))
+	s.handlePacket(EncodeGVSPPayload(1, 2, gvspContentTrailer, nil))
+	f, err := s.Recv(50 * time.Millisecond)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if f.PayloadType != PayloadTypeGenDC {
+		t.Fatalf("payload type=%d want %d", f.PayloadType, PayloadTypeGenDC)
+	}
+	f.Release()
+
+	// Vendor BSCF-style leader: bytes[0:4] are not a GVSP payload type ID.
+	s2 := &Stream{frames: map[uint64]*frameBuild{}, pool: NewBufferPool(2, 256)}
+	leader2 := make([]byte, 36)
+	copy(leader2[0:], "BSCF")
+	putU32(leader2, 16, 2)
+	putU32(leader2, 20, 2)
+	s2.handlePacket(EncodeGVSPPayload(1, 0, gvspContentLeader, leader2))
+	s2.handlePacket(EncodeGVSPPayload(1, 1, gvspContentPayload, []byte("DATA")))
+	s2.handlePacket(EncodeGVSPPayload(1, 2, gvspContentTrailer, nil))
+	f2, err := s2.Recv(50 * time.Millisecond)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if f2.PayloadType != 0 {
+		t.Fatalf("bscf payload type=%d want 0", f2.PayloadType)
+	}
+	f2.Release()
+}
+
 func TestHandlePacketHighBlockIDNotExtended(t *testing.T) {
 	// Real camera packets use standard (non-EI) headers. Once the 16-bit
 	// block ID reaches ≥0x8000, pkt[2]&0x80 is set — that must NOT flip EI.

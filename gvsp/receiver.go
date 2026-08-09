@@ -137,6 +137,14 @@ func (s *Stream) handlePacket(pkt []byte) {
 	switch content {
 	case gvspContentLeader:
 		if len(data) >= 36 {
+			// GVSP leader payload-type-specific header: payload type lives in
+			// the first 4 bytes, followed by the transport header fields.
+			fb.payloadType = binary.BigEndian.Uint32(data[0:])
+			if fb.payloadType > 0x0B && !IsPayloadTypeGenDC(fb.payloadType) &&
+				!IsPayloadTypeMultiPart(fb.payloadType) && !IsPayloadTypeChunk(fb.payloadType) {
+				// vendor/custom leaders (e.g. BSCF) carry other bytes here
+				fb.payloadType = 0
+			}
 			fb.pixelFormat = binary.BigEndian.Uint32(data[12:])
 			fb.width = binary.BigEndian.Uint32(data[16:])
 			fb.height = binary.BigEndian.Uint32(data[20:])

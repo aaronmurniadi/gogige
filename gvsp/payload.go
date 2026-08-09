@@ -378,18 +378,19 @@ func BuildTestBSCFComponents(blocks []ComponentBlock, packs []PackDet) []byte {
 	return append(hdr, payload...)
 }
 
-// ParsePayloadByType parses a payload based on its type
-// Returns: data, format, width, height, isPacked, error
+// ParsePayloadByType parses a payload based on its GVSP payload type (leader
+// field). It returns the first usable image part as raw data plus its format,
+// width, height and packed flag. Raw image payloads pass through untouched.
 func ParsePayloadByType(data []byte, payloadType uint32) ([]byte, uint32, int, int, bool, error) {
-	switch payloadType {
-	case 0x80000008: // PAYLOAD_TYPE_GENDC
+	switch {
+	case IsPayloadTypeGenDC(payloadType):
 		return ParseGenDCPayload(data)
-	case 0x80000007: // PAYLOAD_TYPE_MULTI_PART
+	case IsPayloadTypeMultiPart(payloadType):
 		return ParseMultiPartPayloadAsImage(data)
-	case 0x80000009: // PAYLOAD_TYPE_CHUNK_DATA
+	case IsPayloadTypeChunk(payloadType):
 		return ParseChunkPayloadAsImage(data)
 	default:
-		// Default to treating as raw image data
+		// PAYLOAD_TYPE_IMAGE (and unknown) pass through as raw image data.
 		return data, 0, 0, 0, false, nil
 	}
 }
