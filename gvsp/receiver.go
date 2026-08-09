@@ -126,12 +126,10 @@ func (s *Stream) handlePacket(pkt []byte) {
 	defer s.mu.Unlock()
 	fb := s.frames[frameID]
 	if fb == nil {
-		fb = &frameBuild{
-			id:      frameID,
-			parts:   map[uint32][]byte{},
-			pool:    s.pool,
-			nextPkt: 1,
-		}
+		fb = newFrameBuild()
+		fb.id = frameID
+		fb.pool = s.pool
+		fb.nextPkt = 1
 		s.frames[frameID] = fb
 	}
 	fb.extended = ext
@@ -201,7 +199,7 @@ func (s *Stream) requestGap(fb *frameBuild, first, last uint32) {
 }
 
 // appendPayload copies payload into the pooled contiguous buffer when possible;
-// out-of-order packets are held in parts and trigger PACKETRESEND for the gap.
+// out-of-order packets are held in parts ring buffer and trigger PACKETRESEND for the gap.
 func (s *Stream) appendPayload(fb *frameBuild, packetID uint32, data []byte) {
 	if fb.broken || packetID == 0 {
 		return
@@ -210,11 +208,8 @@ func (s *Stream) appendPayload(fb *frameBuild, packetID uint32, data []byte) {
 		return // duplicate already flushed
 	}
 	if packetID > fb.nextPkt {
-		if _, ok := fb.parts[packetID]; !ok {
-			cp := make([]byte, len(data))
-			copy(cp, data)
-			fb.parts[packetID] = cp
-		}
+		// OOO packet - store in ring (spills to rare overflow map when full)
+		fb.parts.Put(packetID, data)
 		s.requestGap(fb, fb.nextPkt, packetID-1)
 		return
 	}
@@ -222,11 +217,11 @@ func (s *Stream) appendPayload(fb *frameBuild, packetID uint32, data []byte) {
 	s.appendContiguous(fb, data)
 	fb.nextPkt++
 	for {
-		p, ok := fb.parts[fb.nextPkt]
+		p, ok := fb.parts.Get(fb.nextPkt)
 		if !ok {
 			break
 		}
-		delete(fb.parts, fb.nextPkt)
+		_, _ = fb.parts.Delete(fb.nextPkt)
 		s.appendContiguous(fb, p)
 		fb.nextPkt++
 	}
