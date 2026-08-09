@@ -13,6 +13,12 @@ const (
 	gvspContentLeader  = 0x01
 	gvspContentTrailer = 0x02
 	gvspContentPayload = 0x03
+
+	// maxInFlightFrames bounds the number of concurrently-reassembled frames.
+	// Each frameBuild holds a pooled 8 MiB contiguous buffer plus the OOO ring,
+	// so an unbounded set leaks memory when a packet hole never refills on a
+	// long-lived stream (previously OOM-killed the websocket example).
+	maxInFlightFrames = 64
 )
 
 // Stream receives GVSP packets and reassembles frames.
@@ -126,6 +132,7 @@ func (s *Stream) handlePacket(pkt []byte) {
 	defer s.mu.Unlock()
 	fb := s.frames[frameID]
 	if fb == nil {
+		s.evictStaleLocked()
 		fb = newFrameBuild()
 		fb.id = frameID
 		fb.pool = s.pool
@@ -159,6 +166,35 @@ func (s *Stream) handlePacket(pkt []byte) {
 		s.requestMissing(fb)
 		s.tryFinish(frameID, fb)
 	}
+}
+
+// evictStaleLocked drops the oldest incomplete frameBuild once the in-flight
+// map is full, releasing its contiguous buffer back to the pool. Callers hold
+// s.mu. It never touches complete frames (those are removed via tryFinish).
+func (s *Stream) evictStaleLocked() {
+	if s == nil || len(s.frames) < maxInFlightFrames {
+		return
+	}
+	var oldest uint64
+	found := false
+	for id := range s.frames {
+		if !found || id < oldest {
+			oldest, found = id, true
+		}
+	}
+	if !found {
+		return
+	}
+	if old := s.frames[oldest]; old != nil {
+		old.broken = true
+		if old.buf != nil {
+			if old.pool != nil {
+				old.pool.Put(old.buf)
+			}
+			old.buf = nil
+		}
+	}
+	delete(s.frames, oldest)
 }
 
 func (s *Stream) tryFinish(frameID uint64, fb *frameBuild) {

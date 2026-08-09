@@ -3,6 +3,12 @@ package gvsp
 const (
 	// Max OOO packets per frame (pre-allocated ring buffer)
 	MaxOOOPackets = 256
+
+	// oooPacketCap caps each OOO slot. OOO slots hold single GVSP transport
+	// packets (SCPS-sized, up to 9KB jumbo + headers), NOT whole frames —
+	// sizing them to DefaultFrameSize (8MiB) made every frameBuild hold
+	// 256×8MiB ≈ 2GiB and OOM-kill long-lived streams.
+	oooPacketCap = 16 << 10 // 16 KiB
 )
 
 // Frame is one reassembled GVSP image buffer plus leader metadata.
@@ -67,7 +73,7 @@ type OOOPacketRing struct {
 
 // RingBufferSlot holds a pre-allocated buffer for OOO packets.
 type RingBufferSlot struct {
-	data []byte // buffer with length=0, capacity=DefaultFrameSize
+	data []byte // buffer with length=0, capacity=oooPacketCap (one transport packet)
 }
 
 // NewOOOPacketRing creates a zero-alloc ring buffer for OOO packets.
@@ -75,7 +81,7 @@ func NewOOOPacketRing() *OOOPacketRing {
 	r := &OOOPacketRing{}
 	for i := 0; i < MaxOOOPackets; i++ {
 		r.packets[i] = &RingBufferSlot{
-			data: make([]byte, 0, DefaultFrameSize),
+			data: make([]byte, 0, oooPacketCap),
 		}
 	}
 	return r
