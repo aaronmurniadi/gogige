@@ -1,6 +1,7 @@
 package color
 
 import (
+	"encoding/binary"
 	"fmt"
 	"image"
 )
@@ -472,4 +473,161 @@ func getRed16GRBG(raw []uint16, w, h, x, y int) int {
 		return r / count
 	}
 	return 0
+}
+
+// shiftTo16 left-aligns LSB-packed sample values into the top bits of a 16-bit
+// word so the display path (which previews via the high byte) shows them scaled.
+func shiftTo16(dst []uint16, bits int) {
+	if bits >= 16 {
+		return
+	}
+	sh := 16 - bits
+	for i := range dst {
+		dst[i] <<= sh
+	}
+}
+
+// bayer16PFNC maps high bit-depth PFNC Bayer IDs to their Bayer pattern.
+var bayer16PFNC = map[uint32]byte{
+	PixelFormatBayerRG10: BayerPatternRGGB,
+	PixelFormatBayerRG12: BayerPatternRGGB,
+	PixelFormatBayerRG14: BayerPatternRGGB,
+	PixelFormatBayerRG16: BayerPatternRGGB,
+	PixelFormatBayerGR10: BayerPatternGRBG,
+	PixelFormatBayerGR12: BayerPatternGRBG,
+	PixelFormatBayerGR14: BayerPatternGRBG,
+	PixelFormatBayerGR16: BayerPatternGRBG,
+	PixelFormatBayerGB10: BayerPatternGBRG,
+	PixelFormatBayerGB12: BayerPatternGBRG,
+	PixelFormatBayerGB14: BayerPatternGBRG,
+	PixelFormatBayerGB16: BayerPatternGBRG,
+	PixelFormatBayerBG10: BayerPatternBGGR,
+	PixelFormatBayerBG12: BayerPatternBGGR,
+	PixelFormatBayerBG14: BayerPatternBGGR,
+	PixelFormatBayerBG16: BayerPatternBGGR,
+
+	PixelFormatBayerRG10p: BayerPatternRGGB,
+	PixelFormatBayerRG12p: BayerPatternRGGB,
+	PixelFormatBayerRG14p: BayerPatternRGGB,
+	PixelFormatBayerGR10p: BayerPatternGRBG,
+	PixelFormatBayerGR12p: BayerPatternGRBG,
+	PixelFormatBayerGR14p: BayerPatternGRBG,
+	PixelFormatBayerGB10p: BayerPatternGBRG,
+	PixelFormatBayerGB12p: BayerPatternGBRG,
+	PixelFormatBayerGB14p: BayerPatternGBRG,
+	PixelFormatBayerBG10p: BayerPatternBGGR,
+	PixelFormatBayerBG12p: BayerPatternBGGR,
+	PixelFormatBayerBG14p: BayerPatternBGGR,
+}
+
+// bayerBits returns the nominal bit depth for a Bayer PFNC ID (packed or not).
+func bayerBits(pf uint32) (bits int, packed bool, ok bool) {
+	switch pf {
+	case PixelFormatBayerRG10, PixelFormatBayerGR10, PixelFormatBayerGB10, PixelFormatBayerBG10:
+		return 10, false, true
+	case PixelFormatBayerRG12, PixelFormatBayerGR12, PixelFormatBayerGB12, PixelFormatBayerBG12:
+		return 12, false, true
+	case PixelFormatBayerRG14, PixelFormatBayerGR14, PixelFormatBayerGB14, PixelFormatBayerBG14:
+		return 14, false, true
+	case PixelFormatBayerRG16, PixelFormatBayerGR16, PixelFormatBayerGB16, PixelFormatBayerBG16:
+		return 16, false, true
+	case PixelFormatBayerRG10p, PixelFormatBayerGR10p, PixelFormatBayerGB10p, PixelFormatBayerBG10p:
+		return 10, true, true
+	case PixelFormatBayerRG12p, PixelFormatBayerGR12p, PixelFormatBayerGB12p, PixelFormatBayerBG12p:
+		return 12, true, true
+	case PixelFormatBayerRG14p, PixelFormatBayerGR14p, PixelFormatBayerGB14p, PixelFormatBayerBG14p:
+		return 14, true, true
+	default:
+		return 0, false, false
+	}
+}
+
+// DecodeHighDepth converts high bit-depth (>=10 bit) mono/Bayer data — both
+// unpacked 16-bit and packed (10p/12p/14p) forms — into RGBA. Returns
+// ok=false when the format is not a high-depth format handled here.
+func DecodeHighDepth(raw []byte, w, h int, pf uint32) (*image.RGBA, bool) {
+	if w <= 0 || h <= 0 {
+		return nil, false
+	}
+
+	// Packed / unpacked mono.
+	switch pf {
+	case PixelFormatMono10, PixelFormatMono12, PixelFormatMono14, PixelFormatMono16:
+		if len(raw) < w*h*2 {
+			return nil, false
+		}
+		return mono16Preview(raw, w, h), true
+	case PixelFormatMono10p, PixelFormatMono12p, PixelFormatMono14p:
+		bits := 10
+		switch pf {
+		case PixelFormatMono12p:
+			bits = 12
+		case PixelFormatMono14p:
+			bits = 14
+		}
+		if len(raw) < (w*h*bits+7)/8 {
+			return nil, false
+		}
+		dst := make([]uint16, w*h)
+		switch pf {
+		case PixelFormatMono10p:
+			Unpack10P(raw, dst)
+		case PixelFormatMono12p:
+			Unpack12P(raw, dst)
+		case PixelFormatMono14p:
+			Unpack14P(raw, dst)
+		}
+		shiftTo16(dst, bits)
+		return mono16Preview16(dst, w, h), true
+	}
+
+	// Bayer (packed and unpacked).
+	pattern, ok := bayer16PFNC[pf]
+	if !ok {
+		return nil, false
+	}
+	bits, packed, _ := bayerBits(pf)
+	var dst []uint16
+	if packed {
+		if len(raw) < (w*h*bits+7)/8 {
+			return nil, false
+		}
+		dst = make([]uint16, w*h)
+		switch {
+		case bits == 10:
+			Unpack10P(raw, dst)
+		case bits == 12:
+			Unpack12P(raw, dst)
+		case bits == 14:
+			Unpack14P(raw, dst)
+		}
+		shiftTo16(dst, bits)
+	} else {
+		if len(raw) < w*h*2 {
+			return nil, false
+		}
+		dst = make([]uint16, w*h)
+		for i := 0; i < w*h; i++ {
+			dst[i] = binary.LittleEndian.Uint16(raw[i*2:])
+		}
+		shiftTo16(dst, bits)
+	}
+	img, err := Debayer16(dst, w, h, pattern)
+	if err != nil {
+		return nil, false
+	}
+	return img, true
+}
+
+// mono16Preview16 renders LSB-aligned 16-bit mono data using its high byte.
+func mono16Preview16(raw []uint16, w, h int) *image.RGBA {
+	rgba := image.NewRGBA(image.Rect(0, 0, w, h))
+	for i, o := 0, 0; i < w*h; i, o = i+1, o+4 {
+		v := uint8(raw[i] >> 8)
+		rgba.Pix[o+0] = v
+		rgba.Pix[o+1] = v
+		rgba.Pix[o+2] = v
+		rgba.Pix[o+3] = 255
+	}
+	return rgba
 }
