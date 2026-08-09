@@ -111,7 +111,7 @@ gogige/
 │   ├── gvsp/                 # GVSP stream
 │   ├── bscf/                 # BSCF + Sample
 │   └── color/                # JPEG encode
-├── examples/                 # Runnable examples (smoke, grab, live, …)
+├── examples/                 # Runnable examples (smoke-test, grab, live, …)
 ├── .githooks/                # Versioned git hooks (gofmt + go test)
 ├── AGENTS.md                 # Project & protocol rules
 ├── CHANGELOG.md
@@ -124,7 +124,7 @@ gogige/
 
 Omit `-ip` to pick the first camera from GigE discovery (or pass `-ip` explicitly).
 
-- Full stack smoke (CCP/heartbeat/XML/stream/pause/live): [`examples/smoke`](examples/smoke)
+- Full stack smoke (CCP/heartbeat/XML/stream/pause/live): [`examples/smoke-test`](examples/smoke-test)
 - GenICam `Has` / `ApplyControlPair` / `Execute`: [`examples/features`](examples/features)
 - One-shot color JPEG to disk: [`examples/grab`](examples/grab)
 - Discover BSCF components (color/depth/mono) and grab all: [`examples/grab-components`](examples/grab-components)

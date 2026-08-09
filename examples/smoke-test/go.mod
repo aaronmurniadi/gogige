@@ -1,4 +1,4 @@
-module github.com/aaronmurniadi/gogige/examples/smoke
+module github.com/aaronmurniadi/gogige/examples/smoke-test
 
 go 1.23
 

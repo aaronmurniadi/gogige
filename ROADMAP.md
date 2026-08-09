@@ -205,7 +205,7 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 - **2026-08-08** — Phase 2 packet resend: `gvsp` gap tracking + hole-fill reassembly; `gvcp.EncodePacketResend` / `RequestResend`; Session wires resender.
 - **2026-08-08** — Phase 2 MTU/SCPS: `gvsp.PathMTU` + `PacketSizeForMTU`; `SO_RCVBUF` 16MiB with warn below 8MiB; acquisition RMW on `0x0D04`.
 - **2026-08-08** — Phase 1 complete: GenCP ABRM + GigE ABRM in `register_map.go`; PENDING_ACK `temporary_timeout`; `SyncImplementationEndianness` on TakeControl + GenApi device byte-order for WriteMem.
-- **2026-08-08** — Examples: `examples/smoke`, `examples/features`; CLI `cmd/gogige-stream`.
+- **2026-08-08** — Examples: `examples/smoke` (now `examples/smoke-test`), `examples/features`; CLI `cmd/gogige-stream`.
 - **2026-08-08** — BSCF/SFNC `Component` (color/depth/mono): parse all component blocks; `GrabComponent` / `WithComponent` / `SetComponent`; Mono16 JPEG preview.
 - **2026-08-08** — Root package `gige` → `gogige`; name now matches import path. Phase 4 happy path documented in `doc.go` (`OpenDevice` / `StartStream` / `Frames`).
 - **2026-08-08** — GenApi introspection reads (`Kind`, `EnumEntries`, `CurrentEnum`, `ReadInteger`, `ReadBoolean`) + `Session.GrabComponents`; new `examples/probe-streams` and `examples/configure-camera`.
