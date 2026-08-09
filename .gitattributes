@@ -3,3 +3,5 @@
 # language stats / code search.
 _references/** linguist-vendored
 _references/** export-ignore
+
+.githooks/** linguist-vendored

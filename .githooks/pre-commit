@@ -10,12 +10,12 @@ export CGO_ENABLED="${CGO_ENABLED:-0}"
 # Every Go file in the tree (tracked + new, ignoring build artifacts).
 mapfile -t go_files < <(git ls-files -co --exclude-standard -- '*.go')
 if [[ ${#go_files[@]} -gt 0 ]]; then
-	# Reformat the whole project, not just staged files.
-	gofmt -w "${go_files[@]}"
-	# Stage exactly the files gofmt changed so the commit carries them.
-	mapfile -t changed < <(git diff --name-only -- '*.go')
+	# Stage exactly the files gofmt would change so the commit carries only
+	# the formatting fix, not unrelated working-tree edits.
+	mapfile -t changed < <(gofmt -l "${go_files[@]}")
 	if [[ ${#changed[@]} -gt 0 ]]; then
-		git add "${changed[@]}"
+		gofmt -w "${changed[@]}"
+		git add -- "${changed[@]}"
 	fi
 fi
 
