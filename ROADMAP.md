@@ -37,8 +37,8 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `gvcp/heartbeat.go`            | [x]    | `PulseHeartbeat` + background tick at `HeartbeatTimeout/2`               |
 | `gvcp/packet.go`               | [x]    | Header encode + cmd constants                                            |
 | `gvcp/register_map.go`         | [x]    | GenCP ABRM 0x0000–0x0250 + GigE Vision ABRM/SBRM                     |
-| `gvsp/frame.go`                | [x]    | Frame + reassembly helper                                                |
-| `gvsp/receiver.go`             | [~]    | UDP receive path; ordered payloads use pool (OOO still allocates)        |
+| `gvsp/frame.go`                | [x]    | Frame + reassembly; `OOOPacketRing` zero-alloc OOO store (rare overflow map) |
+| `gvsp/receiver.go`             | [x]    | UDP receive path; OOO via ring, contiguous via pool                          |
 | `gvsp/payload.go`              | [~]    | BSCF + `Component` / `GrabAll`; Image/Multi-Part/GenDC still pending     |
 | `gvsp/buffer_pool.go`          | [x]    | Pre-allocated frame buffers + `Frame.Release()`                          |
 | `gvsp/resend.go`               | [x]    | Missing-packet tracking + `RESEND_CMD` via `Stream.SetResender`          |
@@ -110,7 +110,7 @@ Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, GVSP section of `AGENTS.
 | -------------------------------------------- | ------ | ------------------------------------------------------- |
 | Leader / payload / trailer reassembly        | [x]    | Standard + extended (EI) headers                        |
 | 64-bit `block_id` / packet ID tracking       | [~]    | GEV 2.0 extended ID path present                        |
-| Zero-alloc hot path + ring buffers           | [~]    | `buffer_pool.go` + in-order path; OOO/oversize still alloc |
+| Zero-alloc hot path + ring buffers           | [x]    | `buffer_pool.go` + `OOOPacketRing`; OOO refill zero-alloc, overflow spills only past 256 pkts |
 | MTU / `GevSCPSPacketSize` + `SO_RCVBUF` warn | [x]    | Path MTU → negotiate SCPS (device clamp); 16MiB rcvbuf warn |
 | Packet resend (`RESEND_CMD`)                 | [x]    | Gap detect + `gvcp.RequestResend`; hold frame past trailer until filled |
 | `PAYLOAD_TYPE_IMAGE`                         | [~]    | Image leader fields; not typed as GenTL enum yet        |
@@ -188,6 +188,8 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 ---
 
 ## Migration log
+
+- **2026-08-09** — GVSP OOO zero-alloc: replaced `map[uint32][]byte` in `frameBuild` with pre-allocated `OOOPacketRing` (`gvsp/frame.go`), ring spills to a lazily-created overflow map only past `MaxOOOPackets` (256). `receiver.go` appendPayload uses ring `Put`/`Get`/`Delete`; `resend.go` adds `MissingPayloadRangesRing`. Fixed middle-delete ring compaction dropping the head packet; added `TestOOOPacketRing*` + `TestGVSPOutOfOrder`. Duplicate `frame_assemble.go` removed.
 
 - **2026-08-08** — Phase 3: Constraint pointers (pMin, pMax, pInc) complete. Added Node.GetConstraints(), NodeMap.GetMin/Max/Inc() methods. Parser now extracts Min/Max/Inc static values + pMin/pMax/pInc feature references. Enables parameter bounds validation. Test: TestConstraintPointers.
 - **2026-08-08** — GenApi refactoring complete: `node.go` (Node interface + gcNode), `types.go` (node parsing: nodeFields, parseNodeXML, parseNodeMapXML), `port.go` (portAdapter binding → gvcp.Port); `nodemap.go` now clean orchestration layer; zero-alloc architecture with explicit separation of concerns per AGENTS.md.

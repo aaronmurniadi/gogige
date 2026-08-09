@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.12.0] - 2026-08-09
+
+### Changed
+
+- GVSP out-of-order packet reassembly now uses a pre-allocated `OOOPacketRing` in place of `map[uint32][]byte`, removing per-packet heap allocations on the OOO gap-refill path (zero-alloc hot path per AGENTS.md). Ring spills to a lazily-created overflow map only past `MaxOOOPackets` (256).
+
+- `gvsp/resend.go` adds `MissingPayloadRangesRing`, the ring-backed equivalent of `MissingPayloadRanges`, used for gap/trailer resend computation.
+
+### Fixed
+
+- `OOOPacketRing` middle-delete no longer drops the ring-head packet (previous compact-on-delete advanced head unconditionally and lost the oldest entry).
+
+- `appendPayload` ring-full fallback now stores the packet via the ring overflow map instead of allocating a copy and discarding it (packets were silently dropped).
+
+### Added
+
+- Exported `OOOPacketRing`, `NewOOOPacketRing`, `RingBufferSlot`, and `MaxOOOPackets` in `gvsp/frame.go`.
+
+- Tests: `TestOOOPacketRingPutGetDelete`, `TestOOOPacketRingOverflowSpill`, and `TestGVSPOutOfOrder` (OOO arrival + resend hole-fill).
+
 ## [0.11.1] - 2026-08-09
 
 ### Removed

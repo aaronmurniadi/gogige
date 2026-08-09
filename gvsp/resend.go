@@ -41,9 +41,40 @@ func MissingPayloadRanges(nextContiguous uint32, have map[uint32][]byte, from, t
 	return out
 }
 
+// MissingPayloadRangesRing is the ring buffer version of MissingPayloadRanges.
+func MissingPayloadRangesRing(nextContiguous uint32, have *OOOPacketRing, from, to uint32) []PacketRange {
+	if to < from {
+		return nil
+	}
+	var out []PacketRange
+	var gapStart uint32
+	inGap := false
+	for id := from; id <= to; id++ {
+		ok := id < nextContiguous
+		if !ok && have != nil {
+			_, ok = have.Get(id)
+		}
+		if !ok {
+			if !inGap {
+				gapStart = id
+				inGap = true
+			}
+			continue
+		}
+		if inGap {
+			out = append(out, PacketRange{First: gapStart, Last: id - 1})
+			inGap = false
+		}
+	}
+	if inGap {
+		out = append(out, PacketRange{First: gapStart, Last: to})
+	}
+	return out
+}
+
 func (fb *frameBuild) missingPayloadRanges(from, to uint32) []PacketRange {
 	if fb == nil {
 		return nil
 	}
-	return MissingPayloadRanges(fb.nextPkt, fb.parts, from, to)
+	return MissingPayloadRangesRing(fb.nextPkt, fb.parts, from, to)
 }

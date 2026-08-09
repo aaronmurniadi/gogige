@@ -51,10 +51,9 @@ func TestHandlePacketExtendedIDBitInInfos(t *testing.T) {
 }
 
 func TestGVSPDropsIncomplete(t *testing.T) {
-	fb := &frameBuild{id: 1, width: 2, height: 2, parts: map[uint32][]byte{
-		1: {1, 2, 3},
-		3: {7, 8, 9}, // missing packet 2
-	}}
+	fb := &frameBuild{id: 1, width: 2, height: 2, parts: NewOOOPacketRing()}
+	fb.parts.Put(1, []byte{1, 2, 3})
+	fb.parts.Put(3, []byte{7, 8, 9}) // missing packet 2
 	if assembleFrame(fb) != nil {
 		t.Fatal("expected nil for incomplete frame")
 	}
@@ -99,6 +98,60 @@ func TestGVSPAssemble(t *testing.T) {
 	}
 	if len(f.Data) != len(payload) {
 		t.Fatalf("data len %d", len(f.Data))
+	}
+	f.Release()
+}
+
+// TestGVSPOutOfOrder tests OOO packet handling with ring buffer
+func TestGVSPOutOfOrder(t *testing.T) {
+	s := &Stream{frames: map[uint64]*frameBuild{}, pool: NewBufferPool(2, 256)}
+
+	// Resend mock to fill OOO packets
+	var resendPackets map[uint64]map[uint32][]byte
+	s.SetResender(func(blockID uint64, first, last uint32, extended bool) {
+		if resendPackets == nil {
+			resendPackets = make(map[uint64]map[uint32][]byte)
+		}
+		if resendPackets[blockID] == nil {
+			resendPackets[blockID] = make(map[uint32][]byte)
+		}
+		// Simulate resend - send the missing packets
+		payload := []byte{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+		for id := first; id <= last; id++ {
+			offset := (id - 1) * 3
+			resendPackets[blockID][id] = payload[offset : offset+3]
+		}
+	})
+
+	// Send packets in OOO order: packet 3 first
+	payload := []byte{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+	s.handlePacket(EncodeGVSPPayload(1, 3, gvspContentPayload, payload[6:9])) // packet 3 - OOO
+
+	// Check OOO ring buffer
+	fb := s.frames[1]
+	if fb == nil {
+		t.Fatal("frame build not created")
+	}
+
+	// Trailer arrives - triggers resend for packets 1,2
+	s.handlePacket(EncodeGVSPPayload(1, 4, gvspContentTrailer, nil))
+
+	// Resent packets arrive
+	if pkt, ok := resendPackets[1][1]; ok {
+		s.handlePacket(EncodeGVSPPayload(1, 1, gvspContentPayload, pkt))
+	}
+	if pkt, ok := resendPackets[1][2]; ok {
+		s.handlePacket(EncodeGVSPPayload(1, 2, gvspContentPayload, pkt))
+	}
+
+	// Try to receive
+	f, err := s.Recv(50 * time.Millisecond)
+	if err != nil {
+		t.Fatalf("recv failed: %v", err)
+	}
+
+	if got, want := f.Data, payload[:9]; string(got) != string(want) {
+		t.Fatalf("data mismatch: got %v want %v", got, want)
 	}
 	f.Release()
 }
