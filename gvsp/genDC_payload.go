@@ -1,7 +1,6 @@
 package gvsp
 
 import (
-	"encoding/binary"
 	"fmt"
 	"github.com/aaronmurniadi/gogige/internal/genDC"
 )
@@ -10,6 +9,7 @@ import (
 type GenDCPayload struct {
 	Frame      *genDC.GenDCFrame
 	Components []GenDcComponent
+	FlowTable  *genDC.FlowTable
 }
 
 // GenDcComponent represents a parsed GenDC component
@@ -55,15 +55,13 @@ func ParseGenDcPayload(data []byte) (*GenDCPayload, error) {
 			}
 		}
 
-		// Extract dimensions from part header if available
+		// Extract dimensions from the first 2D part header.
 		if len(comp.Parts) > 0 {
 			p := comp.Parts[0]
 			if p.Header.HeaderType >= genDC.HeaderPartMin && p.Header.HeaderType <= genDC.HeaderPartMax {
-				// Check if this is a 2D part header
-				if len(data)-int(p.DataOffset) >= genDC.PartHeader2DBaseSize {
-					headerData := data[p.DataOffset:]
-					c.Width = int(binary.LittleEndian.Uint32(headerData[32:]))
-					c.Height = int(binary.LittleEndian.Uint32(headerData[36:]))
+				if p.SizeX > 0 && p.SizeY > 0 {
+					c.Width = int(p.SizeX)
+					c.Height = int(p.SizeY)
 				}
 			}
 		}
@@ -71,9 +69,12 @@ func ParseGenDcPayload(data []byte) (*GenDCPayload, error) {
 		components = append(components, c)
 	}
 
+	flowTable, _ := genDC.FlowTableFromContainer(data)
+
 	return &GenDCPayload{
 		Frame:      frame,
 		Components: components,
+		FlowTable:  flowTable,
 	}, nil
 }
 

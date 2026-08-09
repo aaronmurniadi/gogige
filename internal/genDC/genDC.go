@@ -181,6 +181,9 @@ const (
 // GenDCPartHeader2DBase extends PartHeaderBase with SizeX, SizeY, Padding
 const (
 	PartHeader2DBaseSize = 44
+	// PartHeader2DSize is the full GenDCPartHeader2D: 40-byte base + SizeX(4)
+	// + SizeY(4) + PaddingX(2) + PaddingY(2) + InfoReserved(4).
+	PartHeader2DSize = 56
 )
 
 // GenDCContainerHeader represents the container header
@@ -246,6 +249,75 @@ type PartHeader2D struct {
 	InfoReserved uint32
 }
 
+// GenDCFlowTableHeaderSize is the fixed-size base of a flow table header
+// (GDC_FLOW_TABLE_HEADER) before the variable-length FlowSize array.
+const GenDCFlowTableHeaderSize = 16
+
+// FlowTableHeader is the GenDC flow table base header (GenDCFlowTableHeader).
+type FlowTableHeader struct {
+	HeaderType   uint16
+	Flags        uint16
+	HeaderSize   uint32
+	VersionMajor uint8
+	VersionMinor uint8
+	Reserved     uint16
+	FlowCount    uint32
+	FlowSizes    []uint64 // FlowSize[FlowCount]
+}
+
+// FlowTable is a parsed GenDC flow table (GenDCFlowTable).
+type FlowTable struct {
+	Header    *FlowTableHeader
+	FlowSizes []uint64
+}
+
+// IsFlowTable reports whether buf starts with a GDC_FLOW_TABLE_HEADER.
+func IsFlowTable(buf []byte) bool {
+	return len(buf) >= 2 && binary.LittleEndian.Uint16(buf) == HeaderFlowTable
+}
+
+// ParseFlowTable parses a GenDC flow table from a container buffer.
+func ParseFlowTable(buf []byte) (*FlowTable, error) {
+	if len(buf) < GenDCFlowTableHeaderSize {
+		return nil, fmt.Errorf("genDC: flow table header too short")
+	}
+	if binary.LittleEndian.Uint16(buf) != HeaderFlowTable {
+		return nil, fmt.Errorf("genDC: not a flow table header (0x%04x)", binary.LittleEndian.Uint16(buf))
+	}
+	ft := &FlowTableHeader{
+		HeaderType:   binary.LittleEndian.Uint16(buf[0:]),
+		Flags:        binary.LittleEndian.Uint16(buf[2:]),
+		HeaderSize:   binary.LittleEndian.Uint32(buf[4:]),
+		VersionMajor: buf[8],
+		VersionMinor: buf[9],
+		Reserved:     binary.LittleEndian.Uint16(buf[10:]),
+		FlowCount:    binary.LittleEndian.Uint32(buf[12:]),
+	}
+	sizes := make([]uint64, 0, ft.FlowCount)
+	for i := uint32(0); i < ft.FlowCount; i++ {
+		off := GenDCFlowTableHeaderSize + int(i*8)
+		if off+8 > len(buf) {
+			break
+		}
+		sizes = append(sizes, binary.LittleEndian.Uint64(buf[off:]))
+	}
+	ft.FlowSizes = sizes
+	return &FlowTable{Header: ft, FlowSizes: sizes}, nil
+}
+
+// FlowTableFromContainer scans a GenDC container buffer for a flow table block.
+func FlowTableFromContainer(buf []byte) (*FlowTable, error) {
+	for off := 0; off+GenDCFlowTableHeaderSize <= len(buf); off += 4 {
+		if binary.LittleEndian.Uint16(buf[off:]) == HeaderFlowTable {
+			ft, err := ParseFlowTable(buf[off:])
+			if err == nil {
+				return ft, nil
+			}
+		}
+	}
+	return nil, fmt.Errorf("genDC: no flow table in container")
+}
+
 // GenDCComponent represents a parsed component
 type Component struct {
 	Header     *ComponentHeader
@@ -259,6 +331,8 @@ type Part struct {
 	Header     *PartHeader
 	DataOffset int64
 	DataSize   uint64
+	SizeX      uint32 // set for 2D part headers
+	SizeY      uint32
 }
 
 // GenDCFrame represents a parsed GenDC container
@@ -397,7 +471,7 @@ func parseComponent(buf []byte, maxLen int64) (Component, error) {
 		if err != nil {
 			continue
 		}
-		p.DataOffset = header.PartOffsets[i]
+		p.DataOffset = p.Header.DataOffset
 		p.DataSize = p.Header.DataSize
 		parts = append(parts, p)
 	}
@@ -427,7 +501,12 @@ func parsePart(buf []byte) (Part, error) {
 		DataOffset: int64(binary.LittleEndian.Uint64(buf[32:])),
 	}
 
-	return Part{Header: header}, nil
+	p := Part{Header: header}
+	if header.HeaderType >= PartGeneric2D && header.HeaderType <= PartGeneric2D+0xFF && len(buf) >= PartHeader2DSize {
+		p.SizeX = binary.LittleEndian.Uint32(buf[40:])
+		p.SizeY = binary.LittleEndian.Uint32(buf[44:])
+	}
+	return p, nil
 }
 
 // ComponentTypeName returns human-readable component type name
