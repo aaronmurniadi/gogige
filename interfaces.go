@@ -39,9 +39,9 @@ type FrameSink interface {
 }
 
 // JPEGFunc adapts a callback into a FrameSink (Freeze/Resume are no-ops).
-// Handy for wiring Live to an existing broadcast function:
+// Handy for wiring live to an existing broadcast function:
 //
-//	live := live.NewLive(dev, live.WithSink(JPEGFunc(hub.Broadcast)))
+//	l := live.NewLive(dev, live.WithSink(JPEGFunc(hub.Broadcast)))
 type JPEGFunc func([]byte)
 
 func (f JPEGFunc) SendJPEG(jpeg []byte) {

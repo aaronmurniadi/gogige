@@ -1,4 +1,4 @@
-package gogige
+package live
 
 import (
 	"context"
@@ -6,6 +6,8 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/aaronmurniadi/gogige"
 )
 
 const (
@@ -19,19 +21,19 @@ const (
 type LiveOption func(*Live)
 
 // WithSink attaches a FrameSink for preview JPEG delivery.
-func WithSink(s FrameSink) LiveOption {
+func WithSink(s gogige.FrameSink) LiveOption {
 	return func(l *Live) { l.sink = s }
 }
 
 // WithOnSample registers a callback after each published sample.
-func WithOnSample(fn func(Sample)) LiveOption {
+func WithOnSample(fn func(gogige.Sample)) LiveOption {
 	return func(l *Live) { l.onSample = fn }
 }
 
 // WithLiveComponent selects which BSCF/SFNC component Live grabs (color/depth/mono).
-func WithLiveComponent(c Component) LiveOption {
+func WithLiveComponent(c gogige.Component) LiveOption {
 	return func(l *Live) {
-		if c != ComponentUnknown {
+		if c != gogige.ComponentUnknown {
 			l.component = c
 		}
 	}
@@ -39,11 +41,11 @@ func WithLiveComponent(c Component) LiveOption {
 
 // Live keeps a Grabber open and publishes Samples (optionally to a FrameSink).
 type Live struct {
-	dev       Device
-	sink      FrameSink
-	onSample  func(Sample)
-	log       Logger
-	component Component
+	dev       gogige.Device
+	sink      gogige.FrameSink
+	onSample  func(gogige.Sample)
+	log       gogige.Logger
+	component gogige.Component
 
 	lifeMu  sync.Mutex
 	running bool
@@ -52,14 +54,14 @@ type Live struct {
 	once    sync.Once
 	paused  atomic.Bool
 	latest  atomic.Pointer[[]byte]
-	sample  atomic.Pointer[Sample]
-	grabber Grabber
+	sample  atomic.Pointer[gogige.Sample]
+	grabber gogige.Grabber
 }
 
 // NewLive builds a Live preview/capture loop over an already-opened Device.
-func NewLive(dev Device, opts ...LiveOption) *Live {
-	l := &Live{dev: dev, log: NopLogger{}, component: ComponentColor}
-	if lg, ok := dev.(hasLogger); ok {
+func NewLive(dev gogige.Device, opts ...LiveOption) *Live {
+	l := &Live{dev: dev, log: gogige.NopLogger{}, component: gogige.ComponentColor}
+	if lg, ok := dev.(interface{ Logger() gogige.Logger }); ok {
 		if log := lg.Logger(); log != nil {
 			l.log = log
 		}
@@ -71,9 +73,9 @@ func NewLive(dev Device, opts ...LiveOption) *Live {
 }
 
 // Component returns the BSCF/SFNC component Live is decoding.
-func (l *Live) Component() Component {
+func (l *Live) Component() gogige.Component {
 	if l == nil {
-		return ComponentUnknown
+		return gogige.ComponentUnknown
 	}
 	l.lifeMu.Lock()
 	defer l.lifeMu.Unlock()
@@ -81,8 +83,8 @@ func (l *Live) Component() Component {
 }
 
 // SetComponent switches the BSCF/SFNC component for subsequent grabs (no reconnect).
-func (l *Live) SetComponent(c Component) {
-	if l == nil || c == ComponentUnknown {
+func (l *Live) SetComponent(c gogige.Component) {
+	if l == nil || c == gogige.ComponentUnknown {
 		return
 	}
 	l.lifeMu.Lock()
@@ -197,13 +199,13 @@ func (l *Live) LatestJPEG() []byte {
 }
 
 // LatestSample returns a copy of the most recent Sample.
-func (l *Live) LatestSample() Sample {
+func (l *Live) LatestSample() gogige.Sample {
 	if l == nil {
-		return Sample{PackCount: -1}
+		return gogige.Sample{PackCount: -1}
 	}
 	ptr := l.sample.Load()
 	if ptr == nil {
-		return Sample{PackCount: -1}
+		return gogige.Sample{PackCount: -1}
 	}
 	s := *ptr
 	if len(s.JPEG) > 0 {
@@ -212,7 +214,7 @@ func (l *Live) LatestSample() Sample {
 	return s
 }
 
-func (l *Live) publish(sample Sample) {
+func (l *Live) publish(sample gogige.Sample) {
 	if len(sample.JPEG) == 0 {
 		return
 	}
@@ -270,7 +272,7 @@ func (l *Live) loop(parent context.Context, stop, done chan struct{}) {
 		l.lifeMu.Lock()
 		g := l.grabber
 		if g == nil {
-			ng, err := l.dev.StartGrabber(parent, GrabComponent(l.component))
+			ng, err := l.dev.StartGrabber(parent, gogige.GrabComponent(l.component))
 			if err != nil {
 				l.lifeMu.Unlock()
 				acqOn = false

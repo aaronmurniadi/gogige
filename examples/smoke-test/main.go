@@ -29,6 +29,7 @@ import (
 	"github.com/aaronmurniadi/gogige/genapi"
 	"github.com/aaronmurniadi/gogige/gvcp"
 	"github.com/aaronmurniadi/gogige/gvsp"
+	"github.com/aaronmurniadi/gogige/live"
 )
 
 func main() {
@@ -414,7 +415,7 @@ func phase5Live(ip string, d time.Duration) error {
 	defer dev.Close()
 
 	var count int
-	live := gogige.NewLive(dev, gogige.WithOnSample(func(s gogige.Sample) {
+	live := live.NewLive(dev, live.WithOnSample(func(s gogige.Sample) {
 		count++
 		if count <= 3 || count%10 == 0 {
 			fmt.Printf("  live[%d] %-6s packs=%d L=%.2f\n", count, s.Component, s.PackCount, s.Length)

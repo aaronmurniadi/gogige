@@ -54,14 +54,21 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `cmd/gogige-stream/`           | [x]    | CLI N-frame JPEG + BSCF measurements                                     |
 | `camera.go`                    | [x]    | High-level `Camera` + feature setters                                    |
 | `discovery.go`                 | [x]    | Root `Discover` → `gvcp.Discover`                                        |
-| `stream.go`                    | [x]    | `Session` / `Grab` / `GrabAll`; `StartStream` + `Frames()` in `framestream.go` |
-| `options.go`                   | [x]    | `WithLogger` / `WithTimeout` / `WithComponent` / `GrabComponent` |
+| `stream.go`                    | [x]    | `Session` / `Grab` / `GrabAll`; `StartStream` + `Frames()`              |
+| `options.go`                   | [x]    | `WithLogger` / `WithTimeout` / `WithComponent` / `GrabComponent`         |
+| `grab/grab.go`                 | [x]    | One-shot `GrabJPEG` convenience                                          |
+| `live/live.go`                 | [x]    | Continuous preview loop (`NewLive` / `WithSink` / `Start` / `Stop`)      |
+| `log.go`                       | [x]    | `Logger` interface + `NopLogger` + `Slog` adapter                        |
+| `interfaces.go`                | [x]    | Core interfaces: `Device`, `Grabber`, `FrameSink`, `JPEGFunc`            |
+| `device.go`                    | [x]    | `device` struct, `Open`, `OpenDevice`, `connectCamera`                   |
+| `alias.go`                     | [x]    | Type aliases + re-exports for ergonomic `gogige.Sample` etc.             |
+| `doc.go`                       | [x]    | Package documentation                                                    |
 
 ### Layout debt (outside target tree)
 
 | Path                                                           | Status | Notes                                                     |
 | -------------------------------------------------------------- | ------ | --------------------------------------------------------- |
-| Root extras (`device.go`, `grab.go`, `live.go`, `alias.go`, …) | [~]    | Working high-level API; converge on Phase 4 surface below |
+| None                                                           | [x]    | `grab.go` → `grab/`, `live.go` → `live/`, `framestream.go` merged into `stream.go`, `logger*.go` merged into `log.go`, `version.go` merged into `options.go` |
 
 Cleared: `vision/bscf` → `gvsp/payload.go`; `vision/color` → `internal/color` (`vision/` removed).
 

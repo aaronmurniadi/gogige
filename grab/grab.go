@@ -1,16 +1,18 @@
-package gogige
+package grab
 
 import (
 	"context"
 	"fmt"
 	"time"
+
+	"github.com/aaronmurniadi/gogige"
 )
 
 const defaultGrabTimeout = 3 * time.Second
 
 // GrabJPEG opens a short-lived device, grabs one frame, and closes.
 // Convenience for one-shot capture; prefer Device + Grabber for continuous use.
-func GrabJPEG(ctx context.Context, ip string, opts ...Option) ([]byte, error) {
+func GrabJPEG(ctx context.Context, ip string, opts ...gogige.Option) ([]byte, error) {
 	if ctx == nil {
 		ctx = context.Background()
 	}
@@ -21,7 +23,7 @@ func GrabJPEG(ctx context.Context, ip string, opts ...Option) ([]byte, error) {
 	}
 
 	start := time.Now()
-	dev, err := Open(ctx, ip, opts...)
+	dev, err := gogige.Open(ctx, ip, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -38,7 +40,7 @@ func GrabJPEG(ctx context.Context, ip string, opts ...Option) ([]byte, error) {
 	if err == nil && len(jpeg) == 0 {
 		err = fmt.Errorf("gige: GrabJPEG: empty frame")
 	}
-	if lg, ok := dev.(hasLogger); ok {
+	if lg, ok := dev.(interface{ Logger() gogige.Logger }); ok {
 		lg.Logger().Info("GrabJPEG finished",
 			"camera_ip", ip,
 			"elapsed", time.Since(start),

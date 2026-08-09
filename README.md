@@ -30,7 +30,7 @@ Pure-Go GigE Vision client (`package gige`) for Huaray/Dahua 3D volume cameras.
 - **Streaming** — GVSP receiver with pre-allocated buffer pool, packet resend, and multi-part/GenDC payload parsing.
 - **GenICam GenApi XML** — Fetch, decompress, and build the camera node map (IntReg, Enumeration, SwissKnife, Converter, Port, …).
 - **3D volume (BSCF)** — Per-frame color/depth/mono components with JPEG encoding and mm-scale measurements (`WidthMm`, `HeightMm`, `Length`, `PackCount`).
-- **Live preview** — App-owned sinks (`gige.NewLive`), switch components mid-stream.
+- **Live preview** — App-owned sinks (`live.NewLive`), switch components mid-stream.
 - **Zero-alloc hot path** — `gvsp.Receiver` allocates nothing per packet during streaming.
 
 ## Getting Started
@@ -68,7 +68,7 @@ sample, err := g.Grab(ctx) // Sample: JPEG + WidthMm/HeightMm/Length/PackCount
 **One-shot grab:**
 
 ```go
-jpeg, err := gige.GrabJPEG(ctx, "192.168.1.10")
+jpeg, err := gogige/grab.GrabJPEG(ctx, "192.168.1.10")
 ```
 
 **Discover cameras:**
@@ -80,11 +80,11 @@ devs, err := gige.Discover(ctx, 2*time.Second)
 **Live preview (app owns the sink):**
 
 ```go
-live := gige.NewLive(dev, gige.WithSink(gige.JPEGFunc(hub.Broadcast)), gige.WithLiveComponent(gige.ComponentDepth))
-live.Start(ctx)
-defer live.Stop()
-sample := live.LatestSample() // filter/validate in the app
-// live.SetComponent(gige.ComponentColor) // switch mid-stream
+l := gogige/live.NewLive(dev, gogige/live.WithSink(gogige.JPEGFunc(hub.Broadcast)), gogige/live.WithLiveComponent(gogige.ComponentDepth))
+l.Start(ctx)
+defer l.Stop()
+sample := l.LatestSample() // filter/validate in the app
+// l.SetComponent(gogige.ComponentColor) // switch mid-stream
 ```
 
 **Logging:** `gogige.WithLogger(...)` accepts any `Logger` implementation (e.g. `gogige.Slog(slog.Default())` or your own wrapper around zerolog/zap). Default is a no-op.

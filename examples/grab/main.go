@@ -14,6 +14,7 @@ import (
 	"time"
 
 	"github.com/aaronmurniadi/gogige"
+	"github.com/aaronmurniadi/gogige/grab"
 )
 
 func main() {
@@ -47,7 +48,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
-	jpeg, err := gogige.GrabJPEG(ctx, cameraIP)
+	jpeg, err := grab.GrabJPEG(ctx, cameraIP)
 	if err != nil {
 		log.Fatal(err)
 	}

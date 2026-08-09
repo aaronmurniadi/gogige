@@ -18,6 +18,7 @@ import (
 	"time"
 
 	"github.com/aaronmurniadi/gogige"
+	"github.com/aaronmurniadi/gogige/live"
 	"github.com/gorilla/websocket"
 )
 
@@ -64,7 +65,7 @@ func main() {
 	}
 	mux.Handle("/", http.FileServer(http.FS(static)))
 
-	live := gogige.NewLive(dev, gogige.WithSink(hub), gogige.WithLiveComponent(kind))
+	live := live.NewLive(dev, live.WithSink(hub), live.WithLiveComponent(kind))
 	live.Start(ctx)
 	defer live.Stop()
 
