@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.0.0] - 2026-08-10
+
+### Added
+
+- `gogige/grab` subpackage with `GrabJPEG` one-shot capture.
+- `gogige/live` subpackage with `NewLive`, `WithSink`, `WithOnSample`, `WithLiveComponent`, and the continuous preview loop.
+
+### Changed
+
+- Root package reduced from 14 to 9 files: `grab.go` → `grab/`, `live.go` → `live/`, `framestream.go` merged into `stream.go`, `logger.go` + `logger_iface.go` merged into `log.go`, `version.go` merged into `options.go`.
+- Removed root-level convenience wrappers `GrabJPEG`, `NewLive`, `WithSink`, `WithOnSample`, `WithLiveComponent`; import subpackages directly (`gogige/grab`, `gogige/live`).
+- Phase 4 high-level API (`OpenDevice`, `StartStream`, `Frames()`, `Discover`, `Camera`, `Session`, `Stream`) remains in the root package.
+
+### Removed
+
+- `gogige.GrabJPEG` (use `gogige/grab.GrabJPEG`).
+- `gogige.NewLive` / `gogige.WithSink` / `gogige.WithOnSample` / `gogige.WithLiveComponent` (use `gogige/live.*`).
+
 ## [0.13.2] - 2026-08-09
 
 ### Changed
