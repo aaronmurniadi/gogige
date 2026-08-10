@@ -15,7 +15,13 @@ func TestBSCFRoundTrip(t *testing.T) {
 		colorBuf[i] = byte(i)
 	}
 	buf := BuildTestBSCF(colorBuf, w, h, color.PixelFormatBGR8, []PackDet{
-		{Length: 253.5, Width: 106.6, Height: 111, Volume: 1, Stable: true},
+		{
+			CenterX: -130.75, CenterY: -184.09, CenterZ: 2133.96,
+			Length: 253.5, Width: 106.6, Height: 111, Volume: 1, Stable: true,
+			Orientation: [3][3]float32{
+				{0.5, 0, 0.866}, {0, 1, 0}, {-0.866, 0, 0.5},
+			},
+		},
 	})
 	f, err := ParseBSCF(buf)
 	if err != nil {
@@ -36,6 +42,12 @@ func TestBSCFRoundTrip(t *testing.T) {
 	if f.Packs[0].Length < 253 || f.Packs[0].Length > 254 {
 		t.Fatalf("length=%v", f.Packs[0].Length)
 	}
+	if f.Packs[0].CenterX < -131 || f.Packs[0].CenterX > -130 {
+		t.Fatalf("centerX=%v", f.Packs[0].CenterX)
+	}
+	if f.Packs[0].Orientation[0][2] < 0.865 || f.Packs[0].Orientation[0][2] > 0.867 {
+		t.Fatalf("orientation=%v", f.Packs[0].Orientation)
+	}
 	s, err := SampleFromBSCF(buf)
 	if err != nil {
 		t.Fatal(err)
@@ -43,7 +55,7 @@ func TestBSCFRoundTrip(t *testing.T) {
 	if s.Component != ComponentColor {
 		t.Fatalf("component=%v", s.Component)
 	}
-	jpeg, err := color.EncodeJPEG(s.RawColor, s.Width, s.Height, s.PixelFormat, 60)
+	jpeg, err := color.EncodeJPEG(s.RawColor, s.PixelWidth, s.PixelHeight, s.PixelFormat, 60)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -82,7 +94,7 @@ func TestBSCFSelectDepth(t *testing.T) {
 	if d.Component != ComponentDepth || d.PixelFormat != color.PixelFormatMono16 || len(d.RawColor) != len(depth) {
 		t.Fatalf("depth: component=%v fmt=0x%x len=%d", d.Component, d.PixelFormat, len(d.RawColor))
 	}
-	jpeg, err := color.EncodeJPEG(d.RawColor, d.Width, d.Height, d.PixelFormat, 60)
+	jpeg, err := color.EncodeJPEG(d.RawColor, d.PixelWidth, d.PixelHeight, d.PixelFormat, 60)
 	if err != nil || len(jpeg) < 2 {
 		t.Fatalf("depth jpeg: %v len=%d", err, len(jpeg))
 	}
@@ -104,6 +116,57 @@ func TestBSCFSelectDepth(t *testing.T) {
 	}
 	if !IsBSCF(buf) {
 		t.Fatal("IsBSCF")
+	}
+}
+
+func TestBSCFPackCountFromPayload(t *testing.T) {
+	// DS5131 always writes 1 in the descriptor pack-count slot while the
+	// payload carries many densely-packed packDetSize records. The parser must
+	// derive the count from the payload size, not the descriptor.
+	w, h := 2, 2
+	colorPix := []byte{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+	packs := []PackDet{
+		{Length: 100, Width: 20, Height: 30, Volume: 60000, Stable: true},
+		{Length: 40, Width: 10, Height: 15, Volume: 6000, Stable: false},
+		{Length: 80, Width: 5, Height: 12, Volume: 4800, Stable: true},
+	}
+
+	// Reuse the builder but overwrite the descriptor slot back to 1.
+	buf := BuildTestBSCFComponents([]ComponentBlock{
+		{Component: ComponentColor, Data: colorPix, Width: w, Height: h, PixelFormat: color.PixelFormatBGR8},
+	}, packs)
+	if len(buf) < bscfHeaderV1 {
+		t.Fatal("bscf too short")
+	}
+	binary.LittleEndian.PutUint32(buf[24+2*bscfBlockStride+36:], 1) // block[2] = packloc slot
+	binary.LittleEndian.PutUint32(buf[24+2*bscfBlockStride+40:], 0)
+
+	f, err := ParseBSCF(buf)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if f.PackCount != 3 {
+		t.Fatalf("PackCount=%d want 3", f.PackCount)
+	}
+	if len(f.Packs) != 3 {
+		t.Fatalf("len(Packs)=%d want 3", len(f.Packs))
+	}
+	if f.Packs[2].Length != 80 {
+		t.Fatalf("packs[2].Length=%v want 80", f.Packs[2].Length)
+	}
+
+	s, err := SampleFromBSCF(buf)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if s.PackCount != 3 {
+		t.Fatalf("sample PackCount=%d want 3", s.PackCount)
+	}
+	if len(s.Packs) != 3 {
+		t.Fatalf("sample len(Packs)=%d want 3", len(s.Packs))
+	}
+	if s.Packs[2].Length != 80 || s.Packs[2].CenterY != 0 {
+		t.Fatalf("sample packs[2]=%+v", s.Packs[2])
 	}
 }
 
@@ -154,7 +217,7 @@ func TestBSCFPrefersColorOverDepth(t *testing.T) {
 	if s.PixelFormat != color.PixelFormatBGR8 || len(s.RawColor) != len(colorPix) {
 		t.Fatalf("got fmt=0x%x len=%d want BGR color", s.PixelFormat, len(s.RawColor))
 	}
-	jpeg, err := color.EncodeJPEG(s.RawColor, s.Width, s.Height, s.PixelFormat, 60)
+	jpeg, err := color.EncodeJPEG(s.RawColor, s.PixelWidth, s.PixelHeight, s.PixelFormat, 60)
 	if err != nil || len(jpeg) < 2 {
 		t.Fatalf("jpeg: %v len=%d", err, len(jpeg))
 	}

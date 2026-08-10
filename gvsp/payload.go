@@ -76,12 +76,13 @@ type ComponentBlock struct {
 type Sample struct {
 	JPEG        []byte
 	RawColor    []byte // selected component bytes (name kept for API compat)
-	Width       int
-	Height      int
+	PixelWidth  int
+	PixelHeight int
 	PixelFormat uint32
 	Component   Component
 	PackCount   int
-	Length      float64
+	Packs       []PackDet // all volume packs (locations + dimensions + orientation)
+	LengthMm    float64
 	WidthMm     float64
 	HeightMm    float64
 	Stable      bool
@@ -116,12 +117,19 @@ func (f *BSCFFrame) Block(c Component) (ComponentBlock, bool) {
 }
 
 // PackDet is PackDetVolumeInfo / ScVolumePackInfo fields we care about.
+// Orientation is a 3x3 rotation (unit rows); row 2 is the surface normal and is
+// constant across packs belonging to the same surface.
 type PackDet struct {
-	Length float32
-	Width  float32
-	Height float32
-	Volume float32
-	Stable bool
+	CenterX float32
+	CenterY float32
+	CenterZ float32
+	Length  float32
+	Width   float32
+	Height  float32
+	Volume  float32
+	// Orientation rows: [0]=axis0, [1]=axis1, [2]=surface normal.
+	Orientation [3][3]float32
+	Stable      bool
 }
 
 // ParseBSCF parses a BSCF V0/V1 buffer.
@@ -164,7 +172,8 @@ func ParseBSCF(buf []byte) (*BSCFFrame, error) {
 		bh := int(binary.LittleEndian.Uint32(buf[off+16:]))
 		comp := Component(binary.LittleEndian.Uint32(buf[off+20:]))
 		imgFmt := binary.LittleEndian.Uint32(buf[off+32:])
-		// PackLocResult: Huaray stores pack count at +36; +40 is unused/0 on DS5131.
+		// PackLocResult descriptor slot: DS5131 always writes 1 here regardless
+		// of how many pack records follow, so it is NOT a reliable count.
 		packCount := int(binary.LittleEndian.Uint32(buf[off+36:]))
 		if packCount == 0 {
 			packCount = int(binary.LittleEndian.Uint32(buf[off+40:]))
@@ -201,22 +210,22 @@ func ParseBSCF(buf []byte) (*BSCFFrame, error) {
 				f.ColorFmt = imgFmt
 			}
 		case blockTypePackLocResult:
-			f.PackCount = packCount
-			n := packCount
-			if n < 0 {
-				n = 0
-			}
+			// The payload is densely packed with packDetSize-byte records
+			// (DS5131 observed 48-50 records while the descriptor slot stays 1),
+			// so its size is the authoritative record count.
 			maxPacks := len(payload) / packDetSize
+			n := maxPacks
+			if n == 0 && packCount > 0 {
+				n = packCount // payload too small: fall back to descriptor value
+			}
 			if n > maxPacks {
 				n = maxPacks
 			}
+			f.PackCount = n
 			for p := 0; p < n; p++ {
 				base := p * packDetSize
 				pd := parsePackDet(payload[base : base+packDetSize])
 				f.Packs = append(f.Packs, pd)
-			}
-			if f.PackCount < 0 {
-				f.PackCount = len(f.Packs)
 			}
 		}
 	}
@@ -224,12 +233,25 @@ func ParseBSCF(buf []byte) (*BSCFFrame, error) {
 }
 
 func parsePackDet(b []byte) PackDet {
-	// length@48, width@52, height@56, volume@60, isStable@1276
-	pd := PackDet{
-		Length: math.Float32frombits(binary.LittleEndian.Uint32(b[48:])),
-		Width:  math.Float32frombits(binary.LittleEndian.Uint32(b[52:])),
-		Height: math.Float32frombits(binary.LittleEndian.Uint32(b[56:])),
-		Volume: math.Float32frombits(binary.LittleEndian.Uint32(b[60:])),
+	// center@0/4/8, rot rows@12/24/36, length@48, width@52, height@56, volume@60, isStable@1276
+	var pd PackDet
+	if len(b) >= 12 {
+		pd = PackDet{
+			CenterX: math.Float32frombits(binary.LittleEndian.Uint32(b[0:])),
+			CenterY: math.Float32frombits(binary.LittleEndian.Uint32(b[4:])),
+			CenterZ: math.Float32frombits(binary.LittleEndian.Uint32(b[8:])),
+		}
+	}
+	if len(b) >= 64 {
+		pd.Length = math.Float32frombits(binary.LittleEndian.Uint32(b[48:]))
+		pd.Width = math.Float32frombits(binary.LittleEndian.Uint32(b[52:]))
+		pd.Height = math.Float32frombits(binary.LittleEndian.Uint32(b[56:]))
+		pd.Volume = math.Float32frombits(binary.LittleEndian.Uint32(b[60:]))
+		for r := 0; r < 3; r++ {
+			for c := 0; c < 3; c++ {
+				pd.Orientation[r][c] = math.Float32frombits(binary.LittleEndian.Uint32(b[12+r*12+c*4:]))
+			}
+		}
 	}
 	if len(b) >= 1280 {
 		pd.Stable = int32(binary.LittleEndian.Uint32(b[1276:])) != 0
@@ -290,15 +312,16 @@ func sampleFromFrame(f *BSCFFrame, c Component) (Sample, error) {
 func sampleFromBlock(f *BSCFFrame, blk ComponentBlock) Sample {
 	s := Sample{
 		RawColor:    blk.Data,
-		Width:       blk.Width,
-		Height:      blk.Height,
+		PixelWidth:  blk.Width,
+		PixelHeight: blk.Height,
 		PixelFormat: blk.PixelFormat,
 		Component:   blk.Component,
 		PackCount:   f.PackCount,
+		Packs:       append([]PackDet(nil), f.Packs...),
 	}
 	if len(f.Packs) > 0 {
 		p := f.Packs[0]
-		s.Length = float64(p.Length)
+		s.LengthMm = float64(p.Length)
 		s.WidthMm = float64(p.Width)
 		s.HeightMm = float64(p.Height)
 		s.Stable = p.Stable
@@ -362,6 +385,14 @@ func BuildTestBSCFComponents(blocks []ComponentBlock, packs []PackDet) []byte {
 		packOff := off
 		for _, p := range packs {
 			pd := make([]byte, packDetSize)
+			binary.LittleEndian.PutUint32(pd[0:], math.Float32bits(p.CenterX))
+			binary.LittleEndian.PutUint32(pd[4:], math.Float32bits(p.CenterY))
+			binary.LittleEndian.PutUint32(pd[8:], math.Float32bits(p.CenterZ))
+			for r := 0; r < 3; r++ {
+				for c := 0; c < 3; c++ {
+					binary.LittleEndian.PutUint32(pd[12+r*12+c*4:], math.Float32bits(p.Orientation[r][c]))
+				}
+			}
 			binary.LittleEndian.PutUint32(pd[48:], math.Float32bits(p.Length))
 			binary.LittleEndian.PutUint32(pd[52:], math.Float32bits(p.Width))
 			binary.LittleEndian.PutUint32(pd[56:], math.Float32bits(p.Height))
