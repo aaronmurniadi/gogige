@@ -64,7 +64,7 @@ func main() {
 	fmt.Printf("available components (%d):\n", len(samples))
 	for _, s := range samples {
 		fmt.Printf("  %-8s  %dx%d  pixfmt=0x%08x  jpeg=%dB\n",
-			s.Component, s.Width, s.Height, s.PixelFormat, len(s.JPEG))
+			s.Component, s.PixelWidth, s.PixelHeight, s.PixelFormat, len(s.JPEG))
 	}
 
 	for _, s := range samples {

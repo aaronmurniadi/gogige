@@ -259,15 +259,15 @@ func (s *Session) Grab(ctx context.Context) (Sample, error) {
 		}
 		// Non-BSCF payload.
 		sample.RawColor = data
-		sample.Width = meta.width
-		sample.Height = meta.height
+		sample.PixelWidth = meta.width
+		sample.PixelHeight = meta.height
 		sample.PixelFormat = meta.pixelFormat
 		sample.Component = kind
-		if sample.Width == 0 || sample.Height == 0 {
+		if sample.PixelWidth == 0 || sample.PixelHeight == 0 {
 			return sample, fmt.Errorf("gige: grab: %w", err)
 		}
 	}
-	jpeg, jerr := color.EncodeJPEG(sample.RawColor, sample.Width, sample.Height, sample.PixelFormat, 60)
+	jpeg, jerr := color.EncodeJPEG(sample.RawColor, sample.PixelWidth, sample.PixelHeight, sample.PixelFormat, 60)
 	if jerr != nil {
 		return sample, jerr
 	}
@@ -291,8 +291,8 @@ func (s *Session) GrabAll(ctx context.Context) ([]Sample, error) {
 	} else {
 		samples = []Sample{{
 			RawColor:    data,
-			Width:       meta.width,
-			Height:      meta.height,
+			PixelWidth:  meta.width,
+			PixelHeight: meta.height,
 			PixelFormat: meta.pixelFormat,
 			Component:   ComponentUnknown,
 			PackCount:   -1,
@@ -301,10 +301,10 @@ func (s *Session) GrabAll(ctx context.Context) ([]Sample, error) {
 	out := make([]Sample, 0, len(samples))
 	var errs []error
 	for _, sample := range samples {
-		if sample.Width <= 0 || sample.Height <= 0 || len(sample.RawColor) == 0 {
+		if sample.PixelWidth <= 0 || sample.PixelHeight <= 0 || len(sample.RawColor) == 0 {
 			continue
 		}
-		jpeg, jerr := color.EncodeJPEG(sample.RawColor, sample.Width, sample.Height, sample.PixelFormat, 60)
+		jpeg, jerr := color.EncodeJPEG(sample.RawColor, sample.PixelWidth, sample.PixelHeight, sample.PixelFormat, 60)
 		if jerr != nil {
 			errs = append(errs, fmt.Errorf("%s: %w", sample.Component, jerr))
 			continue
@@ -335,8 +335,8 @@ func (s *Session) GrabComponents(ctx context.Context) ([]Sample, error) {
 	}
 	return []Sample{{
 		RawColor:    data,
-		Width:       meta.width,
-		Height:      meta.height,
+		PixelWidth:  meta.width,
+		PixelHeight: meta.height,
 		PixelFormat: meta.pixelFormat,
 		Component:   ComponentUnknown,
 		PackCount:   -1,

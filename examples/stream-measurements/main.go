@@ -18,8 +18,6 @@ import (
 
 func main() {
 	ip := flag.String("ip", "", "camera IP (empty = first GigE discovery hit)")
-	validOnly := flag.Bool("valid", false, "print only single-pack readings with positive dimensions")
-	stable := flag.Bool("stable", false, "with -valid, also require Stable")
 	flag.Parse()
 
 	cameraIP := *ip
@@ -50,10 +48,9 @@ func main() {
 	}
 	defer g.Close()
 
-	fmt.Println("packs\tlength_mm\twidth_mm\theight_mm\tstable")
 	for {
 		grabCtx, cancel := context.WithTimeout(ctx, 2*time.Second)
-		sample, err := g.Grab(grabCtx)
+		samples, err := g.GrabAll(grabCtx)
 		cancel()
 		if err != nil {
 			if ctx.Err() != nil {
@@ -62,18 +59,11 @@ func main() {
 			log.Printf("grab: %v", err)
 			continue
 		}
-		if *validOnly && !okMeasurement(sample, *stable) {
-			continue
+		for _, sample := range samples {
+			fmt.Printf("Sample.PackCount=%d\n", sample.PackCount)
+			for j, pack := range sample.Packs {
+				fmt.Printf("  Pack[%d]: LengthMm=%f, WidthMm=%f, HeightMm=%f, center.x=%f, center.y=%f, center.z=%f\n", j, pack.Length, pack.Width, pack.Height, pack.CenterX, pack.CenterY, pack.CenterZ)
+			}
 		}
-		fmt.Printf("%d\t%.3f\t%.3f\t%.3f\t%v\n",
-			sample.PackCount, sample.Length, sample.WidthMm, sample.HeightMm, sample.Stable)
 	}
-}
-
-// Caller-owned filter — the library does not validate measurements.
-func okMeasurement(s gogige.Sample, requireStable bool) bool {
-	if s.PackCount != 1 || s.Length <= 0 || s.WidthMm <= 0 || s.HeightMm <= 0 {
-		return false
-	}
-	return !requireStable || s.Stable
 }

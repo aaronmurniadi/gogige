@@ -63,8 +63,8 @@ func main() {
 			fatal(err)
 		}
 		fmt.Printf("%s  %s  %dx%d  packs=%d  L=%.3f W=%.3f H=%.3f stable=%v\n",
-			path, sample.Component, sample.Width, sample.Height, sample.PackCount,
-			sample.Length, sample.WidthMm, sample.HeightMm, sample.Stable)
+			path, sample.Component, sample.PixelWidth, sample.PixelHeight, sample.PackCount,
+			sample.LengthMm, sample.WidthMm, sample.HeightMm, sample.Stable)
 	}
 }
 

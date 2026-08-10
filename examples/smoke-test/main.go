@@ -300,8 +300,8 @@ func phase3Stream(deviceIP string, n int, outDir string, comp gogige.Component) 
 			return fmt.Errorf("Grab[%d]: %w", i, err)
 		}
 		fmt.Printf("  frame[%d] %-6s jpeg=%dB %dx%d packs=%d L=%.2f W=%.2f H=%.2f stable=%v\n",
-			i, sample.Component, len(sample.JPEG), sample.Width, sample.Height, sample.PackCount,
-			sample.Length, sample.WidthMm, sample.HeightMm, sample.Stable)
+			i, sample.Component, len(sample.JPEG), sample.PixelWidth, sample.PixelHeight, sample.PackCount,
+			sample.LengthMm, sample.WidthMm, sample.HeightMm, sample.Stable)
 		if i == 0 {
 			firstJPEG = append([]byte(nil), sample.JPEG...)
 		}
@@ -317,7 +317,7 @@ func phase3Stream(deviceIP string, n int, outDir string, comp gogige.Component) 
 	fmt.Printf("  grab all: %d components\n", len(all))
 	for _, s := range all {
 		fmt.Printf("    %-8s %dx%d pixfmt=0x%08x jpeg=%dB\n",
-			s.Component, s.Width, s.Height, s.PixelFormat, len(s.JPEG))
+			s.Component, s.PixelWidth, s.PixelHeight, s.PixelFormat, len(s.JPEG))
 	}
 
 	// Component switch (only when a different one exists) + pause/resume.
@@ -418,7 +418,7 @@ func phase5Live(ip string, d time.Duration) error {
 	live := live.NewLive(dev, live.WithOnSample(func(s gogige.Sample) {
 		count++
 		if count <= 3 || count%10 == 0 {
-			fmt.Printf("  live[%d] %-6s packs=%d L=%.2f\n", count, s.Component, s.PackCount, s.Length)
+			fmt.Printf("  live[%d] %-6s packs=%d L=%.2f\n", count, s.Component, s.PackCount, s.LengthMm)
 		}
 	}))
 	lctx, lcancel := context.WithTimeout(context.Background(), d)
@@ -427,7 +427,7 @@ func phase5Live(ip string, d time.Duration) error {
 	live.Stop()
 	lcancel()
 	latest := live.LatestSample()
-	fmt.Printf("  live samples=%d latest packs=%d L=%.2f\n", count, latest.PackCount, latest.Length)
+	fmt.Printf("  live samples=%d latest packs=%d L=%.2f\n", count, latest.PackCount, latest.LengthMm)
 	return nil
 }
 

@@ -141,23 +141,23 @@ func reportComponents(samples []gogige.Sample) {
 		s := samples[0]
 		fmt.Printf("  non-BSCF raw payload\n")
 		fmt.Printf("    %-6s %dx%d  fmt=0x%08x %-12s raw=%dB  %s\n",
-			"-", s.Width, s.Height, s.PixelFormat, pixelFormatName(s.PixelFormat),
+			"-", s.PixelWidth, s.PixelHeight, s.PixelFormat, pixelFormatName(s.PixelFormat),
 			len(s.RawColor), jpegProbe(s))
 		return
 	}
 	for _, s := range samples {
 		fmt.Printf("  %-6s %dx%d  fmt=0x%08x %-12s raw=%dB  %s\n",
-			s.Component, s.Width, s.Height, s.PixelFormat, pixelFormatName(s.PixelFormat),
+			s.Component, s.PixelWidth, s.PixelHeight, s.PixelFormat, pixelFormatName(s.PixelFormat),
 			len(s.RawColor), jpegProbe(s))
 	}
 }
 
 // jpegProbe tries to JPEG-encode a sample and reports the result.
 func jpegProbe(s gogige.Sample) string {
-	if s.Width <= 0 || s.Height <= 0 || len(s.RawColor) == 0 {
+	if s.PixelWidth <= 0 || s.PixelHeight <= 0 || len(s.RawColor) == 0 {
 		return "empty"
 	}
-	jpeg, err := gogige.EncodeJPEG(s.RawColor, s.Width, s.Height, s.PixelFormat, 60)
+	jpeg, err := gogige.EncodeJPEG(s.RawColor, s.PixelWidth, s.PixelHeight, s.PixelFormat, 60)
 	if err != nil {
 		return fmt.Sprintf("jpeg: %v", err)
 	}
