@@ -324,3 +324,131 @@ func TestConstraintPointers(t *testing.T) {
 	}
 	_ = inc // unused; FrameRate doesn't have Inc constraint
 }
+
+func TestAvailabilityPointers(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <IntReg Name="ImplReg"><Address>0x1000</Address><Length>4</Length><AccessMode>RO</AccessMode></IntReg>
+  <IntReg Name="AvailReg"><Address>0x1004</Address><Length>4</Length><AccessMode>RO</AccessMode></IntReg>
+  <IntReg Name="LockReg"><Address>0x1008</Address><Length>4</Length><AccessMode>RO</AccessMode></IntReg>
+  <IntReg Name="FeatureReg"><Address>0x100C</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+  <Integer Name="Impl"><pValue>ImplReg</pValue></Integer>
+  <Integer Name="Avail"><pValue>AvailReg</pValue></Integer>
+  <Integer Name="Lock"><pValue>LockReg</pValue></Integer>
+  <Integer Name="Feature">
+    <pValue>FeatureReg</pValue>
+    <pIsImplemented>Impl</pIsImplemented>
+    <pIsAvailable>Avail</pIsAvailable>
+    <pIsLocked>Lock</pIsLocked>
+  </Integer>
+</RegisterDescription>`
+
+	port := &memPort{regs: map[uint32]uint32{
+		0x1000: 1, // ImplReg: implemented
+		0x1004: 1, // AvailReg: available
+		0x1008: 0, // LockReg: not locked
+	}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	impl, err := nm.IsImplemented("Feature")
+	if err != nil {
+		t.Fatalf("IsImplemented error: %v", err)
+	}
+	if !impl {
+		t.Fatal("Feature should be implemented")
+	}
+
+	avail, err := nm.IsAvailable("Feature")
+	if err != nil {
+		t.Fatalf("IsAvailable error: %v", err)
+	}
+	if !avail {
+		t.Fatal("Feature should be available")
+	}
+
+	locked, err := nm.IsLocked("Feature")
+	if err != nil {
+		t.Fatalf("IsLocked error: %v", err)
+	}
+	if locked {
+		t.Fatal("Feature should not be locked")
+	}
+}
+
+func TestAvailabilityPointersDefaults(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <IntReg Name="FeatureReg"><Address>0x1000</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+  <Integer Name="Feature">
+    <pValue>FeatureReg</pValue>
+  </Integer>
+</RegisterDescription>`
+
+	port := &memPort{regs: map[uint32]uint32{}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	impl, err := nm.IsImplemented("Feature")
+	if err != nil {
+		t.Fatalf("IsImplemented error: %v", err)
+	}
+	if !impl {
+		t.Fatal("Feature without pIsImplemented should default to true")
+	}
+
+	avail, err := nm.IsAvailable("Feature")
+	if err != nil {
+		t.Fatalf("IsAvailable error: %v", err)
+	}
+	if !avail {
+		t.Fatal("Feature without pIsAvailable should default to true")
+	}
+
+	locked, err := nm.IsLocked("Feature")
+	if err != nil {
+		t.Fatalf("IsLocked error: %v", err)
+	}
+	if locked {
+		t.Fatal("Feature without pIsLocked should default to false")
+	}
+}
+
+func TestInvalidatorPointer(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <IntReg Name="InvalidatorReg"><Address>0x1000</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+  <IntReg Name="FeatureReg"><Address>0x1004</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+  <Integer Name="Invalidator"><pValue>InvalidatorReg</pValue></Integer>
+  <Integer Name="Feature">
+    <pValue>FeatureReg</pValue>
+    <pInvalidator>Invalidator</pInvalidator>
+  </Integer>
+</RegisterDescription>`
+
+	port := &memPort{regs: map[uint32]uint32{}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	inv, err := nm.GetInvalidator("Feature")
+	if err != nil {
+		t.Fatalf("GetInvalidator error: %v", err)
+	}
+	if inv != "Invalidator" {
+		t.Fatalf("GetInvalidator=%q, want Invalidator", inv)
+	}
+
+	inv, err = nm.GetInvalidator("Invalidator")
+	if err != nil {
+		t.Fatalf("GetInvalidator error: %v", err)
+	}
+	if inv != "" {
+		t.Fatalf("GetInvalidator for node without invalidator should be empty, got %q", inv)
+	}
+}

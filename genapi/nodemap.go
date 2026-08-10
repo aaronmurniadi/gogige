@@ -175,6 +175,38 @@ func (nm *NodeMap) evalIntegerValue(name string, depth int) (uint64, error) {
 	return nm.pa.resolveIntegerReference(n, nm, depth)
 }
 
+// evalBoolish evaluates a feature as a boolean (non-zero = true).
+// Supports Integer, IntReg, MaskedIntReg, Boolean, SwissKnife, and Enumeration features.
+func (nm *NodeMap) evalBoolish(name string) (bool, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return false, err
+	}
+	switch n.Kind {
+	case "Boolean":
+		v, err := nm.ReadBoolean(name)
+		if err != nil {
+			return false, err
+		}
+		return v, nil
+	case "Enumeration":
+		// Enumeration is considered "true" if it has any entries
+		// (i.e., it's a valid feature). For boolean evaluation,
+		// we check if the current value is non-zero.
+		v, err := nm.evalIntegerValue(name, 0)
+		if err != nil {
+			return false, err
+		}
+		return v != 0, nil
+	default:
+		v, err := nm.evalIntegerValue(name, 0)
+		if err != nil {
+			return false, err
+		}
+		return v != 0, nil
+	}
+}
+
 func (nm *NodeMap) writeIntReg(n *gcNode, v int64) error {
 	return nm.pa.writeIntReg(n, v, nm)
 }
@@ -341,6 +373,58 @@ func (nm *NodeMap) GetConstraints(name string) (int64, int64, int64, bool, bool,
 	}
 
 	return minVal, maxVal, incVal, hasMin, hasMax, hasInc, nil
+}
+
+// IsImplemented reports whether a feature is implemented.
+// If pIsImplemented is set, evaluates the referenced feature as a boolean (non-zero = true).
+// Otherwise returns true.
+func (nm *NodeMap) IsImplemented(name string) (bool, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return false, err
+	}
+	if n.PIsImplemented == "" {
+		return true, nil
+	}
+	return nm.evalBoolish(n.PIsImplemented)
+}
+
+// IsAvailable reports whether a feature is currently available.
+// If pIsAvailable is set, evaluates the referenced feature as a boolean (non-zero = true).
+// Otherwise returns true.
+func (nm *NodeMap) IsAvailable(name string) (bool, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return false, err
+	}
+	if n.PIsAvailable == "" {
+		return true, nil
+	}
+	return nm.evalBoolish(n.PIsAvailable)
+}
+
+// IsLocked reports whether a feature is currently locked.
+// If pIsLocked is set, evaluates the referenced feature as a boolean (non-zero = true).
+// Otherwise returns false.
+func (nm *NodeMap) IsLocked(name string) (bool, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return false, err
+	}
+	if n.PIsLocked == "" {
+		return false, nil
+	}
+	return nm.evalBoolish(n.PIsLocked)
+}
+
+// GetInvalidator returns the pInvalidator feature name for a node,
+// or "" if not set. When the invalidator feature changes, this node is invalidated.
+func (nm *NodeMap) GetInvalidator(name string) (string, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return "", err
+	}
+	return n.PInvalidator, nil
 }
 
 func deviceOrder(port gvcp.Port) binary.ByteOrder {

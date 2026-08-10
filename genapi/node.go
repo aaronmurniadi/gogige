@@ -18,6 +18,10 @@ type Node interface {
 	// pMin/pMax/pInc are feature names to evaluate; Min/Max/Inc are static values.
 	// For Integer/Float nodes, at least one of these may be populated.
 	GetConstraints() (pMin, pMax, pInc string, minVal, maxVal, incVal int64)
+
+	// GetInvalidator returns the pInvalidator feature name for this node,
+	// or "" if not set. When the referenced feature changes, this node is invalidated.
+	GetInvalidator() string
 }
 
 // gcNode is the internal representation of a GenICam node.
@@ -77,6 +81,17 @@ type gcNode struct {
 	PMax string
 	PInc string
 
+	// Availability and lock pointers.
+	// These reference other features that determine whether this node is
+	// implemented, available, or locked.
+	PIsImplemented string
+	PIsAvailable   string
+	PIsLocked      string
+
+	// PInvalidator is a feature name that, when changed, invalidates this node.
+	// The node must be re-read after the invalidator changes.
+	PInvalidator string
+
 	// Static constraint values for Integer and Float nodes.
 	// Used when Min/Max/Inc are constant rather than computed via pointers.
 	Min int64
@@ -102,4 +117,9 @@ func (n *gcNode) GetAccess() string {
 // GetConstraints implements Node.
 func (n *gcNode) GetConstraints() (pMin, pMax, pInc string, minVal, maxVal, incVal int64) {
 	return n.PMin, n.PMax, n.PInc, n.Min, n.Max, n.Inc
+}
+
+// GetInvalidator implements Node.
+func (n *gcNode) GetInvalidator() string {
+	return n.PInvalidator
 }

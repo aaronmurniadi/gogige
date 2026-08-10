@@ -11,24 +11,28 @@ import (
 
 // nodeFields holds intermediate parsed fields during XML parsing before constructing a gcNode.
 type nodeFields struct {
-	AddressSum uint64
-	Addresses  []uint64
-	Length     int
-	Access     string
-	PValue     string
-	PAddresses []string
-	Value      string
-	Variables  map[string]string
-	Formula    string
-	FormulaTo  string
-	LSB, MSB   int
-	HasMask    bool
-	PMin       string
-	PMax       string
-	PInc       string
-	Min        int64
-	Max        int64
-	Inc        int64
+	AddressSum     uint64
+	Addresses      []uint64
+	Length         int
+	Access         string
+	PValue         string
+	PAddresses     []string
+	Value          string
+	Variables      map[string]string
+	Formula        string
+	FormulaTo      string
+	LSB, MSB       int
+	HasMask        bool
+	PMin           string
+	PMax           string
+	PInc           string
+	PIsImplemented string
+	PIsAvailable   string
+	PIsLocked      string
+	PInvalidator   string
+	Min            int64
+	Max            int64
+	Inc            int64
 }
 
 // parseNodeFields parses the inner XML of a GenICam node element
@@ -113,6 +117,14 @@ func parseNodeFields(inner []byte) nodeFields {
 			f.PMax = text
 		case "pInc":
 			f.PInc = text
+		case "pIsImplemented":
+			f.PIsImplemented = text
+		case "pIsAvailable":
+			f.PIsAvailable = text
+		case "pIsLocked":
+			f.PIsLocked = text
+		case "pInvalidator":
+			f.PInvalidator = text
 		case "Min":
 			if n, err := strconv.ParseInt(text, 0, 64); err == nil {
 				f.Min = n
@@ -213,26 +225,30 @@ func keysOf(m map[string]int64) []string {
 func parseNodeXML(kind string, name string, inner []byte) *gcNode {
 	fields := parseNodeFields(inner)
 	gn := &gcNode{
-		Name:       name,
-		Kind:       kind,
-		Access:     fields.Access,
-		PValue:     fields.PValue,
-		PAddresses: fields.PAddresses,
-		Value:      fields.Value,
-		Address:    fields.AddressSum,
-		Addresses:  fields.Addresses,
-		Length:     fields.Length,
-		LSB:        fields.LSB,
-		MSB:        fields.MSB,
-		HasMask:    fields.HasMask,
-		Variables:  fields.Variables,
-		Formula:    fields.Formula,
-		PMin:       fields.PMin,
-		PMax:       fields.PMax,
-		PInc:       fields.PInc,
-		Min:        fields.Min,
-		Max:        fields.Max,
-		Inc:        fields.Inc,
+		Name:           name,
+		Kind:           kind,
+		Access:         fields.Access,
+		PValue:         fields.PValue,
+		PAddresses:     fields.PAddresses,
+		Value:          fields.Value,
+		Address:        fields.AddressSum,
+		Addresses:      fields.Addresses,
+		Length:         fields.Length,
+		LSB:            fields.LSB,
+		MSB:            fields.MSB,
+		HasMask:        fields.HasMask,
+		Variables:      fields.Variables,
+		Formula:        fields.Formula,
+		PMin:           fields.PMin,
+		PMax:           fields.PMax,
+		PInc:           fields.PInc,
+		PIsImplemented: fields.PIsImplemented,
+		PIsAvailable:   fields.PIsAvailable,
+		PIsLocked:      fields.PIsLocked,
+		PInvalidator:   fields.PInvalidator,
+		Min:            fields.Min,
+		Max:            fields.Max,
+		Inc:            fields.Inc,
 	}
 	// IntConverter uses FormulaTo for forward mapping when reading value.
 	if gn.Formula == "" && fields.FormulaTo != "" {
