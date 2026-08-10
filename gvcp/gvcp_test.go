@@ -2,6 +2,7 @@ package gvcp
 
 import (
 	"encoding/binary"
+	"fmt"
 	"strings"
 	"testing"
 	"time"
@@ -252,6 +253,39 @@ func TestReadManifestTableZeroAddr(t *testing.T) {
 	}
 }
 
+// rejectManifestPort rejects the ManifestTable bootstrap read with the same
+// INVALID_ACCESS (0x03) status a GigE Vision camera without GenCP
+// ManifestTable support returns.
+type rejectManifestPort struct {
+	*memPort
+}
+
+func (rejectManifestPort) ReadMem(addr uint32, n int) ([]byte, error) {
+	return nil, &StatusError{Code: 0x03, Cmd: gvcpCmdReadMemAck}
+}
+
+func TestReadManifestTableInaccessibleIsNoTable(t *testing.T) {
+	entries, err := ReadManifestTable(&rejectManifestPort{&memPort{}})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if entries != nil {
+		t.Fatalf("want nil, got %v", entries)
+	}
+}
+
+func TestStatusErrorString(t *testing.T) {
+	err := &StatusError{Code: 0x03, Cmd: gvcpCmdReadMemAck}
+	if want := "gige: gvcp error INVALID_ACCESS (0x03) cmd=0x0085"; err.Error() != want {
+		t.Fatalf("got %q want %q", err.Error(), want)
+	}
+	if !isAddressInaccessible(err) {
+		t.Fatal("0x03 should be address-inaccessible")
+	}
+	if isAddressInaccessible(fmt.Errorf("network down")) {
+		t.Fatal("non-status error must not match")
+	}
+}
 func TestManifestTableURL(t *testing.T) {
 	tableAddr := uint32(0x1000)
 	m := &memPort{mem: map[uint32]byte{}}

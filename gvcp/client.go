@@ -122,7 +122,7 @@ func (g *GVCP) transact(req []byte, expectCmd uint16) ([]byte, error) {
 		}
 		if pktType == gvcpPacketTypeError || (pktType&0x80) != 0 {
 			code := buf[1]
-			return nil, fmt.Errorf("gige: gvcp error %s (0x%02x) cmd=0x%04x", gvcpErrorName(code), code, cmd)
+			return nil, &StatusError{Code: code, Cmd: cmd}
 		}
 		if cmd != expectCmd {
 			return nil, fmt.Errorf("gige: gvcp unexpected ack 0x%04x want 0x%04x", cmd, expectCmd)
@@ -134,6 +134,26 @@ func (g *GVCP) transact(req []byte, expectCmd uint16) ([]byte, error) {
 		copy(out, buf[gvcpHeaderSize:gvcpHeaderSize+size])
 		return out, nil
 	}
+}
+
+// StatusError is a GVCP ACK status returned by a device (e.g. INVALID_ACCESS).
+type StatusError struct {
+	Code byte
+	Cmd  uint16
+}
+
+func (e *StatusError) Error() string {
+	return fmt.Sprintf("gige: gvcp error %s (0x%02x) cmd=0x%04x", gvcpErrorName(e.Code), e.Code, e.Cmd)
+}
+
+// isAddressInaccessible reports whether err is a device ACK rejecting access to
+// an address (INVALID_ACCESS / WRITE_PROTECT), signaling an unmapped register.
+func isAddressInaccessible(err error) bool {
+	var se *StatusError
+	if !errors.As(err, &se) {
+		return false
+	}
+	return se.Code == 0x03 || se.Code == 0x04
 }
 
 // ReadReg reads one 32-bit bootstrap/device register.
@@ -266,9 +286,15 @@ const ManifestEntryTypeXML = 0x00000001
 // ReadManifestTable reads the GenCP ManifestTable pointed to by the
 // AbrmManifestTableAddress bootstrap register (0x01D0).
 // Returns nil, nil if the register is zero or the table is not present.
+// Devices without GenCP ManifestTable support (many GigE Vision cameras) reject
+// the bootstrap read with INVALID_ACCESS; that is treated as "no table" so
+// callers fall back to the classic FirstURL.
 func ReadManifestTable(p Port) ([]ManifestEntry, error) {
 	addrBytes, err := p.ReadMem(AbrmManifestTableAddress, 8)
 	if err != nil {
+		if isAddressInaccessible(err) {
+			return nil, nil
+		}
 		return nil, err
 	}
 	tableAddr := binary.BigEndian.Uint64(addrBytes)

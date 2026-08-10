@@ -1,5 +1,25 @@
 # Changelog
 
+## [2.0.0] - 2026-08-10
+
+### Added
+
+- `gvcp.StatusError` with `Code`/`Cmd`, returned when a device ACKs a GVCP request with a non-zero status (e.g. `INVALID_ACCESS`); message format matches the previous error text.
+- `gogige.Sample.Packs []PackDet` exposing every volume pack on the frame; `PackDet` now carries the pack center (`CenterX`/`CenterY`/`CenterZ`) and a 3x3 `Orientation` (axis0, axis1, surface normal) alongside `Length`/`Width`/`Height`/`Volume`/`Stable`.
+
+### Changed
+
+- `gogige.Sample` field renames (breaking): `Width` → `PixelWidth`, `Height` → `PixelHeight`, `Length` → `LengthMm`, disambiguating pixel vs. physical measurement dimensions now that per-pack measurements exist.
+- BSCF pack count is derived from the densely-packed `packDetSize` payload records rather than the descriptor slot — DS5131 writes 1 there regardless of record count; the descriptor value remains a fallback for empty payloads.
+
+### Fixed
+
+- `gvcp.ReadManifestTable` no longer fails on cameras without GenCP ManifestTable support: a bootstrap read rejected with `INVALID_ACCESS`/`WRITE_PROTECT` is treated as "no table" (`nil, nil`), so callers fall back to `FirstURL`.
+
+### Tests
+
+- `TestStatusErrorString`, `TestReadManifestTableInaccessibleIsNoTable`, `TestBSCFPackCountFromPayload`, and center/orientation round-trip assertions in `TestBSCFRoundTrip`.
+
 ## [1.1.0] - 2026-08-10
 
 ### Added
