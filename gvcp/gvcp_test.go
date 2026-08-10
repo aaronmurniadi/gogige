@@ -2,6 +2,7 @@ package gvcp
 
 import (
 	"encoding/binary"
+	"strings"
 	"testing"
 	"time"
 )
@@ -36,6 +37,22 @@ func (m *memPort) WriteMem(addr uint32, data []byte) error {
 		m.mem[addr+uint32(i)] = b
 	}
 	return nil
+}
+
+func (m *memPort) FirstURL() (string, error) {
+	b, err := m.ReadMem(gvbsXMLURL0, gvbsXMLURLSize)
+	if err != nil {
+		return "", err
+	}
+	s := string(b)
+	if i := strings.IndexByte(s, 0); i >= 0 {
+		s = s[:i]
+	}
+	return strings.TrimSpace(s), nil
+}
+
+func (m *memPort) ManifestTableURL() (string, error) {
+	return "", nil
 }
 
 func TestEncodeReadReg(t *testing.T) {
@@ -164,5 +181,105 @@ func TestApplyImplementationEndiannessValue(t *testing.T) {
 		if g.DeviceByteOrder() != tc.want {
 			t.Fatalf("v=%#x: got %v want %v", tc.v, g.DeviceByteOrder(), tc.want)
 		}
+	}
+}
+
+func TestReadManifestTable(t *testing.T) {
+	tableAddr := uint32(0x1000)
+	m := &memPort{mem: map[uint32]byte{}}
+	// Write manifest table address to 0x01D0 (big-endian)
+	addrBytes := make([]byte, 8)
+	binary.BigEndian.PutUint64(addrBytes, uint64(tableAddr))
+	for i, b := range addrBytes {
+		m.mem[AbrmManifestTableAddress+uint32(i)] = b
+	}
+	// Write MTAB header at 0x1000
+	header := []byte("MTAB")
+	for i, b := range header {
+		m.mem[tableAddr+uint32(i)] = b
+	}
+	countBytes := make([]byte, 4)
+	binary.BigEndian.PutUint32(countBytes, 2)
+	for i, b := range countBytes {
+		m.mem[tableAddr+8+uint32(i)] = b
+	}
+	// Entry 1: XML at 0x2000, len 5, type 1
+	e1 := make([]byte, 12)
+	binary.BigEndian.PutUint32(e1[0:], 0x2000)
+	binary.BigEndian.PutUint32(e1[4:], 5)
+	binary.BigEndian.PutUint32(e1[8:], ManifestEntryTypeXML)
+	for i, b := range e1 {
+		m.mem[tableAddr+12+uint32(i)] = b
+	}
+	// Entry 2: other at 0x3000, len 4, type 2
+	e2 := make([]byte, 12)
+	binary.BigEndian.PutUint32(e2[0:], 0x3000)
+	binary.BigEndian.PutUint32(e2[4:], 4)
+	binary.BigEndian.PutUint32(e2[8:], 2)
+	for i, b := range e2 {
+		m.mem[tableAddr+24+uint32(i)] = b
+	}
+	// Write XML data at 0x2000
+	m.WriteMem(0x2000, []byte("<?xml"))
+
+	entries, err := ReadManifestTable(m)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(entries) != 2 {
+		t.Fatalf("entries=%d", len(entries))
+	}
+	if entries[0].Address != 0x2000 || entries[0].Length != 5 || entries[0].Type != ManifestEntryTypeXML {
+		t.Fatalf("entry0=%+v", entries[0])
+	}
+	if entries[1].Address != 0x3000 || entries[1].Length != 4 || entries[1].Type != 2 {
+		t.Fatalf("entry1=%+v", entries[1])
+	}
+}
+
+func TestReadManifestTableZeroAddr(t *testing.T) {
+	m := &memPort{mem: map[uint32]byte{}}
+	// Zero address in 0x01D0
+	for i := 0; i < 8; i++ {
+		m.mem[AbrmManifestTableAddress+uint32(i)] = 0
+	}
+	entries, err := ReadManifestTable(m)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if entries != nil {
+		t.Fatalf("want nil, got %v", entries)
+	}
+}
+
+func TestManifestTableURL(t *testing.T) {
+	tableAddr := uint32(0x1000)
+	m := &memPort{mem: map[uint32]byte{}}
+	addrBytes := make([]byte, 8)
+	binary.BigEndian.PutUint64(addrBytes, uint64(tableAddr))
+	for i, b := range addrBytes {
+		m.mem[AbrmManifestTableAddress+uint32(i)] = b
+	}
+	m.WriteMem(tableAddr, []byte("MTAB"))
+	countBytes := make([]byte, 4)
+	binary.BigEndian.PutUint32(countBytes, 1)
+	for i, b := range countBytes {
+		m.mem[tableAddr+8+uint32(i)] = b
+	}
+	e1 := make([]byte, 12)
+	binary.BigEndian.PutUint32(e1[0:], 0x2000)
+	binary.BigEndian.PutUint32(e1[4:], 20)
+	binary.BigEndian.PutUint32(e1[8:], ManifestEntryTypeXML)
+	for i, b := range e1 {
+		m.mem[tableAddr+12+uint32(i)] = b
+	}
+	m.WriteMem(0x2000, []byte("local:x.xml;100;20"))
+
+	url, err := ManifestTableURL(m)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if url != "local:x.xml;100;20" {
+		t.Fatalf("url=%q", url)
 	}
 }

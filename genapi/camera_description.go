@@ -17,13 +17,20 @@ import (
 type URLReader interface {
 	gvcp.Port
 	FirstURL() (string, error)
+	ManifestTableURL() (string, error)
 }
 
-// FetchXML loads GenICam XML described by FirstURL (Local: or http://).
+// FetchXML loads GenICam XML described by ManifestTable (preferred) or FirstURL (Local: or http://).
 func FetchXML(g URLReader) ([]byte, error) {
-	url, err := g.FirstURL()
+	url, err := g.ManifestTableURL()
 	if err != nil {
 		return nil, err
+	}
+	if url == "" {
+		url, err = g.FirstURL()
+		if err != nil {
+			return nil, err
+		}
 	}
 	return fetchDeviceXML(g, url)
 }

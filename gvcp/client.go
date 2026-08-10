@@ -1,6 +1,7 @@
 package gvcp
 
 import (
+	"bytes"
 	"encoding/binary"
 	"errors"
 	"fmt"
@@ -251,6 +252,94 @@ func (g *GVCP) TakeControl() error {
 // LeaveControl clears CCP.
 func (g *GVCP) LeaveControl() error {
 	return g.WriteReg(gvbsCCP, 0)
+}
+
+// ManifestEntry describes a single entry in the device ManifestTable.
+type ManifestEntry struct {
+	Address uint32
+	Length  uint32
+	Type    uint32
+}
+
+const ManifestEntryTypeXML = 0x00000001
+
+// ReadManifestTable reads the GenCP ManifestTable pointed to by the
+// AbrmManifestTableAddress bootstrap register (0x01D0).
+// Returns nil, nil if the register is zero or the table is not present.
+func ReadManifestTable(p Port) ([]ManifestEntry, error) {
+	addrBytes, err := p.ReadMem(AbrmManifestTableAddress, 8)
+	if err != nil {
+		return nil, err
+	}
+	tableAddr := binary.BigEndian.Uint64(addrBytes)
+	if tableAddr == 0 {
+		return nil, nil
+	}
+	header, err := p.ReadMem(uint32(tableAddr), 12)
+	if err != nil {
+		return nil, err
+	}
+	if string(header[0:4]) != "MTAB" {
+		return nil, nil
+	}
+	count := binary.BigEndian.Uint32(header[8:12])
+	if count == 0 || count > 1024 {
+		return nil, nil
+	}
+	entries := make([]ManifestEntry, 0, count)
+	tableOff := uint32(tableAddr) + 12
+	entrySize := 12
+	total := int(count) * entrySize
+	raw, err := p.ReadMem(tableOff, total)
+	if err != nil {
+		return nil, err
+	}
+	for i := 0; i < int(count); i++ {
+		off := i * entrySize
+		if off+entrySize > len(raw) {
+			break
+		}
+		entries = append(entries, ManifestEntry{
+			Address: binary.BigEndian.Uint32(raw[off : off+4]),
+			Length:  binary.BigEndian.Uint32(raw[off+4 : off+8]),
+			Type:    binary.BigEndian.Uint32(raw[off+8 : off+12]),
+		})
+	}
+	return entries, nil
+}
+
+// ManifestTableURL returns the first GenICam XML URL from the device
+// ManifestTable, preferred over FirstURL when present.
+func ManifestTableURL(p Port) (string, error) {
+	entries, err := ReadManifestTable(p)
+	if err != nil {
+		return "", err
+	}
+	for _, e := range entries {
+		if e.Type == ManifestEntryTypeXML && e.Length > 0 {
+			data, err := p.ReadMem(e.Address, int(e.Length))
+			if err != nil {
+				continue
+			}
+			trimmed := bytes.TrimRight(data, "\x00")
+			s := string(trimmed)
+			if strings.HasPrefix(s, "<?xml") || strings.HasPrefix(s, "local:") ||
+				strings.HasPrefix(s, "http://") || strings.HasPrefix(s, "https://") {
+				return s, nil
+			}
+		}
+	}
+	return "", nil
+}
+
+// ReadManifestTable reads the manifest table from this GVCP connection.
+func (g *GVCP) ReadManifestTable() ([]ManifestEntry, error) {
+	return ReadManifestTable(g)
+}
+
+// ManifestTableURL returns the manifest table URL from this GVCP connection.
+func (g *GVCP) ManifestTableURL() (string, error) {
+	return ManifestTableURL(g)
 }
 
 // FirstURL reads the GenICam XML URL string from bootstrap.
