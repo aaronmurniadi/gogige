@@ -66,3 +66,55 @@ func TestIntSwissKnifeAddress(t *testing.T) {
 		t.Fatalf("regs=%v", port.regs)
 	}
 }
+
+func TestEvalFormulaFunctions(t *testing.T) {
+	v, err := evalFormula("ABS(X)", map[string]int64{"X": -5})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 5 {
+		t.Fatalf("ABS(-5)=%d", v)
+	}
+	v, err = evalFormula("ABS(X)", map[string]int64{"X": 7})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 7 {
+		t.Fatalf("ABS(7)=%d", v)
+	}
+	v, err = evalFormula("SQRT(16)", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 4 {
+		t.Fatalf("SQRT(16)=%d", v)
+	}
+	v, err = evalFormula("SQRT(0)", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 0 {
+		t.Fatalf("SQRT(0)=%d", v)
+	}
+	v, err = evalFormula("FLOOR(X)", map[string]int64{"X": 7})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 7 {
+		t.Fatalf("FLOOR(7)=%d", v)
+	}
+	v, err = evalFormula("CEIL(X)", map[string]int64{"X": 7})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 7 {
+		t.Fatalf("CEIL(7)=%d", v)
+	}
+	v, err = evalFormula("SQRT(ABS(X))", map[string]int64{"X": -9})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 3 {
+		t.Fatalf("SQRT(ABS(-9))=%d", v)
+	}
+}

@@ -2,13 +2,32 @@ package genapi
 
 import (
 	"fmt"
+	"math"
 	"strconv"
 	"strings"
 	"unicode"
 )
 
+var formulaFuncs = map[string]func(int64) int64{
+	"ABS": func(v int64) int64 {
+		if v < 0 {
+			return -v
+		}
+		return v
+	},
+	"FLOOR": func(v int64) int64 { return v },
+	"CEIL":  func(v int64) int64 { return v },
+	"SQRT": func(v int64) int64 {
+		if v < 0 {
+			return 0
+		}
+		return int64(math.Sqrt(float64(v)))
+	},
+}
+
 // evalFormula evaluates a GenICam SwissKnife formula with integer variables.
 // Supports + - * / % & | ^ << >> ~ ( ) ? : = <> != < > <= >= && || and hex/decimal literals.
+// Supports functions: ABS, FLOOR, CEIL, SQRT.
 func evalFormula(expr string, vars map[string]int64) (int64, error) {
 	p := &formParser{s: strings.TrimSpace(expr), vars: vars}
 	v, err := p.parseExpr()
@@ -404,13 +423,26 @@ func (p *formParser) parsePrimary() (int64, error) {
 		}
 		return strconv.ParseInt(p.s[start:p.i], 0, 64)
 	}
-	// identifier
+	// identifier or function call
 	if unicode.IsLetter(rune(p.s[p.i])) || p.s[p.i] == '_' {
 		start := p.i
 		for p.i < len(p.s) && (unicode.IsLetter(rune(p.s[p.i])) || unicode.IsDigit(rune(p.s[p.i])) || p.s[p.i] == '_') {
 			p.i++
 		}
 		name := p.s[start:p.i]
+		if fn, ok := formulaFuncs[name]; ok {
+			if !p.accept("(") {
+				return 0, fmt.Errorf("gige: formula missing ( after %s", name)
+			}
+			arg, err := p.parseExpr()
+			if err != nil {
+				return 0, err
+			}
+			if !p.accept(")") {
+				return 0, fmt.Errorf("gige: formula missing ) in %s call", name)
+			}
+			return fn(arg), nil
+		}
 		v, ok := p.vars[name]
 		if !ok {
 			return 0, fmt.Errorf("gige: formula unknown var %q", name)
