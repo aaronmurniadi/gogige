@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.0] - 2026-08-10
+
+### Added
+
+- Package-level `gvcp.ReadManifestTable(port)` and `gvcp.ManifestTableURL(port)` for reading the GenCP ManifestTable without requiring a live `*GVCP` connection; `*GVCP` convenience wrappers preserved. Tests cover zero-address, full table, and URL extraction.
+- `genapi.FetchXML` now prefers `URLReader.ManifestTableURL()` over `FirstURL()` when the device exposes a ManifestTable.
+- GenApi availability and lock pointers: `pIsImplemented`, `pIsAvailable`, `pIsLocked`, and `pInvalidator` are parsed and exposed via `NodeMap.IsImplemented()`, `NodeMap.IsAvailable()`, `NodeMap.IsLocked()`, `NodeMap.GetInvalidator()`, and `Node.GetInvalidator()`. Missing pointers default to implemented/available/not-locked.
+- SwissKnife math functions: `ABS`, `FLOOR`, `CEIL`, `SQRT` supported in formula evaluation (`genapi/evaluator.go`). `SQRT` returns 0 for negative inputs; all others pass-through for integer values.
+
 ## [1.0.0] - 2026-08-10
 
 ### Added

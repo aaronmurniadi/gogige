@@ -160,10 +160,10 @@ Refs: `_references/GenApi/GenICam_Standard_v2_1_1.pdf`, `_references/SFNC/GenICa
 | Core node kinds + set/get                                        | [x]        | Integer, Boolean, Float, String, Enum, Command, \*Reg, SwissKnife, Converter |
 | `Category` / `StructReg` as first-class types                    | [ ]        | Parsed skip today                                                            |
 | Pointers: `pAddress`, `pMin`/`pMax`/`pInc`, `pValue`             | [x]        | `pAddress`/`pValue` + `pMin`/`pMax`/`pInc` implemented; min/max/inc static values |
-| `pIsImplemented` / `pIsAvailable` / `pIsLocked` / `pInvalidator` | [ ]        | Cache invalidation                                                           |
-| ManifestTable (`0x01D0`) path                                    | [ ]        | Preferred over FirstURL when present                                         |
+| `pIsImplemented` / `pIsAvailable` / `pIsLocked` / `pInvalidator` | [x]        | `IsImplemented`/`IsAvailable`/`IsLocked` + `GetInvalidator`                 |
+| ManifestTable (`0x01D0`) path                                    | [x]        | `ReadManifestTable` + `ManifestTableURL` preferred over FirstURL             |
 | SwissKnife ops (`+ - \* / % \*\* &                               | ^ << >> && |                                                                              | ?:`) | [~] | Subset in `evaluator.go` |
-| SwissKnife funcs (`SQRT`, `FLOOR`, `CEIL`, `ABS`)                | [~]        | Verify against Standard § formula grammar                                    |
+| SwissKnife funcs (`SQRT`, `FLOOR`, `CEIL`, `ABS`)                | [x]        | `ABS`, `FLOOR`, `CEIL`, `SQRT` in `evaluator.go`                             |
 | Dedicated `port.go` binding + endianness                         | [x]        | Port node → `gvcp.Port` Read/Write; complete with byte order awareness       |
 | SFNC-required features for streaming                             | [~]        | `AcquisitionStart/Stop` used; formal Gev\* coverage TBD                      |
 
