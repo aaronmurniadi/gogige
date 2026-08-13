@@ -52,4 +52,4 @@ func GrabComponent(comp Component) GrabOption {
 }
 
 // Version is the library version.
-const Version = "2.0.1"
+const Version = "1.3.1"
