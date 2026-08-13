@@ -1,6 +1,26 @@
 # Changelog
 
-## [2.0.1] - 2026-08-13
+## [1.3.1] - 2026-08-13
+
+### Fixed
+
+- `internal/color` `Unpack14P` (`Mono14p` / `Bayer*14p`) reconstructed pixels 2/3/4
+  wrong per the PFNC lsb-packed layout, and had a stray 5th pixel that read past
+  the 7-byte group. Rewritten to decode the 4 samples per group. Verified against a
+  reference decoder (`0105 1234 2bcd 3def`).
+- `internal/genDC` `PartHeaderBaseSize` was `32` but the packed `GenDCPartHeaderBase`
+  is `40` bytes, so `parsePart`'s `len < 32` guard passed for 32–39 byte headers and
+  the `DataOffset` read at `buf[32:]` went out of slice range → panic. `PartHeaderBaseSize`
+  fixed to `40`; `PartHeader2DBaseSize` fixed to `56` (matching `PartHeader2DSize`).
+
+### Tests
+
+- `TestUnpack14P` (`internal/color`) reproduces the old wrong output
+  (`0105 0234 0c35 3beb`) and now matches the reference.
+- `TestPartHeaderTooShort` (`internal/genDC`) reproduces the old OOB panic on a
+  36-byte part header and now passes.
+
+## [1.3.0] - 2026-08-13
 
 ### Fixed
 
@@ -10,7 +30,7 @@
 
 - `TestParseGenDCContainer` (`internal/genDC`) and `TestParsePayloadByTypeDispatch`/`buildGenDCContainer` (`gvsp`) updated to the corrected byte-56 component-offset layout; both packages pass.
 
-## [2.0.0] - 2026-08-10
+## [1.2.0] - 2026-08-10
 
 ### Added
 

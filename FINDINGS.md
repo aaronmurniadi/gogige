@@ -32,16 +32,30 @@ constant, no current effect. **LOW** = style/status only.
 - Fix: `ContainerHeaderBaseSize = 56`. (All per-field reads at bytes 4–52 are already correct.)
 - Verified numerically: stored 0x1000 at byte 56, impl reads 0x0 at byte 64.
 
-### H2. `internal/genDC/genDC.go` — part header min-size + `DataOffset` read guard
+### H2. ~~`internal/genDC/genDC.go` — part header min-size + `DataOffset` read guard~~ **FIXED 2026-08-13**
+- Status: `PartHeaderBaseSize` fixed to **40** (`internal/genDC/genDC.go:178`),
+  `PartHeader2DBaseSize`/`PartHeader2DSize` fixed to **56**. New regression test
+  `TestPartHeaderTooShort` (genDC_test.go) reproduces the old OOB panic
+  (`index out of range` on a 36-byte part header) and now passes
+  (`go test ./internal/genDC ./gvsp`). Same live-camera caveat as H1: GenDC path
+  only validated against the spec header + synthetic containers, not a live GenDC frame.
 - File: `internal/genDC/genDC.go:178` (`PartHeaderBaseSize = 32`)
-- Spec: `GenDCPartHeaderBase` is **40 bytes** (packed).
+- Spec: `GenDCPartHeaderBase` is **40 bytes** (packed);
+  `GenDCPartHeader2DBase` is **56 bytes**.
 - `parsePart` (genDC.go:487-502) guards `len(buf) < 32` but then reads
   `binary.LittleEndian.Uint64(buf[32:])` (DataOffset, bytes 32–39). A part header
   between 32–39 bytes passes the guard and reads out of slice range → **panic**.
   Also the size constants `PartHeader2DBaseSize = 44` are off for the 2D base.
-- Fix: `PartHeaderBaseSize = 40`; correct `PartHeader2DBaseSize`.
+- Fix: `PartHeaderBaseSize = 40`; PartHeader2DBaseSize = `PartHeader2DSize` = 56.
 
-### H3. `internal/color/packed.go` — `Unpack14P` bit-reconstructs pixels 2/3/4 wrong
+### H3. ~~`internal/color/packed.go` — `Unpack14P` bit-reconstructs pixels 2/3/4 wrong~~ **FIXED 2026-08-13**
+- Status: `Unpack14P` rewritten to decode 4 samples per 7-byte LSB-packed group
+  per the PFNC formulas below; the stray 5th pixel and out-of-range `b7` read were
+  removed. New regression test `TestUnpack14P` (color_test.go) reproduces the old
+  wrong output (`0105 0234 0c35 3beb`) and now matches the reference
+  (`0105 1234 2bcd 3def`); `go test ./internal/color ./internal/genDC ./gvsp` passes.
+  Same live-camera caveat as H1/H2: 14p path validated against a reference decoder
+  and synthetic packed data, not a live camera frame.
 - File: `internal/color/packed.go:61-86`
 - Spec: PFNC default **lsb Packed** (`GenICam_PFNC_2_4.pdf` §6.3.1, Figure 6-9).
   `Mono14p` / `Bayer*14p`: 4 samples packed into 7 bytes.
@@ -120,6 +134,7 @@ constant, no current effect. **LOW** = style/status only.
 - GVSP payload-type IDs = GenTL.h `PAYLOAD_TYPE_*` exactly.
 - SFNC *naming* used for streaming features (`AcquisitionStart/Stop`).
 - All PFNC pixel-format **IDs** (color.go/packed.go/genDC.go) match `PFNC.h`.
-- `Unpack10P`, `Unpack12P`, `Unpack14P` count/stride logic except H3.
-- GenDC signature/version, component and part header base field offsets (except H1/H2),
-  flow-table parsing (`GenDCFlowTableHeader` = 16 bytes) — correct.
+- `Unpack10P`, `Unpack12P`, `Unpack14P` count/stride logic (H3 now fixed).
+- GenDC signature/version, component and part header base field offsets
+  (H1/H2 now fixed), flow-table parsing (`GenDCFlowTableHeader` = 16 bytes).
+  `GenDCPartHeaderBase` = 40, `GenDCPartHeader2DBase` = 56 — correct.
