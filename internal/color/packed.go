@@ -64,22 +64,19 @@ func Unpack14P(src []byte, dst []uint16) {
 	}
 	dstIdx := 0
 	for i := 0; i+6 < len(src); i += 7 {
+		// 4 pixels per 7-byte group, LSB-packed (14 bits each).
 		dst[dstIdx] = uint16(src[i]) | uint16(src[i+1]&0x3F)<<8
 		dstIdx++
 		if dstIdx < len(dst) {
-			dst[dstIdx] = uint16(src[i+1]&0xC0>>6) | uint16(src[i+2])<<2 | uint16(src[i+3]&0x03)<<10
+			dst[dstIdx] = uint16(src[i+1]&0xC0>>6) | uint16(src[i+2])<<2 | uint16(src[i+3]&0x0F)<<10
 			dstIdx++
 		}
 		if dstIdx < len(dst) {
-			dst[dstIdx] = uint16(src[i+3]&0xFC>>2) | uint16(src[i+4]&0x0F)<<8
+			dst[dstIdx] = uint16(src[i+3]&0xF0>>4) | uint16(src[i+4])<<4 | uint16(src[i+5]&0x03)<<12
 			dstIdx++
 		}
 		if dstIdx < len(dst) {
-			dst[dstIdx] = uint16(src[i+4]&0xF0>>4) | uint16(src[i+5])<<4 | uint16(src[i+6]&0x03)<<12
-			dstIdx++
-		}
-		if dstIdx < len(dst) {
-			dst[dstIdx] = uint16(src[i+6]&0xFC>>2) | uint16(src[i+7])<<6
+			dst[dstIdx] = uint16(src[i+5]&0xFC>>2) | uint16(src[i+6])<<6
 			dstIdx++
 		}
 	}
