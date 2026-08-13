@@ -1,8 +1,22 @@
 # ROADMAP
 
-Progress tracker against `AGENTS.md` and GiGE Vision specs under `_references/`.
+Progress tracker against `AGENTS.md` and GiGE Vision specs under `_references/`. Single source of truth for outstanding work.
 
 Legend: `[x]` done · `[ ]` not started · `[~]` partial
+
+## Outstanding work (single source of truth)
+
+Hand-complete rows still open against the reference specs; this is the canonical pending list.
+
+| Area | Item | Status |
+| ---- | ---- | ------ |
+| GenApi 2.1.1 | `Category` / `StructReg` as first-class node types (parsed/skipped today) | [ ] |
+| GenApi 2.1.1 | SwissKnife ops: `**` exponent not yet in `evaluator.go` (rest of § formula grammar done) | [~] |
+| GenApi + SFNC 2.7 | Formal `Gev*` / `Device*` streaming-feature coverage | [~] |
+| GenTL 1.6 | `.cti` loader (`gentl/cti.go`, `dlopen` / CGO, off by default) | [ ] |
+| GenTL 1.6 | Module ladder: `TLOpen`→`DSStartAcquisition`+`EVENT_NEW_BUFFER` | [ ] |
+| GenTL 1.6 | Optional CGO producer/consumer (`gentl/`) | [ ] |
+| GenTL 1.6 | `cmd/` CLIs beyond discover/stream | [~] |
 
 ---
 
@@ -155,17 +169,17 @@ Refs: `_references/GenDC/*`, `_references/SFNC/PFNC.h`, GVSP section of `AGENTS.
 Refs: `_references/GenApi/GenICam_Standard_v2_1_1.pdf`, `_references/SFNC/GenICam_SFNC_v2_7.pdf`, GenApi section of `AGENTS.md`.
 
 | Item                                                             | Status     | Spec cue                                                                     |
-| ---------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------- | ---- | --- | ------------------------ |
+| ---------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------- |
 | Local:/HTTP XML fetch + unzip                                    | [x]        | FirstURL / device memory                                                     |
 | Core node kinds + set/get                                        | [x]        | Integer, Boolean, Float, String, Enum, Command, \*Reg, SwissKnife, Converter |
-| `Category` / `StructReg` as first-class types                    | [ ]        | Parsed skip today                                                            |
+| `Category` / `StructReg` as first-class types                    | [ ]        | Parsed + skipped today ([GenApi §.2.x Category / §.3.4 StructReg]); need node kinds + traversal for layout/category enum |
 | Pointers: `pAddress`, `pMin`/`pMax`/`pInc`, `pValue`             | [x]        | `pAddress`/`pValue` + `pMin`/`pMax`/`pInc` implemented; min/max/inc static values |
 | `pIsImplemented` / `pIsAvailable` / `pIsLocked` / `pInvalidator` | [x]        | `IsImplemented`/`IsAvailable`/`IsLocked` + `GetInvalidator`                 |
 | ManifestTable (`0x01D0`) path                                    | [x]        | `ReadManifestTable` + `ManifestTableURL` preferred over FirstURL             |
-| SwissKnife ops (`+ - \* / % \*\* &                               | ^ << >> && |                                                                              | ?:`) | [~] | Subset in `evaluator.go` |
+| SwissKnife ops                                          | [~]        | `+ - * / % & \| ^ << >> ~ ( ) = == != < > <= >= && || ?:` in `evaluator.go`; `**` (exponent) not yet supported |
 | SwissKnife funcs (`SQRT`, `FLOOR`, `CEIL`, `ABS`)                | [x]        | `ABS`, `FLOOR`, `CEIL`, `SQRT` in `evaluator.go`                             |
 | Dedicated `port.go` binding + endianness                         | [x]        | Port node → `gvcp.Port` Read/Write; complete with byte order awareness       |
-| SFNC-required features for streaming                             | [~]        | `AcquisitionStart/Stop` used; formal Gev\* coverage TBD                      |
+| SFNC-required features for streaming                             | [~]        | `AcquisitionStart/Stop`, `AcquisitionMode`, `AcquisitionFrameRate` wired; formal `Gev*` (SCPS, heartbeat interval) + `Device*` coverage TBD per `GenICam_SFNC_v2_7.pdf` |
 
 ### Phase 4 — High-level + GenTL 1.6
 
