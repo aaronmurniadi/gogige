@@ -337,13 +337,13 @@ func TestChunkPayload(t *testing.T) {
 // one Intensity component, one 2D Mono8 part.
 func buildGenDCContainer(w, h int, pixels []byte) []byte {
 	var buf bytes.Buffer
-	hdr := make([]byte, 72)
+	hdr := make([]byte, 64)
 	binary.LittleEndian.PutUint32(hdr[0:], 0x43444E47)
 	hdr[4], hdr[5] = 1, 1
 	binary.LittleEndian.PutUint16(hdr[8:], 0x1000)
-	binary.LittleEndian.PutUint32(hdr[12:], 72)
+	binary.LittleEndian.PutUint32(hdr[12:], 64)
 	binary.LittleEndian.PutUint32(hdr[52:], 1)
-	binary.LittleEndian.PutUint64(hdr[64:], 72)
+	binary.LittleEndian.PutUint64(hdr[56:], 64)
 	buf.Write(hdr)
 
 	comp := make([]byte, 56)
@@ -355,7 +355,7 @@ func buildGenDCContainer(w, h int, pixels []byte) []byte {
 	binary.LittleEndian.PutUint64(comp[48:], 56)
 	buf.Write(comp)
 
-	dataAbs := 72 + 56 + 56
+	dataAbs := 64 + 56 + 56
 	part := make([]byte, 56)
 	binary.LittleEndian.PutUint16(part[0:], 0x4200)
 	binary.LittleEndian.PutUint32(part[4:], 56)

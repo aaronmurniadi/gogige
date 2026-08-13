@@ -11,15 +11,15 @@ import (
 func buildContainer(w, h int, pixels []byte, withFlow bool) []byte {
 	var buf bytes.Buffer
 
-	hdr := make([]byte, 72) // 64 base + 8 component offset
+	hdr := make([]byte, 64) // 56 base + 8 component offset
 	binary.LittleEndian.PutUint32(hdr[0:], Signature)
 	hdr[4] = 1 // major
 	hdr[5] = 1 // minor
 	hdr[6] = 0 // sub minor
 	binary.LittleEndian.PutUint16(hdr[8:], HeaderContainer)
-	binary.LittleEndian.PutUint32(hdr[12:], 72) // header size incl. offset
+	binary.LittleEndian.PutUint32(hdr[12:], 64) // header size incl. offset
 	binary.LittleEndian.PutUint32(hdr[52:], 1)  // component count
-	binary.LittleEndian.PutUint64(hdr[64:], 72) // component offset
+	binary.LittleEndian.PutUint64(hdr[56:], 64) // component offset
 	buf.Write(hdr)
 
 	// Component header + one part offset at abs 72.
@@ -32,7 +32,7 @@ func buildContainer(w, h int, pixels []byte, withFlow bool) []byte {
 	binary.LittleEndian.PutUint64(comp[48:], 56) // part header offset (rel. to component)
 	buf.Write(comp)
 
-	partAbs := 72 + 56
+	partAbs := 64 + 56
 	dataAbs := partAbs + 56
 
 	part := make([]byte, 56)

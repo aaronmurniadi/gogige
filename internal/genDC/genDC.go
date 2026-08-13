@@ -163,7 +163,7 @@ const (
 
 // GenDCContainerHeader from GenDC.h (packed struct)
 const (
-	ContainerHeaderBaseSize      = 64
+	ContainerHeaderBaseSize      = 56
 	ContainerComponentOffsetSize = 8
 )
 

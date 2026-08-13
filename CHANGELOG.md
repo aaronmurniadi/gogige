@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.1] - 2026-08-13
+
+### Fixed
+
+- `internal/genDC` container `ComponentOffsets[]` read at the wrong offset: `ContainerHeaderBaseSize` was `64` but the packed `GenDCContainerHeaderBase` is `56` bytes (per `_references/GenDC/GenDC.h`), so every component offset was read 8 bytes past the real array (typically `0`), causing GenDC payloads (incl. `PAYLOAD_TYPE_GENDC`) to skip/empty their components and fail to extract image data on real payloads.
+
+### Tests
+
+- `TestParseGenDCContainer` (`internal/genDC`) and `TestParsePayloadByTypeDispatch`/`buildGenDCContainer` (`gvsp`) updated to the corrected byte-56 component-offset layout; both packages pass.
+
 ## [2.0.0] - 2026-08-10
 
 ### Added
