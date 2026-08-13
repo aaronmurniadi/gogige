@@ -129,3 +129,29 @@ func TestParseFlowTable(t *testing.T) {
 		t.Fatal("expected error parsing container start as flow table")
 	}
 }
+
+// TestPartHeaderTooShort guards against the H2 OOB read: a part header shorter
+// than the real 40-byte GenDCPartHeaderBase (but >= the old 32-byte guard) must
+// be rejected, never trigger a slice out-of-range panic when reading DataOffset.
+func TestPartHeaderTooShort(t *testing.T) {
+	data := buildContainer(2, 2, make([]byte, 4), false)
+	// Find the part header (absolute offset 120 = 64 + 56) and truncate the
+	// container so only 36 bytes of the 40-byte part header remain.
+	end := 64 + 56 + 36
+	short := data[:end]
+
+	defer func() {
+		if r := recover(); r != nil {
+			t.Fatalf("ParseGenDCContainer panicked on truncated part header: %v", r)
+		}
+	}()
+
+	f, err := ParseGenDCContainer(short)
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+	// The truncated part must be skipped (no panic), leaving zero parts.
+	if len(f.Components) != 1 || len(f.Components[0].Parts) != 0 {
+		t.Fatalf("expected component with no parseable parts, got %d", len(f.Components[0].Parts))
+	}
+}
