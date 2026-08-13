@@ -110,5 +110,5 @@ The `commit-changes` skill defines the release workflow — follow it when invok
 - Group changes by related topic; brief ≈50-char subjects (`feat:`, `fix:`, `chore:`).
 - Put detail in `CHANGELOG.md` (Keep a Changelog style, dated under the next `## [X.Y.Z]`).
 - Mark completed items `[ ]`/`[~]` → `[x]` in `ROADMAP.md`.
-- Bump `Version` (root `options.go`) + annotated tag `vX.Y.Z` **only when code changed**. Version currently `2.0.0`.
+- Bump `Version` (root `options.go`) + annotated tag `vX.Y.Z` **only when code changed**. Version currently `1.4.0`.
 - Don't push unless asked.
