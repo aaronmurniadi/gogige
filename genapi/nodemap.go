@@ -282,6 +282,41 @@ func (nm *NodeMap) ReadInteger(name string) (int64, error) {
 	return int64(v), err
 }
 
+// ReadFloat returns the current value of a Float feature.
+func (nm *NodeMap) ReadFloat(name string) (float64, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return 0, err
+	}
+	target := n
+	if n.PValue != "" {
+		target, err = nm.lookup(n.PValue)
+		if err != nil {
+			return 0, err
+		}
+	}
+	return nm.pa.readFloatReg(target, nm)
+}
+
+// ReadString returns the current value of a String or string-backed feature.
+func (nm *NodeMap) ReadString(name string) (string, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return "", err
+	}
+	target := n
+	if n.PValue != "" {
+		reg, err := nm.lookup(n.PValue)
+		if err != nil {
+			return "", err
+		}
+		if reg.Kind == "StringReg" {
+			target = reg
+		}
+	}
+	return nm.pa.readStringReg(target, nm)
+}
+
 // GetMin returns the minimum constraint value for an Integer or Float feature.
 // Returns (min, hasConstraint, error).
 // If pMin is set, evaluates the referenced feature; otherwise returns static Min value.

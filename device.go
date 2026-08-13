@@ -116,16 +116,31 @@ func (d *device) Close() error {
 type cameraFeatures struct{ c *Camera }
 
 func (f cameraFeatures) SetBool(name string, v bool) error {
-	return f.c.SetBooleanFeature(name, v)
+	return f.c.SetBoolean(name, v)
+}
+func (f cameraFeatures) Bool(name string) (bool, error) {
+	return f.c.Boolean(name)
 }
 func (f cameraFeatures) SetInt(name string, v int64) error {
 	return f.c.SetIntFeature(name, v)
 }
+func (f cameraFeatures) Int(name string) (int64, error) {
+	return f.c.Integer(name)
+}
 func (f cameraFeatures) SetFloat(name string, v float64) error {
-	return f.c.SetFloatFeature(name, v)
+	return f.c.SetFloat(name, v)
+}
+func (f cameraFeatures) Float(name string) (float64, error) {
+	return f.c.Float(name)
 }
 func (f cameraFeatures) SetString(name, v string) error {
-	return f.c.SetStringFeature(name, v)
+	return f.c.SetString(name, v)
+}
+func (f cameraFeatures) String(name string) (string, error) {
+	return f.c.String(name)
+}
+func (f cameraFeatures) Enum(name string) (string, error) {
+	return f.c.Enum(name)
 }
 func (f cameraFeatures) Execute(name string) error { return f.c.ExecuteCommand(name) }
 func (f cameraFeatures) Has(name string) bool {

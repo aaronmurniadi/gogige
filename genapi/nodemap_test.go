@@ -452,3 +452,39 @@ func TestInvalidatorPointer(t *testing.T) {
 		t.Fatalf("GetInvalidator for node without invalidator should be empty, got %q", inv)
 	}
 }
+
+func TestReadFloatAndStringRoundTrip(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <FloatReg Name="ExposureTimeReg"><Address>0x4000</Address><Length>4</Length><AccessMode>RW</AccessMode></FloatReg>
+  <Float Name="ExposureTime"><pValue>ExposureTimeReg</pValue></Float>
+  <StringReg Name="DeviceUserIDReg"><Address>0x4100</Address><Length>64</Length><AccessMode>RW</AccessMode></StringReg>
+  <String Name="DeviceUserID"><pValue>DeviceUserIDReg</pValue></String>
+</RegisterDescription>`
+
+	port := &memPort{}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	// Float write → read round trip.
+	_ = nm.SetFloat("ExposureTime", 12.5)
+	got, err := nm.ReadFloat("ExposureTime")
+	if err != nil {
+		t.Fatalf("ReadFloat: %v", err)
+	}
+	if got != 12.5 {
+		t.Fatalf("ReadFloat=%v, want 12.5", got)
+	}
+
+	// String write → read round trip.
+	_ = nm.SetString("DeviceUserID", "hello")
+	s, err := nm.ReadString("DeviceUserID")
+	if err != nil {
+		t.Fatalf("ReadString: %v", err)
+	}
+	if s != "hello" {
+		t.Fatalf("ReadString=%q, want \"hello\"", s)
+	}
+}

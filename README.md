@@ -49,26 +49,45 @@ go get github.com/aaronmurniadi/gogige
 
 ### Quick start
 
-Open a device, configure nodes, and stream:
+Open a camera, configure a feature, and grab a frame. There are two handles that
+share one feature vocabulary (`SetInteger`/`SetEnum`/`SetBoolean`/`SetFloat`/`SetString`
+plus matching getters):
+
+- `gogige.OpenDevice` → `*Camera`: control + live frames + one-shot samples.
+- `gogige.Open` → `Device`: control (`dev.Features()`) + `StartGrabber`/`Grabber`.
+
+**One-shot sample straight from the Camera:**
 
 ```go
-cam, err := gige.Open(ctx, "192.168.1.10",
+cam, err := gige.OpenDevice(ctx, "192.168.1.10",
     gige.WithLogger(logger),
     gige.WithTimeout(2*time.Second),
 )
 defer cam.Close()
+_ = cam.SetEnum("PixelFormat", "Mono8")
 
-g, err := cam.StartGrabber(ctx)
-defer g.Close()
-sample, err := g.Grab(ctx) // Sample: JPEG + WidthMm/HeightMm/Length/PackCount
+sample, err := cam.GrabSample(ctx, gige.ComponentDepth) // Sample: JPEG + LengthMm/WidthMm/HeightMm/PackCount/Packs
+```
+
+**Continuous frames:**
+
+```go
+stream, err := cam.StartStream(ctx)
+defer stream.Stop()
+for frame := range stream.Frames() {
+    // use frame.Data
+    frame.Release() // return to the buffer pool
+}
 ```
 
 ## Usage
 
-**One-shot grab:**
+**One-shot grab (fully automated open→grab→close):**
 
 ```go
 jpeg, err := gogige/grab.GrabJPEG(ctx, "192.168.1.10")
+// or from a Camera you already hold:
+jpeg, err := gogige/grab.FromCamera(ctx, cam, gogige.ComponentColor)
 ```
 
 **Discover cameras:**
@@ -96,21 +115,21 @@ gogige/
 ├── cmd/
 │   ├── gogige-discover/      # CLI discovery utility
 │   └── gogige-stream/        # CLI stream capture utility
-├── control/
-│   ├── camera/               # Camera, Connect, Logger
-│   ├── gvcp/                 # GVCP, CCP, FetchXML, Start/StopAcquisition
-│   └── genicam/              # GenICam NodeMap
+├── camera.go                 # Camera, feature get/set, one-shot grabs
+├── device.go                 # Device (Open), OpenDevice, Features impl
+├── stream.go                 # Session/Grabber, StartStream + Stream.Frames()
+├── options.go                # WithLogger/WithTimeout/WithComponent, const Version
+├── interfaces.go             # Device, Features, Grabber, FrameSink, JPEGFunc
+├── alias.go                  # gogige.Sample/Frame/GVCP/… re-exports
+├── discovery.go              # Discover → DeviceInfo
+├── log.go                    # Logger, NopLogger, Slog
 ├── genapi/                   # GenICam GenApi XML parser / node map
 ├── gvcp/                     # GigE Vision Control Protocol
 ├── gvsp/                     # GigE Vision Streaming Protocol
-├── vision/
-│   ├── device/               # Device, Open, Features, Grabber
-│   ├── session/              # Streaming session
-│   ├── live/                 # Live preview loop
-│   ├── grab/                 # One-shot GrabJPEG
-│   ├── gvsp/                 # GVSP stream
-│   ├── bscf/                 # BSCF + Sample
-│   └── color/                # JPEG encode
+├── gentl/                    # GenTL constants (no CGO)
+├── internal/                 # color (PFNC decode + JPEG), genDC
+├── grab/                     # One-shot GrabJPEG / FromCamera
+├── live/                     # Continuous preview loop
 ├── examples/                 # Runnable examples (smoke-test, grab, live, …)
 ├── .githooks/                # Versioned git hooks (gofmt + go test)
 ├── AGENTS.md                 # Project & protocol rules

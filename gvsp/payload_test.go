@@ -17,7 +17,7 @@ func TestBSCFRoundTrip(t *testing.T) {
 	buf := BuildTestBSCF(colorBuf, w, h, color.PixelFormatBGR8, []PackDet{
 		{
 			CenterX: -130.75, CenterY: -184.09, CenterZ: 2133.96,
-			Length: 253.5, Width: 106.6, Height: 111, Volume: 1, Stable: true,
+			LengthMm: 253.5, WidthMm: 106.6, HeightMm: 111, Volume: 1, Stable: true,
 			Orientation: [3][3]float32{
 				{0.5, 0, 0.866}, {0, 1, 0}, {-0.866, 0, 0.5},
 			},
@@ -39,8 +39,8 @@ func TestBSCFRoundTrip(t *testing.T) {
 	if !f.Packs[0].Stable {
 		t.Fatal("expected stable")
 	}
-	if f.Packs[0].Length < 253 || f.Packs[0].Length > 254 {
-		t.Fatalf("length=%v", f.Packs[0].Length)
+	if f.Packs[0].LengthMm < 253 || f.Packs[0].LengthMm > 254 {
+		t.Fatalf("length=%v", f.Packs[0].LengthMm)
 	}
 	if f.Packs[0].CenterX < -131 || f.Packs[0].CenterX > -130 {
 		t.Fatalf("centerX=%v", f.Packs[0].CenterX)
@@ -126,9 +126,9 @@ func TestBSCFPackCountFromPayload(t *testing.T) {
 	w, h := 2, 2
 	colorPix := []byte{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
 	packs := []PackDet{
-		{Length: 100, Width: 20, Height: 30, Volume: 60000, Stable: true},
-		{Length: 40, Width: 10, Height: 15, Volume: 6000, Stable: false},
-		{Length: 80, Width: 5, Height: 12, Volume: 4800, Stable: true},
+		{LengthMm: 100, WidthMm: 20, HeightMm: 30, Volume: 60000, Stable: true},
+		{LengthMm: 40, WidthMm: 10, HeightMm: 15, Volume: 6000, Stable: false},
+		{LengthMm: 80, WidthMm: 5, HeightMm: 12, Volume: 4800, Stable: true},
 	}
 
 	// Reuse the builder but overwrite the descriptor slot back to 1.
@@ -151,8 +151,8 @@ func TestBSCFPackCountFromPayload(t *testing.T) {
 	if len(f.Packs) != 3 {
 		t.Fatalf("len(Packs)=%d want 3", len(f.Packs))
 	}
-	if f.Packs[2].Length != 80 {
-		t.Fatalf("packs[2].Length=%v want 80", f.Packs[2].Length)
+	if f.Packs[2].LengthMm != 80 {
+		t.Fatalf("packs[2].LengthMm=%v want 80", f.Packs[2].LengthMm)
 	}
 
 	s, err := SampleFromBSCF(buf)
@@ -165,7 +165,7 @@ func TestBSCFPackCountFromPayload(t *testing.T) {
 	if len(s.Packs) != 3 {
 		t.Fatalf("sample len(Packs)=%d want 3", len(s.Packs))
 	}
-	if s.Packs[2].Length != 80 || s.Packs[2].CenterY != 0 {
+	if s.Packs[2].LengthMm != 80 || s.Packs[2].CenterY != 0 {
 		t.Fatalf("sample packs[2]=%+v", s.Packs[2])
 	}
 }

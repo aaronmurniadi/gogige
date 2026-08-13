@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.0] - 2026-08-13
+
+### Added
+
+- `Camera` one-shot grab helpers so a consumer already on the `OpenDevice` path can grab samples without juggling `Device`/`Grabber`: `Camera.GrabSample` (single component + JPEG), `Camera.GrabAllSamples` (every BSCF component), `Camera.GrabComponents` (raw, no JPEG), and `Camera.GrabJPEG`. Each opens a transient GVSP stream and closes it before returning; the `Camera` stays open.
+- `Camera.Features()` returns a `Features` view backed by the `Camera`, so a `*Camera` and a `Device` share the same feature vocabulary.
+- Camera feature getters: `Camera.Integer`/`Boolean`/`Float`/`String`/`Enum`, plus `Features.Bool`/`Int`/`Float`/`String`/`Enum`. Reads are backed by new `NodeMap.ReadFloat` and `NodeMap.ReadString` register-read paths (previously only write paths existed).
+- `grab.FromCamera(ctx, cam, comp)` one-shot JPEG grab from an already-connected `*Camera`.
+
+### Changed
+
+- `Camera` feature control unified onto the short Phase-4 names: `SetInteger`, `SetEnum`, `SetBoolean`, `SetFloat`, `SetString` are now primary; the previous `Set*Feature` forms remain as aliases so existing code keeps compiling. `SetInteger`/`SetEnum`/`Camera.Features` share one consistent vocabulary with `Device.Features`.
+- `gvsp.PackDet` measurement fields renamed for consistency with `Sample`: `Length` → `LengthMm`, `Width` → `WidthMm`, `Height` → `HeightMm` (breaking). `gvsp.Sample` already used `*Mm`.
+
 ## [1.3.1] - 2026-08-13
 
 ### Fixed

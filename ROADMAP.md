@@ -66,14 +66,14 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `gentl/types.go`               | [x]    | Mirror `GenTL.h` handles / enums                                         |
 | `cmd/gogige-discover/`         | [x]    | CLI discovery utility                                                    |
 | `cmd/gogige-stream/`           | [x]    | CLI N-frame JPEG + BSCF measurements                                     |
-| `camera.go`                    | [x]    | High-level `Camera` + feature setters                                    |
+| `camera.go`                    | [x]    | High-level `Camera`: get/set features (short names + getters), one-shot grabs (`GrabSample`/`GrabAllSamples`/`GrabComponents`/`GrabJPEG`), `Features()` |
 | `discovery.go`                 | [x]    | Root `Discover` → `gvcp.Discover`                                        |
 | `stream.go`                    | [x]    | `Session` / `Grab` / `GrabAll`; `StartStream` + `Frames()`              |
 | `options.go`                   | [x]    | `WithLogger` / `WithTimeout` / `WithComponent` / `GrabComponent`         |
-| `grab/grab.go`                 | [x]    | One-shot `GrabJPEG` convenience                                          |
+| `grab/grab.go`                 | [x]    | One-shot `GrabJPEG` convenience + `FromCamera` for an open `Camera`      |
 | `live/live.go`                 | [x]    | Continuous preview loop (`NewLive` / `WithSink` / `Start` / `Stop`)      |
 | `log.go`                       | [x]    | `Logger` interface + `NopLogger` + `Slog` adapter                        |
-| `interfaces.go`                | [x]    | Core interfaces: `Device`, `Grabber`, `FrameSink`, `JPEGFunc`            |
+| `interfaces.go`                | [x]    | Core interfaces: `Device`, `Features` (get+set), `Grabber`, `FrameSink`, `JPEGFunc` |
 | `device.go`                    | [x]    | `device` struct, `Open`, `OpenDevice`, `connectCamera`                   |
 | `alias.go`                     | [x]    | Type aliases + re-exports for ergonomic `gogige.Sample` etc.             |
 | `doc.go`                       | [x]    | Package documentation                                                    |
@@ -100,7 +100,7 @@ for frame := range stream.Frames() { frame.Release() }
 | ------------------------------------- | ------ | ----------------------------------------------------------- |
 | Package name `gogige` (was `gige`)    | [x]    | Renamed; name now matches import path                       |
 | `OpenDevice`                          | [x]    | Returns `*Camera`; `Open`→`Device` kept for legacy consumers |
-| `SetInteger` / `SetEnum` on camera    | [x]    | `camera.go` (wrap `SetIntFeature` / `SetStringFeature`)     |
+| `SetInteger` / `SetEnum` on camera    | [x]    | `camera.go` primary setter/getter set (`SetInteger`/`SetEnum`/`SetBoolean`/`SetFloat`/`SetString` + `Integer`/`Enum`/`Boolean`/`Float`/`String`); old `Set*Feature` retained as aliases |
 | `StartStream` + `<-chan *Frame`       | [x]    | `framestream.go`; pooled frames, `Stop`/`Pause`/`Resume`    |
 | `frame.Release()` buffer return       | [x]    | `gvsp.BufferPool` + `Frame.Release`                         |
 
@@ -216,6 +216,7 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 
 - **2026-08-09** — GVSP OOO zero-alloc: replaced `map[uint32][]byte` in `frameBuild` with pre-allocated `OOOPacketRing` (`gvsp/frame.go`), ring spills to a lazily-created overflow map only past `MaxOOOPackets` (256). `receiver.go` appendPayload uses ring `Put`/`Get`/`Delete`; `resend.go` adds `MissingPayloadRangesRing`. Fixed middle-delete ring compaction dropping the head packet; added `TestOOOPacketRing*` + `TestGVSPOutOfOrder`. Duplicate `frame_assemble.go` removed.
 
+- **2026-08-13** — API ergonomics (1.4.0): `Camera` is now the unified handle — one-shot grabs (`GrabSample`/`GrabAllSamples`/`GrabComponents`/`GrabJPEG`), `Features()`, and consistent short get/set feature names (`SetInteger`/`SetEnum`/… plus `Integer`/`Enum`/`Float`/`String`/`Boolean` getters); added `NodeMap.ReadFloat`/`ReadString`; `Features` gained getters; `grab.FromCamera`; `PackDet` renamed `Length`/`Width`/`Height` → `LengthMm`/`WidthMm`/`HeightMm`.
 - **2026-08-08** — Phase 3: Constraint pointers (pMin, pMax, pInc) complete. Added Node.GetConstraints(), NodeMap.GetMin/Max/Inc() methods. Parser now extracts Min/Max/Inc static values + pMin/pMax/pInc feature references. Enables parameter bounds validation. Test: TestConstraintPointers.
 - **2026-08-08** — GenApi refactoring complete: `node.go` (Node interface + gcNode), `types.go` (node parsing: nodeFields, parseNodeXML, parseNodeMapXML), `port.go` (portAdapter binding → gvcp.Port); `nodemap.go` now clean orchestration layer; zero-alloc architecture with explicit separation of concerns per AGENTS.md.
 - **2026-08-08** — Phase 4 API: `OpenDevice` → `*Camera`, `Camera.SetInteger` / `SetEnum`, `Camera.StartStream` → `Stream.Frames()` channel of pooled `*gvsp.Frame` with `Stop`/`Pause`/`Resume` (`framestream.go`); `Stream` alias → `GVSPStream`. New `examples/frames`.
