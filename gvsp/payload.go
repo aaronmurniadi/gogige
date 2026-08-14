@@ -120,13 +120,13 @@ func (f *BSCFFrame) Block(c Component) (ComponentBlock, bool) {
 // Orientation is a 3x3 rotation (unit rows); row 2 is the surface normal and is
 // constant across packs belonging to the same surface.
 type PackDet struct {
-	CenterX float32
-	CenterY float32
-	CenterZ float32
-	Length  float32
-	Width   float32
-	Height  float32
-	Volume  float32
+	CenterX  float32
+	CenterY  float32
+	CenterZ  float32
+	LengthMm float32
+	WidthMm  float32
+	HeightMm float32
+	Volume   float32
 	// Orientation rows: [0]=axis0, [1]=axis1, [2]=surface normal.
 	Orientation [3][3]float32
 	Stable      bool
@@ -243,9 +243,9 @@ func parsePackDet(b []byte) PackDet {
 		}
 	}
 	if len(b) >= 64 {
-		pd.Length = math.Float32frombits(binary.LittleEndian.Uint32(b[48:]))
-		pd.Width = math.Float32frombits(binary.LittleEndian.Uint32(b[52:]))
-		pd.Height = math.Float32frombits(binary.LittleEndian.Uint32(b[56:]))
+		pd.LengthMm = math.Float32frombits(binary.LittleEndian.Uint32(b[48:]))
+		pd.WidthMm = math.Float32frombits(binary.LittleEndian.Uint32(b[52:]))
+		pd.HeightMm = math.Float32frombits(binary.LittleEndian.Uint32(b[56:]))
 		pd.Volume = math.Float32frombits(binary.LittleEndian.Uint32(b[60:]))
 		for r := 0; r < 3; r++ {
 			for c := 0; c < 3; c++ {
@@ -321,9 +321,9 @@ func sampleFromBlock(f *BSCFFrame, blk ComponentBlock) Sample {
 	}
 	if len(f.Packs) > 0 {
 		p := f.Packs[0]
-		s.LengthMm = float64(p.Length)
-		s.WidthMm = float64(p.Width)
-		s.HeightMm = float64(p.Height)
+		s.LengthMm = float64(p.LengthMm)
+		s.WidthMm = float64(p.WidthMm)
+		s.HeightMm = float64(p.HeightMm)
 		s.Stable = p.Stable
 	}
 	if s.PackCount < 0 && len(f.Packs) > 0 {
@@ -393,9 +393,9 @@ func BuildTestBSCFComponents(blocks []ComponentBlock, packs []PackDet) []byte {
 					binary.LittleEndian.PutUint32(pd[12+r*12+c*4:], math.Float32bits(p.Orientation[r][c]))
 				}
 			}
-			binary.LittleEndian.PutUint32(pd[48:], math.Float32bits(p.Length))
-			binary.LittleEndian.PutUint32(pd[52:], math.Float32bits(p.Width))
-			binary.LittleEndian.PutUint32(pd[56:], math.Float32bits(p.Height))
+			binary.LittleEndian.PutUint32(pd[48:], math.Float32bits(p.LengthMm))
+			binary.LittleEndian.PutUint32(pd[52:], math.Float32bits(p.WidthMm))
+			binary.LittleEndian.PutUint32(pd[56:], math.Float32bits(p.HeightMm))
 			binary.LittleEndian.PutUint32(pd[60:], math.Float32bits(p.Volume))
 			st := uint32(0)
 			if p.Stable {

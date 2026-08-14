@@ -10,12 +10,19 @@ type Device interface {
 	Close() error
 }
 
-// Features is GenICam feature access without exposing NodeMap.
+// Features is GenICam feature access without exposing NodeMap. It mirrors the
+// short forms on Camera (SetInteger/Integer, SetEnum/Enum, …) so a Device and a
+// Camera share one consistent vocabulary.
 type Features interface {
 	SetBool(name string, v bool) error
+	Bool(name string) (bool, error)
 	SetInt(name string, v int64) error
+	Int(name string) (int64, error)
 	SetFloat(name string, v float64) error
+	Float(name string) (float64, error)
 	SetString(name, v string) error
+	String(name string) (string, error)
+	Enum(name string) (string, error)
 	Execute(name string) error
 	Has(name string) bool
 }

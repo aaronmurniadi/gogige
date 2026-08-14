@@ -129,3 +129,25 @@ func TestDecodeHighDepth_BayerRG12Packed(t *testing.T) {
 		t.Fatal("debayer produced all-black output")
 	}
 }
+
+// TestUnpack14P regression for FINDINGS.md H3: pixels 2..4 were reconstructed
+// wrong (reference decodes the 7-byte LSB-packed group to 0105 1234 2bcd 3def).
+func TestUnpack14P(t *testing.T) {
+	want := []uint16{0x0105, 0x1234, 0x2bcd, 0x3def}
+
+	// Encode the 4 samples into 7 bytes per the official LSB-packed layout.
+	var src [7]byte
+	src[0] = byte(want[0] & 0xFF)
+	src[1] = byte(want[0]>>8&0x3F) | byte(want[1]&0x03)<<6
+	src[2] = byte(want[1] >> 2)
+	src[3] = byte(want[1]>>10) | byte(want[2]&0x0F)<<4
+	src[4] = byte(want[2] >> 4)
+	src[5] = byte(want[2]>>12&0x03) | byte(want[3]&0x3F)<<2
+	src[6] = byte(want[3] >> 6)
+
+	dst := make([]uint16, 4)
+	Unpack14P(src[:], dst)
+	if !assert.Equal(t, want, dst) {
+		t.Fatalf("Unpack14P = %#x, want %#x", dst, want)
+	}
+}

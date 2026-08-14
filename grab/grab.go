@@ -10,8 +10,9 @@ import (
 
 const defaultGrabTimeout = 3 * time.Second
 
-// GrabJPEG opens a short-lived device, grabs one frame, and closes.
+// GrabJPEG opens a short-lived device, grabs one frame as JPEG, and closes.
 // Convenience for one-shot capture; prefer Device + Grabber for continuous use.
+// WithComponent selects the BSCF component (default color).
 func GrabJPEG(ctx context.Context, ip string, opts ...gogige.Option) ([]byte, error) {
 	if ctx == nil {
 		ctx = context.Background()
@@ -49,4 +50,11 @@ func GrabJPEG(ctx context.Context, ip string, opts ...gogige.Option) ([]byte, er
 		)
 	}
 	return jpeg, err
+}
+
+// FromCamera grabs one sample from an already-connected Camera (Color unless
+// comp is set) and returns its JPEG. The Camera stays open; the transient GVSP
+// stream is closed before returning.
+func FromCamera(ctx context.Context, cam *gogige.Camera, comp gogige.Component) ([]byte, error) {
+	return cam.GrabJPEG(ctx, comp)
 }

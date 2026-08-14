@@ -1,6 +1,7 @@
 package genapi
 
 import (
+	"bytes"
 	"encoding/binary"
 	"fmt"
 	"math"
@@ -128,6 +129,46 @@ func (pa *portAdapter) writeFloatReg(n *gcNode, v float64, nm *NodeMap) error {
 	var b [4]byte
 	order.PutUint32(b[:], math.Float32bits(float32(v)))
 	return pa.port.WriteMem(addr, b[:])
+}
+
+// readFloatReg reads a floating-point register from device memory.
+func (pa *portAdapter) readFloatReg(n *gcNode, nm *NodeMap) (float64, error) {
+	addr, length, err := pa.resolveAddr(n, nm)
+	if err != nil {
+		return 0, err
+	}
+	order := pa.deviceByteOrder()
+	if length >= 8 {
+		data, err := pa.port.ReadMem(addr, 8)
+		if err != nil {
+			return 0, err
+		}
+		return math.Float64frombits(order.Uint64(data)), nil
+	}
+	v, err := pa.port.ReadReg(addr)
+	if err != nil {
+		return 0, err
+	}
+	return float64(math.Float32frombits(v)), nil
+}
+
+// readStringReg reads a string register from device memory.
+func (pa *portAdapter) readStringReg(n *gcNode, nm *NodeMap) (string, error) {
+	addr, length, err := pa.resolveAddr(n, nm)
+	if err != nil {
+		return "", err
+	}
+	if length <= 0 {
+		length = 256
+	}
+	data, err := pa.port.ReadMem(addr, length)
+	if err != nil {
+		return "", err
+	}
+	if i := bytes.IndexByte(data, 0); i >= 0 {
+		data = data[:i]
+	}
+	return string(data), nil
 }
 
 // writeStringReg writes a string register to device memory.

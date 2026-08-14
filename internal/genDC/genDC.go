@@ -163,7 +163,7 @@ const (
 
 // GenDCContainerHeader from GenDC.h (packed struct)
 const (
-	ContainerHeaderBaseSize      = 64
+	ContainerHeaderBaseSize      = 56
 	ContainerComponentOffsetSize = 8
 )
 
@@ -174,15 +174,18 @@ const (
 )
 
 // GenDCPartHeaderBase from GenDC.h (packed struct)
+// 2+2+4 (HeaderType/Flags/HeaderSize) + 4 (Format) + 2+2 (Reserved/FlowId)
+// + 8+8+8 (FlowOffset/DataSize/DataOffset) = 40 bytes.
 const (
-	PartHeaderBaseSize = 32
+	PartHeaderBaseSize = 40
 )
 
-// GenDCPartHeader2DBase extends PartHeaderBase with SizeX, SizeY, Padding
+// GenDCPartHeader2DBase extends PartHeaderBase with SizeX(4) + SizeY(4)
+// + PaddingX(2) + PaddingY(2) + InfoReserved(4) = 16 more bytes.
 const (
-	PartHeader2DBaseSize = 44
-	// PartHeader2DSize is the full GenDCPartHeader2D: 40-byte base + SizeX(4)
-	// + SizeY(4) + PaddingX(2) + PaddingY(2) + InfoReserved(4).
+	PartHeader2DBaseSize = 56
+	// PartHeader2DSize is the full GenDCPartHeader2D: identical to its
+	// 2D base (no extra fields), so it also spans 56 bytes.
 	PartHeader2DSize = 56
 )
 

@@ -11,15 +11,15 @@ import (
 func buildContainer(w, h int, pixels []byte, withFlow bool) []byte {
 	var buf bytes.Buffer
 
-	hdr := make([]byte, 72) // 64 base + 8 component offset
+	hdr := make([]byte, 64) // 56 base + 8 component offset
 	binary.LittleEndian.PutUint32(hdr[0:], Signature)
 	hdr[4] = 1 // major
 	hdr[5] = 1 // minor
 	hdr[6] = 0 // sub minor
 	binary.LittleEndian.PutUint16(hdr[8:], HeaderContainer)
-	binary.LittleEndian.PutUint32(hdr[12:], 72) // header size incl. offset
+	binary.LittleEndian.PutUint32(hdr[12:], 64) // header size incl. offset
 	binary.LittleEndian.PutUint32(hdr[52:], 1)  // component count
-	binary.LittleEndian.PutUint64(hdr[64:], 72) // component offset
+	binary.LittleEndian.PutUint64(hdr[56:], 64) // component offset
 	buf.Write(hdr)
 
 	// Component header + one part offset at abs 72.
@@ -32,7 +32,7 @@ func buildContainer(w, h int, pixels []byte, withFlow bool) []byte {
 	binary.LittleEndian.PutUint64(comp[48:], 56) // part header offset (rel. to component)
 	buf.Write(comp)
 
-	partAbs := 72 + 56
+	partAbs := 64 + 56
 	dataAbs := partAbs + 56
 
 	part := make([]byte, 56)
@@ -127,5 +127,31 @@ func TestParseFlowTable(t *testing.T) {
 	_, err = ParseFlowTable(data) // data starts with a container header, not a flow table
 	if err == nil {
 		t.Fatal("expected error parsing container start as flow table")
+	}
+}
+
+// TestPartHeaderTooShort guards against the H2 OOB read: a part header shorter
+// than the real 40-byte GenDCPartHeaderBase (but >= the old 32-byte guard) must
+// be rejected, never trigger a slice out-of-range panic when reading DataOffset.
+func TestPartHeaderTooShort(t *testing.T) {
+	data := buildContainer(2, 2, make([]byte, 4), false)
+	// Find the part header (absolute offset 120 = 64 + 56) and truncate the
+	// container so only 36 bytes of the 40-byte part header remain.
+	end := 64 + 56 + 36
+	short := data[:end]
+
+	defer func() {
+		if r := recover(); r != nil {
+			t.Fatalf("ParseGenDCContainer panicked on truncated part header: %v", r)
+		}
+	}()
+
+	f, err := ParseGenDCContainer(short)
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+	// The truncated part must be skipped (no panic), leaving zero parts.
+	if len(f.Components) != 1 || len(f.Components[0].Parts) != 0 {
+		t.Fatalf("expected component with no parseable parts, got %d", len(f.Components[0].Parts))
 	}
 }

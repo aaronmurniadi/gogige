@@ -1,6 +1,50 @@
 # Changelog
 
-## [2.0.0] - 2026-08-10
+## [1.4.0] - 2026-08-13
+
+### Added
+
+- `Camera` one-shot grab helpers so a consumer already on the `OpenDevice` path can grab samples without juggling `Device`/`Grabber`: `Camera.GrabSample` (single component + JPEG), `Camera.GrabAllSamples` (every BSCF component), `Camera.GrabComponents` (raw, no JPEG), and `Camera.GrabJPEG`. Each opens a transient GVSP stream and closes it before returning; the `Camera` stays open.
+- `Camera.Features()` returns a `Features` view backed by the `Camera`, so a `*Camera` and a `Device` share the same feature vocabulary.
+- Camera feature getters: `Camera.Integer`/`Boolean`/`Float`/`String`/`Enum`, plus `Features.Bool`/`Int`/`Float`/`String`/`Enum`. Reads are backed by new `NodeMap.ReadFloat` and `NodeMap.ReadString` register-read paths (previously only write paths existed).
+- `grab.FromCamera(ctx, cam, comp)` one-shot JPEG grab from an already-connected `*Camera`.
+
+### Changed
+
+- `Camera` feature control unified onto the short Phase-4 names: `SetInteger`, `SetEnum`, `SetBoolean`, `SetFloat`, `SetString` are now primary; the previous `Set*Feature` forms remain as aliases so existing code keeps compiling. `SetInteger`/`SetEnum`/`Camera.Features` share one consistent vocabulary with `Device.Features`.
+- `gvsp.PackDet` measurement fields renamed for consistency with `Sample`: `Length` → `LengthMm`, `Width` → `WidthMm`, `Height` → `HeightMm` (breaking). `gvsp.Sample` already used `*Mm`.
+
+## [1.3.1] - 2026-08-13
+
+### Fixed
+
+- `internal/color` `Unpack14P` (`Mono14p` / `Bayer*14p`) reconstructed pixels 2/3/4
+  wrong per the PFNC lsb-packed layout, and had a stray 5th pixel that read past
+  the 7-byte group. Rewritten to decode the 4 samples per group. Verified against a
+  reference decoder (`0105 1234 2bcd 3def`).
+- `internal/genDC` `PartHeaderBaseSize` was `32` but the packed `GenDCPartHeaderBase`
+  is `40` bytes, so `parsePart`'s `len < 32` guard passed for 32–39 byte headers and
+  the `DataOffset` read at `buf[32:]` went out of slice range → panic. `PartHeaderBaseSize`
+  fixed to `40`; `PartHeader2DBaseSize` fixed to `56` (matching `PartHeader2DSize`).
+
+### Tests
+
+- `TestUnpack14P` (`internal/color`) reproduces the old wrong output
+  (`0105 0234 0c35 3beb`) and now matches the reference.
+- `TestPartHeaderTooShort` (`internal/genDC`) reproduces the old OOB panic on a
+  36-byte part header and now passes.
+
+## [1.3.0] - 2026-08-13
+
+### Fixed
+
+- `internal/genDC` container `ComponentOffsets[]` read at the wrong offset: `ContainerHeaderBaseSize` was `64` but the packed `GenDCContainerHeaderBase` is `56` bytes (per `_references/GenDC/GenDC.h`), so every component offset was read 8 bytes past the real array (typically `0`), causing GenDC payloads (incl. `PAYLOAD_TYPE_GENDC`) to skip/empty their components and fail to extract image data on real payloads.
+
+### Tests
+
+- `TestParseGenDCContainer` (`internal/genDC`) and `TestParsePayloadByTypeDispatch`/`buildGenDCContainer` (`gvsp`) updated to the corrected byte-56 component-offset layout; both packages pass.
+
+## [1.2.0] - 2026-08-10
 
 ### Added
 

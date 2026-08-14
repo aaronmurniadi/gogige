@@ -29,6 +29,8 @@ go.work.sum
 .vscode/
 *.swp
 .DS_Store
+# OpenCode (replaced by Ante)
+.opencode/
 # Secrets
 .env
 .env.*

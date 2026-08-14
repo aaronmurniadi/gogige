@@ -62,7 +62,7 @@ func main() {
 		for _, sample := range samples {
 			fmt.Printf("Sample.PackCount=%d\n", sample.PackCount)
 			for j, pack := range sample.Packs {
-				fmt.Printf("  Pack[%d]: LengthMm=%f, WidthMm=%f, HeightMm=%f, center.x=%f, center.y=%f, center.z=%f\n", j, pack.Length, pack.Width, pack.Height, pack.CenterX, pack.CenterY, pack.CenterZ)
+				fmt.Printf("  Pack[%d]: LengthMm=%f, WidthMm=%f, HeightMm=%f, center.x=%f, center.y=%f, center.z=%f\n", j, pack.LengthMm, pack.WidthMm, pack.HeightMm, pack.CenterX, pack.CenterY, pack.CenterZ)
 			}
 		}
 	}
