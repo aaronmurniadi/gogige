@@ -1,0 +1,140 @@
+{
+  "index": 489,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 143,
+      "bottomRightX": 547,
+      "bottomRightY": 164,
+      "content": "Returns the Coordinate System Position of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 170,
+      "bottomRightX": 188,
+      "bottomRightY": 187,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 129,
+      "topLeftY": 197,
+      "bottomRightX": 707,
+      "bottomRightY": 279,
+      "content": "- Anchor: Default value. Original fixed reference. The coordinate system fixed relative the camera reference point marker is used.\n- Transformed: Transformed reference system. The transformed coordinate system is used according to the definition in the rotation and translation matrices.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 293,
+      "bottomRightX": 408,
+      "bottomRightY": 312,
+      "content": "### 24.62 ChunkScan3dCoordinateSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 314,
+      "bottomRightX": 635,
+      "bottomRightY": 565,
+      "content": "|  Name | ChunkScan3dCoordinateSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | CoordinateA CoordinateB CoordinateC  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 588,
+      "bottomRightX": 359,
+      "bottomRightY": 605,
+      "content": "Selects which Coordinate to retrieve data from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 614,
+      "bottomRightX": 188,
+      "bottomRightY": 631,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 129,
+      "topLeftY": 641,
+      "bottomRightX": 448,
+      "bottomRightY": 712,
+      "content": "- CoordinateA: The first (X or Theta) coordinate\n- CoordinateB: The second (Y or Phi) coordinate\n- CoordinateC: The third (Z or Rho) coordinate.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 727,
+      "bottomRightX": 384,
+      "bottomRightY": 747,
+      "content": "### 24.63 ChunkScan3dCoordinateScale",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 750,
+      "bottomRightX": 635,
+      "bottomRightY": 939,
+      "content": "|  Name | ChunkScan3dCoordinateScale[ChunkScan3dCoordinateSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 490 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

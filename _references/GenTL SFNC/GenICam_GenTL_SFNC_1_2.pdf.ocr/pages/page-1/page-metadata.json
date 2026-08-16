@@ -1,0 +1,74 @@
+{
+  "index": 0,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 43,
+      "bottomRightX": 683,
+      "bottomRightY": 124,
+      "content": "GENICAM\nVersion 1.2.0 GenTL Standard Features Naming Convention\nemva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 211,
+      "topLeftY": 232,
+      "bottomRightX": 579,
+      "bottomRightY": 279,
+      "content": "# GenICam GenTL",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 174,
+      "topLeftY": 355,
+      "bottomRightX": 614,
+      "bottomRightY": 469,
+      "content": "# Standard Features\n# Naming Convention",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 323,
+      "topLeftY": 578,
+      "bottomRightX": 472,
+      "bottomRightY": 601,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 325,
+      "topLeftY": 726,
+      "bottomRightX": 470,
+      "bottomRightY": 754,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 952,
+      "bottomRightX": 165,
+      "bottomRightY": 968,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 561,
+      "topLeftY": 952,
+      "bottomRightX": 650,
+      "bottomRightY": 970,
+      "content": "Page 1 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

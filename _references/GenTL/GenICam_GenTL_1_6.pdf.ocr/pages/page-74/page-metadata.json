@@ -1,0 +1,177 @@
+{
+  "index": 73,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-105.jpeg](img-105.jpeg) CAM |   | ![img-106.jpeg](img-106.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 166,
+      "bottomRightY": 153,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 158,
+      "bottomRightX": 187,
+      "bottomRightY": 209,
+      "content": "|  [in] | hSystem  |\n| --- | --- |\n|  [in] | sIfaceID  |\n|  [out] | phIface  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 158,
+      "bottomRightX": 434,
+      "bottomRightY": 173,
+      "content": "System module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 173,
+      "bottomRightX": 594,
+      "bottomRightY": 191,
+      "content": "Unique interface ID to open as a 0-terminated C string.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 191,
+      "bottomRightX": 574,
+      "bottomRightY": 224,
+      "content": "Interface handle of the newly created interface. It is recommended to initialize *phIface to",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 224,
+      "bottomRightX": 533,
+      "bottomRightY": 242,
+      "content": "GENTL_INVALID_HANDLE before calling",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 243,
+      "bottomRightX": 576,
+      "bottomRightY": 259,
+      "content": "TLOpenInterface to indicate an invalid handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 274,
+      "bottomRightX": 141,
+      "bottomRightY": 289,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 296,
+      "bottomRightX": 636,
+      "bottomRightY": 601,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_RESOURCE_IN_USE | The Interface module has already been instantiated through a previous call to TLOpenInterface.  |\n|  GC_ERR_INVALID_HANDLE | The handle hSystem is invalid (NULL) or does not reference an open System module retrieved through a call to TLOpen.  |\n|  GC_ERR_INVALID_ID | The GenTL Producer is unable to interpret the provided ID string sIfaceID or is not able to match it to an existing Interface.  |\n|  GC_ERR_INVALID_PARAMETER | Parameters phIface and/or sIfaceID are invalid pointers (NULL or ~0x0).  |\n|  GC_ERR_ACCESS_DENIED | The access to the requested Interface is denied. This may be because it is already opened by another Process but it might have other reasons as well.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 632,
+      "bottomRightX": 635,
+      "bottomRightY": 667,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 679,
+      "bottomRightX": 292,
+      "bottomRightY": 697,
+      "content": "##### 6.3.2.8 TLUpdateInterfaceList",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 718,
+      "bottomRightX": 585,
+      "bottomRightY": 770,
+      "content": "|  GC_ERROR | TLUpdateInterfaceList ( TL_HANDLE bool8_t * uint64_t | hSystem, pbChanged, iTimeout )  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 778,
+      "bottomRightX": 635,
+      "bottomRightY": 831,
+      "content": "Updates the internal list of available interfaces. This may change the connection between a list index and an interface ID. It is recommended to call TLUpdateInterfaceList after reconfiguration of the System module to reflect possible changes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 837,
+      "bottomRightX": 445,
+      "bottomRightY": 854,
+      "content": "A call to this function has implications on the thread safety of",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 863,
+      "bottomRightX": 265,
+      "bottomRightY": 899,
+      "content": "- TLGetNumInterfaces\n- TLGetInterfaceID",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 74 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

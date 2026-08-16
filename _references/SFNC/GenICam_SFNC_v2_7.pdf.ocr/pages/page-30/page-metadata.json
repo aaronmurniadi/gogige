@@ -1,0 +1,93 @@
+{
+  "index": 29,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 159,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 73,
+      "bottomRightX": 120,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 177,
+      "topLeftY": 72,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 577,
+      "bottomRightY": 77,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 115,
+      "bottomRightX": 679,
+      "bottomRightY": 854,
+      "content": "|  Version | Date | Changed by | Change  |\n| --- | --- | --- | --- |\n|  Release 2.0 | 25.10.2012 | Stephane Maurice, Matrox | - Include all items from 1.5.2 Drafts - Changed all the Mandatory features that were not GenICam related to Recommended to let each TL standards define this. - Replaced \"Recommended Visibility\" by \"Visibility\" only. - Added notes to mention that Visibility and Category are recommended. - Deprecated PixelCoding. - Deprecated DeviceID and replaced it with DeviceSerialNumber. - Deprecated TestImageSelector and replaced it with TestPattern. - Deprecated UserSetDefaultSelector and replaced it with UserSetDefault. - Removed all the features and enumerations that were deprecated before this major version of the SFNC. - Added the Device Communication and Device Acquisition Model section. - Added the multiple Region (ROI) handling features (RegionSelector, ...) to the ImageFormat Control chapter. - Added the multiple Source handling features (SourceSelector, ...). - Added the Stream Transfer handling features (TransferSelector, ...). - Added a note for a possible optional DeviceStreamChannelSelector for PayloadSize . - Updated the Selector description section.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 295,
+      "topLeftY": 989,
+      "bottomRightX": 391,
+      "bottomRightY": 1008,
+      "content": "Page 30 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 624,
+      "bottomRightY": 1008,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

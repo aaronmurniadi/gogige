@@ -1,0 +1,111 @@
+{
+  "index": 420,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "<table><tr><td colspan=\"2\">GEN&lt;ì&gt;CAM</td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 152,
+      "bottomRightX": 225,
+      "bottomRightY": 176,
+      "content": "## 23 Optic Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 197,
+      "bottomRightX": 712,
+      "bottomRightY": 232,
+      "content": "The Optic Control chapter describes the model and features related to the control of Optical components inside or attached to machine vision cameras.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 241,
+      "bottomRightX": 716,
+      "bottomRightY": 294,
+      "content": "These features can be applied to dedicated optical controller or to cameras with integrated optical control features. The target components covered by the optical features include, but not be limited to: Lenses, Filters, Filter Wheels, Shutter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 328,
+      "bottomRightX": 523,
+      "bottomRightY": 349,
+      "content": "### 23.1 Basic Parameters of an Imaging Optical System",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 351,
+      "bottomRightX": 742,
+      "bottomRightY": 425,
+      "content": "Imaging systems can incorporate a huge variety of optical components such as Lenses, Filters, Filter Wheels, Shutters, Apertures, etc. depending on the applications they are designed for. The most simple optical systems consist of an imaging device and a lens. The following figure shows the relationship of commonly used terms in optical systems.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 464,
+      "bottomRightX": 737,
+      "bottomRightY": 772,
+      "content": "![img-135.jpeg](img-135.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-135.jpeg"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 787,
+      "bottomRightX": 549,
+      "bottomRightY": 808,
+      "content": "Figure 23-1: Basic Schematic of an Imaging Optical System",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 421 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

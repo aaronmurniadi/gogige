@@ -1,0 +1,130 @@
+{
+  "index": 37,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-47.jpeg](img-47.jpeg)CAN |   | ![img-48.jpeg](img-48.jpeg)  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 639,
+      "bottomRightY": 239,
+      "content": "|  Event Type | Modules | Description  |\n| --- | --- | --- |\n|   |  | occurred, initiated by the GenTL Producer module the event was registered on. The event ID and the optional data delivered with this event can be put into a GenApi Adapter which then invalidates all related nodes.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 270,
+      "bottomRightX": 265,
+      "bottomRightY": 287,
+      "content": "#### 4.2.2 Event Data Queue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 291,
+      "bottomRightX": 636,
+      "bottomRightY": 392,
+      "content": "The event data queue is the core of the Signaling. This is a thread safe queue holding event type specific data. Operations on this queue must be locked for example via a mutex in a way that its content may not change when either one of the event functions is accessing it or the module specific thread is accessing it. The GenTL Producer implementation therefore must make sure that access to the queue is as short as possible. Alternatively a lock free queue can be used which supports dequeue operations from multiple threads.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 398,
+      "bottomRightX": 546,
+      "bottomRightY": 417,
+      "content": "An event object's state is signaled as long as the event data queue is not empty.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 423,
+      "bottomRightX": 636,
+      "bottomRightY": 524,
+      "content": "Each event data queue must have its own lock if any to secure the state of each instance and to achieve necessary parallelism. Both read and write operations must be locked. The two operations of event data retrieval and the event object signal state handling in the EventGetData function must be atomic. Meaning that, if a lock is used, the lock on the event data queue must be maintained over both operations. Also the operation of putting data in the queue and the event object's state handling must be atomic.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 538,
+      "bottomRightX": 244,
+      "bottomRightY": 557,
+      "content": "#### 4.2.3 Event Handling",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 560,
+      "bottomRightX": 636,
+      "bottomRightY": 664,
+      "content": "The handling of the event objects is always the same independently of the event type. The signal reason and the signal data of course depend on the event type. The complete state handling is done by the GenTL Producer driver. The GenTL Consumer may call the EventKill function to terminate a single instance of a waiting EventGetData operation. This means that if more than one thread waits for an event, the EventKill function terminates only one wait operation and other threads will continue execution.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 677,
+      "bottomRightX": 224,
+      "bottomRightY": 695,
+      "content": "##### 4.2.3.1 Registration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 698,
+      "bottomRightX": 636,
+      "bottomRightY": 837,
+      "content": "Before the GenTL Consumer can be informed about an event, the event object must be registered. After a module instance has been created in the enumeration process an event object can be created with the GCRegisterEvent function. This function returns a unique EVENT_HANDLE which identifies the registered event object. To get information about a registered event the EventGetInfo function can be used. There must be only one event registered per module and event type. If an event object is registered twice on the same module the GCRegisterEvent function must return the error GC_ERR_RESOURCE_IN_USE.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 845,
+      "bottomRightX": 636,
+      "bottomRightY": 897,
+      "content": "To unregister an event object the GCUnregisterEvent function must be called. If a module is closed all event registrations are automatically unregistered. Events that are still in the queue while an event object is unregistered are silently discarded. Pending wait operations",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 38 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

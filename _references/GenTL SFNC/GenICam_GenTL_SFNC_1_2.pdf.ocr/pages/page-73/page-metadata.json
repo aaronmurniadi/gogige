@@ -1,0 +1,114 @@
+{
+  "index": 72,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-21.jpeg](img-21.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 243,
+      "bottomRightY": 174,
+      "content": "3.2.3.1 ActionControl",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 177,
+      "bottomRightX": 421,
+      "bottomRightY": 417,
+      "content": "|  Name | ActionControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 441,
+      "bottomRightX": 553,
+      "bottomRightY": 461,
+      "content": "Category that contains all Action Control features of the Interface module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 474,
+      "bottomRightX": 264,
+      "bottomRightY": 492,
+      "content": "3.2.3.2 ActionCommand",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 495,
+      "bottomRightX": 459,
+      "bottomRightY": 735,
+      "content": "|  Name | ActionCommand  |\n| --- | --- |\n|  Category | ActionControl  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 759,
+      "bottomRightX": 313,
+      "bottomRightY": 777,
+      "content": "Send ActionCommand to device(s).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 792,
+      "bottomRightX": 266,
+      "bottomRightY": 811,
+      "content": "3.2.3.3 ActionDeviceKey",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 812,
+      "bottomRightX": 459,
+      "bottomRightY": 921,
+      "content": "|  Name | ActionDeviceKey  |\n| --- | --- |\n|  Category | ActionControl  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 73 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

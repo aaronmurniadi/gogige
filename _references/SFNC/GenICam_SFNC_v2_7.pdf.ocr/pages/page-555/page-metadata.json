@@ -1,0 +1,104 @@
+{
+  "index": 554,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 143,
+      "bottomRightX": 698,
+      "bottomRightY": 179,
+      "content": "Note that the features marked as recommended in this section are generally mandatory for CoaXPress devices.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 221,
+      "bottomRightX": 253,
+      "bottomRightY": 241,
+      "content": "### 27.7.1 CoaXPress",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 243,
+      "bottomRightX": 571,
+      "bottomRightY": 458,
+      "content": "|  Name | CoaXPress  |\n| --- | --- |\n|  Category | TransportLayerControl  |\n|  Level | Optional  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 481,
+      "bottomRightX": 641,
+      "bottomRightY": 502,
+      "content": "Category that contains the features pertaining to the CoaXPress transport layer of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 532,
+      "bottomRightX": 403,
+      "bottomRightY": 553,
+      "content": "### 27.7.2 CxpLinkConfigurationStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 552,
+      "bottomRightX": 571,
+      "bottomRightY": 932,
+      "content": "|  Name | CxpLinkConfigurationStatus  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | None Pending CXP1_X1 CXP2_X1 CXP3_X1 CXP5_X1 CXP6_X1 CXP10_X1 CXP12_X1 CXP25_X1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 555 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

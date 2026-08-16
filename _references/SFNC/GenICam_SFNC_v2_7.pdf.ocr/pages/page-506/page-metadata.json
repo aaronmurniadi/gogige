@@ -1,0 +1,149 @@
+{
+  "index": 505,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 170,
+      "bottomRightX": 468,
+      "bottomRightY": 189,
+      "content": "Controls if the selected parameters are locked during acquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 195,
+      "bottomRightX": 734,
+      "bottomRightY": 232,
+      "content": "Locking certain parameters during acquisition includes respecting TLParamsLocked as well as preventing internal changes from modules like sequencer or multiple regions.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 272,
+      "bottomRightX": 264,
+      "bottomRightY": 294,
+      "content": "### 27.2.5 PayloadSize",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 294,
+      "bottomRightX": 396,
+      "bottomRightY": 508,
+      "content": "|  Name | PayloadSize  |\n| --- | --- |\n|  Category | TransportLayerControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | B  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 532,
+      "bottomRightX": 733,
+      "bottomRightY": 585,
+      "content": "Provides the number of bytes transferred for each data buffer or chunk on the stream channel. This includes any end-of-line, end-of-frame statistics or other stamp data. This is the total size of data payload for a data block.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 594,
+      "bottomRightX": 729,
+      "bottomRightY": 631,
+      "content": "For the devices supporting multiple Stream Channels, the DeviceStreamChannelSelector feature should be used to select PayloadSize. This permits to inquire the payload size of each Stream channel individually.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 637,
+      "bottomRightX": 703,
+      "bottomRightY": 674,
+      "content": "This feature is mainly used by the application software to determine size of the data buffers to allocate (largest buffer possible for current mode of operation).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 681,
+      "bottomRightX": 740,
+      "bottomRightY": 734,
+      "content": "For example, an image with no statistics, timestamp or other metadata data has typically a PayloadSize equals to (width x height x pixel size) in bytes. But it is strongly recommended to retrieve PayloadSize from the camera instead of relying on the above formula.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 741,
+      "bottomRightX": 741,
+      "bottomRightY": 814,
+      "content": "It is updated every time a feature affecting its value is changed and must be static after TLParamsLocked is asserted to guarantee that it accurately represents the maximum size of the data buffer that will be streamed out when AcquisitionStart is executed. This feature is generally mandatory for transmitters and transceivers of most Transport Layers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 854,
+      "bottomRightX": 355,
+      "bottomRightY": 876,
+      "content": "### 27.2.6 GenDCStreamingMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 878,
+      "bottomRightX": 396,
+      "bottomRightY": 933,
+      "content": "|  Name | GenDCStreamingMode  |\n| --- | --- |\n|  Category | TransportLayerControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 506 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

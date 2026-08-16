@@ -1,0 +1,150 @@
+{
+  "index": 131,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 290,
+      "content": "|  Interface | IString  |\n| --- | --- |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 314,
+      "bottomRightX": 447,
+      "bottomRightY": 333,
+      "content": "Filename for the file payload data delivered in the buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 340,
+      "bottomRightX": 697,
+      "bottomRightY": 411,
+      "content": "This information refers for example to the information provided in the GigE Vision image stream data leader. For other technologies, this is to be implemented accordingly. Since this is GigE Vision related information and the filename in GigE Vision is UTF8 coded, this filename is also UTF8 coded.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 421,
+      "bottomRightX": 684,
+      "bottomRightY": 440,
+      "content": "Corresponds to the BUFFER_INFO_FILENAME command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 461,
+      "bottomRightX": 267,
+      "bottomRightY": 478,
+      "content": "#### 3.5.3 GenICam Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 492,
+      "bottomRightX": 701,
+      "bottomRightY": 526,
+      "content": "This chapter provides the necessary features to use the GenICam feature tree of the Buffer module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 535,
+      "bottomRightX": 701,
+      "bottomRightY": 571,
+      "content": "Note: In case of discrepancy between the features described in this chapter and the “GenICam Standard text” the GenTL SFNC document prevails.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 586,
+      "bottomRightX": 182,
+      "bottomRightY": 603,
+      "content": "3.5.3.1 Root",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 606,
+      "bottomRightX": 421,
+      "bottomRightY": 819,
+      "content": "|  Name | Root  |\n| --- | --- |\n|  Category | None  |\n|  Level | Optional  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 844,
+      "bottomRightX": 390,
+      "bottomRightY": 861,
+      "content": "Provides the Root of the GenICam features tree.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 878,
+      "bottomRightX": 221,
+      "bottomRightY": 894,
+      "content": "3.5.3.2 BufferPort",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 898,
+      "bottomRightX": 421,
+      "bottomRightY": 926,
+      "content": "|  Name | BufferPort  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 927,
+      "bottomRightX": 431,
+      "bottomRightY": 944,
+      "content": "Page 132 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

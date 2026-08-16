@@ -1,0 +1,175 @@
+{
+  "index": 329,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 136,
+      "bottomRightX": 213,
+      "bottomRightY": 157,
+      "content": "## File Access Control:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 189,
+      "bottomRightX": 736,
+      "bottomRightY": 225,
+      "content": "The **FileSelector** feature selects the target file in the device for the Operation. The entries of this enumeration define the names of all files in the device that can be accessed via the File Access.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 232,
+      "bottomRightX": 483,
+      "bottomRightY": 253,
+      "content": "**FileOperationSelector** specifies the operation to execute on the file.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 258,
+      "bottomRightX": 508,
+      "bottomRightY": 276,
+      "content": "**FileOperationExecute** command starts the selected operation execution.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 284,
+      "bottomRightX": 739,
+      "bottomRightY": 319,
+      "content": "**FileOpenMode** is a parameter for the Open operation and controls the access mode (Read, Write, ReadWrite) in which the file is opened.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 328,
+      "bottomRightX": 710,
+      "bottomRightY": 365,
+      "content": "**FileOperationStatus** returns the status of the last operation executed on the file. This feature must return Success if the operation is executed as requested.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 371,
+      "bottomRightX": 736,
+      "bottomRightY": 407,
+      "content": "**FileOperationResult** returns the number of bytes successfully read/written bytes during the previous Read or Write operations.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 415,
+      "bottomRightX": 325,
+      "bottomRightY": 432,
+      "content": "**FileSize** returns the size of the file in bytes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 440,
+      "bottomRightX": 752,
+      "bottomRightY": 512,
+      "content": "The data, that is read from or written to the device, is exchanged between the application and the device through the **FileAccessBuffer** feature. This register mapped **FileAccessBuffer** must be written with the target data before executing the Write operation using **FileOperationExecute**. For Read operation, the data can be read from the **FileAccessBuffer** after the Read operation has been executed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 518,
+      "bottomRightX": 496,
+      "bottomRightY": 537,
+      "content": "**FileAccessOffset** controls the starting position of the access in the file.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 544,
+      "bottomRightX": 693,
+      "bottomRightY": 581,
+      "content": "**FileAccessLength** controls the number of bytes to transfer to or from the **FileAccessBuffer** during the following Read or Write operation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 588,
+      "bottomRightX": 754,
+      "bottomRightY": 623,
+      "content": "Altogether, the features **FileSelector**, **FileAccessOffset** and **FileAccessLength** control the mapping between the device file storage and the **FileAccessBuffer**.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 653,
+      "bottomRightX": 550,
+      "bottomRightY": 882,
+      "content": "![img-96.jpeg](img-96.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-96.jpeg"
+    },
+    {
+      "topLeftX": 267,
+      "topLeftY": 887,
+      "bottomRightX": 538,
+      "bottomRightY": 905,
+      "content": "Figure 18-2: Layout of File Access Buffer.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 330 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "index": 217,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 618,
+      "bottomRightY": 154,
+      "content": "On top of the previous standard values, a device might also provide device-specific values.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 167,
+      "bottomRightX": 257,
+      "bottomRightY": 189,
+      "content": "### 6.10 WhiteClipSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 191,
+      "bottomRightX": 386,
+      "bottomRightY": 530,
+      "content": "|  Name | WhiteClipSelector  |\n| --- | --- |\n|  Category | AnalogControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | All Red Green Blue Y U V Tap1, Tap2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 553,
+      "bottomRightX": 281,
+      "bottomRightY": 572,
+      "content": "Selects which White Clip to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 580,
+      "bottomRightX": 750,
+      "bottomRightY": 634,
+      "content": "The All White Clip selection is intended to be across all channels or taps, rather than a convenient way to set all the individual channels or tap white clip in a single step. By following this rule, the value read for the All white clip remains valid even when the channel/tap white clips are not all equal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 641,
+      "bottomRightX": 177,
+      "bottomRightY": 657,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 668,
+      "bottomRightX": 448,
+      "bottomRightY": 926,
+      "content": "- All: White Clip will be applied to all channels or taps.\n- Red: White Clip will be applied to the red channel.\n- Green: White Clip will be applied to the green channel.\n- Blue: White Clip will be applied to the blue channel.\n- Y: White Clip will be applied to Y channel.\n- U: White Clip will be applied to U channel.\n- V: White Clip will be applied to V channel.\n- Tap1: White Clip will be applied to Tap 1.\n- Tap2: White Clip will be applied to Tap 2.\n- ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 218 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

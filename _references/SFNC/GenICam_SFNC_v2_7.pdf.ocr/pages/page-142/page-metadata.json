@@ -1,0 +1,147 @@
+{
+  "index": 141,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 535,
+      "bottomRightY": 79,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 118,
+      "bottomRightX": 578,
+      "bottomRightY": 462,
+      "content": "|   | RGBA8Packed (Deprecated, use RGBa8) BGRA8Packed (Deprecated, use BGRa8) RGB10Packed (Deprecated, use RGB10) BGR10Packed (Deprecated, use BGR10) RGB12Packed (Deprecated, use RGB12) BGR12Packed (Deprecated, use BGR12) RGB16Packed (Deprecated, use RGB16) BGR16Packed (Deprecated, use BGR16) RGB10V2Packed (Deprecated, use RGB10p32) BGR10V2Packed (Deprecated, use BGR10p32) RGB565Packed (Deprecated, use RGB565p) BGR565Packed (Deprecated, use BGR565p) YUV411Packed (Deprecated, use YUV411_8_UYYVYY) YUV422Packed (Deprecated, use YUV422_8_UYVY) YUV444Packed (Deprecated, use YUV8_UYV) YUYVPacked (Deprecated, use YUV422_8) RGB8Planar (Deprecated, use RGB8_Planar) RGB10Planar (Deprecated, use RGB10_Planar) RGB12Planar (Deprecated, use RGB12_Planar) RGB16Planar (Deprecated, use RGB16_Planar)  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 485,
+      "bottomRightX": 634,
+      "bottomRightY": 519,
+      "content": "Format of the pixels provided by the device. It represents all the information provided by PixelSize, PixelColorFilter combined in a single feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 525,
+      "bottomRightX": 647,
+      "bottomRightY": 609,
+      "content": "Note that only a subset of the possible pixel formats is listed in this document. The complete list of currently standardized pixel formats and their assigned identifier value can be found in the \"GenICam Pixel Format Values\" document or in the \"Reference Header file for PFNC\" on the GenICam download page on the EMVA web site. See also the \"GenICam Pixel Format Naming Convention\" document for information on the detailed layout of those standard formats.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 617,
+      "bottomRightX": 606,
+      "bottomRightY": 651,
+      "content": "This feature is generally mandatory for transmitters and transceivers of most Transport Layers. You can refer to the appropriate transport layer specification for additional information.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 657,
+      "bottomRightX": 646,
+      "bottomRightY": 726,
+      "content": "Note: Transport Layer standards using frame grabbers on the receiver side may code the pixels differently than the PFNC on the link (to save bandwidth for example). In that case, the standard will define how the data is coded for each supported pixel format, and will define the requirements for the frame grabber to convert the data into a PFNC compliant pixel format.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 732,
+      "bottomRightX": 169,
+      "bottomRightY": 747,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 756,
+      "bottomRightX": 285,
+      "bottomRightY": 947,
+      "content": "- Mono1p: Mono 1 bit packed.\n- Mono2p: Mono 2 bit packed.\n- Mono4p: Mono 4 bit packed.\n- Mono8: Mono 8 bit packed.\n- Mono8s: Mono 1 bit signed.\n- Mono10: Mono 10 bit.\n- Mono10p: Mono 10 bit packed.\n- Mono12: Mono 12 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 142 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

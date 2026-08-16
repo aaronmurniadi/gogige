@@ -1,0 +1,174 @@
+{
+  "index": 254,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 747,
+      "bottomRightY": 189,
+      "content": "Timers are readable and can be used to measure the duration of internal or external signals. Timers can be cascaded to increase their range if necessary. A Timer can also be used to generate a timed strobe pulse with an optional delay before activation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 196,
+      "bottomRightX": 740,
+      "bottomRightY": 231,
+      "content": "To set the destination output Line of the Timer pulse, see for example **Timer1Active** entry of the **LineSource** feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 239,
+      "bottomRightX": 740,
+      "bottomRightY": 274,
+      "content": "Note that Timers can also be used to generate an Event when a predetermined maximum value (or duration) is reached. See the **EventSelector** feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 300,
+      "bottomRightX": 652,
+      "bottomRightY": 319,
+      "content": "Below we show examples of typical use cases of timer's control features in C/C++ pseudo-code.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 326,
+      "bottomRightX": 733,
+      "bottomRightY": 360,
+      "content": "For simplicity, the object name is omitted (e.g. **TimerValue** instead of **Camera.TimerValue**) and the default state of the device is assumed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 395,
+      "bottomRightX": 705,
+      "bottomRightY": 431,
+      "content": "/* Generates a 300 us strobe pulse coming from the Timer 1 when a rising edge trigger is detected on the physical Line 2 of the device connector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 438,
+      "bottomRightX": 68,
+      "bottomRightY": 456,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 478,
+      "bottomRightX": 333,
+      "bottomRightY": 539,
+      "content": "TimerSelector = Timer1;\nTimerDuration = 300;\nTimerTriggerActivation = RisingEdge;\nTimerTriggerSource = Line2;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 586,
+      "bottomRightX": 622,
+      "bottomRightY": 604,
+      "content": "/* Generates a 200us Timer pulse (Strobe) delayed by 100 us on the physical output Line 2.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 605,
+      "bottomRightX": 552,
+      "bottomRightY": 623,
+      "content": "The Timer pulse is started using a trigger coming from physical input Line 1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 624,
+      "bottomRightX": 68,
+      "bottomRightY": 638,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 663,
+      "bottomRightX": 348,
+      "bottomRightY": 788,
+      "content": "TimerSelector = Timer1;\nTimerDuration = 200;\nTimerDelay = 100;\nTimerTriggerSource = Line1;\nTimerTriggerActivation = RisingEdge;\nLineSelector = Line2;\nLineMode = Output;\nLineSource = Timer1Active;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 822,
+      "bottomRightX": 573,
+      "bottomRightY": 876,
+      "content": "/* Use of a Timer to measure the length in microseconds of a negative pulse on the physical input Line1. An Event is also generated to the host application to signal the end of the pulse.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 877,
+      "bottomRightX": 71,
+      "bottomRightY": 891,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 255 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

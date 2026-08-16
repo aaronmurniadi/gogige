@@ -1,0 +1,120 @@
+{
+  "index": 34,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-50.jpeg](img-50.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 116,
+      "topLeftY": 151,
+      "bottomRightX": 371,
+      "bottomRightY": 342,
+      "content": "<Boolean Name=\"Trigger\">\n    TriggerReg\n\n    <OnValue>1</OnValue>\n    <OffValue>0</OffValue>\n</Boolean>\n\n<IntReg Name=\"TriggerReg\">\n    <Address>0x6789</Address>\n    <Length>1</Length>\n    <AccessMode>RW</AccessMode>\n    Device\n    <Sign>Unsigned</Sign>\n    <Endianess>BigEndian</Endianess>\n</IntReg>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 351,
+      "bottomRightX": 635,
+      "bottomRightY": 384,
+      "content": "The Boolean node's value is either taken from another node referenced by a <pValue> entry or holds its own value initialized by the content of the <Value> entry.</Value>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 396,
+      "bottomRightX": 199,
+      "bottomRightY": 413,
+      "content": "#### 2.8.8 Command",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 425,
+      "bottomRightX": 636,
+      "bottomRightY": 476,
+      "content": "The ICommand interface lets the user submit a command by calling the method Execute and then poll to learn if the execution has been accomplished by calling the method IsDone. Note that IsDone always read the device register regardless of the state of the caches.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 482,
+      "bottomRightX": 603,
+      "bottomRightY": 499,
+      "content": "The corresponding Command node inherits the elements and attributes of the Node node.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 506,
+      "bottomRightX": 636,
+      "bottomRightY": 706,
+      "content": "In addition it has a CommandValue element which holds an integer constant which is written into a node which is referenced to by a pValue element. Writing the command value submits the command. IsDone reads the value back and returns false as long as return value equals the command value. If the node is WriteOnly IsDone always returns true. In order to make a floating Command node possible instead of a pValue element also a Value element is allowed. The CommandValue can alternatively also be taken from pCommandValue. A <PollingTime> entry can be used to handle self-clearing commands: While the command is active the node is invalidated each time the PollingTime expires. If a call to IsDone reveals that the command is gone idle the polling stops. If the command is write only no polling takes place. The state of other nodes can depend on the completion of the Command therefore applications that do not implement the event based polling should always wait for the command completion by calling IsDone immediately after the Execute.</PollingTime>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 720,
+      "bottomRightX": 230,
+      "bottomRightY": 739,
+      "content": "#### 2.8.9 Float, FloatReg",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 749,
+      "bottomRightX": 636,
+      "bottomRightY": 835,
+      "content": "The IFloat interface has a definition similar to the definition of the IInteger interface as described in the section above. It has a Value that is restricted by the Minimum and Maximum parameters, but in contrast to integer, the increment exists only optional and is not verified an writing. Note that the increment does only make sense if it is a constant. In addition, IFloat exposes a Unit that is just a string for display purposes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 840,
+      "bottomRightX": 636,
+      "bottomRightY": 923,
+      "content": "The Float node is built analogously to the Integer node in that it has the <Value>, <Min>, <Max>, <Inc>, or <pValue>, <pMin>, <pMax>, <pInc> restriction parameters respectively. In addition, it can have a <Representation> element that can take the values Linear, Logarithmic, or PureNumber, a <Unit> element that contains the unit as a string, a <DisplayNotation> element which can have the value Automatic, Fixed, and Scientific, and a</DisplayNotation></Unit></pMax></pMin></pMax></pMin></Max></pMin></pMax></pMin></pValue>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 299,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 35 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

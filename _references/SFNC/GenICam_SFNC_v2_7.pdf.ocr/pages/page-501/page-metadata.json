@@ -1,0 +1,149 @@
+{
+  "index": 500,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 152,
+      "bottomRightX": 264,
+      "bottomRightY": 174,
+      "content": "## 26 GenICam Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 179,
+      "bottomRightX": 543,
+      "bottomRightY": 198,
+      "content": "This chapter provides the necessary features to use the GenICam feature tree.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 205,
+      "bottomRightX": 739,
+      "bottomRightY": 242,
+      "content": "Note: In case of discrepancy between the features described in this chapter and the \"GenICam Standard text\" the SFNC document prevail.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 257,
+      "bottomRightX": 360,
+      "bottomRightY": 276,
+      "content": "### 26.1 GenICam feature tree access",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 305,
+      "bottomRightX": 571,
+      "bottomRightY": 325,
+      "content": "The mandatory features below are necessary to access the GenICam features tree.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 340,
+      "bottomRightX": 200,
+      "bottomRightY": 359,
+      "content": "#### 26.1.1 Root",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 364,
+      "bottomRightX": 396,
+      "bottomRightY": 577,
+      "content": "|  Name | Root  |\n| --- | --- |\n|  Category | None  |\n|  Level | Mandatory  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 601,
+      "bottomRightX": 364,
+      "bottomRightY": 619,
+      "content": "Provides the Root of the GenICam features tree.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 634,
+      "bottomRightX": 216,
+      "bottomRightY": 653,
+      "content": "#### 26.1.2 Device",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 656,
+      "bottomRightX": 396,
+      "bottomRightY": 870,
+      "content": "|  Name | Device  |\n| --- | --- |\n|  Category | None  |\n|  Level | Mandatory  |\n|  Interface | IPort  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 895,
+      "bottomRightX": 373,
+      "bottomRightY": 914,
+      "content": "Provides the default GenICam port of the Device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 501 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "index": 2,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 637,
+      "bottomRightY": 117,
+      "content": "|  GENICAM |   | ![img-3.jpeg](img-3.jpeg)emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 152,
+      "bottomRightX": 634,
+      "bottomRightY": 167,
+      "content": "3.1 ENDIANESS OF GIGE VISION CAMERAS 48",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 169,
+      "bottomRightX": 634,
+      "bottomRightY": 218,
+      "content": "3.1.1 Behavior of products based on schema version 1.1 and newer...48\n3.1.2 Behavior of products based on schema version 1.0...49\n3.1.3 Passing the schema version to the IPort implementation 49",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 218,
+      "bottomRightX": 634,
+      "bottomRightY": 233,
+      "content": "3.2 DEFAULT VALUES OF OPTIONAL NODE ELEMENTS AND ATTRIBUTES 50",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 242,
+      "bottomRightX": 634,
+      "bottomRightY": 321,
+      "content": "4 ACKNOWLEDGEMENTS 54\n5 RIGHTS AND TRADEMARKS...54\n6 INDEX 55",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 299,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 3 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

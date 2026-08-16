@@ -1,0 +1,130 @@
+{
+  "index": 119,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-165.jpeg](img-165.jpeg) CAM |   | ![img-166.jpeg](img-166.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 136,
+      "bottomRightX": 637,
+      "bottomRightY": 408,
+      "content": "|   | module is opened in a way that it does not allow write access.  |\n| --- | --- |\n|  GC_ERR_INVALID_ADDRESS | iAddressis invalid for example because the port's register space is only 32Bit wide and iAddressis in the 64Bit register space or because there is no register with the provided iAddress.  |\n|  GC_ERR_NOT_IMPLEMENTED | The provided module handle does not have a Port module implemented.  |\n|  GC_ERR_INVALID_VALUE | An invalid value has been written. This error code is to be returned if the underlying registermap provides that information. In case the underlying technology does not provide that level of information a GC_ERR_ACCESS_DENIED is to be returned.  |\n|  GC_ERR_IO | Communication error or connection lost.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 436,
+      "bottomRightX": 636,
+      "bottomRightY": 472,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 483,
+      "bottomRightX": 283,
+      "bottomRightY": 500,
+      "content": "##### 6.3.6.7 GCWritePortStacked",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 524,
+      "bottomRightX": 595,
+      "bottomRightY": 591,
+      "content": "GC_ERROR GCWritePortStacked ( PORT_HANDLE hPort,\n    PORT_REGISTER_STACK_ENTRY *\n    pEntries,\n    size_t * piNumEntries )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 599,
+      "bottomRightX": 636,
+      "bottomRightY": 649,
+      "content": "Writes a number of bytes to the given address on the specified hPort for every element in the pEntries array. The endianness of the data content is specified by the GCGetPortInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 657,
+      "bottomRightX": 636,
+      "bottomRightY": 743,
+      "content": "If the underlying technology has alignment restrictions on the port write the GenTL Provider implementation has to handle this internally. For example if the underlying technology only allows a uint32_t aligned access and the calling GenTL Consumer wants to write 5 bytes starting at address 2. The implementation has to read 8 bytes starting at address 0, replace the 5 bytes provided and then write the 8 bytes back (read modify write).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 749,
+      "bottomRightX": 636,
+      "bottomRightY": 800,
+      "content": "In case of an error the function returns the number of successful writes in piNumEntries even though it returns an error code as return value. This is an exception to the statement in the section Error Handling (see chapter 6.1.5).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 813,
+      "bottomRightX": 166,
+      "bottomRightY": 829,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 834,
+      "bottomRightX": 219,
+      "bottomRightY": 886,
+      "content": "[in] hPort\n[in] pEntries\n[in,out] piNumEntries",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 834,
+      "bottomRightX": 634,
+      "bottomRightY": 902,
+      "content": "Module or remote device port handle to access the Port from. Array of structures containing write address and data to write. In: Number of entries in the array, Out: Number of successful executed writes according to the entries in the pEntries array.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 120 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

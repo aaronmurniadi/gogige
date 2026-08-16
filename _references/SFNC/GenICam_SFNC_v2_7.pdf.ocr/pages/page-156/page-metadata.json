@@ -1,0 +1,131 @@
+{
+  "index": 155,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-48.jpeg](img-48.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 118,
+      "bottomRightX": 409,
+      "bottomRightY": 170,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 194,
+      "bottomRightX": 358,
+      "bottomRightY": 211,
+      "content": "Control the rate of the produced compressed stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 217,
+      "bottomRightX": 634,
+      "bottomRightY": 251,
+      "content": "This feature is available when ImageCompressionRateOption is equals to FixBitrate or if the device only supports the FixBitrate mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 257,
+      "bottomRightX": 295,
+      "bottomRightY": 275,
+      "content": "The list of valid values is device specific.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 288,
+      "bottomRightX": 455,
+      "bottomRightY": 309,
+      "content": "4.47.5 ImageCompressionJPEGFormatOption",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 310,
+      "bottomRightX": 630,
+      "bottomRightY": 594,
+      "content": "|  Name | ImageCompressionJPEGFormatOption  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | LosslessBaselineStandardBaselineOptimizedProgressiveDevice-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 617,
+      "bottomRightX": 644,
+      "bottomRightY": 650,
+      "content": "When JPEG is selected as the compression format, a device might optionally offer better control over JPEG-specific options through this feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 657,
+      "bottomRightX": 169,
+      "bottomRightY": 673,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 682,
+      "bottomRightX": 634,
+      "bottomRightY": 787,
+      "content": "- Lossless: Selects lossless JPEG compression based on a predictive coding model.\n- BaselineStandard: Indicates this is a baseline sequential (single-scan) DCT-based JPEG.\n- BaselineOptimized: Provides optimized color and slightly better compression than baseline standard by using custom Huffman tables optimized after statistical analysis of the image content.\n- Progressive: Indicates this is a progressive (multi-scan) DCT-based JPEG.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 156 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 950,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

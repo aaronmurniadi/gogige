@@ -1,0 +1,149 @@
+{
+  "index": 129,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  ![img-32.jpeg](img-32.jpeg) |   | ![img-33.jpeg](img-33.jpeg)  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 117,
+      "bottomRightX": 399,
+      "bottomRightY": 277,
+      "content": "|  Interface | IEnumeration  |\n| --- | --- |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Group0 (if 0 based), Group1, Group2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 299,
+      "bottomRightX": 582,
+      "bottomRightY": 334,
+      "content": "Selects a Group of component to control or inquire. The GroupSelector determines which components Group will be used for the selected features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 350,
+      "bottomRightX": 627,
+      "bottomRightY": 384,
+      "content": "If only one group exists in the payload streamed by device (the common case), this selector can be omitted and all the components are considered member of the Group 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 390,
+      "bottomRightX": 641,
+      "bottomRightY": 425,
+      "content": "This Group notion is typically used by a transmitter to associate a subset of the Components member of a complex payload because they are related together.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 430,
+      "bottomRightX": 650,
+      "bottomRightY": 465,
+      "content": "An example could be a payload containing a group of Components related to the left view of an object and another group to the right view of that object.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 471,
+      "bottomRightX": 651,
+      "bottomRightY": 505,
+      "content": "Note that in order to simplify the standard text and feature descriptions, the optional GroupSelector is not explicitly propagated to all the features of the SFNC that it can potentially select.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 543,
+      "bottomRightX": 211,
+      "bottomRightY": 564,
+      "content": "4.15GroupIDValue",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 565,
+      "bottomRightX": 399,
+      "bottomRightY": 764,
+      "content": "|  Name | GroupIDValue[GroupSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 787,
+      "bottomRightX": 644,
+      "bottomRightY": 821,
+      "content": "Returns a unique Identifier value corresponding to the selected Group of Components. If no grouping is required, this value should be set to 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 827,
+      "bottomRightX": 603,
+      "bottomRightY": 862,
+      "content": "This value is typically used by a transmitter to group a subset of the Components member of a complex payload when they are related together.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 868,
+      "bottomRightX": 639,
+      "bottomRightY": 903,
+      "content": "An example could be a payload containing a group of Components related to the left view of an object and another group to the right view of that object.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 130 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 950,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

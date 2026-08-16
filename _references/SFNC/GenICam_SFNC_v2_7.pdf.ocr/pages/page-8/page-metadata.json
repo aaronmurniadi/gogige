@@ -1,0 +1,128 @@
+{
+  "index": 7,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 577,
+      "bottomRightY": 77,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 116,
+      "bottomRightX": 661,
+      "bottomRightY": 400,
+      "content": "10.3.8 COUNTERVALUEATRESET...250\n10.3.9 COUNTERDURATION...250\n10.3.10 COUNTERSTATUS ...251\n10.3.11 COUNTERTRIGGERSOURCE...252\n10.3.12 COUNTERTRIGGERACTIVATION...254\n10.4 TIMER USAGE MODEL...254\n10.5 TIMER FEATURES ...257\n10.5.1 TIMERSELECTOR...257\n10.5.2 TIMERDURATION...257\n10.5.3 TIMERDELAY...258\n10.5.4 TIMERRESET...258\n10.5.5 TIMERVALUE...258\n10.5.6 TIMERSTATUS...259\n10.5.7 TIMERTRIGGERSOURCE...259\n10.5.8 TIMERTRIGGERACTIVATION...261\n10.5.9 TIMERTRIGGERARMDELAY...262",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 417,
+      "bottomRightX": 661,
+      "bottomRightY": 435,
+      "content": "# 11 ENCODER CONTROL ...263",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 451,
+      "bottomRightX": 661,
+      "bottomRightY": 753,
+      "content": "11.1 QUADRATURE ENCODER USAGE MODEL 263\n11.2 ENCODER FEATURES ...268\n11.2.1 ENCODERCONTROL ...268\n11.2.2 ENCODERSELECTOR ...268\n11.2.3 ENCODERSOURCEA 269\n11.2.4 ENCODERSOURCEB 269\n11.2.5 ENCODERMODE...270\n11.2.6 ENCODERDIVIDER ...270\n11.2.7 ENCODEROUTPUTMODE...271\n11.2.8 ENCODERSTATUS...271\n11.2.9 ENCODERTIMEOUT 272\n11.2.10 ENCODERRESETSOURCE...273\n11.2.11 ENCODERRESETACTIVATION...275\n11.2.12 ENCODERRESET...275\n11.2.13 ENCODERVALUE...276\n11.2.14 ENCODERVALUEATRESET...276\n11.2.15 ENCODERRESOLUTION...277",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 768,
+      "bottomRightX": 661,
+      "bottomRightY": 786,
+      "content": "# 12 LOGIC BLOCK CONTROL ...278",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 802,
+      "bottomRightX": 661,
+      "bottomRightY": 962,
+      "content": "12.1 LOGIC BLOCK USAGE MODEL...278\n12.2 LOGIC BLOCK CONTROL FEATURES ...281\n12.2.1 LOGICBLOCKCONTROL 281\n12.2.2 LOGICBLOCKSELECTOR 282\n12.2.3 LOGICBLOCKFUNCTION 282\n12.2.4 LOGICBLOCKINPUTNUMBER 283\n12.2.5 LOGICBLOCKINPUTSELECTOR...283\n12.2.6 LOGICBLOCKINPUTSOURCE 284\n12.2.7 LOGICBLOCKINPUTINVERTER 286",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1005,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 989,
+      "bottomRightX": 386,
+      "bottomRightY": 1007,
+      "content": "Page 8 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 623,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

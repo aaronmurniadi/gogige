@@ -1,0 +1,95 @@
+{
+  "index": 335,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 515,
+      "bottomRightY": 321,
+      "content": "|  Category | FileAccessControl  |\n| --- | --- |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 344,
+      "bottomRightX": 752,
+      "bottomRightY": 380,
+      "content": "Represents the file operation result. For Read or Write operations, the number of successfully read/written bytes is returned.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 396,
+      "bottomRightX": 215,
+      "bottomRightY": 416,
+      "content": "### 18.11 FileSize",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 418,
+      "bottomRightX": 386,
+      "bottomRightY": 633,
+      "content": "|  Name | FileSize[FileSelector]  |\n| --- | --- |\n|  Category | FileAccessControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | B  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 656,
+      "bottomRightX": 348,
+      "bottomRightY": 676,
+      "content": "Represents the size of the selected file in bytes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 336 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

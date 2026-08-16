@@ -1,0 +1,113 @@
+{
+  "index": 150,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-214.jpeg](img-214.jpeg) CAM |   | ![img-215.jpeg](img-215.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 136,
+      "bottomRightX": 641,
+      "bottomRightY": 492,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|   |  | format values is referencing GigE Vision 1.x.  |\n|  PIXELFORMAT_NAMESPACE_IIDC | 2 | The interpretation of the pixel format values is referencing IIDC 1.x.  |\n|  PIXELFORMAT_NAMESPACE_PFNC_16BIT | 3 | The interpretation of the pixel format values is referencing PFNC 16Bit ValuesIt is recommended to use the PFNC32 namespace when ever possible or even do the translation in the GenTL Producer since the support in GenTL consumers for it is expected to be much broader.  |\n|  PIXELFORMAT_NAMESPACE_PFNC_32BIT | 4 | The interpretation of the pixel format values is referencing PFNC 32Bit Values.  |\n|  PIXELFORMAT_NAMESPACE_CUSTOM_ID | 1000 | The interpretation of the pixel format values is GenTL Producer specific.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 521,
+      "bottomRightX": 307,
+      "bottomRightY": 540,
+      "content": "##### 6.4.4.7 PIXELENDIANNESS_IDS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 561,
+      "bottomRightX": 295,
+      "bottomRightY": 579,
+      "content": "enum PIXELENDIANNESS_IDS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 588,
+      "bottomRightX": 636,
+      "bottomRightY": 640,
+      "content": "This enumeration defines constants describing endianness of multi-byte pixel data in a buffer. These values are returned by a call to DSGetBufferInfo with the command BUFFER_INFO_PIXELENDIANNESS.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 645,
+      "bottomRightX": 641,
+      "bottomRightY": 768,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|  PIXELENDIANNESS_UNKNOWN | 0 | Endianness of the pixel data is unknown to the GenTL Producer.  |\n|  PIXELENDIANNESS_LITTLE | 1 | The pixel data is stored in little endian format.  |\n|  PIXELENDIANNESS_BIG | 2 | The pixel data is stored in big endian format.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 797,
+      "bottomRightX": 284,
+      "bottomRightY": 815,
+      "content": "##### 6.4.4.8 STREAM_INFO_CMD",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 839,
+      "bottomRightX": 261,
+      "bottomRightY": 856,
+      "content": "enum STREAM_INFO_CMD",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 865,
+      "bottomRightX": 636,
+      "bottomRightY": 899,
+      "content": "This enumeration defines commands to retrieve information with the DSGetInfo function on a data stream handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 151 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

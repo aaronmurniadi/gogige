@@ -1,0 +1,205 @@
+{
+  "index": 587,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 145,
+      "bottomRightX": 340,
+      "bottomRightY": 170,
+      "content": "### 29.4 Triple Tap Geometries",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 176,
+      "bottomRightX": 248,
+      "bottomRightY": 197,
+      "content": "1X3-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 287,
+      "topLeftY": 203,
+      "bottomRightX": 518,
+      "bottomRightY": 223,
+      "content": "1 zone in X with 3 taps, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 232,
+      "bottomRightX": 493,
+      "bottomRightY": 375,
+      "content": "![img-185.jpeg](img-185.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-185.jpeg"
+    },
+    {
+      "topLeftX": 260,
+      "topLeftY": 380,
+      "bottomRightX": 543,
+      "bottomRightY": 400,
+      "content": "Figure 29-13: Geometry 1X3-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 432,
+      "bottomRightX": 217,
+      "bottomRightY": 453,
+      "content": "1X3 (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 461,
+      "bottomRightX": 477,
+      "bottomRightY": 479,
+      "content": "1 zone in X with 3 taps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 492,
+      "bottomRightX": 493,
+      "bottomRightY": 528,
+      "content": "![img-186.jpeg](img-186.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-186.jpeg"
+    },
+    {
+      "topLeftX": 274,
+      "topLeftY": 539,
+      "bottomRightX": 530,
+      "bottomRightY": 558,
+      "content": "Figure 29-14: Geometry 1X3 (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 565,
+      "bottomRightX": 240,
+      "bottomRightY": 586,
+      "content": "3X-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 319,
+      "topLeftY": 594,
+      "bottomRightX": 485,
+      "bottomRightY": 612,
+      "content": "3 zones in X, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 624,
+      "bottomRightX": 493,
+      "bottomRightY": 764,
+      "content": "![img-187.jpeg](img-187.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-187.jpeg"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 771,
+      "bottomRightX": 539,
+      "bottomRightY": 791,
+      "content": "Figure 29-15: Geometry 3X-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 823,
+      "bottomRightX": 208,
+      "bottomRightY": 843,
+      "content": "3X (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 359,
+      "topLeftY": 852,
+      "bottomRightX": 444,
+      "bottomRightY": 869,
+      "content": "3 zones in X.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 883,
+      "bottomRightX": 493,
+      "bottomRightY": 919,
+      "content": "![img-188.jpeg](img-188.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-188.jpeg"
+    },
+    {
+      "topLeftX": 277,
+      "topLeftY": 930,
+      "bottomRightX": 526,
+      "bottomRightY": 949,
+      "content": "Figure 29-16: Geometry 3X (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 588 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

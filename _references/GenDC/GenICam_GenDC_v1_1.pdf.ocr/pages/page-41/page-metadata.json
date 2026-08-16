@@ -1,0 +1,85 @@
+{
+  "index": 40,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 117,
+      "bottomRightX": 524,
+      "bottomRightY": 137,
+      "content": "### A.2 GenDC Container typical layout for color planar 2D images.",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 150,
+      "topLeftY": 182,
+      "bottomRightX": 438,
+      "bottomRightY": 203,
+      "content": "#### GenDC Data Container typical layout :",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 213,
+      "topLeftY": 216,
+      "bottomRightX": 378,
+      "bottomRightY": 232,
+      "content": "(Color RGB planar 2D Image)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 268,
+      "bottomRightX": 780,
+      "bottomRightY": 686,
+      "content": "![img-6.jpeg](img-6.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-6.jpeg"
+    },
+    {
+      "topLeftX": 198,
+      "topLeftY": 696,
+      "bottomRightX": 538,
+      "bottomRightY": 712,
+      "content": "Figure 5-2: GenDC Container's typical layout for a RGB planar 2D image",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 82,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 41 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "index": 382,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 135,
+      "bottomRightX": 752,
+      "bottomRightY": 223,
+      "content": "Calibrated 3D cameras typically generate \"point-cloud\" type data which does not have uniform sampling in the A-B dimension. This means that the Z, or range, image is impractical to use as a 2.5D range map with standard image processing since the apparent size of an object depends on the distance. If the point cloud is rectified to a uniform X-Y grid the Z image content will be a 2.5D range map where the apparent object size does not depend on the distance.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 232,
+      "bottomRightX": 740,
+      "bottomRightY": 268,
+      "content": "With rectified image data the offset to the first sample and the sample distance (scale) can be used to calculate the X and Y coordinate for any given sample in the image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 274,
+      "bottomRightX": 741,
+      "bottomRightY": 329,
+      "content": "Rectified images are normally defined in Cartesian coordinates, since in other coordinate systems the apparent size of objects will be distance dependent even after rectification, but e.g. a laser scanner could have a native rectified polar coordinate system.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 124,
+      "topLeftY": 336,
+      "bottomRightX": 688,
+      "bottomRightY": 686,
+      "content": "![img-122.jpeg](img-122.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-122.jpeg"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 693,
+      "bottomRightX": 660,
+      "bottomRightY": 714,
+      "content": "Figure 21-15: Rectified range maps (non-rectified range map image objects closer appear larger).",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 383 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 616,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

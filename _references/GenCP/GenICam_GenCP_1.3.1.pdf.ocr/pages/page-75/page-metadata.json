@@ -1,0 +1,57 @@
+{
+  "index": 74,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 67,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  **GEN<i>CAM** |   |   |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 156,
+      "bottomRightX": 236,
+      "bottomRightY": 176,
+      "content": "### **1.9. Heartbeat**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 197,
+      "bottomRightX": 651,
+      "bottomRightY": 282,
+      "content": "In case a serial device supports multiple baud rates, the Heartbeat mechanism must be supported in order to ensure a fall back after a faulty baud rate configuration. In case the device loses the Heartbeat, the link falls back to the default 9600 baud so that the host can re-establish communication after a switch to a baud rate that is too high. In case the device only supports the default baud rate, the Heartbeat mechanism is optional.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 929,
+      "bottomRightX": 393,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 530,
+      "topLeftY": 929,
+      "bottomRightX": 621,
+      "bottomRightY": 951,
+      "content": "Page 75 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

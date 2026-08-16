@@ -1,0 +1,76 @@
+{
+  "index": 126,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 694,
+      "bottomRightY": 212,
+      "content": "Offset of the image data from the beginning of the delivered buffer in bytes. Applies for example when delivering the image as part of chunk data or on technologies requiring specific buffer alignment.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 220,
+      "bottomRightX": 652,
+      "bottomRightY": 254,
+      "content": "Corresponds to the BUFFER_INFO_IMAGEOFFSET command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 271,
+      "bottomRightX": 310,
+      "bottomRightY": 289,
+      "content": "3.5.2.25 BufferPixelFormat",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 292,
+      "bottomRightX": 459,
+      "bottomRightY": 925,
+      "content": "|  Name | BufferPixelFormat[BufferPartSelector]  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Mono1p Mono2p Mono4p Mono8 Mono8s Mono10 Mono10c3a64 Mono10c3p32 Mono10g12 Mono10msb Mono10p Mono10pmsb Mono10s Mono12 Mono12g Mono12msb Mono14 Mono16 R8 G8 B8 RGB8 RGB8_Planar  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 927,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 127 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+<table><tr><td colspan="2">GEN&lt;i&gt;CAM</td><td rowspan="2">emva</td></tr><tr><td>Version 1.1.0</td><td>GenDC</td></tr></table>

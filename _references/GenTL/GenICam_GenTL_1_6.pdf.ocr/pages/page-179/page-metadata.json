@@ -1,0 +1,77 @@
+{
+  "index": 178,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-268.jpeg](img-268.jpeg)CAN |   | ![img-269.jpeg](img-269.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 644,
+      "bottomRightY": 181,
+      "content": "|  Transport Technology Standard | String Constant  |\n| --- | --- |\n|  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 224,
+      "bottomRightX": 279,
+      "bottomRightY": 242,
+      "content": "### 6.7 Numeric Constants",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 251,
+      "bottomRightX": 403,
+      "bottomRightY": 266,
+      "content": "Numerical constants used in the GenTL Producer API.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 272,
+      "bottomRightX": 644,
+      "bottomRightY": 411,
+      "content": "|  Constant | Value(Type) | Description  |\n| --- | --- | --- |\n|  GENTL_INVALID_HANDLE | NULL(void *) | This value is indicating an invalid handle for any handle type used within GenTL Producer API.  |\n|  GENTL_INFINITE | 0xFFFFFFFFFFFFFFFF(UINT64) | Value indicating an infinite number (e.g., timeout or number of buffers) to be used with API functions.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 179 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

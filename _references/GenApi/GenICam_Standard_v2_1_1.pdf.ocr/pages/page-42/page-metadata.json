@@ -1,0 +1,102 @@
+{
+  "index": 41,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-57.jpeg](img-57.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 116,
+      "topLeftY": 151,
+      "bottomRightX": 450,
+      "bottomRightY": 426,
+      "content": "<Category Name=\"Root\">\n    <pFeature>CommandRegBase</pFeature>\n    <pFeature>VendorName</pFeature>\n    <pFeature>ModelName</pFeature>\n</Category>\n\n<ConfRom Name=\"ConfRom\">\n    <Unit>0x00A02D</Unit>\n    <Address>0x400</Address>\n    <pAddress>InitialNodeSpace</pAddress>\n    <Length>0x400</Length>\n    <pPort>Device</pPort>\n    <IntKey Name=\"CommandRegBase\">0x40</IntKey>\n    <TextDesc Name=\"VendorName\">0x81</TextDesc>\n    <TextDesc Name=\"ModelName\">0x82</TextDesc>\n</ConfRom>\n\n<Integer Name=\"InitialNodeSpace\">\n    <Value>0xFFFFF0000000</Value>\n</Integer>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 446,
+      "bottomRightX": 635,
+      "bottomRightY": 481,
+      "content": "Note that a ConfROM node has <address>, <pAddress>, <IntSwissKnife>, <Length>, and <pPort> elements that have the same meaning as with other Registers (see section 2.8.3). </pPort></IntSwissKnife></pAddress></Address>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 487,
+      "bottomRightX": 636,
+      "bottomRightY": 554,
+      "content": "The typical implementation will create separate nodes for the <intkey> and the <textdesc> elements that are given the name denoted in the respective entry's Name attribute, a <p1212parser> element pointing to the ConfROM node and a <key> element with the respective key values.</key></textdesc></intkey>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 567,
+      "bottomRightX": 321,
+      "bottomRightY": 584,
+      "content": "#### 2.8.15 DcamLock and SmartFeature",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 596,
+      "bottomRightX": 636,
+      "bottomRightY": 645,
+      "content": "Currently, most standard register layouts are fixed mechanisms, and methods are required to give access to custom features not defined in the standard. GenICam currently supports two access mechanisms.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 653,
+      "bottomRightX": 637,
+      "bottomRightY": 753,
+      "content": "The DcamLock node can retrieve the address of a smart feature exposed according to the DCAM advanced features mechanism. It inherits the elements and attributes from the Register node. The following example unlocks an advanced DCAM feature with a <FeatureID> element of 0x0030533B73C3 where 0x003053 is a vendor ID and 0x3B73C3 is a feature ID defined by that vendor. The value 0 in the <Timeout> element means that the feature will not unlock automatically.</Timeout>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 116,
+      "topLeftY": 775,
+      "bottomRightX": 441,
+      "bottomRightY": 887,
+      "content": "<advfeaturelock name=\"BaslerAdvFeatureLock\">\n    <FeatureID>0x0030533B73C3</FeatureID>\n    <Timeout>0</Timeout>\n    <Address>0xfffff2f00000</Address>\n    <Length>8</Length>\n    <AccessMode>RW</AccessMode>\n    <pPort>Device</pPort>\n</advfeaturelock>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 42 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

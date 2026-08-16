@@ -1,0 +1,148 @@
+{
+  "index": 261,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 53,
+      "bottomRightX": 294,
+      "bottomRightY": 83,
+      "content": "GEN<|}>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 56,
+      "bottomRightX": 614,
+      "bottomRightY": 104,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 396,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 133,
+      "bottomRightX": 428,
+      "bottomRightY": 259,
+      "content": "|  **Visibility** | Expert  |\n| --- | --- |\n|  **Values** | RisingEdge FallingEdge AnyEdge LevelHigh LevelLow  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 284,
+      "bottomRightX": 428,
+      "bottomRightY": 302,
+      "content": "Selects the activation mode of the trigger to start the Timer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 310,
+      "bottomRightX": 179,
+      "bottomRightY": 327,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 337,
+      "bottomRightX": 637,
+      "bottomRightY": 462,
+      "content": "- **RisingEdge:** Starts counting on the Rising Edge of the selected trigger signal.\n- **FallingEdge:** Starts counting on the Falling Edge of the selected trigger signal.\n- **AnyEdge:** Starts counting on the Falling or Rising Edge of the selected trigger signal.\n- **LevelHigh:** Counts as long as the selected trigger signal level is High.\n- **LevelLow:** Counts as long as the selected trigger signal level is Low.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 476,
+      "bottomRightX": 345,
+      "bottomRightY": 499,
+      "content": "### 10.5.9 TimerTriggerArmDelay",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 500,
+      "bottomRightX": 425,
+      "bottomRightY": 712,
+      "content": "|  **Name** | TimerTriggerArmDelay[TimerSelector]  |\n| --- | --- |\n|  **Category** | CounterAndTimerControl  |\n|  **Level** | Recommended  |\n|  **Interface** | IFloat  |\n|  **Access** | Read/Write  |\n|  **Unit** | us  |\n|  **Visibility** | Expert  |\n|  **Values** | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 738,
+      "bottomRightX": 423,
+      "bottomRightY": 756,
+      "content": "Sets the minimum period between two valid timer triggers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 764,
+      "bottomRightX": 569,
+      "bottomRightY": 781,
+      "content": "Note: This feature is independent of the values of TimerDuration and TimerDelay.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 951,
+      "bottomRightX": 113,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 387,
+      "bottomRightY": 970,
+      "content": "Page 262 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 951,
+      "bottomRightX": 616,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

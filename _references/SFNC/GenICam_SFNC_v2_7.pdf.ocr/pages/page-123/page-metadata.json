@@ -1,0 +1,112 @@
+{
+  "index": 122,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-25.jpeg](img-25.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 117,
+      "bottomRightX": 381,
+      "bottomRightY": 401,
+      "content": "|  Level | Optional  |\n| --- | --- |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Region0 (if 0 based)Region1Region2...Scan3dExtraction0 (if 0 based)Scan3dExtraction1Scan3dExtraction2...All  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 424,
+      "bottomRightX": 631,
+      "bottomRightY": 476,
+      "content": "Selects the Region of interest to control. The RegionSelector feature allows devices that are able to extract multiple regions out of an image, to configure the features of those individual regions independently.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 481,
+      "bottomRightX": 626,
+      "bottomRightY": 535,
+      "content": "RegionX are generally used to configure Sensor's regions extraction characteristics. Regions can overlap and can also be used to provide the data of the same region in various PixelFormat or data compression type.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 554,
+      "bottomRightX": 652,
+      "bottomRightY": 591,
+      "content": "For example to provide the RGB Uncompressed Intensity and the YUV JPEG compressed Intensity of a sensor region:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 605,
+      "bottomRightX": 629,
+      "bottomRightY": 707,
+      "content": "RegionSelector = Region0 // Select Region 0\nRegionMode[Region0] = On // Instance 0 (default ON)\nComponentSelector = Intensity // Select Intensity\nComponentEnable[Region0][Intensity] = true // Enable instance 0 streaming (default).\nPixelFormat[Region0][Intensity] = RGB8 // RGB 24 bit per pixel.\nImageCompressionMode[Region0][Intensity] = Off // Instance 0 Uncompressed.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 722,
+      "bottomRightX": 574,
+      "bottomRightY": 824,
+      "content": "RegionSelector = Region1 // Select Region 1\nRegionMode[Region1] = On // Instance 1\nComponentSelector = Intensity // Select Intensity\nComponent [Intensity] = true // Enable instance 1 streaming.\nPixelFormat[Region1][Intensity] = YUV422_8 // YUV 16 bit per pixel.\nImageCompressionMode[Region1][Intensity] = JPEG // Instance 1 Compressed",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 847,
+      "bottomRightX": 637,
+      "bottomRightY": 914,
+      "content": "Other Processing module output Regions can be used to configure the size and characteristics of the processing modules' output (See for example the \"3D Device data output control\" chapter). Those Processing Module output regions should take the name of the processing module itself followed by their index (such as Scan3dExtractionX).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 966,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 123 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

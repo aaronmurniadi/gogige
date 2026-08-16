@@ -1,0 +1,113 @@
+{
+  "index": 456,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 677,
+      "bottomRightY": 379,
+      "content": "- Intensity: The image data is the intensity component (visible).\n- Infrared: The image data is the infrared component.\n- Ultraviolet: The image data is the ultraviolet component.\n- Range: The image data is the range component (distance or depth).\n- Reflectance: The image data is the reflected intensity component (acquired with the Range).\n- Disparity: The image data is the disparity component.\n- Confidence: The image data is the confidence map component.\n- Scatter: The image data is the scatter component.\n- Multispectral: The image data is the multispectral component.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 418,
+      "bottomRightX": 380,
+      "bottomRightY": 440,
+      "content": "### 24.11 ChunkComponentIDValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 440,
+      "bottomRightX": 550,
+      "bottomRightY": 654,
+      "content": "|  Name | ChunkComponentIDValue[ChunkComponentSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 678,
+      "bottomRightX": 588,
+      "bottomRightY": 697,
+      "content": "Returns a unique Identifier value that corresponds to the selected chunk Component.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 704,
+      "bottomRightX": 554,
+      "bottomRightY": 723,
+      "content": "This value generally maps to corresponding ComponentIDValue feature value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 763,
+      "bottomRightX": 337,
+      "bottomRightY": 785,
+      "content": "### 24.12 ChunkGroupSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 785,
+      "bottomRightX": 432,
+      "bottomRightY": 946,
+      "content": "|  Name | ChunkGroupSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 457 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

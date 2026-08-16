@@ -1,0 +1,86 @@
+{
+  "index": 461,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  ![img-147.jpeg](img-147.jpeg) GEN<ì>CAM |   | ![img-148.jpeg](img-148.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 420,
+      "bottomRightY": 303,
+      "content": "|  Level | Recommended  |\n| --- | --- |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 328,
+      "bottomRightX": 419,
+      "bottomRightY": 348,
+      "content": "Returns the Height of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 360,
+      "bottomRightX": 299,
+      "bottomRightY": 380,
+      "content": "24.22 ChunkPixelFormat",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 385,
+      "bottomRightX": 473,
+      "bottomRightY": 936,
+      "content": "|  Name | ChunkPixelFormat  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Mono1pMono2pMono4pMono8Mono8sMono10Mono10pMono12Mono12pMono14Mono16R8G8B8RGB8RGB8_PlanarRGBa8RGB10RGB10_Planar  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 462 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

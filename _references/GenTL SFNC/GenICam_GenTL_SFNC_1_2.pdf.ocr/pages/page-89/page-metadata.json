@@ -1,0 +1,113 @@
+{
+  "index": 88,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 347,
+      "bottomRightY": 174,
+      "content": "3.3.1.18 GevDeviceSubnetMask",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 177,
+      "bottomRightX": 420,
+      "bottomRightY": 417,
+      "content": "|  Name | GevDeviceSubnetMask  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 441,
+      "bottomRightX": 496,
+      "bottomRightY": 459,
+      "content": "Current subnet mask of the GVCP interface of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 467,
+      "bottomRightX": 631,
+      "bottomRightY": 504,
+      "content": "Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 518,
+      "bottomRightX": 321,
+      "bottomRightY": 537,
+      "content": "3.3.1.19 GevDeviceGateway",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 539,
+      "bottomRightX": 420,
+      "bottomRightY": 778,
+      "content": "|  Name | GevDeviceGateway  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 803,
+      "bottomRightX": 539,
+      "bottomRightY": 821,
+      "content": "Current gateway IP address of the GVCP interface of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 827,
+      "bottomRightX": 631,
+      "bottomRightY": 864,
+      "content": "Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 89 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

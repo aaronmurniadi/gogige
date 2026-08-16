@@ -1,0 +1,128 @@
+{
+  "index": 10,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 577,
+      "bottomRightY": 77,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 117,
+      "bottomRightX": 661,
+      "bottomRightY": 205,
+      "content": "19.2 SOURCE CONTROL FEATURES ...340\n19.3 SOURCECONTROL...342\n19.4 SOURCECOUNT...342\n19.5 SOURCESELECTOR 342\n19.6 SOURCEIDVALUE...343",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 220,
+      "bottomRightX": 661,
+      "bottomRightY": 238,
+      "content": "# 20 TRANSFER CONTROL ...344",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 253,
+      "bottomRightX": 661,
+      "bottomRightY": 681,
+      "content": "20.1 TRANSFER CONTROL MODEL...345\n20.2 TRANSFER CONTROL FEATURES...348\n20.3 TRANSFERCONTROL 348\n20.4 TRANSFERSELECTOR 348\n20.5 TRANSFERCONTROLMODE 349\n20.6 TRANSFEROPERATIONMODE 350\n20.7 TRANSFERBLOCKCOUNT 350\n20.8 TRANSFERBURSTCOUNT 351\n20.9 TRANSFERQUEUEMAXBLOCKCOUNT 351\n20.10 TRANSFERQUEUECURRENTBLOCKCOUNT 351\n20.11 TRANSFERQUEUEMODE 352\n20.12 TRANSFERSTART 352\n20.13 TRANSFERSTOP 353\n20.14 TRANSFERABORT 353\n20.15 TRANSFERPAUSE 353\n20.16 TRANSFERRESUME 354\n20.17 TRANSFERTRIGGERSELECTOR 354\n20.18 TRANSFERTRIGGERMODE 355\n20.19 TRANSFERTRIGGERSOURCE...356\n20.20 TRANSFERTRIGGERACTIVATION 357\n20.21 TRANSFERSTATUSSELECTOR...357\n20.22 TRANSFERSTATUS 358\n20.23 TRANSFERCOMPONENTSELECTOR 358\n20.24 TRANSFERSTREAMCHANNEL...359",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 697,
+      "bottomRightX": 661,
+      "bottomRightY": 715,
+      "content": "# 21 3D SCAN CONTROL ...360",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 730,
+      "bottomRightX": 661,
+      "bottomRightY": 962,
+      "content": "21.1 3D SCAN USAGE MODEL AND CONFIGURATION SCENARIOS...363\n21.1.1 3D ACQUISITION DEVICES CONFIGURATION EXAMPLES...364\n21.2 FORMATTING AND INTERPRETING 3D DATA...378\n21.2.1 COORDINATE SYSTEMS 379\n21.2.2 COORDINATE SYSTEM POSITION AND TRANSFORMATION 380\n21.2.3 FOCAL LENGTH AND BASELINE FOR 3D RECONSTRUCTION FROM DISPARITY...384\n21.2.4 MAPPING DISPARITY AND INTENSITY OF DIFFERENT RESOLUTIONS...386\n21.3 3D DEVICE DATA OUTPUT CONTROL...388\n21.3.1 3D DEVICES CONFIGURATION USE CASES...390\n21.3.1.1 LINESCAN 3D RANGE AND REFLECTANCE OUTPUT...390\n21.3.1.2 LINESCAN 3D SENSOR'S INTENSITY OUTPUT...392\n21.3.1.3 LINESCAN 3D HYBRID RANGE, REFLECTANCE AND INTENSITY OUTPUT...393\n21.3.1.4 LINESCAN 3D RANGE OUTPUT FROM 2 SENSOR REGIONS ...394",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1005,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 390,
+      "bottomRightY": 1007,
+      "content": "Page 11 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 623,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

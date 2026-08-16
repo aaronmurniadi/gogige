@@ -1,0 +1,83 @@
+{
+  "index": 0,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 131,
+      "topLeftY": 31,
+      "bottomRightX": 280,
+      "bottomRightY": 62,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 523,
+      "topLeftY": 34,
+      "bottomRightX": 616,
+      "bottomRightY": 84,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 3,
+      "topLeftY": 72,
+      "bottomRightX": 77,
+      "bottomRightY": 92,
+      "content": "Version 1.1.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 241,
+      "topLeftY": 72,
+      "bottomRightX": 291,
+      "bottomRightY": 89,
+      "content": "GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 286,
+      "bottomRightX": 586,
+      "bottomRightY": 452,
+      "content": "# GenICam\n## Generic Data Container\n## Specification\n## (GenDC)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 316,
+      "topLeftY": 502,
+      "bottomRightX": 448,
+      "bottomRightY": 525,
+      "content": "Version 1.1.0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 986,
+      "bottomRightX": 86,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 550,
+      "topLeftY": 986,
+      "bottomRightX": 630,
+      "bottomRightY": 1007,
+      "content": "Page 1 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

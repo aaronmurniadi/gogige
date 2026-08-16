@@ -1,0 +1,129 @@
+{
+  "index": 263,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 146,
+      "bottomRightX": 740,
+      "bottomRightY": 642,
+      "content": "![img-85.jpeg](img-85.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-85.jpeg"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 663,
+      "bottomRightX": 533,
+      "bottomRightY": 682,
+      "content": "Figure 11-1: Encoder interface overview.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 707,
+      "bottomRightX": 217,
+      "bottomRightY": 726,
+      "content": "### Encoder Output Modes:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 741,
+      "bottomRightX": 732,
+      "bottomRightY": 815,
+      "content": "With a quadrature encoder connected it is possible to use the Encoder Control output to trigger the camera in several ways when the motion moves forwards and backwards. The illustration below shows 3 different Encoder Output Modes. The Position and Direction modes can both work in \"up\" and \"down\" counting directions to allow the user to select a positive or negative direction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 830,
+      "bottomRightX": 730,
+      "bottomRightY": 903,
+      "content": "The **Position** mode generates output pulses on position increments only in one direction and will result in an image as if there was only forward motion even if the motion reverse for a short time. No output pulses are generated until after the position where the reversal started has passed. The position \"memory\" (counter resolution) must be sufficient to handle a reasonable reversal without false \"reset\".",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 264 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

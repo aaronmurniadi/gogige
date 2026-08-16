@@ -1,0 +1,84 @@
+{
+  "index": 59,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 249,
+      "topLeftY": 63,
+      "bottomRightX": 397,
+      "bottomRightY": 92,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 611,
+      "topLeftY": 66,
+      "bottomRightX": 713,
+      "bottomRightY": 116,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 108,
+      "bottomRightX": 151,
+      "bottomRightY": 125,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 106,
+      "bottomRightX": 466,
+      "bottomRightY": 125,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 148,
+      "bottomRightX": 747,
+      "bottomRightY": 591,
+      "content": "|  2.2 | 2018-09-14 | Uwe Hagmaier Matrix Vision GmbH | Official release of Pixel Format Naming Convention version 2.2. - Remove RC1 and “under ballot” marking  |\n| --- | --- | --- | --- |\n|  2.3 Draft 1 | 2018-11-18 | Uwe Hagmaier Matrix Vision GmbH | Draft 1 of 2.3 – Added “Data” for GenDC  |\n|  2.3 Draft 2 | 2019-1-18 | Uwe Hagmaier Matrix Vision GmbH | Draft 2 of 2.3 – Removed “Data” for GenDC from PFNC component table, Added Subsection “Generic Data Types Formats”  |\n|  2.3 Draft 3 | 2019-2-9 | Uwe Hagmaier Matrix Vision GmbH | DRAFT 3 - Removed Note 1 below Table 3 - 3  |\n|  2.3 | 2019-2-19 | Uwe Hagmaier Matrix Vision GmbH | Removed Draft marking  |\n|  2.4 Draft1 | 2019-9-2 | Uwe Hagmaier Matrix Vision GmbH | Added GPOLxxx for polarized – first proposal  |\n|  2.4 Draft2 | 2019-9-4 | Uwe Hagmaier Matrix Vision GmbH | Added POLxxx for polarized (Option2)  |\n|  2.4 Draft3 | 2020-10-22 | Uwe Hagmaier Matrix Vision GmbH | Removed GPOL (Option 1) according to Stresa testvote Added LMN420 Location  |\n|  2.4 Draft4 | 2021-5-10 | Uwe Hagmaier Matrix Vision GmbH | Removed LMN420 Location  |\n|  2.4 | 2021-6-16 | Uwe Hagmaier Matrix Vision GmbH | Removed Draft marking Adjusted colors and notation in pol bayer diagram according to rest of the document  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 953,
+      "bottomRightX": 104,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 371,
+      "topLeftY": 953,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 653,
+      "topLeftY": 953,
+      "bottomRightX": 754,
+      "bottomRightY": 972,
+      "content": "Page 60 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

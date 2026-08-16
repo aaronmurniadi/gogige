@@ -1,0 +1,114 @@
+{
+  "index": 449,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 396,
+      "bottomRightY": 252,
+      "content": "|  Access | Read  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 274,
+      "bottomRightX": 410,
+      "bottomRightY": 294,
+      "content": "Category that contains the Chunk Data control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 308,
+      "bottomRightX": 269,
+      "bottomRightY": 328,
+      "content": "### 24.2 ChunkModeActive",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 331,
+      "bottomRightX": 396,
+      "bottomRightY": 563,
+      "content": "|  Name | ChunkModeActive  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 587,
+      "bottomRightX": 468,
+      "bottomRightY": 606,
+      "content": "Activates the inclusion of Chunk data in the transmitted payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 646,
+      "bottomRightX": 264,
+      "bottomRightY": 665,
+      "content": "### 24.3 ChunkXMLEnable",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 669,
+      "bottomRightX": 396,
+      "bottomRightY": 900,
+      "content": "|  Name | ChunkXMLEnable  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 450 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "index": 274,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 135,
+      "bottomRightX": 311,
+      "bottomRightY": 155,
+      "content": "### 11.2.11 EncoderResetActivation",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 159,
+      "bottomRightX": 459,
+      "bottomRightY": 442,
+      "content": "|  Name | EncoderResetActivation[EncoderSelector]  |\n| --- | --- |\n|  Category | EncoderControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | RisingEdge FallingEdge AnyEdge LevelHigh LevelLow  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 467,
+      "bottomRightX": 463,
+      "bottomRightY": 484,
+      "content": "Selects the Activation mode of the Encoder Reset Source signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 493,
+      "bottomRightX": 187,
+      "bottomRightY": 509,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 519,
+      "bottomRightX": 618,
+      "bottomRightY": 644,
+      "content": "- RisingEdge: Resets the Encoder on the Rising Edge of the signal.\n- FallingEdge: Resets the Encoder on the Falling Edge of the signal.\n- AnyEdge: Resets the Encoder on the Falling or rising Edge of the selected signal.\n- LevelHigh: Resets the Encoder as long as the selected signal level is High.\n- LevelLow: Resets the Encoder as long as the selected signal level is Low.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 685,
+      "bottomRightX": 224,
+      "bottomRightY": 705,
+      "content": "### 11.2.12 EncoderReset",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 708,
+      "bottomRightX": 388,
+      "bottomRightY": 921,
+      "content": "|  Name | EncoderReset[EncoderSelector]  |\n| --- | --- |\n|  Category | EncoderControl  |\n|  Level | Recommended  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 275 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "index": 61,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-91.jpeg](img-91.jpeg) CAM |   | ![img-92.jpeg](img-92.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 136,
+      "bottomRightX": 641,
+      "bottomRightY": 901,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|  GC_ERR_ACCESS_DENIED | -1005 | Requested operation is not allowed; e.g., a remote device is opened by another client.  |\n|  GC_ERR_INVALID_HANDLE | -1006 | Given handle does not support the operation; e.g., function call on wrong handle or NULL pointer.  |\n|  GC_ERR_INVALID_ID | -1007 | ID could not be connected to a resource; e.g., a device with the given ID is currently not available.  |\n|  GC_ERR_NO_DATA | -1008 | The function has no data to work on or the data does not provide reliable information corresponding with the request.  |\n|  GC_ERR_INVALID_PARAMETER | -1009 | One of the parameter given was not valid or out of range.  |\n|  GC_ERR_IO | -1010 | Communication error has occurred; e.g., a read or write operation to a remote device failed.  |\n|  GC_ERR_TIMEOUT | -1011 | An operation's timeout time expired before it could be completed.  |\n|  GC_ERR_ABORT | -1012 | An operation has been aborted before it could be completed. For example a wait operation through EventGetData has been terminated via a call to EventKill.  |\n|  GC_ERR_INVALID_BUFFER | -1013 | The GenTL Consumer has not announced enough buffers to start the acquisition in the currently active acquisition mode.  |\n|  GC_ERR_NOT_AVAILABLE | -1014 | Resource or information is not available at a given time in a current state.  |\n|  GC_ERR_INVALID_ADDRESS | -1015 | A given address is out of range or invalid for internal reasons.  |\n|  GC_ERR_BUFFER_TOO_SMALL | -1016 | A provided buffer is too small to receive the expected amount of data. This may affect acquisition buffers in the Data Stream module if the buffers are smaller than the expected payload size but also buffers passed to any other function of the GenTL Producer interface to retrieve information or IDs.  |\n|  GC_ERR_INVALID_INDEX | -1017 | A provided index referencing a  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 62 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

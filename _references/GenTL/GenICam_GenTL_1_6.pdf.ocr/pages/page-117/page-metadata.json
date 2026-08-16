@@ -1,0 +1,175 @@
+{
+  "index": 116,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-160.jpeg](img-160.jpeg) CAM |   | ![img-161.jpeg](img-161.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 637,
+      "bottomRightY": 476,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hPort is invalid (NULL) or does not reference an open module.  |\n|  GC_ERR_INVALID_INDEX | iURLIndex is greater than the number available URLs -1.  |\n|  GC_ERR_NOT_IMPLEMENTED | Specified iInfoCmd is not implemented or the provided module handle does not have a Port module implemented.  |\n|  GC_ERR_NOT_AVAILABLE | The module does not provide the requested information.  |\n|  GC_ERR_INVALID_PARAMETER | Parameters piSize and/or piType are invalid pointers (NULL or ~0x0).  |\n|  GC_ERR_BUFFER_TOO_SMALL | pBuffer is not NULL and the value of *piSize is too small to receive the expected amount of data.  |\n|  GC_ERR_IO | Communication error or connection lost.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 504,
+      "bottomRightX": 636,
+      "bottomRightY": 540,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 552,
+      "bottomRightX": 226,
+      "bottomRightY": 570,
+      "content": "##### 6.3.6.5 GCReadPort",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 593,
+      "bottomRightX": 259,
+      "bottomRightY": 609,
+      "content": "GC_ERROR GCReadPort",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 593,
+      "bottomRightX": 456,
+      "bottomRightY": 608,
+      "content": "( PORT_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 594,
+      "bottomRightX": 547,
+      "bottomRightY": 608,
+      "content": "hPort,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 358,
+      "topLeftY": 610,
+      "bottomRightX": 430,
+      "bottomRightY": 626,
+      "content": "uint64_t",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 610,
+      "bottomRightX": 573,
+      "bottomRightY": 626,
+      "content": "iAddress,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 358,
+      "topLeftY": 628,
+      "bottomRightX": 412,
+      "bottomRightY": 641,
+      "content": "void *",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 628,
+      "bottomRightX": 564,
+      "bottomRightY": 642,
+      "content": "pBuffer,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 358,
+      "topLeftY": 644,
+      "bottomRightX": 429,
+      "bottomRightY": 658,
+      "content": "size_t *",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 644,
+      "bottomRightX": 564,
+      "bottomRightY": 658,
+      "content": "piSize )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 667,
+      "bottomRightX": 637,
+      "bottomRightY": 736,
+      "content": "Reads a number of bytes from a given iAddress from the specified hPort. This is the global GenICam GenApi read access function for all ports implemented in the GenTL implementation. The endianness of the data content is specified by the GCGetPortInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 743,
+      "bottomRightX": 637,
+      "bottomRightY": 828,
+      "content": "If the underlying technology has alignment restrictions on the port read, the GenTL Provider implementation has to handle this internally. For example if the underlying technology only allows a 4-byte aligned access and the calling GenTLConsumer wants to read 5 bytes starting at address 2. The implementation has to read 8 bytes starting at address 0 and then it must only return the requested 5 bytes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 834,
+      "bottomRightX": 637,
+      "bottomRightY": 886,
+      "content": "The function is used to handle GenICam GenApi port read access when it is in general unknown which type of data is being read and whether it is acceptable to read only part of the requested piSize bytes. The operation is therefore considered successful only if all requested",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 117 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

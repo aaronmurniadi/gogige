@@ -1,0 +1,174 @@
+{
+  "index": 231,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 134,
+      "bottomRightX": 742,
+      "bottomRightY": 208,
+      "content": "For a Digital I/O, when the full **I/O Control Block** is implemented, each physical **Line** (or pin) selected using **LineSelector** can be configured as Input or Output using **LineMode**. For an input or output Line, it is possible to read the Status of the Line with **LineStatus** and the incoming or outgoing signal can also be inverted using **LineInverter**. For an Output signal, the source of the signal is controlled using **LineSource** (See Figure 9-1).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 213,
+      "bottomRightX": 137,
+      "bottomRightY": 231,
+      "content": "For example:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 239,
+      "bottomRightX": 545,
+      "bottomRightY": 273,
+      "content": "/* Output an inverted pulse coming from the Timer 1 on the physical Line 2 of the device connector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 274,
+      "bottomRightX": 68,
+      "bottomRightY": 290,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 314,
+      "bottomRightX": 272,
+      "bottomRightY": 375,
+      "content": "LineSelector = Line2;\nLineMode     = Output;\nLineInverter = True;\nLineSource   = Timer1Active;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 420,
+      "bottomRightX": 382,
+      "bottomRightY": 438,
+      "content": "/* Read the inverted Status of the physical Line 1. */",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 459,
+      "bottomRightX": 264,
+      "bottomRightY": 518,
+      "content": "LineSelector  = Line1;\nLineMode     = Input;\nLineInverter = True;\nCurrentStatus = LineStatus;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 557,
+      "bottomRightX": 508,
+      "bottomRightY": 577,
+      "content": "/* Output of the Exposure signal of each frame on the physical Line 2. */",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 597,
+      "bottomRightX": 287,
+      "bottomRightY": 642,
+      "content": "LineSelector = Line2;\nLineMode     = Output;\nLineSource   = ExposureActive;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 678,
+      "bottomRightX": 749,
+      "bottomRightY": 786,
+      "content": "Note that all the features of an I/O control block are optional. Typically, an Input only line will report the **LineMode** as **Input** (read-only) and will implement only the **LineSelector**, **LineInverter** and **LineStatus** features (top half in Figure 9-1: I/O Control). An Output only line will report the **LineMode** as **Output** (read-only) and will implement only the **LineSelector**, **LineInverter** and **LineSource** features (bottom half of Figure 9-1: I/O Control). Even a hard-wired input or output line is just particular case where all the features are read-only.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 793,
+      "bottomRightX": 695,
+      "bottomRightY": 829,
+      "content": "The electrical format of the physical Line (TTL. LVDS, Opto-Coupled...) can be read or controlled (if supported) using **LineFormat**.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 837,
+      "bottomRightX": 679,
+      "bottomRightY": 855,
+      "content": "Note also that the Status of all the Lines can be monitored in one single access using **LineStatusAll**.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 881,
+      "bottomRightX": 140,
+      "bottomRightY": 899,
+      "content": "### UserOutput:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 905,
+      "bottomRightX": 473,
+      "bottomRightY": 925,
+      "content": "One possible source for Output lines is the User Output bit register.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 232 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

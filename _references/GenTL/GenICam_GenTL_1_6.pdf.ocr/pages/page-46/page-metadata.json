@@ -1,0 +1,138 @@
+{
+  "index": 45,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | ![img-61.jpeg](img-61.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 138,
+      "bottomRightX": 637,
+      "bottomRightY": 311,
+      "content": "buffers are announced prior to the call to DSStartAcquisition it is also possible to announce or revoke buffers in between calls to DSStartAcquisition and DSStopAcquisition while the acquisition is ongoing in case the underlying GenTL Producer supports this. In order to revoke a buffer it is additionally necessary that the particular buffer is only referenced in the announced buffer pool which means that it is neither in any of the acquisition queues and that it is currently not acquired to. In case the underlying GenTL Producer does not support the announcing or revoking buffers while the acquisition is active (in between calls to DSStartAcquisition and DSStopAcquisition) it is also valid for the GenTL Producer to return a GC_ERR_BUSY from a call to DSAnnounceBuffer, DSAllocAndAnnounceBuffer or DSRevokeBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 317,
+      "bottomRightX": 636,
+      "bottomRightY": 369,
+      "content": "Along with the buffer memory a pointer to user data is passed which may point to a buffer specific implementation. That pointer is delivered along with the Buffer module handle in the New Buffer event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 377,
+      "bottomRightX": 636,
+      "bottomRightY": 464,
+      "content": "The DSAnnounceBuffer and DSAllocAndAnnounceBuffer functions return a unique BUFFER_HANDLE to identify the buffer in the process. The minimum number of buffers that must be announced depends on the technology used. This information can be queried from the Data Stream module features. If there is a known maximum this can also be queried. Otherwise the number of buffers is only limited by available memory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 469,
+      "bottomRightX": 636,
+      "bottomRightY": 504,
+      "content": "The acquisition engine normally stores additional data with the announced buffers to be able to, e.g., use DMA transfer to fill the buffers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 516,
+      "bottomRightX": 239,
+      "bottomRightY": 534,
+      "content": "#### 5.2.3 Queue Buffers",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 538,
+      "bottomRightX": 636,
+      "bottomRightY": 642,
+      "content": "To acquire data at least one buffer has to be queued with the DSQueueBuffer function. When a buffer is queued it is put into the Input Buffer Pool. The user has to explicitly call DSQueueBuffer to place the buffers into the Input Buffer Pool. The order in which the buffers are queued does not need to match the order in which they were announced. The queue order also does not necessarily have an influence in which order the buffers are filled. This depends only on the buffer handling mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 655,
+      "bottomRightX": 328,
+      "bottomRightY": 675,
+      "content": "#### 5.2.4 Register New Buffer Event",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 678,
+      "bottomRightX": 636,
+      "bottomRightY": 766,
+      "content": "An event object to the data stream must be registered using the NewBufferEvent ID in order to be notified on newly filled buffers. The GCRegisterEvent function returns a unique EVENT_HANDLE which can be used to obtain event specific data when the event was signaled. For the \"New Buffer\" event this data is the BUFFER_HANDLE and the user data pointer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 779,
+      "bottomRightX": 257,
+      "bottomRightY": 799,
+      "content": "#### 5.2.5 Start Acquisition",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 802,
+      "bottomRightX": 635,
+      "bottomRightY": 854,
+      "content": "First the acquisition engine on the host is started with the DSStartAcquisition function. After that the acquisition on the remote device is to be started by setting the \"AcquisitionStart\" standard feature via the GenICam GenApi.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 860,
+      "bottomRightX": 636,
+      "bottomRightY": 896,
+      "content": "If a device implements the SFNC Transfer Control features, the GenTL Consumer may need to start the transfer on the remote device as well, depending on the operating mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 46 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

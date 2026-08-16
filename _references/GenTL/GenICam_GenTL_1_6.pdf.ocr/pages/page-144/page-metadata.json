@@ -1,0 +1,49 @@
+{
+  "index": 143,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-202.jpeg](img-202.jpeg) CAM |   | ![img-203.jpeg](img-203.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 136,
+      "bottomRightX": 644,
+      "bottomRightY": 845,
+      "content": "|  Enumerator | Global -Part /Impl | Value | Description  |\n| --- | --- | --- | --- |\n|  BUFFER_INFO_IMAGEPRESENT | G/M | 17 | Flag to indicate if the current data in the buffer contains single raster scan image data. This information refers for example to the information provided in the GigE Vision image stream data leader. For other technologies this is to be implemented accordingly.The flag should report true if the payload contains a single raster scan image in the sense of traditional image payload type and if it makes sense to query its properties using buffer-global image format related buffer infos.Data type: BOOL8  |\n|  BUFFER_INFO_IMAGEOFFSET | G/O | 18 | Offset of the image data from the beginning of the delivered buffer in bytes. Applies for example when delivering the image as part of chunk data or on technologies requiring specific buffer alignment.Data type: SIZET  |\n|  BUFFER_INFO_PAYLOADTYPE | G/M | 19 | Payload type of the data.This information refers to the constants defined inPAYLOADTYPE_INFO_IDS.Data type: SIZET  |\n|  BUFFER_INFO_PIXELFORMAT | P/CM | 20 | Pixelformat of the data.This information refers for example to the information provided in the GigE Vision image stream data leader. For other technologies this is to be implemented accordingly. The interpretation of the pixel format depends on the namespace the pixel format belongs to. This can be inquired using theBUFFER_INFO_PIXELFORMAT_NAMESPACE command.Data type: UINT64  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 144 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

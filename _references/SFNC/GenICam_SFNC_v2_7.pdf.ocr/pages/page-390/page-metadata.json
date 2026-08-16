@@ -1,0 +1,130 @@
+{
+  "index": 389,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 135,
+      "bottomRightX": 458,
+      "bottomRightY": 157,
+      "content": "### 21.3.1 3D Devices configuration use cases",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 177,
+      "bottomRightX": 754,
+      "bottomRightY": 215,
+      "content": "The use cases below show different ways a Linescan 3D camera can be configured to output the 3D profile data, the image sensor raw data or both at the same time (See Figure 21-20 for the assumed setup).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 221,
+      "bottomRightX": 755,
+      "bottomRightY": 293,
+      "content": "Note that in a real 3D acquisition device, most of the feature configuration presented below can be done automatically by changing only the DeviceScanType feature from 3D to 2D. It is also highly recommended that, as far as possible, a read of Height feature without changing the region selector explicitly returns the height of the transmitted buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 299,
+      "bottomRightX": 724,
+      "bottomRightY": 319,
+      "content": "In the followings examples, the state of the features after each example is used as the basis for the next one.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 105,
+      "topLeftY": 359,
+      "bottomRightX": 559,
+      "bottomRightY": 381,
+      "content": "#### 21.3.1.1 Linescan 3D Range and Reflectance output",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 401,
+      "bottomRightX": 746,
+      "bottomRightY": 456,
+      "content": "In this use case, the Area sensor's Region0 defines the acquired sensor image dimension and is used as source to the Scan 3D Extraction processing module. A separate Scan3DExtraction0 processing module Region (B) is used to define independently the size of the result of the 3D laser line extraction to output.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 486,
+      "bottomRightX": 443,
+      "bottomRightY": 507,
+      "content": "Linescan 3D device Range and Reflectance output:",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 514,
+      "bottomRightX": 753,
+      "bottomRightY": 814,
+      "content": "![img-129.jpeg](img-129.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-129.jpeg"
+    },
+    {
+      "topLeftX": 179,
+      "topLeftY": 821,
+      "bottomRightX": 627,
+      "bottomRightY": 842,
+      "content": "Figure 21-21: Linescan 3D Range and Reflectance components output.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 390 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 616,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

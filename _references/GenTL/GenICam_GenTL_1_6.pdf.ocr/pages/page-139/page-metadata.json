@@ -1,0 +1,67 @@
+{
+  "index": 138,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-194.jpeg](img-194.jpeg) CAM |   | ![img-195.jpeg](img-195.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 171,
+      "content": "implemented the DSGetBufferInfo function must return the appropriate error return value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 178,
+      "bottomRightX": 637,
+      "bottomRightY": 298,
+      "content": "For multi-part buffers it is possible to query information on each part. Therefore some of the BUFFER_INFO_CMDs are not used or overwritten by BUFFER_PART_INFO_CMDs. The enumeration table below lists which commands are applicable on the global buffer if the underlying buffer contains multi-part data. In the table listing the command values the column \"Global-Part/Impl\" lists if a given info command is to be queried on the global buffer or if the command is over written by an info command of the image part within the buffer. The possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 302,
+      "bottomRightX": 645,
+      "bottomRightY": 831,
+      "content": "|  Acronym | Description  |\n| --- | --- |\n|  G/O | The information is to be inquired on the global buffer. Implementation of the command is recommended but optional/technology dependent.  |\n|  G/M | The information is to be inquired on the global buffer. Implementation of the command is mandatory. In case a similar command is available for buffer part also the scope of the BUFFER_INFO_CMD is the global buffer where the BUFFER_PART_INFO_CMD is describing the part.  |\n|  G/CM | The information is to be inquired on the global buffer. Implementation of the command is conditional mandatory. Conditional mandatory is used for commands which might not always be applicable. If it is possible to implement a certain command it must be implemented. In case a similar command is available for buffer part also the scope of the BUFFER_INFO_CMD is the global buffer where the BUFFER_PART_INFO_CMD is describing the part.  |\n|  P/O | The command is not available in case the buffer contains multi-part data. In this case the function DSGetBufferInfo returns GC_ERR_NO_DATA. In case the buffer does not contain multi-part data the command returns the requested information. The implementation of the command is optional.  |\n|  P/M | The command is not available in case the buffer contains multi-part data. In this case the function DSGetBufferInfo returns GC_ERR_NO_DATA. In case the buffer does not contain multi-part data the command returns the requested information. In this case the implementation of the command is mandatory .  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 139 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

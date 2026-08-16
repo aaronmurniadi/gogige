@@ -1,0 +1,84 @@
+{
+  "index": 46,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 292,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 77,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 77,
+      "bottomRightX": 387,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 545,
+      "topLeftY": 65,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 921,
+      "bottomRightY": 648,
+      "content": "|   |  |  |  |  |  | used to create the device's GenICam XML.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  DeviceSFNCVersionSubMinor | R | Integer | R | - | B | Sub minor version of Standard Features Naming Convention that was used to create the device's GenICam XML.  |\n|  DeviceManifestEntrySelector | O | Integer | R/W | - | G | Selects the manifest entry to reference.  |\n|  DeviceManifestXMLMajorVersion [DeviceManifestEntrySelector] | O | Integer | R | - | G | Indicates the major version number of the GenICam XML file of the selected manifest entry.  |\n|  DeviceManifestXMLMinorVersion [DeviceManifestEntrySelector] | O | Integer | R | - | G | Indicates the minor version number of the GenICam XML file of the selected manifest entry.  |\n|  DeviceManifestXMLSubMinorVersion [DeviceManifestEntrySelector] | O | Integer | R | - | G | Indicates the subminor version number of the GenICam XML file of the selected manifest entry.  |\n|  DeviceManifestSchemaMajorVersion [DeviceManifestEntrySelector] | O | Integer | R | - | G | Indicates the major version number of the schema file of the selected manifest entry.  |\n|  DeviceManifestSchemaMinorVersion [DeviceManifestEntrySelector] | O | Integer | R | - | G | Indicates the minor version number of the schema file of the selected manifest entry.  |\n|  DeviceManifestPrimaryURL [DeviceManifestEntrySelector] | O | String | R | - | G | Indicates the first URL to the GenICam XML device description file of the selected manifest entry.  |\n|  DeviceManifestSecondaryURL [DeviceManifestEntrySelector] | O | String | R | - | G | Indicates the second URL to the GenICam XML device description file of the selected manifest entry.  |\n|  DeviceTLType | R | Enumeration | R | - | B | Transport Layer type of the device.  |\n|  DeviceTLVersionMajor | R | Integer | R | - | B | Major version of the Transport Layer of the device.  |\n|  DeviceTLVersionMinor | R | Integer | R | - | B | Minor version of the Transport Layer of the device.  |\n|  DeviceTLVersionSubMinor | R | Integer | R | - | B | Sub minor version of the Transport Layer of the device.  |\n|  DeviceGenCPVersionMajor | R | Integer | R | - | B | Major version of the GenCP protocol supported by the device.  |\n|  DeviceGenCPVersionMinor | R | Integer | R | - | B | Minor version of the GenCP protocol supported by the device.  |\n|  DeviceMaxThroughput | O | Integer | R | Bps | E | Maximum bandwidth of the data that can be streamed out of the device.  |\n|  DeviceConnectionSelector | R | Integer | R/(W) | - | B | Selects which Connection of the device to control.  |\n|  DeviceConnectionSpeed [DeviceConnectionSelector] | O | Integer | R | Bps | E | Indicates the speed of transmission of the specified Connection.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 375,
+      "bottomRightY": 668,
+      "content": "Page 47 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

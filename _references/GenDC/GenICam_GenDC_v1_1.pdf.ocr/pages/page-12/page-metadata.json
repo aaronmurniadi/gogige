@@ -1,0 +1,76 @@
+{
+  "index": 11,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 116,
+      "bottomRightX": 607,
+      "bottomRightY": 134,
+      "content": "[ R-001] A GenDC compliant product must use the Headers and flags as defined by this specification.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 164,
+      "bottomRightX": 282,
+      "bottomRightY": 181,
+      "content": "### 2.2.1 GenDC Container Header Layout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 186,
+      "bottomRightX": 699,
+      "bottomRightY": 370,
+      "content": "|  Signature = \"GNDC\" |   | Version Major | Version Minor | Version Sub Minor | Reserved  |\n| --- | --- | --- | --- | --- | --- |\n|  HeaderType | Flags | HeaderSize  |   |   |   |\n|  Id  |   |   |   |   |   |\n|  VariableFields | Reserved  |   |   |   |   |\n|  DataSize  |   |   |   |   |   |\n|  DataOffset  |   |   |   |   |   |\n|  DescriptorSize |   | ComponentCount  |   |   |   |\n|  ComponentOffset[ComponentCount]  |   |   |   |   |   |\n|  ...  |   |   |   |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 251,
+      "topLeftY": 371,
+      "bottomRightX": 467,
+      "bottomRightY": 385,
+      "content": "Figure 2-3: GenDC Container Header Layout",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 12 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

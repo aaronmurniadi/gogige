@@ -1,0 +1,157 @@
+{
+  "index": 192,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 747,
+      "bottomRightY": 182,
+      "content": "- LevelHigh: Specifies that the trigger is considered valid as long as the level of the source signal is high.\n- LevelLow: Specifies that the trigger is considered valid as long as the level of the source signal is low.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 197,
+      "bottomRightX": 277,
+      "bottomRightY": 218,
+      "content": "### 5.6.6 TriggerOverlap",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 220,
+      "bottomRightX": 386,
+      "bottomRightY": 486,
+      "content": "|  Name | TriggerOverlap[TriggerSelector]  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Off ReadOut PreviousFrame PreviousLine  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 509,
+      "bottomRightX": 734,
+      "bottomRightY": 546,
+      "content": "Specifies the type trigger overlap permitted with the previous frame or line. This defines when a valid trigger will be accepted (or latched) for a new frame or a new line.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 554,
+      "bottomRightX": 177,
+      "bottomRightY": 570,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 581,
+      "bottomRightX": 720,
+      "bottomRightY": 680,
+      "content": "- Off: No trigger overlap is permitted.\n- ReadOut: Trigger is accepted immediately after the exposure period.\n- PreviousFrame: Trigger is accepted (latched) at any time during the capture of the previous frame.\n- PreviousLine: Trigger is accepted (latched) at any time during the capture of the previous line.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 694,
+      "bottomRightX": 258,
+      "bottomRightY": 716,
+      "content": "### 5.6.7 TriggerDelay",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 717,
+      "bottomRightX": 404,
+      "bottomRightY": 930,
+      "content": "|  Name | TriggerDelay[TriggerSelector]  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | us  |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 193 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "index": 70,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-99.jpeg](img-99.jpeg) CAM |   | ![img-100.jpeg](img-100.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 137,
+      "bottomRightX": 268,
+      "bottomRightY": 154,
+      "content": "##### 6.3.2.4 TLGetInterfaceInfo",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 176,
+      "bottomRightX": 602,
+      "bottomRightY": 277,
+      "content": "GC_ERROR TLGetInterfaceInfo ( TL_HANDLE hSystem,\n    const char * sIfaceID,\n    INTERFACE_INFO_CMD iInfoCmd,\n    INFO_DATATYPE * piType,\n    void * pBuffer,\n    size_t * piSize )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 285,
+      "bottomRightX": 637,
+      "bottomRightY": 339,
+      "content": "Inquire information about an interface on the given System module hSystem as defined in INTERFACE_INFO_CMD without opening the interface. The reported information should be in sync to information retrieved through the IFGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 375,
+      "bottomRightX": 166,
+      "bottomRightY": 390,
+      "content": "Parameters",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 394,
+      "bottomRightX": 636,
+      "bottomRightY": 704,
+      "content": "|  [in] | hSystem | System module to work on.  |\n| --- | --- | --- |\n|  [in] | sIfaceID | Unique ID of the interface to inquire information from. Like with theTLOpenInterfacefunction it is also possible to feed an alternative ID as long as the GenTL Producer knows how to interpret it.  |\n|  [in] | iInfoCmd | Information to be retrieved as defined inINTERFACE_INFO_CMD.  |\n|  [out] | piType | Data type of thepBuffercontent as defined in theINTERFACE_INFO_CMDandINFO_DATATYPE.  |\n|  [in,out] | pBuffer | Pointer to a user allocated buffer to receive the requested information. If this parameter isNULL,piSizewill contain the minimal size ofpBufferin bytes. If thepiTypeis a string the size includes the terminating 0.  |\n|  [in,out] | piSize | pBufferequal NULL:out: minimal size ofpBufferin bytes to hold all informationpBufferunequal NULL:in: size of the providedpBufferin bytesout: number of bytes filled by the function  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 718,
+      "bottomRightX": 141,
+      "bottomRightY": 734,
+      "content": "Returns",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 739,
+      "bottomRightX": 636,
+      "bottomRightY": 909,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hSystem is invalid (NULL) or does not reference an open System module retrieved through a call to TLOpen.  |\n|  GC_ERR_NOT_IMPLEMENTED | Specified iInfoCmd is not implemented.  |\n|  GC_ERR_INVALID_PARAMETER | Parameters piSize and/or piType are invalid pointers (NULL or ~0x0).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 71 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

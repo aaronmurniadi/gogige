@@ -1,0 +1,138 @@
+{
+  "index": 37,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 116,
+      "bottomRightX": 343,
+      "bottomRightY": 133,
+      "content": "[ R-009] The Descriptor is always transferred in Flow 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 151,
+      "bottomRightX": 337,
+      "bottomRightY": 169,
+      "content": "[ R-010] A Part must only be mapped to a single Flow.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 185,
+      "bottomRightX": 383,
+      "bottomRightY": 203,
+      "content": "[ R-011] Flow must be numbered sequentially starting from 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 220,
+      "bottomRightX": 708,
+      "bottomRightY": 340,
+      "content": "GenDC variable Container Transmission: In the context of data exchange between a Transmitter and a Receiver, if a GenDC Container has some elements that are variable (e.g. Component's Size Y, Region X,Y Offset, Data Size Timestamps, Sequence length...), the corresponding flag(s) of the \"VariableFields\" field of the Container Header must be set. If the \"VariableFields\" field is not null, a preliminary Descriptor should be sent to describe the characteristics of the maximum Container that will be transmitted. This preliminary Descriptor must represent the maximum size, number of Components and number of Parts that can be sent. Also, for variable Container, a final GenDC Descriptor including updated Container information must be sent immediately after transmission of the Container's data section.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 358,
+      "bottomRightX": 704,
+      "bottomRightY": 394,
+      "content": "[ CR-012] If a Container has variable content during the transmission the VariableFields flags of the Container must be set accordingly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 411,
+      "bottomRightX": 701,
+      "bottomRightY": 445,
+      "content": "[ CR-013] If any of the Container's VariableFields flags is set, a final Descriptor must be sent as soon as possible but at least just after the transmission of the data section.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 463,
+      "bottomRightX": 682,
+      "bottomRightY": 498,
+      "content": "GenDC Container Storage: A GenDC Container can be stored on external storage (e.g. as a file). If stored in GenDC binary format, it must use the extension \".gendc\" for the filename.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 514,
+      "bottomRightX": 714,
+      "bottomRightY": 549,
+      "content": "[ R-014] When storing a GenDC Container using the \".gendc\" file extension, the standard GenDC binary format must be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 566,
+      "bottomRightX": 462,
+      "bottomRightY": 584,
+      "content": "[ R-015] When storing a GenDC Container, a linear Container must be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 602,
+      "bottomRightX": 710,
+      "bottomRightY": 654,
+      "content": "GenDC Container Metadata: Metadata related to a Container must be added to the Container as an additional and separate Metadata Component (e.g. A Container including the Components of a 3D scene (Range, Confidence, ... ) with an additional GenICam Chunk Metadata Component to store the 3D scene additional information).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 671,
+      "bottomRightX": 641,
+      "bottomRightY": 688,
+      "content": "[ R-016] When adding metadata to a Container, this must be done using a separate Metadata Component.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 82,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1005,
+      "content": "Page 38 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

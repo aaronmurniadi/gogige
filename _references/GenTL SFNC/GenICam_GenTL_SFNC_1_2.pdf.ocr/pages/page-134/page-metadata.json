@@ -1,0 +1,67 @@
+{
+  "index": 133,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<I>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 167,
+      "bottomRightX": 314,
+      "bottomRightY": 190,
+      "content": "## 4 Acknowledgements",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 197,
+      "bottomRightX": 701,
+      "bottomRightY": 232,
+      "content": "The following companies have participated in the elaboration of the GenICam GenTL Standard Features Naming Convention:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 263,
+      "bottomRightX": 679,
+      "bottomRightY": 532,
+      "content": "|  Company | Represented by  |\n| --- | --- |\n|  Active Silicon | Jean-Philippe Arnaud, Chris Beynon  |\n|  Allied Vision | Holger Edelbüttel  |\n|  Groget | Jan Becvar  |\n|  STEMMER IMAGING | Rupert Stelz  |\n|  MathWorks | Mark Jones  |\n|  MATRIX VISION | Stefan Battmer  |\n|  Matrox Imaging | Stephane Maurice  |\n|  MVTec Software | Thomas Hopfner, Christoph Zierl  |\n|  SICK | Mattias Johannesson  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 134 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

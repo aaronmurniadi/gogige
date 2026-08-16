@@ -1,0 +1,7 @@
+Version 1.6
+
+GenTL Standard
+
+|  Enumerator | Global -Part /Impl | Value | Description  |
+| --- | --- | --- | --- |
+|  BUFFER_INFO_CHUNKLAYOUTID | G/CM | 24 | This information refers for example to the information provided in the GigE Vision image stream data leader. The chunk layout id serves as an indicator that the chunk layout has changed and the application should re-parse the chunk layout in the buffer. When a chunk layout (availability or position of individual chunks) changes since the last buffer delivered by the device through the same stream, the device must change the chunk layout id. As long as the chunk layout remains stable, the camera must keep the chunk layout id intact. When switching back to a layout, which was already used before, the camera can use the same id again or use a new id. A chunk layout id value of 0 is invalid. It is reserved for use by cameras not supporting the layout id functionality. The algorithm used to compute the chunk layout id is left as quality of implementation. For other technologies this is to be implemented accordingly. For GenDC payload the eventual chunk data must be processed based on the information in the GenDC descriptor, the GenTL Producer must return GC_ERR_NO_DATA in that case. Data type: UINT64  |

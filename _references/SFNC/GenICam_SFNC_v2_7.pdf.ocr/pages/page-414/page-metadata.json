@@ -1,0 +1,236 @@
+{
+  "index": 413,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 152,
+      "bottomRightX": 214,
+      "bottomRightY": 176,
+      "content": "## 22 Light Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 196,
+      "bottomRightX": 653,
+      "bottomRightY": 215,
+      "content": "The Lighting Control chapter describes the model and features related to the control of Lighting.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 247,
+      "bottomRightX": 728,
+      "bottomRightY": 283,
+      "content": "This features can be applied to dedicated Lighting Controller or to Cameras with integrated lighting control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 290,
+      "bottomRightX": 752,
+      "bottomRightY": 361,
+      "content": "Also, regular features such as the ones defined in Digital I/O Control and Counter and Timer Control can be used for lighting control (to generate strobe pulses, handle external IOs pins). Those features are already used in many cameras for basic Lighting Control (Ex: The sensor Exposure signal can be sent to an external output line to control a strobe light).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 377,
+      "bottomRightX": 451,
+      "bottomRightY": 399,
+      "content": "### 22.1 Existing Timer features for Light Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 425,
+      "bottomRightX": 626,
+      "bottomRightY": 442,
+      "content": "Many “Counter and Timer Control” features can be used to control Strobe pulse generation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 461,
+      "bottomRightX": 602,
+      "bottomRightY": 478,
+      "content": "For example, for pulse with duration in Time unit, the “Timer” features should be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 495,
+      "bottomRightX": 751,
+      "bottomRightY": 623,
+      "content": "TimerSelector = Timer1; // Select the Timer1.\nTimerDelay[Timer1] = 20; // Set the delay before the pulse starts to 20us.\nTimerDuration[Timer1] = 500; // Set the pulse duration to 500us.\nTimerTriggerSource = Line8; // Set external input Line 8 as Trigger source for the Timer1.\nTimerTriggerActivation = RisingEdge; // Choose rising edge to trigger the Timer1.\nLineSelector = Line1; // Select the external output Line 1.\nLineSource[Line1]=Timer1Active; // Put the Timer 1 output pulse its source.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 639,
+      "bottomRightX": 724,
+      "bottomRightY": 675,
+      "content": "“Counter” and “Rotary Encoder” features can also be used for discrete pulses counting or none time based pulse generation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 692,
+      "bottomRightX": 747,
+      "bottomRightY": 726,
+      "content": "Note also that events can be generated and sent to the user for most possible state changes of the Timers and Counters.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 728,
+      "bottomRightX": 184,
+      "bottomRightY": 745,
+      "content": "For example:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 747,
+      "bottomRightX": 650,
+      "bottomRightY": 763,
+      "content": "EventSelector = Timer1End; // Select Timer 1 End of active period event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 764,
+      "bottomRightX": 619,
+      "bottomRightY": 780,
+      "content": "EventNotification[Timer1End] = On; // Enable the event callback to the user.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 816,
+      "bottomRightX": 355,
+      "bottomRightY": 838,
+      "content": "### 22.2 Light Control Features usage",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 863,
+      "bottomRightX": 302,
+      "bottomRightY": 882,
+      "content": "Rating of the Light and Overdriving:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 888,
+      "bottomRightX": 473,
+      "bottomRightY": 905,
+      "content": "Normally lights have one of the following characteristics specified:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 906,
+      "bottomRightX": 666,
+      "bottomRightY": 942,
+      "content": "Current rating: The current needed to illuminate the light at 100% brightness\nVoltage rating: The voltage needed to illuminate the light at 100% brightness",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 414 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

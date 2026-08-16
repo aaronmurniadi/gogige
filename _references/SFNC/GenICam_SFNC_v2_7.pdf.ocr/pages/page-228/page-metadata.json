@@ -1,0 +1,141 @@
+{
+  "index": 227,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 603,
+      "bottomRightY": 243,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | RGBtoRGB RGBtoYUV Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 267,
+      "bottomRightX": 700,
+      "bottomRightY": 285,
+      "content": "Selects which Color Transformation module is controlled by the various Color Transformation features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 294,
+      "bottomRightX": 177,
+      "bottomRightY": 309,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 319,
+      "bottomRightX": 411,
+      "bottomRightY": 364,
+      "content": "- RGBtoRGB: RGB to RGB color transformation.\n- RGBtoYUV: RGB to YUV color transformation.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 372,
+      "bottomRightX": 588,
+      "bottomRightY": 390,
+      "content": "It is typically not available when a single Color Transformation module is supported.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 406,
+      "bottomRightX": 333,
+      "bottomRightY": 425,
+      "content": "### 8.3 ColorTransformationEnable",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 428,
+      "bottomRightX": 604,
+      "bottomRightY": 659,
+      "content": "|  Name | ColorTransformationEnable[ColorTransformationSelector]  |\n| --- | --- |\n|  Category | ColorTransformationControl  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 684,
+      "bottomRightX": 384,
+      "bottomRightY": 700,
+      "content": "Activates the selected Color Transformation module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 718,
+      "bottomRightX": 393,
+      "bottomRightY": 736,
+      "content": "### 8.4 ColorTransformationValueSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 739,
+      "bottomRightX": 604,
+      "bottomRightY": 928,
+      "content": "|  Name | ColorTransformationValueSelector[ColorTransformationSelector]  |\n| --- | --- |\n|  Category | ColorTransformationControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 228 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

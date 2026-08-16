@@ -1,0 +1,219 @@
+{
+  "index": 122,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 281,
+      "bottomRightY": 157,
+      "content": "#### 6.3.7 Signaling Functions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 169,
+      "bottomRightX": 218,
+      "bottomRightY": 185,
+      "content": "##### 6.3.7.1 EventFlush",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 209,
+      "bottomRightX": 565,
+      "bottomRightY": 226,
+      "content": "GC_ERROR EventFlush (EVENT_HANDLE hEvent)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 235,
+      "bottomRightX": 577,
+      "bottomRightY": 254,
+      "content": "Flushes all events in the given hEvent object. This call empties the event data queue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 267,
+      "bottomRightX": 166,
+      "bottomRightY": 281,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 286,
+      "bottomRightX": 458,
+      "bottomRightY": 305,
+      "content": "[in] hEvent Event handle to flush queue on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 317,
+      "bottomRightX": 141,
+      "bottomRightY": 332,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 338,
+      "bottomRightX": 569,
+      "bottomRightY": 357,
+      "content": "GC_ERR_SUCCESS Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 364,
+      "bottomRightX": 513,
+      "bottomRightY": 381,
+      "content": "GC_ERR_NOT_INITIALIZED No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 389,
+      "bottomRightX": 635,
+      "bottomRightY": 424,
+      "content": "GC_ERR_INVALID_HANDLE The handle hEvent is invalid (NULL) or does not reference a previously registered event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 454,
+      "bottomRightX": 635,
+      "bottomRightY": 489,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 501,
+      "bottomRightX": 234,
+      "bottomRightY": 519,
+      "content": "##### 6.3.7.2 EventGetData",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 541,
+      "bottomRightX": 583,
+      "bottomRightY": 608,
+      "content": "GC_ERROR EventGetData (EVENT_HANDLE hEvent,\nvoid * pBuffer,\nsize_t * piSize,\nuint64_t iTimeout)",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 617,
+      "bottomRightX": 603,
+      "bottomRightY": 634,
+      "content": "Retrieves the next event data entry from the event data queue associated with the hEvent.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 642,
+      "bottomRightX": 510,
+      "bottomRightY": 659,
+      "content": "The data content can be queried by the EventGetDataInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 665,
+      "bottomRightX": 635,
+      "bottomRightY": 718,
+      "content": "The default buffer size which can hold all the event data can be queried with the EventGetInfo function. This needs to be queried only once. The default size must not change during runtime.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 726,
+      "bottomRightX": 635,
+      "bottomRightY": 761,
+      "content": "In case of a New Buffer event the EventGetData function return the EVENT_NEW_BUFFER_DATA structure in the provided buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 769,
+      "bottomRightX": 635,
+      "bottomRightY": 804,
+      "content": "In case EventGetData returns an error (for example GC_ERR_ABORT) no event is removed from the internal queue and the event stays signaled. Event counters are not affected.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 816,
+      "bottomRightX": 166,
+      "bottomRightY": 833,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 837,
+      "bottomRightX": 616,
+      "bottomRightY": 904,
+      "content": "[in] hEvent Event handle to wait for.\n[out] pBuffer Pointer to a user allocated buffer to receive the event data. The data type of the buffer is dependent on the event ID of the hEvent. If this value is NULL the data is removed from",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 123 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

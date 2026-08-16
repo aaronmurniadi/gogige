@@ -1,0 +1,113 @@
+{
+  "index": 369,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  ![img-110.jpeg](img-110.jpeg) GEN<i>CAM |   | ![img-111.jpeg](img-111.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 700,
+      "bottomRightY": 213,
+      "content": "|  Intensity | 5 | 2 | Region 0 | 2D image | Mono8  |\n| --- | --- | --- | --- | --- | --- |\n|  Chunk data | (6) | - | All components chunk data if enabled (not shown). | (Chunk data) | GenICam Chunk  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 238,
+      "bottomRightX": 637,
+      "bottomRightY": 258,
+      "content": "If the setup is changed to have a data output with a 3D point cloud planar image by replacing:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 288,
+      "bottomRightX": 602,
+      "bottomRightY": 334,
+      "content": "ComponentSelector[Source1] = Disparity; // Disparity\nComponentEnable[Source1][Disparity] = True;\nPixelFormat[Source1][Disparity] = Coord3D_C16; // 3D disparity output format.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 350,
+      "bottomRightX": 71,
+      "bottomRightY": 369,
+      "content": "by",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 380,
+      "bottomRightX": 649,
+      "bottomRightY": 426,
+      "content": "ComponentSelector[Source1] = Range; // Range\nComponentEnable[Source1][Range] = True;\nPixelFormat[Source1][Range] = Coord3D_ABC16_Planar; // 3D point cloud output format.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 438,
+      "bottomRightX": 250,
+      "bottomRightY": 457,
+      "content": "formatting could be defined as:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 481,
+      "bottomRightX": 700,
+      "bottomRightY": 915,
+      "content": "|  Component | Part | Source | Region | data type | data format  |\n| --- | --- | --- | --- | --- | --- |\n|  Range | 0 | 1 | Region 0 | 3D plane of tri planar image | Coord3D_A16  |\n|  Range | 1 | 1 | Region 0 | 3D plane of tri planar image | Coord3D_B16  |\n|  Range | 2 | 1 | Region 0 | 3D plane of tri planar image | Coord3D_C16  |\n|  Confidence | 3 | 1 | Region 0 | 3D confidence image | Confidence8  |\n|  Intensity | 4 | 1 | Region 0 | 2D image | Mono8  |\n|  Range | 5 | 2 | Region 0 | 3D plane of tri planar image | Coord3D_A16  |\n|  Range | 6 | 2 | Region 0 | 3D plane of tri planar image | Coord3D_B16  |\n|  Range | 7 | 2 | Region 0 | 3D plane of tri planar image | Coord3D_C16  |\n|  Confidence | 8 | 2 | Region 0 | 3D confidence image | Confidence8  |\n|  Intensity | 9 | 2 | Region 0 | 2D image | Mono8  |\n|  Chunk data | 10 | - | All components chunk data if enabled (not shown). | (Chunk data) | GenICam Chunk  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 370 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "index": 444,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 143,
+      "bottomRightX": 726,
+      "bottomRightY": 198,
+      "content": "Initializes the magnification and makes it ready for use. The magnification position after initialization is implementation dependent. This feature is only implemented if an additional initialization is required after OpticControllerInitialize.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 213,
+      "bottomRightX": 329,
+      "bottomRightY": 232,
+      "content": "### 23.4.40 MagnificationStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 236,
+      "bottomRightX": 553,
+      "bottomRightY": 574,
+      "content": "|  Name | MagnificationStatus[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | NotConnected NotInitialized NotSupported Busy Ready Error Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 598,
+      "bottomRightX": 298,
+      "bottomRightY": 615,
+      "content": "Reads the status of the magnification.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 624,
+      "bottomRightX": 187,
+      "bottomRightY": 640,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 650,
+      "bottomRightX": 656,
+      "bottomRightY": 777,
+      "content": "- NotConnected: The magnification controller is physically not connected.\n- NotInitialized: The magnification controller is not initialized.\n- NotSupported: The magnification controller is physically connected but not supported.\n- Busy: The magnification controller executes a feature access/command.\n- Ready: The magnification controller is ready to use.\n- Error: The magnification controller encountered an error.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 795,
+      "bottomRightX": 272,
+      "bottomRightY": 816,
+      "content": "### 23.4.41 Magnification",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 818,
+      "bottomRightX": 497,
+      "bottomRightY": 927,
+      "content": "|  Name | Magnification[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 445 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

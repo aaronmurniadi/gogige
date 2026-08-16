@@ -1,0 +1,336 @@
+{
+  "index": 56,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 637,
+      "bottomRightY": 117,
+      "content": "|  GENICAM |   | ![img-73.jpeg](img-73.jpeg)emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 152,
+      "bottomRightX": 224,
+      "bottomRightY": 168,
+      "content": "RegisterDescription 20",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 168,
+      "bottomRightX": 203,
+      "bottomRightY": 183,
+      "content": "MajorVersion 21",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 184,
+      "bottomRightX": 203,
+      "bottomRightY": 200,
+      "content": "MinorVersion 21",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 202,
+      "bottomRightX": 195,
+      "bottomRightY": 216,
+      "content": "ModelName 20",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 219,
+      "bottomRightX": 215,
+      "bottomRightY": 232,
+      "content": "schemaLocation 21",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 234,
+      "bottomRightX": 248,
+      "bottomRightY": 250,
+      "content": "SchemaMajorVersion 21",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 252,
+      "bottomRightX": 249,
+      "bottomRightY": 266,
+      "content": "SchemaMinorVersion 21",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 268,
+      "bottomRightX": 271,
+      "bottomRightY": 282,
+      "content": "SchemaSubMinorVersion 21",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 284,
+      "bottomRightX": 243,
+      "bottomRightY": 301,
+      "content": "StandardNameSpace 20",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 302,
+      "bottomRightX": 226,
+      "bottomRightY": 317,
+      "content": "SubMinorVersion 21",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 318,
+      "bottomRightX": 169,
+      "bottomRightY": 333,
+      "content": "ToolTip 20",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 335,
+      "bottomRightX": 200,
+      "bottomRightY": 350,
+      "content": "VendorName 20",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 352,
+      "bottomRightX": 197,
+      "bottomRightY": 366,
+      "content": "VersionGuid 22",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 369,
+      "bottomRightX": 125,
+      "bottomRightY": 383,
+      "content": "—S—",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 385,
+      "bottomRightX": 185,
+      "bottomRightY": 399,
+      "content": "SmartFeature 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 401,
+      "bottomRightX": 180,
+      "bottomRightY": 416,
+      "content": "FeatureID 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 418,
+      "bottomRightX": 143,
+      "bottomRightY": 434,
+      "content": "String 38",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 379,
+      "topLeftY": 152,
+      "bottomRightX": 462,
+      "bottomRightY": 168,
+      "content": "StringReg 38",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 379,
+      "topLeftY": 168,
+      "bottomRightX": 461,
+      "bottomRightY": 183,
+      "content": "StructReg 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 184,
+      "bottomRightX": 475,
+      "bottomRightY": 200,
+      "content": "Comment 34",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 202,
+      "bottomRightX": 484,
+      "bottomRightY": 217,
+      "content": "StructEntry 34",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 219,
+      "bottomRightX": 470,
+      "bottomRightY": 232,
+      "content": "SwissKnife 38",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 234,
+      "bottomRightX": 470,
+      "bottomRightY": 250,
+      "content": "Constant 40",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 252,
+      "bottomRightX": 482,
+      "bottomRightY": 267,
+      "content": "Expression 40",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 268,
+      "bottomRightX": 467,
+      "bottomRightY": 282,
+      "content": "Formula 39",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 284,
+      "bottomRightX": 560,
+      "bottomRightY": 301,
+      "content": "mathematical operations 39",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 302,
+      "bottomRightX": 475,
+      "bottomRightY": 318,
+      "content": "pVariable 39",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 319,
+      "bottomRightX": 420,
+      "bottomRightY": 332,
+      "content": "—T—",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 335,
+      "bottomRightX": 459,
+      "bottomRightY": 350,
+      "content": "TextDesc 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 352,
+      "bottomRightX": 442,
+      "bottomRightY": 368,
+      "content": "Key 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 369,
+      "bottomRightX": 490,
+      "bottomRightY": 384,
+      "content": "p1212Parser 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 385,
+      "bottomRightX": 421,
+      "bottomRightY": 399,
+      "content": "—X—",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 401,
+      "bottomRightX": 482,
+      "bottomRightY": 417,
+      "content": "XML schema 10",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 957,
+      "bottomRightX": 300,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 57 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

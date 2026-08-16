@@ -1,0 +1,84 @@
+{
+  "index": 0,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 112,
+      "content": "|  GEN<i>CAM |   | ![img-0.jpeg](img-0.jpeg) emva  |\n| --- | --- | --- |\n|  V1.2 | CLProtocol Standard Module  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 244,
+      "topLeftY": 246,
+      "bottomRightX": 474,
+      "bottomRightY": 289,
+      "content": "# GEN< i> CAM",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 160,
+      "topLeftY": 375,
+      "bottomRightX": 561,
+      "bottomRightY": 417,
+      "content": "## CLProtocol Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 240,
+      "topLeftY": 485,
+      "bottomRightX": 479,
+      "bottomRightY": 507,
+      "content": "Using GenApi with Camera Link \\( ^{®} \\)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 634,
+      "bottomRightX": 415,
+      "bottomRightY": 655,
+      "content": "Version 1.2",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 960,
+      "bottomRightX": 245,
+      "bottomRightY": 975,
+      "content": "GenICam_CLProtocol_Standard",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 321,
+      "topLeftY": 960,
+      "bottomRightX": 421,
+      "bottomRightY": 975,
+      "content": "September 18, 2018",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 571,
+      "topLeftY": 960,
+      "bottomRightX": 635,
+      "bottomRightY": 975,
+      "content": "Page 1 of 13",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

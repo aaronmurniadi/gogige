@@ -1,0 +1,131 @@
+{
+  "index": 472,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 170,
+      "bottomRightX": 515,
+      "bottomRightY": 189,
+      "content": "Returns the last Timestamp latched with the TimestampLatch command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 203,
+      "bottomRightX": 311,
+      "bottomRightY": 223,
+      "content": "### 24.33 ChunkLineStatusAll",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 225,
+      "bottomRightX": 396,
+      "bottomRightY": 440,
+      "content": "|  Name | ChunkLineStatusAll  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 464,
+      "bottomRightX": 567,
+      "bottomRightY": 481,
+      "content": "Returns the status of all the I/O lines at the time of the FrameStart internal event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 497,
+      "bottomRightX": 335,
+      "bottomRightY": 517,
+      "content": "### 24.34 ChunkCounterSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 519,
+      "bottomRightX": 396,
+      "bottomRightY": 752,
+      "content": "|  Name | ChunkCounterSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Counter0 (If 0 based), Counter1, Counter2,...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 776,
+      "bottomRightX": 335,
+      "bottomRightY": 793,
+      "content": "Selects which counter to retrieve data from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 802,
+      "bottomRightX": 187,
+      "bottomRightY": 818,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 828,
+      "bottomRightX": 305,
+      "bottomRightY": 925,
+      "content": "- Counter0: Selects the counter 0.\n- Counter1: Selects the counter 1.\n- Counter2: Selects the counter 2.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 473 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

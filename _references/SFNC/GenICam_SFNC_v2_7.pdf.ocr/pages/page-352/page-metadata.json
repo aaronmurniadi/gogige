@@ -1,0 +1,167 @@
+{
+  "index": 351,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 514,
+      "bottomRightY": 242,
+      "content": "|  Access | Read  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 266,
+      "bottomRightX": 445,
+      "bottomRightY": 284,
+      "content": "Returns the number of Block(s) currently in the transfer queue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 299,
+      "bottomRightX": 277,
+      "bottomRightY": 318,
+      "content": "### 20.11 TransferQueueMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 321,
+      "bottomRightX": 514,
+      "bottomRightY": 553,
+      "content": "|  Name | TransferQueueMode[TransferSelector]  |\n| --- | --- |\n|  Category | TransferControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | FirstInFirstOut ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 578,
+      "bottomRightX": 371,
+      "bottomRightY": 596,
+      "content": "Specifies the operation mode of the transfer queue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 603,
+      "bottomRightX": 177,
+      "bottomRightY": 619,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 630,
+      "bottomRightX": 457,
+      "bottomRightY": 673,
+      "content": "- FirstInFirstOut: Blocks first In are transferred Out first.\n- ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 690,
+      "bottomRightX": 216,
+      "bottomRightY": 709,
+      "content": "### 20.12 TransferStart",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 713,
+      "bottomRightX": 514,
+      "bottomRightY": 926,
+      "content": "|  Name | TransferStart[TransferSelector]  |\n| --- | --- |\n|  Category | TransferControl  |\n|  Level | Optional  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 352 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

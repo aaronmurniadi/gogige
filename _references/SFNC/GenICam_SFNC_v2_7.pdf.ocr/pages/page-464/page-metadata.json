@@ -1,0 +1,58 @@
+{
+  "index": 463,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | ![img-150.jpeg](img-150.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 473,
+      "bottomRightY": 940,
+      "content": "|   | Coord3D_ABC8_PlanarCoord3D_A16Coord3D_B16Coord3D_C16Coord3D_ABC16Coord3D_ABC16_PlanarCoord3D_A32fCoord3D_B32fCoord3D_C32fCoord3D_ABC32fCoord3D_ABC32f_PlanarConfidence1Confidence1pConfidence8Confidence16Confidence32fData8Data8sData16Data16sData32Data32sData32fData64Data64sData64fRaw8Raw16Device-specific- GigE Vision Specific:Mono12PackedBayerGR10PackedBayerRG10PackedBayerGB10PackedBayerBG10PackedBayerGR12PackedBayerRG12PackedBayerGB12PackedBayerBG12Packed  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 464 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

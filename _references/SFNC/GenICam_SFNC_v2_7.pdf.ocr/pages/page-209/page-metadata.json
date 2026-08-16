@@ -1,0 +1,147 @@
+{
+  "index": 208,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 143,
+      "bottomRightX": 234,
+      "bottomRightY": 167,
+      "content": "## 6 Analog Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 174,
+      "bottomRightX": 730,
+      "bottomRightY": 211,
+      "content": "Features in this chapter describes how to influence the analog features of an image, such as gain, black level, white clip and gamma.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 217,
+      "bottomRightX": 701,
+      "bottomRightY": 254,
+      "content": "The **Gain**, **BlackLevel** and **Gamma** features will transform the original pixel value Y to a new value Y' according to the following formula:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 262,
+      "bottomRightX": 315,
+      "bottomRightY": 286,
+      "content": "$$Y' = [(Y + BlackLevel) \\cdot Gain]^{Gamma}$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 294,
+      "bottomRightX": 736,
+      "bottomRightY": 348,
+      "content": "For some color cameras in Raw or RGB mode, the red/blue channel can be white balanced with respect to the green channel using the Red and blue **BalanceRatio** gain. For cameras in YUV mode the U/V channel can be balanced with respect to the Y channel using the U and V **BalanceRatio**, according to:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 100,
+      "topLeftY": 355,
+      "bottomRightX": 310,
+      "bottomRightY": 375,
+      "content": "$$B' = B(BlueBalanceRatio \\cdot Gain)$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 384,
+      "bottomRightX": 724,
+      "bottomRightY": 421,
+      "content": "Other color camera controls each color channel gain independently, in which case, the Red, Green and Blue **Gain** features can be used for white balancing.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 428,
+      "bottomRightX": 745,
+      "bottomRightY": 482,
+      "content": "The automatic functions **GainAuto**, **BlackLevelAuto**, **BalanceWhiteAuto**, **GainAutoTapBalance** and **BlackLevelAutoTapBalance** can be used to auto-adjust a device once or continuously and to turn the function on and off.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 489,
+      "bottomRightX": 572,
+      "bottomRightY": 508,
+      "content": "Most of the automatic functions have 3 possible values: {**Off**, **Once**, **Continuous**}.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 516,
+      "bottomRightX": 754,
+      "bottomRightY": 623,
+      "content": "- **Off**: The automatic adjustment is disabled (ie. User control).\n- **Once**: The automatic adjustment is performed once by the device. The affected features report the effective values. If necessary, the feature is automatically set to \"Off\" after the adjustment.\n- **Continuous**: The automatic adjustment is continuously done by the device. The affected features report their effective values.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 631,
+      "bottomRightX": 730,
+      "bottomRightY": 667,
+      "content": "When a device has a specific auto-adjustment capability, it should have a corresponding feature allowing the necessary enumerations.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 209 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

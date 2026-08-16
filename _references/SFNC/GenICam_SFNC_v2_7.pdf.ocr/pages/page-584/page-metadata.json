@@ -1,0 +1,140 @@
+{
+  "index": 583,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 185,
+      "bottomRightX": 311,
+      "bottomRightY": 208,
+      "content": "### 29.3 Tap Geometry Drawings",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 233,
+      "bottomRightX": 339,
+      "bottomRightY": 257,
+      "content": "#### 29.3.1 Single Tap Geometry",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 263,
+      "bottomRightX": 240,
+      "bottomRightY": 284,
+      "content": "1X-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 322,
+      "topLeftY": 293,
+      "bottomRightX": 481,
+      "bottomRightY": 309,
+      "content": "1 zone in X, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 321,
+      "bottomRightX": 493,
+      "bottomRightY": 462,
+      "content": "![img-171.jpeg](img-171.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-171.jpeg"
+    },
+    {
+      "topLeftX": 268,
+      "topLeftY": 469,
+      "bottomRightX": 535,
+      "bottomRightY": 487,
+      "content": "Figure 29-1: Geometry 1X-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 521,
+      "bottomRightX": 208,
+      "bottomRightY": 540,
+      "content": "1X (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 363,
+      "topLeftY": 550,
+      "bottomRightX": 441,
+      "bottomRightY": 566,
+      "content": "1 zone in X.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 581,
+      "bottomRightX": 493,
+      "bottomRightY": 617,
+      "content": "![img-172.jpeg](img-172.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-172.jpeg"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 628,
+      "bottomRightX": 522,
+      "bottomRightY": 647,
+      "content": "Figure 29-2: Geometry 1X (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 584 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

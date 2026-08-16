@@ -1,0 +1,138 @@
+{
+  "index": 316,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 732,
+      "bottomRightY": 154,
+      "content": "The matching between sequencer sets and currently taken frames can be realized with chunk mode or events.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 186,
+      "bottomRightX": 331,
+      "bottomRightY": 210,
+      "content": "## 17.2 Sequencer usage examples",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 232,
+      "bottomRightX": 511,
+      "bottomRightY": 254,
+      "content": "### Example 1: Simple features change while acquiring images",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 279,
+      "bottomRightX": 726,
+      "bottomRightY": 314,
+      "content": "In this example, Set 0 and Set 1 are the main sets for the device (here a camera) to capture images. The only parameters within the sequencer sets are Exposure Time, Gain, Width and the (recommended)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 314,
+      "bottomRightX": 595,
+      "bottomRightY": 333,
+      "content": "SequencerPathSelector and therefore SequencerSetNext, SequencerTriggerSource.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 339,
+      "bottomRightX": 739,
+      "bottomRightY": 394,
+      "content": "Set 0 is like a free running mode. After every image capture the camera stays in set 0. If a change on Line0 occurs, the sequencer switches to set 1 but only for 1 image capture. The parameters of the singles sets are the following:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 401,
+      "bottomRightX": 398,
+      "bottomRightY": 553,
+      "content": "- Set 0:\n  - ExposureTime = 4000\n  - Gain = 1.0\n  - Width = 1024\n  - SequencerSetNext[0] = 0\n  - SequencerTriggerSource[0] = ExposureEnd\n  - SequencerSetNext[1] = 1\n  - SequencerTriggerSource[1] = Line0",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 570,
+      "bottomRightX": 137,
+      "bottomRightY": 586,
+      "content": "- Set 1:",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 590,
+      "bottomRightX": 398,
+      "bottomRightY": 684,
+      "content": "  - ExposureTime = 2000\n  - Gain = 2.0\n  - Width = 512\n  - SequencerSetNext[0] = 0\n  - SequencerTriggerSource[0] = ExposureEnd",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 709,
+      "bottomRightX": 397,
+      "bottomRightY": 728,
+      "content": "The working diagram is shown in the following figure:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 317 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

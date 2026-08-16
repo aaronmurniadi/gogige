@@ -1,0 +1,142 @@
+{
+  "index": 541,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 396,
+      "bottomRightY": 198,
+      "content": "|  Visibility | Guru  |\n| --- | --- |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 223,
+      "bottomRightX": 439,
+      "bottomRightY": 242,
+      "content": "Controls the destination IP address for the message channel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 257,
+      "bottomRightX": 242,
+      "bottomRightY": 274,
+      "content": "27.4.53 GevMCTT",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 279,
+      "bottomRightX": 396,
+      "bottomRightY": 492,
+      "content": "|  Name | GevMCTT  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | ms  |\n|  Visibility | Guru  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 517,
+      "bottomRightX": 415,
+      "bottomRightY": 534,
+      "content": "Provides the transmission timeout value in milliseconds.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 550,
+      "bottomRightX": 246,
+      "bottomRightY": 569,
+      "content": "27.4.54 GevMCRC",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 572,
+      "bottomRightX": 396,
+      "bottomRightY": 786,
+      "content": "|  Name | GevMCRC  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 811,
+      "bottomRightX": 641,
+      "bottomRightY": 829,
+      "content": "Controls the number of retransmissions allowed when a message channel message times out.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 845,
+      "bottomRightX": 245,
+      "bottomRightY": 863,
+      "content": "27.4.55 GevMCSP",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 867,
+      "bottomRightX": 396,
+      "bottomRightY": 948,
+      "content": "|  Name | GevMCSP  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 542 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

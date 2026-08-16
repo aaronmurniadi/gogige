@@ -1,0 +1,123 @@
+{
+  "index": 469,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | ![img-152.jpeg](img-152.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 144,
+      "bottomRightX": 367,
+      "bottomRightY": 166,
+      "content": "24.25 ChunkBinningHorizontal",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 394,
+      "bottomRightY": 380,
+      "content": "|  Name | ChunkBinningHorizontal  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 406,
+      "bottomRightX": 453,
+      "bottomRightY": 423,
+      "content": "Number of horizontal photo-sensitive cells combined together.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 437,
+      "bottomRightX": 344,
+      "bottomRightY": 459,
+      "content": "24.26 ChunkBinningVertical",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 461,
+      "bottomRightX": 394,
+      "bottomRightY": 673,
+      "content": "|  Name | ChunkBinningVertical  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 698,
+      "bottomRightX": 437,
+      "bottomRightY": 718,
+      "content": "Number of vertical photo-sensitive cells combined together.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 732,
+      "bottomRightX": 397,
+      "bottomRightY": 752,
+      "content": "24.27 ChunkDecimationHorizontal",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 755,
+      "bottomRightX": 394,
+      "bottomRightY": 941,
+      "content": "|  Name | ChunkDecimationHorizontal  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 470 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

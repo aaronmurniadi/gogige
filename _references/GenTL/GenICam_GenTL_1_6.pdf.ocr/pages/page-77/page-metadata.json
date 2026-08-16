@@ -1,0 +1,327 @@
+{
+  "index": 76,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-109.jpeg](img-109.jpeg) CAM |   | ![img-110.jpeg](img-110.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 138,
+      "bottomRightX": 295,
+      "bottomRightY": 157,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 173,
+      "content": "Parameters piSize and/or piType are invalid pointers (NULL or ~0x0)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 181,
+      "bottomRightX": 287,
+      "bottomRightY": 200,
+      "content": "GC_ERR_BUFFER_TOO_SMALL",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 181,
+      "bottomRightX": 635,
+      "bottomRightY": 215,
+      "content": "pBuffer is not NULL and the value of *piSize is too small to receive the expected amount of data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 223,
+      "bottomRightX": 261,
+      "bottomRightY": 242,
+      "content": "GC_ERR_NOT_AVAILABLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 223,
+      "bottomRightX": 635,
+      "bottomRightY": 258,
+      "content": "The request is implemented but the requested information is currently not available for any reason.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 287,
+      "bottomRightX": 635,
+      "bottomRightY": 322,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 334,
+      "bottomRightX": 237,
+      "bottomRightY": 351,
+      "content": "##### 6.3.3.3 IFGetDeviceID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 374,
+      "bottomRightX": 288,
+      "bottomRightY": 391,
+      "content": "GC_ERROR IFGetDeviceID",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 375,
+      "bottomRightX": 583,
+      "bottomRightY": 442,
+      "content": "( IF_HANDLE hIface,\n    uint32_t iIndex,\n    char * sDeviceID,\n    size_t * piSize )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 450,
+      "bottomRightX": 635,
+      "bottomRightY": 501,
+      "content": "Queries the unique ID of the device at iIndex in the internal device list. Prior to this call the IFUpdateDeviceList function must be called. The list content will not change until the next call of the update function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 508,
+      "bottomRightX": 468,
+      "bottomRightY": 525,
+      "content": "This function is not thread safe since it relies on an internal cache.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 540,
+      "bottomRightX": 166,
+      "bottomRightY": 555,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 560,
+      "bottomRightX": 174,
+      "bottomRightY": 577,
+      "content": "[in] hIface",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 560,
+      "bottomRightX": 443,
+      "bottomRightY": 576,
+      "content": "Interface module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 578,
+      "bottomRightX": 174,
+      "bottomRightY": 593,
+      "content": "[in] iIndex",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 577,
+      "bottomRightX": 554,
+      "bottomRightY": 592,
+      "content": "Zero-based index of the device on this interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 594,
+      "bottomRightX": 199,
+      "bottomRightY": 610,
+      "content": "[in,out] sDeviceID",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 594,
+      "bottomRightX": 612,
+      "bottomRightY": 661,
+      "content": "Pointer to a user allocated C string buffer to receive the Device module ID at the given iIndex. If this parameter is NULL, piSize will contain the needed size of sDeviceID in bytes. The size includes the terminating 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 663,
+      "bottomRightX": 173,
+      "bottomRightY": 681,
+      "content": "[in,out] piSize",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 663,
+      "bottomRightX": 413,
+      "bottomRightY": 680,
+      "content": "sDeviceID equal NULL:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 681,
+      "bottomRightX": 568,
+      "bottomRightY": 711,
+      "content": "out: minimal size of sDeviceID in bytes to hold all information",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 714,
+      "bottomRightX": 427,
+      "bottomRightY": 731,
+      "content": "sDeviceID unequal NULL:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 732,
+      "bottomRightX": 523,
+      "bottomRightY": 748,
+      "content": "in: size of the provided sDeviceID in bytes",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 749,
+      "bottomRightX": 520,
+      "bottomRightY": 764,
+      "content": "out: number of bytes filled by the function",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 779,
+      "bottomRightX": 141,
+      "bottomRightY": 794,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 800,
+      "bottomRightX": 208,
+      "bottomRightY": 817,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 800,
+      "bottomRightX": 568,
+      "bottomRightY": 817,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 825,
+      "bottomRightX": 278,
+      "bottomRightY": 843,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 825,
+      "bottomRightX": 512,
+      "bottomRightY": 843,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 851,
+      "bottomRightX": 269,
+      "bottomRightY": 868,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 850,
+      "bottomRightX": 635,
+      "bottomRightY": 903,
+      "content": "The handle hIface is invalid (NULL) or does not reference an open Interface module retrieved through a call to TLOpenInterface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 77 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "index": 529,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 394,
+      "bottomRightY": 251,
+      "content": "|  Access | Read  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 273,
+      "bottomRightX": 705,
+      "bottomRightY": 313,
+      "content": "Indicates the first URL to the GenICam XML device description file. The First URL is used as the first choice by the application to retrieve the GenICam XML device description file.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 325,
+      "bottomRightX": 405,
+      "bottomRightY": 348,
+      "content": "#### 27.4.25 GevSecondURL(Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 349,
+      "bottomRightX": 394,
+      "bottomRightY": 562,
+      "content": "|  Name | GevSecondURL  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  sequInterface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 586,
+      "bottomRightX": 718,
+      "bottomRightY": 625,
+      "content": "Indicates the second URL to the GenICam XML device description file. This URL is an alternative if the application was unsuccessful to retrieve the device description file using the first URL.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 638,
+      "bottomRightX": 481,
+      "bottomRightY": 660,
+      "content": "#### 27.4.26 GevNumberOfInterfaces (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 662,
+      "bottomRightX": 394,
+      "bottomRightY": 875,
+      "content": "|  Name | GevNumberOfInterfaces  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 898,
+      "bottomRightX": 687,
+      "bottomRightY": 936,
+      "content": "This feature is deprecated (See DeviceLinkSelector). It was representing the number of logical links supported by this device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 951,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 951,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 530 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

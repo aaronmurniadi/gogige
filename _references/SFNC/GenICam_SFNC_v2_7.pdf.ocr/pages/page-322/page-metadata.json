@@ -1,0 +1,158 @@
+{
+  "index": 321,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 514,
+      "bottomRightY": 285,
+      "content": "|  Interface | IBoolean  |\n| --- | --- |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 309,
+      "bottomRightX": 500,
+      "bottomRightY": 329,
+      "content": "Enables the selected feature and make it active in all the sequencer sets.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 344,
+      "bottomRightX": 285,
+      "bottomRightY": 365,
+      "content": "### 17.9 SequencerSetSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 366,
+      "bottomRightX": 514,
+      "bottomRightY": 579,
+      "content": "|  Name | SequencerSetSelector  |\n| --- | --- |\n|  Category | SequencerControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 604,
+      "bottomRightX": 462,
+      "bottomRightY": 623,
+      "content": "Selects the sequencer set to which further feature settings applies.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 638,
+      "bottomRightX": 264,
+      "bottomRightY": 658,
+      "content": "### 17.10 SequencerSetSave",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 660,
+      "bottomRightX": 514,
+      "bottomRightY": 872,
+      "content": "|  Name | SequencerSetSave[SequencerSetSelector]  |\n| --- | --- |\n|  Category | SequencerControl  |\n|  Level | Recommended  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 898,
+      "bottomRightX": 611,
+      "bottomRightY": 917,
+      "content": "Saves the current device state to the sequencer set selected by the SequencerSetSelector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 322 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

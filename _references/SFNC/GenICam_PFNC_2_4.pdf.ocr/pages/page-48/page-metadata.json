@@ -1,0 +1,194 @@
+{
+  "index": 47,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 751,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 151,
+      "bottomRightX": 262,
+      "bottomRightY": 167,
+      "content": "Replacing (8) into (7) leads to:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 117,
+      "topLeftY": 169,
+      "bottomRightX": 681,
+      "bottomRightY": 272,
+      "content": "|  Y' = 0.299 R' + 0.587 G' + 0.114 B'  |\n| --- |\n|  Cb = -0.16874 R' - 0.33126 G' + 0.5000 B' + 128  |\n|  Cr = 0.5000 R' - 0.41869 G' - 0.08131 B' + 128  |\n|  with R', G' and B' in the range [0, 255].  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 188,
+      "topLeftY": 280,
+      "bottomRightX": 623,
+      "bottomRightY": 298,
+      "content": "Equation 2 : Generic full scale R'G'B' to Y'CbCr conversion (8 bits)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 331,
+      "bottomRightX": 462,
+      "bottomRightY": 349,
+      "content": "For 8-bit data, the valid range of values for each component is:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 354,
+      "bottomRightX": 665,
+      "bottomRightY": 400,
+      "content": "❖ Y', R', G' and B' in range [0, 255], unsigned (256 levels)\n❖ Cb and Cr in range [0, 255], signed shifted by 128, with 128 representing 0 (256 levels)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 408,
+      "bottomRightX": 346,
+      "bottomRightY": 426,
+      "content": "Values must be truncated to fit in that range.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 459,
+      "bottomRightX": 700,
+      "bottomRightY": 493,
+      "content": "Note that the above equations are the ones specified by the JFIF specification (JPEG File Interchange Format).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 528,
+      "bottomRightX": 291,
+      "bottomRightY": 546,
+      "content": "The reverse equations are given by:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 117,
+      "topLeftY": 546,
+      "bottomRightX": 681,
+      "bottomRightY": 649,
+      "content": "|  R' = Y' + 1.40200 (Cr - 128)  |\n| --- |\n|  G' = Y' - 0.34414 (Cb - 128) - 0.71414 (Cr - 128)  |\n|  B' = Y' + 1.77200 (Cb - 128)  |\n|  with Y', Cb and Cr in the range [0, 255].  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 188,
+      "topLeftY": 656,
+      "bottomRightX": 623,
+      "bottomRightY": 675,
+      "content": "Equation 3 : Generic full scale Y'CbCr to R'G'B' conversion (8 bits)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 708,
+      "bottomRightX": 717,
+      "bottomRightY": 743,
+      "content": "Equivalently, the same set of equations can be used for generic YUV where the range of values for each component must use the full 8-bit. In this case, U = Cb and V = Cr.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 784,
+      "bottomRightX": 250,
+      "bottomRightY": 804,
+      "content": "### 8.2.2 Y'CbCr601 (8-bit)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 811,
+      "bottomRightX": 743,
+      "bottomRightY": 830,
+      "content": "ITU-R BT.601 provides a definition of the Y', Cb and Cr based on (1). It defines the following signal range:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 837,
+      "bottomRightX": 694,
+      "bottomRightY": 855,
+      "content": "Y' in the range [16, 235] (9)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 862,
+      "bottomRightX": 320,
+      "bottomRightY": 882,
+      "content": "Cb and Cr in the range [16, 240]",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 913,
+      "bottomRightX": 671,
+      "bottomRightY": 933,
+      "content": "Since BT.601 is based on (1), it leads to the same color difference signal indicated in (5) and (6).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 48 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

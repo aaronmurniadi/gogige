@@ -1,0 +1,103 @@
+{
+  "index": 480,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 159,
+      "topLeftY": 54,
+      "bottomRightX": 304,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM</i></td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 143,
+      "bottomRightX": 360,
+      "bottomRightY": 164,
+      "content": "### 24.46 ChunkBlackLevelSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 167,
+      "bottomRightX": 396,
+      "bottomRightY": 498,
+      "content": "|  Name | ChunkBlackLevelSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | All Red Green Blue Y U V Tap1, Tap2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 523,
+      "bottomRightX": 416,
+      "bottomRightY": 541,
+      "content": "Selects which Black Level to return. Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 550,
+      "bottomRightX": 456,
+      "bottomRightY": 808,
+      "content": "- All: Black Level will be applied to all channels or taps.\n- Red: Black Level will be applied to the red channel.\n- Green: Black Level will be applied to the green channel.\n- Blue: Black Level will be applied to the blue channel.\n- Y: Black Level will be applied to Y channel.\n- U: Black Level will be applied to U channel.\n- V: Black Level will be applied to V channel.\n- Tap1: Black Level will be applied to Tap 1.\n- Tap2: Black Level will be applied to Tap 2.\n- ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 824,
+      "bottomRightX": 290,
+      "bottomRightY": 844,
+      "content": "### 24.47 ChunkBlackLevel",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 847,
+      "bottomRightX": 477,
+      "bottomRightY": 929,
+      "content": "|  Name | ChunkBlackLevel[ChunkBlackLevelSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 481 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

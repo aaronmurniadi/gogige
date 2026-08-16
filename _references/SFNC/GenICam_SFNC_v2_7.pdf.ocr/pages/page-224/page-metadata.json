@@ -1,0 +1,176 @@
+{
+  "index": 223,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 570,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 102,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 298,
+      "bottomRightY": 179,
+      "content": "- Green: Selects the Green LUT.\n- Blue: Selects the Blue LUT.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 189,
+      "bottomRightX": 523,
+      "bottomRightY": 208,
+      "content": "This feature is typically not available when only a single LUT is supported.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 222,
+      "bottomRightX": 187,
+      "bottomRightY": 242,
+      "content": "### 7.3 LUTEnable",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 244,
+      "bottomRightX": 386,
+      "bottomRightY": 476,
+      "content": "|  Name | LUTEnable[LUTSelector]  |\n| --- | --- |\n|  Category | LUTControl  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 500,
+      "bottomRightX": 229,
+      "bottomRightY": 516,
+      "content": "Activates the selected LUT.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 532,
+      "bottomRightX": 174,
+      "bottomRightY": 552,
+      "content": "### 7.4 LUTIndex",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 556,
+      "bottomRightX": 386,
+      "bottomRightY": 770,
+      "content": "|  Name | LUTIndex[LUTSelector]  |\n| --- | --- |\n|  Category | LUTControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 794,
+      "bottomRightX": 513,
+      "bottomRightY": 811,
+      "content": "Control the index (offset) of the coefficient to access in the selected LUT.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 828,
+      "bottomRightX": 177,
+      "bottomRightY": 848,
+      "content": "### 7.5 LUTValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 850,
+      "bottomRightX": 414,
+      "bottomRightY": 933,
+      "content": "|  Name | LUTValue[LUTSelector][LUTIndex]  |\n| --- | --- |\n|  Category | LUTControl  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 224 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

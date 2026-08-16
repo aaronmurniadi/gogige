@@ -1,0 +1,157 @@
+{
+  "index": 291,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 150,
+      "bottomRightX": 499,
+      "bottomRightY": 349,
+      "content": "TimerSelector         = Timer1;\nTimerDuration         = 200;\nTimerTriggerSource     = Action3;\n\nLineSelector           = Line2;\nLineMode               = Output;\nLineSource             = Timer1Active;\n\nActionDeviceKey        = 0x12345678;\nActionSelector         = 3;\nActionGroupKey          = 0x1;\nActionGroupMask         = 0x7;\n\n// Here the Device is ready to receive the Action Command\n// from an external source.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 25,
+      "topLeftY": 397,
+      "bottomRightX": 299,
+      "bottomRightY": 418,
+      "content": "## 14.2 Action Control Features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 449,
+      "bottomRightX": 361,
+      "bottomRightY": 466,
+      "content": "This section describes the action control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 482,
+      "bottomRightX": 269,
+      "bottomRightY": 502,
+      "content": "### 14.2.1 ActionControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 504,
+      "bottomRightX": 386,
+      "bottomRightY": 718,
+      "content": "|  Name | ActionControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 743,
+      "bottomRightX": 369,
+      "bottomRightY": 761,
+      "content": "Category that contains the Action control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 776,
+      "bottomRightX": 372,
+      "bottomRightY": 796,
+      "content": "### 14.2.2 ActionUnconditionalMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 798,
+      "bottomRightX": 495,
+      "bottomRightY": 933,
+      "content": "|  Name | ActionUnconditionalMode  |\n| --- | --- |\n|  Category | ActionControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 292 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

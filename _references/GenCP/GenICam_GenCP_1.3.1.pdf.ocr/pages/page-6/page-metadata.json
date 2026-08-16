@@ -1,0 +1,58 @@
+{
+  "index": 5,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  **GEN<i>CAM** |   |   |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 156,
+      "bottomRightX": 172,
+      "bottomRightY": 174,
+      "content": "## List of Tables",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 191,
+      "bottomRightX": 657,
+      "bottomRightY": 823,
+      "content": "|  Table 1 – Acronyms ... 10  |\n| --- |\n|  Table 2 – Event ID ... 20  |\n|  Table 3 – GenCP Event IDs ... 20  |\n|  Table 4 – Common Command Data ... 30  |\n|  Table 5 – Acknowledge layout ... 31  |\n|  Table 6 – Status Codes ... 34  |\n|  Table 7 – Command Identifier ... 36  |\n|  Table 8 – ReadMem SCD-Fields ... 37  |\n|  Table 9 – ReadMem Ack SCD-Fields ... 37  |\n|  Table 10 – WriteMem Command SCD-Fields ... 38  |\n|  Table 11 – WriteMem Ack SCD-Fields ... 38  |\n|  Table 12 – Pending Ack SCD-Fields ... 39  |\n|  Table 13 – ReadMemStacked SCD-Fields ... 40  |\n|  Table 14 – ReadMemStacked Ack SCD-Fields ... 41  |\n|  Table 15 – WriteMemStacked Command SCD-Fields ... 42  |\n|  Table 16 – WriteMemStacked Ack SCD-Fields ... 43  |\n|  Table 17 – Event Command SCD-Fields ... 44  |\n|  Table 18 – Event Acknowledge SCD-Fields ... 45  |\n|  Table 19 – Technology agnostic BRM ... 48  |\n|  Table 20 – Register GenCP Version ... 49  |\n|  Table 21 – Register Device Capabilities ... 54  |\n|  Table 22 – Register Maximum Device Response Time ... 55  |\n|  Table 23 – Register Manifest Table Offset ... 56  |\n|  Table 24 – Register Technology Specific Bootstrap Register Map ... 57  |\n|  Table 25 – Register Device Configuration ... 57  |\n|  Table 26 – Register Heartbeat Timeout ... 58  |\n|  Table 27 – Register Message Channel ID ... 58  |\n|  Table 28 – Register Timestamp ... 60  |\n|  Table 29 – Register Timestamp Latch ... 61  |\n|  Table 30 – Register Timestamp Increment ... 62  |\n|  Table 31 – Register Access Privilege ... 63  |\n|  Table 32 – Register - Implementation Endianness ... 64  |\n|  Table 33 – Manifest Table Layout ... 66  |\n|  Table 34 – Manifest Entry Layout ... 68  |\n|  Table 35 – Serial Prefix ... 71  |\n|  Table 36 – Serial BRM ... 72  |\n|  Table 37 – Register – Serial – Supported Baudrates ... 73  |\n|  Table 38 – Register – Serial – Current Baudrate ... 74  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 929,
+      "bottomRightX": 393,
+      "bottomRightY": 949,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 538,
+      "topLeftY": 929,
+      "bottomRightX": 620,
+      "bottomRightY": 949,
+      "content": "Page 6 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

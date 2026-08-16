@@ -1,0 +1,149 @@
+{
+  "index": 149,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 533,
+      "bottomRightY": 79,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 75,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 75,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 118,
+      "bottomRightX": 441,
+      "bottomRightY": 245,
+      "content": "|  Interface | IInteger  |\n| --- | --- |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 266,
+      "bottomRightX": 637,
+      "bottomRightY": 316,
+      "content": "Minimum value that can be returned during the digitization process. This corresponds to the darkest value of the camera. For color camera, this returns the smallest value that each color component can take.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 331,
+      "bottomRightX": 293,
+      "bottomRightY": 352,
+      "content": "### 4.42 PixelDynamicRangeMax",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 353,
+      "bottomRightX": 443,
+      "bottomRightY": 552,
+      "content": "|  Name | PixelDynamicRangeMax[ComponentSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 576,
+      "bottomRightX": 650,
+      "bottomRightY": 624,
+      "content": "Maximum value that will be returned during the digitization process. This corresponds to the brightest value of the camera. For color camera, this returns the biggest value that each color component can take.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 647,
+      "bottomRightX": 340,
+      "bottomRightY": 665,
+      "content": "### 4.43 TestPatternGeneratorSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 667,
+      "bottomRightX": 476,
+      "bottomRightY": 927,
+      "content": "|  Name | TestPatternGeneratorSelector  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Sensor Region0 (if 0 based) Region1 Region2 ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 150 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

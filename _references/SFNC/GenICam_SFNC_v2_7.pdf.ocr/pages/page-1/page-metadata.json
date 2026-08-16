@@ -1,0 +1,111 @@
+{
+  "index": 0,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 159,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 73,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 177,
+      "topLeftY": 72,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 577,
+      "bottomRightY": 77,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 579,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 173,
+      "topLeftY": 207,
+      "bottomRightX": 614,
+      "bottomRightY": 442,
+      "content": "# GenICam\nStandard Features\nNaming Convention\n(SFNC)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 331,
+      "topLeftY": 492,
+      "bottomRightX": 459,
+      "bottomRightY": 514,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 631,
+      "bottomRightX": 515,
+      "bottomRightY": 677,
+      "content": "![img-0.jpeg](img-0.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-0.jpeg"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1005,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 299,
+      "topLeftY": 989,
+      "bottomRightX": 386,
+      "bottomRightY": 1007,
+      "content": "Page 1 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

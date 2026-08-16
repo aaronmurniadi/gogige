@@ -1,0 +1,193 @@
+{
+  "index": 219,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM</i></td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 570,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 467,
+      "bottomRightY": 394,
+      "content": "- All: Balance Ratio will be applied to all channels or taps.\n- Red: Balance Ratio will be applied to the red channel.\n- Green: Balance Ratio will be applied to the green channel.\n- Blue: Balance Ratio will be applied to the blue channel.\n- Y: Balance Ratio will be applied to Y channel.\n- U: Balance Ratio will be applied to U channel.\n- V: Balance Ratio will be applied to V channel.\n- Tap1: Balance Ratio will be applied to Tap 1.\n- Tap2: Balance Ratio will be applied to Tap 2.\n- ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 411,
+      "bottomRightX": 216,
+      "bottomRightY": 430,
+      "content": "### 6.13 BalanceRatio",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 431,
+      "bottomRightX": 408,
+      "bottomRightY": 645,
+      "content": "|  Name | BalanceRatio[BalanceRatioSelector]  |\n| --- | --- |\n|  Category | AnalogControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0.0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 671,
+      "bottomRightX": 732,
+      "bottomRightY": 689,
+      "content": "Controls ratio of the selected color component to a reference color component. It is used for white balancing.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 695,
+      "bottomRightX": 481,
+      "bottomRightY": 715,
+      "content": "For example, the Color balance is realized by the following formula:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 721,
+      "bottomRightX": 206,
+      "bottomRightY": 740,
+      "content": "$$C_w = \\text{BalanceRatio} \\times C$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 749,
+      "bottomRightX": 94,
+      "bottomRightY": 764,
+      "content": "where",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 773,
+      "bottomRightX": 530,
+      "bottomRightY": 793,
+      "content": "Cw is the intensity of selected color component after white balancing.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 799,
+      "bottomRightX": 390,
+      "bottomRightY": 816,
+      "content": "BalanceRatio is the white balance coefficient.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 824,
+      "bottomRightX": 503,
+      "bottomRightY": 844,
+      "content": "C is the intensity of the color component before white balancing.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 888,
+      "bottomRightX": 261,
+      "bottomRightY": 907,
+      "content": "### 6.14 BalanceWhiteAuto",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 910,
+      "bottomRightX": 385,
+      "bottomRightY": 940,
+      "content": "|  Name | BalanceWhiteAuto  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 220 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

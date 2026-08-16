@@ -1,0 +1,85 @@
+{
+  "index": 64,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 49,
+      "topLeftY": 24,
+      "bottomRightX": 701,
+      "bottomRightY": 99,
+      "content": "|  **GEN<i>CAM** |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 365,
+      "topLeftY": 109,
+      "bottomRightX": 610,
+      "bottomRightY": 126,
+      "content": "Table 2-15: Sequencer Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 131,
+      "bottomRightX": 921,
+      "bottomRightY": 571,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  SequencerControl | O | ICategory | R | - | E | Category for the Sequencer Control features.  |\n|  SequencerMode | R | IEnumeration | R/W | - | E | Controls if the sequencer mechanism is active.  |\n|  SequencerConfigurationMode | R | IEnumeration | R/W | - | E | Controls if the sequencer configuration mode is active.  |\n|  SequencerFeatureSelector | R | IEnumeration | R/W | - | E | Selects which sequencer features to control.  |\n|  SequencerFeatureEnable[SequencerFeatureSelector] | R | IBoolean | R/(W) | - | E | Enables the selected feature and make it active in all the sequencer sets.  |\n|  SequencerSetSelector | R | IInteger | R/W | - | E | Selects the sequencer set to which further feature settings applies.  |\n|  SequencerSetSave[SequencerSetSelector] | R | ICommand | (R)/W | - | E | Saves the current device state to the sequencer set selected by the SequencerSetSelector.  |\n|  SequencerSetLoad[SequencerSetSelector] | R | ICommand | (R)/W | - | E | Loads the sequencer set selected by SequencerSetSelector in the device.  |\n|  SequencerSetActive | O | IInteger | R | - | E | Contains the currently active sequencer set.  |\n|  SequencerSetStart | R | IInteger | R/W | - | E | Sets the initial/start sequencer set, which is the first set used within a sequencer.  |\n|  SequencerPathSelector[SequencerSetSelector] | R | IInteger | R/W | - | E | Selects to which branching path further path settings applies.  |\n|  SequencerSetNext[SequencerSetSelector][SequencerPathSelector] | R | IInteger | R/W | - | E | Specifies the next sequencer set.  |\n|  SequencerTriggerSource[SequencerSetSelector][SequencerPathSelector] | R | IEnumeration | R/W | - | E | Specifies the internal signal or physical input line to use as the sequencer trigger source.  |\n|  SequencerTriggerActivation[SequencerSetSelector][SequencerPathSelector] | R | IEnumeration | R/W | - | E | Specifies the activation mode of the sequencer trigger.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 602,
+      "bottomRightX": 272,
+      "bottomRightY": 621,
+      "content": "## 2.16 File Access Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 625,
+      "bottomRightX": 765,
+      "bottomRightY": 642,
+      "content": "Contains the features related to the generic file access of a device (See the File Access Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 651,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 65 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

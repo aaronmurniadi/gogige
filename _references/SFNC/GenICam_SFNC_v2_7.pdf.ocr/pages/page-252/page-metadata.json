@@ -1,0 +1,102 @@
+{
+  "index": 251,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 135,
+      "bottomRightX": 340,
+      "bottomRightY": 157,
+      "content": "### 10.3.11 CounterTriggerSource",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 159,
+      "bottomRightX": 441,
+      "bottomRightY": 950,
+      "content": "|  Name | CounterTriggerSource[CounterSelector]  |\n| --- | --- |\n|  Category | CounterAndTimerControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Off AcquisitionTrigger AcquisitionTriggerMissed AcquisitionStart AcquisitionEnd FrameTrigger FrameTriggerMissed FrameStart FrameEnd FrameBurstStart FrameBurstEnd LineTrigger LineTriggerMissed LineStart LineEnd ExposureStart ExposureEnd Line0 (If 0 based), Line1, Line2, ... UserOutput0, UserOutput1, UserOutput2,... Counter0Start (If 0 based), Counter1Start, Counter2Start, ... Counter0End (if 0 based), Counter1End, Counter2End, ... Timer0Start (If 0 based), Timer1Start, Timer2Start, ... Timer0End (if 0 based), Timer1End, Timer2End, ... Encoder0 (if 0 based), Encoder1, Encoder2, ... LogicBlock0 (if 0 based), LogicBlock1, LogicBlock2, ... SoftwareSignal0 (If 0 based), SoftwareSignal1, SoftwareSignal2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 953,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 953,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 252 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

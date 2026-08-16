@@ -1,0 +1,114 @@
+{
+  "index": 432,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  ![img-141.jpeg](img-141.jpeg) GEN<ì>CAM |   | ![img-142.jpeg](img-142.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 498,
+      "bottomRightY": 303,
+      "content": "|  Level | Optional  |\n| --- | --- |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 328,
+      "bottomRightX": 726,
+      "bottomRightY": 365,
+      "content": "Sets the aperture (also called iris, f-number, f-stop or f/#) of the lens. The lower the f/# the more light goes through the lens (the “faster” the lens) and the smaller the depth of field.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 404,
+      "bottomRightX": 299,
+      "bottomRightY": 426,
+      "content": "23.4.17 ApertureStepper",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 427,
+      "bottomRightX": 498,
+      "bottomRightY": 641,
+      "content": "|  Name | ApertureStepper[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 665,
+      "bottomRightX": 602,
+      "bottomRightY": 684,
+      "content": "ApertureStepper controls the stepper value of the aperture. 0 is the maximum opening.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 698,
+      "bottomRightX": 320,
+      "bottomRightY": 719,
+      "content": "23.4.18 NumericalAperture",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 721,
+      "bottomRightX": 498,
+      "bottomRightY": 934,
+      "content": "|  Name | NumericalAperture[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 433 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "index": 31,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-31.jpeg](img-31.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 130,
+      "topLeftY": 156,
+      "bottomRightX": 306,
+      "bottomRightY": 173,
+      "content": "##### 4.3.2.1. Status Codes",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 196,
+      "bottomRightX": 652,
+      "bottomRightY": 231,
+      "content": "This section lists status codes that can be returned through an acknowledge packet. Each status code has 16 bits. The bits within the Status Code have the following meanings:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 150,
+      "topLeftY": 259,
+      "bottomRightX": 569,
+      "bottomRightY": 469,
+      "content": "|  Bit offset (lsb << x) | Width (bits) | Description  |\n| --- | --- | --- |\n|  0 | 12 | Status Code  |\n|  12 | 1 | ReservedSet to 0  |\n|  13 | 2 | Namespace0 = GenCP Status Code1 = Technology specific Code2 = Device specific Code  |\n|  15 | 1 | Severity0 = Warning/Info1 = Error  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 492,
+      "bottomRightX": 648,
+      "bottomRightY": 543,
+      "content": "Warning and Info Status Codes indicate that the command was correctly executed and that the device resumes operation. For example, if a float value needed to be rounded it would be a warning but the rounded value has been set.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 32 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

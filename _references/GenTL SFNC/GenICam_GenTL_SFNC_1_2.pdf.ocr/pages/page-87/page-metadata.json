@@ -1,0 +1,94 @@
+{
+  "index": 86,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 680,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 355,
+      "bottomRightY": 174,
+      "content": "### 3.3.1.15 DeviceEventDataFormat",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 177,
+      "bottomRightX": 421,
+      "bottomRightY": 445,
+      "content": "|  Name | DeviceEventDataFormat  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | None GigEVision GigEVisionExtendedId Custom  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 479,
+      "bottomRightX": 694,
+      "bottomRightY": 570,
+      "content": "Enumeration, informing about the event data format used by the device (meaning the \"device events\", see event type EVENT_REMOTE_DEVICE (named EVENT_FEATURE_DEVEVENT in GenTL up to version 1.4). This allows devices based on other technologies or protocols than \"standard\" ones such as GigE Vision to inform the GenTL Consumer about the event data layout they use.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 588,
+      "bottomRightX": 687,
+      "bottomRightY": 625,
+      "content": "In contrast, one can assume that any generic GenTL Consumer will understand the GigE Vision event format because the GigE Vision event adapter is readily available",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 642,
+      "bottomRightX": 652,
+      "bottomRightY": 679,
+      "content": "Note that GenTL Consumers having access to a generic event adapter can use this adapter without caring about the actual data layout.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 696,
+      "bottomRightX": 698,
+      "bottomRightY": 893,
+      "content": "- None: The device does not use event data at all.\n- GigEVision: The device formats the event data using the event data format defined by GigE Vision specification version 1.x. The event data decoding algorithm (event adapter) common for the GigE Vision devices can be used.\n- GigEVisionExtendedId: The device formats the event data using the event data format defined by GigE Vision specification version 2.x. The event data decoding algorithm (event adapter) common for the GigE Vision devices can be used.\n- Custom: The device formats the event data using a custom, non-standard format. Without a-priori additional knowledge about the device and its implementation, the GenTL Consumer should always use the generic event adapter to decode the event data, not making any assumptions about the internal event data layout.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 87 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

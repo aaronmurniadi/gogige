@@ -1,0 +1,111 @@
+{
+  "index": 371,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 44,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 133,
+      "bottomRightX": 264,
+      "bottomRightY": 150,
+      "content": "OffsetY[Scan3dExtraction0] = 0;",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 162,
+      "bottomRightX": 474,
+      "bottomRightY": 295,
+      "content": "ComponentSelector[Scan3dExtraction0] = Range;\nComponentEnable[Scan3dExtraction0][Range] = True;\nPixelFormat[Scan3dExtraction0][Range] = Coord3D_C16\nComponentSelector[Scan3dExtraction0] = Reflectance;\nComponentEnable[Scan3dExtraction0][Reflectance] = True;\nPixelFormat[Scan3dExtraction0][Reflectance] = Mono8;\nComponentSelector[Scan3dExtraction0] = Scatter;\nComponentEnable[Scan3dExtraction0][Scatter] = True;\nPixelFormat[Scan3dExtraction0][Scatter] = Mono16;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 307,
+      "bottomRightX": 602,
+      "bottomRightY": 423,
+      "content": "// Sensor has 2000 pixels across, FOV range ~200 mm.\n// Anchor system is \"at edge of belt\" Z towards camera.\n// Invalid data tagged as 2047 in range map.\n// Data is 16 bit unsigned integers.\n// X axis has 0.5 mm per pixel in the rectified image, covering [-0.5,0.5] meter.\nScan3dCoordinateSelector = CoordinateA; // CoordinateA -> X\nscaleA = Scan3dCoordinateScale[CoordinateA]; // e.g. 0.5\noffsetA = Scan3dCoordinateOffset[CoordinateA]; // e.g. -500",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 435,
+      "bottomRightX": 496,
+      "bottomRightY": 495,
+      "content": "// Coordinate B scaling\nScan3dCoordinateSelector = CoordinateB; //CoordinateB -> Y\nscaleB = Scan3dCoordinateScale[CoordinateB]; // e.g. 0.1\noffsetB = Scan3dCoordinateOffset[CoordinateB]; // e.g. -450",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 507,
+      "bottomRightX": 580,
+      "bottomRightY": 639,
+      "content": "// Example : Z data has 0.1 mm per increment, no offset,\n// 2047 is invalid data flag, 0-2000 valid data range.\nScan3dCoordinateSelector = CoordinateC; // CoordinateC -> Z\nscaleC = Scan3dCoordinateScale[CoordinateC]; // e.g. 0.1\noffsetC = Scan3dCoordinateOffset[CoordinateC]; // e.g. 0\nusingInvalidFlagC = Scan3dInvalidDataFlag[CoordinateC]; // Invalid flag state.\ninvalidValueC = Scan3dInvalidDataValue[CoordinateC]; // e.g. 2047\nbboxMinC = Scan3dAxisMin[CoordinateC]; // e.g. 0\nbboxMaxC = Scan3dAxisMax[CoordinateC]; // e.g. 2000",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 664,
+      "bottomRightX": 708,
+      "bottomRightY": 699,
+      "content": "Alternatively the information for scaling and offset is read from the chunk data for each image line in the RectifiedC_Linescan mode using the following pseudo code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 723,
+      "bottomRightX": 661,
+      "bottomRightY": 948,
+      "content": "// Linescan 3D Camera \"rectified\".\n// ***\n// Basic device (No Region or Scan3dExtraction Selectors).\nScan3dOutputMode = RectifiedC_Linescan; // Sets B (Y) position given by encoder.\n// Setup to use Chunk encoder data for Y scaling.\nChunkModeActive = True;\nChunkSelector = Image\nChunkEnable[ChunkSelector] = True;\nChunkSelector = Scan3dCoordinateScale;\nChunkEnable[ChunkSelector] = True;\nChunkSelector = Scan3dCoordinateOffset;\nChunkEnable[ChunkSelector] = True;\nChunkSelector = EncoderValue;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 372 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

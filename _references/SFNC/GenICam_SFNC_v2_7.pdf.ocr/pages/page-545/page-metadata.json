@@ -1,0 +1,114 @@
+{
+  "index": 544,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 584,
+      "bottomRightY": 348,
+      "content": "|  Category | GigEVision  |\n| --- | --- |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 371,
+      "bottomRightX": 597,
+      "bottomRightY": 390,
+      "content": "Enables cameras to use the extended chunk data payload type for this stream channel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 406,
+      "bottomRightX": 423,
+      "bottomRightY": 426,
+      "content": "### 27.4.61 GevSCPDirection (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 427,
+      "bottomRightX": 524,
+      "bottomRightY": 659,
+      "content": "|  Name | GevSCPDirection[GevStreamChannelSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | Transmitter Receiver  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 684,
+      "bottomRightX": 739,
+      "bottomRightY": 719,
+      "content": "This feature is deprecated (See DeviceStreamChannelType). It was used to report the direction of the stream channel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 735,
+      "bottomRightX": 352,
+      "bottomRightY": 755,
+      "content": "### 27.4.62 GevSCPInterfaceIndex",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 757,
+      "bottomRightX": 524,
+      "bottomRightY": 945,
+      "content": "|  Name | GevSCPInterfaceIndex[GevStreamChannelSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Guru  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 545 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "index": 437,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 497,
+      "bottomRightY": 303,
+      "content": "|  Level | Optional  |\n| --- | --- |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 328,
+      "bottomRightX": 726,
+      "bottomRightY": 381,
+      "content": "Initializes the focal length and makes it ready for use. The focal length position after initialization is implementation dependent. This feature is only implemented if an additional initialization is required after OpticControllerInitialize.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 395,
+      "bottomRightX": 320,
+      "bottomRightY": 417,
+      "content": "### 23.4.27 FocalLengthStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 420,
+      "bottomRightX": 553,
+      "bottomRightY": 758,
+      "content": "|  Name | FocalLengthStatus[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | NotConnected NotInitialized NotSupported Busy Ready Error Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 782,
+      "bottomRightX": 285,
+      "bottomRightY": 800,
+      "content": "Reads the status of the focal length.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 808,
+      "bottomRightX": 187,
+      "bottomRightY": 825,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 835,
+      "bottomRightX": 643,
+      "bottomRightY": 939,
+      "content": "- NotConnected: The focal length controller is physically not connected.\n- NotInitialized: The focal length controller is not initialized.\n- NotSupported: The focal length controller is physically connected but not supported.\n- Busy: The focal length controller executes a feature access/command.\n- Ready: The focal length controller is ready to use.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 970,
+      "content": "Page 438 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

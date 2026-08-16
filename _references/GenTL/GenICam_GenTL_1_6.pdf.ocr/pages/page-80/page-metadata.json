@@ -1,0 +1,237 @@
+{
+  "index": 79,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 295,
+      "bottomRightY": 156,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 171,
+      "content": "Parameter piNumDevices is an invalid pointer (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 202,
+      "bottomRightX": 635,
+      "bottomRightY": 237,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 249,
+      "bottomRightX": 235,
+      "bottomRightY": 268,
+      "content": "##### 6.3.3.6 IFOpenDevice",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 289,
+      "bottomRightX": 277,
+      "bottomRightY": 307,
+      "content": "GC_ERROR IFOpenDevice",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 289,
+      "bottomRightX": 620,
+      "bottomRightY": 357,
+      "content": "( IF_HANDLE hIface,\nconst char * sDeviceID,\nDEVICE_ACCESS_FLAGS iOpenFlag,\nDEV_HANDLE * phDevice )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 365,
+      "bottomRightX": 517,
+      "bottomRightY": 383,
+      "content": "Opens the given sDeviceID with the given iOpenFlag on the given hIface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 389,
+      "bottomRightX": 635,
+      "bottomRightY": 426,
+      "content": "Any subsequent call to IFOpenDevice with an sDeviceID which has already been opened will return the error GC_ERR_RESOURCE_IN_USE.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 433,
+      "bottomRightX": 636,
+      "bottomRightY": 501,
+      "content": "The device ID need not match the one returned from IFGetDeviceID. As long as the GenTL Producer knows how to interpret that ID it will return a valid handle. For example, if in a specific implementation the device has a user-defined name, this function will return a valid handle as long as the provided name refers to an internally known device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 515,
+      "bottomRightX": 166,
+      "bottomRightY": 531,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 535,
+      "bottomRightX": 602,
+      "bottomRightY": 672,
+      "content": "[in] hIface Interface module to work on.\n[in] sDeviceID Unique device ID to open as a 0-terminated C string.\n[in] iOpenFlag Configures the open process as defined in the DEVICE_ACCESS_FLAGS.\n[out] phDevice Device handle of the newly created Device module. It is recommended to initialize *phDevice to GENTL_INVALID_HANDLE before calling IFOpenDevice to indicate an invalid handle.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 686,
+      "bottomRightX": 141,
+      "bottomRightY": 702,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 708,
+      "bottomRightX": 208,
+      "bottomRightY": 726,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 707,
+      "bottomRightX": 568,
+      "bottomRightY": 725,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 733,
+      "bottomRightX": 278,
+      "bottomRightY": 750,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 733,
+      "bottomRightX": 512,
+      "bottomRightY": 750,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 758,
+      "bottomRightX": 269,
+      "bottomRightY": 775,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 303,
+      "topLeftY": 757,
+      "bottomRightX": 635,
+      "bottomRightY": 810,
+      "content": "The handle hIface is invalid (NULL) or does not reference an open Interface module retrieved through a call to TLOpenInterface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 818,
+      "bottomRightX": 234,
+      "bottomRightY": 836,
+      "content": "GC_ERR_INVALID_ID",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 303,
+      "topLeftY": 817,
+      "bottomRightX": 635,
+      "bottomRightY": 869,
+      "content": "The GenTL Producer is unable to interpret the provided ID string sDeviceID or is not able to match it to an existing Device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 877,
+      "bottomRightX": 278,
+      "bottomRightY": 896,
+      "content": "GC_ERR_RESOURCE_IN_USE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 303,
+      "topLeftY": 876,
+      "bottomRightX": 635,
+      "bottomRightY": 913,
+      "content": "The Device module has already been instantiated through a previous call to IFOpenDevice.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 80 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

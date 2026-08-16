@@ -1,0 +1,130 @@
+{
+  "index": 373,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 500,
+      "bottomRightY": 154,
+      "content": "### Linescan 3D camera with multiple regions and coordinate systems:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 161,
+      "bottomRightX": 757,
+      "bottomRightY": 215,
+      "content": "With a line-scan camera using laser triangulation and multiple lasers the setup could look as in this example, where different regions are setup with different processing modules and coordinate system details such as scale and anchor position.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 171,
+      "topLeftY": 228,
+      "bottomRightX": 637,
+      "bottomRightY": 569,
+      "content": "![img-115.jpeg](img-115.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-115.jpeg"
+    },
+    {
+      "topLeftX": 126,
+      "topLeftY": 583,
+      "bottomRightX": 679,
+      "bottomRightY": 602,
+      "content": "Figure 21-9: Laser linescan triangulation with multiple Regions and coordinate systems.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 608,
+      "bottomRightX": 746,
+      "bottomRightY": 645,
+      "content": "An example of how the main part of the 3D laser triangulation setup for the 3 regions of the sensors could look like:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 669,
+      "bottomRightX": 507,
+      "bottomRightY": 698,
+      "content": "// Linescan 3D Camera of Regions with different coordinate outputs.\n// ***",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 712,
+      "bottomRightX": 428,
+      "bottomRightY": 741,
+      "content": "// 1. Dataflow: Region0 -> Scan3dExtraction0 -> Stream0\n// ---",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 756,
+      "bottomRightX": 466,
+      "bottomRightY": 859,
+      "content": "// 1.a. Setup Sensor Region output.\nRegionSelector = Region0;\nRegionMode[Region0] = On; // Transmit Sensor Region.\nHeight[Region0] = 256; // Number of rows on sensor.\nWidth[Region0] = 100; // Number of columns on sensor.\nOffsetX[Region0] = 25; // Position on sensor.\nOffsetY[Region0] = 25; // Position on sensor.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 870,
+      "bottomRightX": 473,
+      "bottomRightY": 944,
+      "content": "// 1.b. Setup 3D Processing Module source and parameters.\nScan3dExtractionSelector = Scan3dExtraction0;\nScan3dOutputMode[Scan3dExtraction0] = CalibratedC;\nScan3dExtractionSource[Scan3dExtraction0] = Region0;\nScan3dExtractionMethod[Scan3dExtraction0] = Default;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 374 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 615,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

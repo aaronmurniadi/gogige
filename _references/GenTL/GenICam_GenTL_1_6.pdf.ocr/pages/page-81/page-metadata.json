@@ -1,0 +1,255 @@
+{
+  "index": 80,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-113.jpeg](img-113.jpeg) CAM |   | ![img-114.jpeg](img-114.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 138,
+      "bottomRightX": 295,
+      "bottomRightY": 157,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 190,
+      "content": "Parameters sDeviceID and/or phDevice are invalid pointers (NULL or ~0x0) or iOpenFlag contains a non valid/unknown value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 198,
+      "bottomRightX": 278,
+      "bottomRightY": 216,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 198,
+      "bottomRightX": 635,
+      "bottomRightY": 232,
+      "content": "iOpenFlag contains a value, which is not implemented by this GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 238,
+      "bottomRightX": 261,
+      "bottomRightY": 257,
+      "content": "GC_ERR_ACCESS_DENIED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 238,
+      "bottomRightX": 568,
+      "bottomRightY": 257,
+      "content": "The access to the requested device is denied.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 287,
+      "bottomRightX": 635,
+      "bottomRightY": 322,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 334,
+      "bottomRightX": 273,
+      "bottomRightY": 353,
+      "content": "##### 6.3.3.7 IFUpdateDeviceList",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 374,
+      "bottomRightX": 585,
+      "bottomRightY": 426,
+      "content": "GC_ERROR IFUpdateDeviceList ( IF_HANDLE hIface,\nbool8_t * pbChanged,\nuint64_t iTimeout )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 433,
+      "bottomRightX": 635,
+      "bottomRightY": 486,
+      "content": "Updates the internal list of available devices. This may change the connection between a list index and a device ID. It is recommended to call IFUpdateDeviceList regularly from time to time and after reconfiguration of the Interface module to reflect possible changes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 517,
+      "bottomRightX": 445,
+      "bottomRightY": 534,
+      "content": "A call to this function has implications on the thread safety of",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 542,
+      "bottomRightX": 238,
+      "bottomRightY": 578,
+      "content": "- IFGetNumDevices\n- IFGetDeviceID",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 592,
+      "bottomRightX": 166,
+      "bottomRightY": 607,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 612,
+      "bottomRightX": 174,
+      "bottomRightY": 630,
+      "content": "[in] hIface",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 631,
+      "bottomRightX": 205,
+      "bottomRightY": 648,
+      "content": "[out] pbChanged",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 666,
+      "bottomRightX": 190,
+      "bottomRightY": 684,
+      "content": "[in] iTimeout",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 612,
+      "bottomRightX": 443,
+      "bottomRightY": 629,
+      "content": "Interface module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 631,
+      "bottomRightX": 631,
+      "bottomRightY": 665,
+      "content": "Contains true if the internal list was changed and false otherwise. If set to NULL nothing is written to this parameter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 666,
+      "bottomRightX": 626,
+      "bottomRightY": 816,
+      "content": "Timeout in ms. If set to GENTL_INFINITE the timeout is infinite and the function will only return if the operation is completed. In any case the GenTL Producer must make sure that this operation is completed in a reasonable amount of time depending on the underlying technology. Please be aware that there is no defined way of terminating such an update operation. On the other hand it is the GenTL Consumer's responsibility to call this function with a reasonable timeout.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 832,
+      "bottomRightX": 141,
+      "bottomRightY": 847,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 853,
+      "bottomRightX": 208,
+      "bottomRightY": 870,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 878,
+      "bottomRightX": 278,
+      "bottomRightY": 897,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 853,
+      "bottomRightX": 568,
+      "bottomRightY": 870,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 878,
+      "bottomRightX": 512,
+      "bottomRightY": 896,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 81 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "index": 498,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 144,
+      "bottomRightX": 285,
+      "bottomRightY": 164,
+      "content": "### 25.3 TestEventGenerate",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 394,
+      "bottomRightY": 380,
+      "content": "|  Name | TestEventGenerate  |\n| --- | --- |\n|  Category | TestControl  |\n|  Level | Optional  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 406,
+      "bottomRightX": 213,
+      "bottomRightY": 422,
+      "content": "Generates a Test Event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 430,
+      "bottomRightX": 730,
+      "bottomRightY": 467,
+      "content": "If this feature is present, an EventTestData category containing the EventTest and EventTestTimestamp features must be implemented in the EventControl category.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 473,
+      "bottomRightX": 713,
+      "bottomRightY": 510,
+      "content": "Note: The Test event does not need to be included in EventSelector since the notification of this event is always enabled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 524,
+      "bottomRightX": 327,
+      "bottomRightY": 546,
+      "content": "### 25.4 TestPayloadFormatMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 547,
+      "bottomRightX": 394,
+      "bottomRightY": 823,
+      "content": "|  Name | TestPayloadFormatMode  |\n| --- | --- |\n|  Category | TestControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | Off (default) MultiPart GenDC  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 848,
+      "bottomRightX": 721,
+      "bottomRightY": 903,
+      "content": "This feature allows setting a device in test mode and to output a specific payload format for validation of data streaming. This feature is intended solely for test purposes. The data can be real acquired data or any test pattern.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 499 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

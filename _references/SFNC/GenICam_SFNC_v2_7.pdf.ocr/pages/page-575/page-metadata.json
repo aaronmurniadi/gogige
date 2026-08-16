@@ -1,0 +1,111 @@
+{
+  "index": 574,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 54,
+      "bottomRightX": 304,
+      "bottomRightY": 83,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 99,
+      "bottomRightX": 120,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 99,
+      "bottomRightX": 404,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 54,
+      "bottomRightX": 577,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 87,
+      "bottomRightX": 623,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 152,
+      "bottomRightX": 287,
+      "bottomRightY": 176,
+      "content": "## 28 Acknowledgements",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 205,
+      "bottomRightX": 695,
+      "bottomRightY": 241,
+      "content": "The following companies (and many others) have participated in the elaboration of the GenICam Standard Features Naming Convention:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 272,
+      "bottomRightX": 688,
+      "bottomRightY": 800,
+      "content": "|  Company | Represented by  |\n| --- | --- |\n|  Teledyne DALSA | Eric Carey, Eric Bourbonnais  |\n|  STEMMER IMAGING | Sascha Dorenbeck, Rupert Stelz  |\n|  SICK | Mattias Johannesson  |\n|  Pleora Technologies | Francois Gobeil, Vincent Rowley, Geoff Roddick  |\n|  Point Grey | Damian Nesbitt  |\n|  National Instruments | Eric Gross  |\n|  MVTec Software | Christoph Zierl, Thomas Hopfner  |\n|  Matrox Imaging | Stéphane Maurice  |\n|  MATRIX VISION | Stefan Battmer  |\n|  MathWorks | Mark Jones  |\n|  Leutron Vision | Stefan Thommen  |\n|  JAI | Karsten Ingeman Christensen  |\n|  Groget | Jan Becvar  |\n|  Euresys | Jean-Michel Wintgens  |\n|  Basler | Fritz Dierks, Thies Möller, Alex Happe, Andreas Gaer, Sven Seeger  |\n|  Baumer | Marcel Naggatz  |\n|  AVAL DATA | Masahide Matsubara  |\n|  Automation Technology | Stephan Kieneke  |\n|  Allied Vision | Holger Eddelbuettel  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 970,
+      "content": "Page 575 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

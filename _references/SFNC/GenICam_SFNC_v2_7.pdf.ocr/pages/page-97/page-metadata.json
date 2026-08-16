@@ -1,0 +1,167 @@
+{
+  "index": 96,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GEN<ICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 533,
+      "bottomRightY": 79,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 533,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 75,
+      "bottomRightX": 106,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 75,
+      "bottomRightX": 372,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 118,
+      "bottomRightX": 401,
+      "bottomRightY": 262,
+      "content": "|  Visibility | Beginner  |\n| --- | --- |\n|  Values | GigEVision CameraLink CameraLinkHS CoaXPress USB3Vision Custom  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 283,
+      "bottomRightX": 259,
+      "bottomRightY": 301,
+      "content": "Transport Layer type of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 308,
+      "bottomRightX": 169,
+      "bottomRightY": 323,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 93,
+      "topLeftY": 332,
+      "bottomRightX": 378,
+      "bottomRightY": 475,
+      "content": "- GigEVision: GigE Vision.\n- CameraLink: Camera Link.\n- CameraLinkHS: Camera Link High Speed.\n- CoaXPress: CoaXPress.\n- USB3Vision: USB3 Vision.\n- Custom: Custom Transport Layer.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 489,
+      "bottomRightX": 280,
+      "bottomRightY": 510,
+      "content": "### 3.25 DeviceTLVersionMajor",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 511,
+      "bottomRightX": 429,
+      "bottomRightY": 710,
+      "content": "|  Name | DeviceTLVersionMajor  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 733,
+      "bottomRightX": 352,
+      "bottomRightY": 750,
+      "content": "Major version of the Transport Layer of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 788,
+      "bottomRightX": 281,
+      "bottomRightY": 806,
+      "content": "### 3.26 DeviceTLVersionMinor",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 809,
+      "bottomRightX": 412,
+      "bottomRightY": 935,
+      "content": "|  Name | DeviceTLVersionMinor  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 950,
+      "bottomRightX": 360,
+      "bottomRightY": 967,
+      "content": "Page 97 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "index": 80,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 159,
+      "bottomRightX": 455,
+      "bottomRightY": 176,
+      "content": "User-programmable device identifier of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 184,
+      "bottomRightX": 677,
+      "bottomRightY": 220,
+      "content": "Corresponds to the “DeviceUserID” feature of the remote device and usually it is retrieved via the bootstrap register of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 228,
+      "bottomRightX": 666,
+      "bottomRightY": 263,
+      "content": "Corresponds to the DEVICE_INFO_USER_DEFINED_NAME command of DevGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 304,
+      "bottomRightX": 288,
+      "bottomRightY": 321,
+      "content": "### 3.3.1.5 DeviceVendorName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 325,
+      "bottomRightX": 421,
+      "bottomRightY": 538,
+      "content": "|  Name | DeviceVendorName  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Mandatory  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 563,
+      "bottomRightX": 311,
+      "bottomRightY": 580,
+      "content": "Name of the remote device vendor.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 589,
+      "bottomRightX": 618,
+      "bottomRightY": 607,
+      "content": "Corresponds to the DEVICE_INFO_VENDOR command of DevGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 622,
+      "bottomRightX": 280,
+      "bottomRightY": 640,
+      "content": "### 3.3.1.6 DeviceModelName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 643,
+      "bottomRightX": 421,
+      "bottomRightY": 856,
+      "content": "|  Name | DeviceModelName  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Mandatory  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 882,
+      "bottomRightX": 304,
+      "bottomRightY": 898,
+      "content": "Name of the remote device model.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 907,
+      "bottomRightX": 608,
+      "bottomRightY": 926,
+      "content": "Corresponds to the DEVICE_INFO_MODEL command of DevGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 427,
+      "bottomRightY": 944,
+      "content": "Page 81 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

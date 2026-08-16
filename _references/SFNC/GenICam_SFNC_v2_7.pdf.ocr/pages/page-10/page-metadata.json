@@ -1,0 +1,146 @@
+{
+  "index": 9,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 87,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 622,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 115,
+      "bottomRightX": 662,
+      "bottomRightY": 134,
+      "content": "# **16 USER SET CONTROL**...**310**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 150,
+      "bottomRightX": 662,
+      "bottomRightY": 309,
+      "content": "16.1 USERSETCONTROL...310\n16.2 USERSETSELECTOR...310\n16.3 USERSETDESCRIPTION...311\n16.4 USERSETLOAD...311\n16.5 USERSETSAVE...311\n16.6 USERSETDEFAULT...312\n16.7 USERSETDEFAULTSELECTOR (DEPRECATED)...312\n16.8 USERSETFEATURESETECTOR...313\n16.9 USERSETFEATUREENABLE...314",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 324,
+      "bottomRightX": 662,
+      "bottomRightY": 343,
+      "content": "# **17 SEQUENCER CONTROL**...**315**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 358,
+      "bottomRightX": 662,
+      "bottomRightY": 662,
+      "content": "17.1 SEQUENCER CONTROL MODEL...315\n17.2 SEQUENCER USAGE EXAMPLES...317\n17.3 SEQUENCER CONTROL FEATURES...320\n17.4 SEQUENCERCONTROL...320\n17.5 SEQUENCERMODE...320\n17.6 SEQUENCERCONFIGURATIONMODE...320\n17.7 SEQUENCERFEATURESETECTOR...321\n17.8 SEQUENCERFEATUREENABLE...321\n17.9 SEQUENCERSETSELECTOR...322\n17.10 SEQUENCERSETSAVE...322\n17.11 SEQUENCERSETLOAD...323\n17.12 SEQUENCERSETACTIVE...323\n17.13 SEQUENCERSETSTART...323\n17.14 SEQUENCERPATHSELECTOR...324\n17.15 SEQUENCERSETNEXT...324\n17.16 SEQUENCERTRIGGERSOURCE...324\n17.17 SEQUENCERTRIGGERACTIVATION...326",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 677,
+      "bottomRightX": 662,
+      "bottomRightY": 695,
+      "content": "# **18 FILE ACCESS CONTROL**...**328**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 711,
+      "bottomRightX": 662,
+      "bottomRightY": 906,
+      "content": "18.1 FILEACCESSCONTROL...331\n18.2 FILESELECTOR...331\n18.3 FILEOPERATIONSELECTOR...332\n18.4 FILEOPERATIONEXECUTE...333\n18.5 FILEOPENMODE...333\n18.6 FILEACCESSBUFFER...334\n18.7 FILEACCESSOFFSET...334\n18.8 FILEACCESSLENGTH...334\n18.9 FILEOPERATIONSTATUS...335\n18.10 FILEOPERATIONRESULT...335\n18.11 FILESIZE...336",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 921,
+      "bottomRightX": 662,
+      "bottomRightY": 940,
+      "content": "# **19 SOURCE CONTROL**...**337**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 955,
+      "bottomRightX": 662,
+      "bottomRightY": 973,
+      "content": "19.1 SOURCE CONTROL USAGE MODEL WITH MULTIPLE REGIONS AND TRANSFERS...337",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 988,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 988,
+      "bottomRightX": 392,
+      "bottomRightY": 1007,
+      "content": "Page 10 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 625,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

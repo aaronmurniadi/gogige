@@ -1,0 +1,131 @@
+{
+  "index": 148,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-44.jpeg](img-44.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 120,
+      "bottomRightX": 244,
+      "bottomRightY": 313,
+      "content": "• Bpp20: 20 bits per pixel.\n• Bpp24: 24 bits per pixel.\n• Bpp30: 30 bits per pixel.\n• Bpp32: 32 bits per pixel.\n• Bpp36: 36 bits per pixel.\n• Bpp48: 48 bits per pixel.\n• Bpp64: 64 bits per pixel.\n• Bpp96: 96 bits per pixel.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 326,
+      "bottomRightX": 223,
+      "bottomRightY": 344,
+      "content": "4.40 PixelColorFilter",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 347,
+      "bottomRightX": 391,
+      "bottomRightY": 614,
+      "content": "|  Name | PixelColorFilter[ComponentSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | NoneBayerRGBayerGBBayerGRBayerBG  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 637,
+      "bottomRightX": 329,
+      "bottomRightY": 655,
+      "content": "Type of color filter that is applied to the image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 660,
+      "bottomRightX": 441,
+      "bottomRightY": 678,
+      "content": "This value must always be coherent with the PixelFormat feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 685,
+      "bottomRightX": 169,
+      "bottomRightY": 700,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 710,
+      "bottomRightX": 303,
+      "bottomRightY": 826,
+      "content": "• None: No color filter.\n• BayerRG: Bayer Red Green filter.\n• BayerGB: Bayer Green Blue filter.\n• BayerGR: Bayer Green Red filter.\n• BayerBG: Bayer Blue Green filter.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 841,
+      "bottomRightX": 289,
+      "bottomRightY": 861,
+      "content": "4.41 PixelDynamicRangeMin",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 863,
+      "bottomRightX": 441,
+      "bottomRightY": 940,
+      "content": "|  Name | PixelDynamicRangeMin[ComponentSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 149 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 950,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

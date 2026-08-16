@@ -1,0 +1,195 @@
+{
+  "index": 595,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 177,
+      "bottomRightX": 287,
+      "bottomRightY": 198,
+      "content": "### 29.7 Deca Tap Geometries",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 228,
+      "bottomRightX": 256,
+      "bottomRightY": 248,
+      "content": "1X10-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 257,
+      "bottomRightX": 520,
+      "bottomRightY": 274,
+      "content": "1 zone in X with 10 taps, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 288,
+      "bottomRightX": 394,
+      "bottomRightY": 304,
+      "content": "1X10_1Y",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 181,
+      "topLeftY": 305,
+      "bottomRightX": 625,
+      "bottomRightY": 397,
+      "content": "![img-213.jpeg](img-213.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-213.jpeg"
+    },
+    {
+      "topLeftX": 256,
+      "topLeftY": 406,
+      "bottomRightX": 547,
+      "bottomRightY": 423,
+      "content": "Figure 29-40: Geometry 1X10-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 369,
+      "topLeftY": 432,
+      "bottomRightX": 485,
+      "bottomRightY": 451,
+      "content": "1X10 (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 323,
+      "topLeftY": 461,
+      "bottomRightX": 481,
+      "bottomRightY": 478,
+      "content": "1 zone in X with 10 taps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 340,
+      "topLeftY": 492,
+      "bottomRightX": 378,
+      "bottomRightY": 507,
+      "content": "1X10",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 181,
+      "topLeftY": 508,
+      "bottomRightX": 625,
+      "bottomRightY": 527,
+      "content": "![img-214.jpeg](img-214.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-214.jpeg"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 538,
+      "bottomRightX": 533,
+      "bottomRightY": 556,
+      "content": "Figure 29-41: Geometry 1X10 (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 364,
+      "topLeftY": 565,
+      "bottomRightX": 489,
+      "bottomRightY": 584,
+      "content": "10X1Y (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 593,
+      "bottomRightX": 524,
+      "bottomRightY": 611,
+      "content": "10 zone in X, 1 zone in Y with 10 taps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 378,
+      "topLeftY": 623,
+      "bottomRightX": 432,
+      "bottomRightY": 640,
+      "content": "10X-1Y",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 641,
+      "bottomRightX": 700,
+      "bottomRightY": 705,
+      "content": "![img-215.jpeg](img-215.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-215.jpeg"
+    },
+    {
+      "topLeftX": 261,
+      "topLeftY": 712,
+      "bottomRightX": 542,
+      "bottomRightY": 731,
+      "content": "Figure 29-42: Geometry 10X-1Y (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 596 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

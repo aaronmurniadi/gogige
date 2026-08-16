@@ -1,0 +1,175 @@
+{
+  "index": 38,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 251,
+      "topLeftY": 61,
+      "bottomRightX": 397,
+      "bottomRightY": 91,
+      "content": "GEN<ICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 613,
+      "topLeftY": 61,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 150,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 273,
+      "topLeftY": 106,
+      "bottomRightX": 466,
+      "bottomRightY": 122,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 158,
+      "bottomRightX": 428,
+      "bottomRightY": 176,
+      "content": "# Pixel construction rules for the “msb Grouped” style",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 184,
+      "bottomRightX": 738,
+      "bottomRightY": 218,
+      "content": "This packing style is applicable only when each component contains more than 8 bits but no more than 12 bits.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 228,
+      "bottomRightX": 264,
+      "bottomRightY": 245,
+      "content": "To construct the pixel stream:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 246,
+      "bottomRightX": 738,
+      "bottomRightY": 459,
+      "content": "1) Take the 8 lsb’s of the first component and put them in the first byte. Reserve the extra msb’s of this component for the last byte(s).\n2) Take the 8 lsb’s of the second component and put them in the second byte. Reserve the extra msb’s of this component for the last byte(s).\n3) Proceed in this way, taking the 8 lsb’s of the next component and putting it in the next byte until no more components left. For each component, reserve the extra msb’s of this component for the last byte(s). This grouping could stop at the line or image boundary, as explained in section 6.7.\n4) Start filling the last byte(s) from its lsb by successively using the extra msb’s from the first component. For monochrome components, add msb padding bits next to the component extra msb’s such that it occupies the indicated number of bits for the monochrome pixel before proceeding with the next component. Continue filling the last byte(s) using the previous rule for each component in turn.\n5) Pad the last byte’s msb’s with 0 if needed.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 502,
+      "bottomRightX": 181,
+      "bottomRightY": 522,
+      "content": "# 6.5 Align tag",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 530,
+      "bottomRightX": 736,
+      "bottomRightY": 583,
+      "content": "Align (“a”) tag can be used to complement the packed and grouped styles. It indicates the total number of bits to align the pixel (if the packing style refers to multi-components) or cluster (if the packing style refers to packing of single-component/monochrome pixels) when there is at least one full byte of padding zeros.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 591,
+      "bottomRightX": 717,
+      "bottomRightY": 627,
+      "content": "Alignment bits must be set to 0 (they are padding bits). The alignment bytes must be put after any bytes containing component information.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 142,
+      "topLeftY": 659,
+      "bottomRightX": 667,
+      "bottomRightY": 747,
+      "content": "|   | byte 3 | byte 2 | byte 1 | byte 0  |\n| --- | --- | --- | --- | --- |\n|  ... | 7 . . . . . 0 all 0 (alignment) | 7 . . . . . 0 N | 7 . . . . . 0 M | 7 . . . . . 0 L  |\n|  ← | ← | ← | ← | ←  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 208,
+      "topLeftY": 756,
+      "bottomRightX": 606,
+      "bottomRightY": 774,
+      "content": "Figure 6-17: RGB 8-bit unpacked aligned to 32-bit (RGB8a32)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 142,
+      "topLeftY": 806,
+      "bottomRightX": 667,
+      "bottomRightY": 876,
+      "content": "|   | byte 7 | byte 6 | byte 5 | byte 4 | byte 3 | byte 2 | byte 1 | byte 0  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  ... | Alignment ‘0’ |   | 3^{rd} Mono10 |   | 2^{nd} Mono10 |   | 1^{st} Mono10  |   |\n|  ← | ← | ← | ← | ← | ← | ← | ← | ←  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 885,
+      "bottomRightX": 706,
+      "bottomRightY": 903,
+      "content": "Figure 6-18 : Using a cluster marker of 3 unpacked Mono10 aligned to 64 bits (Mono10c3a64)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 954,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 954,
+      "bottomRightX": 463,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 654,
+      "topLeftY": 954,
+      "bottomRightX": 747,
+      "bottomRightY": 972,
+      "content": "Page 39 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

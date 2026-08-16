@@ -1,0 +1,148 @@
+{
+  "index": 34,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 751,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 150,
+      "bottomRightX": 716,
+      "bottomRightY": 187,
+      "content": "The following example shows how a 10-bit monochrome data can be packed from its lsb, again with no padding bit.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 216,
+      "bottomRightX": 726,
+      "bottomRightY": 307,
+      "content": "|   | byte 4 | byte 3 | byte 2 | byte 1 | byte 0  |\n| --- | --- | --- | --- | --- | --- |\n|  ... | 9 . . . . . . 2L4 | 1 0 9 . . . . 4L4 L3 | 3 . . 0 9 . . 6L3 L2 | 5 . . . . 0 9 8L2 L1 | 7 . . . . . . 0L1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 213,
+      "topLeftY": 314,
+      "bottomRightX": 599,
+      "bottomRightY": 334,
+      "content": "Figure 6-9 : 10-bit monochrome pixel lsb packed (Mono10p)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 366,
+      "bottomRightX": 408,
+      "bottomRightY": 385,
+      "content": "#### Pixel construction rules for the \"lsb Packed\" style",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 392,
+      "bottomRightX": 371,
+      "bottomRightY": 410,
+      "content": "The total number of bits after packing is either:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 411,
+      "bottomRightX": 588,
+      "bottomRightY": 446,
+      "content": "1) Indicated by the number following the \"p\" tag when present\n2) Deduced by putting as many components such that no padding bit is required.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 454,
+      "bottomRightX": 264,
+      "bottomRightY": 471,
+      "content": "To construct the pixel stream:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 472,
+      "bottomRightX": 721,
+      "bottomRightY": 613,
+      "content": "1) Take the first component and put it in the lsb's of the first byte, with bit 0 holding the lsb of the component. Extra bits of this component continue in the lsb's of the next byte.\n2) Then take the following component and append it to the first one, again starting from the lsb of the component.\n3) Proceed in this way, appending the next component from its lsb, until no more components left.\n4) Pad the last byte's most significant bits with 0 if needed (i.e. to meet the total number of bits indicated after the \"p\" tag). This padding must consider the line or image boundary, as explained in section 6.7.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 655,
+      "bottomRightX": 203,
+      "bottomRightY": 674,
+      "content": "#### 6.3.2 msb Packed",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 683,
+      "bottomRightX": 744,
+      "bottomRightY": 738,
+      "content": "For msb packed, the data is filled msb first in the lowest address byte (byte 0), starting with the first component. For PFNC-compliant image buffers, msb packed must be explicitly specified in the pixel format name by appending “msb” after the ‘p’ (i.e. “pmsb”).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 743,
+      "bottomRightX": 729,
+      "bottomRightY": 835,
+      "content": "Note that in the following figure, we put byte 0 on the left to help illustrate the concept. The data is filled msb first in the lowest address byte (byte 0) starting with the first component and continue in the msb of byte 1 (and so on). Padding bits, if any, would thus be the lsb's of the last byte after putting all the components. Padding bits are necessary when the \"p\" packing tag is followed by a number indicating to how many bits we need to align the pixel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 35 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

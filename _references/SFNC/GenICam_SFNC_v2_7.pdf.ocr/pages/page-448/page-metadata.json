@@ -1,0 +1,175 @@
+{
+  "index": 447,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 144,
+      "bottomRightX": 739,
+      "bottomRightY": 217,
+      "content": "Note that sometimes it might be necessary to process the chunk data without access to the device that generated it and its associated GenICam XML file. In that case, the ChunkXMLEnable feature can be used to include into the payload the XML logic needed to decode the chunk data. This makes the payload buffer completely self-describing.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 242,
+      "bottomRightX": 335,
+      "bottomRightY": 259,
+      "content": "## Multi-Component Chunk data mapping:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 267,
+      "bottomRightX": 716,
+      "bottomRightY": 303,
+      "content": "A multi-component payload includes multiple data sections where each component maps to one or many data parts.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 309,
+      "bottomRightX": 710,
+      "bottomRightY": 346,
+      "content": "For multi-component/multi-part payload transmitted on a single stream channel, all the image data parts generally come before the chunk data part that is transmitted last.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 370,
+      "bottomRightX": 573,
+      "bottomRightY": 486,
+      "content": "![img-146.jpeg](img-146.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-146.jpeg"
+    },
+    {
+      "topLeftX": 173,
+      "topLeftY": 507,
+      "bottomRightX": 629,
+      "bottomRightY": 525,
+      "content": "Figure 24-3: Illustration of multi-component/multi-part data and chunks.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 551,
+      "bottomRightX": 198,
+      "bottomRightY": 568,
+      "content": "## Selectors in Chunks",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 576,
+      "bottomRightX": 729,
+      "bottomRightY": 666,
+      "content": "The Chunk Data Control defines a number of selectors that are available to access a particular item of a Chunk received. These selectors are not part of the transmitted chunk data, but are included in the device XML and can be used by the receiver to index the transmitted chunk data. Note that in the Chunk Data feature descriptions below it is not explicitly stated for all chunks whether they can be dependent on one or more selector, this information is device dependent and found in the XML for each selector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 673,
+      "bottomRightX": 718,
+      "bottomRightY": 710,
+      "content": "These Chunk Data selectors include ChunkComponentSelector and ChunkScanLineSelector discussed in detail below, as well as other selectors such as the 3D specific chunk data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 716,
+      "bottomRightX": 726,
+      "bottomRightY": 787,
+      "content": "A device potentially has multiple sources, where each source can have multiple regions and each region multiple components. A single multi-component transfer contains data which from the system perspective, belongs together and form a group that is expected to be processed together. This does not mean however that the chunk data is common to all Components.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 795,
+      "bottomRightX": 718,
+      "bottomRightY": 833,
+      "content": "Some chunk data can be applicable to Sources (possibly different sensor size), Regions (different image region size and offset and 3D configuration) or Components (different dynamic range and pixel formats).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 839,
+      "bottomRightX": 712,
+      "bottomRightY": 876,
+      "content": "Using these selectors, it is possible to read and map the chunk data to the individual Source, Region and Components it pertains.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 882,
+      "bottomRightX": 722,
+      "bottomRightY": 919,
+      "content": "For example to receive the Pixel Format information for each component of a 2 components payload with chunk data and read it at the reception, the code could be:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 926,
+      "bottomRightX": 143,
+      "bottomRightY": 943,
+      "content": "Device side:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 970,
+      "content": "Page 448 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

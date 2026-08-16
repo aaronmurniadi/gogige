@@ -1,0 +1,111 @@
+{
+  "index": 252,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<icCAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 565,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 441,
+      "bottomRightY": 198,
+      "content": "|   | Action0, Action1, Action2, ... LinkTrigger0, LinkTrigger1, LinkTrigger2, ...  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 223,
+      "bottomRightX": 295,
+      "bottomRightY": 239,
+      "content": "Selects the source to start the Counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 249,
+      "bottomRightX": 177,
+      "bottomRightY": 264,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 274,
+      "bottomRightX": 736,
+      "bottomRightY": 943,
+      "content": "- Off: Disables the Counter trigger.\n- AcquisitionTrigger: Starts with the reception of the Acquisition Trigger.\n- AcquisitionTriggerMissed: Device has missed an Acquisition start trigger.\n- AcquisitionStart: Starts with the reception of the Acquisition Start.\n- AcquisitionEnd: Starts with the reception of the Acquisition End.\n- FrameTrigger: Starts with the reception of the Frame Start Trigger.\n- FrameTriggerMissed: Device has missed a Frame start trigger.\n- FrameStart: Starts with the reception of the Frame Start.\n- FrameEnd: Starts with the reception of the Frame End.\n- FrameBurstStart: Starts with the reception of the Frame Burst Start.\n- FrameBurstEnd: Starts with the reception of the Frame Burst End.\n- LineTrigger: Starts with the reception of the Line Start Trigger.\n- LineTriggerMissed: Device has missed a Line start trigger.\n- LineStart: Starts with the reception of the Line Start.\n- LineEnd: Starts with the reception of the Line End.\n- ExposureStart: Starts with the reception of the Exposure Start.\n- ExposureEnd: Starts with the reception of the Exposure End.\n- Line0 (If 0 based), Line1, Line2, ...: Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.\n- UserOutput0, UserOutput1, UserOutput2, ...: Specifies which User Output bit signal to use as internal source for the trigger.\n- Counter0Start, Counter1Start, Counter2Start, ...: Starts with the reception of the Counter Start.\n- Counter0End, Counter1End, Counter2End, ...: Starts with the reception of the Counter End.\n- Timer0Start, Timer1Start, Timer2Start, ...: Starts with the reception of the Timer Start.\n- Timer0End, Timer1End, Timer2End, ...: Starts with the reception of the Timer End.\n- Encoder0, Encoder1, Encoder2, ...: Starts with the reception of the Encoder output signal.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 253 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

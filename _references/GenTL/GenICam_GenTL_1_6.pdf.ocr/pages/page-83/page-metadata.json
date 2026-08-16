@@ -1,0 +1,309 @@
+{
+  "index": 82,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 171,
+      "content": "called with a handle returned from a call to DevGetPort a GC_ERR_INVALID_HANDLE is to be returned.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 185,
+      "bottomRightX": 166,
+      "bottomRightY": 202,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 206,
+      "bottomRightX": 185,
+      "bottomRightY": 224,
+      "content": "[in] hDevice",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 206,
+      "bottomRightX": 458,
+      "bottomRightY": 224,
+      "content": "Device module handle to close.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 236,
+      "bottomRightX": 141,
+      "bottomRightY": 253,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 259,
+      "bottomRightX": 208,
+      "bottomRightY": 277,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 259,
+      "bottomRightX": 568,
+      "bottomRightY": 275,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 283,
+      "bottomRightX": 278,
+      "bottomRightY": 302,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 283,
+      "bottomRightX": 513,
+      "bottomRightY": 302,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 310,
+      "bottomRightX": 269,
+      "bottomRightY": 326,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 308,
+      "bottomRightX": 635,
+      "bottomRightY": 362,
+      "content": "The handle hDevice is invalid (NULL) or does not reference an open Device module retrieved through a call to IFOpenDevice.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 391,
+      "bottomRightX": 635,
+      "bottomRightY": 426,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 438,
+      "bottomRightX": 215,
+      "bottomRightY": 456,
+      "content": "##### 6.3.4.2 DevGetInfo",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 478,
+      "bottomRightX": 259,
+      "bottomRightY": 495,
+      "content": "GC_ERROR DevGetInfo",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 478,
+      "bottomRightX": 573,
+      "bottomRightY": 562,
+      "content": "( DEV_HANDLE hDevice,\nDEVICE_INFO_CMD iInfoCmd,\nINFO_DATATYPE * piType,\nvoid * pBuffer,\nsize_t * piSize )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 572,
+      "bottomRightX": 635,
+      "bottomRightY": 624,
+      "content": "Inquire information about the Device module as defined in DEVICE_INFO_CMD. The reported information should be in sync to information retrieved through the IFGetDeviceInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 638,
+      "bottomRightX": 166,
+      "bottomRightY": 653,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 658,
+      "bottomRightX": 185,
+      "bottomRightY": 675,
+      "content": "[in] hDevice",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 658,
+      "bottomRightX": 432,
+      "bottomRightY": 675,
+      "content": "Device module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 676,
+      "bottomRightX": 193,
+      "bottomRightY": 692,
+      "content": "[in] iInfoCmd",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 676,
+      "bottomRightX": 510,
+      "bottomRightY": 708,
+      "content": "Information to be retrieved as defined in DEVICE_INFO_CMD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 710,
+      "bottomRightX": 177,
+      "bottomRightY": 728,
+      "content": "[out] piType",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 710,
+      "bottomRightX": 561,
+      "bottomRightY": 743,
+      "content": "Data type of the pBuffer content as defined in the DEVICE_INFO_CMD and INFO_DATATYPE.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 744,
+      "bottomRightX": 182,
+      "bottomRightY": 761,
+      "content": "[in,out] pBuffer",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 744,
+      "bottomRightX": 634,
+      "bottomRightY": 812,
+      "content": "Pointer to a user allocated buffer to receive the requested information. If this parameter is NULL, piSize will contain the minimal size of pBuffer in bytes. If the piType is a string the size includes the terminating 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 813,
+      "bottomRightX": 173,
+      "bottomRightY": 831,
+      "content": "[in,out] piSize",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 813,
+      "bottomRightX": 396,
+      "bottomRightY": 831,
+      "content": "pBuffer equal NULL:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 831,
+      "bottomRightX": 622,
+      "bottomRightY": 865,
+      "content": "out: minimal size of pBuffer in bytes to hold all information pBuffer unequal NULL:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 865,
+      "bottomRightX": 505,
+      "bottomRightY": 882,
+      "content": "in: size of the provided pBuffer in bytes",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 882,
+      "bottomRightX": 520,
+      "bottomRightY": 898,
+      "content": "out: number of bytes filled by the function",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 83 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

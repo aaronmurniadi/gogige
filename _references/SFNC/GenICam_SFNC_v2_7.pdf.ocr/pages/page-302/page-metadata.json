@@ -1,0 +1,111 @@
+{
+  "index": 301,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 739,
+      "bottomRightY": 635,
+      "content": "- Line0AnyEdge: The event will be generated when a Falling or Rising Edge is detected on the Line 0.\n- Line1AnyEdge: The event will be generated when a Falling or Rising Edge is detected on the Line 1.\n- LinkTrigger0RisingEdge: The event will be generated when a Rising Edge is detected on the LinkTrigger 0.\n- LinkTrigger1RisingEdge: The event will be generated when a Rising Edge is detected on the LinkTrigger 1.\n- LinkTrigger0FallingEdge: The event will be generated when a Falling Edge is detected on the LinkTrigger 0.\n- LinkTrigger1FallingEdge: The event will be generated when a Falling Edge is detected on the LinkTrigger 1.\n- LinkTrigger0AnyEdge: The event will be generated when a Falling or Rising Edge is detected on the LinkTrigger 0\n- LinkTrigger1AnyEdge: The event will be generated when a Falling or Rising Edge is detected on the LinkTrigger 1.\n- LinkSpeedChange: The event will be generated when the link speed has changed.\n- ActionLate: The event will be generated when a valid scheduled action command is received and is scheduled to be executed at a time that is already past.\n- Error: The event will be generated when the device encounter an error.\n- Test: The test event will be generated when the device receives the TestEventGenerate command (EventNotification for the Test event is always On).\n- PrimaryApplicationSwitch: The event will be generated when a primary application switchover has been granted (GigE Vision Specific).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 650,
+      "bottomRightX": 250,
+      "bottomRightY": 669,
+      "content": "### 15.3 EventNotification",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 670,
+      "bottomRightX": 388,
+      "bottomRightY": 918,
+      "content": "|  Name | EventNotification[EventSelector]  |\n| --- | --- |\n|  Category | EventControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Off On Once  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 302 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

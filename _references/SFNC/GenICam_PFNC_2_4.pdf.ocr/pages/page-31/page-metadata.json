@@ -1,0 +1,176 @@
+{
+  "index": 30,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 751,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 152,
+      "bottomRightX": 302,
+      "bottomRightY": 174,
+      "content": "## 6 Optional Packing Style",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 181,
+      "bottomRightX": 742,
+      "bottomRightY": 237,
+      "content": "This convention defines optional packing styles and includes an additional tag to align pixel to a certain bit boundary. In most cases, the style needs to support both lsb and msb aligned components. PFNC defines lsb bit ordering as the default for pixel formats received in image buffers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 267,
+      "bottomRightX": 736,
+      "bottomRightY": 342,
+      "content": "Important: For image buffers, PFNC defines lsb as the default ordering. Therefore, unless msb is explicitly specified in the pixel name, all pixel formats must use lsb ordering when they are put in a PFNC-compliant image buffer. In this case, the lsb suffix does not need to be spelled out explicitly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 382,
+      "bottomRightX": 186,
+      "bottomRightY": 402,
+      "content": "### 6.1 Unpacked",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 410,
+      "bottomRightX": 728,
+      "bottomRightY": 447,
+      "content": "Unpacked is one of the most prevalent styles where each component occupies an integer number of bytes: padding bits are put as necessary in the least or most significant bits to reach the next 8-bit boundary.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 462,
+      "bottomRightX": 215,
+      "bottomRightY": 482,
+      "content": "#### 6.1.1 lsb Unpacked",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 488,
+      "bottomRightX": 703,
+      "bottomRightY": 544,
+      "content": "By default, unpacked style uses “lsb unpacked” and does not need to be explicitly specified. When no padding bit is necessary, then “lsb unpacked” designation takes precedence over “msb unpacked”. lsb unpacked is thus the default for 8-bit and 16-bit components.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 550,
+      "bottomRightX": 742,
+      "bottomRightY": 605,
+      "content": "For lsb unpacked, each component is aligned to the lsb and its msb's are zero-padded to nearest byte (8-bit) boundary. Hence next component (or pixel) always starts on the next byte. It is the typical pixel format used for image buffers on the PC-side to facilitate image processing.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 631,
+      "bottomRightX": 657,
+      "bottomRightY": 648,
+      "content": "Note: In the following figures, the 'p' stands for padding bit. This means that position is a padding zero.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 683,
+      "bottomRightX": 636,
+      "bottomRightY": 702,
+      "content": "Note that in the following figures, we put byte 0 on the right to help illustrate the concept.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 287,
+      "topLeftY": 734,
+      "bottomRightX": 526,
+      "bottomRightY": 780,
+      "content": "![img-30.jpeg](img-30.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-30.jpeg"
+    },
+    {
+      "topLeftX": 311,
+      "topLeftY": 787,
+      "bottomRightX": 500,
+      "bottomRightY": 807,
+      "content": "Figure 6-1: Mono8 unpacked",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 170,
+      "topLeftY": 838,
+      "bottomRightX": 642,
+      "bottomRightY": 908,
+      "content": "![img-31.jpeg](img-31.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-31.jpeg"
+    },
+    {
+      "topLeftX": 309,
+      "topLeftY": 917,
+      "bottomRightX": 503,
+      "bottomRightY": 935,
+      "content": "Figure 6-2: Mono10 unpacked",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 371,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 31 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

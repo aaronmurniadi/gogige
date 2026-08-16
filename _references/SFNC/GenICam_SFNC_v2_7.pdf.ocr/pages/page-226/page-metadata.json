@@ -1,0 +1,120 @@
+{
+  "index": 225,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 126,
+      "content": "<table><tr><td colspan=\"2\">GEN&lt;i&gt;CAM</td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 152,
+      "bottomRightX": 374,
+      "bottomRightY": 174,
+      "content": "## 8 Color Transformation Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 203,
+      "bottomRightX": 694,
+      "bottomRightY": 223,
+      "content": "The Color Transformation chapter describes all features related to color Transformations in the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 228,
+      "bottomRightX": 748,
+      "bottomRightY": 284,
+      "content": "The Color Transformation is a linear operation taking as input a triplet of Components (C0, C1, C2) for a color pixel (Typically: R_in, G_in, B_in representing a RGB color pixel). This triplet is first multiplied by a 3x3 matrix and then added to an offset triplet.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 292,
+      "bottomRightX": 214,
+      "bottomRightY": 309,
+      "content": "The equation is given by:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 143,
+      "topLeftY": 339,
+      "bottomRightX": 520,
+      "bottomRightY": 411,
+      "content": "$$\\left( \\begin{array}{c} \\text{RC0}_{out} \\\\ \\text{G} \\\\ \\text{C1}_{out} \\\\ \\text{B} \\\\ \\text{C2}_{out} \\end{array} \\right) = \\left( \\begin{array}{ccc} Gain00 & Gain01 & Gain02 \\\\ Gain10 & Gain11 & Gain12 \\\\ Gain20 & Gain21 & Gain22 \\end{array} \\right) \\left( \\begin{array}{c} C0_{in} \\\\ C1_{in} \\\\ C2_{in} \\end{array} \\right) + \\left( \\begin{array}{c} Offset0 \\\\ Offset1 \\\\ Offset2 \\end{array} \\right)$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 144,
+      "topLeftY": 421,
+      "bottomRightX": 486,
+      "bottomRightY": 497,
+      "content": "$$\\text{Equivalent: } \\left( \\begin{array}{c} R_{out} \\\\ G_{out} \\\\ B_{out} \\end{array} \\right) = \\left( \\begin{array}{ccc} RR & RG & RB \\\\ GR & GG & GB \\\\ BR & BG & BB \\end{array} \\right) \\left( \\begin{array}{c} R_{in} \\\\ G_{in} \\\\ B_{in} \\end{array} \\right) + \\left( \\begin{array}{c} R_{offset} \\\\ G_{offset} \\\\ B_{offset} \\end{array} \\right)$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 209,
+      "topLeftY": 530,
+      "bottomRightX": 596,
+      "bottomRightY": 548,
+      "content": "The descriptions below assume RGB to RGB transformation:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 554,
+      "bottomRightX": 673,
+      "bottomRightY": 930,
+      "content": "|  Where | C0_{in} is the first component of the incoming pixel  |\n| --- | --- |\n|   | C1_{in} is the second component of the incoming pixel  |\n|   | C2_{in} is the third component of the incoming pixel  |\n|   | Gain00 is the red contribution to the red pixel (multiplicative factor)  |\n|   | Gain01 is the green contribution to the red pixel (multiplicative factor)  |\n|   | Gain02 is the blue contribution to the red pixel (multiplicative factor)  |\n|   | Gain10 is the red contribution to the green pixel (multiplicative factor)  |\n|   | Gain11 is the green contribution to the green pixel (multiplicative factor)  |\n|   | Gain12 is the blue contribution to the blue pixel (multiplicative factor)  |\n|   | Gain20 is the red contribution to the blue pixel (multiplicative factor)  |\n|   | Gain21 is the green contribution to the blue pixel (multiplicative factor)  |\n|   | Gain22 is the blue contribution to the blue pixel (multiplicative factor)  |\n|   | Offset0 is the red offset  |\n|   | Offset1 is the green offset  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 226 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

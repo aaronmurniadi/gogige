@@ -1,0 +1,121 @@
+{
+  "index": 17,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-28.jpeg](img-28.jpeg)emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 152,
+      "bottomRightX": 637,
+      "bottomRightY": 218,
+      "content": "To take these restrictions into account, the maximum values for each of the four parameters must be computed using SwissKnife nodes; the minimum values are fixed. The resulting GenApi node graph is shown in Figure 10. Note that a second layer of Integer nodes has been introduced and that the maximum values are taken from IntSwissKnife nodes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 238,
+      "bottomRightX": 661,
+      "bottomRightY": 480,
+      "content": "![img-29.jpeg](img-29.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-29.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 490,
+      "bottomRightX": 566,
+      "bottomRightY": 508,
+      "content": "Figure 10 Controlling the Area of Interest while taking restrictions into account",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 522,
+      "bottomRightX": 636,
+      "bottomRightY": 555,
+      "content": "Assuming an imager with VGA resolution (640x480), the XML code for the TopMax node might look like this:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 116,
+      "topLeftY": 569,
+      "bottomRightX": 493,
+      "bottomRightY": 624,
+      "content": "<IntSwissKnife Name=\"TopMax\">\n    <pVariable Name=\"CURHEIGHT\">HeightReg</pVariable>\n    <Formula>480-CURHEIGHT</Formula>\n</IntSwissKnife>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 645,
+      "bottomRightX": 637,
+      "bottomRightY": 729,
+      "content": "Returning to the topic of caching, you would not want the HeightReg to be read each time you set the Left feature, nor would you want the TopMax node to be evaluated each time. This is indeed not necessary if (and only if) you are certain that HeightReg will only change when the GenApi itself writes a new value to that register. If this is the case, you can cache the values of HeightReg and TopMax.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 736,
+      "bottomRightX": 636,
+      "bottomRightY": 787,
+      "content": "If the user writes a new value to HeightReg, the HeightReg cache can be updated immediately, and the TopMax cache needs to be invalidated. The next time someone accesses the Left node, it will read TopMax, thereby creating a new cache entry for TopMax.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 793,
+      "bottomRightX": 636,
+      "bottomRightY": 827,
+      "content": "As a rule, all clients of a node are informed if the node changes its content so that the clients can invalidate their caches.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 833,
+      "bottomRightX": 636,
+      "bottomRightY": 902,
+      "content": "Normally, the links between the nodes in the camera description file contain all of the information needed so that the implementation can deal with the caching without the user needing to worry about it. However, there are certain cases were the camera itself contains more dependencies than those directly described by the nodes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 636,
+      "bottomRightY": 974,
+      "content": "Page 18 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

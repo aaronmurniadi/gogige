@@ -1,0 +1,168 @@
+{
+  "index": 97,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 166,
+      "bottomRightY": 153,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 158,
+      "bottomRightX": 464,
+      "bottomRightY": 192,
+      "content": "|  [in] | hDataStream | Data Stream module to work on.  |\n| --- | --- | --- |\n|  [in] | hBuffer | Buffer handle to queue.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 205,
+      "bottomRightX": 141,
+      "bottomRightY": 220,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 226,
+      "bottomRightX": 569,
+      "bottomRightY": 244,
+      "content": "GC_ERR_SUCCESS Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 253,
+      "bottomRightX": 513,
+      "bottomRightY": 269,
+      "content": "GC_ERR_NOT_INITIALIZED No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 277,
+      "bottomRightX": 636,
+      "bottomRightY": 362,
+      "content": "GC_ERR_INVALID_HANDLE The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream or hBuffer is invalid (NULL) or does not reference an announced Buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 371,
+      "bottomRightX": 479,
+      "bottomRightY": 388,
+      "content": "GC_ERR_RESOURCE_IN_USE The buffer is already queued.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 418,
+      "bottomRightX": 636,
+      "bottomRightY": 453,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 466,
+      "bottomRightX": 270,
+      "bottomRightY": 482,
+      "content": "##### 6.3.5.10 DSRevokeBuffer",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 503,
+      "bottomRightX": 641,
+      "bottomRightY": 576,
+      "content": "|  GC_ERROR | DSRevokeBuffer | ( DS_HANDLE | hDataStream,  |\n| --- | --- | --- | --- |\n|   |  | BUFFER_HANDLE | hBuffer,  |\n|   |  | void ** | ppBuffer,  |\n|   |  | void ** | ppPrivate )  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 582,
+      "bottomRightX": 636,
+      "bottomRightY": 666,
+      "content": "Removes an announced buffer from the acquisition engine. This function will free all internally allocated resources associated with this buffer. A buffer can only be revoked if it is not queued in any queue. A buffer is automatically revoked when the stream is closed. It is up to the implementation/technology if the buffer can be revoked during an ongoing acquisition if it is not queued.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 673,
+      "bottomRightX": 636,
+      "bottomRightY": 760,
+      "content": "Note that the ppBuffer parameter must be used with care, since it is intended only for use with buffers announced using DSAnnounceBuffer, in all other cases it returns NULL. In particular for buffers announced using DSAnnounceCompositeBuffer the GenTL Consumer has to keep track of the associated segments and their allocated memory itself. It might be therefore suitable if it keeps track of the buffer memory resources in all cases.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 772,
+      "bottomRightX": 166,
+      "bottomRightY": 788,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 793,
+      "bottomRightX": 624,
+      "bottomRightY": 913,
+      "content": "|  [in] | hDataStream | Data Stream module to work on.  |\n| --- | --- | --- |\n|  [in] | hBuffer | Buffer handle to revoke.  |\n|  [out] | ppBuffer | Pointer to the buffer memory. This is for convenience if GenTL Consumer allocated contiguous memory (DSAnnounceBuffer) is used which is to be freed. If the buffer was allocated by the GenTL Producer (DSAllocAndAnnounceBuffer) or if the buffer is a  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 98 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

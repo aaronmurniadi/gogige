@@ -1,0 +1,122 @@
+{
+  "index": 91,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-129.jpeg](img-129.jpeg) CAM |   | ![img-130.jpeg](img-130.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 634,
+      "bottomRightY": 173,
+      "content": "Announcing a buffer to a data stream does not mean that this buffer will be automatically queued for acquisition. This is done through a separate call to DSQueueBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 178,
+      "bottomRightX": 636,
+      "bottomRightY": 232,
+      "content": "The memory referenced in ppSegments must stay valid until the buffer is revoked with DSRevokeBuffer. Every call of this function must be matched with a call of DSRevokeBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 238,
+      "bottomRightX": 636,
+      "bottomRightY": 338,
+      "content": "A composite buffer (and any of its segments) can only be announced once to a given stream. If a GenTL Consumer tries to announce an already announced buffer the function will return the error GC_ERR_RESOURCE_IN_USE. A buffer (with its segments) may additionally be announced to one or more other data stream(s) which will then result in one or more additional handles. The GenTL Consumer needs to take care about synchronisation between these streams.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 346,
+      "bottomRightX": 445,
+      "bottomRightY": 364,
+      "content": "Refer to chapter 5.7 in order to determine the buffer structure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 371,
+      "bottomRightX": 443,
+      "bottomRightY": 386,
+      "content": "Note: there is no alloc-and-announce version of this function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 401,
+      "bottomRightX": 166,
+      "bottomRightY": 418,
+      "content": "Parameters",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 422,
+      "bottomRightX": 626,
+      "bottomRightY": 677,
+      "content": "|  [in] | hDataStream | Data Stream module to work on.  |\n| --- | --- | --- |\n|  [in] | iNumSegments | Number of segments constituting the composite buffer.  |\n|  [in] | ppSegments | Pointers to memory of individual segments of the composite buffer to announce. The array must contain iNumSegments items.  |\n|  [in] | piSizes | Size of the segments in bytes. The array must contain iNumSegments items, one for each segment in ppSegments.  |\n|  [in] | pPrivate | Pointer to private data which will be passed to the GenTL Consumer on New Buffer events. This parameter may be NULL.  |\n|  [out] | phBuffer | Buffer module handle of the newly announced composite buffer. It is recommended to initialize *phBuffer to GENTL_INVALID_HANDLE before calling DSAnnounceCompositeBuffer to indicate an invalid handle.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 692,
+      "bottomRightX": 141,
+      "bottomRightY": 708,
+      "content": "Returns",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 712,
+      "bottomRightX": 636,
+      "bottomRightY": 900,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream.  |\n|  GC_ERR_NOT_IMPLEMENTED: | The GenTL implementation does not support composite buffers.  |\n|  GC_ERR_INVALID_PARAMETER | Parameters ppSegments and/or piSizes and/or phBuffer are invalid pointers or any of the segment pointers in  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 92 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

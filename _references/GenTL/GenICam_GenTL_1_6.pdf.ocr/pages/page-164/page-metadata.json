@@ -1,0 +1,95 @@
+{
+  "index": 163,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-239.jpeg](img-239.jpeg) CAM |   | ![img-240.jpeg](img-240.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 644,
+      "bottomRightY": 308,
+      "content": "|  Enumerator | Impl | Value | Description  |\n| --- | --- | --- | --- |\n|   |  |  | If a generic GenTL Consumer is using custom FLOW_INFO_CMDs provided through a specific GenTL Producer implementation it must differentiate the handling of different GenTL Producer implementations in case other implementations will not provide that custom id or will use a different meaning with it.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 321,
+      "bottomRightX": 311,
+      "bottomRightY": 339,
+      "content": "##### 6.4.4.12 SEGMENT_INFO_CMD",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 362,
+      "bottomRightX": 270,
+      "bottomRightY": 378,
+      "content": "enum SEGMENT_INFO_CMD",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 387,
+      "bottomRightX": 635,
+      "bottomRightY": 421,
+      "content": "This enumeration defines commands to retrieve information with the DSGetBufferSegmentInfo function on a buffer handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 428,
+      "bottomRightX": 636,
+      "bottomRightY": 513,
+      "content": "The column labeled “Impl” in the following table lists if the implementation of a given command is mandatory (M), optional (O) or conditional mandatory (CM). Mandatory means that a GenTL Producer must implement the listed command. Optional means that it is up to the implementor if a given command is implemented or not. Conditional Mandatory means that command is to be implemented if possible.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 517,
+      "bottomRightX": 644,
+      "bottomRightY": 903,
+      "content": "|  Enumerator | Impl | Value | Description  |\n| --- | --- | --- | --- |\n|  SEGMENT_INFO_BASE | M | 0 | Base address of the buffer segment memory as passed to theDSAnnounceCompositeBuffer function. This is also the address where the payload within the segment starts.Data type: PTR  |\n|  SEGMENT_INFO_SIZE | M | 1 | Size of the buffer segment in bytes as passed to theDSAnnounceCompositeBuffer function.Data type: SIZET  |\n|  SEGMENT_INFO_IS_INCOMPLETE | O | 2 | Flag to indicate that the buffer segment was filled but an error occurred during that process.For technologies or use cases where this is difficult to track, it is valid leave the command not implemented.Data type: BOOL8  |\n|  SEGMENT_INFO_SIZE_FILLED | O | 3 | Number of bytes written into the buffer segment the last time it has been filled.This value is reset to 0 when the buffer  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 164 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "index": 490,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 635,
+      "bottomRightY": 172,
+      "content": "|  Values | -  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 196,
+      "bottomRightX": 605,
+      "bottomRightY": 215,
+      "content": "Returns the Scale for the selected coordinate axis of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 228,
+      "bottomRightX": 390,
+      "bottomRightY": 248,
+      "content": "### 24.64 ChunkScan3dCoordinateOffset",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 252,
+      "bottomRightX": 635,
+      "bottomRightY": 467,
+      "content": "|  Name | ChunkScan3dCoordinateOffset[ChunkScan3dCoordinateSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 489,
+      "bottomRightX": 611,
+      "bottomRightY": 509,
+      "content": "Returns the Offset for the selected coordinate axis of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 522,
+      "bottomRightX": 375,
+      "bottomRightY": 545,
+      "content": "### 24.65 ChunkScan3dInvalidDataFlag",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 546,
+      "bottomRightX": 635,
+      "bottomRightY": 778,
+      "content": "|  Name | ChunkScan3dInvalidDataFlag[ChunkScan3dCoordinateSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 802,
+      "bottomRightX": 475,
+      "bottomRightY": 821,
+      "content": "Returns if a specific non-valid data flag is used in the data stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 827,
+      "bottomRightX": 188,
+      "bottomRightY": 844,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 854,
+      "bottomRightX": 567,
+      "bottomRightY": 900,
+      "content": "- False: Default value. No specific value identifies missing or invalid points.\n- True: The InvalidDataValue specifies a special non-valid value.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 491 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

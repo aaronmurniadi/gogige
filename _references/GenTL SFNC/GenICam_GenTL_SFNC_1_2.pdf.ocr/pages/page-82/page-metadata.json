@@ -1,0 +1,122 @@
+{
+  "index": 81,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 283,
+      "bottomRightY": 176,
+      "content": "### 3.3.1.7 DeviceFamilyName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 177,
+      "bottomRightX": 421,
+      "bottomRightY": 390,
+      "content": "|  Name | DeviceFamilyName  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Recommended  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 416,
+      "bottomRightX": 440,
+      "bottomRightY": 435,
+      "content": "Name of the product family of the remote device model.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 440,
+      "bottomRightX": 696,
+      "bottomRightY": 477,
+      "content": "Corresponds to the \"DeviceFamilyName\" feature of the remote device and is usually retrieved via the bootstrap register of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 492,
+      "bottomRightX": 249,
+      "bottomRightY": 509,
+      "content": "### 3.3.1.8 DeviceVersion",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 512,
+      "bottomRightX": 421,
+      "bottomRightY": 725,
+      "content": "|  Name | DeviceVersion  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Recommended  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 750,
+      "bottomRightX": 343,
+      "bottomRightY": 767,
+      "content": "The version of the remote device model.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 775,
+      "bottomRightX": 686,
+      "bottomRightY": 812,
+      "content": "Corresponds to the \"DeviceVersion\" feature of the remote device and is usually retrieved via the bootstrap register of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 819,
+      "bottomRightX": 628,
+      "bottomRightY": 839,
+      "content": "Corresponds to the DEVICE_INFO_VERSION command of DevGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 82 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

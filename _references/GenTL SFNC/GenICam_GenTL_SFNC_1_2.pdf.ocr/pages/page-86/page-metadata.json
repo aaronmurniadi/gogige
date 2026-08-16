@@ -1,0 +1,112 @@
+{
+  "index": 85,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 159,
+      "bottomRightX": 543,
+      "bottomRightY": 205,
+      "content": "- OpenReadWrite: Open in Read/Write mode by this GenTL host\n- OpenReadOnly: Open in Read access mode by this GenTL host",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 212,
+      "bottomRightX": 682,
+      "bottomRightY": 230,
+      "content": "Corresponds to the DEVICE_INFO_ACCESS_STATUS command of DevGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 246,
+      "bottomRightX": 358,
+      "bottomRightY": 263,
+      "content": "3.3.1.14 DeviceChunkDataFormat",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 266,
+      "bottomRightX": 420,
+      "bottomRightY": 514,
+      "content": "|  Name | DeviceChunkDataFormat  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | None GigEVision Custom  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 540,
+      "bottomRightX": 645,
+      "bottomRightY": 593,
+      "content": "Chunk data format used by the device. This information allows devices based on other technologies or protocols than \"standard\" ones such as GigE Vision to inform the GenTL Consumer about the chunk data layout they use.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 601,
+      "bottomRightX": 686,
+      "bottomRightY": 637,
+      "content": "In contrast, one can assume that any generic GenTL Consumer will understand the GigE Vision chunk format because the GigE Vision chunk adapter is readily available.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 644,
+      "bottomRightX": 698,
+      "bottomRightY": 718,
+      "content": "Note that GenTL Consumers having access to a generic chunk adapter can use this adapter without caring about the actual data layout, provided that the GenTL Producer implements the DSGetBufferChunkData function. However, using the native chunk adapter might typically lead to slightly better performance.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 735,
+      "bottomRightX": 692,
+      "bottomRightY": 879,
+      "content": "- None: The device does not use chunk data at all.\n- GigEVision: The device formats the chunk data using the chunk data format defined by GigE Vision specification version 1.x. The chunk data decoding algorithm (chunk adapter) common for the GigE Vision devices can be used.\n- Custom: The device formats the chunk data using a custom, non-standard format. Without a-priori additional knowledge about the device and its implementation, the GenTL Consumer should always use the generic chunk adapter to decode the chunk data, not making any assumptions about the internal chunk data layout.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 86 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

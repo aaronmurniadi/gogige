@@ -1,0 +1,129 @@
+{
+  "index": 384,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 134,
+      "bottomRightX": 419,
+      "bottomRightY": 154,
+      "content": "## Calculating World Coordinates from Disparity Images",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 161,
+      "bottomRightX": 752,
+      "bottomRightY": 250,
+      "content": "A disparity image contains the displacement of corresponding pixels between the left and right images of a calibrated and rectified stereo image pair. Since disparity is a displacement in pixel, the Scan3dDistanceUnit of disparity images is always set to Pixel. The distance at a pixel is inversely proportional to the disparity at that pixel. A 3D point cloud can be calculated from a disparity image given additional parameters of the stereo camera, namely the focal length, baseline and image coordinates of the optical center.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 258,
+      "bottomRightX": 736,
+      "bottomRightY": 383,
+      "content": "The focal length in pixels (i.e. in units of the size of one image pixel after binning and decimation) is given in the feature Scan3dFocalLength. The baseline of the stereo system in the distance unit meter is given in the feature Scan3dBaseline. The optical axis of the camera is the line from the optical center of the camera that orthogonally intersects the image plane. The intersection point is referred to as principal point. This point is typically near the image center. Its horizontal and vertical location is given in the features Scan3dPrincipalPointU and Scan3dPrincipalPointV. These features refer to the selected region and are given relative to the OffsetX and OffsetY of that region.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 389,
+      "bottomRightX": 739,
+      "bottomRightY": 426,
+      "content": "These parameters of the calibrated stereo camera system permit the 3D reconstruction in the Cartesian camera coordinate system from the disparity D(u,v) at pixel column u and row v:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 431,
+      "bottomRightX": 468,
+      "bottomRightY": 479,
+      "content": "X(u, v) = (u-Scan3dPrincipalPointU)*Scan3dBaseline/D(u, v)\nY(u, v) = (v-Scan3dPrincipalPointV)*Scan3dBaseline/D(u, v)\nZ(u, v) = Scan3dFocalLength*Scan3dBaseline/D(u, v)",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 486,
+      "bottomRightX": 732,
+      "bottomRightY": 538,
+      "content": "These equations permit the reconstruction of all pixels with valid disparities, resulting in a 3D point cloud. A disparity of 0 means that the point is at infinity. This case has to be treated specially when doing 3D reconstruction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 548,
+      "bottomRightX": 726,
+      "bottomRightY": 584,
+      "content": "As defined by the equations above, the unit of a reconstructed 3D point is always the same as the unit of the length value given in the Scan3dBaseline parameter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 591,
+      "bottomRightX": 735,
+      "bottomRightY": 664,
+      "content": "The pseudo code below shows how to compute a 3D point cloud from a disparity image. The algorithm also works if non-zero OffsetX and OffsetY are used to define a sub-region of the image. This is because Scan3dPrincipalPointU and Scan3dPrincipalPointV, like the column and row indices u and v, are relative to OffsetX and OffsetY. Therefore, no special treatment is necessary in this case.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 694,
+      "bottomRightX": 378,
+      "bottomRightY": 942,
+      "content": "Scan3dCoordinateSelector = CoordinateC\nscaleC = Scan3dCoordinateScale[CoordinateC];\noffsetC = Scan3dCoordinateOffset[CoordinateC];\nisInvalidC = Scan3dInvalidDataFlag[CoordinateC];\ninvalidC = Scan3dInvalidDataValue[CoordinateC];\n\nFor (row = 0; row < Height; row++)\n{\n    for (col = 0; col < Width; col++)\n    {\n    C = imageC[row, col];\n\n    if (isInvalidC == False || C != invalidC)\n    {\n    D = C*scaleC+offsetC;\n    if (D > 0)\n    {",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 385 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

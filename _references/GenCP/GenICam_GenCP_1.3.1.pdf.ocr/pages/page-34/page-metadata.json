@@ -1,0 +1,84 @@
+{
+  "index": 33,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 217,
+      "topLeftY": 79,
+      "bottomRightX": 355,
+      "bottomRightY": 107,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 501,
+      "topLeftY": 69,
+      "bottomRightX": 653,
+      "bottomRightY": 139,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 119,
+      "bottomRightX": 144,
+      "bottomRightY": 136,
+      "content": "Version 1.3.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 288,
+      "topLeftY": 118,
+      "bottomRightX": 405,
+      "bottomRightY": 136,
+      "content": "GenCP Standard",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 153,
+      "bottomRightX": 634,
+      "bottomRightY": 484,
+      "content": "|  0x800E | GENCP_INVALID_HEADER | The header of the received command is invalid. This includes CCD and SCD fields but not the command payload. This covers for example: - Invalid combinations of flags in the CCD-Flags field - The transmitted packet length does not fit to expected size with the given command and CCD-Length incl. Prefix and Postfix.  |\n| --- | --- | --- |\n|  0x800F | GENCP_WRONG_CONFIG | The current receiver configuration does not allow the execution of the sent command.  |\n|  ... |  |   |\n|  0x8FFF | GENCP_ERROR | Generic error.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 485,
+      "bottomRightX": 417,
+      "bottomRightY": 499,
+      "content": "Table 6 – Status Codes",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 930,
+      "bottomRightX": 393,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 530,
+      "topLeftY": 930,
+      "bottomRightX": 621,
+      "bottomRightY": 951,
+      "content": "Page 34 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

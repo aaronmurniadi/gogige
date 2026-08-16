@@ -1,0 +1,58 @@
+{
+  "index": 581,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  ![img-167.jpeg](img-167.jpeg)GEN<i>CAM |   | ![img-168.jpeg](img-168.jpeg)  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 143,
+      "bottomRightX": 671,
+      "bottomRightY": 241,
+      "content": "|  Geometry name |   | Tap | Tap geometrical properties  |   |   |   |   |   |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  Area-scan | Line-scan |   | X Start | X End | Step X | Y Start | Y End | Step Y  |\n|   |  | Tap7 | W-1 | W/2+1 | -2 | H | H/2+1 | -1  |\n|   |   |  Tap8 | W | W/2+2 | -2 | H | H/2+1 | -1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 582 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

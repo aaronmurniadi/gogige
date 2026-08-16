@@ -1,0 +1,112 @@
+{
+  "index": 336,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 143,
+      "bottomRightX": 234,
+      "bottomRightY": 166,
+      "content": "## 19 Source Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 187,
+      "bottomRightX": 765,
+      "bottomRightY": 243,
+      "content": "The Source Control chapter describes the features related to multi-source acquisition devices. An example of such a multi-source device would be a camera with 2 independent sensors (visible and infra red light) that would transmit their data on a single camera's physical connector but would have independent controllable features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 257,
+      "bottomRightX": 666,
+      "bottomRightY": 279,
+      "content": "### 19.1 Source Control usage model with Multiple Regions and Transfers",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 299,
+      "bottomRightX": 640,
+      "bottomRightY": 319,
+      "content": "This section explains the general model for control of the acquisition on multi-source devices.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 325,
+      "bottomRightX": 764,
+      "bottomRightY": 364,
+      "content": "The section also presents the relation of the sources with other elements such as the region of interest and the data transfer control module that can be found in more sophisticated multi-source devices.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 379,
+      "bottomRightX": 757,
+      "bottomRightY": 845,
+      "content": "![img-97.jpeg](img-97.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-97.jpeg"
+    },
+    {
+      "topLeftX": 150,
+      "topLeftY": 864,
+      "bottomRightX": 671,
+      "bottomRightY": 885,
+      "content": "Figure 19-1: Multi-Source multi-Region Device with data stream Transfer control.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 337 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 952,
+      "bottomRightX": 616,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

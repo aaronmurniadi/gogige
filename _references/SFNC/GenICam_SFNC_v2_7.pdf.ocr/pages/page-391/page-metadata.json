@@ -1,0 +1,146 @@
+{
+  "index": 390,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 133,
+      "bottomRightX": 582,
+      "bottomRightY": 307,
+      "content": "// 1. DeviceScanType = Linescan3D.\n// 3D profiling default mode (3D Range and Reflectance).\n// ***\n// Dataflow: Region0 -> Scan3dExtraction0 -> Stream0\n// ---\n// Region0:\n//    Defines the size and position of the sensor's Region to process.\n// ---\n// Scan3dExtraction0:\n//    Processing module that extracts a 3D line profile from the 2D data.\n//    It's output Region defines the size of the processed buffer to send out.\n// ---",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 321,
+      "bottomRightX": 582,
+      "bottomRightY": 423,
+      "content": "// Sensor Region0.\nRegionSelector = Region0; // First Sensor Region.\nWidth[Region0] = 800; // Number of rows of the sensor to read.\nHeight[Region0] = 500; // Number of lines of the sensor to read.\nOffsetX[Region0] = 100; // Position of Region0 on sensor.\nOffsetY[Region0] = 400; // Position of Region0 on sensor.\nRegionMode[Region0] = On; // Region 0 features (Width, Height, ...) active.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 435,
+      "bottomRightX": 380,
+      "bottomRightY": 481,
+      "content": "// Disable Region0 Intensity output.\nComponentSelector = Intensity;\nComponentEnable[Region0][Intensity] = False;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 494,
+      "bottomRightX": 473,
+      "bottomRightY": 552,
+      "content": "// Setup 3D Processing Module source and parameters.\nScan3dExtractionSelector = Scan3dExtraction0;\nScan3dExtractionSource[Scan3dExtraction0] = Region0;\nScan3dExtractionMethod[Scan3dExtraction0] = Default;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 564,
+      "bottomRightX": 663,
+      "bottomRightY": 639,
+      "content": "// Scan3dExtraction0 output Region (processed data output size).\nRegionSelector = Scan3dExtraction0; // First 3D Extraction output Region.\nWidth[Scan3dExtraction0] = 800; // 3D Extraction output \"frame Width\".\nHeight[Scan3dExtraction0] = 640; // 3D Extraction output \"frame Height\".\nRegionMode[Scan3dExtraction0] = On;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 651,
+      "bottomRightX": 473,
+      "bottomRightY": 725,
+      "content": "// Enable Scan3dExtraction0 3D output (Range and Reflectance).\nComponentSelector = Range;\nComponentEnable[Scan3dExtraction0][Range] = True;\nComponentSelector = Reflectance;\nComponentEnable[Scan3dExtraction0][Reflectance] = True;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 737,
+      "bottomRightX": 162,
+      "bottomRightY": 782,
+      "content": "AquisitionStart;\n...\nAquisitionStop;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 391 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

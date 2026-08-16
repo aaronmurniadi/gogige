@@ -1,0 +1,132 @@
+{
+  "index": 459,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 144,
+      "bottomRightX": 398,
+      "bottomRightY": 167,
+      "content": "### 24.16 ChunkPartSelector (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 396,
+      "bottomRightY": 380,
+      "content": "|  Name | ChunkPartSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 406,
+      "bottomRightX": 740,
+      "bottomRightY": 441,
+      "content": "This feature is deprecated (See ChunkComponentSelector). It was selecting the individual parts of a multi-component/multi-part buffer to access.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 447,
+      "bottomRightX": 651,
+      "bottomRightY": 466,
+      "content": "To help backward compatibility, this feature can be included as Invisible in the device's XML.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 481,
+      "bottomRightX": 229,
+      "bottomRightY": 503,
+      "content": "### 24.17ChunkImage",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 504,
+      "bottomRightX": 396,
+      "bottomRightY": 718,
+      "content": "|  Name | ChunkImage  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IRegister  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 742,
+      "bottomRightX": 398,
+      "bottomRightY": 761,
+      "content": "Returns the entire image data included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 775,
+      "bottomRightX": 241,
+      "bottomRightY": 795,
+      "content": "### 24.18ChunkOffsetX",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 798,
+      "bottomRightX": 396,
+      "bottomRightY": 933,
+      "content": "|  Name | ChunkOffsetX  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 460 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

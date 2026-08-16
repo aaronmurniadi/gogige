@@ -1,0 +1,67 @@
+{
+  "index": 171,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 48,
+      "topLeftY": 41,
+      "bottomRightX": 704,
+      "bottomRightY": 118,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 154,
+      "bottomRightX": 900,
+      "bottomRightY": 466,
+      "content": "![img-73.jpeg](img-73.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-73.jpeg"
+    },
+    {
+      "topLeftX": 314,
+      "topLeftY": 496,
+      "bottomRightX": 736,
+      "bottomRightY": 517,
+      "content": "Figure 5-15: Single Frame Acquisition with FrameStart trigger",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 685,
+      "bottomRightX": 121,
+      "bottomRightY": 700,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 279,
+      "topLeftY": 685,
+      "bottomRightX": 378,
+      "bottomRightY": 701,
+      "content": "Page 172 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 423,
+      "topLeftY": 686,
+      "bottomRightX": 591,
+      "bottomRightY": 701,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

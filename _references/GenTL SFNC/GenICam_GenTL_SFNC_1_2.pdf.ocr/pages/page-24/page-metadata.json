@@ -1,0 +1,120 @@
+{
+  "index": 23,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 54,
+      "bottomRightX": 358,
+      "bottomRightY": 82,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 100,
+      "topLeftY": 97,
+      "bottomRightX": 167,
+      "bottomRightY": 111,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 96,
+      "bottomRightX": 471,
+      "bottomRightY": 112,
+      "content": "GenTL Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 54,
+      "bottomRightX": 584,
+      "bottomRightY": 103,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 584,
+      "topLeftY": 86,
+      "bottomRightX": 631,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 173,
+      "bottomRightX": 283,
+      "bottomRightY": 192,
+      "content": "### 2.2 Interface Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 216,
+      "bottomRightX": 292,
+      "bottomRightY": 234,
+      "content": "#### 2.2.1 Interface Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 247,
+      "bottomRightX": 625,
+      "bottomRightY": 264,
+      "content": "Contains the features related to general information about a specific Interface module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 374,
+      "topLeftY": 273,
+      "bottomRightX": 644,
+      "bottomRightY": 291,
+      "content": "Table 2-5: Interface Information Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 295,
+      "bottomRightX": 1010,
+      "bottomRightY": 692,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  InterfaceInformation | R | All | ICategory | R | - | E | Category that contains all Interface Information features of the Interface module.  |\n|  InterfaceID | M | All | IString | R | - | E | GenTL Producer wide unique identifier of the selected interface.  |\n|  InterfaceDisplayName | R | All | IString | R | - | E | A user-friendly name of the Interface.  |\n|  InterfaceType | M | All | IEnumeration | R | - | E | Transport layer type of the interface.  |\n|  InterfaceTLVersionMajor | M | All | IInteger | R | - | E | Major version number of the transport layer specification the GenTL Producer interface complies with.  |\n|  InterfaceTLVersionMinor | M | All | IInteger | R | - | E | Minor version number of the transport layer specification the GenTL Producer interface complies with.  |\n|  GevInterfaceGatewaySelector | M | GEV | IInteger | R/W | - | E | Selector for the different gateway entries for this interface.  |\n|  GevInterfaceGateway[GevInterfaceGatewaySelector] | M | GEV | IInteger | R | - | E | IP address of the selected gateway entry of this interface.  |\n|  GevInterfaceMACAddress | M | GEV | IInteger | R | - | E | 48-bit MAC address of this interface.  |\n|  GevInterfaceSubnetSelector | M | GEV | IInteger | R/W | - | E | Selector for the subnet of this interface.  |\n|  GevInterfaceSubnetIPAddress[GevInterfaceSubnetSelector] | M | GEV | IInteger | R | - | E | IP address of the selected subnet of this interface.  |\n|  GevInterfaceSubnetMask[GevInterfaceS | M | GEV | IInteger | R | - | E | Subnet mask of the selected subnet of this interface.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 694,
+      "bottomRightX": 164,
+      "bottomRightY": 710,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 694,
+      "bottomRightX": 428,
+      "bottomRightY": 712,
+      "content": "Page 24 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

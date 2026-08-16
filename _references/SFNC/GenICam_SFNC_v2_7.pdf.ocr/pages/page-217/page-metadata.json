@@ -1,0 +1,184 @@
+{
+  "index": 216,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<ICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 416,
+      "bottomRightY": 207,
+      "content": "|   | Continuous Device-specific  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 230,
+      "bottomRightX": 751,
+      "bottomRightY": 267,
+      "content": "Controls the mode for automatic black level adjustment. The exact algorithm used to implement this adjustment is device-specific.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 273,
+      "bottomRightX": 611,
+      "bottomRightY": 293,
+      "content": "Some other device-specific features might be used to allow the selection of the algorithm.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 299,
+      "bottomRightX": 177,
+      "bottomRightY": 315,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 326,
+      "bottomRightX": 702,
+      "bottomRightY": 416,
+      "content": "- Off: Analog black level is user controlled using BlackLevel.\n- Once: Analog black level is automatically adjusted once by the device. Once it has converged, it automatically returns to the Off state.\n- Continuous: Analog black level is constantly adjusted by the device.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 422,
+      "bottomRightX": 618,
+      "bottomRightY": 441,
+      "content": "On top of the previous standard values, a device might also provide device-specific values.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 457,
+      "bottomRightX": 298,
+      "bottomRightY": 476,
+      "content": "### 6.9 BlackLevelAutoBalance",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 479,
+      "bottomRightX": 386,
+      "bottomRightY": 765,
+      "content": "|  Name | BlackLevelAutoBalance  |\n| --- | --- |\n|  Category | AnalogControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Off Once Continuous Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 788,
+      "bottomRightX": 724,
+      "bottomRightY": 825,
+      "content": "Controls the mode for automatic black level balancing between the sensor color channels or taps. The black level coefficients of each channel are adjusted so they are matched.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 833,
+      "bottomRightX": 177,
+      "bottomRightY": 849,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 859,
+      "bottomRightX": 742,
+      "bottomRightY": 948,
+      "content": "- Off: Black level tap balancing is user controlled using BlackLevel.\n- Once: Black level tap balancing is automatically adjusted once by the device. Once it has converged, it automatically returns to the Off state.\n- Continuous: Black level tap balancing is constantly adjusted by the device.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 217 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

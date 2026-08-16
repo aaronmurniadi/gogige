@@ -1,0 +1,121 @@
+{
+  "index": 79,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 291,
+      "bottomRightY": 61,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 76,
+      "bottomRightX": 119,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 173,
+      "topLeftY": 76,
+      "bottomRightX": 385,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 548,
+      "bottomRightY": 80,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 549,
+      "topLeftY": 65,
+      "bottomRightX": 590,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 414,
+      "topLeftY": 109,
+      "bottomRightX": 559,
+      "bottomRightY": 125,
+      "content": "Precision Time Protocol",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 131,
+      "bottomRightX": 927,
+      "bottomRightY": 438,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  PtpControl | O | ICategory | R | - | E | Category that contains the features related to the Precision Time Protocol (PTP) of the device.  |\n|  PtpEnable | O | IBoolean | R/W | - | E | Enables the Precision Time Protocol (PTP).  |\n|  PtpClockAccuracy | O | IEnumeration | R | - | E | Indicates the expected accuracy of the device PTP clock when it is the grandmaster, or in the event it becomes the grandmaster.  |\n|  PtpDataSetLatch | O | ICommand | W | - | E | Latches the current values from the device's PTP clock data set.  |\n|  PtpStatus | O | IEnumeration | R | - | E | Returns the latched state of the PTP clock.  |\n|  PtpServoStatus | O | IEnumeration | R | - | E | Returns the latched state of the clock servo.  |\n|  PtpOffsetFromMaster | O | IInteger | R | ns | E | Returns the latched offset from the PTP master clock in nanoseconds.  |\n|  PtpClockID | O | IInteger | R | - | E | Returns the latched clock ID of the PTP device.  |\n|  PtpParentClockID | O | IInteger | R | - | E | Returns the latched parent clock ID of the PTP device.  |\n|  PtpGrandmasterClockID | O | IInteger | R | - | E | Returns the latched grandmaster clock ID of the PTP device.  |\n|  PtpMeanPropagationDelay | O | IInteger | R | ns | E | Returns the latched mean propagation delay from the current PTP master clock in nanoseconds.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 448,
+      "topLeftY": 461,
+      "bottomRightX": 525,
+      "bottomRightY": 478,
+      "content": "GigE Vision",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 482,
+      "bottomRightX": 927,
+      "bottomRightY": 632,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  GigEVision | O | ICategory | R | - | B | Category that contains the features pertaining to the GigE Vision transport layer of the device.  |\n|  GevVersionMajor | R | IInteger | R | - | I | This feature is deprecated (See DeviceTLVersionMajor).  |\n|  GevVersionMinor | R | IInteger | R | - | I | This feature is deprecated (See DeviceTLVersionMinor).  |\n|  GevDeviceModeIsBigEndian | O | IBoolean | R | - | I | This feature is deprecated (See DeviceRegistersEndianness).  |\n|  GevDeviceClass | O | IEnumeration | R | - | I | This feature is deprecated (See DeviceType).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 652,
+      "bottomRightX": 120,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 652,
+      "bottomRightX": 373,
+      "bottomRightY": 669,
+      "content": "Page 80 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 653,
+      "bottomRightX": 591,
+      "bottomRightY": 669,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "index": 452,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 144,
+      "bottomRightX": 301,
+      "bottomRightY": 165,
+      "content": "### 24.6 ChunkRegionSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 396,
+      "bottomRightY": 507,
+      "content": "|  Name | ChunkRegionSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Region0 (if 0 based) Region1 Region2 ... Scan3dExtraction0 (if 0 based) Scan3dExtraction1 Scan3dExtraction2 ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 531,
+      "bottomRightX": 335,
+      "bottomRightY": 550,
+      "content": "Selects which Region to retrieve data from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 557,
+      "bottomRightX": 472,
+      "bottomRightY": 576,
+      "content": "This generally maps to the corresponding RegionSelector feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 583,
+      "bottomRightX": 742,
+      "bottomRightY": 654,
+      "content": "Note that if multiple Regions of interest are supported by the device, the **ChunkRegionSelector** can be added to various features such as ChunkWidth, ChunkHeight... to specify the characteristics of the selected Region. In order to simplify the standard text and feature descriptions, the optional **ChunkRegionSelector** is not propagated to all the features of the SFNC that it can potentially select.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 663,
+      "bottomRightX": 187,
+      "bottomRightY": 678,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 689,
+      "bottomRightX": 599,
+      "bottomRightY": 893,
+      "content": "- **Region0**: Image comes from the Region 0.\n- **Region1**: Image comes from the Region 1.\n- **Region2**: Image comes from the Region 2.\n- ...\n- **Scan3dExtraction0**: Image comes from the Scan3dExtraction output Region 0.\n- **Scan3dExtraction1**: Image comes from the Scan3dExtraction output Region 1.\n- **Scan3dExtraction2**: Image comes from the Scan3dExtraction output Region 2.\n- ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 453 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

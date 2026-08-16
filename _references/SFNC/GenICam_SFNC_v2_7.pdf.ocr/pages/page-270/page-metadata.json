@@ -1,0 +1,140 @@
+{
+  "index": 269,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 735,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 134,
+      "bottomRightX": 517,
+      "bottomRightY": 154,
+      "content": "Selects the signal which will be the source of the B input of the Encoder.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 162,
+      "bottomRightX": 188,
+      "bottomRightY": 178,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 188,
+      "bottomRightX": 628,
+      "bottomRightY": 258,
+      "content": "- Off: Counter is stopped.\n- Line0, Line1, Line2, ...: Encoder Reverse input is taken from the chosen I/O Line.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 300,
+      "bottomRightX": 222,
+      "bottomRightY": 318,
+      "content": "#### 11.2.5 EncoderMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 322,
+      "bottomRightX": 515,
+      "bottomRightY": 555,
+      "content": "|  Name | EncoderMode[EncoderSelector]  |\n| --- | --- |\n|  Category | EncoderControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | FourPhase HighResolution  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 578,
+      "bottomRightX": 733,
+      "bottomRightY": 614,
+      "content": "Selects if the count of encoder uses FourPhase mode with jitter filtering or the HighResolution mode without jitter filtering.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 632,
+      "bottomRightX": 177,
+      "bottomRightY": 648,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 669,
+      "bottomRightX": 745,
+      "bottomRightY": 723,
+      "content": "- FourPhase: The counter increments or decrements 1 for every full quadrature cycle with jitter filtering.\n- HighResolution: The counter increments or decrements every quadrature phase for high resolution counting, but without jitter filtering.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 756,
+      "bottomRightX": 237,
+      "bottomRightY": 776,
+      "content": "#### 11.2.6 EncoderDivider",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 779,
+      "bottomRightX": 515,
+      "bottomRightY": 941,
+      "content": "|  Name | EncoderDivider[EncoderSelector]  |\n| --- | --- |\n|  Category | EncoderControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 270 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

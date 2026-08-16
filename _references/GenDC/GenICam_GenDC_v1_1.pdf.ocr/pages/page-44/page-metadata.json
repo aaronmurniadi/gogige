@@ -1,0 +1,131 @@
+{
+  "index": 43,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 117,
+      "bottomRightX": 261,
+      "bottomRightY": 137,
+      "content": "### B.3 2D Image (color packed)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 154,
+      "bottomRightX": 569,
+      "bottomRightY": 171,
+      "content": "2D Image Container including one color Component that has one color Intensity data Part.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 182,
+      "bottomRightX": 497,
+      "bottomRightY": 203,
+      "content": "2D Image Container (Intensity RGB packed):",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 213,
+      "bottomRightX": 573,
+      "bottomRightY": 418,
+      "content": "![img-10.jpeg](img-10.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-10.jpeg"
+    },
+    {
+      "topLeftX": 267,
+      "topLeftY": 441,
+      "bottomRightX": 497,
+      "bottomRightY": 457,
+      "content": "Figure 5-6: 2D Image (color RGB 32 bit packed)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 486,
+      "bottomRightX": 257,
+      "bottomRightY": 507,
+      "content": "### B.4 2D Image (color planar)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 524,
+      "bottomRightX": 553,
+      "bottomRightY": 542,
+      "content": "2D image Container including one color Component that has 3 monochrome data Parts.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 207,
+      "topLeftY": 560,
+      "bottomRightX": 458,
+      "bottomRightY": 581,
+      "content": "2D Image (Intensity RGB planar):",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 583,
+      "bottomRightX": 647,
+      "bottomRightY": 890,
+      "content": "![img-11.jpeg](img-11.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-11.jpeg"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 891,
+      "bottomRightX": 466,
+      "bottomRightY": 906,
+      "content": "Figure 5-7: 2D Image (color RGB planar)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 44 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

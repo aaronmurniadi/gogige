@@ -1,0 +1,129 @@
+{
+  "index": 211,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 82,
+      "content": "GEN<i>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 109,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 134,
+      "bottomRightX": 496,
+      "bottomRightY": 325,
+      "content": "![img-82.jpeg](img-82.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-82.jpeg"
+    },
+    {
+      "topLeftX": 278,
+      "topLeftY": 334,
+      "bottomRightX": 527,
+      "bottomRightY": 351,
+      "content": "Figure 6-2: Gain All post amplification",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 385,
+      "bottomRightX": 752,
+      "bottomRightY": 421,
+      "content": "By following this rule, the value read for the All gains remains valid even when the channel/tap gains are not all equal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 427,
+      "bottomRightX": 177,
+      "bottomRightY": 445,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 456,
+      "bottomRightX": 504,
+      "bottomRightY": 928,
+      "content": "- All: Gain will be applied to all channels or taps.\n- Red: Gain will be applied to the red channel.\n- Green: Gain will be applied to the green channel.\n- Blue: Gain will be applied to the blue channel.\n- Y: Gain will be applied to Y channel.\n- U: Gain will be applied to U channel.\n- V: Gain will be applied to V channel.\n- Tap1: Gain will be applied to Tap 1.\n- Tap2: Gain will be applied to Tap 2.\n- ...\n- AnalogAll: Gain will be applied to all analog channels or taps.\n- AnalogRed: Gain will be applied to the red analog channel.\n- AnalogGreen: Gain will be applied to the green analog channel.\n- AnalogBlue: Gain will be applied to the blue analog channel.\n- AnalogY: Gain will be applied to Y analog channel.\n- AnalogU: Gain will be applied to U analog channel.\n- AnalogV: Gain will be applied to V analog channel.\n- AnalogTap1: Analog gain will be applied to Tap 1.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 212 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

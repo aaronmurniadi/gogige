@@ -1,0 +1,121 @@
+{
+  "index": 8,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 736,
+      "bottomRightY": 96,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 117,
+      "bottomRightX": 275,
+      "bottomRightY": 137,
+      "content": "### 1.4 Requirements Terminology",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 155,
+      "bottomRightX": 419,
+      "bottomRightY": 170,
+      "content": "This specification uses the following convention to list requirements.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 170,
+      "bottomRightX": 705,
+      "bottomRightY": 279,
+      "content": "|  Term | Description | Representation  |\n| --- | --- | --- |\n|  Absolute Requirement | The product MUST support this requirement. It is mandatory to support it to ensure interoperability. | [ R-<sn><suffix>]  |\n|  Conditional Requirement | The product MUST support this requirement IF another condition is present. It is mandatory to support it when the other condition is met. | [ CR-<sn><suffix>]  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 275,
+      "topLeftY": 292,
+      "bottomRightX": 460,
+      "bottomRightY": 306,
+      "content": "Table 1-2: Requirements terminology",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 319,
+      "bottomRightX": 664,
+      "bottomRightY": 337,
+      "content": "A unique number in brackets represents each requirement. Each number is composed of up to three elements:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 345,
+      "bottomRightX": 686,
+      "bottomRightY": 445,
+      "content": "1. Requirement Type: Absolute Requirement, Conditional Requirement.\n2. Sequence number (sn): Unique number identifying the requirement. The sequence numbers are attributed sequentially as new requirements are added to the specification.\n3. Suffix: Identifies if the requirement is applicable to application software, transmitters, receivers or some combination of these. Currently not used in this specification.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 477,
+      "bottomRightX": 214,
+      "bottomRightY": 497,
+      "content": "### 1.5 Liability Disclaimer",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 515,
+      "bottomRightX": 713,
+      "bottomRightY": 568,
+      "content": "This standard is provided \"as is\" and without any warranty of any kind, expressed or implied. Without limitation, there is no warranty of non-infringement, no warranty of merchantability, and no warranty of fitness for a particular purpose. All warranties are expressly disclaimed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 576,
+      "bottomRightX": 708,
+      "bottomRightY": 628,
+      "content": "The user assumes the full risk of using this standard. In no event shall the EMVA, members of the technical committee, or their companies, be liable for any actual, direct, indirect, punitive, or consequential damages arising from such use, even if advised of the possibility of such damages.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 82,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 555,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 9 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

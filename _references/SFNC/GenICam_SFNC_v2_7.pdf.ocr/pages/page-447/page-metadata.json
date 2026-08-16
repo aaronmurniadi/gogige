@@ -1,0 +1,167 @@
+{
+  "index": 446,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 152,
+      "bottomRightX": 288,
+      "bottomRightY": 174,
+      "content": "## 24 Chunk Data Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 182,
+      "bottomRightX": 739,
+      "bottomRightY": 218,
+      "content": "Chunks are tagged blocks of data. The tags allow a chunk parser to dissect the data payload into its elements and to identify the content.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 227,
+      "bottomRightX": 724,
+      "bottomRightY": 264,
+      "content": "The length of the chunk data section varies depending on the number of activated chunks, but the receiver can always expect the chunk data section to fit within the maximum size of PayloadSize.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 295,
+      "bottomRightX": 269,
+      "bottomRightY": 314,
+      "content": "# **Regular Chunk data mapping:**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 319,
+      "bottomRightX": 742,
+      "bottomRightY": 359,
+      "content": "Typically, with chunks disabled (ChunkModeActive = False) the device streams frame data consisting only of the image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 382,
+      "bottomRightX": 534,
+      "bottomRightY": 497,
+      "content": "![img-144.jpeg](img-144.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-144.jpeg"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 517,
+      "bottomRightX": 535,
+      "bottomRightY": 537,
+      "content": "Figure 24-1: Frame with chunks disabled.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 568,
+      "bottomRightX": 732,
+      "bottomRightY": 605,
+      "content": "and with chunks enabled (ChunkModeActive = True) the device streams frame data consisting of chunks. In this case the image data can also be a chunk.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 621,
+      "bottomRightX": 670,
+      "bottomRightY": 739,
+      "content": "![img-145.jpeg](img-145.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-145.jpeg"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 766,
+      "bottomRightX": 532,
+      "bottomRightY": 785,
+      "content": "Figure 24-2: Frame with chunks enabled.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 809,
+      "bottomRightX": 743,
+      "bottomRightY": 846,
+      "content": "Each chunk can be enabled or disabled using the ChunkSelector and ChunkEnable feature. This allows controlling the embedding of different information in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 853,
+      "bottomRightX": 743,
+      "bottomRightY": 889,
+      "content": "The data in the chunks is exposed and extracted via a chunk parser that uses the device's XML to interpret the chunk data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 896,
+      "bottomRightX": 743,
+      "bottomRightY": 934,
+      "content": "In the XML, the naming scheme to access the data of the chunk associated with a feature Name is ChunkName and any SFNC feature can have a chunk counterpart when this applies.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 951,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 951,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 447 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

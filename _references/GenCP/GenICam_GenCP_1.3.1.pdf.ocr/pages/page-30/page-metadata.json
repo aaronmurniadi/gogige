@@ -1,0 +1,67 @@
+{
+  "index": 29,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-29.jpeg](img-29.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 156,
+      "bottomRightX": 360,
+      "bottomRightY": 176,
+      "content": "4.3.1. Command Packet Layout",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 194,
+      "bottomRightX": 644,
+      "bottomRightY": 726,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Description  |   |   |\n| --- | --- | --- | --- | --- |\n|  Prefix  |   |   |   |   |\n|  2 | 0 | flagsFlags to enable/disable command options or to provide additional info on the specific command.  |   |   |\n|   |   |  Bit offset (lsb << x) | Width (bits) | Description  |\n|   |   |  0 | 14 | Reserved, set to 0  |\n|   |   |  14 | 1 | RequestAckIf set the sender requests an acknowledge packet from the command receiver.  |\n|   |   |  15 | 1 | CommandResendIf set the command is sent as a retry of a previous sent that failed.  |\n|  2 | 2 | command_idcommand_id as specified in the Command ID chapter 4.3.3  |   |   |\n|  2 | 4 | lengthLength of the Specific Command Data depending on the command ID not including Prefix, Postfix and CCD  |   |   |\n|  2 | 6 | request_idSequential number to identify a single command. This id is provided by the command sender and incremented every time a new command is issued.  |   |   |\n|  SCD  |   |   |   |   |\n|  Postfix  |   |   |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 727,
+      "bottomRightX": 448,
+      "bottomRightY": 740,
+      "content": "Table 4 – Common Command Data",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 30 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

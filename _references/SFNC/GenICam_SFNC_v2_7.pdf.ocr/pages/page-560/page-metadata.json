@@ -1,0 +1,76 @@
+{
+  "index": 559,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 143,
+      "bottomRightX": 585,
+      "bottomRightY": 369,
+      "content": "• CXP25_X4: 4 Connections operating at CXP-25 speed (25.78125 Gbps).\n• CXP1_X8: 8 Connections operating at CXP-1 speed (1.25 Gbps).\n• CXP2_X8: 8 Connections operating at CXP-2 speed (2.50 Gbps).\n• CXP3_X8: 8 Connections operating at CXP-3 speed (3.125 Gbps).\n• CXP5_X8: 8 Connections operating at CXP-5 speed (5.00 Gbps).\n• CXP6_X8: 8 Connections operating at CXP-6 speed (6.25 Gbps).\n• CXP10_X8: 8 Connections operating at CXP-10 speed (10.00 Gbps).\n• CXP12_X8: 8 Connections operating at CXP-12 speed (12.50 Gbps).\n• CXP25_X8: 8 Connections operating at CXP-25 speed (25.78125 Gbps).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 432,
+      "bottomRightX": 347,
+      "bottomRightY": 456,
+      "content": "### 27.7.4 CxpLinkConfiguration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 452,
+      "bottomRightX": 571,
+      "bottomRightY": 947,
+      "content": "|  Name | CxpLinkConfiguration  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Auto CXP1_X1 CXP2_X1 CXP3_X1 CXP5_X1 CXP6_X1 CXP10_X1 CXP12_X1 CXP25_X1 CXP1_X2 CXP2_X2 CXP3_X2 CXP5_X2 CXP6_X2 CXP10_X2 CXP12_X2  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 560 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

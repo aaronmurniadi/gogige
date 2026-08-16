@@ -1,0 +1,84 @@
+{
+  "index": 82,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 292,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 510,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 76,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 76,
+      "bottomRightX": 387,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 106,
+      "bottomRightX": 921,
+      "bottomRightY": 647,
+      "content": "|  GevGVCPHeartbeatDisable | O | IBoolean | R/W | - | I | This feature is deprecated (See DeviceLinkHeartbeatMode).  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  GevGVCPPendingTimeout | O | IInteger | R | - | I | This feature is deprecated (See DeviceLinkCommandTimeout).  |\n|  GevPrimaryApplicationSwitchoverKey | O | IInteger | W-O | - | G | Controls the key to use to authenticate primary application switchover requests.  |\n|  GevGVSPExtendedIDMode | O | IEnumeration | R/(W) | - | E | Enables the extended IDs mode.  |\n|  GevCCP | O | IEnumeration | R/W | - | G | Controls the device access privilege of an application.  |\n|  GevPrimaryApplicationSocket | O | IInteger | R | - | G | Returns the UDP source port of the primary application.  |\n|  GevPrimaryApplicationIPAddress | O | IInteger | R | - | G | Returns the address of the primary application.  |\n|  GevMCPHostPort | O | IInteger | R/W | - | G | Controls the port to which the device must send messages.  |\n|  GevMCDA | O | IInteger | R/W | - | G | Controls the destination IP address for the message channel.  |\n|  GevMCTT | O | IInteger | R/W | ms | G | Provides the transmission timeout value in milliseconds.  |\n|  GevMCRC | O | IInteger | R/W | - | G | Controls the number of retransmissions allowed when a message channel message times out.  |\n|  GevMCSP | O | IInteger | R | - | G | This feature indicates the source port for the message channel.  |\n|  GevStreamChannelSelector | O | IInteger | R/W | - | E | Selects the stream channel to control.  |\n|  GevSCCFGPacketResendDestination[GevStreamChannelSelector] | O | IBoolean | R/W | - | G | Enables the alternate IP destination for stream packets resent due to a packet resend request.  |\n|  GevSCCFGAllInTransmission[GevStreamChannelSelector] | O | IBoolean | R/W | - | G | Enables the selected GVSP transmitter to use the single packet per data block All-in Transmission mode.  |\n|  GevSCCFGUnconditionalStreaming[GevStreamChannelSelector] | O | IBoolean | R/W | - | G | Enables the camera to continue to stream, for this stream channel, if its control channel is closed or regardless of the reception of any ICMP messages (such as destination unreachable messages).  |\n|  GevSCCFGExtendedChunkData[GevStreamChannelSelector] | O | IBoolean | R/W | - | G | Enables cameras to use the extended chunk data payload type for this stream channel.  |\n|  GevSCPDirection[GevStreamChannelSelector] | O | IEnumeration | R | - | I | This feature is deprecated (See DeviceStreamChannelType).  |\n|  GevSCPInterfaceIndex[GevStreamChannelSelector] | O | IInteger | R/(W) | - | G | Index of the logical link to use.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 651,
+      "bottomRightX": 122,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 651,
+      "bottomRightX": 375,
+      "bottomRightY": 668,
+      "content": "Page 83 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

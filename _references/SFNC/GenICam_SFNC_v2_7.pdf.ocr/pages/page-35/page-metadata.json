@@ -1,0 +1,84 @@
+{
+  "index": 34,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 624,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 87,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 113,
+      "bottomRightX": 675,
+      "bottomRightY": 966,
+      "content": "|   |  |  | - Updated the VB features extractor macro.  |\n| --- | --- | --- | --- |\n|  Release 2.5 | 27.5.2019 | Stephane Maurice, Matrox | - Added predefined and fixed values for ComponentIDValue for the known component types listed in ComponentSelector. - Added the GroupID related features. - Added the GenDC related features to the Transport Layer Control Chapter. - Added new CXP specific features to the Transport Layer Control Chapter. - Added a stereo camera component pixel mapping explanation for the case of different components scale. - Minor corrections to the text.  |\n|  Release 2.6 | 25.6.2020 | Stephane Maurice, Matrox | - Added ChunkBinning..., ChunkDecimation..., ChunkReverse... features. - Added ChunkXMLEnable. - Added EncoderResolution. - Added UserSetDescription. - Correction of Id to ID in the name of the PtpClockID, PtpParentClockID features. - Minor corrections to the text.  |\n|  Release 2.7 | 1.2.2022 | Stephane Maurice, Matrox | - New Optic Control features chapter. - Removed “mandatory” prefix for the visibility of the Root feature to make it standard. - Scan3dExtractionSelector has now visibility beginner. - Corrected UserSetDescription category - New PtpMeanPropagationDelay feature. - New ValueArrayCandidates feature. - New CXP25 and CXP..._8 modes support and removed unused CXP_X3, CXP_X5, CXP_X6 modes.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 988,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 988,
+      "bottomRightX": 392,
+      "bottomRightY": 1007,
+      "content": "Page 35 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 625,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

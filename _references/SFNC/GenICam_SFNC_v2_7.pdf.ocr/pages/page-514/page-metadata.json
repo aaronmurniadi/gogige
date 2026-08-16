@@ -1,0 +1,95 @@
+{
+  "index": 513,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 318,
+      "bottomRightY": 167,
+      "content": "### 27.3.3 PtpClockAccuracy",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 365,
+      "bottomRightY": 675,
+      "content": "|  Name | PtpClockAccuracy  |\n| --- | --- |\n|  Category | PtpControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Within25ns Within100ns Within250ns Within1us Within2p5us Within10us Within25us Within100us Within250us Within1ms Within2p5ms Within10ms Within25ms Within100ms Within250ms Within1s Within10s GreaterThan10s AlternatePTPProfile Unknown Reserved  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 690,
+      "bottomRightX": 694,
+      "bottomRightY": 727,
+      "content": "Indicates the expected accuracy of the device PTP clock when it is the grandmaster, or in the event it becomes the grandmaster.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 742,
+      "bottomRightX": 303,
+      "bottomRightY": 763,
+      "content": "### 27.3.4 PtpDataSetLatch",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 765,
+      "bottomRightX": 365,
+      "bottomRightY": 917,
+      "content": "|  Name | PtpDataSetLatch  |\n| --- | --- |\n|  Category | PtpControl  |\n|  Level | Optional  |\n|  Interface | ICommand  |\n|  Access | Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 514 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

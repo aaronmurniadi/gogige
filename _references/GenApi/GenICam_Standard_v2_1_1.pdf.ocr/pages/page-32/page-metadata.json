@@ -1,0 +1,139 @@
+{
+  "index": 31,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-47.jpeg](img-47.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 151,
+      "bottomRightX": 212,
+      "bottomRightY": 165,
+      "content": "</MaskedIntReg>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 171,
+      "bottomRightX": 635,
+      "bottomRightY": 206,
+      "content": "The numbering of the bits differs between big-endian and little-endian as is shown for a 32 bit integer below:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 218,
+      "bottomRightX": 358,
+      "bottomRightY": 287,
+      "content": "|  Little-Endian: | MSB | ... | LSB  |\n| --- | --- | --- | --- |\n|   |  31 | ... | 0  |\n|  Big-Endian: | MSB | ... | LSB  |\n|   |  0 | ... | 31  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 296,
+      "bottomRightX": 636,
+      "bottomRightY": 332,
+      "content": "The LSB is the bit which maps to the  \\( 2^{n} \\)  digit. Note that with big-endian the equation MSB  \\( \\leq \\)  LSB holds true while with little-endian the opposite holds true: LSB  \\( \\leq \\)  MSB.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 338,
+      "bottomRightX": 637,
+      "bottomRightY": 438,
+      "content": "The Integer node type is used to merge the Value and the Minimum, Maximum, Increment and ValidValueSet parameters from different sources. The Integer node inherits the elements and attributes from the Node node. The value of the dynamic parameters are read form the  \\( \\langle pValue\\rangle \\)  element. The restriction parameters can be overwritten either with constants using the  \\( \\langle Min\\rangle \\) ,  \\( \\langle Max\\rangle \\) ,  \\( \\langle Inc\\rangle \\) , and  \\( \\langle ValidValueSet\\rangle \\)  elements or with pointers to other Integer nodes using the  \\( \\langle pMin\\rangle \\) ,  \\( \\langle pMax\\rangle \\) , and  \\( \\langle pInc\\rangle \\)  elements.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 444,
+      "bottomRightX": 636,
+      "bottomRightY": 528,
+      "content": "The <ValidValueSet> element is used to inform the uses that the integer has a limited number of valid values. This element is useful for cases like binning where the set of valid values cannot be described with an increment. The “;” character is used to mark the separation between valid values. The user only receives the value of the set that are between min and max.</ValidValueSet>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 541,
+      "bottomRightX": 432,
+      "bottomRightY": 597,
+      "content": "<Integer Name=\"Binning\">\n    <pValue>BinningReg</pValue>\n    <ValidValuesSet>1;2;4;8;16</ValidValuesSet>\n</Integer>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 603,
+      "bottomRightX": 636,
+      "bottomRightY": 688,
+      "content": "The Value normally comes from another node using the  \\( \\langle pValue\\rangle \\)  element. Alternatively, a constant can be given inside a  \\( \\langle Value\\rangle \\)  element. In this case, the node is a “floating” variable that can be set by the user to any value allowed by the restriction parameters. The given constant is the start value. A typical example is the following Index node that can be set to the values 0, 2, 4, ..., 254:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 699,
+      "bottomRightX": 264,
+      "bottomRightY": 784,
+      "content": "<Integer Name=\"Index\">\n    <Value>0</Value>\n    <Min>0</Min>\n    <Max>255</Max>\n    <Inc>2</Inc>\n</Integer>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 791,
+      "bottomRightX": 635,
+      "bottomRightY": 825,
+      "content": "If the  \\( \\langle pValue\\rangle \\)  element is used with an Integer node it can be optionally surrounded by any numbers of  \\( \\langle pValueCopy\\rangle \\)  elements like in the following example.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 837,
+      "bottomRightX": 360,
+      "bottomRightY": 919,
+      "content": "<Integer Name=\"Replicator\">\n    <pValueCopy>SomeInt1</pValueCopy>\n    <pValue>SomeInt2</pValue>\n    <pValueCopy>SomeInt3</pValueCopy>\n    <pValueCopy>SomeInt4</pValueCopy>\n</Integer>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 300,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 32 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

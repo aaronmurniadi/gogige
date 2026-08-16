@@ -1,0 +1,94 @@
+{
+  "index": 361,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 212,
+      "topLeftY": 152,
+      "bottomRightX": 609,
+      "bottomRightY": 453,
+      "content": "![img-103.jpeg](img-103.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-103.jpeg"
+    },
+    {
+      "topLeftX": 295,
+      "topLeftY": 480,
+      "bottomRightX": 511,
+      "bottomRightY": 500,
+      "content": "Figure 21-3: 3D Linescan camera.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 530,
+      "bottomRightX": 143,
+      "bottomRightY": 548,
+      "content": "## Invalid Data",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 557,
+      "bottomRightX": 757,
+      "bottomRightY": 612,
+      "content": "A 3D camera typically delivers data formatted as images representing distance. Due to occlusion and object reflectance properties all points in such a 3D image typically do not hold valid measurements. This is generally called invalid or missing data and care must be taken when processing 3D images which contain such data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 619,
+      "bottomRightX": 757,
+      "bottomRightY": 710,
+      "content": "To efficiently handle invalid data the 3D extension includes a Confidence (mask) image concept to mark valid pixels. The concept allows a weighted confidence as well as a binary valid /non-valid. As an alternative to mask images it is possible to define a certain (out-of-bounds) value of the range data which indicates invalid data. It is common to use e.g. 0 or a high value outside the valid range of actual measurement to indicate invalid data. The use of NaN as invalid is discouraged due to possible processing overhead.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 362 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

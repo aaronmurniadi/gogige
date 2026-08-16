@@ -1,0 +1,148 @@
+{
+  "index": 89,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-125.jpeg](img-125.jpeg)CAN |   | ![img-126.jpeg](img-126.jpeg)  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 138,
+      "bottomRightX": 183,
+      "bottomRightY": 157,
+      "content": "GC_ERR_BUSY",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 190,
+      "content": "The acquisition has been started and the GenTL Producer does not support announcing buffers while the acquisition is active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 219,
+      "bottomRightX": 635,
+      "bottomRightY": 255,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 266,
+      "bottomRightX": 272,
+      "bottomRightY": 283,
+      "content": "##### 6.3.5.2 DSAnnounceBuffer",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 307,
+      "bottomRightX": 600,
+      "bottomRightY": 390,
+      "content": "GC_ERROR DSAnnounceBuffer ( DS_HANDLE hDataStream,\n    void * pBuffer,\n    size_t iSize,\n    void * pPrivate,\n    BUFFER_HANDLE * phBuffer )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 398,
+      "bottomRightX": 635,
+      "bottomRightY": 467,
+      "content": "This announces a GenTL Consumer allocated memory to the Data Stream associated with the hDataStream handle and returns a buffer handle which references that single buffer until the buffer is revoked. This will allocate internal resources which will be freed upon a call to DSRevokeBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 474,
+      "bottomRightX": 635,
+      "bottomRightY": 510,
+      "content": "Announcing a buffer to a data stream does not mean that this buffer will be automatically queued for acquisition. This is done through a separate call to DSQueueBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 516,
+      "bottomRightX": 635,
+      "bottomRightY": 568,
+      "content": "The memory referenced in pBuffer must stay valid until the buffer is revoked with DSRevokeBuffer. Every call of this function must be matched with a call of DSRevokeBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 576,
+      "bottomRightX": 635,
+      "bottomRightY": 661,
+      "content": "A buffer can only be announced once to a given stream. If a GenTL Consumer tries to announce an already announced buffer the function will return the error GC_ERR_RESOURCE_IN_USE. A buffer may additionally be announced to one or more other data stream(s) which will then result in one or more additional handles. The Consumer needs to take care about synchronisation between these streams.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 667,
+      "bottomRightX": 458,
+      "bottomRightY": 685,
+      "content": "Refer to chapter 5.2.1 in order to determine the right buffer size.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 698,
+      "bottomRightX": 166,
+      "bottomRightY": 713,
+      "content": "Parameters",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 718,
+      "bottomRightX": 626,
+      "bottomRightY": 893,
+      "content": "|  [in] | hDataStream | Data Stream module to work on.  |\n| --- | --- | --- |\n|  [in] | pBuffer | Pointer to buffer memory to announce.  |\n|  [in] | iSize | Size of the pBuffer in bytes.  |\n|  [in] | pPrivate | Pointer to private data which will be passed to the GenTL Consumer on New Buffer events. This parameter may be NULL.  |\n|  [out] | phBuffer | Buffer module handle of the newly announced buffer. It is recommended to initialize *phBuffer to GENTL_INVALID_HANDLE before calling DSAnnounceBuffer to indicate an invalid handle.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 90 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "index": 44,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<ICAM |   | ![img-61.jpeg](img-61.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 151,
+      "bottomRightX": 259,
+      "bottomRightY": 167,
+      "content": "### 2.9 Available Interfaces",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 178,
+      "bottomRightX": 637,
+      "bottomRightY": 278,
+      "content": "This section uses a pseudo code notation to list the most important interfaces as introduced in section 2.3. An actual implementation can have more methods per interface, e.g., in parallel to a SetValue(value) method, an operator=(value) method might be implemented that maps directly to the SetValue() method. Also, the actual variable types may differ, e.g., for the pseudo code type string, the actual implementation might be CString, std::string, or something else.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 285,
+      "bottomRightX": 394,
+      "bottomRightY": 303,
+      "content": "A more thorough explanation is found in section 2.8.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 317,
+      "bottomRightX": 241,
+      "bottomRightY": 334,
+      "content": "#### 2.9.1 Integer Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 344,
+      "bottomRightX": 637,
+      "bottomRightY": 643,
+      "content": "- int64 GetValue() – returns the value\n- void SetValue(int64) – sets the value\n- int64 GetMin() – returns the minimum\n- int64 GetMax() – returns the maximum\n- EIncMode GetIncMode() – returns the type of increment.\n- int64 GetInc() – returns the increment if GetIncMode returns fixedIncrement\n- gcint64_autovector GetListOfValidValue() returns a list of valid values if GetIncMode returns listIncrement\n- ERepresentation GetRepresentation() – returns the representation as an enumeration\n- string GetUnit() – returns the unit\n- void ImposeMin(int64) – restricts the minimum\n- void ImposeMax(int64) – restricts the maximum\n- IFloat *GetFloatAlias() – returns a node with represents the same value in float type",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 655,
+      "bottomRightX": 228,
+      "bottomRightY": 672,
+      "content": "#### 2.9.2 IFloat Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 684,
+      "bottomRightX": 637,
+      "bottomRightY": 933,
+      "content": "- double GetValue() – returns the value\n- void SetValue(double) – sets the value\n- double GetMin() – returns the minimum\n- double GetMax() – returns the maximum\n- EIncMode GetIncMode() - returns the type of increment\n- int64 GetInc() – returns the increment if GetIncMode returns fixedIncrement\n- gcdouble_autovector GetListOfValidValue() returns a list of valid value if GetIncMode returns listIncrement\n- ERepresentation GetRepresentation() – returns the representation as an enumeration\n- string GetUnit() – returns the unit\n- EDisplayNotation GetDisplayNotation() – determines how to display the float number",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 45 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

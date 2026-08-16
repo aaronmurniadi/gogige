@@ -1,0 +1,184 @@
+{
+  "index": 175,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-262.jpeg](img-262.jpeg)CAN |   | ![img-263.jpeg](img-263.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 635,
+      "bottomRightY": 189,
+      "content": "Each iResult member of the many DS_BUFFER_INFO_STACKED structures represents the result of exactly one buffer info query. The applicable error codes of the DSGetBufferInfo function are valid for iResult. These are listed below:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 196,
+      "bottomRightX": 208,
+      "bottomRightY": 214,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 196,
+      "bottomRightX": 568,
+      "bottomRightY": 214,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 222,
+      "bottomRightX": 278,
+      "bottomRightY": 240,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 222,
+      "bottomRightX": 541,
+      "bottomRightY": 240,
+      "content": "Specified iInfoCmd is not implemented.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 247,
+      "bottomRightX": 287,
+      "bottomRightY": 265,
+      "content": "GC_ERR_BUFFER_TOO_SMALL",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 247,
+      "bottomRightX": 635,
+      "bottomRightY": 281,
+      "content": "pBuffer is not NULL and the value of iSize is too small to receive the expected amount of data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 289,
+      "bottomRightX": 261,
+      "bottomRightY": 308,
+      "content": "GC_ERR_NOT_AVAILABLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 289,
+      "bottomRightX": 635,
+      "bottomRightY": 324,
+      "content": "The request is implemented but the requested information is currently not available for any reason.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 330,
+      "bottomRightX": 635,
+      "bottomRightY": 365,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 377,
+      "bottomRightX": 394,
+      "bottomRightY": 396,
+      "content": "##### 6.5.1.3 DS_BUFFER_PART_INFO_STACKED",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 418,
+      "bottomRightX": 382,
+      "bottomRightY": 434,
+      "content": "struct DS_BUFFER_PART_INFO_STACKED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 442,
+      "bottomRightX": 635,
+      "bottomRightY": 495,
+      "content": "Layout of the array elements being used in the function DSGetBufferPartInfoStacked to carry information about multiple buffer part infos as defined in BUFFER_PART_INFO_CMD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 501,
+      "bottomRightX": 644,
+      "bottomRightY": 834,
+      "content": "|  Member | Type | Description  |\n| --- | --- | --- |\n|  iPartIndex [in] | uint32_t | Zero based index of the buffer part to query.  |\n|  iInfoCmd [in] | BUFFER_PART_INFO_CMD | The buffer part info to be retrieved.  |\n|  iType [out] | INFO_DATATYPE | Data type of the pBuffer content as defined in the BUFFER_PART_INFO_CMD and INFO_DATATYPE.  |\n|  iResult [out] | GC_ERROR | The result of the buffer part info query.  |\n|  pBuffer [in,out] | void* | Pointer to a user allocated buffer to receive the requested information. If this parameter is NULL, iSize will contain the minimal size of pBuffer in bytes. If the iType is a string the size includes the terminating 0.  |\n|  iSize [in,out] | size_t | pBuffer equal NULL: out: minimal size of pBuffer in bytes to hold all information.pBuffer unequal NULL: in: size of the provided pBuffer in bytes. out: number of bytes filled by the function.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 835,
+      "bottomRightX": 635,
+      "bottomRightY": 869,
+      "content": "DSGetBufferPartInfoStacked queries multiple buffer part infos as defined in BUFFER_PART_INFO_CMD at once.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 875,
+      "bottomRightX": 635,
+      "bottomRightY": 912,
+      "content": "The purpose and “direction” (in/out) of the structure data members is same as corresponding parameters of the DSGetBufferPartInfo function. Similar as other get-info functions,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 176 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

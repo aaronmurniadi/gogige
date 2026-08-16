@@ -1,0 +1,250 @@
+{
+  "index": 593,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 356,
+      "topLeftY": 144,
+      "bottomRightX": 495,
+      "bottomRightY": 164,
+      "content": "4X2-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 174,
+      "bottomRightX": 520,
+      "bottomRightY": 193,
+      "content": "4 zones in X with 2 taps, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 373,
+      "topLeftY": 205,
+      "bottomRightX": 432,
+      "bottomRightY": 221,
+      "content": "4X2_1Y",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 222,
+      "bottomRightX": 551,
+      "bottomRightY": 329,
+      "content": "![img-208.jpeg](img-208.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-208.jpeg"
+    },
+    {
+      "topLeftX": 261,
+      "topLeftY": 335,
+      "bottomRightX": 542,
+      "bottomRightY": 354,
+      "content": "Figure 29-35: Geometry 4X2-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 361,
+      "bottomRightX": 480,
+      "bottomRightY": 381,
+      "content": "4X2 (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 322,
+      "topLeftY": 390,
+      "bottomRightX": 480,
+      "bottomRightY": 410,
+      "content": "4 zones in X with 2 taps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 388,
+      "topLeftY": 421,
+      "bottomRightX": 418,
+      "bottomRightY": 437,
+      "content": "4X2",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 253,
+      "topLeftY": 438,
+      "bottomRightX": 551,
+      "bottomRightY": 458,
+      "content": "![img-209.jpeg](img-209.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-209.jpeg"
+    },
+    {
+      "topLeftX": 274,
+      "topLeftY": 468,
+      "bottomRightX": 529,
+      "bottomRightY": 487,
+      "content": "Figure 29-36: Geometry 4X2 (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 351,
+      "topLeftY": 495,
+      "bottomRightX": 501,
+      "bottomRightY": 514,
+      "content": "4X2E-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 224,
+      "topLeftY": 549,
+      "bottomRightX": 580,
+      "bottomRightY": 567,
+      "content": "4 zones in X with 2 taps and end extraction, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 368,
+      "topLeftY": 579,
+      "bottomRightX": 437,
+      "bottomRightY": 596,
+      "content": "4X2E_1Y",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 597,
+      "bottomRightX": 551,
+      "bottomRightY": 704,
+      "content": "![img-210.jpeg](img-210.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-210.jpeg"
+    },
+    {
+      "topLeftX": 256,
+      "topLeftY": 711,
+      "bottomRightX": 547,
+      "bottomRightY": 730,
+      "content": "Figure 29-37: Geometry 4X2E-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 366,
+      "topLeftY": 738,
+      "bottomRightX": 485,
+      "bottomRightY": 757,
+      "content": "4X2E (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 262,
+      "topLeftY": 766,
+      "bottomRightX": 539,
+      "bottomRightY": 784,
+      "content": "4 zones in X with 2 taps and end extraction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 382,
+      "topLeftY": 797,
+      "bottomRightX": 424,
+      "bottomRightY": 812,
+      "content": "4X2E",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 253,
+      "topLeftY": 814,
+      "bottomRightX": 551,
+      "bottomRightY": 834,
+      "content": "![img-211.jpeg](img-211.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-211.jpeg"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 844,
+      "bottomRightX": 534,
+      "bottomRightY": 862,
+      "content": "Figure 29-38: Geometry 4X2E (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 345,
+      "topLeftY": 871,
+      "bottomRightX": 506,
+      "bottomRightY": 891,
+      "content": "2X2E-2YE (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 243,
+      "topLeftY": 899,
+      "bottomRightX": 558,
+      "bottomRightY": 919,
+      "content": "2 zones in X with 2 taps, 2 zones in Y with 2 taps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 594 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "index": 21,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 44,
+      "bottomRightX": 753,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | ![img-22.jpeg](img-22.jpeg)  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 150,
+      "bottomRightX": 435,
+      "bottomRightY": 186,
+      "content": "3. The blue component occupies the \\(12^{\\text{th}}\\) and \\(15^{\\text{th}}\\) cell.\n4. The red component occupies the  \\( 2^{nd} \\)  and  \\( 5^{th} \\)  cell.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 193,
+      "bottomRightX": 317,
+      "bottomRightY": 211,
+      "content": "The first line of the tile is thus WRWG.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 218,
+      "bottomRightX": 214,
+      "bottomRightY": 236,
+      "content": "Ex: SCF1WRWG8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 269,
+      "bottomRightX": 550,
+      "bottomRightY": 421,
+      "content": "![img-23.jpeg](img-23.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-23.jpeg"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 427,
+      "bottomRightX": 538,
+      "bottomRightY": 445,
+      "content": "Figure 3-20: SCF1_LOLN Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 461,
+      "bottomRightX": 222,
+      "bottomRightY": 478,
+      "content": "#### SCF1_LNLO Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 486,
+      "bottomRightX": 416,
+      "bottomRightY": 505,
+      "content": "SCF1_LNLO is a sparse color filter pixel layout where:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 512,
+      "bottomRightX": 742,
+      "bottomRightY": 602,
+      "content": "5. The panchromatic (white) component occupies the \\(1^{\\mathrm{st}}\\), \\(3^{\\mathrm{rd}}\\), \\(6^{\\mathrm{th}}\\), \\(8^{\\mathrm{th}}\\), \\(9^{\\mathrm{th}}\\), \\(11^{\\mathrm{th}}\\), \\(14^{\\mathrm{th}}\\) and \\(16^{\\mathrm{th}}\\) location in a 4x4 tile;\n6. The green component occupies the \\(4^{\\text{th}}\\), \\(7^{\\text{th}}\\), \\(10^{\\text{th}}\\) and \\(13^{\\text{th}}\\) cell.\n7. The blue component occupies the  \\( 10^{th} \\)  and  \\( 13^{th} \\) .\n8. The red component occupies the  \\( 4^{th} \\)  and  \\( 7^{th} \\)  cell.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 608,
+      "bottomRightX": 317,
+      "bottomRightY": 626,
+      "content": "The first line of the tile is thus WRWG.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 634,
+      "bottomRightX": 214,
+      "bottomRightY": 651,
+      "content": "Ex: SCF1WGWR8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 659,
+      "bottomRightX": 550,
+      "bottomRightY": 811,
+      "content": "![img-24.jpeg](img-24.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-24.jpeg"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 818,
+      "bottomRightX": 538,
+      "bottomRightY": 837,
+      "content": "Figure 3-21: SCF1_LNLO Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 852,
+      "bottomRightX": 383,
+      "bottomRightY": 872,
+      "content": "#### 3.1.10 CFA_xxxx Location (square pattern)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 878,
+      "bottomRightX": 739,
+      "bottomRightY": 934,
+      "content": "CFA stands for generic “Color Filter Array”. It is used for CFAs other than the popular Bayer tile and Sparse Color Filter defined earlier. ‘xxxx’ explicitly represents the sequence of color components in the square pattern expressed in raster-scan. For example, “CFA_RBGG” would be a CFA pattern with red-blue",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 102,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 22 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

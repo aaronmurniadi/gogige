@@ -1,0 +1,76 @@
+{
+  "index": 25,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-38.jpeg](img-38.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 167,
+      "bottomRightX": 441,
+      "bottomRightY": 457,
+      "content": "<Category Name=\"Root\" NameSpace=\"Standard\">\n    <pFeature>ScalarFeatures</pFeature>\n    <pFeature>Trigger</pFeature>\n</Category>\n\n<Category Name=\"ScalarFeatures\">\n    <pFeature>Shutter</pFeature>\n    <pFeature>Gain</pFeature>\n    <pFeature>Offset</pFeature>\n    <pFeature>WhiteBalance</pFeature>\n</Category>\n\n<Category Name=\"WhiteBalance\">\n    <pFeature>RedGain</pFeature>\n    <pFeature>BlueGain</pFeature>\n</Category>\n\n<Category Name=\"Trigger\">\n    <pFeature>TriggerMode</pFeature>\n    <pFeature>TriggerPolarity</pFeature>\n</Category>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 464,
+      "bottomRightX": 637,
+      "bottomRightY": 562,
+      "content": "Note that a user accessing the nodes by browsing the category tree is intended only to see features nodes in the first layer below the Category nodes. Nodes deeper in the graph are called implementation nodes and are retrievable only by name or in a special browse mode that the implementation might provide for debugging purposes. Note that the names and the layout of the implementation nodes may change without notice in a new release of a camera description file, even if the vendor declares it backward compatible (see also section 2.7.3).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 584,
+      "bottomRightX": 635,
+      "bottomRightY": 869,
+      "content": "![img-39.jpeg](img-39.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-39.jpeg"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 882,
+      "bottomRightX": 278,
+      "bottomRightY": 901,
+      "content": "Figure 12 A tree of categories",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 26 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "index": 508,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 635,
+      "bottomRightY": 329,
+      "content": "|  Category | TransportLayerControl  |\n| --- | --- |\n|  Level | Recommended  |\n|  Interface | IRegister  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | GenDC specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 349,
+      "bottomRightX": 734,
+      "bottomRightY": 370,
+      "content": "Returns the GenDC Container data Flow mapping table that will be used to transport the GenDC Container.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 375,
+      "bottomRightX": 725,
+      "bottomRightY": 412,
+      "content": "The format of the GenDC Descriptor returned by this feature is defined by the GenICam GenDC standard. The receiver must interpret its content based on the version of this Descriptor.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 417,
+      "bottomRightX": 732,
+      "bottomRightY": 471,
+      "content": "It is updated in synchronization with PayloadSize and must be static after TLParamsLocked is asserted to guarantee that it accurately represents the Flow mapping of the Containers streamed out when AcquisitionStart is executed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 479,
+      "bottomRightX": 742,
+      "bottomRightY": 534,
+      "content": "In the case of variable Containers, this flow mapping table must represent the maximum number of Flows that can be sent during the Acquisition. The size of the Flows and offset of the Flow mapping table must also stay fixed during an acquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 540,
+      "bottomRightX": 629,
+      "bottomRightY": 561,
+      "content": "The FlowMappingTable feature must be provided for payloads transmitted using GenDC.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 600,
+      "bottomRightX": 333,
+      "bottomRightY": 622,
+      "content": "#### 27.2.10 DeviceTapGeometry",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 623,
+      "bottomRightX": 404,
+      "bottomRightY": 934,
+      "content": "|  Name | DeviceTapGeometry  |\n| --- | --- |\n|  Category | TransportLayerControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Geometry_1X_1YGeometry_1X2_1YGeometry_1X2_1Y2Geometry_2X_1YGeometry_2X_1Y2Geometry_2XE_1YGeometry_2XE_1Y2  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 509 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "index": 402,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 133,
+      "bottomRightX": 434,
+      "bottomRightY": 238,
+      "content": "for(col = 0; col < Width; col++)\n{\n    coordA [row,col] = imageA [row,col]*scaleA+offsetA;\n    coordB [row,col] = row*scaleB+offsetB;\n    coordC [row,col] = imageC [row,col]*scaleC+offsetC;\n}\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 249,
+      "bottomRightX": 207,
+      "bottomRightY": 268,
+      "content": "#### CalibratedAC_Linescan",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 274,
+      "bottomRightX": 694,
+      "bottomRightY": 294,
+      "content": "The transmitted coordinates can be transformed to world coordinates using the following pseudo-code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 300,
+      "bottomRightX": 514,
+      "bottomRightY": 461,
+      "content": "for(row = 0; row < Height; row++)\n{\n    for(col = 0; col < Width; col++)\n    {\n    coordA [row,col] = imageA [row,col]*scaleA+offsetA;\n    ChunkScanLineSelector = row;\n    // Note: Here encoder wrap-around handling is not illustrated.\n    coordB [row,col] = ChunkEncoderValue[row]*scaleB+offsetB;\n    coordC [row,col] = imageC [row,col]*scaleC+offsetC;\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 484,
+      "bottomRightX": 135,
+      "bottomRightY": 502,
+      "content": "#### CalibratedC",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 510,
+      "bottomRightX": 694,
+      "bottomRightY": 529,
+      "content": "The transmitted coordinates can be transformed to world coordinates using the following pseudo-code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 534,
+      "bottomRightX": 434,
+      "bottomRightY": 638,
+      "content": "for(row = 0; row < Height; row++)\n{\n    for(col = 0; col < Width; col++)\n    {\n    coordC [row,col] = imageC [row,col]*scaleC+offsetC;\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 653,
+      "bottomRightX": 198,
+      "bottomRightY": 672,
+      "content": "#### CalibratedC_Linescan",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 680,
+      "bottomRightX": 694,
+      "bottomRightY": 698,
+      "content": "The transmitted coordinates can be transformed to world coordinates using the following pseudo-code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 704,
+      "bottomRightX": 514,
+      "bottomRightY": 850,
+      "content": "for(row = 0; row < Height; row++)\n{\n    for(col = 0; col < Width; col++)\n    {\n    ChunkScanLineSelector = row;\n    // Note: Here encoder wrap-around handling is not illustrated.\n    coordB [row,col] = ChunkEncoderValue[row]*scaleB+offsetB;\n    coordC [row,col] = imageC [row,col]*scaleC+offsetC;\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 865,
+      "bottomRightX": 122,
+      "bottomRightY": 884,
+      "content": "#### RectifiedC",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 892,
+      "bottomRightX": 694,
+      "bottomRightY": 910,
+      "content": "The transmitted coordinates can be transformed to world coordinates using the following pseudo-code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 917,
+      "bottomRightX": 277,
+      "bottomRightY": 946,
+      "content": "for(row = 0; row < Height; row++)\n{",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 403 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

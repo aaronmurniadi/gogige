@@ -1,0 +1,183 @@
+{
+  "index": 15,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 43,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<ICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 141,
+      "bottomRightX": 248,
+      "bottomRightY": 161,
+      "content": "### 1.4 Conventions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 166,
+      "bottomRightX": 280,
+      "bottomRightY": 182,
+      "content": "# **Feature Name and Interface**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 190,
+      "bottomRightX": 700,
+      "bottomRightY": 297,
+      "content": "According to the GenICam standard, all the public features of a GenTL Producer must be included in the corresponding GenICam XML files following the GenTL module hierarchy and must use the SFNC Name and Interface type for those features if they exist. Other vendor specific or specialized features not mapping to existing SNFC features can be included but must be located in a vendor specific namespace in the GenICam XML and may use a vendor specific name.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 304,
+      "bottomRightX": 610,
+      "bottomRightY": 325,
+      "content": "This document lists for each feature the Name and Interface type that must be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 331,
+      "bottomRightX": 209,
+      "bottomRightY": 349,
+      "content": "# **Feature Category**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 355,
+      "bottomRightX": 663,
+      "bottomRightY": 391,
+      "content": "With the GenICam standard, each feature should be included in a \"Category\". The Category element defines in which group of features the feature will be located.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 400,
+      "bottomRightX": 699,
+      "bottomRightY": 454,
+      "content": "The Category does not affect the functionality of the features but is used by the GUIs to group the features when displaying them. The purpose is mainly to insure that the GUI can present features in a more organized way.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 461,
+      "bottomRightX": 607,
+      "bottomRightY": 479,
+      "content": "This document lists for each feature, a recommended Category that should be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 486,
+      "bottomRightX": 184,
+      "bottomRightY": 503,
+      "content": "# **Feature Level**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 512,
+      "bottomRightX": 612,
+      "bottomRightY": 530,
+      "content": "In this document, features are tagged according to the following requirement levels:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 538,
+      "bottomRightX": 702,
+      "bottomRightY": 659,
+      "content": "- **M: Mandatory** - Must be implemented to achieve compliance with the GenICam GenTL standard.\n- **R: Recommended** - This feature adds important aspects to the use case and must respect the naming convention if used.\n- **O: Optional** - This feature is less critical. Nevertheless, it is considered and must respect the naming convention if used.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 668,
+      "bottomRightX": 690,
+      "bottomRightY": 722,
+      "content": "For additional details about the mandatory general features, please refer to the GenICam GenTL standard. For additional details about the mandatory features to certain transport layers, please refer to the text of those standards.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 730,
+      "bottomRightX": 208,
+      "bottomRightY": 748,
+      "content": "# **Feature Visibility**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 755,
+      "bottomRightX": 700,
+      "bottomRightY": 825,
+      "content": "According to the GenICam standard, each feature can be assigned a \"Visibility\". The Visibility defines the type of user that should get access to the feature. Possible values are Beginner, Expert, Guru and Invisible. The latter is required to make features accessible from the API, but invisible in the GUI.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 834,
+      "bottomRightX": 695,
+      "bottomRightY": 887,
+      "content": "The visibility does not affect the functionality of the features but is used by the GUI to decide which features to display based on the current user level. The purpose is mainly to insure that the GUI is not cluttered with information that is not intended at the current user level.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 895,
+      "bottomRightX": 639,
+      "bottomRightY": 914,
+      "content": "The following criteria have been used for the assignment of the recommended visibility:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 952,
+      "bottomRightX": 165,
+      "bottomRightY": 969,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 553,
+      "topLeftY": 952,
+      "bottomRightX": 652,
+      "bottomRightY": 971,
+      "content": "Page 16 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

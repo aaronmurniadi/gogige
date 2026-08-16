@@ -1,0 +1,156 @@
+{
+  "index": 24,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GEN<I>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 637,
+      "bottomRightY": 221,
+      "content": "In case a given GenTL Producer does not provide a data stream it must return “0” for the number of available stream channels. In this case a call to DevOpenDataStream and all data stream related functions which start with a DS in the name will fail. This is then called a “Non Streaming Implementation”. It only covers the control layer which is responsible for enumeration and communication with the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 229,
+      "bottomRightX": 636,
+      "bottomRightY": 265,
+      "content": "If a device is not needed anymore call the DevClose function to free the Device module's resources and its depending child Data Streams if they are still open.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 270,
+      "bottomRightX": 636,
+      "bottomRightY": 306,
+      "content": "After a Device module has been closed it may be opened again and the handle to the module may be different from the first instantiation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 325,
+      "bottomRightX": 221,
+      "bottomRightY": 343,
+      "content": "### 3.5 Data Stream",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 353,
+      "bottomRightX": 636,
+      "bottomRightY": 419,
+      "content": "The Data Stream module does not enumerate its child modules. Main purpose of this module is the acquisition which is described in detail in chapter 5 Acquisition Engine (page 42ff). Buffers are introduced by the calling GenTL Consumer and thus it is not necessary to enumerate them.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 426,
+      "bottomRightX": 636,
+      "bottomRightY": 476,
+      "content": "Every stream is identified not by an index but by a Device module wide unique ID. The content of this ID is up to the GenTL Producer and is only interpreted by it and not by any GenTL Consumer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 484,
+      "bottomRightX": 636,
+      "bottomRightY": 535,
+      "content": "When a Data Stream module is not needed anymore the DSClose function must be called to free its resources. This automatically stops a running acquisition, flushes all buffers and revokes them.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 542,
+      "bottomRightX": 636,
+      "bottomRightY": 627,
+      "content": "Access from a different process space is not recommended. The module does no reference counting. That means that even if a Data Stream module handle is requested a second time from within one process space the second call will return the error GC ERR RESOURCE IN USE. The first call from within that process to the close function will free all resources and shut down the module in that process.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 634,
+      "bottomRightX": 636,
+      "bottomRightY": 668,
+      "content": "After a Data Stream module has been closed it may be opened again and the handle to the module may be different from the first instantiation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 689,
+      "bottomRightX": 174,
+      "bottomRightY": 707,
+      "content": "### 3.6 Buffer",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 715,
+      "bottomRightX": 502,
+      "bottomRightY": 734,
+      "content": "A buffer acts as the destination for the data from the acquisition engine.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 740,
+      "bottomRightX": 636,
+      "bottomRightY": 793,
+      "content": "Every buffer is identified not by an index but by a unique handle returned from the DSAnnounceBuffer, DSAllocAndAnnounceBuffer or DSAnnounceCompositeBuffer functions.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 800,
+      "bottomRightX": 636,
+      "bottomRightY": 905,
+      "content": "A buffer can be allocated either by the GenTL Consumer or by the GenTL Producer. Buffers allocated by the GenTL Consumer are made known to the Data Stream module by a call to DSAnnounceBuffer or DSAnnounceCompositeBuffer which returns a BUFFER_HANDLE for this buffer. Buffers allocated by the GenTL Producer are retrieved by a call to DSAllocAndAnnounceBuffer which also returns a BUFFER_HANDLE. The two methods (consumer vs. producer allocated buffers) must not be mixed on a single Data",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 25 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

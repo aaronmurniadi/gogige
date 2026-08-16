@@ -1,0 +1,112 @@
+{
+  "index": 577,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 232,
+      "topLeftY": 144,
+      "bottomRightX": 691,
+      "bottomRightY": 200,
+      "content": "**: An integer in the range iof {∅, 2} declaring the number of consecutive pixels in vertical direction that are outputted simultaneously from each zone. This field is omitted when all pixels are in the same line.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 232,
+      "topLeftY": 208,
+      "bottomRightX": 716,
+      "bottomRightY": 279,
+      "content": "**: A letter in range of {∅, E} declaring the location of the pixels extractors in the vertical direction. The value E indicates that pixel extractors are at both top and bottom lines. This field is omitted when all pixel extractors are in the top line.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 312,
+      "bottomRightX": 405,
+      "bottomRightY": 333,
+      "content": "### 29.2.1.3 Tap Geometrical Properties",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 338,
+      "bottomRightX": 651,
+      "bottomRightY": 392,
+      "content": "The following tables provide description of all the tap geometry configurations. For every configuration the first and last pixel belonging to that tap, as well as the pixel increment corresponding to the given tap is listed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 399,
+      "bottomRightX": 710,
+      "bottomRightY": 435,
+      "content": "This table enumerates the standard tap geometries. The table is sorted by increasing number of taps. It displays the values of the 6 geometrical properties for each tap.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 198,
+      "topLeftY": 468,
+      "bottomRightX": 606,
+      "bottomRightY": 486,
+      "content": "Table 29-1 Tap geometrical properties – One, two and three taps",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 492,
+      "bottomRightX": 668,
+      "bottomRightY": 921,
+      "content": "|  Geometry name |   | Tap | Tap geometrical properties  |   |   |   |   |   |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  Area-scan | Line-scan |   | X Start | X End | Step X | Y Start | Y End | Step Y  |\n|  1X-1Y | 1X | Tap1 | 1 | W | 1 | 1 | H | 1  |\n|  1X2-1Y | 1X2 | Tap1 | 1 | W-1 | 2 | 1 | H | 1  |\n|   |   |  Tap2 | 2 | W | 2 | 1 | H | 1  |\n|  2X-1Y | 2X | Tap1 | 1 | W/2 | 1 | 1 | H | 1  |\n|   |   |  Tap2 | W/2+1 | W | 1 | 1 | H | 1  |\n|  2XE-1Y | 2XE | Tap1 | 1 | W/2 | 1 | 1 | H | 1  |\n|   |   |  Tap2 | W | W/2+1 | -1 | 1 | H | 1  |\n|  2XM-1Y | 2XM | Tap1 | W/2 | 1 | -1 | 1 | H | 1  |\n|   |   |  Tap2 | W/2+1 | W | 1 | 1 | H | 1  |\n|  1X-1Y2 |  | Tap1 | 1 | W | 1 | 1 | H-1 | 2  |\n|   |   |  Tap2 | 1 | W | 1 | 2 | H | 2  |\n|  1X-2YE |  | Tap1 | 1 | W | 1 | 1 | H/2 | 1  |\n|   |   |  Tap2 | 1 | W | 1 | H | H/2+1 | -1  |\n|  1X3-1Y | 1X3 | Tap1 | 1 | W-2 | 3 | 1 | H | 1  |\n|   |   |  Tap2 | 2 | W-1 | 3 | 1 | H | 1  |\n|   |   |  Tap3 | 3 | W | 3 | 1 | H | 1  |\n|  3X-1Y | 3X | Tap1 | 1 | W/3 | 1 | 1 | H | 1  |\n|   |   |  Tap2 | W/3+1 | 2W/3 | 1 | 1 | H | 1  |\n|   |   |  Tap3 | 2W/3+1 | W | 1 | 1 | H | 1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 578 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

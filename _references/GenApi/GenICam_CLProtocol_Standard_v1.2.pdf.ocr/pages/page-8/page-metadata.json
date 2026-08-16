@@ -1,0 +1,264 @@
+{
+  "index": 7,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 111,
+      "content": "|  GEN<i>CAM |   | ![img-10.jpeg](img-10.jpeg) emva  |\n| --- | --- | --- |\n|  V1.2 | CLProtocol Standard Module  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 123,
+      "bottomRightX": 631,
+      "bottomRightY": 153,
+      "content": "This key contains a value named “CLSERIALPATH” with type string (REG_SZ) which contains the actual path to the directory. The path should be:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 158,
+      "bottomRightX": 315,
+      "bottomRightY": 170,
+      "content": "%ProgramFiles%\\CameraLink\\Serial",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 176,
+      "bottomRightX": 514,
+      "bottomRightY": 192,
+      "content": "If the key/value already exist and point to a different location this location must be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 197,
+      "bottomRightX": 626,
+      "bottomRightY": 227,
+      "content": "For 64-bit Windows the Win32 version of CLSerXXX module should be in the directory defined in the registry key:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 231,
+      "bottomRightX": 420,
+      "bottomRightY": 246,
+      "content": "HKEY_LOCAL_MACHINE\\software\\Wow6432Node\\cameraLink",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 252,
+      "bottomRightX": 626,
+      "bottomRightY": 293,
+      "content": "NOTE: CLAllSerial module always uses HKEY_LOCAL_MACHINE\\software\\cameraLink to retrieve the CLSerXXX modules. The Windows Registry Redirector makes sure that the application sees only one of the two registry entries depending on the application being built for Win32 or Win64.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 299,
+      "bottomRightX": 631,
+      "bottomRightY": 328,
+      "content": "This key contains a value named “CLSERIALPATH” with type string (REG_SZ) which contains the actual path to the directory. The path should be",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 334,
+      "bottomRightX": 344,
+      "bottomRightY": 347,
+      "content": "%ProgramFiles(x86)%\\CameraLink\\Serial",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 354,
+      "bottomRightX": 621,
+      "bottomRightY": 383,
+      "content": "If the key/value already exist and point to a different location this location must be used. You must not change any existing value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 388,
+      "bottomRightX": 591,
+      "bottomRightY": 404,
+      "content": "You must not change any existing value. If the keys/values/directories do not exist they must be created.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 409,
+      "bottomRightX": 374,
+      "bottomRightY": 424,
+      "content": "The value “CLSERIALPATH” must only contain one path.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 438,
+      "bottomRightX": 624,
+      "bottomRightY": 494,
+      "content": "When CLAllSerial module loads under Linux, it will search for the CLSerXXX modules in the directory of the CLALLSerial module itself. To work with existing installations of frame grabber manufacturers it is recommended to create a soft link in the directory of the CLAllSerial module which points to the real (lib)clserxxx.so laying in the installation path of the frame grabber software.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 506,
+      "bottomRightX": 273,
+      "bottomRightY": 521,
+      "content": "Example when using it with soft links:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 104,
+      "topLeftY": 525,
+      "bottomRightX": 594,
+      "bottomRightY": 592,
+      "content": "- /opt/ManufacturerXXX/libclserXXX.so → CLSerXXX module of ManufacturerXXX\n- ~/example/clserXXX.so → soft link which points to /opt/ManufacturerXXX/libclserXXX.so\n- ~/example/libCLAllSerial_gcc48_v3_0.so → CLAllSerial module\n- ~/example/libCLProtocol_gcc48_v3_0.so → CLProtocol module",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 597,
+      "bottomRightX": 295,
+      "bottomRightY": 612,
+      "content": "A PortID is a string of the following form:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 622,
+      "bottomRightX": 306,
+      "bottomRightY": 634,
+      "content": "\"FrameGrabberManufacturer#PortName\"",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 640,
+      "bottomRightX": 635,
+      "bottomRightY": 669,
+      "content": "The token on the left of the hash (‘#’) sign is the frame grabber’s manufacturer name and the token to the right the port name. Both strings are retrieved via the clGetPortInfo function defined in the Camera Link standard.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 676,
+      "bottomRightX": 635,
+      "bottomRightY": 704,
+      "content": "If a CompanyZ has for example two frame grabbers installed in a system with two serial ports each the following list of PortIDs would be result:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 713,
+      "bottomRightX": 231,
+      "bottomRightY": 758,
+      "content": "\"CompanyZ#BoardAPort1\"\n\"CompanyZ#BoardAPort2\"\n\"CompanyZ#BoardBPort1\"\n\"CompanyZ#BoardBPort2\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 765,
+      "bottomRightX": 635,
+      "bottomRightY": 795,
+      "content": "The standard COM ports of a PC are available via a pseudo frame grabber manufacturer called \"COM_Port\" enumerating PortIDs of the following form:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 804,
+      "bottomRightX": 190,
+      "bottomRightY": 837,
+      "content": "\"COM_Port#COM1\"\n\"COM_Port#COM2\"\netc.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 845,
+      "bottomRightX": 497,
+      "bottomRightY": 860,
+      "content": "The COM_Port frame grabber library comes as part of the reference implementation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 865,
+      "bottomRightX": 635,
+      "bottomRightY": 909,
+      "content": "Another pseudo frame grabber is available named “Local” which is used for ISerial implementations provided statically without using the enumeration mechanism of the CLAllSerial module. This may for example be used in embedded systems. In this case a PortID could for example look like this:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 917,
+      "bottomRightX": 248,
+      "bottomRightY": 930,
+      "content": "\"Local#TheOneAndOnlyPort\"",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 960,
+      "bottomRightX": 245,
+      "bottomRightY": 975,
+      "content": "GenICam_CLProtocol_Standard",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 321,
+      "topLeftY": 960,
+      "bottomRightX": 421,
+      "bottomRightY": 974,
+      "content": "September 18, 2018",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 571,
+      "topLeftY": 960,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 8 of 13",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

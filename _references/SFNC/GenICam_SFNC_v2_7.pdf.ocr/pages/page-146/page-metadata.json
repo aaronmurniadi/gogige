@@ -1,0 +1,177 @@
+{
+  "index": 145,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-42.jpeg](img-42.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 117,
+      "bottomRightX": 364,
+      "bottomRightY": 229,
+      "content": "|   | Mono2pMono4pMono8Mono10Mono10p...  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 245,
+      "bottomRightX": 439,
+      "bottomRightY": 262,
+      "content": "Select the pixel format for which the information will be returned.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 268,
+      "bottomRightX": 564,
+      "bottomRightY": 286,
+      "content": "The pixel format selected must be one of the values present in the PixelFormat feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 292,
+      "bottomRightX": 169,
+      "bottomRightY": 308,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 317,
+      "bottomRightX": 285,
+      "bottomRightY": 483,
+      "content": "• Mono1p: Mono 1 bit packed.\n• Mono2p: Mono 2 bit packed.\n• Mono4p: Mono 4 bit packed.\n• Mono8: Mono 8 bit packed.\n• Mono10: Mono 10 bit.\n• Mono10p: Mono 10 bit packed.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 491,
+      "bottomRightX": 488,
+      "bottomRightY": 510,
+      "content": "Note: This feature must be a floating node and should always be available.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 522,
+      "bottomRightX": 243,
+      "bottomRightY": 540,
+      "content": "4.37 PixelFormatInfoID",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 544,
+      "bottomRightX": 477,
+      "bottomRightY": 744,
+      "content": "|  Name | PixelFormatInfoID[PixelFormatInfoSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 760,
+      "bottomRightX": 555,
+      "bottomRightY": 778,
+      "content": "Returns the value used by the streaming channels to identify the selected pixel format.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 783,
+      "bottomRightX": 646,
+      "bottomRightY": 800,
+      "content": "This value is generally equal to the standardized GenICam PFNC value for the selected PixelFormat.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 807,
+      "bottomRightX": 647,
+      "bottomRightY": 840,
+      "content": "To change the Pixel format of the data that will be sent by the device, the PixelFormat feature should be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 848,
+      "bottomRightX": 494,
+      "bottomRightY": 865,
+      "content": "Note: This feature must be a floating node and should always be available.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 879,
+      "bottomRightX": 303,
+      "bottomRightY": 900,
+      "content": "4.38 PixelCoding (Deprecated)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 901,
+      "bottomRightX": 364,
+      "bottomRightY": 928,
+      "content": "|  Name | PixelCoding  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 146 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "index": 253,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 747,
+      "bottomRightY": 289,
+      "content": "- LogicBlock0 (if 0 based), LogicBlock1, LogicBlock2, ...: Starts with the reception of the Logic Block output signal.\n- SoftwareSignal0, SoftwareSignal1, SoftwareSignal2, ...: Starts on the reception of the Software Signal.\n- Action0, Action1, Action2, ...: Starts with the assertion of the chosen action signal.\n- LinkTrigger0, LinkTrigger1, LinkTrigger2, ...: Starts with the reception of the chosen Link Trigger signal.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 303,
+      "bottomRightX": 366,
+      "bottomRightY": 325,
+      "content": "### 10.3.12 CounterTriggerActivation",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 326,
+      "bottomRightX": 459,
+      "bottomRightY": 611,
+      "content": "|  Name | CounterTriggerActivation[CounterSelector]  |\n| --- | --- |\n|  Category | CounterAndTimerControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | RisingEdge FallingEdge AnyEdge LevelHigh LevelLow  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 635,
+      "bottomRightX": 437,
+      "bottomRightY": 653,
+      "content": "Selects the activation mode of the trigger to start the Counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 662,
+      "bottomRightX": 177,
+      "bottomRightY": 677,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 688,
+      "bottomRightX": 629,
+      "bottomRightY": 812,
+      "content": "- RisingEdge: Starts counting on the Rising Edge of the selected trigger signal.\n- FallingEdge: Starts counting on the Falling Edge of the selected trigger signal.\n- AnyEdge: Starts counting on the Falling or rising Edge of the selected trigger signal.\n- LevelHigh: Counts as long as the selected trigger signal level is High.\n- LevelLow: Counts as long as the selected trigger signal level is Low.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 25,
+      "topLeftY": 853,
+      "bottomRightX": 258,
+      "bottomRightY": 876,
+      "content": "### 10.4 Timer usage model",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 896,
+      "bottomRightX": 348,
+      "bottomRightY": 914,
+      "content": "This section describes the Timers usage model.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 254 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

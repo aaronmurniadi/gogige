@@ -1,0 +1,131 @@
+{
+  "index": 2,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 111,
+      "content": "|  GEN<I>CAM |   | ![img-2.jpeg](img-2.jpeg) emva  |\n| --- | --- | --- |\n|  V1.2 | CLProtocol Standard Module  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 139,
+      "bottomRightX": 189,
+      "bottomRightY": 157,
+      "content": "## 1 Overview",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 168,
+      "bottomRightX": 636,
+      "bottomRightY": 238,
+      "content": "This module of the GenICam standard describes how to configure a Camera Link \\( ^{®} \\) camera using the GenApi module of the GenICam standard. The Camera Link specification does not define cameras to be register-based. Instead, the Camera Link configuration interface is based on an ISerial interface which allows sending and receiving blocks of bytes. The GenICam GenApi module however requires an IPort interface which allows getting and setting registers in the camera.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 246,
+      "bottomRightX": 637,
+      "bottomRightY": 287,
+      "content": "The CLProtocol module defines the interface of a Camera Link protocol driver library (hereinafter referred to as CLProtocol driver library) which must be provided by the camera manufacturer. The CLProtocol driver library must implement an IPort interface using the ISerial interface as connection to the camera (see Figure 1).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 299,
+      "bottomRightX": 450,
+      "bottomRightY": 498,
+      "content": "![img-3.jpeg](img-3.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-3.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 503,
+      "bottomRightX": 446,
+      "bottomRightY": 519,
+      "content": "Figure 1 Using the CLProtocol driver library to configure a camera",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 533,
+      "bottomRightX": 636,
+      "bottomRightY": 591,
+      "content": "If a camera is natively register-based the CLProtocol driver library is just a simple protocol driver running for example a binary register access protocol like the CANbus protocol. If however a camera is for example ASCII-based the CLProtocol driver library must implement a pseudo register space and provide the corresponding camera description XML file (see Figure 2Figure 3).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 137,
+      "topLeftY": 602,
+      "bottomRightX": 582,
+      "bottomRightY": 831,
+      "content": "![img-4.jpeg](img-4.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-4.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 835,
+      "bottomRightX": 327,
+      "bottomRightY": 850,
+      "content": "Figure 2 Providing a pseudo register space",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 863,
+      "bottomRightX": 636,
+      "bottomRightY": 908,
+      "content": "This CLProtocol driver library has a pure C interface and is normally not used directly. Instead, the GenICam reference implementation provides the CLProtocol module which comes with a C++ wrapper class CCLPort deals with tasks like loading and binding of the best matching driver library (see Figure 1). The wrapper class",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 959,
+      "bottomRightX": 246,
+      "bottomRightY": 975,
+      "content": "GenICam_CLProtocol_Standard",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 321,
+      "topLeftY": 959,
+      "bottomRightX": 421,
+      "bottomRightY": 974,
+      "content": "September 18, 2018",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 571,
+      "topLeftY": 959,
+      "bottomRightX": 636,
+      "bottomRightY": 974,
+      "content": "Page 3 of 13",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

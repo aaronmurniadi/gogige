@@ -1,0 +1,131 @@
+{
+  "index": 566,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 144,
+      "bottomRightX": 722,
+      "bottomRightY": 181,
+      "content": "This feature provides the duplicate count in striped system. A non-zero value sets the number of duplicate images sent to sub-Devices.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 221,
+      "bottomRightX": 363,
+      "bottomRightY": 243,
+      "content": "### 27.7.14 CxpConnectionSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 243,
+      "bottomRightX": 571,
+      "bottomRightY": 474,
+      "content": "|  Name | CxpConnectionSelector  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 489,
+      "bottomRightX": 400,
+      "bottomRightY": 509,
+      "content": "Selects the CoaXPress physical connection to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 524,
+      "bottomRightX": 716,
+      "bottomRightY": 581,
+      "content": "Note that this selector should be set to 0, or omitted, when controlling features relating to the CoaXPress uplink from the Receiver Device to the Transmitter Device, because only connection 0 is used for this purpose.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 594,
+      "bottomRightX": 376,
+      "bottomRightY": 615,
+      "content": "### 27.7.15 CxpConnectionTestMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 617,
+      "bottomRightX": 571,
+      "bottomRightY": 858,
+      "content": "|  Name | CxpConnectionTestMode[CxpConnectionSelector]  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Off Model  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 875,
+      "bottomRightX": 527,
+      "bottomRightY": 893,
+      "content": "Enables the test mode for an individual physical connection of the Device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 909,
+      "bottomRightX": 188,
+      "bottomRightY": 927,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 567 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

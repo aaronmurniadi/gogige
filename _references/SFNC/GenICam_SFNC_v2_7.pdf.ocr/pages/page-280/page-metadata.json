@@ -1,0 +1,133 @@
+{
+  "index": 279,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 134,
+      "bottomRightX": 435,
+      "bottomRightY": 166,
+      "content": "LogicBlockInputInverter[LogicBlock0][2] = False;\nLogicBlockLUTValueAll[LogicBlock0] = 0xA8;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 182,
+      "bottomRightX": 457,
+      "bottomRightY": 300,
+      "content": "/* Initialize the AND Logic Block input sources. */\nLogicBlockSelector = LogicBlock1;\nLogicBlockFunction[LogicBlock1] = AND;\nLogicBlockInputNumber[LogicBlock1] = 2;\nLogicBlockInputSelector[LogicBlock1] = 0;\nLogicBlockInputSource[LogicBlock1][0] = LogicBlock0;\nLogicBlockInputSelector[LogicBlock1] = 1;\nLogicBlockInputSource[LogicBlock1][1] = Line2;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 313,
+      "bottomRightX": 708,
+      "bottomRightY": 432,
+      "content": "/* Set the cascaded Logic Blocks as the trigger source and start the acquisition. */\nTriggerSelector = FrameStart;\nTriggerSource[FrameStart] = LogicBlock1;\nTriggerActivation[FrameStart] = RisingEdge;\nTriggerMode[FrameStart] = On;\nAquisitionStart();\n...\nAquisitionEnd();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 451,
+      "bottomRightX": 127,
+      "bottomRightY": 467,
+      "content": "### Example 3",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 474,
+      "bottomRightX": 696,
+      "bottomRightY": 512,
+      "content": "Setting of a custom Latched dual LUTs Logical Block counting the number of triggers that occur when FrameTriggerWait is not active (i.e. Over trigger counting).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 531,
+      "bottomRightX": 494,
+      "bottomRightY": 770,
+      "content": "![img-91.jpeg](img-91.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-91.jpeg"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 792,
+      "bottomRightX": 203,
+      "bottomRightY": 934,
+      "content": "|  Input |   |   | Value LUT Output  |\n| --- | --- | --- | --- |\n|  2 | 1 | 0  |   |\n|  0 | 0 | 0 | 0  |\n|  0 | 0 | 1 | 0  |\n|  0 | 1 | 0 | 0  |\n|  0 | 1 | 1 | 1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 222,
+      "topLeftY": 792,
+      "bottomRightX": 375,
+      "bottomRightY": 934,
+      "content": "|  Input |   |   | Enable LUT Output  |\n| --- | --- | --- | --- |\n|  2 | 1 | 0  |   |\n|  1 | 0 | 0 | 1  |\n|  1 | 0 | 1 | 1  |\n|  1 | 1 | 0 | 1  |\n|  1 | 1 | 1 | 1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 792,
+      "bottomRightX": 557,
+      "bottomRightY": 934,
+      "content": "|  Input |   | Q Next Output  |\n| --- | --- | --- |\n|  D | En |   |\n|  0 | 0 | Q Previous  |\n|  0 | 1 | 0  |\n|  1 | 0 | Q previous  |\n|  1 | 1 | 1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 280 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

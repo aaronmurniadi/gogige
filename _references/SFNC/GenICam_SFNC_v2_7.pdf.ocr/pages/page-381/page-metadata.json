@@ -1,0 +1,130 @@
+{
+  "index": 380,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 736,
+      "bottomRightY": 189,
+      "content": "To facilitate merging and aligning data from multiple devices a device may support transforming from the anchored coordinate system to a transformed location and pose (orientation). The use of this transformation, and its definition, is determined with standard features described below.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 741,
+      "bottomRightY": 232,
+      "content": "The transforms are defined in Cartesian coordinates only, and therefore use the X,Y,Z notation. The transform values define the transform from Anchor to Reference and from Transformed to Reference coordinate system.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 177,
+      "topLeftY": 263,
+      "bottomRightX": 633,
+      "bottomRightY": 636,
+      "content": "![img-119.jpeg](img-119.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-119.jpeg"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 643,
+      "bottomRightX": 640,
+      "bottomRightY": 664,
+      "content": "Figure 21-13: 3D camera anchors and transformed position and orientation.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 694,
+      "bottomRightX": 203,
+      "bottomRightY": 712,
+      "content": "### Transform Definition:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 720,
+      "bottomRightX": 741,
+      "bottomRightY": 757,
+      "content": "The transformation from anchor to the transformed or reference coordinate system is defined by a rotation and then a translation to the new origin.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 764,
+      "bottomRightX": 754,
+      "bottomRightY": 800,
+      "content": "The transforms are ThX,ThY,ThZ – rotation angles around X,Y and Z axis, and a translation T to the new origin position. Thus, 3+3 = 6 parameters define the coordinate transform.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 807,
+      "bottomRightX": 748,
+      "bottomRightY": 862,
+      "content": "In homogenous coordinates the transform of a point from the original coordinate system to the transformed (i.e. from Anchor to Transformed for Scan3dTransformValue and Anchor /Transformed to Reference for Scan3dReferenceValue) is defined by the transforms",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 371,
+      "topLeftY": 870,
+      "bottomRightX": 435,
+      "bottomRightY": 937,
+      "content": "$$P = \\begin{pmatrix} X \\\\ Y \\\\ Z \\\\ 1 \\end{pmatrix}$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 381 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 616,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

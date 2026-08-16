@@ -1,0 +1,1 @@
+In case of a writable MultiSlopeExposureGradient, only MultiSlopeSaturationThreshold and MultiSlopeExposureLimit of the related knee-point should be changed.

@@ -1,0 +1,167 @@
+{
+  "index": 104,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 535,
+      "bottomRightY": 79,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 118,
+      "bottomRightX": 530,
+      "bottomRightY": 285,
+      "content": "|  Level | Optional  |\n| --- | --- |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | Transmitter Receiver  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 308,
+      "bottomRightX": 281,
+      "bottomRightY": 325,
+      "content": "Reports the type of the stream channel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 331,
+      "bottomRightX": 169,
+      "bottomRightY": 346,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 93,
+      "topLeftY": 357,
+      "bottomRightX": 390,
+      "bottomRightY": 397,
+      "content": "- Transmitter: Data stream transmitter channel.\n- Receiver: Data stream receiver channel.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 413,
+      "bottomRightX": 311,
+      "bottomRightY": 431,
+      "content": "### 3.45 DeviceStreamChannelLink",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 434,
+      "bottomRightX": 530,
+      "bottomRightY": 651,
+      "content": "|  Name | DeviceStreamChannelLink [DeviceStreamChannelSelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 674,
+      "bottomRightX": 475,
+      "bottomRightY": 691,
+      "content": "Index of device's Link to use for streaming the specified stream channel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 705,
+      "bottomRightX": 372,
+      "bottomRightY": 722,
+      "content": "### 3.46 DeviceStreamChannelEndianness",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 727,
+      "bottomRightX": 530,
+      "bottomRightY": 943,
+      "content": "|  Name | DeviceStreamChannelEndianness [DeviceStreamChannelSelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | Big  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 105 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

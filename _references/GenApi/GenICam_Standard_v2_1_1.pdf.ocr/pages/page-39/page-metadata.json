@@ -1,0 +1,129 @@
+{
+  "index": 38,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-54.jpeg](img-54.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 116,
+      "topLeftY": 151,
+      "bottomRightX": 415,
+      "bottomRightY": 330,
+      "content": "<IntSwissKnife Name=\"XTimesY\">\n    XValue\n    YValue\n    X*Y\n    \n</IntSwissKnife>\n\n<Integer Name=\"XValue\">\n    <Value>42</Value>\n</Integer>\n\n<Integer Name=\"YValue\">\n    <Value>12</Value>\n</Integer>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 351,
+      "bottomRightX": 636,
+      "bottomRightY": 401,
+      "content": "The \\( <Formula> \\) element contains a mathematical formula that can refer to variables defined by \\( <pVariable> \\) elements which point to an Integer node and have a Name attribute that defines the name of the variable inside the formula. The variable name must be upper case.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 408,
+      "bottomRightX": 637,
+      "bottomRightY": 474,
+      "content": "The Swiss knife used in the reference implementation is quite powerful. However, to simplify the task for people wanting to do their own implementation, the standard only allows a restricted set of mathematical operations. The following operations are supported by the standard:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 123,
+      "topLeftY": 481,
+      "bottomRightX": 637,
+      "bottomRightY": 685,
+      "content": "( ) brackets\n+ - * / addition, subtraction, multiplication, division\n% remainder\n** power\n& | ^ ~ bitwise and / or / xor / not\n&lt; &gt; = &gt; &lt; &lt; = &gt;= logical relations not equal / equal / greater / less / less of equal / greater or equal\n&& || logical and / or\n&lt;&lt; &gt;&gt; shift left, shift right",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 713,
+      "bottomRightX": 254,
+      "bottomRightY": 731,
+      "content": "Conditional operator:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 168,
+      "topLeftY": 737,
+      "bottomRightX": 417,
+      "bottomRightY": 754,
+      "content": "<condition> ? <true expr.=\"\"> : <false expr.=\"\"></false></true></condition>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 761,
+      "bottomRightX": 190,
+      "bottomRightY": 776,
+      "content": "Functions:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 168,
+      "topLeftY": 785,
+      "bottomRightX": 242,
+      "bottomRightY": 801,
+      "content": "SGN, NEG,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 808,
+      "bottomRightX": 568,
+      "bottomRightY": 826,
+      "content": "Functions present only with the SwissKnife but not with the IntSwissKnife:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 167,
+      "topLeftY": 833,
+      "bottomRightX": 487,
+      "bottomRightY": 898,
+      "content": "ATAN, COS, SIN, TAN, ABS, EXP, LN, LG, SQRT, TRUNC, FLOOR, CEIL, ROUND(x, precision=0), ASIN, ACOS, SGN, NEG, E, PI",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 39 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

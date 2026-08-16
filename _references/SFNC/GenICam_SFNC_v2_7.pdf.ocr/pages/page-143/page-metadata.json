@@ -1,0 +1,57 @@
+{
+  "index": 142,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 23,
+      "bottomRightX": 691,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-39.jpeg](img-39.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 120,
+      "bottomRightX": 446,
+      "bottomRightY": 937,
+      "content": "• Mono12p: Mono 12 bit packed.\n• Mono14: Mono 14 bit.\n• Mono16: Mono 16 bit.\n• R8: Red 8 bit.\n• G8: Green 8 bit.\n• B8: Blue 8 bit.\n• RGB8: Red, Green, Blue 8 bit\n- RGB8_Planar: Red, Green, Blue 8 bit planar.\n- RGBa8: Red, Green, Blue 8 bit aligned on 8 bit\n• RGB10: Red, Green, Blue 10 bit.\n- RGB10_Planar: Red, Green, Blue 10 bit planar.\n- RGB10p32: Red, Green, Blue 10 bit packed in 32 bit pixel.\n• RGB12: Red, Green, Blue 12 bit.\n- RGB12_Planar: Red, Green, Blue 12 bit planar.\n• RGB16: Red, Green, Blue 16 bit.\n- RGB16_Planar: Red, Green, Blue 16 bit planar.\n- RGB565p: Red, Green, Blue 16 bit packet in 5, 6, 5 bits.\n• BGR10: Blue, Green, Red, 10 bit.\n• BGR12: Blue, Green, Red, 12 bit.\n• BGR16: Blue, Green, Red, 16 bit.\n- BGR565p: Blue, Green, Red, 16 bit packet in 5, 6, 5 bits.\n• BGR8: Blue, Green, Red, 8 bit.\n• BGRa8: Blue, Green, Red, Alpha 8 bit.\n• YUV422_8: YUV 422 8 bit.\n- YCbCr411_8: YCrCb 411 8 bit.\n- YCbCr422_8: YCrCb 422 8 bit.\n- YCbCr601_422_8: YCrCb 601 422 8 bit.\n- YCbCr709_422_8: YCrCb 709 422 8 bit.\n- YCbCr8: YCbCr 8 bit.\n• BayerBG8: Bayer Blue Green 8 bit.\n• BayerGB8: Bayer Green Blue 8 bit.\n• BayerGR8: Bayer Green Red 8 bit.\n• BayerRG8: Bayer Red Green 8 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 949,
+      "bottomRightX": 107,
+      "bottomRightY": 964,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 949,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 143 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

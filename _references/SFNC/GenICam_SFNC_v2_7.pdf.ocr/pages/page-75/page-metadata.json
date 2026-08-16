@@ -1,0 +1,84 @@
+{
+  "index": 74,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 592,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 76,
+      "bottomRightX": 122,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 171,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 923,
+      "bottomRightY": 642,
+      "content": "|  ChunkOffsetY | R | Integer | R | - | E | Returns the OffsetY of the image included in the payload.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  ChunkWidth[ChunkRegionSelector] | R | Integer | R | - | E | Returns the Width of the image included in the payload.  |\n|  ChunkHeight[ChunkRegionSelector] | R | Integer | R | - | E | Returns the Height of the image included in the payload.  |\n|  ChunkPixelFormat | R | Enumeration | R | - | E | Returns the PixelFormat of the image included in the payload.  |\n|  ChunkPixelDynamicRangeMin | R | Integer | R | - | E | Returns the minimum value of dynamic range of the image included in the payload.  |\n|  ChunkPixelDynamicRangeMax | R | Integer | R | - | E | Returns the maximum value of dynamic range of the image included in the payload.  |\n|  ChunkBinningHorizontal | O | Integer | R/W | - | E | Number of horizontal photo-sensitive cells combined together.  |\n|  ChunkBinningVertical | O | Integer | R/W | - | E | Number of vertical photo-sensitive cells combined together.  |\n|  ChunkDecimationHorizontal | O | Integer | R/W | - | E | Horizontal sub-sampling of the image.  |\n|  ChunkDecimationVertical | O | Integer | R/W | - | E | Vertical sub-sampling of the image.  |\n|  ChunkReverseX | R | Boolean | R/W | - | E | Flip horizontal of the image sent by the device.  |\n|  ChunkReverseY | R | Boolean | R/W | - | E | Flip vertically of the image sent by the device.  |\n|  ChunkTimestamp | R | Integer | R | - | E | Returns the Timestamp of the image included in the payload at the time of the FrameStart internal event.  |\n|  ChunkTimestampLatchValue | R | Integer | R | ns | E | Returns the last Timestamp latched with the TimestampLatch command.  |\n|  ChunkLineStatusAll | R | Integer | R | - | E | Returns the status of all the I/O lines at the time of the FrameStart internal event.  |\n|  ChunkCounterSelector | R | Enumeration | R/W | - | E | Selects which counter to retrieve data from.  |\n|  ChunkCounterValue[ChunkCounterSelector] | R | Integer | R | - | E | Returns the value of the selected Chunk counter at the time of the FrameStart event.  |\n|  ChunkTimerSelector | R | Enumeration | R/W | - | E | Selects which Timer to retrieve data from.  |\n|  ChunkTimerValue[ChunkTimerSelector] | R | Float | R | us | E | Returns the value of the selected Timer at the time of the FrameStart internal event.  |\n|  ChunkScanLineSelector | O | Integer | R/W | - | E | Index for vector representation of one chunk value per line in an image.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 75 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "index": 6,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 577,
+      "bottomRightY": 77,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 117,
+      "bottomRightX": 660,
+      "bottomRightY": 134,
+      "content": "6.15 GAMMA 221",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 148,
+      "bottomRightX": 661,
+      "bottomRightY": 167,
+      "content": "# 7 LUT CONTROL...223",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 182,
+      "bottomRightX": 660,
+      "bottomRightY": 289,
+      "content": "7.1 LUTCONTROL 223\n7.2 LUTSELECTOR 223\n7.3 LUTENABLE...224\n7.4 LUTINDEX 224\n7.5 LUTVALUE 224\n7.6 LUTVALUEALL 225",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 304,
+      "bottomRightX": 661,
+      "bottomRightY": 324,
+      "content": "# 8 COLOR TRANSFORMATION CONTROL ...226",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 339,
+      "bottomRightX": 660,
+      "bottomRightY": 426,
+      "content": "8.1 COLORTRANSFORMATIONCONTROL 227\n8.2 COLORTRANSFORMATIONSELECTOR 227\n8.3 COLORTRANSFORMATIONENABLE 228\n8.4 COLORTRANSFORMATIONVALUESELECTOR 228\n8.5 COLORTRANSFORMATIONVALUE 229",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 442,
+      "bottomRightX": 660,
+      "bottomRightY": 461,
+      "content": "# 9 DIGITAL I/O CONTROL...231",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 476,
+      "bottomRightX": 660,
+      "bottomRightY": 726,
+      "content": "9.1 DIGITAL I/O USAGE MODEL 231\n9.2 DIGITAL I/O CONTROL FEATURES...233\n9.2.1 DIGITALIOCONTROL 233\n9.2.2 LINESELECTOR 233\n9.2.3 LINEMODE...234\n9.2.4 LINEINVERTER...235\n9.2.5 LINESTATUS 235\n9.2.6 LINESTATUSALL 236\n9.2.7 LINESOURCE...236\n9.2.8 LINEFORMAT 238\n9.2.9 USEROUTPUTSELECTOR 239\n9.2.10 USEROUTPUTVALUE 239\n9.2.11 USEROUTPUTVALUEALL...240\n9.2.12 USEROUTPUTVALUEALLMASK...240",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 741,
+      "bottomRightX": 660,
+      "bottomRightY": 759,
+      "content": "# 10 COUNTER AND TIMER CONTROL...241",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 775,
+      "bottomRightX": 660,
+      "bottomRightY": 970,
+      "content": "10.1 COUNTER AND TIMER CATEGORY 241\n10.1.1 COUNTERANDTIMERCONTROL...241\n10.2 COUNTER USAGE MODEL 241\n10.3 COUNTER FEATURES 243\n10.3.1 COUNTERSELECTOR 243\n10.3.2 COUNTEREVENTSOURCE 244\n10.3.3 COUNTEREVENTACTIVATION...246\n10.3.4 COUNTERRESETSOURCE...246\n10.3.5 COUNTERRESETACTIVATION...248\n10.3.6 COUNTERRESET...249\n10.3.7 COUNTERVALUE...250",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 989,
+      "bottomRightX": 386,
+      "bottomRightY": 1007,
+      "content": "Page 7 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 623,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

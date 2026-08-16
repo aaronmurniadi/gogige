@@ -1,0 +1,49 @@
+{
+  "index": 160,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-233.jpeg](img-233.jpeg)CAN |   | ![img-234.jpeg](img-234.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 136,
+      "bottomRightX": 641,
+      "bottomRightY": 912,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|  PART_DATATYPE_2D_PLANE_QUADPLANAR | 4 | Single color plane of a planar (2D) image. The data should be linked with the other color planes to get the complete image.The complete image consists of 4 planes.The planes of a given planar image must be placed as consecutive parts within the buffer.It is recommended to usePIXELFORMAT NAMESPACE PFNC 32BITdata format with this data type whenever possible.  |\n|  PART_DATATYPE_3D_IMAGE | 5 | 3D image (pixel coordinates). This part carries all the pixel data of given image (even if the image is represented by a single-plane pixel format, for example when transferring the depth map only).It is recommended to usePIXELFORMAT NAMESPACE PFNC 32BITdata format with this data type whenever possible.  |\n|  PART_DATATYPE_3D_PLANE_BIPLANAR | 6 | Single plane of a planar 3D image. The data should be linked with the other coordinate planes to get the complete image.The complete image consists of 2 planes.The planes of a given planar image must be placed as consecutive parts within the buffer.It is recommended to usePIXELFORMAT NAMESPACE PFNC 32BITdata format with this data type whenever possible.  |\n|  PART_DATATYPE_3D_PLANE_TRIPLANAR | 7 | Single plane of a planar 3D image. The data should be linked with the other coordinate planes to get the  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 161 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "index": 47,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 290,
+      "content": "|  Interface | IInteger  |\n| --- | --- |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 314,
+      "bottomRightX": 457,
+      "bottomRightY": 334,
+      "content": "This feature is deprecated (See InterfaceTLVersionMajor).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 340,
+      "bottomRightX": 667,
+      "bottomRightY": 377,
+      "content": "Major version number of the GigE Vision specification the GenTL Producer implementation complies with.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 384,
+      "bottomRightX": 673,
+      "bottomRightY": 420,
+      "content": "If the value of the feature TLType is \"Mixed\" but supports GigE Vision interfaces this feature must be present.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 435,
+      "bottomRightX": 398,
+      "bottomRightY": 454,
+      "content": "3.1.1.15 GevVersionMinor (Deprecated)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 456,
+      "bottomRightX": 421,
+      "bottomRightY": 694,
+      "content": "|  Name | GevVersionMinor  |\n| --- | --- |\n|  Category | SystemInformation  |\n|  Level | Optional  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 720,
+      "bottomRightX": 457,
+      "bottomRightY": 738,
+      "content": "This feature is deprecated (See InterfaceTLVersionMinor).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 744,
+      "bottomRightX": 667,
+      "bottomRightY": 780,
+      "content": "Minor version number of the GigE Vision specification the GenTL Producer implementation complies with.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 787,
+      "bottomRightX": 673,
+      "bottomRightY": 824,
+      "content": "If the value of the feature TLType is \"Mixed\" but supports GigE Vision interfaces this feature must be present.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 846,
+      "bottomRightX": 302,
+      "bottomRightY": 864,
+      "content": "#### 3.1.2 Interface Enumeration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 877,
+      "bottomRightX": 701,
+      "bottomRightY": 913,
+      "content": "The Interface Enumeration section describes all features related to discovery and enumeration of interfaces belonging to the System module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 48 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

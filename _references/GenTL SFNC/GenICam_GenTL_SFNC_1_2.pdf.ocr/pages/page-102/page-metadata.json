@@ -1,0 +1,95 @@
+{
+  "index": 101,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 395,
+      "content": "|  Category | BufferHandlingControl  |\n| --- | --- |\n|  Level | Mandatory  |\n|  Interface | IEnumeration  |\n|  Access | Read(/Write)  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | OldestFirst (Mandatory) OldestFirstOverwrite NewestOnly Default (Deprecated)  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 420,
+      "bottomRightX": 424,
+      "bottomRightY": 440,
+      "content": "Available buffer handling modes of this Data Stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 129,
+      "topLeftY": 451,
+      "bottomRightX": 657,
+      "bottomRightY": 760,
+      "content": "![img-29.jpeg](img-29.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-29.jpeg"
+    },
+    {
+      "topLeftX": 238,
+      "topLeftY": 770,
+      "bottomRightX": 550,
+      "bottomRightY": 788,
+      "content": "Figure 3-3.1: Buffer handling mode \"OldestFirst\"",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 796,
+      "bottomRightX": 677,
+      "bottomRightY": 851,
+      "content": "- OldestFirst (Mandatory): The application always gets the buffer from the head of the Output Buffer Queue (thus, the oldest available one). If the Output Buffer Queue is empty, the application waits for a newly acquired buffer until the timeout expires.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 131,
+      "topLeftY": 857,
+      "bottomRightX": 673,
+      "bottomRightY": 912,
+      "content": "When data for a new buffer is available, the acquisition engine looks for any available buffer in the Input Buffer Pool, fills it, and appends it to the tail of the Output Buffer Queue. If the Input Buffer Pool is empty, the new data is dropped.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 102 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

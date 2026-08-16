@@ -1,0 +1,165 @@
+{
+  "index": 23,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 637,
+      "bottomRightY": 117,
+      "content": "|  GEN<ICAM |   | ![img-36.jpeg](img-36.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 147,
+      "topLeftY": 152,
+      "bottomRightX": 634,
+      "bottomRightY": 225,
+      "content": "○ If the node from B has MergePriority = -1 the corresponding node from A it is copied to C.\n○ If the node from B has MergePriority = 0 (default) or the MergeAttribute is missing an error occurs.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 104,
+      "topLeftY": 234,
+      "bottomRightX": 634,
+      "bottomRightY": 267,
+      "content": "- If a Category node is present in A and B the Category node from the target file A is copied to C with the <pFeature> entries from file B added while avoiding duplicates.</pFeature>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 273,
+      "bottomRightX": 634,
+      "bottomRightY": 325,
+      "content": "A Node can have an ExposeStatic attribute which can have the values Yes or No to be missing. It controls which node is exposed in the static use case to the customer. The following rules apply:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 104,
+      "topLeftY": 332,
+      "bottomRightX": 512,
+      "bottomRightY": 374,
+      "content": "- Features are exposed if they don't have ExposeStatic=No set\n• Non-Features are exposed only if they have ExposeStatic=Yes set",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 381,
+      "bottomRightX": 634,
+      "bottomRightY": 415,
+      "content": "An <Extension> element can be used to add custom specific data to a camera description file. All elements placed inside the <Extension> element are ignored.</Extension>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 422,
+      "bottomRightX": 634,
+      "bottomRightY": 471,
+      "content": "The <ToolTip> element gives a short description of the node. It may also be used as a brief description for reference documentation automatically generated from the camera description file.</ToolTip>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 478,
+      "bottomRightX": 634,
+      "bottomRightY": 530,
+      "content": "The <Description> element gives a more detailed description of the node. It may also be used as a long description for reference documentation automatically generated from the camera description file.</Description>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 536,
+      "bottomRightX": 634,
+      "bottomRightY": 569,
+      "content": "The <DisplayName> element lets you define feature captions that might be used instead of the feature's Name.</DisplayName>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 577,
+      "bottomRightX": 634,
+      "bottomRightY": 627,
+      "content": "The <Visibility> element defines the user level that should get access to the feature. Possible values are: Beginner, Expert, Guru, and Invisible. The latter is required to make a feature show up in the API, but not in the GUI (see section 2.8.2). </Visibility>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 635,
+      "bottomRightX": 634,
+      "bottomRightY": 717,
+      "content": "The <EventID> element is used for delivering asynchronous events. A camera might send an event package to indicate that one or more data item in the camera has changed its value. GenICam handles the event by invalidating the nodes corresponding to the data items. The nodes are found by the EventID which is a hexadecimal number which comes with the event package from the camera. Each node can have one (optional) EventID element.</EventID>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 725,
+      "bottomRightX": 634,
+      "bottomRightY": 775,
+      "content": "The <pIsImplemented>, <pIsAvailable>, and <pIsLocked> elements contains the names of nodes implementing an Integer interface. If these elements are present, they influence the access mode of this node as described in section 2.5.</pIsLocked>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 783,
+      "bottomRightX": 634,
+      "bottomRightY": 815,
+      "content": "The <pBlockPolling> element bocks the polling on a node with a PollingTime entry if the target of the element is !=0.</pBlockPolling>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 823,
+      "bottomRightX": 634,
+      "bottomRightY": 856,
+      "content": "An <ImposedAccessMode> element can be used to narrow the access mode resulting from other nodes.</ImposedAccessMode>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 864,
+      "bottomRightX": 634,
+      "bottomRightY": 930,
+      "content": "<pAlias> points to another node which describes the same feature in a different manner. This feature will be mainly used in a GUI: a Category might be replaced by its alias if not all members are shown; an integer and a flat node might be aliases of each other if they show the raw and the abs value of a feature.</pAlias>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 299,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 973,
+      "content": "Page 24 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

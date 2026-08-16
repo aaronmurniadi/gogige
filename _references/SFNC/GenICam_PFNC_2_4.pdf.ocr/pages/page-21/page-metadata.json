@@ -1,0 +1,185 @@
+{
+  "index": 20,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 44,
+      "bottomRightX": 753,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | ![img-19.jpeg](img-19.jpeg)  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 150,
+      "bottomRightX": 430,
+      "bottomRightY": 169,
+      "content": "4. The red component occupies the  \\( 12^{th} \\)  and  \\( 15^{th} \\)  cell.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 176,
+      "bottomRightX": 317,
+      "bottomRightY": 193,
+      "content": "The first line of the tile is thus WBWG.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 202,
+      "bottomRightX": 214,
+      "bottomRightY": 218,
+      "content": "Ex: SCF1WBWG8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 252,
+      "bottomRightX": 550,
+      "bottomRightY": 404,
+      "content": "![img-20.jpeg](img-20.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-20.jpeg"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 411,
+      "bottomRightX": 542,
+      "bottomRightY": 428,
+      "content": "Figure 3-18: SCF1_LMLN Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 442,
+      "bottomRightX": 225,
+      "bottomRightY": 461,
+      "content": "#### SCF1_LNLM Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 469,
+      "bottomRightX": 420,
+      "bottomRightY": 487,
+      "content": "SCF1_LNLM is a sparse color filter pixel layout where:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 494,
+      "bottomRightX": 743,
+      "bottomRightY": 584,
+      "content": "1. The panchromatic (white) component occupies the \\(1^{\\mathrm{st}}\\), \\(3^{\\mathrm{rd}}\\), \\(6^{\\mathrm{th}}\\), \\(8^{\\mathrm{th}}\\), \\(9^{\\mathrm{th}}\\), \\(11^{\\mathrm{th}}\\), \\(14^{\\mathrm{th}}\\) and \\(16^{\\mathrm{th}}\\) location in a 4x4 tile;\n2. The green component occupies the  \\( 2^{nd} \\) ,  \\( 5^{th} \\) ,  \\( 12^{th} \\)  and  \\( 15^{th} \\)  cell.\n3. The blue component occupies the  \\( 4^{th} \\)  and  \\( 7^{th} \\)  cell.\n4. The red component occupies the  \\( 10^{th} \\)  and  \\( 13^{th} \\) .",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 592,
+      "bottomRightX": 317,
+      "bottomRightY": 609,
+      "content": "The first line of the tile is thus WGWB.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 616,
+      "bottomRightX": 214,
+      "bottomRightY": 634,
+      "content": "Ex: SCF1WGWB8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 642,
+      "bottomRightX": 550,
+      "bottomRightY": 794,
+      "content": "![img-21.jpeg](img-21.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-21.jpeg"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 800,
+      "bottomRightX": 542,
+      "bottomRightY": 819,
+      "content": "Figure 3-19: SCF1_LNLM Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 833,
+      "bottomRightX": 222,
+      "bottomRightY": 851,
+      "content": "#### SCF1_LOLN Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 859,
+      "bottomRightX": 417,
+      "bottomRightY": 879,
+      "content": "SCF1_LOLN is a sparse color filter pixel layout where:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 884,
+      "bottomRightX": 743,
+      "bottomRightY": 939,
+      "content": "1. The panchromatic (white) component occupies the \\(1^{\\mathrm{st}}\\), \\(3^{\\mathrm{rd}}\\), \\(6^{\\mathrm{th}}\\), \\(8^{\\mathrm{th}}\\), \\(9^{\\mathrm{th}}\\), \\(11^{\\mathrm{th}}\\), \\(14^{\\mathrm{th}}\\) and \\(16^{\\mathrm{th}}\\) location in a 4x4 tile;\n2. The green component occupies the  \\( 4^{th} \\) ,  \\( 7^{th} \\) ,  \\( 10^{th} \\)  and  \\( 13^{th} \\)  cell.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 746,
+      "bottomRightY": 974,
+      "content": "Page 21 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

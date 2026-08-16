@@ -1,0 +1,132 @@
+{
+  "index": 416,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 152,
+      "bottomRightX": 306,
+      "bottomRightY": 174,
+      "content": "### 22.3 Light Control Features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 208,
+      "bottomRightX": 266,
+      "bottomRightY": 230,
+      "content": "#### 22.3.1 LightControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 232,
+      "bottomRightX": 524,
+      "bottomRightY": 445,
+      "content": "|  Name | LightControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Optional  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 471,
+      "bottomRightX": 375,
+      "bottomRightY": 488,
+      "content": "Category containing the Lighting control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 503,
+      "bottomRightX": 360,
+      "bottomRightY": 524,
+      "content": "#### 22.3.2 LightControllerSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 526,
+      "bottomRightX": 524,
+      "bottomRightY": 793,
+      "content": "|  Name | LightControllerSelector  |\n| --- | --- |\n|  Category | LightControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | LightController0 LightController1 LightController2 ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 818,
+      "bottomRightX": 320,
+      "bottomRightY": 837,
+      "content": "Selects the Light Controller to configure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 851,
+      "bottomRightX": 349,
+      "bottomRightY": 872,
+      "content": "#### 22.3.3 LightControllerSource",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 873,
+      "bottomRightX": 524,
+      "bottomRightY": 930,
+      "content": "|  Name | LightControllerSource[LightControllerSelector]  |\n| --- | --- |\n|  Category | LightControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 417 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

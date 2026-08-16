@@ -1,0 +1,84 @@
+{
+  "index": 28,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 624,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 113,
+      "bottomRightX": 678,
+      "bottomRightY": 921,
+      "content": "|  Version | Date | Changed by | Change  |\n| --- | --- | --- | --- |\n|  Draft 1 1.5.2 | 23.12.2011 | Stephane Maurice, Matrox | - Moved the document to Word .Docm format (.Docx with macro). - Removed and changed some GigE Vision references that were too standard specific to accommodate other TL standards. - Generalized many GEV features that are now in Device Control chapter to be usable by other TL. - Added DeviceLinkThroughputLimit features. - Updated the PixelFormat and ChunkPixelFormat features and the corresponding text according to the new Pixel Format Naming Convention of the AIA. - Added a standard definitions table and figure.  |\n|  Draft 2 1.5.2 | 23.01.2012 | Vincent Rowley, Pleora Technologies Inc. | - Added GigE Vision 2.0 support.     - Added ActionLate event.     - Added support for link aggregation.     - Added support for PAUSE frames.     - Added support for extended and standard IDs modes.     - Added support for IEEE 1588.     - Added support for unconditional and scheduled action commands.     - Added support for extended status codes introduced by GigE Vision 2.0.     - Added multi-zone support.     - Added support for alternate packet resend destination option.     - Added support for All-in Transmission mode. - Added PrimaryApplicationSwitch and LinkSpeedChange events. - Added support for 10-tap geometries.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 988,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 988,
+      "bottomRightX": 392,
+      "bottomRightY": 1007,
+      "content": "Page 29 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 625,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

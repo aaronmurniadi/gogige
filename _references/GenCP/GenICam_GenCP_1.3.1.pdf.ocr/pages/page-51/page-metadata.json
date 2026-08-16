@@ -1,0 +1,104 @@
+{
+  "index": 50,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-54.jpeg](img-54.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 156,
+      "bottomRightX": 468,
+      "bottomRightY": 176,
+      "content": "#### 5.4.5. Device Version (Manufacturer specific)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 197,
+      "bottomRightX": 288,
+      "bottomRightY": 214,
+      "content": "A string containing a Device Version.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 220,
+      "bottomRightX": 653,
+      "bottomRightY": 286,
+      "content": "An application must NOT make any assumptions based on the content of this string. Its content is purely manufacturer specific and may or may not change in case of e.g. a firmware update. See Device Software Interface Version for a defined way to deal with changes that affect the behavior of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 186,
+      "topLeftY": 316,
+      "bottomRightX": 533,
+      "bottomRightY": 464,
+      "content": "|  Offset | Hex C4  |\n| --- | --- |\n|  Length | 64  |\n|  Access Type | R  |\n|  Support | M  |\n|  Data Type | String  |\n|  Factory Default | Device specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 491,
+      "bottomRightX": 299,
+      "bottomRightY": 511,
+      "content": "#### 5.4.6. Manufacturer Info",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 533,
+      "bottomRightX": 627,
+      "bottomRightY": 566,
+      "content": "Manufacturer Info is a string containing manufacturer specific information. If there is none, this field should be all 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 186,
+      "topLeftY": 594,
+      "bottomRightX": 533,
+      "bottomRightY": 743,
+      "content": "|  Offset | Hex 104  |\n| --- | --- |\n|  Length | 64  |\n|  Access Type | R  |\n|  Support | M  |\n|  Data Type | String  |\n|  Factory Default | Device specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 51 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

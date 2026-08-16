@@ -1,0 +1,110 @@
+{
+  "index": 39,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 250,
+      "topLeftY": 61,
+      "bottomRightX": 397,
+      "bottomRightY": 91,
+      "content": "GEN<ICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 612,
+      "topLeftY": 62,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 150,
+      "bottomRightY": 122,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 105,
+      "bottomRightX": 467,
+      "bottomRightY": 123,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 158,
+      "bottomRightX": 374,
+      "bottomRightY": 177,
+      "content": "**Pixel construction rules for the “Align” style**",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 183,
+      "bottomRightX": 737,
+      "bottomRightY": 220,
+      "content": "This packing style is applicable only when at least one full byte contains padding bits and alignment must be on an 8-bit boundary.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 227,
+      "bottomRightX": 265,
+      "bottomRightY": 246,
+      "content": "To construct the pixel stream:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 245,
+      "bottomRightX": 734,
+      "bottomRightY": 317,
+      "content": "1) Use the unpacked, packed or grouped style specified by the pixel format using the pixel construction rules above.\n2) Pad the most significant bits with as many padding bits required to align the data to the number of bits specified by the ‘a’ tag.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 953,
+      "bottomRightX": 103,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 953,
+      "bottomRightX": 463,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 652,
+      "topLeftY": 953,
+      "bottomRightX": 747,
+      "bottomRightY": 973,
+      "content": "Page 40 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

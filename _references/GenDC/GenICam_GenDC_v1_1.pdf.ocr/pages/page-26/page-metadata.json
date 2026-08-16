@@ -1,0 +1,158 @@
+{
+  "index": 25,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 115,
+      "bottomRightX": 329,
+      "bottomRightY": 133,
+      "content": "### 2.2.8 GenDC Part Header Type Specific Fields",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 153,
+      "bottomRightX": 706,
+      "bottomRightY": 204,
+      "content": "This section describes the Part type specific Header fields. The Part type specific fields are used to describe the type of data included in the Part and to provide the information necessary to interpret it. The sub sections below gives the information about each of the in GenDC Part Header Types defined above.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 224,
+      "bottomRightX": 316,
+      "bottomRightY": 241,
+      "content": "#### 2.2.8.1 Metadata specific Part Header fields",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 262,
+      "bottomRightX": 721,
+      "bottomRightY": 321,
+      "content": "|  Size  |   |   |\n| --- | --- | --- |\n|  Padding | PaddingReserved | InfoReserved  |\n|  InfoTypeSpecific (Reserved)  |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 225,
+      "topLeftY": 333,
+      "bottomRightX": 510,
+      "bottomRightY": 348,
+      "content": "Figure 2-7: Part specific Header fields layout for Metadata",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 360,
+      "bottomRightX": 655,
+      "bottomRightY": 378,
+      "content": "Note: For Part Type = Metadata, the Component's Format and Part's Format are set to the Data8 PFNC value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 30,
+      "topLeftY": 393,
+      "bottomRightX": 730,
+      "bottomRightY": 760,
+      "content": "|  Metadata Part Type specific Header fields  |   |   |\n| --- | --- | --- |\n|  Width (Bytes) | Offset (Bytes) | Description  |\n|  8 | 40 | SizeSize of the 1D Metadata Part (in number of elements according to Part Format).  |\n|  2 | 48 | PaddingSize of the padding at the end of the Part (in bytes).  |\n|  2 | 50 | PaddingReserved = 0.Reserved for alignment and future use.  |\n|  4 | 52 | InfoReserved = 0Reserved for future use.  |\n|  8 | 56 | InfoTypeSpecific = 0 or GenICam LayoutId.Reserved for future use (0) or set to the Metadata Layout Id for Part of type GDC_METADATA_GENICAM_CHUNK or M_METADATA_GENICAM_XML (See “GenDC metadata Part layout for GenICam Chunk” below).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 215,
+      "topLeftY": 772,
+      "bottomRightX": 520,
+      "bottomRightY": 787,
+      "content": "Table 2-6: Part specific Header fields description for Metadata",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 801,
+      "bottomRightX": 158,
+      "bottomRightY": 816,
+      "content": "##### GenDC Metadata Part:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 836,
+      "bottomRightX": 444,
+      "bottomRightY": 851,
+      "content": "A GenDC Metadata Part is a Part containing non pixel based information.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 852,
+      "bottomRightX": 490,
+      "bottomRightY": 869,
+      "content": "There are various types of such data identified by their specific Part Header type.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 888,
+      "bottomRightX": 312,
+      "bottomRightY": 903,
+      "content": "##### GenDC Metadata Part layout for GenICam Chunk",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 923,
+      "bottomRightX": 712,
+      "bottomRightY": 973,
+      "content": "A GenDC Metadata Part of type GDC_METADATA_GENICAM_CHUNK includes GenICam chunk data that are tagged blocks of data separated in individual information chunks identified by a unique chunk identifier. A data block in chunk format is decoded with the help of a GenICam chunk parser and the corresponding GenICam XML. Each individual",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 83,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 26 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

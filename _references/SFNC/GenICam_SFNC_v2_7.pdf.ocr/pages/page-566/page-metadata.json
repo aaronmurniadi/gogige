@@ -1,0 +1,114 @@
+{
+  "index": 565,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | ![img-162.jpeg](img-162.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 655,
+      "bottomRightY": 284,
+      "content": "|  Interface | IInteger  |\n| --- | --- |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 299,
+      "bottomRightX": 696,
+      "bottomRightY": 319,
+      "content": "This feature provides the number of pixel overlap in the horizontal stripes that the device implements.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 356,
+      "bottomRightX": 474,
+      "bottomRightY": 380,
+      "content": "27.7.12 CxpLinkSharingVerticalOverlap",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 380,
+      "bottomRightX": 655,
+      "bottomRightY": 604,
+      "content": "|  Name | CxpLinkSharingVerticalOverlap  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 620,
+      "bottomRightX": 680,
+      "bottomRightY": 639,
+      "content": "This feature provides the number of pixel overlap in the vertical stripes that the device implements.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 676,
+      "bottomRightX": 474,
+      "bottomRightY": 698,
+      "content": "27.7.13 CxpLinkSharingDuplicateStripe",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 699,
+      "bottomRightX": 655,
+      "bottomRightY": 924,
+      "content": "|  Name | CxpLinkSharingDuplicateStripe  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 566 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

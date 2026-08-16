@@ -1,0 +1,113 @@
+{
+  "index": 70,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-19.jpeg](img-19.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 687,
+      "bottomRightY": 212,
+      "content": "Application switchover key to use when requesting ControlAccess switchover. Setup of the key for switchover is done via device features in the device by a host connected in ExclusiveAccess mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 226,
+      "bottomRightX": 317,
+      "bottomRightY": 243,
+      "content": "3.2.2.20 GevDeviceForceIP",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 248,
+      "bottomRightX": 459,
+      "bottomRightY": 486,
+      "content": "|  Name | GevDeviceForceIP[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 512,
+      "bottomRightX": 655,
+      "bottomRightY": 548,
+      "content": "Apply the force IP settings (GevDeviceForceIPAddress, GevDeviceForceSubnetMask and GevDeviceForceGateway) in the Device using ForceIP command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 553,
+      "bottomRightX": 668,
+      "bottomRightY": 592,
+      "content": "This command is only accepted by a device showing ReadWrite DeviceAccessStatus. The IP change is not persistent in the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 605,
+      "bottomRightX": 373,
+      "bottomRightY": 623,
+      "content": "3.2.2.21 GevDeviceForceIPAddress",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 626,
+      "bottomRightX": 492,
+      "bottomRightY": 864,
+      "content": "|  Name | GevDeviceForceIPAddress[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 890,
+      "bottomRightX": 515,
+      "bottomRightY": 908,
+      "content": "Static IP address to set for the GVCP interface of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 945,
+      "content": "Page 71 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

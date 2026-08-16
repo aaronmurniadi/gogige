@@ -1,0 +1,140 @@
+{
+  "index": 40,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 171,
+      "bottomRightX": 290,
+      "bottomRightY": 193,
+      "content": "### 3 General Features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 215,
+      "bottomRightX": 692,
+      "bottomRightY": 253,
+      "content": "Contains all features that are independent from the underlying transport technology, in particular including all mandatory features for all GenTL Producer implementations.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 284,
+      "bottomRightX": 272,
+      "bottomRightY": 304,
+      "content": "### 3.1 System Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 308,
+      "bottomRightX": 677,
+      "bottomRightY": 344,
+      "content": "Contains all features of the System module that are independent from the underlying transport technology.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 366,
+      "bottomRightX": 283,
+      "bottomRightY": 386,
+      "content": "#### 3.1.1 System Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 396,
+      "bottomRightX": 697,
+      "bottomRightY": 432,
+      "content": "Features in this section provide basic information about the System Module and its identity. Note that all features in this section are defined as read-only.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 446,
+      "bottomRightX": 278,
+      "bottomRightY": 466,
+      "content": "3.1.1.1 SystemInformation",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 467,
+      "bottomRightX": 421,
+      "bottomRightY": 681,
+      "content": "|  Name | SystemInformation  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 705,
+      "bottomRightX": 574,
+      "bottomRightY": 724,
+      "content": "Category that contains all System Information features of the System module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 737,
+      "bottomRightX": 184,
+      "bottomRightY": 756,
+      "content": "3.1.1.2 TLID",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 758,
+      "bottomRightX": 421,
+      "bottomRightY": 919,
+      "content": "|  Name | TLID  |\n| --- | --- |\n|  Category | SystemInformation  |\n|  Level | Mandatory  |\n|  Interface | ISString  |\n|  Access | Read  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 945,
+      "content": "Page 41 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

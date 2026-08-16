@@ -1,0 +1,102 @@
+{
+  "index": 377,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 131,
+      "bottomRightX": 579,
+      "bottomRightY": 527,
+      "content": "// Calculating World coordinates - Rectified.\n// ***\n// Reading chunk data from received buffer and scaling Rectified image\n// CoordinateA -> X\nChunkScan3dCoordinateSelector = CoordinateA;\nscaleA = ChunkScan3dCoordinateScale[Scan3dExtraction0][CoordinateA];\noffsetA = ChunkScan3dCoordinateOffset[Scan3dExtraction0][CoordinateA];\n// CoordinateB -> Y\nChunkScan3dCoordinateSelector = CoordinateB;\nscaleB = ChunkScan3dCoordinateScale[Scan3dExtraction0][CoordinateB];\noffsetB = ChunkScan3dCoordinateOffset[Scan3dExtraction0][CoordinateB];\n// CoordinateC -> Z\nChunkScan3dCoordinateSelector = CoordinateC;\nscaleC = ChunkScan3dCoordinateScale[Scan3dExtraction0][CoordinateC];\noffsetC = ChunkScan3dCoordinateOffset[Scan3dExtraction0][CoordinateC];\n\nfor (row = 0; row < Height; row++)\n{\n    for (col = 0; col < Width; col++)\n    {\n    xCoord [row,col] = col*scaleA+offsetA;\n    yCoord [row,col] = row*scaleB+offsetB;\n    zCoord [row,col] = imageC[row,col]*scaleC+offsetC;\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 553,
+      "bottomRightX": 410,
+      "bottomRightY": 576,
+      "content": "## 21.2 Formatting and interpreting 3D data",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 578,
+      "bottomRightX": 733,
+      "bottomRightY": 650,
+      "content": "The 3d Scan Control relates to what the transmitted 3D data represents, i.e. to formatting and interpreting 3D data from a sensor. Scan3d Control extends the Image Format Control section, and there is a dependency between Scan3d output format and PixelFormat. That is, for a given output format of the 3D data there is a limited number of valid pixel formats in the same way as for a typical 2D camera.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 657,
+      "bottomRightX": 172,
+      "bottomRightY": 675,
+      "content": "The main parts are",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 683,
+      "bottomRightX": 755,
+      "bottomRightY": 827,
+      "content": "- **Coordinate system:** The 3D data may be expressed in Cartesian, Spherical or Cylindrical coordinates. It is also important where the coordinate system is located relative to the device.\n- **Calibration:** The camera may be calibrated to a world coordinate system. The calibration can also include a rectification to a uniform sampling grid. Rectification can give 2.5D range images suitable for standard image processing.\n- **Transformation:** The position and pose of the 3D data can be transformed to give output in a coordinate system relevant to the application.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 834,
+      "bottomRightX": 752,
+      "bottomRightY": 889,
+      "content": "Note that data may also be uncalibrated in which case information on coordinate system and location is meaningless. Therefore many features can be skipped in some cameras, or visible only in some cases depending on e.g. calibration mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 378 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 615,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "index": 51,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-70.jpeg](img-70.jpeg)CAN |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 634,
+      "bottomRightY": 171,
+      "content": "not modify the pixel format and that the pixel format in the buffer corresponds to the PixelFormat feature value in the nodemap of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 178,
+      "bottomRightX": 637,
+      "bottomRightY": 266,
+      "content": "The only exception among the parameters listed in BUFFER_INFO_CMD and BUFFER_PART_INFO_CMD is the payload size value which needs to be known before any buffers are delivered (as it is used for buffer allocation). Thus, if the GenTL Producer modifies the payload size it has to report the actual value through the STREAM_INFO_PAYLOAD_SIZE command, as described in chapter 5.2.1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 271,
+      "bottomRightX": 634,
+      "bottomRightY": 306,
+      "content": "It might be useful to report the modifications also through corresponding features of the stream and buffer nodemaps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 312,
+      "bottomRightX": 634,
+      "bottomRightY": 362,
+      "content": "The GenTL Producer must take special care when modifying image data within a stream carrying chunk data. Such modifications must not result in a corrupted chunk data layout. In this case the GenTL Producer must reconstruct the chunk buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 383,
+      "bottomRightX": 332,
+      "bottomRightY": 405,
+      "content": "### 5.6 Multi-Part Buffer Handling",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 418,
+      "bottomRightX": 200,
+      "bottomRightY": 435,
+      "content": "#### 5.6.1 Overview",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 439,
+      "bottomRightX": 634,
+      "bottomRightY": 491,
+      "content": "There are many versatile use cases where the GenTL Producer needs to deliver different sets of data that belong logically together (in particular data coming from a single \"exposure\"), but consist of multiple distinct parts.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 496,
+      "bottomRightX": 634,
+      "bottomRightY": 585,
+      "content": "To allow effective delivery of such data the GenTL introduces a multi-part buffer payload type (PAYLOAD_TYPE_MULTI_PART). The different data segments of a multi-part buffer are placed physically into a single buffer. The number of the parts and the properties of the individual parts can be obtained using the functions DSGetNumBufferParts and DSGetBufferPartInfo.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 190,
+      "topLeftY": 600,
+      "bottomRightX": 522,
+      "bottomRightY": 778,
+      "content": "![img-71.jpeg](img-71.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-71.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 783,
+      "bottomRightX": 637,
+      "bottomRightY": 905,
+      "content": "When receiving multi-part payload data, the GenTL Consumer is expected to query the number of distinct data parts in the buffer and properties of the individual parts using the functions mentioned above. It is important to note that some properties of the data (e.g., the AOI and/or the data format) are described as part-specific information using corresponding info commands supported by the DSGetBufferPartInfo function. When dealing with multi-part data the \"buffer-global\" info function DSGetBufferInfo can not be used to query buffer-part specific information (e.g., BUFFER_INFO_PIXELFORMAT,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 52 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

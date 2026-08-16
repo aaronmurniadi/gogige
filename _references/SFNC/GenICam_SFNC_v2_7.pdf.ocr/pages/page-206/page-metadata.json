@@ -1,0 +1,177 @@
+{
+  "index": 205,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 386,
+      "bottomRightY": 164,
+      "content": "|  Values | 1..n  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 187,
+      "bottomRightX": 740,
+      "bottomRightY": 207,
+      "content": "The number of knee-points as well as the number of additional exposure slopes used for multi-slope exposure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 213,
+      "bottomRightX": 400,
+      "bottomRightY": 232,
+      "content": "### 5.8.3 MultiSlopeKneePointSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 236,
+      "bottomRightX": 386,
+      "bottomRightY": 449,
+      "content": "|  Name | MultiSlopeKneePointSelector  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | 1..n  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 473,
+      "bottomRightX": 562,
+      "bottomRightY": 493,
+      "content": "Selects the parameters for controlling an additional slope in multi-slope exposure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 499,
+      "bottomRightX": 365,
+      "bottomRightY": 520,
+      "content": "### 5.8.4 MultiSlopeExposureLimit",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 522,
+      "bottomRightX": 538,
+      "bottomRightY": 736,
+      "content": "|  Name | MultiSlopeExposureLimit[MultiSlopeKneePointSelector]  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | %  |\n|  Visibility | Expert  |\n|  Values | 0..100  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 760,
+      "bottomRightX": 533,
+      "bottomRightY": 778,
+      "content": "Percent of the ExposureTime at a certain knee-point of multi-slope exposure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 785,
+      "bottomRightX": 416,
+      "bottomRightY": 807,
+      "content": "### 5.8.5 MultiSlopeSaturationThreshold",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 808,
+      "bottomRightX": 572,
+      "bottomRightY": 944,
+      "content": "|  Name | MultiSlopeSaturationThreshold[MultiSlopeKneePointSelector]  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/(Write)  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 206 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

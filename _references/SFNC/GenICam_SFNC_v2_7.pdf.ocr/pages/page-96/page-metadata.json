@@ -1,0 +1,158 @@
+{
+  "index": 95,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 142,
+      "topLeftY": 35,
+      "bottomRightX": 278,
+      "bottomRightY": 63,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 492,
+      "topLeftY": 37,
+      "bottomRightX": 577,
+      "bottomRightY": 84,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 77,
+      "bottomRightX": 107,
+      "bottomRightY": 92,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 158,
+      "topLeftY": 77,
+      "bottomRightX": 373,
+      "bottomRightY": 94,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 146,
+      "bottomRightX": 547,
+      "bottomRightY": 163,
+      "content": "Indicates the minor version number of the schema file of the selected manifest entry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 177,
+      "bottomRightX": 320,
+      "bottomRightY": 198,
+      "content": "### 3.22 DeviceManifestPrimaryURL",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 198,
+      "bottomRightX": 484,
+      "bottomRightY": 412,
+      "content": "|  **Name** | DeviceManifestPrimaryURL [DeviceManifestEntrySelector]  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Optional  |\n|  **Interface** | IString  |\n|  **Access** | Read  |\n|  **Unit** | -  |\n|  **Visibility** | Guru  |\n|  **Values** | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 436,
+      "bottomRightX": 635,
+      "bottomRightY": 454,
+      "content": "Indicates the first URL to the GenICam XML device description file of the selected manifest entry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 467,
+      "bottomRightX": 343,
+      "bottomRightY": 488,
+      "content": "### 3.23 DeviceManifestSecondaryURL",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 488,
+      "bottomRightX": 498,
+      "bottomRightY": 702,
+      "content": "|  **Name** | DeviceManifestSecondaryURL [DeviceManifestEntrySelector]  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Optional  |\n|  **Interface** | IString  |\n|  **Access** | Read  |\n|  **Unit** | -  |\n|  **Visibility** | Guru  |\n|  **Values** | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 727,
+      "bottomRightX": 654,
+      "bottomRightY": 745,
+      "content": "Indicates the second URL to the GenICam XML device description file of the selected manifest entry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 757,
+      "bottomRightX": 213,
+      "bottomRightY": 780,
+      "content": "### 3.24 DeviceTLType",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 780,
+      "bottomRightX": 396,
+      "bottomRightY": 926,
+      "content": "|  **Name** | DeviceTLType  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Recommended  |\n|  **Interface** | IEnumeration  |\n|  **Access** | Read  |\n|  **Unit** | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 948,
+      "bottomRightX": 109,
+      "bottomRightY": 966,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 267,
+      "topLeftY": 948,
+      "bottomRightX": 361,
+      "bottomRightY": 967,
+      "content": "Page 96 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 948,
+      "bottomRightX": 579,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

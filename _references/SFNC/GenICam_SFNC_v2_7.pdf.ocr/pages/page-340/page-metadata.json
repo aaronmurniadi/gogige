@@ -1,0 +1,166 @@
+{
+  "index": 339,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 33,
+      "topLeftY": 135,
+      "bottomRightX": 301,
+      "bottomRightY": 156,
+      "content": "## 19.2 Source Control features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 186,
+      "bottomRightX": 750,
+      "bottomRightY": 240,
+      "content": "This section describes the features related to the devices that support multiple video sources that are transmitted over a single link. The virtual Stream channels of a Link are used to transport the different video sources over a common physical connection.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 248,
+      "bottomRightX": 750,
+      "bottomRightY": 336,
+      "content": "The main feature in this section is the source selector feature (SourceSelector). This feature enables the features associated to a given video source to be controlled on a per video source basis even if they pertain to different feature categories. For instance, it can enable a user to independently set the Width feature (Image Format Control category) and the Gain feature (Analog Control category) for the two sources supported by a given device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 344,
+      "bottomRightX": 543,
+      "bottomRightY": 361,
+      "content": "An example of independent features setting for a dual source device would be:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 369,
+      "bottomRightX": 301,
+      "bottomRightY": 441,
+      "content": "SourceSelector = Source1\nWidth[SourceSelector] = 320\nGain[SourceSelector] = 60\nAcquisitionStart[SourceSelector]",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 449,
+      "bottomRightX": 261,
+      "bottomRightY": 476,
+      "content": "...\nAcquisitionStop[SourceSelector]",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 483,
+      "bottomRightX": 302,
+      "bottomRightY": 555,
+      "content": "SourceSelector = Source2\nWidth[SourceSelector] = 240\nGain[SourceSelector] = 90\nAcquisitionStart[SourceSelector]",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 562,
+      "bottomRightX": 261,
+      "bottomRightY": 592,
+      "content": "...\nAcquisitionStop[SourceSelector]",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 626,
+      "bottomRightX": 403,
+      "bottomRightY": 644,
+      "content": "### Features selected by the Source Selector Feature",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 651,
+      "bottomRightX": 739,
+      "bottomRightY": 687,
+      "content": "The source selector feature can be an optional selector to a number of features defined in this document based on the specificity of product it represents.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 695,
+      "bottomRightX": 740,
+      "bottomRightY": 749,
+      "content": "In order to simplify the standard text and feature descriptions, the optional source selector is not propagated to all the features of the SFNC that it can potentially select. Table 19-126 summarizes which features could potentially be selected by the source selector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 245,
+      "topLeftY": 781,
+      "bottomRightX": 561,
+      "bottomRightY": 798,
+      "content": "Table 19-126: Source Selector Potential Selectees",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 805,
+      "bottomRightX": 686,
+      "bottomRightY": 941,
+      "content": "|  Categories | Potential Selectees  |\n| --- | --- |\n|  Device Control | The DeviceScanType feature can potentially be selected by the source selector feature. **Note:** The DeviceTemperatureSelector, DeviceClockSelector and DeviceSerialPortSelector features may have more enumeration  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 340 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

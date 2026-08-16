@@ -1,0 +1,122 @@
+{
+  "index": 77,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 504,
+      "bottomRightY": 359,
+      "content": "|  Category | EventControl  |\n| --- | --- |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | InterfaceLost DeviceListChanged  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 386,
+      "bottomRightX": 418,
+      "bottomRightY": 406,
+      "content": "Selects which Event to signal to the host application.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 411,
+      "bottomRightX": 214,
+      "bottomRightY": 427,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 438,
+      "bottomRightX": 512,
+      "bottomRightY": 483,
+      "content": "- InterfaceLost: Raised when the interface connection is lost.\n- DeviceListChanged: The list of devices is updated.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 497,
+      "bottomRightX": 264,
+      "bottomRightY": 514,
+      "content": "### 3.2.5.3 EventNotification",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 517,
+      "bottomRightX": 424,
+      "bottomRightY": 767,
+      "content": "|  Name | EventNotification[EventSelector]  |\n| --- | --- |\n|  Category | EventControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Off On Once  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 791,
+      "bottomRightX": 672,
+      "bottomRightY": 827,
+      "content": "Activate or deactivate the notification to the host application of the occurrence of the selected Event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 836,
+      "bottomRightX": 214,
+      "bottomRightY": 852,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 862,
+      "bottomRightX": 435,
+      "bottomRightY": 905,
+      "content": "- Off: The selected Event notification is disabled.\n- On: The selected Event notification is enabled.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 78 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

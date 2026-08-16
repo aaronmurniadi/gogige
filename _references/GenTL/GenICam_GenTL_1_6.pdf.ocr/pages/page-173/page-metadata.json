@@ -1,0 +1,49 @@
+{
+  "index": 172,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-256.jpeg](img-256.jpeg) CAM |   | ![img-257.jpeg](img-257.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 136,
+      "bottomRightX": 641,
+      "bottomRightY": 915,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|   |  | EVENT_DATA_IDData type: INT32 (GC_ERROR)EVENT_DATA_VALUEData type: STRING (Description)  |\n|  EVENT_NEW_BUFFER | 1 | Notification on newly filled buffers. Values that can be retrieved are:EVENT_DATA_IDData type: PTR (Buffer handle)EVENT_DATA_VALUEData type: PTR (Private pointer)  |\n|  EVENT_FEATURE_INVALIDATE | 2 | Notification if a feature was changed by the GenTL Producer driver and thus needs to be invalidated in the GenICam GenApi instance using the module. Values that can be retrieved are:EVENT_DATA_IDData type: STRING (Feature name)  |\n|  EVENT_FEATURE_CHANGE | 3 | Notification if the GenTL Producer driver wants to manually set a feature in the GenICam GenApi instance using the module. Values that can be retrieved are:EVENT_DATA_IDData type: STRING (Feature name)EVENT_DATA_VALUEData type: STRING (Feature value)  |\n|  EVENT_REMOTE_DEVICE | 4 | Notification if the GenTL Producer wants to inform the GenICam GenApi instance of the remote device that a GenApi compatible event was fired. This Event is to be registered on a Local Device module.Values that can be retrieved are:EVENT_DATA_IDString representation of the EventID number in hexadecimal numbers with even number of digits and without the leading ‘0x’.Data type: STRING (Event ID)EVENT_DATA_VALUECorresponds to the data addressable through the remote device's nodemap event port, beginning of the buffer corresponding to address 0.Data type: BUFFER (optional data)  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 173 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

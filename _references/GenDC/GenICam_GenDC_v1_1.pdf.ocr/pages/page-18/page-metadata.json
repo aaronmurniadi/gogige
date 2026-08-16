@@ -1,0 +1,75 @@
+{
+  "index": 17,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 132,
+      "topLeftY": 30,
+      "bottomRightX": 278,
+      "bottomRightY": 59,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 31,
+      "bottomRightX": 615,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 8,
+      "topLeftY": 74,
+      "bottomRightX": 74,
+      "bottomRightY": 88,
+      "content": "Version 1.1.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 244,
+      "topLeftY": 70,
+      "bottomRightX": 291,
+      "bottomRightY": 85,
+      "content": "GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 29,
+      "topLeftY": 113,
+      "bottomRightX": 725,
+      "bottomRightY": 892,
+      "content": "|  2 | 10 | **GroupId** Group identifier for a Component in the Container. GroupId specifies which Components of a Container are related together (e.g. All the Components of a particular 3D scene would have the same GroupId). Note: - GroupId 0xFxxx are reserved for future special purpose. - GroupId 0xFFFF is reserved for Components that are related to all the other Components of the container independent of their individual GroupId.  |\n| --- | --- | --- |\n|  2 | 12 | **SourceId** Identifier of the data source that generated the Component. E.g. If a device has two sensors each sensor can be a source with its own identifier.  |\n|  2 | 14 | **RegionId** Identifier of the data source's region that generated the Component. Note that processing modules can also have a unique region identifier.  |\n|  4 | 16 | **RegionOffsetX** X Offset of the region (in pixels).  |\n|  4 | 20 | **RegionOffsetY** Y Offset of the region (in pixels).  |\n|  8 | 24 | **Timestamp** Timestamp of the start of the Component's data creation in nanoseconds. The Timestamp value is represented as a 64-bit signed integer (two's complement) with only the positive range defined. If the TimestampPTP flag of the Container Header is set, the Component's Timestamp value must be relative to January 1, 1970 00:00:00 (TAI) like the epoch of the PTP IEEE-1588-2008 format. To transfer time information between a GenDC Timestamp and PTP IEEE 1588-2008, the conversions between the time formats can be done using: $$t_{GenDC} = t_{PTPNanoseconds} + 10^9 \\times t_{PTPSeconds}$$ Note: If necessary $$t_{GenDC}$$ must be saturated to 0x7FFF FFFF FFFF FFFF.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 545,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1005,
+      "content": "Page 18 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

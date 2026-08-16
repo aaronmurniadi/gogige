@@ -1,0 +1,131 @@
+{
+  "index": 435,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 499,
+      "bottomRightY": 226,
+      "content": "|  Values | DistanceBased ImageBased Device-specific  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 249,
+      "bottomRightX": 235,
+      "bottomRightY": 268,
+      "content": "Sets automatic focus mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 276,
+      "bottomRightX": 188,
+      "bottomRightY": 293,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 302,
+      "bottomRightX": 735,
+      "bottomRightY": 359,
+      "content": "- DistanceBased: The OpticController has a built-in distance sensor and computes the focus based on the detected distance (open loop).\n- ImageBased: The OpticController evaluates the image for closed loop control (closed loop).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 390,
+      "bottomRightX": 251,
+      "bottomRightY": 410,
+      "content": "### 23.4.23 FocusAuto",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 413,
+      "bottomRightX": 499,
+      "bottomRightY": 747,
+      "content": "|  Name | FocusAuto [OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Off Once Continuous Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 763,
+      "bottomRightX": 698,
+      "bottomRightY": 800,
+      "content": "Sets automatic focus. If enabled, the optic device shall be set into a mode of operation, where the lens automatically finds the best possible focus.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 817,
+      "bottomRightX": 188,
+      "bottomRightY": 834,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 853,
+      "bottomRightX": 711,
+      "bottomRightY": 907,
+      "content": "- Off: The focus is set manually.\n- Once: The focus is adapted once by the device. Once it has converged, it returns to the Off state.\n- Continuous: The focus is constantly adapted by the device to maximize the dynamic range.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 436 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

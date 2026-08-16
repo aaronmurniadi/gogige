@@ -1,0 +1,174 @@
+{
+  "index": 214,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 135,
+      "bottomRightX": 742,
+      "bottomRightY": 172,
+      "content": "Sets the mode for automatic gain balancing between the sensor color channels or taps. The gain coefficients of each channel or tap are adjusted so they are matched.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 179,
+      "bottomRightX": 177,
+      "bottomRightY": 196,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 205,
+      "bottomRightX": 702,
+      "bottomRightY": 295,
+      "content": "- Off: Gain tap balancing is user controlled using Gain.\n- Once: Gain tap balancing is automatically adjusted once by the device. Once it has converged, it automatically returns to the Off state.\n- Continuous: Gain tap balancing is constantly adjusted by the device.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 302,
+      "bottomRightX": 618,
+      "bottomRightY": 321,
+      "content": "On top of the previous standard values, a device might also provide device-specific values.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 335,
+      "bottomRightX": 258,
+      "bottomRightY": 354,
+      "content": "### 6.6 BlackLevelSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 358,
+      "bottomRightX": 386,
+      "bottomRightY": 696,
+      "content": "|  Name | BlackLevelSelector  |\n| --- | --- |\n|  Category | AnalogControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | All Red Green Blue Y U V Tap1, Tap2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 721,
+      "bottomRightX": 527,
+      "bottomRightY": 739,
+      "content": "Selects which Black Level is controlled by the various Black Level features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 745,
+      "bottomRightX": 747,
+      "bottomRightY": 801,
+      "content": "The All Black Level selection is intended to be across all channels or taps, rather than a convenient way to set all the individual channels or taps black levels in a single step. By following this rule, the value read for the All black level remains valid even when the channel/tap black levels are not all equal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 808,
+      "bottomRightX": 177,
+      "bottomRightY": 825,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 834,
+      "bottomRightX": 456,
+      "bottomRightY": 934,
+      "content": "- All: Black Level will be applied to all channels or taps.\n- Red: Black Level will be applied to the red channel.\n- Green: Black Level will be applied to the green channel.\n- Blue: Black Level will be applied to the blue channel.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 215 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "index": 56,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 250,
+      "topLeftY": 61,
+      "bottomRightX": 396,
+      "bottomRightY": 90,
+      "content": "GEN<|i>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 614,
+      "topLeftY": 61,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 106,
+      "bottomRightX": 148,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 105,
+      "bottomRightX": 465,
+      "bottomRightY": 123,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 152,
+      "bottomRightX": 261,
+      "bottomRightY": 174,
+      "content": "## 11 Document History",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 176,
+      "bottomRightX": 746,
+      "bottomRightY": 936,
+      "content": "|  Version | Date | Editor | Description of Changes  |\n| --- | --- | --- | --- |\n|  Draft A | 2010-08-06 | Eric Carey, Teledyne DALSA | - Initial version from proposal to GigE Vision committee made at Yokohama technical meeting.  |\n|  Draft B | 2010-10-05 | Eric Carey, Teledyne DALSA | - Include comments from Stephane Maurice (Matrox). - Include comments from discussion with Mike Miethig (DALSA) for Camera Link HS extensions. This lead to the addition of alignment tag and cluster tag to adequately support anticipated pixel formats for CL HS. - Add an alignment tag in the grouping section (to support CL HS). - Add cluster tag to allow regrouping of monochrome pixels before they are aligned to a given byte boundary (to support CL HS). Provide a definition for cluster. - Enforce last byte to hold the combined data for the grouped style (even though this deviates from current GEV practice).  |\n|  1.0 RC1 | 2010-12-14 | Eric Carey, Teledyne DALSA | - Add note that CFA only supports square pattern. Match description with first CFA pattern illustrated. - Clarify that YUV is used for analogue television transmission. Change examples from YUV to Y'CbCr when possible to avoid using the incorrect YUV terminology. - Used luma and chroma instead of luminance and chrominance to comply with SMPTE Engineering Guideline EG28 (Annotated Glossary of Essential Terms for Electronic Production). - Explicitly put gamma corrected value (R'G'B' and Y') in Appendix D to illustrate impact of gamma correction, as typically done in literature. - Remove Appendix A, B and C (about existing GigE Vision, CoaXPress and Camera Link HS pixel format) since this information belongs to the respective standard, not to this naming convention (was only put there for reference during the proposal review process). - Provide figure for chroma sampling. - Indicates that the YUV color conversion equations can be used for generic Y'CbCr, as the latter is more appropriate to represent digital components. - Add AIA logo and copyrights. - Change generic pixel component designation from ABCD to LMNO, as B could be confused for blue. - Adjust figure of \"lsb grouped\" packing style to reflect the grouped bits are sent as part of the last byte. This creates some incompatibility with a few existing pixel formats in GigE Vision specification.  |\n|  1.0 RC2 | 2010-12-23 | Eric Carey, Teledyne DALSA | - Component sequence to be separated from the rest of pixel name by an underscore. - Replace Y with L as the generic monochrome component in some example figures. - Provide explicit range of values for R', G' and B' in the color conversion equations. - Introduce r', g' and b' as reduced range from R, G and B, as per BT.601 and BT.709. - Provide the full explanation of the BT.601 and BT.709 color conversion, supporting both the 256 values full scale RGB and the 235 values scaled down 'rgb'. Depending on the input range of RGB, the proper set of color conversion equations must be used. - Add generic YCbCr in the Components section. This supplement YCbCr601 and YCbCr709.  |\n|  1.0 RC3 | 2011-02-02 | Eric Carey, Teledyne DALSA | - Clarify that Bayer_LMMN and the like represents a pixel component location and not a pixel format (section 3.1.x). - Fix typo in figure 3-6. - Adjust list of acronyms - Correction to \"Grouped\" packing scheme to explicitly say that first component is stored in byte 0. It was not coherent before.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 57 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

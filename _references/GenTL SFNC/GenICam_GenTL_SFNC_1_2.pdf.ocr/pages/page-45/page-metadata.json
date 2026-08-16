@@ -1,0 +1,76 @@
+{
+  "index": 44,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 420,
+      "bottomRightY": 459,
+      "content": "|  Values | GigEVision CameraLink CameraLinkHS CoaXPress USB3Vision Mixed Custom CL (Deprecated) CLHS (Deprecated) CXP (Deprecated) Ethernet (Deprecated) IIDC (Deprecated) PCI (Deprecated) USB3 (Deprecated) UVC (Deprecated)  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 482,
+      "bottomRightX": 470,
+      "bottomRightY": 502,
+      "content": "Transport layer type of the GenTL Producer implementation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 508,
+      "bottomRightX": 695,
+      "bottomRightY": 561,
+      "content": "Note that these values already follow the updated value list of the \"DeviceTLType\" feature from GenICam SFNC 2.3. Depending on this value, the transport layer specific features for the chosen transport layer standard have to be considered.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 570,
+      "bottomRightX": 643,
+      "bottomRightY": 909,
+      "content": "- CameraLink: Camera Link\n- CameraLinkHS: Camera Link High Speed\n- CoaXPress: CoaXPress\n- GigEVision: GigE Vision\n- USB3Vision: USB3 Vision\n- Mixed: Different Interface modules of the GenTL Producer are of different types\n- Custom: Custom transport layer\n- CL (Deprecated): Camera Link\n- CLHS (Deprecated): Camera Link HS\n- CXP (Deprecated): CoaXPress\n- Ethernet (Deprecated): Generic Ethernet\n- GEV (Deprecated): GigE Vision\n- IIDC (Deprecated): IIDC 1394",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 45 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "index": 545,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 524,
+      "bottomRightY": 172,
+      "content": "|  Values | 0 to 3  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 198,
+      "bottomRightX": 258,
+      "bottomRightY": 215,
+      "content": "Index of the logical link to use.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 222,
+      "bottomRightX": 717,
+      "bottomRightY": 258,
+      "content": "Specific streams might be hard-coded to specific logical links. Therefore this field might be read-only on certain devices.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 273,
+      "bottomRightX": 305,
+      "bottomRightY": 293,
+      "content": "### 27.4.63 GevSCPHostPort",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 295,
+      "bottomRightX": 487,
+      "bottomRightY": 509,
+      "content": "|  Name | GevSCPHostPort[GevStreamChannelSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 534,
+      "bottomRightX": 743,
+      "bottomRightY": 570,
+      "content": "Controls the port of the selected channel to which a GVSP transmitter must send data stream or the port from which a GVSP receiver may receive data stream. Setting this value to 0 closes the stream channel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 585,
+      "bottomRightX": 369,
+      "bottomRightY": 604,
+      "content": "### 27.4.64 GevSCPSFireTestPacket",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 607,
+      "bottomRightX": 532,
+      "bottomRightY": 840,
+      "content": "|  Name | GevSCPSFireTestPacket[GevStreamChannelSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 864,
+      "bottomRightX": 559,
+      "bottomRightY": 883,
+      "content": "Sends a test packet. When this feature is set, the device will fire one test packet.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 889,
+      "bottomRightX": 490,
+      "bottomRightY": 907,
+      "content": "The \"don't fragment\" bit of IP header must be set for this test packet.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 546 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

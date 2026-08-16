@@ -1,0 +1,83 @@
+{
+  "index": 3,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 133,
+      "topLeftY": 31,
+      "bottomRightX": 278,
+      "bottomRightY": 59,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 527,
+      "topLeftY": 32,
+      "bottomRightX": 616,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 8,
+      "topLeftY": 74,
+      "bottomRightX": 74,
+      "bottomRightY": 88,
+      "content": "Version 1.1.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 244,
+      "topLeftY": 70,
+      "bottomRightX": 291,
+      "bottomRightY": 85,
+      "content": "GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 136,
+      "bottomRightX": 128,
+      "bottomRightY": 156,
+      "content": "## List of Figures",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 178,
+      "bottomRightX": 717,
+      "bottomRightY": 815,
+      "content": "Figure 2-1: GenDC Container Descriptor and Data ... 10\nFigure 2-2: GenDC Container Descriptor hierarchy in a multi-Components scenario (headers and data chaining) ... 11\nFigure 2-3: GenDC Container Header Layout ... 12\nFigure 2-4: GenDC Component Layout ... 17\nFigure 2-5: GenDC Part Header Layout ... 19\nFigure 2-6: GenDC Part TypeSpecific fields general layout ... 20\nFigure 2-7: Part specific Header fields layout for Metadata ... 26\nFigure 2-8: GenICam Chunk Part data layout ... 27\nFigure 2-9: Part specific Header fields layout for 1D Array ... 28\nFigure 2-10: Part specific Header fields layout for 2D uncompressed, JPEG or JPEG2000 compressed image ... 29\nFigure 2-11: Part specific Header fields layout for H.264 compressed image ... 30\nFigure 3-1: GenDC layer and Transport Layer coupled by GenDC Flows ... 33\nFigure 3-2: GenDC typical Transmission and Reception data handling ... 34\nFigure 3-3: GenDC Flow mapping table layout ... 35\nFigure 5-1: GenDC Container's typical layout for a monochrome or color packed 2D image ... 40\nFigure 5-2: GenDC Container's typical layout for a RGB planar 2D image ... 41\nFigure 5-3: GenDC Container's typical layout for a multi-Components 3D scene with Intensity, Range and Metadata ... 42\nFigure 5-4: 1D Array (32 bit Integers) ... 43\nFigure 5-5: 2D Image (monochrome 8 bit) ... 43\nFigure 5-6: 2D Image (color RGB 32 bit packed) ... 44\nFigure 5-7: 2D Image (color RGB planar) ... 44\nFigure 5-8: Multispectral Image (3 wavelength planes) ... 45\nFigure 5-9: 2D Image (color JPEG) ... 46\nFigure 5-10: 3D Scene (range, confidence and reflectance) ... 47\nFigure 5-11: 3D Image (XYZ planar point cloud, confidence and reflectance) ... 48\nFigure 5-12: 2D Image Sequence/burst (Intensity) ... 49\nFigure 5-13: 2D Image with Regions (Intensity) ... 50\nFigure 5-14: 2D Image (intensity with metadata) ... 51\nFigure 5-15: 3D Scene (range, confidence and metadata) ... 52\nFigure 5-16: Typical GenDC Container's transmission using TL data Flows ... 53\nFigure 5-17: Typical GenDC Container's layout and transmission order ... 54\nFigure 5-18: Typical GenDC Container's layout and out of order transmission (One RGB planar image) ... 55",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1004,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 553,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1005,
+      "content": "Page 4 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

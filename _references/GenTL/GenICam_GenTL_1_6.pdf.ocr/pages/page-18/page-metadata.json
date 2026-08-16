@@ -1,0 +1,103 @@
+{
+  "index": 17,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-15.jpeg](img-15.jpeg) CAM |   | ![img-16.jpeg](img-16.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 146,
+      "topLeftY": 216,
+      "bottomRightX": 574,
+      "bottomRightY": 548,
+      "content": "![img-17.jpeg](img-17.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-17.jpeg"
+    },
+    {
+      "topLeftX": 144,
+      "topLeftY": 597,
+      "bottomRightX": 574,
+      "bottomRightY": 615,
+      "content": "Figure 2-3: GenICam GenTL interface (C and GenApi Feature-interface)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 622,
+      "bottomRightX": 636,
+      "bottomRightY": 673,
+      "content": "The GenTL Producer driver consists of three logical parts: the C interface, the Configuration interface and the Event interface (signaling). The interfaces are detailed in the following paragraphs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 686,
+      "bottomRightX": 212,
+      "bottomRightY": 703,
+      "content": "#### 2.3.1 C Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 707,
+      "bottomRightX": 637,
+      "bottomRightY": 809,
+      "content": "The C interface provides the entry point of the GenTL Producer. It enumerates and creates all module instances. It includes the acquisition handled by the Data Stream module. The Signaling and Configuration interfaces of the module are also accessed by GenTL Consumer through the C interface. Thus it is possible to stream an image by just using the C interface, independent of the underlying technology. The default state of a GenTL Producer should ensure the ability to open a device and receive data from it.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 815,
+      "bottomRightX": 434,
+      "bottomRightY": 834,
+      "content": "A C interface was chosen because of the following reasons:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 841,
+      "bottomRightX": 624,
+      "bottomRightY": 892,
+      "content": "- Support of multiple client languages: a C interface library can be imported by many programming languages. Basic types can be marshaled easily between the languages and modules (different heaps, implementation details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 18 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

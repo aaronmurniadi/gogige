@@ -1,0 +1,85 @@
+{
+  "index": 51,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 117,
+      "bottomRightX": 508,
+      "bottomRightY": 138,
+      "content": "### B.12 3D Scene with metadata (Range, Confidence, Metadata)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 172,
+      "bottomRightX": 686,
+      "bottomRightY": 207,
+      "content": "3D scene Container including 2 image Components of one data Part each and the Metadata associated to that scene. The 3 Components have different pixel formats.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 174,
+      "topLeftY": 220,
+      "bottomRightX": 603,
+      "bottomRightY": 242,
+      "content": "3D Scene with metadata (Range, Confidence, Metadata)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 249,
+      "bottomRightX": 717,
+      "bottomRightY": 560,
+      "content": "![img-19.jpeg](img-19.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-19.jpeg"
+    },
+    {
+      "topLeftX": 245,
+      "topLeftY": 569,
+      "bottomRightX": 518,
+      "bottomRightY": 586,
+      "content": "Figure 5-15: 3D Scene (range, confidence and metadata)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 52 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

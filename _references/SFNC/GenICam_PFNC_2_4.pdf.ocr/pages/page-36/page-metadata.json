@@ -1,0 +1,184 @@
+{
+  "index": 35,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 251,
+      "topLeftY": 61,
+      "bottomRightX": 396,
+      "bottomRightY": 91,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 613,
+      "topLeftY": 61,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 148,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 105,
+      "bottomRightX": 465,
+      "bottomRightY": 123,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 142,
+      "topLeftY": 174,
+      "bottomRightX": 671,
+      "bottomRightY": 263,
+      "content": "|  byte 0 | byte 1 | byte 2 | byte 3  |\n| --- | --- | --- | --- |\n|  9 . . . . . . 2L | 1 0 9 . . . . 4L M | 3 . . 0 9 . . 6M N | 5 . . . . 0 p pN  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 146,
+      "topLeftY": 271,
+      "bottomRightX": 666,
+      "bottomRightY": 291,
+      "content": "Figure 6-10 :3 components in 10-bit msb packed into 32-bit pixel (RGB10p32msb)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 322,
+      "bottomRightX": 726,
+      "bottomRightY": 410,
+      "content": "|  byte 0 | byte 1 | byte 2 | byte 3 | byte 4  |\n| --- | --- | --- | --- | --- |\n|  9 . . . . . . 2L1 | 1 0 9 . . . . 4L1 L2 | 3 . . 0 9 . . 6L2 L3 | 5 . . . . 0 9 8L3 L4 | 7 . . . . . . 0L4  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 193,
+      "topLeftY": 419,
+      "bottomRightX": 618,
+      "bottomRightY": 437,
+      "content": "Figure 6-11 : 10-bit monochrome pixel msb packed (Mono10pmsb)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 496,
+      "bottomRightX": 415,
+      "bottomRightY": 514,
+      "content": "#### Pixel construction rules for the \"msb Packed\" style",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 522,
+      "bottomRightX": 370,
+      "bottomRightY": 540,
+      "content": "The total number of bits after packing is either:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 541,
+      "bottomRightX": 588,
+      "bottomRightY": 577,
+      "content": "1) Indicated by the number following the \"p\" tag when present; or\n2) Deduced by putting as many components such that no padding bit is required.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 584,
+      "bottomRightX": 262,
+      "bottomRightY": 600,
+      "content": "To construct the pixel stream:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 601,
+      "bottomRightX": 728,
+      "bottomRightY": 743,
+      "content": "1) Take the first component and put it in the msb's of the first byte, with bit 7 holding the msb of the component. Extra bits of this component continue in the msb's of the next byte.\n2) Then take the following component and append it to the first one, again starting from the msb of the component.\n3) Proceed in this way, appending the next component from its msb, until no more components left.\n4) Pad the last byte's least significant bits with 0 if needed (i.e. to meet the total number of bits indicated after the \"p\" tag). This padding must consider the line or image boundary, as explained in section 6.7.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 786,
+      "bottomRightX": 207,
+      "bottomRightY": 807,
+      "content": "### 6.4 Grouped tag",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 814,
+      "bottomRightX": 740,
+      "bottomRightY": 922,
+      "content": "Grouped (“g”) is a different packing style created by regrouping extra lsb’s or msb’s of components (or from successive pixels) in a separate byte(s). The format indicates the number of bits the data occupies when it is different than the nominal bits per pixel for the given component (i.e. including the padding bits). ex: g12 when grouped into 12 bits. This is followed by an optional grouping order indicating if the byte containing the extra data is the lsb’s or msb’s. Empty bit must be padded with 0. The first component is put in byte 0, second component in byte 1 and so on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 929,
+      "bottomRightX": 649,
+      "bottomRightY": 948,
+      "content": "When grouped style is used, the byte holding the grouped data shall be put as the last byte(s).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 36 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

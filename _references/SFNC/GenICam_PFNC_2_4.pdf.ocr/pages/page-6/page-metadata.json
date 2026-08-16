@@ -1,0 +1,92 @@
+{
+  "index": 5,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 250,
+      "topLeftY": 61,
+      "bottomRightX": 397,
+      "bottomRightY": 91,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 612,
+      "topLeftY": 62,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 150,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 273,
+      "topLeftY": 105,
+      "bottomRightX": 466,
+      "bottomRightY": 122,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 297,
+      "topLeftY": 153,
+      "bottomRightX": 516,
+      "bottomRightY": 185,
+      "content": "## List of Equations",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 193,
+      "bottomRightX": 747,
+      "bottomRightY": 468,
+      "content": "Equation 1 : Gamma Correction ... 45\nEquation 2 : Generic full scale R’G’B’ to Y’CbCr conversion (8 bits)... 48\nEquation 3 : Generic full scale Y’CbCr to R’G’B’ conversion (8 bits)... 48\nEquation 4 : Full scale R’G’B’ to Y’CbCr601 conversion (8 bits) ... 49\nEquation 5 : Full scale Y’CbCr601 to R’G’B’ conversion (8 bits) ... 50\nEquation 6 : Scaled down r’g’b’ to Y’CbCr601 conversion (8 bits) ... 50\nEquation 7 : Y’CbCr601 to r’g’b’ conversion (8 bits)... 51\nEquation 8 : Full scale R’G’B’ to Y’CbCr709 conversion (8 bits) ... 52\nEquation 9 : Full scale Y’CbCr601 to R’G’B’ conversion (8 bits) ... 52\nEquation 10 : Scaled down r’g’b’ to Y’CbCr709 conversion (8 bits) ... 53\nEquation 11 : Y’CbCr709 to R’G’B’ conversion (8 bits)... 53",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 953,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 953,
+      "bottomRightX": 463,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 660,
+      "topLeftY": 953,
+      "bottomRightX": 747,
+      "bottomRightY": 973,
+      "content": "Page 6 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

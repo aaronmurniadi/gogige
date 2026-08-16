@@ -1,0 +1,140 @@
+{
+  "index": 137,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-192.jpeg](img-192.jpeg)CAN |   | ![img-193.jpeg](img-193.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 137,
+      "bottomRightX": 285,
+      "bottomRightY": 156,
+      "content": "##### 6.4.4.2 ACQ_START_FLAGS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 177,
+      "bottomRightX": 259,
+      "bottomRightY": 194,
+      "content": "enum ACQ_START_FLAGS",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 203,
+      "bottomRightX": 634,
+      "bottomRightY": 236,
+      "content": "This enumeration defines special start flags for the acquisition engine. The function used is DSStartAcquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 243,
+      "bottomRightX": 639,
+      "bottomRightY": 314,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|  ACQ_START_FLAGS_DEFAULT | 0 | Default behavior.  |\n|  ACQ_START_FLAGS_CUSTOM_ID | 1000 | Starting value for GenTL Producer custom IDs.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 343,
+      "bottomRightX": 275,
+      "bottomRightY": 362,
+      "content": "##### 6.4.4.3 ACQ_STOP_FLAGS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 384,
+      "bottomRightX": 252,
+      "bottomRightY": 400,
+      "content": "enum ACQ_STOP_FLAGS",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 409,
+      "bottomRightX": 634,
+      "bottomRightY": 445,
+      "content": "This enumeration defines special stop flags for the acquisition engine. The function used is DSStopAcquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 449,
+      "bottomRightX": 639,
+      "bottomRightY": 774,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|  ACQ_STOP_FLAGS_DEFAULT | 0 | Stops the acquisition engine when the currently running tasks like filling a buffer are completed (default behavior).  |\n|  ACQ_STOP_FLAGS_KILL | 1 | Stop the acquisition engine immediately. In case this results in a partially filled buffer the Producer will return the buffer through the regular mechanism to the user, indicating through the info function of that buffer that this buffer is not complete.  |\n|  ACQ_STOP_FLAGS_CUSTOM_ID | 1000 | Starting value for GenTL Producer custom IDs which are implementation specific.If a generic GenTL Consumer is using custom ACQ_STOP_FLAGS provided through a specific GenTL Producer implementation it must differentiate the handling of different GenTL Producer implementations in case other implementations will not provide that custom id or will use a different meaning with it.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 804,
+      "bottomRightX": 281,
+      "bottomRightY": 822,
+      "content": "##### 6.4.4.4 BUFFER_INFO_CMD",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 845,
+      "bottomRightX": 259,
+      "bottomRightY": 861,
+      "content": "enum BUFFER_INFO_CMD",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 871,
+      "bottomRightX": 634,
+      "bottomRightY": 907,
+      "content": "This enumeration defines commands to retrieve information with the DSGetBufferInfo function on a buffer handle. In case a BUFFER_INFO_CMD is not available or not",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 138 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

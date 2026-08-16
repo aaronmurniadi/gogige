@@ -1,0 +1,85 @@
+{
+  "index": 200,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 134,
+      "bottomRightX": 746,
+      "bottomRightY": 547,
+      "content": "![img-75.jpeg](img-75.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-75.jpeg"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 552,
+      "bottomRightX": 536,
+      "bottomRightY": 572,
+      "content": "Figure 5-17: Multi-slope exposure model.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 603,
+      "bottomRightX": 747,
+      "bottomRightY": 713,
+      "content": "Exposure starts at a level of 0 percent saturation. After the first sub-exposure time, the pixels are only filled by <threshold1> percent of the whole capacity. After the second sub-exposure time, the pixels are filled by <threshold2> percent of the whole capacity. After the third sub-exposure time (which sums up to the total exposure time), exposure is stopped. To maintain the original meaning and behavior of feature ExposureTime, only the n limits between sub-exposures are used and not the n+1 sub-exposure times themselves; the last one results from ExposureTime and the other multi-slope exposure durations.</threshold2></threshold1>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 718,
+      "bottomRightX": 458,
+      "bottomRightY": 737,
+      "content": "The result of this kind of exposure is shown in the next diagram:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 201 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 616,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

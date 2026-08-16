@@ -1,0 +1,119 @@
+{
+  "index": 17,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 578,
+      "bottomRightY": 77,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 579,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 117,
+      "bottomRightX": 661,
+      "bottomRightY": 650,
+      "content": "27.6.2 CLCONFIGURATION 553\n27.6.3 CLTIMESLOTSCOUNT 554\n27.7 COAXPRESS CONTROL 554\n27.7.1 COAXPRESS 555\n27.7.2 CXPLINKCONFIGURATIONSTATUS...555\n27.7.3 CXPLINKCONFIGURATIONPREFERRED...558\n27.7.4 CXPLINKCONFIGURATION 560\n27.7.5 CXPLINKSHARINGENABLE 562\n27.7.6 CXPLINKSHARINGSUBDEVICESELECTOR 563\n27.7.7 CXPLINKSHARINGSTATUS...563\n27.7.8 CXPLINKSHARINGSUBDEVICETYPE...564\n27.7.9 CXPLINKSHARINGHORIZONTALSTRIPECOUNT...564\n27.7.10 CXPLINKSHARINGVERTICALSTRIPECOUNT 565\n27.7.11 CXPLINKSHARINGHORIZONTALOVERLAP 565\n27.7.12 CXPLINKSHARINGVERTICALOVERLAP...566\n27.7.13 CXPLINKSHARINGDUPLICATESTRIPE...566\n27.7.14 CXPCONNECTIONSELECTOR 567\n27.7.15 CXPCONNECTIONTESTMODE 567\n27.7.16 CXPCONNECTIONTESTERRORCOUNT 568\n27.7.17 CXPSENDRECEIVESELECTOR...568\n27.7.18 CXPCONNECTIONTESTPACKETCOUNT 569\n27.7.19 CXPERRORCOUNTERSELECTOR...569\n27.7.20 CXPERRORCOUNTERRESET 570\n27.7.21 CXPERRORCOUNTERVALUE...571\n27.7.22 CXPERRORCOUNTERSTATUS...571\n27.7.23 CXPPOCXPAUTO 572\n27.7.24 CXPPOCXPTURNOFF 572\n27.7.25 CXPPOCXPTRIPRESET 573\n27.7.26 CXPPOCXPSTATUS 573\n27.7.27 CXPFIRSTLINETRIGGERWITHFRAMESTART...574",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 666,
+      "bottomRightX": 661,
+      "bottomRightY": 684,
+      "content": "# 28 ACKNOWLEDGEMENTS 575",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 698,
+      "bottomRightX": 661,
+      "bottomRightY": 717,
+      "content": "# 29 TAP GEOMETRY APPENDIX...576",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 732,
+      "bottomRightX": 661,
+      "bottomRightY": 965,
+      "content": "29.1 MOTIVATIONS...576\n29.2 IDENTIFYING THE GEOMETRICAL PROPERTIES...576\n29.2.1 IMAGE GEOMETRICAL PROPERTIES...576\n29.2.1.1 RESTRICTIONS 577\n29.2.1.2 TAP NAMING CONVENTION 577\n29.2.1.3 TAP GEOMETRICAL PROPERTIES...578\n29.3 TAP GEOMETRY DRAWINGS 584\n29.3.1 SINGLE TAP GEOMETRY 584\nIX-1Y (area-scan)...584\nIX (line-scan)...584\n29.3.2 DUAL TAP GEOMETRIES 585\nIX2-1Y (area-scan)...585\nIX2 (line-scan)...585",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1005,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 390,
+      "bottomRightY": 1007,
+      "content": "Page 18 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 623,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

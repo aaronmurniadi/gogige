@@ -1,0 +1,74 @@
+{
+  "index": 2,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 133,
+      "topLeftY": 31,
+      "bottomRightX": 278,
+      "bottomRightY": 59,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 527,
+      "topLeftY": 32,
+      "bottomRightX": 616,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 8,
+      "topLeftY": 74,
+      "bottomRightX": 75,
+      "bottomRightY": 88,
+      "content": "Version 1.1.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 244,
+      "topLeftY": 70,
+      "bottomRightX": 291,
+      "bottomRightY": 86,
+      "content": "GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 115,
+      "bottomRightX": 713,
+      "bottomRightY": 548,
+      "content": "**Appendix A GenDC Container Structure overview** ... **40**\nA.1 GenDC Container typical layout for monochrome or color packed 2D images. ... 40\nA.2 GenDC Container typical layout for color planar 2D images. ... 41\nA.3 GenDC Container typical layout for a multi-Components 3D scene. ... 42\n**Appendix B Typical GenDC Containers layout** ... **43**\nB.1 1D Array. ... 43\nB.2 2D Image (monochrome) ... 43\nB.3 2D Image (color packed) ... 44\nB.4 2D Image (color planar) ... 44\nB.5 Multispectral Image (Intensity of multiple wavelength bands) ... 45\nB.6 2D Image (Compressed) ... 46\nB.7 3D Image (Range, Confidence and Reflectance) ... 47\nB.8 3D Image (X, Y, Z Planar Point Cloud, Confidence and Reflectance) ... 48\nB.9 2D Image Sequence/Burst (Intensity of consecutive frames taken at different time) ... 49\nB.10 2D Image with multiple regions ... 50\nB.11 2D Image (monochrome Intensity Component with metadata) ... 51\nB.12 3D Scene with metadata (Range, Confidence, Metadata) ... 52\n**Appendix C GenDC Container typical transmission scenarios** ... **53**\nC.1 GenDC Container typical streaming using single and multiple data Flows ... 53\nC.2 GenDC Container typical transmission using in order transfers ... 54\nC.3 GenDC Container typical transmission using out of order transfers ... 55",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 553,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1005,
+      "content": "Page 3 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

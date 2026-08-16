@@ -1,0 +1,157 @@
+{
+  "index": 84,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GEN<ICAM |   | ![img-119.jpeg](img-119.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 137,
+      "bottomRightX": 553,
+      "bottomRightY": 154,
+      "content": "in: size of the provided sDataStreamID in bytes",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 155,
+      "bottomRightX": 522,
+      "bottomRightY": 170,
+      "content": "out: number of bytes filled by the function",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 184,
+      "bottomRightX": 141,
+      "bottomRightY": 200,
+      "content": "Returns",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 206,
+      "bottomRightX": 636,
+      "bottomRightY": 496,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hDevice is invalid (NULL) or does not reference an open Device module retrieved through a call to IFOpenDevice.  |\n|  GC_ERR_NOT_IMPLEMENTED | The Producer does not implement streaming or the remote device does not provide a stream. DevGetNumDataStreams reports zero.  |\n|  GC_ERR_INVALID_INDEX | iIndex is greater than the number of available Data Stream modules - 1 retrieved through a call to DevGetNumDataStreams.  |\n|  GC_ERR_INVALID_PARAMETER | Parameter piSize is an invalid pointer (NULL or ~0x0).  |\n|  GC_ERR_BUFFER_TOO_SMALL | sDataStreamID is not NULL and the value of *piSize is too small to receive the expected amount of data.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 525,
+      "bottomRightX": 636,
+      "bottomRightY": 560,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 573,
+      "bottomRightX": 311,
+      "bottomRightY": 590,
+      "content": "##### 6.3.4.4 DevGetNumDataStreams",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 612,
+      "bottomRightX": 624,
+      "bottomRightY": 647,
+      "content": "GC_ERROR DevGetNumDataStreams(DEV_HANDLE hDevice, uint32_t * piNumDataStreams)",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 655,
+      "bottomRightX": 486,
+      "bottomRightY": 673,
+      "content": "Queries the number of available data streams on this Device module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 680,
+      "bottomRightX": 636,
+      "bottomRightY": 750,
+      "content": "For GenTL Producers which do not provide a data stream the number of available data streams is zero. Calls to DevGetDataStreamID or DevOpenDataStream will fail with GC_ERR_NOT_IMPLEMENTED. Nevertheless a GenTL Producer must export all functions of the public interface",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 763,
+      "bottomRightX": 166,
+      "bottomRightY": 779,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 784,
+      "bottomRightX": 546,
+      "bottomRightY": 817,
+      "content": "[in] hDevice Device module to work on.\n[out] piNumDataStreams Number of data stream on this Device module.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 832,
+      "bottomRightX": 141,
+      "bottomRightY": 847,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 852,
+      "bottomRightX": 569,
+      "bottomRightY": 897,
+      "content": "GC_ERR_SUCCESS Operation was successful; no error occurred.\nGC_ERR_NOT_INITIALIZED No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 85 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

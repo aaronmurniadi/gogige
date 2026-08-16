@@ -1,0 +1,29 @@
+- ExposureStart: Device just started the exposure of one Frame (or Line).
+- ExposureEnd: Device just completed the exposure of one Frame (or Line).
+- Stream0TransferStart: Device just started the transfer of one or many Blocks.
+- Stream0TransferEnd: Device just completed the transfer of one or many Blocks.
+- Stream0TransferPause: Device just paused the transfer.
+- Stream0TransferResume: Device just resumed the transfer.
+- Stream0TransferBlockStart: Device just started the transfer of one Block.
+- Stream0TransferBlockEnd: Device just completed the transfer of one Block.
+- Stream0TransferBlockTrigger: Device just received a trigger to start the transfer of one Block.
+- Stream0TransferBurstStart: Device just started the transfer of a burst of Blocks.
+- Stream0TransferBurstEnd: Device just completed the transfer of a burst of Blocks.
+- Stream0TransferOverflow: Device transfer queue overflowed.
+- SequencerSetChange: Device sequencer set has changed.
+- Counter0Start: The event will be generated when counter 0 starts counting.
+- Counter0End: The event will be generated when counter 0 ends counting.
+- Counter1Start: The event will be generated when counter 1 starts counting.
+- Counter1End: The event will be generated when counter 1 ends counting.
+- Timer0Start: The event will be generated when Timer 0 starts counting.
+- Timer0End: The event will be generated when Timer 0 ends counting.
+- Timer1Start: The event will be generated when Timer 1 starts counting.
+- Timer1End: The event will be generated when Timer 1 ends counting.
+- Encoder0Stopped: The event will be generated when the Encoder 0 stops for longer than EncoderTimeout.
+- Encoder1Stopped: The event will be generated when the Encoder 1 stops for longer than EncoderTimeout.
+- Encoder0Restarted: The event will be generated when the Encoder 0 restarts moving.
+- Encoder1Restarted: The event will be generated when the Encoder 1 restarts moving.
+- Line0RisingEdge: The event will be generated when a Rising Edge is detected on the Line 0.
+- Line1RisingEdge: The event will be generated when a Rising Edge is detected on the Line 1.
+- Line0FallingEdge: The event will be generated when a Falling Edge is detected on the Line 0.
+- Line1FallingEdge: The event will be generated when a Falling Edge is detected on the Line 1.

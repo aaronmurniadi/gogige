@@ -1,0 +1,167 @@
+{
+  "index": 108,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 278,
+      "bottomRightY": 61,
+      "content": "GEN◀CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 493,
+      "topLeftY": 35,
+      "bottomRightX": 577,
+      "bottomRightY": 81,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 75,
+      "bottomRightX": 107,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 75,
+      "bottomRightX": 373,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 119,
+      "bottomRightX": 342,
+      "bottomRightY": 139,
+      "content": "### 3.54 DeviceFeaturePersistenceEnd",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 142,
+      "bottomRightX": 329,
+      "bottomRightY": 338,
+      "content": "|  **Name** | DeviceFeaturePersistenceEnd  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Optional  |\n|  **Interface** | ICommand  |\n|  **Access** | (Read)/Write  |\n|  **Unit** | -  |\n|  **Visibility** | Guru  |\n|  **Values** | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 363,
+      "bottomRightX": 357,
+      "bottomRightY": 380,
+      "content": "Indicate to the device the end of feature persistence.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 394,
+      "bottomRightX": 353,
+      "bottomRightY": 415,
+      "content": "### 3.55 DeviceRegistersStreamingStart",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 416,
+      "bottomRightX": 329,
+      "bottomRightY": 613,
+      "content": "|  **Name** | DeviceRegistersStreamingStart  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Recommended  |\n|  **Interface** | ICommand  |\n|  **Access** | (Read)/Write  |\n|  **Unit** | -  |\n|  **Visibility** | Guru  |\n|  **Values** | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 638,
+      "bottomRightX": 497,
+      "bottomRightY": 655,
+      "content": "Prepare the device for registers streaming without checking for consistency.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 671,
+      "bottomRightX": 623,
+      "bottomRightY": 689,
+      "content": "If the camera implements this feature, GenApi guarantees using it to announce register streaming.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 704,
+      "bottomRightX": 621,
+      "bottomRightY": 755,
+      "content": "If the feature is present, but currently not writable (locked), the application must not start register streaming and must avoid switching the access mode and range verification off until the feature becomes writable again.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 769,
+      "bottomRightX": 346,
+      "bottomRightY": 790,
+      "content": "### 3.56 DeviceRegistersStreamingEnd",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 791,
+      "bottomRightX": 329,
+      "bottomRightY": 939,
+      "content": "|  **Name** | DeviceRegistersStreamingEnd  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Recommended  |\n|  **Interface** | ICommand  |\n|  **Access** | (Read)/Write  |\n|  **Unit** | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 949,
+      "bottomRightX": 108,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 949,
+      "bottomRightX": 365,
+      "bottomRightY": 966,
+      "content": "Page 109 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 408,
+      "topLeftY": 949,
+      "bottomRightX": 579,
+      "bottomRightY": 966,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "index": 226,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 671,
+      "bottomRightY": 242,
+      "content": "|   | Offset2 is the blue offset  |\n| --- | --- |\n|   | C0_{out} is the first resulting component of the pixel after the transformation  |\n|   | C1_{out} is the second resulting component of the pixel after the transformation  |\n|   | C2_{out} is the third resulting component of the pixel after the transformation  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 267,
+      "bottomRightX": 245,
+      "bottomRightY": 285,
+      "content": "Example for YUV conversion:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 293,
+      "bottomRightX": 742,
+      "bottomRightY": 329,
+      "content": "The Color Transformation can also be used outside of the simple scope of color correction on RGB pixels. For instance, it can be used as a color convert to convert RGB to YUV.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 335,
+      "bottomRightX": 396,
+      "bottomRightY": 354,
+      "content": "Here is the example of this conversion for 8-bit pixels:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 242,
+      "topLeftY": 360,
+      "bottomRightX": 563,
+      "bottomRightY": 428,
+      "content": "$$\\left( \\begin{array}{c} Y \\\\ U \\\\ V \\end{array} \\right) = \\left( \\begin{array}{c c c} 0.299 & 0.587 & 0.114 \\\\ -0.147 & -0.289 & 0.436 \\\\ 0.615 & -0.515 & -0.100 \\end{array} \\right) \\left( \\begin{array}{c} R_{in} \\\\ G_{in} \\\\ B_{in} \\end{array} \\right) + \\left( \\begin{array}{c} 0 \\\\ 128 \\\\ 128 \\end{array} \\right)$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 471,
+      "bottomRightX": 337,
+      "bottomRightY": 489,
+      "content": "### 8.1 ColorTransformationControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 493,
+      "bottomRightX": 386,
+      "bottomRightY": 707,
+      "content": "|  Name | ColorTransformationControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 731,
+      "bottomRightX": 462,
+      "bottomRightY": 750,
+      "content": "Category that contains the Color Transformation control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 765,
+      "bottomRightX": 344,
+      "bottomRightY": 784,
+      "content": "### 8.2 ColorTransformationSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 787,
+      "bottomRightX": 603,
+      "bottomRightY": 948,
+      "content": "|  Name | ColorTransformationSelector  |\n| --- | --- |\n|  Category | ColorTransformationControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 227 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

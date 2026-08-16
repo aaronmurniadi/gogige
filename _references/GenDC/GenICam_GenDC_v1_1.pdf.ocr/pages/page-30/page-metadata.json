@@ -1,0 +1,77 @@
+{
+  "index": 29,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 116,
+      "bottomRightX": 419,
+      "bottomRightY": 133,
+      "content": "#### 2.2.8.4 H.264 compressed image specific Part Header fields",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 152,
+      "bottomRightX": 725,
+      "bottomRightY": 268,
+      "content": "|  SizeX |   |   |   |   |   | SizeY  |   |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  PaddingX |   | PaddingY |   |   |   | InfoReserved  |   |\n|  Reserved | ProfileIDC | CS | PM | RF | LevelIDC | SpropInterleavingDepth | SpropMaxDonDiff  |\n|  SpropDeintBufReq |   |   |   |   |   | SpropInitBufTime  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 185,
+      "topLeftY": 282,
+      "bottomRightX": 550,
+      "bottomRightY": 295,
+      "content": "Figure 2-11: Part specific Header fields layout for H.264 compressed image",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 30,
+      "topLeftY": 305,
+      "bottomRightX": 732,
+      "bottomRightY": 758,
+      "content": "|  2D H.264 Compressed Part Type specific Header fields  |   |   |\n| --- | --- | --- |\n|  Width (Bytes) | Offset (Bytes) | Description  |\n|  4 | 40 | SizeX X size of the 2D Part (in pixels).  |\n|  4 | 44 | SizeY Y size of the 2D Part (in pixels).  |\n|  2 | 48 | PaddingX Size of the X padding at the end of each line (in bytes).  |\n|  2 | 50 | PaddingY Size of the Y padding at the end of the Part (in bytes).  |\n|  4 | 52 | InfoReserved = 0 Reserved for future use.  |\n|  1 | 56 | Reserved = 0 Reserved for future use.  |\n|  1 | 57 | ProfileIDC Profile IDC sequence parameter set data attribute as defined by H.264.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 30 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "index": 176,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<ixCAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 570,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 536,
+      "bottomRightY": 154,
+      "content": "/* Linescan continuous acquisition with Hardware Frame and Line trigger. */",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 174,
+      "bottomRightX": 311,
+      "bottomRightY": 384,
+      "content": "AcquisitionMode = Continuous;\nTriggerSelector = FrameStart;\nTriggerMode = On;\nTriggerActivation = RisingEdge;\nTriggerSource = Line1;\nTriggerSelector = LineStart;\nTriggerMode = On;\nTriggerActivation = RisingEdge;\nTriggerSource = Line2;\nAcquisitionStart();\n...\nAcquisitionStop();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 430,
+      "bottomRightX": 518,
+      "bottomRightY": 467,
+      "content": "/* Framescan continuous acquisition with Hardware Frame trigger and the Exposure duration controlled by the Trigger pulse width.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 467,
+      "bottomRightX": 68,
+      "bottomRightY": 481,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 507,
+      "bottomRightX": 325,
+      "bottomRightY": 679,
+      "content": "AcquisitionMode = Continuous;\nTriggerSelector = FrameStart;\nTriggerMode = On;\nTriggerActivation = RisingEdge;\nTriggerSource = Line1;\nExposureMode = TriggerWidth;\nAcquisitionStart();\n...\nAcquisitionStop();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 177 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

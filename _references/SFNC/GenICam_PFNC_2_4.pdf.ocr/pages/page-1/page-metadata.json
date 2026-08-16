@@ -1,0 +1,76 @@
+{
+  "index": 0,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 45,
+      "bottomRightX": 754,
+      "bottomRightY": 125,
+      "content": "|  **GEN<ì>CAM** |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 291,
+      "bottomRightX": 529,
+      "bottomRightY": 339,
+      "content": "![img-0.jpeg](img-0.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-0.jpeg"
+    },
+    {
+      "topLeftX": 183,
+      "topLeftY": 425,
+      "bottomRightX": 629,
+      "bottomRightY": 579,
+      "content": "# Pixel Format Naming Convention (PFNC)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 348,
+      "topLeftY": 740,
+      "bottomRightX": 463,
+      "bottomRightY": 765,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 953,
+      "bottomRightX": 104,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 371,
+      "topLeftY": 953,
+      "bottomRightX": 463,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 661,
+      "topLeftY": 953,
+      "bottomRightX": 754,
+      "bottomRightY": 974,
+      "content": "Page 1 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

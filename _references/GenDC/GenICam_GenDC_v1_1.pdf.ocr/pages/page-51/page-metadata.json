@@ -1,0 +1,85 @@
+{
+  "index": 50,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 97,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 146,
+      "bottomRightX": 557,
+      "bottomRightY": 167,
+      "content": "### B.11 2D Image (monochrome Intensity Component with metadata)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 41,
+      "topLeftY": 202,
+      "bottomRightX": 699,
+      "bottomRightY": 237,
+      "content": "A 2D image Container including one Intensity Component of one data Part and one Metadata Component of one data Part (e.g. GenICam Chunk data).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 192,
+      "topLeftY": 243,
+      "bottomRightX": 383,
+      "bottomRightY": 263,
+      "content": "2D Image with metadata",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 282,
+      "bottomRightX": 776,
+      "bottomRightY": 582,
+      "content": "![img-18.jpeg](img-18.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-18.jpeg"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 582,
+      "bottomRightX": 500,
+      "bottomRightY": 596,
+      "content": "Figure 5-14: 2D Image (intensity with metadata)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 51 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

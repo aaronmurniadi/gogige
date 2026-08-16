@@ -1,0 +1,85 @@
+{
+  "index": 487,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 141,
+      "bottomRightX": 525,
+      "bottomRightY": 376,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | UncalibratedC CalibratedABC_Grid CalibratedABC_PointCloud CalibratedAC CalibratedAC_Linescan CalibratedC CalibratedC_Linescan RectifiedC RectifiedC_Linescan DisparityC DisparityC_Linescan  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 399,
+      "bottomRightX": 382,
+      "bottomRightY": 418,
+      "content": "Returns the Calibrated Mode of the payload image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 426,
+      "bottomRightX": 186,
+      "bottomRightY": 442,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 449,
+      "bottomRightX": 740,
+      "bottomRightY": 944,
+      "content": "- UncalibratedC: Uncalibrated 2.5D Depth map. The distance data does not represent a physical unit and may be non-linear. The data is a 2.5D range map only.\n- CalibratedABC_Grid: 3 Coordinates in grid organization. The full 3 coordinate data with the grid array organization from the sensor kept.\n- CalibratedABC_PointCloud: 3 Coordinates without organization. The full 3 coordinate data without any organization of data points. Typically only valid points transmitted giving varying image size.\n- CalibratedAC: 2 Coordinates with fixed B sampling. The data is sent as a A and C coordinates (X,Z or Theta,Rho). The B (Y) axis uses the scale and offset parameters for the B axis.\n- CalibratedAC_Linescan: 2 Coordinates with varying sampling. The data is sent as a A and C coordinates (X,Z or Theta,Rho). The B (Y) axis comes from the encoder chunk value.\n- CalibratedC: Calibrated 2.5D Depth map. The distance data is expressed in the chosen distance unit. The data is a 2.5D range map. No information on X-Y axes available.\n- CalibratedC_Linescan: Depth Map with varying B sampling. The distance data is expressed in the chosen distance unit. The data is a 2.5D range map. The B (Y) axis comes from the encoder chunk value.\n- RectifiedC: Rectified 2.5D Depth map. The distance data has been rectified to a uniform sampling pattern in the X and Y direction. The data is a 2.5D range map only. If a complete 3D point cloud is rectified but transmitted as explicit coordinates it should be transmitted as one of the \"CalibratedABC\" formats.\n- RectifiedC_Linescan: Rectified 2.5D Depth map with varying B sampling. The data is sent as rectified 1D profiles using Coord3D_C pixels. The B (Y) axis comes from the encoder chunk value.\n- DisparityC: Disparity 2.5D Depth map. The distance is inversely proportional to the pixel (disparity) value.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 488 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 623,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "index": 438,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | ![img-143.jpeg](img-143.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 459,
+      "bottomRightY": 164,
+      "content": "• Error: The focal length controller encountered an error.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 212,
+      "bottomRightX": 264,
+      "bottomRightY": 232,
+      "content": "23.4.28 FocalLength",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 236,
+      "bottomRightX": 498,
+      "bottomRightY": 447,
+      "content": "|  Name | FocalLength[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | mm  |\n|  Visibility | Beginner  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 472,
+      "bottomRightX": 274,
+      "bottomRightY": 492,
+      "content": "Focal length in millimeters (mm).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 507,
+      "bottomRightX": 331,
+      "bottomRightY": 527,
+      "content": "23.4.29 FocalLengthStepper",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 528,
+      "bottomRightX": 498,
+      "bottomRightY": 742,
+      "content": "|  Name | FocalLengthStepper[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 767,
+      "bottomRightX": 656,
+      "bottomRightY": 785,
+      "content": "FocalLengthStepper controls the stepper value of the focal length. 0 is the shortest focal length.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 800,
+      "bottomRightX": 291,
+      "bottomRightY": 819,
+      "content": "23.4.30 ShutterInitialize",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 822,
+      "bottomRightX": 498,
+      "bottomRightY": 931,
+      "content": "|  Name | ShutterInitialize[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | ICommand  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 439 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

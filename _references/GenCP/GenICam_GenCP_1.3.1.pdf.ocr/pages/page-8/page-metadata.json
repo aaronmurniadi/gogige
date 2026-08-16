@@ -1,0 +1,138 @@
+{
+  "index": 7,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-1.jpeg](img-1.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 156,
+      "bottomRightX": 205,
+      "bottomRightY": 175,
+      "content": "## 1. Introduction",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 206,
+      "bottomRightX": 240,
+      "bottomRightY": 224,
+      "content": "### 1.1. Motivation",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 248,
+      "bottomRightX": 649,
+      "bottomRightY": 365,
+      "content": "Products, which rely on a serial link for communication, implement a wide variety of proprietary control protocols. Most of these protocols are based on ASCII command strings and ASCII responses or even binary protocols. Proprietary protocols can be integrated into GenICam through the GenICam CLProtocol module, assuming the device manufacturer provides a dynamic link library (DLL) for all supported platforms/operating systems. This DLL does the translation between the camera-specific proprietary control protocol and a GenICam compliant register map, which allows the integration of a device into GenICam.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 371,
+      "bottomRightX": 548,
+      "bottomRightY": 388,
+      "content": "Providing a manufacturer-specific and platform-specific DLL adds cost and effort:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 396,
+      "bottomRightX": 502,
+      "bottomRightY": 464,
+      "content": "- It has to be maintained for various platforms and OS versions.\n• Device features must be added and updated\n- The integration of embedded platforms must be taken into account",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 470,
+      "bottomRightX": 644,
+      "bottomRightY": 554,
+      "content": "A more straightforward approach is to provide a read/write register protocol, which can also run on a serial link and do the register map integration in the camera. There would be only one place to change, the camera firmware, in order to introduce new features. There would be no platform-specific software needed, which would allow the use of embedded devices as the controlling host. This protocol can be packet based and therefore used on other packet-based technologies as well.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 560,
+      "bottomRightX": 620,
+      "bottomRightY": 610,
+      "content": "Some devices on the market implement serial protocols in a similar way already. The idea is to propose a common approach for implementing a protocol to give new implementers a hint and maybe to allow a de facto standard in the future.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 618,
+      "bottomRightX": 646,
+      "bottomRightY": 687,
+      "content": "The original idea was to simplify the CLProtocol implementation by providing a protocol description. Because a protocol can potentially be used on other technologies as well, the definition is kept more generic. It can be adjusted to other technologies however the serial link of Camera Link was the first approach.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 713,
+      "bottomRightX": 231,
+      "bottomRightY": 734,
+      "content": "### 1.2. Objective",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 755,
+      "bottomRightX": 331,
+      "bottomRightY": 772,
+      "content": "The objective of this document is to describe",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 780,
+      "bottomRightX": 556,
+      "bottomRightY": 873,
+      "content": "- a packet-based protocol to read and write registers in a register-based device\n- a Bootstrap Register Map (BRM) to provide basic device information\n- access to the device's GenICam file\n• the technology specific communication configuration",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 541,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 8 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

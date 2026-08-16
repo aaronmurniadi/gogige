@@ -1,0 +1,66 @@
+{
+  "index": 499,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 739,
+      "bottomRightY": 307,
+      "content": "- **Off**: The test mode is disabled. This feature has no effect and the device is streaming data normally according to its configuration. This option has to be the default after each boot of the device.\n- **MultiPart**: The device streams data using multi-part payload format with at least one part in each payload. This option must be present if and only if the device supports the multi-part payload format.\n- **GenDC**: The device streams data using GenDC payload format with at least one component in each payload. This option must be present if the device supports the GenDC payload format.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 330,
+      "bottomRightX": 695,
+      "bottomRightY": 369,
+      "content": "Note: If the underlying transport layer negotiation has failed to allow the device to enter multi-part or GenDC mode, it must not be possible to enable this test mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 951,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 951,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 500 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

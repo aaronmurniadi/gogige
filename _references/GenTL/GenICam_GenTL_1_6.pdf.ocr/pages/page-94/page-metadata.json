@@ -1,0 +1,345 @@
+{
+  "index": 93,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 166,
+      "bottomRightY": 153,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 158,
+      "bottomRightX": 216,
+      "bottomRightY": 174,
+      "content": "[in] hDataStream",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 158,
+      "bottomRightX": 463,
+      "bottomRightY": 173,
+      "content": "Data Stream module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 175,
+      "bottomRightX": 202,
+      "bottomRightY": 192,
+      "content": "[in] iOperation",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 174,
+      "bottomRightX": 508,
+      "bottomRightY": 192,
+      "content": "Flush operation to perform as defined in",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 194,
+      "bottomRightX": 399,
+      "bottomRightY": 209,
+      "content": "ACQ QUEUE TYPE.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 223,
+      "bottomRightX": 141,
+      "bottomRightY": 239,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 245,
+      "bottomRightX": 208,
+      "bottomRightY": 261,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 245,
+      "bottomRightX": 568,
+      "bottomRightY": 261,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 270,
+      "bottomRightX": 278,
+      "bottomRightY": 286,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 270,
+      "bottomRightX": 512,
+      "bottomRightY": 286,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 296,
+      "bottomRightX": 269,
+      "bottomRightY": 312,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 296,
+      "bottomRightX": 635,
+      "bottomRightY": 346,
+      "content": "The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 354,
+      "bottomRightX": 278,
+      "bottomRightY": 371,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 354,
+      "bottomRightX": 490,
+      "bottomRightY": 371,
+      "content": "iOperation is not implemented.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 403,
+      "bottomRightX": 635,
+      "bottomRightY": 436,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 449,
+      "bottomRightX": 240,
+      "bottomRightY": 467,
+      "content": "#### 6.3.5.6 DSGetBufferID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 490,
+      "bottomRightX": 285,
+      "bottomRightY": 505,
+      "content": "GC ERROR DSGetBufferID",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 490,
+      "bottomRightX": 599,
+      "bottomRightY": 540,
+      "content": "( DS_HANDLE hDataStream,\nuint32_t iIndex,\nBUFFER_HANDLE * phBuffer )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 549,
+      "bottomRightX": 635,
+      "bottomRightY": 667,
+      "content": "DSGetBufferID queries the buffer handle for a given index iIndex. The buffer handle phBuffer works as a unique ID of an instance of the Buffer module. The relation between an index iIndex and a particular buffer stays valid until a buffer revoked. The index reflects the order in which buffers are announced. If new buffers are announced they are to be appended at the end. If buffers “in the middle” are revoked the sequentially following buffers move into that position. The index stays continuous. So for example if you have 10 buffers announced and you remove the buffer with the id of index 5 you still have the index range from 0 to 8.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 674,
+      "bottomRightX": 635,
+      "bottomRightY": 708,
+      "content": "Note that the relation between index and buffer handle might change with revoked buffers. As long as no buffers are revoked this relation must not change.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 715,
+      "bottomRightX": 560,
+      "bottomRightY": 734,
+      "content": "The number of announced buffers can be queried with the DSGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 748,
+      "bottomRightX": 166,
+      "bottomRightY": 763,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 767,
+      "bottomRightX": 216,
+      "bottomRightY": 784,
+      "content": "[in] hDataStream",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 768,
+      "bottomRightX": 463,
+      "bottomRightY": 784,
+      "content": "Data Stream module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 785,
+      "bottomRightX": 174,
+      "bottomRightY": 800,
+      "content": "[in] iIndex",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 785,
+      "bottomRightX": 568,
+      "bottomRightY": 800,
+      "content": "Zero-based index of the buffer on this data stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 801,
+      "bottomRightX": 189,
+      "bottomRightY": 818,
+      "content": "[in,out] phBuffer",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 801,
+      "bottomRightX": 518,
+      "bottomRightY": 818,
+      "content": "Buffer module handle of the given iIndex.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 832,
+      "bottomRightX": 141,
+      "bottomRightY": 847,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 853,
+      "bottomRightX": 208,
+      "bottomRightY": 870,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 853,
+      "bottomRightX": 568,
+      "bottomRightY": 870,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 878,
+      "bottomRightX": 278,
+      "bottomRightY": 896,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 878,
+      "bottomRightX": 512,
+      "bottomRightY": 896,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 94 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

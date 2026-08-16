@@ -1,0 +1,3 @@
+GENICAM
+GenCP Standard
+emva

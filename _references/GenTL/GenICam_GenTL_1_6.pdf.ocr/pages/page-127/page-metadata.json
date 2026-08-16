@@ -1,0 +1,201 @@
+{
+  "index": 126,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GEN<I>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 201,
+      "bottomRightY": 154,
+      "content": "#### 6.3.7.5 EventKill",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 176,
+      "bottomRightX": 565,
+      "bottomRightY": 194,
+      "content": "GC ERROR EventKill (EVENT_HANDLE hEvent)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 203,
+      "bottomRightX": 637,
+      "bottomRightY": 325,
+      "content": "Terminates a waiting operation on a previously registered event object. In case of multiple pending wait operations EventKill causes one wait operation to return with a GC_ERR_ABORT error code. Therefore in order to cancel all pending wait operations EventKill must be called as many times as wait operations are pending. In case this function is called while no wait operation was pending the next call to EventGetData will return a GC_ERR_ABORT. This behavior can be cleared by unregistering and reregistering the event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 333,
+      "bottomRightX": 636,
+      "bottomRightY": 369,
+      "content": "In case there are pending events in the queue the EventKill has higher priority and on the pending/next call to EventGetData a GC_ERR_ABORT is returned.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 377,
+      "bottomRightX": 330,
+      "bottomRightY": 393,
+      "content": "EventKill does not free any resources.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 408,
+      "bottomRightX": 166,
+      "bottomRightY": 424,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 428,
+      "bottomRightX": 410,
+      "bottomRightY": 445,
+      "content": "[in] hEvent Handle to event object.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 459,
+      "bottomRightX": 141,
+      "bottomRightY": 475,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 481,
+      "bottomRightX": 569,
+      "bottomRightY": 498,
+      "content": "GC_ERR_SUCCESS Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 505,
+      "bottomRightX": 513,
+      "bottomRightY": 524,
+      "content": "GC_ERR_NOT_INITIALIZED No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 531,
+      "bottomRightX": 636,
+      "bottomRightY": 566,
+      "content": "GC_ERR_INVALID_HANDLE The handle hEvent is invalid (NULL) or does not reference a previously registered event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 595,
+      "bottomRightX": 636,
+      "bottomRightY": 631,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 643,
+      "bottomRightX": 259,
+      "bottomRightY": 661,
+      "content": "#### 6.3.7.6 GCRegisterEvent",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 684,
+      "bottomRightX": 575,
+      "bottomRightY": 734,
+      "content": "GC_ERROR GCRegisterEvent ( EVENTSRC_HANDLE hModule,\nEVENT_TYPE iEventID,\nEVENT_HANDLE * phEvent )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 743,
+      "bottomRightX": 636,
+      "bottomRightY": 776,
+      "content": "Registers an event object to a certain iEventID. The implementation might change depending on the platform.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 784,
+      "bottomRightX": 600,
+      "bottomRightY": 802,
+      "content": "Every event registered must be unregistered with the GCUnregisterEvent function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 815,
+      "bottomRightX": 166,
+      "bottomRightY": 832,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 836,
+      "bottomRightX": 572,
+      "bottomRightY": 904,
+      "content": "[in] hModule Module handle to access to register event to.\n[in] iEventID Event type to register as defined in EVENT_TYPE.\n[out] phEvent New handle to an event object to work with. It is recommended to initialize *phEvent to",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 127 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

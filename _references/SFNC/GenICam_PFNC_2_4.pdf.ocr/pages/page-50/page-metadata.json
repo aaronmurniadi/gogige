@@ -1,0 +1,255 @@
+{
+  "index": 49,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 251,
+      "topLeftY": 61,
+      "bottomRightX": 396,
+      "bottomRightY": 90,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 614,
+      "topLeftY": 61,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 148,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 105,
+      "bottomRightX": 465,
+      "bottomRightY": 122,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 151,
+      "bottomRightX": 291,
+      "bottomRightY": 167,
+      "content": "The reverse equations are given by:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 118,
+      "topLeftY": 175,
+      "bottomRightX": 581,
+      "bottomRightY": 195,
+      "content": "\\[\n\\mathrm{R} ^ {\\prime} = 1. 1 6 4 3 8 \\left(\\mathrm{Y} _ {6 0 1} ^ {\\prime} - 1 6\\right) + 1. 5 9 6 0 3 (\\mathrm{Cr} - 1 2 8)\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 120,
+      "topLeftY": 201,
+      "bottomRightX": 577,
+      "bottomRightY": 219,
+      "content": "\\[\n\\mathrm{G} ^ {\\prime} = 1. 1 6 4 3 8 \\left(\\mathrm{Y} _ {6 0 1} ^ {\\prime} - 1 6\\right) - 0. 3 9 1 7 6 (\\mathrm{Cb} - 1 2 8) - 0. 8 1 2 9 7 (\\mathrm{Cr} - 1 2 8)\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 120,
+      "topLeftY": 226,
+      "bottomRightX": 444,
+      "bottomRightY": 246,
+      "content": "\\[\n\\mathrm{B} ^ {\\prime} = 1. 1 6 4 3 8 \\left(\\mathrm{Y} _ {6 0 1} ^ {\\prime} - 1 6\\right) + 2. 0 1 7 2 3 (\\mathrm{Cb} - 1 2 8)\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 252,
+      "bottomRightX": 564,
+      "bottomRightY": 270,
+      "content": "with Y'601 in the range [16, 235] and, Cb and Cr in the range [16, 240].",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 279,
+      "bottomRightX": 610,
+      "bottomRightY": 297,
+      "content": "Equation 5 : Full scale Y'CbCr601 to R'G'B' conversion (8 bits)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 330,
+      "bottomRightX": 181,
+      "bottomRightY": 348,
+      "content": "#### Scaled down rgb",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 355,
+      "bottomRightX": 634,
+      "bottomRightY": 374,
+      "content": "BT.601 indicates that the RGB components can use a reduced range of values of [16, 235].",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 401,
+      "bottomRightX": 650,
+      "bottomRightY": 446,
+      "content": "Note: The Pixel Format Naming Convention does not define any RGB pixel format using that range of values. But the color conversion equations are provided for completeness since they are referenced by BT.601.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 209,
+      "topLeftY": 482,
+      "bottomRightX": 591,
+      "bottomRightY": 566,
+      "content": "![img-48.jpeg](img-48.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-48.jpeg"
+    },
+    {
+      "topLeftX": 275,
+      "topLeftY": 576,
+      "bottomRightX": 534,
+      "bottomRightY": 594,
+      "content": "Figure 8-4 : Scaled down rgb for BT.601",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 627,
+      "bottomRightX": 304,
+      "bottomRightY": 645,
+      "content": "This leads to the following equations:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 652,
+      "bottomRightX": 702,
+      "bottomRightY": 671,
+      "content": "\\[\n\\mathrm{r} ^ {\\prime} = 2 1 9 \\mathrm{E} _ {\\mathrm{R}} ^ {\\prime} + 1 6 \\tag {11}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 677,
+      "bottomRightX": 291,
+      "bottomRightY": 695,
+      "content": "\\[\n\\mathrm{g} ^ {\\prime} = 2 1 9 \\mathrm{E} _ {\\mathrm{G}} ^ {\\prime} + 1 6\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 704,
+      "bottomRightX": 291,
+      "bottomRightY": 721,
+      "content": "\\[\n\\mathrm{b} ^ {\\prime} = 2 1 9 \\mathrm{E} _ {\\mathrm{B}} ^ {\\prime} + 1 6\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 729,
+      "bottomRightX": 346,
+      "bottomRightY": 748,
+      "content": "where \\( r' \\), \\( g' \\) and \\( b' \\) are in the range [16, 235]",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 780,
+      "bottomRightX": 264,
+      "bottomRightY": 798,
+      "content": "Replacing (11) in (10) leads to:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 805,
+      "bottomRightX": 488,
+      "bottomRightY": 876,
+      "content": "\\[\n\\begin{array}{l} \\mathrm{Y} _ {6 0 1} ^ {\\prime} = 0. 2 9 9 \\mathrm{r} ^ {\\prime} + 0. 5 8 7 \\mathrm{g} ^ {\\prime} + 0. 1 1 4 \\mathrm{b} ^ {\\prime} \\\\ \\mathrm{Cb} = - 0. 1 7 2 5 9 \\mathrm{r} ^ {\\prime} - 0. 3 3 8 8 3 \\mathrm{g} ^ {\\prime} + 0. 5 1 1 4 2 \\mathrm{b} ^ {\\prime} + 1 2 8 \\\\ \\mathrm{Cr} = 0. 5 1 1 4 2 \\mathrm{r} ^ {\\prime} - 0. 4 2 8 2 5 \\mathrm{g} ^ {\\prime} - 0. 0 8 3 1 7 \\mathrm{b} ^ {\\prime} + 1 2 8 \\\\ \\end{array}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 120,
+      "topLeftY": 883,
+      "bottomRightX": 372,
+      "bottomRightY": 901,
+      "content": "with r', g' and b' in the range [16, 235].",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 196,
+      "topLeftY": 910,
+      "bottomRightX": 614,
+      "bottomRightY": 928,
+      "content": "Equation 6 : Scaled down r'g'b' to Y'CbCr601 conversion (8 bits)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 461,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 50 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

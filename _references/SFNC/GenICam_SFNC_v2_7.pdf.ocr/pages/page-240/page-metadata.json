@@ -1,0 +1,175 @@
+{
+  "index": 239,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 570,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 135,
+      "bottomRightX": 405,
+      "bottomRightY": 154,
+      "content": "Sets the value of the bit selected by UserOutputSelector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 167,
+      "bottomRightX": 319,
+      "bottomRightY": 189,
+      "content": "### 9.2.11 UserOutputValueAll",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 191,
+      "bottomRightX": 386,
+      "bottomRightY": 406,
+      "content": "|  Name | UserOutputValueAll  |\n| --- | --- |\n|  Category | DigitalIOControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 428,
+      "bottomRightX": 697,
+      "bottomRightY": 447,
+      "content": "Sets the value of all the bits of the User Output register. It is subject to the UserOutputValueAllMask.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 454,
+      "bottomRightX": 743,
+      "bottomRightY": 509,
+      "content": "UserOutputValueAll can take any binary value and each bit set to one will set the corresponding User Output register bit to high. Note that the UserOutputs are numbered from 0 to N (If 0 based). This means that the least significant bit of UserOutputValueAll corresponds to the UserOutput0 (if 0 based).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 523,
+      "bottomRightX": 364,
+      "bottomRightY": 545,
+      "content": "### 9.2.12 UserOutputValueAllMask",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 546,
+      "bottomRightX": 386,
+      "bottomRightY": 760,
+      "content": "|  Name | UserOutputValueAllMask  |\n| --- | --- |\n|  Category | DigitalIOControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 784,
+      "bottomRightX": 752,
+      "bottomRightY": 839,
+      "content": "Sets the write mask to apply to the value specified by UserOutputValueAll before writing it in the User Output register. If the UserOutputValueAllMask feature is present, setting the user Output register using UserOutputValueAll will only change the bits that have a corresponding bit in the mask set to one.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 846,
+      "bottomRightX": 677,
+      "bottomRightY": 883,
+      "content": "UserOutputValueAllMask can take any binary value. Each bit set to one will enable writing of the corresponding User Output register bit and each bit set to zero will prevent it.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 889,
+      "bottomRightX": 700,
+      "bottomRightY": 908,
+      "content": "Note that UserOutputValueAllMask is ignored when an individual bit is set using UserOutputValue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 240 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "index": 26,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-29.jpeg](img-29.jpeg) CAM |   | ![img-30.jpeg](img-30.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 106,
+      "topLeftY": 137,
+      "bottomRightX": 637,
+      "bottomRightY": 206,
+      "content": "GenTL Consumer through the C interface nor the nodemap, until the Consumer explicitly requests to update the list. Similarly, if the device gets physically disconnected (or powered off), it will not be removed from the list published to the GenTL Consumer (IFGetNumDevices/DeviceSelector) until the next list update is executed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 212,
+      "bottomRightX": 637,
+      "bottomRightY": 434,
+      "content": "- List of devices discovered on a given interface at the time of the last request to update the device list (IFUpdateDeviceList function or DeviceUpdateList command in the nodemap) and published to the GenTL Consumer through the C interface (IFGetNumDevices) and the nodemap (DeviceSelector). While the GenTL Producer maintains just a single list and publishes it identically through both interfaces the two views might still temporarily differ from the GenTL Consumer's viewpoint. If the list is updated from the nodemap (using DeviceUpdateList command), it is reflected by the nodemap directly through the C interface. If the list is updated from the C interface (IFUpdateDeviceList function), it might not be reflected by the nodemap directly due to GenApi caching effects. Finally, both views (C interface and nodemaps) might be used by the GenTL Consumer independently. It might be querying information through the C interface about one device, while the user selected (DeviceSelector) a different one in the nodemap.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 439,
+      "bottomRightX": 637,
+      "bottomRightY": 713,
+      "content": "- Currently opened local device modules, e.g., modules for which the GenTL Consumer owns valid handles (IFOpenDevice). This is typically a subset of the list published through the C interface and the nodemap. However, the specification requires that instantiated handles are not affected by any list update requests. This means that if a device is physically disconnected at runtime (while the consumer owns a valid handle for it), the handle remains valid, until explicitly closed (DevClose) – even if most operations upon that handle would simply fail. A request to update the device list would, remove such a device from the list published by the parent interface. A module handle becomes implicitly invalid whenever its parent (or grandparent) module is closed. Please note that the specification allows to open the device (IFOpenDevice, similarly for interfaces) directly using a known device ID (the ID's should be unique and must not change between sessions) without calling IFUpdateDeviceList first. In this case the GenTL Producer might need to (re)execute the device discovery process on its own to connect to the device, providing the handle to the GenTL Consumer while the published device list remains unchanged (possibly even empty) until next list-update request.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 733,
+      "bottomRightX": 192,
+      "bottomRightY": 754,
+      "content": "### 3.8 Example",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 759,
+      "bottomRightX": 636,
+      "bottomRightY": 794,
+      "content": "This sample code shows how to instantiate the first Data Stream of the first Device connected to the first Interface. Error checking is omitted for clarity reasons.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 808,
+      "bottomRightX": 286,
+      "bottomRightY": 825,
+      "content": "#### 3.8.1 Basic Device Access",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 829,
+      "bottomRightX": 451,
+      "bottomRightY": 847,
+      "content": "Functions used in this section are listed in subsequent sections.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 854,
+      "bottomRightX": 268,
+      "bottomRightY": 904,
+      "content": "{\n    InitLib( );\n    TL_HANDLE hTL = OpenTL( );",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 27 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

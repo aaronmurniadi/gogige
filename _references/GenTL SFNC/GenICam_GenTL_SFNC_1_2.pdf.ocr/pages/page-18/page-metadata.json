@@ -1,0 +1,67 @@
+{
+  "index": 17,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 122,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 140,
+      "bottomRightX": 268,
+      "bottomRightY": 161,
+      "content": "## 1.5 Standard Units",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 190,
+      "bottomRightX": 679,
+      "bottomRightY": 227,
+      "content": "The following abbreviations are used as standard units for features described in this document. Note that all units are using plain ASCII characters.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 261,
+      "topLeftY": 257,
+      "bottomRightX": 528,
+      "bottomRightY": 602,
+      "content": "|  ns | nanoseconds  |\n| --- | --- |\n|  us | microseconds  |\n|  ms | milliseconds  |\n|  s | seconds  |\n|  B | Bytes  |\n|  Bps | Bytes per second  |\n|  MBps | Mega Bytes per second  |\n|  Mbps | Mega bits per second  |\n|  Fps | Frames per second  |\n|  dB | Decibels  |\n|  C | Celsius  |\n|  Hz | Hertz  |\n|  % | Percent  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 952,
+      "bottomRightX": 165,
+      "bottomRightY": 969,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 553,
+      "topLeftY": 952,
+      "bottomRightX": 652,
+      "bottomRightY": 971,
+      "content": "Page 18 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

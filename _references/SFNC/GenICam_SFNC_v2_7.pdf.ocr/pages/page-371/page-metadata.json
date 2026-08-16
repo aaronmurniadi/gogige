@@ -1,0 +1,130 @@
+{
+  "index": 370,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 135,
+      "bottomRightX": 196,
+      "bottomRightY": 154,
+      "content": "### Linescan 3D camera:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 170,
+      "bottomRightX": 507,
+      "bottomRightY": 189,
+      "content": "The typical setup for a linescan laser triangulation setup is shown below.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 156,
+      "topLeftY": 213,
+      "bottomRightX": 630,
+      "bottomRightY": 522,
+      "content": "![img-112.jpeg](img-112.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-112.jpeg"
+    },
+    {
+      "topLeftX": 192,
+      "topLeftY": 540,
+      "bottomRightX": 614,
+      "bottomRightY": 558,
+      "content": "Figure 21-8: Laser linescan triangulation sensor with vertical laser.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 564,
+      "bottomRightX": 747,
+      "bottomRightY": 617,
+      "content": "An example of how the main part of the 3D setup for a laser triangulation with a vertical laser, extracting 3D, reflectance and laser scatter information, and having fixed sampling interval between scan lines could look like in this case is:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 640,
+      "bottomRightX": 264,
+      "bottomRightY": 669,
+      "content": "// Linescan 3D Camera examples.\n// ***",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 683,
+      "bottomRightX": 538,
+      "bottomRightY": 757,
+      "content": "// Range, Reflectance and laser Scatter is acquired (all pixel mapped).\n// Setup 3D formatting, 1D rectified 2.5D range map.\n// Basic device with no RegionSelector.\n// Coordinate system is Cartesian, rectification gives A/B scale/offset.\nScan3dOutputMode = RectifiedC;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 770,
+      "bottomRightX": 290,
+      "bottomRightY": 858,
+      "content": "// Setup sensor acquisition Region.\nRegionSelector = Region0;\nWidth[Region0] = 2000;\nHeight[Region0] = 1000;\nOffsetX[Region0] = 0;\nOffsetY[Region0] = 50;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 870,
+      "bottomRightX": 424,
+      "bottomRightY": 944,
+      "content": "// Setup 3D scan output region (different output size).\nRegionSelector = Scan3dExtraction0;\nWidth[Scan3dExtraction0] = 2000;\nHeight[Scan3dExtraction0] = 2000;\nOffsetX[Scan3dExtraction0] = 0;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 371 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

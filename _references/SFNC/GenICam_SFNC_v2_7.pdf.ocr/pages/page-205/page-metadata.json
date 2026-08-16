@@ -1,0 +1,148 @@
+{
+  "index": 204,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 54,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 570,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 102,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 135,
+      "bottomRightX": 286,
+      "bottomRightY": 157,
+      "content": "### 5.8.1 MultiSlopeMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 159,
+      "bottomRightX": 377,
+      "bottomRightY": 442,
+      "content": "|  Name | MultiSlopeMode  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Off Manual PresetSoft PresetMedium PresetAggressive  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 467,
+      "bottomRightX": 280,
+      "bottomRightY": 484,
+      "content": "Controls multi-slope exposure state.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 493,
+      "bottomRightX": 177,
+      "bottomRightY": 509,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 528,
+      "bottomRightX": 730,
+      "bottomRightY": 708,
+      "content": "- Off: Multi-slope exposure is disabled.\n- Manual: Multi-slope exposure is enabled. Control is possible per knee-point with two of the features MultiSlopeExposureLimit, MultiSlopeSaturationThreshold, MultiSlopeIntensityLimit or MultiSlopeExposureGradient.\n- PresetSoft: Multi-slope exposure is enabled. A predefined parameter set resulting in a soft effect is selected.\n- PresetMedium: Multi-slope exposure is enabled. A predefined parameter set resulting in a medium effect is selected.\n- PresetAggressive: Multi-slope exposure is enabled. A predefined parameter set resulting in an aggressive effect is selected.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 725,
+      "bottomRightX": 381,
+      "bottomRightY": 745,
+      "content": "### 5.8.2 MultiSlopeKneePointCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 748,
+      "bottomRightX": 386,
+      "bottomRightY": 934,
+      "content": "|  Name | MultiSlopeKneePointCount  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 205 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

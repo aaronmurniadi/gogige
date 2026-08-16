@@ -1,0 +1,93 @@
+{
+  "index": 21,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 305,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 624,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 121,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 116,
+      "bottomRightX": 129,
+      "bottomRightY": 137,
+      "content": "## History",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 151,
+      "bottomRightX": 676,
+      "bottomRightY": 832,
+      "content": "|  Version | Date | Changed by | Change  |\n| --- | --- | --- | --- |\n|  Draft 0.01 | 14.02.2006 | Eric Carey, DALSA Coreco | Initial version based on the GenICam standard feature list document of the GigE Vision/GenICam joint sub-committee. This version is intended to be the official feature naming convention to be used for GigE Vision cameras. Original contributors: **Basler** (Fritz Dierks, Thies Moeller, Andreas Gär), **Leutron Vision** (Jan Becvar), **DALSA Coreco** (Eric Carey), **Euresys** (Jean-Michel Wintgens), **MVTec** (Christoph Zierl), **National Instruments** (Chris Graf), **Stemmer** (Sascha Dorenbeck), **SICK IVP** (Mattias Johannesson), **JAI** (Ole Krogh Jørgensen), **Matrox** (Stephane Maurice)  |\n|  Draft 0.02 | 16.03.2006 | Stephane Maurice, Matrox | Define the new Acquisition, Trigger and I/O feature set. Introduced the notion of counters and grouped it with Timers in a separate chapter. Reviewed feature names for consistency and grouping.  |\n|  Draft 1.00 | 04.04.2006 | Stephane Maurice, Matrox | Included modifications and corrections based on the feedbacks from version 0.02 to 0.9. Final Draft.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 988,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 988,
+      "bottomRightX": 392,
+      "bottomRightY": 1007,
+      "content": "Page 22 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 625,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

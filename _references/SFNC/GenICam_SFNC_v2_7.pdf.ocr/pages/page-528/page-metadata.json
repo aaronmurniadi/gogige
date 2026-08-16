@@ -1,0 +1,123 @@
+{
+  "index": 527,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 588,
+      "bottomRightY": 269,
+      "content": "|  Access | Read/Write  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 293,
+      "bottomRightX": 643,
+      "bottomRightY": 312,
+      "content": "Controls whether the PersistentIP configuration scheme is activated on the given logical link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 326,
+      "bottomRightX": 347,
+      "bottomRightY": 345,
+      "content": "### 27.4.20 GevCurrentIPAddress",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 349,
+      "bottomRightX": 477,
+      "bottomRightY": 563,
+      "content": "|  Name | GevCurrentIPAddress[GevInterfaceSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 587,
+      "bottomRightX": 364,
+      "bottomRightY": 605,
+      "content": "Reports the IP address for the given logical link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 621,
+      "bottomRightX": 364,
+      "bottomRightY": 640,
+      "content": "### 27.4.21 GevCurrentSubnetMask",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 643,
+      "bottomRightX": 487,
+      "bottomRightY": 857,
+      "content": "|  Name | GevCurrentSubnetMask[GevInterfaceSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 881,
+      "bottomRightX": 372,
+      "bottomRightY": 900,
+      "content": "Reports the subnet mask of the given logical link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 528 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

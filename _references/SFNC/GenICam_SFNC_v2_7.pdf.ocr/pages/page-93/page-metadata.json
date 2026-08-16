@@ -1,0 +1,142 @@
+{
+  "index": 92,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GENICAM |   | ![img-11.jpeg](img-11.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 117,
+      "bottomRightX": 326,
+      "bottomRightY": 169,
+      "content": "|  Visibility | Beginner  |\n| --- | --- |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 193,
+      "bottomRightX": 610,
+      "bottomRightY": 225,
+      "content": "Major version of the Standard Features Naming Convention that was used to create the device's GenICam XML.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 265,
+      "bottomRightX": 307,
+      "bottomRightY": 282,
+      "content": "3.14 DeviceSFNCVersionMinor",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 285,
+      "bottomRightX": 326,
+      "bottomRightY": 485,
+      "content": "|  Name | DeviceSFNCVersionMinor  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 510,
+      "bottomRightX": 610,
+      "bottomRightY": 540,
+      "content": "Minor version of the Standard Features Naming Convention that was used to create the device's GenICam XML.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 580,
+      "bottomRightX": 339,
+      "bottomRightY": 598,
+      "content": "3.15 DeviceSFNCVersionSubMinor",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 601,
+      "bottomRightX": 329,
+      "bottomRightY": 801,
+      "content": "|  Name | DeviceSFNCVersionSubMinor  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 823,
+      "bottomRightX": 615,
+      "bottomRightY": 857,
+      "content": "Sub minor version of Standard Features Naming Convention that was used to create the device's GenICam XML.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 897,
+      "bottomRightX": 332,
+      "bottomRightY": 916,
+      "content": "3.16 DeviceManifestEntrySelector",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 918,
+      "bottomRightX": 332,
+      "bottomRightY": 945,
+      "content": "|  Name | DeviceManifestEntrySelector  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 951,
+      "bottomRightX": 360,
+      "bottomRightY": 967,
+      "content": "Page 93 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

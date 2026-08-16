@@ -1,0 +1,122 @@
+{
+  "index": 586,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  ![img-181.jpeg](img-181.jpeg) GEN<i>CAM |   | ![img-182.jpeg](img-182.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 145,
+      "bottomRightX": 248,
+      "bottomRightY": 164,
+      "content": "1X-1Y2 (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 287,
+      "topLeftY": 174,
+      "bottomRightX": 518,
+      "bottomRightY": 193,
+      "content": "1 zone in X, 1 zone in Y with 2 taps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 205,
+      "bottomRightX": 493,
+      "bottomRightY": 343,
+      "content": "![img-183.jpeg](img-183.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-183.jpeg"
+    },
+    {
+      "topLeftX": 260,
+      "topLeftY": 349,
+      "bottomRightX": 543,
+      "bottomRightY": 370,
+      "content": "Figure 29-11: Geometry 1X-1Y2 (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 401,
+      "bottomRightX": 250,
+      "bottomRightY": 421,
+      "content": "1X-2YE (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 430,
+      "bottomRightX": 547,
+      "bottomRightY": 447,
+      "content": "1 zone in X, 2 zones in Y with end extraction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 461,
+      "bottomRightX": 493,
+      "bottomRightY": 600,
+      "content": "![img-184.jpeg](img-184.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-184.jpeg"
+    },
+    {
+      "topLeftX": 259,
+      "topLeftY": 608,
+      "bottomRightX": 546,
+      "bottomRightY": 627,
+      "content": "Figure 29-12: Geometry 1X-2YE (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 587 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

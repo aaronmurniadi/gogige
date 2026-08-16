@@ -1,0 +1,122 @@
+{
+  "index": 58,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 292,
+      "bottomRightY": 61,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 77,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 77,
+      "bottomRightX": 387,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 81,
+      "content": "![img-5.jpeg](img-5.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-5.jpeg"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 919,
+      "bottomRightY": 390,
+      "content": "|  CounterTriggerSource[CounterSelector] | R | IEnumeration | R/W | - | E | Selects the source to start the Counter.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  CounterTriggerActivation[CounterSelector] | R | IEnumeration | R/W | - | E | Selects the activation mode of the trigger to start the Counter.  |\n|  TimerSelector | R | IEnumeration | R/W | - | E | Selects which Timer to configure.  |\n|  TimerDuration[TimerSelector] | R | IFloat | R/W | us | E | Sets the duration (in microseconds) of the Timer pulse.  |\n|  TimerDelay[TimerSelector] | R | IFloat | R/W | us | E | Sets the duration (in microseconds) of the delay to apply at the reception of a trigger before starting the Timer.  |\n|  TimerReset[TimerSelector] | R | ICommand | (R)/W | - | E | Does a software reset of the selected timer and starts it.  |\n|  TimerValue[TimerSelector] | R | IFloat | R/W | us | E | Reads or writes the current value (in microseconds) of the selected Timer.  |\n|  TimerStatus[TimerSelector] | R | IEnumeration | R | - | E | Returns the current status of the Timer.  |\n|  TimerTriggerSource[TimerSelector] | R | IEnumeration | R/W | - | E | Selects the source of the trigger to start the Timer.  |\n|  TimerTriggerActivation[TimerSelector] | R | IEnumeration | R/W | - | E | Selects the activation mode of the trigger to start the Timer.  |\n|  TimerTriggerArmDelay[TimerSelector] | R | IFloat | R/W | us | E | Sets the minimum period between two valid timer triggers.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 422,
+      "bottomRightX": 238,
+      "bottomRightY": 441,
+      "content": "## 2.9 Encoder Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 445,
+      "bottomRightX": 739,
+      "bottomRightY": 462,
+      "content": "Contains the features related to the usage of quadrature encoders (See the Encoder Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 340,
+      "topLeftY": 469,
+      "bottomRightX": 636,
+      "bottomRightY": 486,
+      "content": "Table 2-9: Quadrature Encoder Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 492,
+      "bottomRightX": 919,
+      "bottomRightY": 630,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  EncoderControl | O | ICategory | R | - | B | Category that contains the quadrature Encoder Control features.  |\n|  EncoderSelector | O | IEnumeration | R/W | - | E | Selects which Encoder to configure.  |\n|  EncoderSourceA[EncoderSelector] | O | IEnumeration | R/W | - | E | Selects the signal which will be the source of the A input of the Encoder.  |\n|  EncoderSourceB[EncoderSelector] | O | IEnumeration | R/W | - | E | Selects the signal which will be the source of the B input of the Encoder.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 59 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

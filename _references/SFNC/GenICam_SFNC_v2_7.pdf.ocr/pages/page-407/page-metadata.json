@@ -1,0 +1,140 @@
+{
+  "index": 406,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 669,
+      "bottomRightY": 187,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 213,
+      "bottomRightX": 556,
+      "bottomRightY": 231,
+      "content": "Offset when transforming a pixel from relative coordinates to world coordinates.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 248,
+      "bottomRightX": 257,
+      "bottomRightY": 267,
+      "content": "# Calibration scaling and offset:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 285,
+      "bottomRightX": 752,
+      "bottomRightY": 319,
+      "content": "The pseudo code shows how to read and use scale and offset in a full 3D calibrated image (scale and offset from chunk data as in examples above).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 326,
+      "bottomRightX": 434,
+      "bottomRightY": 459,
+      "content": "for(row = 0; row < Height; row++)\n{\n    for(col = 0; col < Width; col++)\n    {\n    coordA[row,col] = imageA[row,col]*scaleA+offsetA;\n    coordB[row,col] = imageB[row,col]*scaleB+offsetB;\n    coordC[row,col] = imageC[row,col]*scaleC+offsetC;\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 471,
+      "bottomRightX": 264,
+      "bottomRightY": 489,
+      "content": "# Rectification scaling and offset:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 507,
+      "bottomRightX": 736,
+      "bottomRightY": 543,
+      "content": "The pseudo code shows how to read and use scale and offset in a rectified image (scale and offset from chunk data as in examples above).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 550,
+      "bottomRightX": 420,
+      "bottomRightY": 681,
+      "content": "for(row = 0; row < Height; row++)\n{\n    for(col = 0; col < Width; col++)\n    {\n    coordA[row,col] = col*scaleA+offsetA;\n    coordB[row,col] = row*scaleB+offsetB;\n    coordC[row,col] = imageC[row,col]*scaleC+offsetC;\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 695,
+      "bottomRightX": 345,
+      "bottomRightY": 717,
+      "content": "# 21.4.12 Scan3dInvalidDataFlag",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 719,
+      "bottomRightX": 669,
+      "bottomRightY": 949,
+      "content": "|  Name | Scan3dInvalidDataFlag[Scan3dExtractionSelector][Scan3dCoordinateSelector]  |\n| --- | --- |\n|  Category | Scan3dControl  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 407 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

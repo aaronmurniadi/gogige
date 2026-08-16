@@ -1,0 +1,184 @@
+{
+  "index": 349,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 570,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 135,
+      "bottomRightX": 662,
+      "bottomRightY": 171,
+      "content": "to control manually the flow of data. In this mode, the features TransferOperationMode, TransferStart and TransferStop must be available.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 179,
+      "bottomRightX": 511,
+      "bottomRightY": 197,
+      "content": "If this feature is not present, the transfer control is assumed to be \"Basic\".",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 203,
+      "bottomRightX": 728,
+      "bottomRightY": 223,
+      "content": "Note that the Transfers can also be controlled using external trigger signals (See TransferTriggerSelector).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 238,
+      "bottomRightX": 298,
+      "bottomRightY": 258,
+      "content": "### 20.6 TransferOperationMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 259,
+      "bottomRightX": 515,
+      "bottomRightY": 492,
+      "content": "|  Name | TransferOperationMode[TransferSelector]  |\n| --- | --- |\n|  Category | TransferControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Continuous MultiBlock  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 516,
+      "bottomRightX": 317,
+      "bottomRightY": 534,
+      "content": "Selects the operation mode of the transfer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 542,
+      "bottomRightX": 177,
+      "bottomRightY": 558,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 578,
+      "bottomRightX": 754,
+      "bottomRightY": 639,
+      "content": "- Continuous: Blocks of data are transferred continuously until stopped with the TransferStop command.\n- MultiBlock: The transfer of the blocks of data terminates automatically after the transmission of TransferBlockCount or when an explicit TransferStop command is received.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 647,
+      "bottomRightX": 538,
+      "bottomRightY": 665,
+      "content": "If this feature is not present, the transfer mode is assumed to be \"Continuous\".",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 680,
+      "bottomRightX": 268,
+      "bottomRightY": 699,
+      "content": "### 20.7 TransferBlockCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 702,
+      "bottomRightX": 515,
+      "bottomRightY": 917,
+      "content": "|  Name | TransferBlockCount[TransferSelector]  |\n| --- | --- |\n|  Category | TransferControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | > 0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 350 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

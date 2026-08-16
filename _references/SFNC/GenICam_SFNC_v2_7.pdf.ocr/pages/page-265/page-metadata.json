@@ -1,0 +1,130 @@
+{
+  "index": 264,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 739,
+      "bottomRightY": 191,
+      "content": "The **Direction** mode generates output pulses on position increments only in one direction. This mode can be used to trigger a camera in an application where the reverse motion is ignored. For a linear stage moving back and forth, output pulses will be generated only in one direction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 206,
+      "bottomRightX": 732,
+      "bottomRightY": 261,
+      "content": "The **Motion** mode generates output pulses on position increments in both directions. This mode can in some implementations be achieved by connecting only one signal (A or B) from the quadrature encoder to the Encoder Control interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 303,
+      "bottomRightX": 657,
+      "bottomRightY": 567,
+      "content": "![img-86.jpeg](img-86.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-86.jpeg"
+    },
+    {
+      "topLeftX": 192,
+      "topLeftY": 580,
+      "bottomRightX": 614,
+      "bottomRightY": 599,
+      "content": "Figure 11-2: Encoder position, direction and motion output modes.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 632,
+      "bottomRightX": 164,
+      "bottomRightY": 648,
+      "content": "### Encoder Modes:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 656,
+      "bottomRightX": 712,
+      "bottomRightY": 711,
+      "content": "The encoder mode controls how the EncoderValue is calculated as function of the encoder inputs. The EncoderValue always tracks the encoder motion forward and backwards and is the input for the Encoder Output Mode functionality.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 744,
+      "bottomRightX": 299,
+      "bottomRightY": 763,
+      "content": "### Robust Four phases motion tracking",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 769,
+      "bottomRightX": 754,
+      "bottomRightY": 871,
+      "content": "There are 4 possible states from the two input signals and their transitions can be viewed in a state diagram as shown below. With this strategy, a small amount of jitter between two states from the quadrature encoder will be filtered. All transitions from the 00 quadrature encoder state sets the direction state to Pos or Neg. Counter increments or decrements only occur when entering the 00 state. Increments or decrements can only occur when the direction state is positive (Pos) or negative (Neg), respectively as seen in the figure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 885,
+      "bottomRightX": 747,
+      "bottomRightY": 939,
+      "content": "Note that Quadrature encoders follow the Gray Code binary numeral system where only 1-bit changes between states. Therefore, transitions where 2 bits change are illegal such as between states 01 and 10, and 00 and 11. Illegal state changes can be filtered thereby reducing jitter for both Four Phase and High Resolution modes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 265 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 952,
+      "bottomRightX": 616,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

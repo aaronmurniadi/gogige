@@ -1,0 +1,140 @@
+{
+  "index": 95,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 159,
+      "bottomRightX": 313,
+      "bottomRightY": 177,
+      "content": "### 3.4 Data Stream Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 182,
+      "bottomRightX": 649,
+      "bottomRightY": 220,
+      "content": "Contains all features of the Data Stream module that are independent from the underlying transport technology.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 242,
+      "bottomRightX": 282,
+      "bottomRightY": 258,
+      "content": "#### 3.4.1 Stream Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 271,
+      "bottomRightX": 692,
+      "bottomRightY": 292,
+      "content": "Features in this section provide basic information about the Data Stream module and its identity.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 304,
+      "bottomRightX": 282,
+      "bottomRightY": 321,
+      "content": "##### 3.4.1.1 Stream Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 325,
+      "bottomRightX": 421,
+      "bottomRightY": 538,
+      "content": "|  Name | StreamInformation  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Mandatory  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 561,
+      "bottomRightX": 603,
+      "bottomRightY": 581,
+      "content": "Category that contains all Stream Information features of the Data Stream module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 594,
+      "bottomRightX": 216,
+      "bottomRightY": 611,
+      "content": "##### 3.4.1.2 StreamID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 615,
+      "bottomRightX": 421,
+      "bottomRightY": 828,
+      "content": "|  Name | StreamID  |\n| --- | --- |\n|  Category | StreamInformation  |\n|  Level | Mandatory  |\n|  Interface | ISString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 853,
+      "bottomRightX": 325,
+      "bottomRightY": 871,
+      "content": "Device unique ID for the data stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 880,
+      "bottomRightX": 572,
+      "bottomRightY": 900,
+      "content": "Corresponds to the STREAM_INFO_ID command of DSGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 945,
+      "content": "Page 96 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

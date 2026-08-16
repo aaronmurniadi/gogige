@@ -1,0 +1,142 @@
+{
+  "index": 460,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 396,
+      "bottomRightY": 225,
+      "content": "|  Unit | -  |\n| --- | --- |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 248,
+      "bottomRightX": 425,
+      "bottomRightY": 268,
+      "content": "Returns the OffsetX of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 283,
+      "bottomRightX": 241,
+      "bottomRightY": 300,
+      "content": "### 24.19ChunkOffsetY",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 304,
+      "bottomRightX": 396,
+      "bottomRightY": 518,
+      "content": "|  Name | ChunkOffsetY  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 543,
+      "bottomRightX": 425,
+      "bottomRightY": 562,
+      "content": "Returns the OffsetY of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 577,
+      "bottomRightX": 226,
+      "bottomRightY": 595,
+      "content": "### 24.20ChunkWidth",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 599,
+      "bottomRightX": 417,
+      "bottomRightY": 813,
+      "content": "|  Name | ChunkWidth[ChunkRegionSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 837,
+      "bottomRightX": 415,
+      "bottomRightY": 856,
+      "content": "Returns the Width of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 870,
+      "bottomRightX": 233,
+      "bottomRightY": 891,
+      "content": "### 24.21ChunkHeight",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 893,
+      "bottomRightX": 420,
+      "bottomRightY": 949,
+      "content": "|  Name | ChunkHeight[ChunkRegionSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 461 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

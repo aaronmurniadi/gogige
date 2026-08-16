@@ -1,0 +1,157 @@
+{
+  "index": 250,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 109,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 432,
+      "bottomRightY": 268,
+      "content": "|  Interface | Integer  |\n| --- | --- |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 292,
+      "bottomRightX": 571,
+      "bottomRightY": 309,
+      "content": "Sets the duration (or number of events) before the CounterEnd event is generated.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 318,
+      "bottomRightX": 742,
+      "bottomRightY": 371,
+      "content": "When the counter reaches the CounterDuration value, a CounterEnd event is generated, the CounterActive signal becomes inactive and the counter stops counting until a new trigger happens or it is explicitly reset with CounterReset.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 387,
+      "bottomRightX": 272,
+      "bottomRightY": 406,
+      "content": "### 10.3.10 CounterStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 411,
+      "bottomRightX": 386,
+      "bottomRightY": 695,
+      "content": "|  Name | CounterStatus[CounterSelector]  |\n| --- | --- |\n|  Category | CounterAndTimerControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | CounterIdle CounterTriggerWait CounterActive CounterCompleted CounterOverflow  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 719,
+      "bottomRightX": 311,
+      "bottomRightY": 736,
+      "content": "Returns the current status of the Counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 745,
+      "bottomRightX": 177,
+      "bottomRightY": 761,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 772,
+      "bottomRightX": 549,
+      "bottomRightY": 897,
+      "content": "- CounterIdle: The counter is idle.\n- CounterTriggerWait: The counter is waiting for a start trigger.\n- CounterActive: The counter is counting for the specified duration.\n- CounterCompleted: The counter reached the CounterDuration count.\n- CounterOverflow: The counter reached its maximum possible count.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 251 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

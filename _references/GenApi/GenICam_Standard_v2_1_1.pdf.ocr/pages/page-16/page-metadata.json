@@ -1,0 +1,103 @@
+{
+  "index": 15,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-23.jpeg](img-23.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 152,
+      "bottomRightX": 635,
+      "bottomRightY": 185,
+      "content": "e.g., the DCAM specification, which specifies that during grab the number of packages per frame and the package size must be fixed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 192,
+      "bottomRightX": 637,
+      "bottomRightY": 260,
+      "content": "A family of cameras where some members have a Gamma feature implemented and some do not is a typical example for a feature being not implemented. If the cameras have an inquiry bit advertising whether the camera has the Gamma feature implemented or not, you can maintain one camera description file for the whole family of cameras.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 265,
+      "bottomRightX": 637,
+      "bottomRightY": 351,
+      "content": "Figure 7 shows how to handle that case with GenICam. The Gamma feature node has a pIsImplemented link to a GammaInq node mapping to the inquiry bit in the camera. Multiple inquiry bits are typically packed into one register. For extracting the bits, the MaskedIntReg node type is used. It works like an IntReg node, but in addition, you can denote which bit or which contiguous group of bits you want to be extracted as an integer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 259,
+      "topLeftY": 371,
+      "bottomRightX": 458,
+      "bottomRightY": 615,
+      "content": "![img-24.jpeg](img-24.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-24.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 630,
+      "bottomRightX": 418,
+      "bottomRightY": 648,
+      "content": "Figure 7 Checking whether a feature is implemented",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 667,
+      "bottomRightX": 180,
+      "bottomRightY": 686,
+      "content": "### 2.6 Caching",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 696,
+      "bottomRightX": 637,
+      "bottomRightY": 782,
+      "content": "If an implementation supports checking ranges, presence, and enable status for each write access, it would normally trigger a cascade of read accesses to the camera. However, most of the values required for validation do not change frequently or at all and can thus be cached. The camera description file contains all of the necessary means to ensure the cache's coherency.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 16 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

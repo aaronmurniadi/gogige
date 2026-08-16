@@ -1,0 +1,166 @@
+{
+  "index": 88,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 533,
+      "bottomRightY": 81,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 151,
+      "bottomRightX": 224,
+      "bottomRightY": 171,
+      "content": "### 3.3 DeviceScanType",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 173,
+      "bottomRightX": 332,
+      "bottomRightY": 421,
+      "content": "|  Name | DeviceScanType  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Areascan Linescan Areascan3D Linescan3D  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 444,
+      "bottomRightX": 271,
+      "bottomRightY": 462,
+      "content": "Scan type of the sensor of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 469,
+      "bottomRightX": 644,
+      "bottomRightY": 501,
+      "content": "Typically, this feature is not writable. But some cameras might allow switching between linescan and areascan.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 510,
+      "bottomRightX": 169,
+      "bottomRightY": 525,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 92,
+      "topLeftY": 535,
+      "bottomRightX": 619,
+      "bottomRightY": 643,
+      "content": "- Areascan: 2D sensor outputting an image created from a unique sensor acquisition.\n- Linescan: 1D sensor outputting an image acquired line by line.\n- Areascan3D: 3D sensor outputting a range (or disparity) image created from a unique sensor acquisition.\n- Linescan3D: 3D sensor outputting a range (or disparity) image acquired line by line.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 657,
+      "bottomRightX": 248,
+      "bottomRightY": 675,
+      "content": "### 3.4 DeviceVendorName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 678,
+      "bottomRightX": 332,
+      "bottomRightY": 877,
+      "content": "|  Name | DeviceVendorName  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 901,
+      "bottomRightX": 289,
+      "bottomRightY": 916,
+      "content": "Name of the manufacturer of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 950,
+      "bottomRightX": 360,
+      "bottomRightY": 967,
+      "content": "Page 89 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

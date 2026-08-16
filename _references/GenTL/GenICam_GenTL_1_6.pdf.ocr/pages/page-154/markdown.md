@@ -1,0 +1,10 @@
+|  ![img-219.jpeg](img-219.jpeg) CAM |   | ![img-220.jpeg](img-220.jpeg) emva  |
+| --- | --- | --- |
+|  Version 1.6 | GenTL Standard  |   |
+
+|  Enumerator | Impl | Value | Description  |
+| --- | --- | --- | --- |
+|   |  |  | DSAnnounceBuffer which is not aligned according to the alignment size it is up to the Producer to either reject the buffer and return the GC_ERR_INVALID_BUFFER error code or to cope with a potential overhead and use the unaligned buffer as is. In case there is no special alignment needed the GenTL Producer should report a 1.For composite buffers the same rules apply per-segment.Data type: SIZET  |
+|  STREAM_INFO_FLOW_TABLE | CM | 14 | Current state of flow mapping table in GenDC format (if available).Return the GC_ERR_NO_DATA error code if the stream will not use flow mechanism in current configuration.Data type: BUFFER  |
+|  STREAM_INFO_GENDC_PREFETCH_DESCRIPTOR | O | 15 | Prefetch version of the GenDC descriptor corresponding to the current stream status, if available and if the stream/device is currently configured to stream in GenDC format.Return the GC_ERR_NO_DATA error code if the stream will not output GenDC payload in current configuration.Data type: BUFFER  |
+|  STREAM_INFO_CUSTOM_ID | O | 1000 | Starting value for GenTL Producer custom IDs which are implementation specific.If a generic GenTL Consumer is using custom STREAM_INFO_CMDs provided through a specific GenTL Producer implementation it must differentiate the handling of different GenTL Producer implementations in case other implementations will not provide that custom id or will use a different meaning with it.  |

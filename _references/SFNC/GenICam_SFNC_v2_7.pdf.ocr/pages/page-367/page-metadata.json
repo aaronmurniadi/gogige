@@ -1,0 +1,130 @@
+{
+  "index": 366,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 133,
+      "bottomRightX": 311,
+      "bottomRightY": 150,
+      "content": "bboxMaxC = Scan3dAxisMax[CoordinateC];",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 376,
+      "topLeftY": 133,
+      "bottomRightX": 454,
+      "bottomRightY": 150,
+      "content": "// e.g. 250",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 175,
+      "bottomRightX": 367,
+      "bottomRightY": 193,
+      "content": "The data output could in this case be formatted as:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 198,
+      "bottomRightX": 700,
+      "bottomRightY": 555,
+      "content": "|  Component | Part | Source | Region | data type | data format  |\n| --- | --- | --- | --- | --- | --- |\n|  Range | 0 | 1 | Region 0 | 3D plane of tri planar image | Coord3D_A8  |\n|  Range | 1 | 1 | Region 0 | 3D plane of tri planar image | Coord3D_B8  |\n|  Range | 2 | 1 | Region 0 | 3D plane of tri planar image | Coord3D_C8  |\n|  Intensity | 3 | 1 | Region 0 | 2D image | Mono8  |\n|  Range | 4 | 1 | Region 1 | 3D plane of tri planar image | Coord3D_A8  |\n|  Range | 5 | 1 | Region 1 | 3D plane of tri planar image | Coord3D_B8  |\n|  Range | 6 | 1 | Region 1 | 3D plane of tri planar image | Coord3D_C8  |\n|  Intensity | 7 | 1 | Region 1 | 2D image | Mono8  |\n|  Chunk data | 8 | - | All components chunk data if enabled (not shown). | (Chunk data) | GenICam Chunk  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 556,
+      "bottomRightX": 313,
+      "bottomRightY": 573,
+      "content": "### Using Transformed coordinate system:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 599,
+      "bottomRightX": 712,
+      "bottomRightY": 634,
+      "content": "The following code shows how to setup a coordinate system transform, and query the transformed system location and orientation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 642,
+      "bottomRightX": 317,
+      "bottomRightY": 670,
+      "content": "// Using Transformed coordinate system.\n// ***",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 685,
+      "bottomRightX": 458,
+      "bottomRightY": 743,
+      "content": "// Scan3D Control setup of coordinate system information.\n// 3D point cloud out and in sensor pixel grid organization.\nScan3dOutputMode = CalibratedABC_Grid;\nScan3dCoordinateSystemReference = Transformed;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 757,
+      "bottomRightX": 391,
+      "bottomRightY": 944,
+      "content": "// Setup of transform from Anchor location:\n// Rotation vector [30,10,-40] degrees.\n// Translation vector [1000,200,403] mm.\nScan3dCoordinateTransformSelector = RotationX;\nScan3dTransformValue[RotationX] = 30;\nScan3dCoordinateTransformSelector = RotationY;\nScan3dTransformValue[RotationY] = 10;\nScan3dCoordinateTransformSelector = RotationZ;\nScan3dTransformValue[RotationZ] = -40;\nScan3dCoordinateTransformSelector = TranslationX;\nScan3dTransformValue[TranslationX] = 1000;\nScan3dCoordinateTransformSelector = TranslationY;\nScan3dTransformValue[TranslationY] = 200;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 367 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

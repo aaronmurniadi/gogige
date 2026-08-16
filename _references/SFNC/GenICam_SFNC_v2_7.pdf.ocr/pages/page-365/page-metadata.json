@@ -1,0 +1,121 @@
+{
+  "index": 364,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 134,
+      "bottomRightX": 435,
+      "bottomRightY": 195,
+      "content": "// Get dynamic range information in that output mode.\nScan3dCoordinateSelector = CoordinateC;\nminRangeValue = Scan3dAxisMin[CoordinateC]; // e.g. 1\nmaxRangeValue = Scan3dAxisMax[CoordinateC]; // e.g. 4095",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 206,
+      "bottomRightX": 743,
+      "bottomRightY": 243,
+      "content": "This 3D data can be transmitted without multi-component transfer, and this would also be possible if the result was a full point cloud transmitted in one of the \"ABC\" formats.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 274,
+      "bottomRightX": 288,
+      "bottomRightY": 294,
+      "content": "### Areascan 3D camera with Regions:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 318,
+      "bottomRightX": 755,
+      "bottomRightY": 354,
+      "content": "This type of camera could be for example a time-of-flight array camera, or any other device delivering a 3D range image for each exposure of its unique sensor.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 217,
+      "topLeftY": 374,
+      "bottomRightX": 610,
+      "bottomRightY": 670,
+      "content": "![img-106.jpeg](img-106.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-106.jpeg"
+    },
+    {
+      "topLeftX": 163,
+      "topLeftY": 687,
+      "bottomRightX": 642,
+      "bottomRightY": 707,
+      "content": "Figure 21-6: 3D areascan camera Range acquisition with multiples Regions.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 738,
+      "bottomRightX": 376,
+      "bottomRightY": 757,
+      "content": "The main part of the 3D setup in this case could be:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 778,
+      "bottomRightX": 650,
+      "bottomRightY": 936,
+      "content": "// Areascan 3D camera with 2 Regions.\n// ***\n// Scan3D Control setup of coordinate system information.\n// 3D point cloud out in sensor pixel grid organization.\n//\n// Note: In this example use both Regions output data in the same coordinate system.\n// No Scan3dExtractionSelector or Scan3dExtraction regions are therefore needed.\n// In a more general case usage of RegionX -> Scan3dExtractionY can overcome this.\nScan3dOutputMode = CalibratedABC_Grid;\nScan3dDistanceUnit = Inch; // Set non-default value.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 365 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 615,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

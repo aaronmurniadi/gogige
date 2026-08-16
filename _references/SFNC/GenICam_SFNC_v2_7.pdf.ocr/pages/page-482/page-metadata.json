@@ -1,0 +1,123 @@
+{
+  "index": 481,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 141,
+      "bottomRightX": 477,
+      "bottomRightY": 276,
+      "content": "|  Interface | IFloat  |\n| --- | --- |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 300,
+      "bottomRightX": 522,
+      "bottomRightY": 319,
+      "content": "Returns the black level used to capture the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 335,
+      "bottomRightX": 275,
+      "bottomRightY": 354,
+      "content": "### 24.48 ChunkLinePitch",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 358,
+      "bottomRightX": 396,
+      "bottomRightY": 570,
+      "content": "|  Name | ChunkLinePitch  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | B  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 588,
+      "bottomRightX": 439,
+      "bottomRightY": 607,
+      "content": "Returns the LinePitch of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 622,
+      "bottomRightX": 267,
+      "bottomRightY": 640,
+      "content": "### 24.49 ChunkFrameID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 644,
+      "bottomRightX": 396,
+      "bottomRightY": 857,
+      "content": "|  Name | ChunkFrameID  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 882,
+      "bottomRightX": 636,
+      "bottomRightY": 901,
+      "content": "Returns the unique Identifier of the frame (image or data container) included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 482 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

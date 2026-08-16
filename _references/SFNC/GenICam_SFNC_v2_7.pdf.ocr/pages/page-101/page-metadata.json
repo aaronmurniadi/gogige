@@ -1,0 +1,149 @@
+{
+  "index": 100,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-14.jpeg](img-14.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 120,
+      "bottomRightX": 307,
+      "bottomRightY": 136,
+      "content": "Selects which Link of the device to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 144,
+      "bottomRightX": 643,
+      "bottomRightY": 177,
+      "content": "Generally, a device has only one Link that can be composed of one or many connections. But if there are many, this selector can be used to target a particular Link of the device with certain features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 192,
+      "bottomRightX": 238,
+      "bottomRightY": 212,
+      "content": "3.35 DeviceLinkSpeed",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 213,
+      "bottomRightX": 383,
+      "bottomRightY": 429,
+      "content": "|  Name | DeviceLinkSpeed[DeviceLinkSelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | Bps  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 451,
+      "bottomRightX": 451,
+      "bottomRightY": 469,
+      "content": "Indicates the speed of transmission negotiated on the specified Link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 476,
+      "bottomRightX": 482,
+      "bottomRightY": 492,
+      "content": "Note that this represents the total speed of all the connections of the Link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 506,
+      "bottomRightX": 367,
+      "bottomRightY": 527,
+      "content": "3.36 DeviceLinkThroughputLimitMode",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 528,
+      "bottomRightX": 380,
+      "bottomRightY": 761,
+      "content": "|  Name | DeviceLinkThroughputLimitMode[DeviceLinkSelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | OnOff  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 785,
+      "bottomRightX": 612,
+      "bottomRightY": 836,
+      "content": "Controls if the DeviceLinkThroughputLimit is active. When disabled, lower level TL specific features are expected to control the throughput. When enabled, DeviceLinkThroughputLimit controls the overall throughput.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 843,
+      "bottomRightX": 169,
+      "bottomRightY": 858,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 867,
+      "bottomRightX": 432,
+      "bottomRightY": 903,
+      "content": "- On: Enables the DeviceLinkThroughputLimit feature.\n- Off: Disables the DeviceLinkThroughputLimit feature.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 101 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

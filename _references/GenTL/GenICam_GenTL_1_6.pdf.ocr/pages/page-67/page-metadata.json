@@ -1,0 +1,123 @@
+{
+  "index": 66,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GEN<I>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 250,
+      "bottomRightY": 154,
+      "content": "##### 6.3.1.3 GCGetLastError",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 176,
+      "bottomRightX": 600,
+      "bottomRightY": 227,
+      "content": "|  GC_ERROR | GCGetLastError | ( GC_ERROR * char * size_t * | piErrorCode, sErrorText, piSize )  |\n| --- | --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 235,
+      "bottomRightX": 592,
+      "bottomRightY": 253,
+      "content": "Returns a readable text description of the last error occurred in the local thread context.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 260,
+      "bottomRightX": 636,
+      "bottomRightY": 396,
+      "content": "If multiple threads are supported on a platform this function must store this information thread local. In case an error occurs and after that several other function calls return without error the last error value and description is returned and the successful calls are ignored. If there has not been any error in the given thread context since startup the function will return GC_ERR_SUCCESS with *piErrorCode also set to GC_ERR_SUCCESS and sErrorText containing \"No Error\". In case GCGetLastError itself generates an error it will return the according error code but it will not store the error internally so that succeeding calls to GCGetLastError will still be able to report the stored error code.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 411,
+      "bottomRightX": 166,
+      "bottomRightY": 427,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 431,
+      "bottomRightX": 621,
+      "bottomRightY": 620,
+      "content": "|  [out] piErrorCode | Error code of the last error.  |\n| --- | --- |\n|  [in,out] sErrorText | Pointer to a user allocated C string buffer to receive the last error text. If this parameter is NULL, piSize will contain the needed size of sErrorText in bytes. The size includes the terminating 0.  |\n|  [in,out] piSize | sErrorText equal NULL:out: minimal size of sErrorText in bytes to hold all information.sErrorText unequal NULL:in: size of the provided sErrorText in bytesout: number of bytes filled by the function.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 632,
+      "bottomRightX": 141,
+      "bottomRightY": 648,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 653,
+      "bottomRightX": 636,
+      "bottomRightY": 783,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_PARAMETER | Parameters piSize and/or piErrorCode are invalid pointers (NULL or ~0x0).  |\n|  GC_ERR_BUFFER_TOO_SMALL | sErrorText is not NULL and the value of *piSize is too small to receive the expected amount of data.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 804,
+      "bottomRightX": 636,
+      "bottomRightY": 840,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 67 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

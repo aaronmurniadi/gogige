@@ -1,0 +1,166 @@
+{
+  "index": 87,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 35,
+      "bottomRightX": 278,
+      "bottomRightY": 63,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 492,
+      "topLeftY": 37,
+      "bottomRightX": 577,
+      "bottomRightY": 84,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 77,
+      "bottomRightX": 107,
+      "bottomRightY": 92,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 158,
+      "topLeftY": 77,
+      "bottomRightX": 373,
+      "bottomRightY": 94,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 132,
+      "bottomRightX": 218,
+      "bottomRightY": 153,
+      "content": "### 3 Device Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 158,
+      "bottomRightX": 652,
+      "bottomRightY": 226,
+      "content": "Device control features provides general information and control for the device (camera) and its sensor. This is mainly used to identify the device during the enumeration process and to obtain information about the sensor resolution. Other information and controls pertaining to the general state of the device are also included in this category.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 237,
+      "bottomRightX": 205,
+      "bottomRightY": 258,
+      "content": "#### 3.1 DeviceControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 261,
+      "bottomRightX": 329,
+      "bottomRightY": 458,
+      "content": "|  **Name** | DeviceControl  |\n| --- | --- |\n|  **Category** | Root  |\n|  **Level** | Recommended  |\n|  **Interface** | ICategory  |\n|  **Access** | Read  |\n|  **Unit** | -  |\n|  **Visibility** | Beginner  |\n|  **Values** | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 483,
+      "bottomRightX": 316,
+      "bottomRightY": 500,
+      "content": "Category for device information and control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 514,
+      "bottomRightX": 185,
+      "bottomRightY": 534,
+      "content": "#### 3.2 DeviceType",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 535,
+      "bottomRightX": 329,
+      "bottomRightY": 783,
+      "content": "|  **Name** | DeviceType  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Optional  |\n|  **Interface** | IEnumeration  |\n|  **Access** | Read  |\n|  **Unit** | -  |\n|  **Visibility** | Guru  |\n|  **Values** | Transmitter Receiver Transceiver Peripheral  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 807,
+      "bottomRightX": 196,
+      "bottomRightY": 824,
+      "content": "Returns the device type.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 829,
+      "bottomRightX": 170,
+      "bottomRightY": 847,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 855,
+      "bottomRightX": 493,
+      "bottomRightY": 948,
+      "content": "- **Transmitter:** Data stream transmitter device.\n- **Receiver:** Data stream receiver device.\n- **Transceiver:** Data stream receiver and transmitter device.\n- **Peripheral:** Controllable device (with no data stream handling).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 948,
+      "bottomRightX": 109,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 268,
+      "topLeftY": 948,
+      "bottomRightX": 361,
+      "bottomRightY": 966,
+      "content": "Page 88 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 948,
+      "bottomRightX": 579,
+      "bottomRightY": 966,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

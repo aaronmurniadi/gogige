@@ -1,0 +1,95 @@
+{
+  "index": 54,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 49,
+      "topLeftY": 24,
+      "bottomRightX": 701,
+      "bottomRightY": 99,
+      "content": "|  **GEN<i>CAM** |   |   |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 921,
+      "bottomRightY": 216,
+      "content": "|  MultiSlopeSaturationThreshold[MultiSlopeKneePointSelector] | O | IFloat | R/(W) | % | E | The percentage of the full saturation that is applied at a certain knee-point of a multi-slope exposure.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  MultiSlopeIntensityLimit[MultiSlopeKneePointSelector] | O | IFloat | R/(W) | % | E | The relative intensity which divides intensities influenced by different exposure slopes.  |\n|  MultiSlopeExposureGradient[MultiSlopeKneePointSelector] | O | IFloat | R/(W) | - | E | The gradient of the additional slope that is defined by this knee-point.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 248,
+      "bottomRightX": 228,
+      "bottomRightY": 268,
+      "content": "## 2.4 Analog Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 270,
+      "bottomRightX": 837,
+      "bottomRightY": 288,
+      "content": "Contains the features related to the video signal conditioning in the analog domain (See the Analog Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 377,
+      "topLeftY": 294,
+      "bottomRightX": 598,
+      "bottomRightY": 311,
+      "content": "Table 2-4: Analog Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 317,
+      "bottomRightX": 921,
+      "bottomRightY": 636,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  AnalogControl | O | ICategory | R | - | B | Category that contains the Analog control features.  |\n|  GainSelector | O | IEnumeration | R/W | - | B | Selects which Gain is controlled by the various Gain features.  |\n|  Gain[GainSelector] | O | IFloat | R/W | - | B | Controls the selected gain as an absolute physical value.  |\n|  GainAuto[GainSelector] | O | IEnumeration | R/W | - | B | Sets the automatic gain control (AGC) mode.  |\n|  GainAutoBalance | O | IEnumeration | R/W | - | B | Sets the mode for automatic gain balancing between the sensor color channels or taps.  |\n|  BlackLevelSelector | O | IEnumeration | R/W | - | E | Selects which Black Level is controlled by the various Black Level features.  |\n|  BlackLevel[BlackLevelSelector] | O | IFloat | R/W | - | E | Controls the analog black level as an absolute physical value.  |\n|  BlackLevelAuto[BlackLevelSelector] | O | IEnumeration | R/W | - | E | Controls the mode for automatic black level adjustment.  |\n|  BlackLevelAutoBalance | O | IEnumeration | R/W | - | E | Controls the mode for automatic black level balancing between the sensor color channels or taps.  |\n|  WhiteClipSelector | O | IEnumeration | R/W | - | E | Selects which White Clip to control.  |\n|  WhiteClip[WhiteClipSelector] | O | IFloat | R/W | - | E | Controls the maximal intensity taken by the video signal before being clipped as an absolute physical value.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 651,
+      "bottomRightX": 375,
+      "bottomRightY": 668,
+      "content": "Page 55 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

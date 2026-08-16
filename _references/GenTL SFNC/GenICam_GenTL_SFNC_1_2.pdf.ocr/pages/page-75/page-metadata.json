@@ -1,0 +1,123 @@
+{
+  "index": 74,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 184,
+      "bottomRightX": 509,
+      "bottomRightY": 203,
+      "content": "The Action Command Group Mask to use in the Action Command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 216,
+      "bottomRightX": 348,
+      "bottomRightY": 232,
+      "content": "#### 3.2.3.6 ActionScheduledTimeEnable",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 237,
+      "bottomRightX": 459,
+      "bottomRightY": 476,
+      "content": "|  Name | ActionScheduledTimeEnable  |\n| --- | --- |\n|  Category | ActionControl  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 502,
+      "bottomRightX": 477,
+      "bottomRightY": 520,
+      "content": "Specifies if a time enabled Action Command should be given.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 534,
+      "bottomRightX": 299,
+      "bottomRightY": 551,
+      "content": "#### 3.2.3.7 ActionScheduledTime",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 554,
+      "bottomRightX": 459,
+      "bottomRightY": 794,
+      "content": "|  Name | ActionScheduledTime  |\n| --- | --- |\n|  Category | ActionControl  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 818,
+      "bottomRightX": 496,
+      "bottomRightY": 837,
+      "content": "Specifies the time a time enabled Action Command is scheduled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 851,
+      "bottomRightX": 369,
+      "bottomRightY": 868,
+      "content": "#### 3.2.3.8 GevActionDestinationIPAddress",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 871,
+      "bottomRightX": 459,
+      "bottomRightY": 901,
+      "content": "|  Name | GevActionDestinationIPAddress  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 75 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "index": 16,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 140,
+      "content": "|  GEN<i>CAM |   | ![img-12.jpeg](img-12.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 156,
+      "bottomRightX": 336,
+      "bottomRightY": 176,
+      "content": "#### 3.1.2. Pending Acknowledge",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 196,
+      "bottomRightX": 648,
+      "bottomRightY": 349,
+      "content": "In case the processing of a command takes longer than specified in the Maximum Device Response Time register, the command receiver must send a pending acknowledge. This pending acknowledge response uses the same request_id as the command, which triggered it, and provides a temporary timeout in milliseconds to be used only with the command currently executed. The command sender can then temporarily adjust its acknowledge timeout for the current cycle. In case the command receiver has the heartbeat enabled it has to suspend its heartbeat mechanism so that the device does not lose connection. In case the execution of the command takes longer than signaled through an already sent pending acknowledge, the command receiver may issue another pending acknowledge indicating a new, longer timeout.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 189,
+      "topLeftY": 416,
+      "bottomRightX": 530,
+      "bottomRightY": 779,
+      "content": "![img-13.jpeg](img-13.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-13.jpeg"
+    },
+    {
+      "topLeftX": 289,
+      "topLeftY": 805,
+      "bottomRightX": 429,
+      "bottomRightY": 821,
+      "content": "Fig. 2 – Pending Ack Cycle",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 852,
+      "bottomRightX": 621,
+      "bottomRightY": 885,
+      "content": "In case the device receives a further command packet while processing a command, it reacts as follows:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 17 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

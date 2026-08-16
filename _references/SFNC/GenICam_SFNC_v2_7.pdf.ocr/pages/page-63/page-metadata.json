@@ -1,0 +1,115 @@
+{
+  "index": 62,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 77,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 77,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 508,
+      "topLeftY": 36,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "![img-7.jpeg](img-7.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-7.jpeg"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 920,
+      "bottomRightY": 246,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  EventFrameTriggerData | R | ICategory | R | - | E | Category that contains all the data features related to the FrameTrigger Event.  |\n|  EventFrameTrigger | R | IInteger | R | - | E | Returns the unique Identifier of the FrameTrigger type of Event.  |\n|  EventFrameTriggerTimestamp | R | IInteger | R | - | E | Returns the Timestamp of the FrameTrigger Event.  |\n|  EventFrameTriggerFrameID | R | IInteger | R | - | E | Returns the unique Identifier of the Frame (or image) that generated the FrameTrigger Event.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 269,
+      "bottomRightX": 920,
+      "bottomRightY": 407,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  EventExposureEndData | R | ICategory | R | - | E | Category that contains all the data features related to the ExposureEnd Event.  |\n|  EventExposureEnd | R | IInteger | R | - | E | Returns the unique identifier of the ExposureEnd type of Event.  |\n|  EventExposureEndTimestamp | R | IInteger | R | - | E | Returns the Timestamp of the ExposureEnd Event.  |\n|  EventExposureEndFrameID | R | IInteger | R | - | E | Returns the unique Identifier of the Frame (or image) that generated the ExposureEnd Event.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 430,
+      "bottomRightX": 920,
+      "bottomRightY": 576,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  EventErrorData | R | ICategory | R | - | E | Category that contains all the data features related to the Error Event.  |\n|  EventError | R | IInteger | R | - | E | Returns the unique identifier of the Error type of Event.  |\n|  EventErrorTimestamp | R | IInteger | R | - | E | Returns the Timestamp of the Error Event.  |\n|  EventErrorFrameID | R | IInteger | R | - | E | If applicable, returns the unique Identifier of the Frame (or image) that generated the Error Event.  |\n|  EventErrorCode | R | IInteger | R | - | E | Returns an error code for the error(s) that happened.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 607,
+      "bottomRightX": 920,
+      "bottomRightY": 630,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 376,
+      "bottomRightY": 669,
+      "content": "Page 63 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 669,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "index": 117,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 203,
+      "content": "|  Values | True False  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 228,
+      "bottomRightX": 591,
+      "bottomRightY": 247,
+      "content": "Flag to indicate that a buffer was filled but an error occurred during that process.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 256,
+      "bottomRightX": 671,
+      "bottomRightY": 289,
+      "content": "Corresponds to the BUFFER_INFO_IS_INCOMPLETE command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 331,
+      "bottomRightX": 280,
+      "bottomRightY": 349,
+      "content": "### 3.5.2.8 BufferPayloadType",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 351,
+      "bottomRightX": 421,
+      "bottomRightY": 743,
+      "content": "|  Name | BufferPayloadType  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Unknown Image RawData File ChunkData JPEG JPEG2000 H264 ChunkOnly MultiPart GenDC  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 768,
+      "bottomRightX": 245,
+      "bottomRightY": 786,
+      "content": "Payload type of the data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 793,
+      "bottomRightX": 677,
+      "bottomRightY": 917,
+      "content": "- **Unknown**: The GenTL Producer is not aware of the payload type of the data in the provided buffer. For the GenTL Consumer perspective this can be handled as raw data.\n- **Image**: The buffer payload contains pure image data. In particular, no chunk data is attached to the image.\n- **RawData**: The buffer payload contains raw, unspecified data. For instance, this can be used to send acquisition statistics.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 118 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

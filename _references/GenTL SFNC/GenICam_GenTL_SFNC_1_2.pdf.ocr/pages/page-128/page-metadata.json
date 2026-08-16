@@ -1,0 +1,49 @@
+{
+  "index": 127,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-36.jpeg](img-36.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 459,
+      "bottomRightY": 917,
+      "content": "|   | RGB8a32RGBa8RGB10RGB10_PlanarRGB10g32RGB10g32msbRGB10p32RGB10p32msbRGB12RGB12_PlanarRGB16RGB16_PlanarRGB565pBGR10BGR12BGR16BGR565pBGR8BGRa8YUV411_8YUV422_8YUV8YCbCr411_8YCbCr422_8YCbCr601_411_8 YCbCr601_422_8YCbCr601_8YCbCr709_411_8 YCbCr709_422_8YCbCr709_8 YCbCr8BayerBG8BayerGB8BayerGR8BayerRG8BayerBG10BayerBG10g12BayerGB10BayerGB10g12BayerGR10BayerGR10g12  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 927,
+      "bottomRightX": 431,
+      "bottomRightY": 944,
+      "content": "Page 128 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

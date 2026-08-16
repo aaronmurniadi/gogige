@@ -1,0 +1,67 @@
+{
+  "index": 557,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 428,
+      "bottomRightY": 166,
+      "content": "### 27.7.3 CxpLinkConfigurationPreferred",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 167,
+      "bottomRightX": 569,
+      "bottomRightY": 931,
+      "content": "|  Name | CxpLinkConfigurationPreferred  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | CXP1_X1 CXP2_X1 CXP3_X1 CXP5_X1 CXP6_X1 CXP10_X1 CXP12_X1 CXP25_X1 CXP1_X2 CXP2_X2 CXP3_X2 CXP5_X2 CXP6_X2 CXP10_X2 CXP12_X2 CXP25_X2 CXP1_X4 CXP2_X4 CXP3_X4 CXP5_X4 CXP6_X4 CXP10_X4 CXP12_X4 CXP25_X4 CXP1_X8 CXP2_X8 CXP3_X8 CXP5_X8 CXP6_X8 CXP10_X8  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 558 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

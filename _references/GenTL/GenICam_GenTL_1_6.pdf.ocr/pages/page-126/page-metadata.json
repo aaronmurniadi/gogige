@@ -1,0 +1,114 @@
+{
+  "index": 125,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 137,
+      "bottomRightX": 229,
+      "bottomRightY": 154,
+      "content": "#### 6.3.7.4 EventGetInfo",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 173,
+      "bottomRightX": 641,
+      "bottomRightY": 262,
+      "content": "|  GC_ERROR | EventGetInfo | ( EVENT_HANDLE hEvent, EVENT_INFO_CMD iInfoCmd, INFO_DATATYPE * piType, void * pBuffer, size_t * piSize )  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 269,
+      "bottomRightX": 596,
+      "bottomRightY": 285,
+      "content": "Retrieves information about the given hEvent object as defined in EVENT_INFO_CMD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 300,
+      "bottomRightX": 166,
+      "bottomRightY": 316,
+      "content": "#### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 320,
+      "bottomRightX": 635,
+      "bottomRightY": 561,
+      "content": "|  [in] | hEvent | Event handle to retrieve info from.  |\n| --- | --- | --- |\n|  [in] | iInfoCmd | Information to be retrieved as defined in EVENT_INFO_CMD.  |\n|  [out] | piType | Data type of the pBuffer content as defined in the EVENT_INFO_CMD and INFO_DATATYPE.  |\n|  [in,out] | pBuffer | Pointer to a user allocated buffer to receive the requested information. If this parameter is NULL, piSize will contain the minimal size of pBuffer in bytes. If the piType is a string the size includes the terminating 0.  |\n|  [in,out] | piSize | pBuffer equal NULL:out: minimal size of pBuffer in bytes to hold all information pBuffer unequal NULL:in: size of the provided pBuffer in bytesout: number of bytes filled by the function  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 575,
+      "bottomRightX": 141,
+      "bottomRightY": 590,
+      "content": "#### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 597,
+      "bottomRightX": 636,
+      "bottomRightY": 836,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hEvent is invalid (NULL) or does not reference a previously registered event.  |\n|  GC_ERR_NOT_IMPLEMENTED | Specified iInfoCmd is not implemented.  |\n|  GC_ERR_INVALID_PARAMETER | Parameters piSize and/or piType are invalid pointers (NULL or ~0x0)  |\n|  GC_ERR_BUFFER_TOO_SMALL | pBuffer is not NULL and the value of *piSize is too small to receive the expected amount of data.  |\n|  GC_ERR_NOT_AVAILABLE | The request is implemented but the requested information is currently not available for any reason.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 864,
+      "bottomRightX": 635,
+      "bottomRightY": 898,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 126 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

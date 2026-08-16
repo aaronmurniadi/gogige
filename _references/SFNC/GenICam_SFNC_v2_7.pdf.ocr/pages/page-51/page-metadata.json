@@ -1,0 +1,84 @@
+{
+  "index": 50,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 76,
+      "bottomRightX": 122,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 171,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 106,
+      "bottomRightX": 920,
+      "bottomRightY": 634,
+      "content": "|  ComponentEnable[RegionSelector][ComponentSelector] | O | IBoolean | R/(W) | - | B | Controls if the selected component streaming is active.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  ComponentIDValue[ComponentSelector] | O | IInteger | R | - | E | Returns a unique Identifier value that corresponds to type of the component selected by ComponentSelector.  |\n|  GroupSelector | O | IEnumeration | R/W | - | B | Selects a Group of component to control or inquire.  |\n|  GroupIDValue[GroupSelector] | O | IInteger | R | - | E | Returns a unique Identifier value corresponding to the selected Group of Components.  |\n|  ImageComponentSelector | O | IEnumeration | R/W | - | I | This feature is deprecated (See ComponentSelector).  |\n|  ImageComponentEnable[RegionSelector][ComponentSelector] | O | IBoolean | R/(W) | - | I | This feature is deprecated (See ComponentEnable).  |\n|  Width[RegionSelector] | R | IInteger | R/(W) | - | B | Width of the image provided by the device (in pixels).  |\n|  Height[RegionSelector] | R | IInteger | R/(W) | - | B | Height of the image provided by the device (in pixels).  |\n|  OffsetX[RegionSelector] | R | IInteger | R/W | - | B | Horizontal offset from the origin to the region of interest (in pixels).  |\n|  OffsetY[RegionSelector] | R | IInteger | R/W | - | B | Vertical offset from the origin to the region of interest (in pixels).  |\n|  LinePitchEnable[RegionSelector] | R | IBoolean | R/W | - | E | This feature controls whether the LinePitch feature is writable.  |\n|  LinePitch[RegionSelector] | R | IInteger | R/W | B | E | Total number of bytes between the starts of 2 consecutive lines.  |\n|  BinningSelector | O | IEnumeration | R/(W) | - | E | Selects which binning engine is controlled by the BinningHorizontal and BinningVertical features.  |\n|  BinningHorizontalMode[BinningSelector] | O | IEnumeration | R/(W) | - | E | Sets the mode to use to combine horizontal photo-sensitive cells together when BinningHorizontal is used.  |\n|  BinningHorizontal[BinningSelector] | O | IInteger | R/W | - | E | Number of horizontal photo-sensitive cells to combine together.  |\n|  BinningVerticalMode[BinningSelector] | O | IEnumeration | R/(W) | - | E | Sets the mode to use to combine vertical photo-sensitive cells together when BinningVertical is used.  |\n|  BinningVertical[BinningSelector] | O | IInteger | R/W | - | E | Number of vertical photo-sensitive cells to combine together.  |\n|  DecimationHorizontalMode | O | IEnumeration | R/(W) | - | E | Sets the mode used to reduce the horizontal resolution when DecimationHorizontal is used.  |\n|  DecimationHorizontal | O | IInteger | R/W | - | E | Horizontal sub-sampling of the image.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 651,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 51 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

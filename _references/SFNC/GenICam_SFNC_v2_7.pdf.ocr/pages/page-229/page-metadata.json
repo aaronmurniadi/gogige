@@ -1,0 +1,139 @@
+{
+  "index": 228,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 602,
+      "bottomRightY": 367,
+      "content": "|  Values | Gain00 Gain01 Gain02 Gain10 Gain11 Gain12 Gain20 Gain21 Gain22 Offset0 Offset1 Offset2  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 391,
+      "bottomRightX": 732,
+      "bottomRightY": 425,
+      "content": "Selects the Gain factor or Offset of the Transformation matrix to access in the selected Color Transformation module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 435,
+      "bottomRightX": 177,
+      "bottomRightY": 451,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 461,
+      "bottomRightX": 396,
+      "bottomRightY": 772,
+      "content": "- Gain00: Gain 0,0 of the transformation matrix.\n- Gain01: Gain 0,1 of the transformation matrix.\n- Gain02: Gain 0,2 of the transformation matrix.\n- Gain10: Gain 1,0 of the transformation matrix.\n- Gain11: Gain 1,1 of the transformation matrix.\n- Gain12: Gain 1,2 of the transformation matrix.\n- Gain20: Gain 2,0 of the transformation matrix.\n- Gain21: Gain 2,1 of the transformation matrix.\n- Gain22: Gain 2,2 of the transformation matrix.\n- Offset0: Offset 0 of the transformation matrix.\n- Offset1: Offset 1 of the transformation matrix.\n- Offset2: Offset 2 of the transformation matrix.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 814,
+      "bottomRightX": 321,
+      "bottomRightY": 834,
+      "content": "### 8.5 ColorTransformationValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 837,
+      "bottomRightX": 541,
+      "bottomRightY": 936,
+      "content": "|  Name | ColorTransformationValue[ColorTransformationSelector] [ColorTransformationValueSelector]  |\n| --- | --- |\n|  Category | ColorTransformationControl  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 229 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

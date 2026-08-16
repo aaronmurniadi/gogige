@@ -1,0 +1,182 @@
+{
+  "index": 262,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 143,
+      "bottomRightX": 245,
+      "bottomRightY": 165,
+      "content": "# 11 Encoder Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 752,
+      "bottomRightY": 232,
+      "content": "This chapter lists all features that relates to control and monitoring of quadrature encoders. Quadrature encoders are also known as incremental, rotary and shaft encoders.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 248,
+      "bottomRightX": 393,
+      "bottomRightY": 268,
+      "content": "## 11.1 Quadrature Encoder usage model",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 290,
+      "bottomRightX": 423,
+      "bottomRightY": 309,
+      "content": "This section describes the quadrature encoder usage model.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 326,
+      "bottomRightX": 750,
+      "bottomRightY": 364,
+      "content": "The Encoder Control interface connects to a rotary or linear quadrature encoder device which has output signals A and B used for tracking of positive and negative direction motion of the tracked axle or surface, respectively.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 380,
+      "bottomRightX": 747,
+      "bottomRightY": 416,
+      "content": "The Encoder Control interface uses a position counter driven by the A and B signals to track the position of the target in the presence of either a positive or a negative direction of motion.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 431,
+      "bottomRightX": 755,
+      "bottomRightY": 504,
+      "content": "The Encoder interface can generate a trigger signal to the sensor via TriggerSource while maintaining its counter value for tracking the position of the object. This means that reading the counter value gives the position and motion of the quadrature encoder (target object) from the time the position encoder started. Starting the position counter can be done with AcquisitionStart through the EncoderResetSource.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 521,
+      "bottomRightX": 755,
+      "bottomRightY": 630,
+      "content": "The number of input pulses from a quadrature encoder needed to generate Encoder Control output pulses, which can be used as a trigger source (i.e. the distance between samples along the encoder motion) is controlled via the EncoderDivider feature. The position counter runs continuously and its value represents the number of incoming pulses received since the last reset. Thus, this counter always reflects the true position of the object before the divider. The EncoderOutputMode feature is then used to control how the position counter generates its output signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 646,
+      "bottomRightX": 748,
+      "bottomRightY": 701,
+      "content": "Some quadrature encoders have an index output that indicates their per revolution position; however, this is not included explicitly in the Encoder Control interface. This signal can be handled through the standard I/O interface as a separate signal for example to reset of the Encoder Control position counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 718,
+      "bottomRightX": 747,
+      "bottomRightY": 756,
+      "content": "Quadrature encoder outputs often use differential signaling, but this conditioning is also handled by the generic I/O setup.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 771,
+      "bottomRightX": 716,
+      "bottomRightY": 790,
+      "content": "Note that the Encoder Control output can also be used to generate Events (See the EventSelector feature).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 263 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

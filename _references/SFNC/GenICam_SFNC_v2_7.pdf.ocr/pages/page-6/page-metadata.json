@@ -1,0 +1,84 @@
+{
+  "index": 5,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 87,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 533,
+      "topLeftY": 29,
+      "bottomRightX": 623,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 115,
+      "bottomRightX": 662,
+      "bottomRightY": 968,
+      "content": "|  5.5.5 | ACQUISITIONBURSTFRAMECOUNT | 182  |\n| --- | --- | --- |\n|  5.5.6 | ACQUISITIONFRAMERATE | 183  |\n|  5.5.7 | ACQUISITIONFRAMERATEENABLE | 183  |\n|  5.5.8 | ACQUISITIONLINERATE | 183  |\n|  5.5.9 | ACQUISITIONLINERATEENABLE | 184  |\n|  5.5.10 | ACQUISITIONSTATUSSELECTOR | 184  |\n|  5.5.11 | ACQUISITIONSTATUS | 185  |\n|  5.6 | TRIGGER CONTROL FEATURES | 187  |\n|  5.6.1 | TRIGGERSELECTOR | 188  |\n|  5.6.2 | TRIGGERMODE | 190  |\n|  5.6.3 | TRIGGERSOFTWARE | 190  |\n|  5.6.4 | TRIGGERSOURCE | 190  |\n|  5.6.5 | TRIGGERACTIVATION | 192  |\n|  5.6.6 | TRIGGEROVERLAP | 193  |\n|  5.6.7 | TRIGGERDELAY | 193  |\n|  5.6.8 | TRIGGERDIVIDER | 194  |\n|  5.6.9 | TRIGGERMULTIPLIER | 194  |\n|  5.7 | EXPOSURE CONTROL FEATURES | 194  |\n|  5.7.1 | EXPOSUREMODE | 196  |\n|  5.7.2 | EXPOSURETIMEMODE | 197  |\n|  5.7.3 | EXPOSURETIMESELECTOR | 197  |\n|  5.7.4 | EXPOSURETIME | 198  |\n|  5.7.5 | EXPOSUREAUTO | 199  |\n|  5.8 | MULTI-SLOPE EXPOSURE CONTROL FEATURES | 199  |\n|  5.8.1 | MULTISLOPEMODE | 205  |\n|  5.8.2 | MULTISLOPEKNEEPOINTCOUNT | 205  |\n|  5.8.3 | MULTISLOPEKNEEPOINTSELECTOR | 206  |\n|  5.8.4 | MULTISLOPEEXPOSURELIMIT | 206  |\n|  5.8.5 | MULTISLOPESATURATIONTHRESHOLD | 206  |\n|  5.8.6 | MULTISLOPEINTENSITYLIMIT | 207  |\n|  5.8.7 | MULTISLOPEEXPOSUREGRADIENT | 207  |\n|  **6** | **ANALOG CONTROL** | **209**  |\n|  6.1 | ANALOGCONTROL | 210  |\n|  6.2 | GAINSELECTOR | 210  |\n|  6.3 | GAIN | 213  |\n|  6.4 | GAINAUTO | 213  |\n|  6.5 | GAINAUTOBALANCE | 214  |\n|  6.6 | BLACKLEVELSELECTOR | 215  |\n|  6.7 | BLACKLEVEL | 216  |\n|  6.8 | BLACKLEVELAUTO | 216  |\n|  6.9 | BLACKLEVELAUTOBALANCE | 217  |\n|  6.10 | WHITECLIPSELECTOR | 218  |\n|  6.11 | WHITECLIP | 219  |\n|  6.12 | BALANCERATIOSELECTOR | 219  |\n|  6.13 | BALANCERATIO | 220  |\n|  6.14 | BALANCEWHITEAUTO | 220  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 988,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 988,
+      "bottomRightX": 388,
+      "bottomRightY": 1007,
+      "content": "Page 6 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

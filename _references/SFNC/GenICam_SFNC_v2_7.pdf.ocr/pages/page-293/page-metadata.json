@@ -1,0 +1,167 @@
+{
+  "index": 292,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 496,
+      "bottomRightY": 232,
+      "content": "|  Unit | -  |\n| --- | --- |\n|  Visibility | Guru  |\n|  Values | Off On  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 258,
+      "bottomRightX": 752,
+      "bottomRightY": 294,
+      "content": "Enables the unconditional action command mode where action commands are processed even when the primary control channel is closed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 300,
+      "bottomRightX": 177,
+      "bottomRightY": 317,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 328,
+      "bottomRightX": 335,
+      "bottomRightY": 372,
+      "content": "- Off: Unconditional mode is disabled.\n- On: Unconditional mode is enabled.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 389,
+      "bottomRightX": 296,
+      "bottomRightY": 410,
+      "content": "### 14.2.3 ActionDeviceKey",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 411,
+      "bottomRightX": 386,
+      "bottomRightY": 625,
+      "content": "|  Name | ActionDeviceKey  |\n| --- | --- |\n|  Category | ActionControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Write-Only  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥ 0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 648,
+      "bottomRightX": 736,
+      "bottomRightY": 702,
+      "content": "Provides the device key that allows the device to check the validity of action commands. The device internal assertion of an action signal is only authorized if the ActionDeviceKey and the action device key value in the protocol message are equal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 717,
+      "bottomRightX": 296,
+      "bottomRightY": 736,
+      "content": "### 14.2.4 ActionQueueSize",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 739,
+      "bottomRightX": 386,
+      "bottomRightY": 928,
+      "content": "|  Name | ActionQueueSize  |\n| --- | --- |\n|  Category | ActionControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 293 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

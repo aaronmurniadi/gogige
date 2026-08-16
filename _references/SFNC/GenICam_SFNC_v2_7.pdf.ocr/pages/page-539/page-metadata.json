@@ -1,0 +1,123 @@
+{
+  "index": 538,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 396,
+      "bottomRightY": 278,
+      "content": "|  Interface | IInteger  |\n| --- | --- |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 300,
+      "bottomRightX": 721,
+      "bottomRightY": 338,
+      "content": "This feature is deprecated (See DeviceLinkCommandTimeout). It was used to indicate the longest GVCP command execution time before a device returns a PENDING_ACK.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 351,
+      "bottomRightX": 487,
+      "bottomRightY": 375,
+      "content": "#### 27.4.46 GevPrimaryApplicationSwitchoverKey",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 375,
+      "bottomRightX": 435,
+      "bottomRightY": 589,
+      "content": "|  Name | GevPrimaryApplicationSwitchoverKey  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Write-Only  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥ 0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 613,
+      "bottomRightX": 558,
+      "bottomRightY": 633,
+      "content": "Controls the key to use to authenticate primary application switchover requests.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 646,
+      "bottomRightX": 388,
+      "bottomRightY": 666,
+      "content": "#### 27.4.47 GevGVSPExtendedIDMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 669,
+      "bottomRightX": 504,
+      "bottomRightY": 901,
+      "content": "|  Name | GevGVSPExtendedIDMode  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | OffOn  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 925,
+      "bottomRightX": 266,
+      "bottomRightY": 942,
+      "content": "Enables the extended IDs mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 539 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "index": 33,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 133,
+      "topLeftY": 31,
+      "bottomRightX": 277,
+      "bottomRightY": 58,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 7,
+      "topLeftY": 74,
+      "bottomRightX": 74,
+      "bottomRightY": 88,
+      "content": "Version 1.1.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 244,
+      "topLeftY": 70,
+      "bottomRightX": 290,
+      "bottomRightY": 85,
+      "content": "GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 527,
+      "topLeftY": 31,
+      "bottomRightX": 617,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 117,
+      "bottomRightX": 424,
+      "bottomRightY": 137,
+      "content": "### 3.1 GenDC Typical Transmission and Reception",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 153,
+      "bottomRightX": 630,
+      "bottomRightY": 530,
+      "content": "![img-4.jpeg](img-4.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-4.jpeg"
+    },
+    {
+      "topLeftX": 203,
+      "topLeftY": 531,
+      "bottomRightX": 532,
+      "bottomRightY": 547,
+      "content": "Figure 3-2: GenDC typical Transmission and Reception data handling",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 563,
+      "bottomRightX": 702,
+      "bottomRightY": 632,
+      "content": "On the transmitter side, the Descriptor is typically encoded first and then passed with the Container's data to a transport layer specific data transmitter to be streamed out (possibly out of order). The receiver typically handles the GenDC Container by a transport layer specific data receiver. The reassembled Container is then passed to a GenDC decoder to be interpreted.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 664,
+      "bottomRightX": 162,
+      "bottomRightY": 682,
+      "content": "### 3.2 GenDC Flows",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 700,
+      "bottomRightX": 700,
+      "bottomRightY": 787,
+      "content": "Flows allow the TL specific data transmitter and receiver to work without knowledge of the GenDC Container. Each Flow represents an independent memory transfer with a given size and identification number starting from zero. It is possible to transport the GenDC Container in a single Flow or in multiple Flows. In general, a Flow mapping table as shown in section 3.2.1 is sufficient for a Transport Layer to handle a GenDC Container. The receiver simply allocates buffer space for each Flow and does not need to know what is transported inside.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 806,
+      "bottomRightX": 713,
+      "bottomRightY": 893,
+      "content": "Arbitrary Parts of a GenDC Container can be transported in parallel to separate memory locations by using GenDC Flows. The relation between the GenDC Container, GenDC Flows and an arbitrary Transport Layer is shown in Figure 3-1. GenDC Flows allow the transport layer to reserve the necessary buffer space. In case the transport layer provides multiple Flows this also supports parallelism. Note that certain Transport Layer, Transmitter or Receiver might have limitations regarding parallelism.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 910,
+      "bottomRightX": 716,
+      "bottomRightY": 962,
+      "content": "The transfer of a GenDC Descriptor is always done in Flow zero. The GenDC Containers' Part(s) Header provides information about the FlowId and FlowOffset for all individual Parts. This optionally allows sending Parts on other Flows than Flow zero. Besides this, the GenDC Container is agnostic to Flows.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 83,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 34 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

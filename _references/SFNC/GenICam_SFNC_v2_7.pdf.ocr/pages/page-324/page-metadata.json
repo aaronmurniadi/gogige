@@ -1,0 +1,177 @@
+{
+  "index": 323,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 109,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 514,
+      "bottomRightY": 164,
+      "content": "|  Values | ≥0  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 187,
+      "bottomRightX": 550,
+      "bottomRightY": 206,
+      "content": "Sets the initial/start sequencer set, which is the first set used within a sequencer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 220,
+      "bottomRightX": 305,
+      "bottomRightY": 242,
+      "content": "### 17.14 SequencerPathSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 243,
+      "bottomRightX": 514,
+      "bottomRightY": 457,
+      "content": "|  Name | SequencerPathSelector[SequencerSetSelector]  |\n| --- | --- |\n|  Category | SequencerControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 481,
+      "bottomRightX": 432,
+      "bottomRightY": 500,
+      "content": "Selects to which branching path further path settings applies.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 514,
+      "bottomRightX": 261,
+      "bottomRightY": 535,
+      "content": "### 17.15 SequencerSetNext",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 537,
+      "bottomRightX": 514,
+      "bottomRightY": 768,
+      "content": "|  Name | SequencerSetNext[SequencerSetSelector][SequencerPathSelector]  |\n| --- | --- |\n|  Category | SequencerControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 794,
+      "bottomRightX": 257,
+      "bottomRightY": 811,
+      "content": "Specifies the next sequencer set.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 826,
+      "bottomRightX": 318,
+      "bottomRightY": 848,
+      "content": "### 17.16 SequencerTriggerSource",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 849,
+      "bottomRightX": 569,
+      "bottomRightY": 949,
+      "content": "|  Name | SequencerTriggerSource[SequencerSetSelector][SequencerPathSelector]  |\n| --- | --- |\n|  Category | SequencerControl  |\n|  Level | Recommended  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 324 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

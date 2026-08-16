@@ -1,0 +1,76 @@
+{
+  "index": 148,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-210.jpeg](img-210.jpeg) CAM |   | ![img-211.jpeg](img-211.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 323,
+      "bottomRightY": 156,
+      "content": "##### 6.4.4.5 PAYLOADTYPE_INFO_IDS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 177,
+      "bottomRightX": 305,
+      "bottomRightY": 195,
+      "content": "enum PAYLOADTYPE_INFO_IDS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 203,
+      "bottomRightX": 637,
+      "bottomRightY": 272,
+      "content": "This enumeration defines constants to give a hint on the payload type to be expected in the buffer. These values are returned by a call to DSGetBufferInfo with the command BUFFER_INFO_PAYLOADTYPE. The interpretation of the PAYLOADTYPE_INFO_IDS is depending on the TLType of the device which streams the data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 277,
+      "bottomRightX": 641,
+      "bottomRightY": 889,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|  PAYLOAD_TYPE_UNKNOWN | 0 | The GenTL Producer is not aware of the payload type of the data in the provided buffer. For the GenTL Consumer perspective this can be handled as raw data.  |\n|  PAYLOAD_TYPE_IMAGE | 1 | The buffer payload contains image data. The GenTL Consumer can check if additional chunk data is available via the BUFFER_INFO commands.  |\n|  PAYLOAD_TYPE_RAW_DATA | 2 | The buffer payload contains raw and further unspecified data. This can be used to send acquisition statistics.  |\n|  PAYLOAD_TYPE_FILE | 3 | The buffer payload contains data of a file. It is used to transfer files such as JPEG compressed images which can be stored by the GenTL Producer directly to a hard disk. The user might get a hint how to interpret the buffer by the filename provided through a call to DSGetBufferInfo with the command BUFFER_INFO_FILENAME.  |\n|  PAYLOAD_TYPE_CHUNK_DATA | 4 | The buffer payload contains chunk data which can be parsed. The chunk data type might be reported through SFNC or deduced from the technology the device is based on. This constant is for backward compatibility with GEV 1.2 and is deprecated since GenTL version 1.5. From now on ChunkData can be part or any other payload type. Use the BUFFER_INFO_CONTAINS_CHUNKDATA commads to query if a given buffer content contains chunk data.  |\n|  PAYLOAD_TYPE_JPEG | 5 | The buffer payload contains JPEG data in the format described in GEV 2.0. The GenTL Producer should report additional information through the corresponding BUFFER_INFO_CMD commands.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 149 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

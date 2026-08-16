@@ -1,0 +1,129 @@
+{
+  "index": 3,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 43,
+      "bottomRightX": 681,
+      "bottomRightY": 122,
+      "content": "|  GEN<i>CAM |   | ![img-2.jpeg](img-2.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 131,
+      "bottomRightX": 700,
+      "bottomRightY": 231,
+      "content": "3.1.2.6 InterfaceDisplayName 51\n3.1.2.7 GevInterfaceMACAddress 51\n3.1.2.8 GevInterfaceDefaultIPAddress 51\n3.1.2.9 GevInterfaceDefaultSubnetMask 52\n3.1.2.10 GevInterfaceDefaultGateway 52",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 238,
+      "bottomRightX": 700,
+      "bottomRightY": 254,
+      "content": "#### 3.1.3 GenICam Control 53",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 128,
+      "topLeftY": 263,
+      "bottomRightX": 700,
+      "bottomRightY": 298,
+      "content": "3.1.3.1 Root 53\n3.1.3.2 TLPort 53",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 305,
+      "bottomRightX": 700,
+      "bottomRightY": 323,
+      "content": "#### 3.1.4 Event Control 54",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 128,
+      "topLeftY": 330,
+      "bottomRightX": 700,
+      "bottomRightY": 386,
+      "content": "3.1.4.1 EventControl 54\n3.1.4.2 EventSelector 54\n3.1.4.3 EventNotification 55",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 395,
+      "bottomRightX": 700,
+      "bottomRightY": 411,
+      "content": "### 3.2 INTERFACE MODULE 55",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 420,
+      "bottomRightX": 700,
+      "bottomRightY": 437,
+      "content": "#### 3.2.1 Interface Information 55",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 128,
+      "topLeftY": 445,
+      "bottomRightX": 700,
+      "bottomRightY": 691,
+      "content": "3.2.1.1 InterfaceInformation 56\n3.2.1.2 InterfaceID 56\n3.2.1.3 InterfaceDisplayName 56\n3.2.1.4 InterfaceType 57\n3.2.1.5 InterfaceTLVersionMajor 58\n3.2.1.6 InterfaceTLVersionMinor 58\n3.2.1.7 GevInterfaceGatewaySelector 59\n3.2.1.8 GevInterfaceGateway 59\n3.2.1.9 GevInterfaceMACAddress 59\n3.2.1.10 GevInterfaceSubnetSelector 60\n3.2.1.11 GevInterfaceSubnetIPAddress 60\n3.2.1.12 GevInterfaceSubnetMask 61",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 700,
+      "bottomRightX": 700,
+      "bottomRightY": 717,
+      "content": "#### 3.2.2 Device Enumeration 61",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 128,
+      "topLeftY": 725,
+      "bottomRightX": 700,
+      "bottomRightY": 950,
+      "content": "3.2.2.1 DeviceEnumeration 61\n3.2.2.2 DeviceUpdateList 62\n3.2.2.3 DeviceUpdateTimeout 62\n3.2.2.4 DeviceSelector 63\n3.2.2.5 DeviceID 63\n3.2.2.6 DeviceVendorName 63\n3.2.2.7 DeviceModelName 64\n3.2.2.8 DeviceAccessStatus 64\n3.2.2.9 DeviceSerialNumber 65\n3.2.2.10 DeviceUserID 66\n3.2.2.11 DeviceTLVersionMajor 66",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 952,
+      "bottomRightX": 164,
+      "bottomRightY": 968,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 561,
+      "topLeftY": 952,
+      "bottomRightX": 650,
+      "bottomRightY": 970,
+      "content": "Page 4 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

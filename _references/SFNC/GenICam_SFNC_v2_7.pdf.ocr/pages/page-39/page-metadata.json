@@ -1,0 +1,129 @@
+{
+  "index": 38,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 16,
+      "bottomRightX": 744,
+      "bottomRightY": 97,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 117,
+      "bottomRightX": 665,
+      "bottomRightY": 335,
+      "content": "- B: Beginner - Features that should be visible for all users via the GUI and API. This is the default visibility in the GenICam XML files and will be used if the Visibility element is omitted for a feature. The number of features with \"Beginner\" visibility should be limited to all basic features of the devices so the GUI display is well-organized and is easy to use.\n- E: Expert - Features that require a more in-depth knowledge of the camera functionality. This is the preferred visibility level for all advanced features in the cameras.\n- G: Guru – Advanced features that might bring the cameras into a state where it will not work properly anymore if it is set incorrectly for the cameras current mode of operation.\n- I: Invisible – Features that should be kept hidden for the GUI users but still be available via the API.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 343,
+      "bottomRightX": 491,
+      "bottomRightY": 361,
+      "content": "This document lists for each feature, a Visibility that should be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 394,
+      "bottomRightX": 119,
+      "bottomRightY": 411,
+      "content": "## Selector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 420,
+      "bottomRightX": 661,
+      "bottomRightY": 474,
+      "content": "A selector is used to index which instance of the feature is accessed in situations where multiple instances of a feature exist (For instance, the analog gain for each separate channel of the red/green/blue component of a color camera).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 481,
+      "bottomRightX": 667,
+      "bottomRightY": 536,
+      "content": "A selector is a separate feature that is typically an IEnumeration or an IInteger. Selectors must be used only to select the target features for subsequent changes. It is not allowed to change the behavior of a device in response to a change of a selector value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 543,
+      "bottomRightX": 696,
+      "bottomRightY": 597,
+      "content": "If a selector has only one possible value, the selector relation can be omitted but it is recommended to leave the selector feature as read only for information purpose (Ex: TriggerSelector = FrameStart (read only) for a device that has only this trigger type supported).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 604,
+      "bottomRightX": 655,
+      "bottomRightY": 676,
+      "content": "In this document, the features potentially dependent on a selector are expressed using the C language convention for arrays: a pair of brackets follows the feature name, like in SelectedFeature[Selector]. When the Selector is not present, one must deduce the feature is not an array.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 683,
+      "bottomRightX": 700,
+      "bottomRightY": 827,
+      "content": "In general, a selector should apply only to a single category of feature (Ex: TriggerSelector applies only to the Trigger related features). However, it is possible that certain more advanced devices will require a selector that applies to features in different categories. For example a device with 2 independent input sensors could have a SourceSelector feature that would select features in the Image Format Control, Acquisition Control, Analog Control, LUT Control and Color Transformation Control categories in order to globally control all the features associated with a particular source (Ex\": SourceSelector = Source1, PixelFormat[SourceSelector] = Mono8, Gain[SourceSelector] = 10, AcquisitionStart[SourceSelector]).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 833,
+      "bottomRightX": 684,
+      "bottomRightY": 870,
+      "content": "Note also that when a feature that has a selector is persisted to a file, the selector is iterated to allow saving the complete array of values and not only the currently selected element.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 391,
+      "bottomRightY": 1008,
+      "content": "Page 39 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 624,
+      "bottomRightY": 1008,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

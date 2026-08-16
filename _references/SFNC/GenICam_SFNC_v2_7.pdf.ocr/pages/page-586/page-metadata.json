@@ -1,0 +1,196 @@
+{
+  "index": 585,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 144,
+      "bottomRightX": 250,
+      "bottomRightY": 164,
+      "content": "2XE-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 256,
+      "topLeftY": 174,
+      "bottomRightX": 547,
+      "bottomRightY": 191,
+      "content": "2 zones in X with end extraction, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 203,
+      "bottomRightX": 478,
+      "bottomRightY": 343,
+      "content": "![img-177.jpeg](img-177.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-177.jpeg"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 349,
+      "bottomRightX": 542,
+      "bottomRightY": 370,
+      "content": "Figure 29-7: Geometry 2XE-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 401,
+      "bottomRightX": 219,
+      "bottomRightY": 421,
+      "content": "2XE (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 431,
+      "bottomRightX": 506,
+      "bottomRightY": 447,
+      "content": "2 zones in X with end extraction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 461,
+      "bottomRightX": 478,
+      "bottomRightY": 498,
+      "content": "![img-178.jpeg](img-178.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-178.jpeg"
+    },
+    {
+      "topLeftX": 277,
+      "topLeftY": 509,
+      "bottomRightX": 527,
+      "bottomRightY": 527,
+      "content": "Figure 29-8: Geometry 2XE (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 535,
+      "bottomRightX": 253,
+      "bottomRightY": 554,
+      "content": "2XM-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 246,
+      "topLeftY": 563,
+      "bottomRightX": 557,
+      "bottomRightY": 581,
+      "content": "2 zones in X with middle extraction, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 594,
+      "bottomRightX": 478,
+      "bottomRightY": 733,
+      "content": "![img-179.jpeg](img-179.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-179.jpeg"
+    },
+    {
+      "topLeftX": 261,
+      "topLeftY": 739,
+      "bottomRightX": 543,
+      "bottomRightY": 759,
+      "content": "Figure 29-9: Geometry 2XM-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 793,
+      "bottomRightX": 222,
+      "bottomRightY": 812,
+      "content": "2XM (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 287,
+      "topLeftY": 821,
+      "bottomRightX": 516,
+      "bottomRightY": 839,
+      "content": "2 zones in X with middle extraction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 851,
+      "bottomRightX": 478,
+      "bottomRightY": 889,
+      "content": "![img-180.jpeg](img-180.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-180.jpeg"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 899,
+      "bottomRightX": 533,
+      "bottomRightY": 918,
+      "content": "Figure 29-10: Geometry 2XM (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 586 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

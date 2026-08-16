@@ -1,0 +1,123 @@
+{
+  "index": 533,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | ![img-160.jpeg](img-160.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 396,
+      "bottomRightY": 252,
+      "content": "|  Access | Write  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 274,
+      "bottomRightX": 724,
+      "bottomRightY": 313,
+      "content": "This feature is deprecated (See TimestampLatch). It was used to latche the current timestamp counter into GevTimestampValue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 326,
+      "bottomRightX": 517,
+      "bottomRightY": 349,
+      "content": "#### 27.4.35 GevTimestampControlReset (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 349,
+      "bottomRightX": 396,
+      "bottomRightY": 563,
+      "content": "|  Name | GevTimestampControlReset  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | ICommand  |\n|  Access | Write  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 587,
+      "bottomRightX": 702,
+      "bottomRightY": 624,
+      "content": "This feature is deprecated (See TimestampReset). It was used to reset the timestamp counter to 0. This feature is not available or as no effect when PTP is used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 638,
+      "bottomRightX": 451,
+      "bottomRightY": 660,
+      "content": "#### 27.4.36 GevTimestampValue (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 662,
+      "bottomRightX": 396,
+      "bottomRightY": 875,
+      "content": "|  Name | GevTimestampValue  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit |   |\n|  Visibility | Invisible  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 899,
+      "bottomRightX": 732,
+      "bottomRightY": 936,
+      "content": "This feature is deprecated (See TimestampLatchValue). It was used to return the latched 64-bit value of the timestamp counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 970,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 534 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

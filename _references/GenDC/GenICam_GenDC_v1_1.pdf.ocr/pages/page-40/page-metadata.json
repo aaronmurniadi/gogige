@@ -1,0 +1,103 @@
+{
+  "index": 39,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 118,
+      "bottomRightX": 403,
+      "bottomRightY": 138,
+      "content": "## Appendix A GenDC Container Structure overview",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 172,
+      "bottomRightX": 702,
+      "bottomRightY": 207,
+      "content": "In this section, a few examples of Container organization are represented. For a more exhaustive list of the Container format for the typical scenarios, see Appendix B.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 236,
+      "bottomRightX": 659,
+      "bottomRightY": 256,
+      "content": "### A.1 GenDC Container typical layout for monochrome or color packed 2D images.",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 222,
+      "topLeftY": 294,
+      "bottomRightX": 509,
+      "bottomRightY": 314,
+      "content": "#### GenDC Data Container typical layout :",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 246,
+      "topLeftY": 328,
+      "bottomRightX": 483,
+      "bottomRightY": 344,
+      "content": "(Monochrome or color packed 2D image)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 101,
+      "topLeftY": 380,
+      "bottomRightX": 642,
+      "bottomRightY": 741,
+      "content": "![img-5.jpeg](img-5.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-5.jpeg"
+    },
+    {
+      "topLeftX": 154,
+      "topLeftY": 750,
+      "bottomRightX": 584,
+      "bottomRightY": 765,
+      "content": "Figure 5-1: GenDC Container's typical layout for a monochrome or color packed 2D image",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 40 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

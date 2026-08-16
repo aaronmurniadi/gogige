@@ -1,0 +1,139 @@
+{
+  "index": 6,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<ICAM |   | ![img-9.jpeg](img-9.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 166,
+      "bottomRightX": 448,
+      "bottomRightY": 186,
+      "content": "## 2 GenApi Module – Configuring the Camera",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 204,
+      "bottomRightX": 206,
+      "bottomRightY": 219,
+      "content": "### 2.1 Introduction",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 230,
+      "bottomRightX": 636,
+      "bottomRightY": 299,
+      "content": "The GenApi module deals with the problem of how to configure a camera. The key idea is to make camera manufacturers provide machine readable versions of the manuals for their cameras. These camera description files contain all of the required information to automatically map a camera's features to its registers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 305,
+      "bottomRightX": 637,
+      "bottomRightY": 407,
+      "content": "A typical feature would be the camera's gain and the user's attempt might be, for example, to set Gain=42. Using GenICam, a piece of generic software will be able to read the camera's description file and figure out that setting the Gain to 42 means writing a value of 0x2A to a register located at 0x0815. Other tasks involved might be to check in advance whether the camera possesses a Gain feature and to check whether the new value is consistent with the allowed Gain range.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 412,
+      "bottomRightX": 636,
+      "bottomRightY": 447,
+      "content": "Note that adding a new feature to a camera just means extending the camera's description file, thus making the new feature immediately available to all GenICam aware applications.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 267,
+      "topLeftY": 459,
+      "bottomRightX": 450,
+      "bottomRightY": 709,
+      "content": "![img-10.jpeg](img-10.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-10.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 729,
+      "bottomRightX": 339,
+      "bottomRightY": 746,
+      "content": "Figure 2 Layers for accessing a camera",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 760,
+      "bottomRightX": 636,
+      "bottomRightY": 810,
+      "content": "Figure 2 shows the layers involved in configuring a camera. The application requires a camera API that allows dealing with the camera's features, for example, by writing code which looks like this:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 823,
+      "bottomRightX": 225,
+      "bottomRightY": 837,
+      "content": "Camera.Gain = 42;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 858,
+      "bottomRightX": 636,
+      "bottomRightY": 893,
+      "content": "The GenApi module will translate this call into a series of calls to register access functions provided by the transport layer API, for example, like this:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 905,
+      "bottomRightX": 634,
+      "bottomRightY": 920,
+      "content": "TransportLayer.WriteRegister(0x0815, 0x2A, 2); // address, data, length",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 957,
+      "bottomRightX": 636,
+      "bottomRightY": 974,
+      "content": "Page 7 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

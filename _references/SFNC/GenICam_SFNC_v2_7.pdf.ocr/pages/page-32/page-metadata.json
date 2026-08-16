@@ -1,0 +1,84 @@
+{
+  "index": 31,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 305,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 624,
+      "bottomRightY": 78,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 87,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 113,
+      "bottomRightX": 675,
+      "bottomRightY": 966,
+      "content": "|   |  |  | - Deprecated DeviceMessageChannelCount and replaced it with DeviceEventChannelCount. The word Message was also replaced with Event everywhere in the text to be consistent with the Event features name. - Fixed DeviceStreamChannelEndianness by changing it to IEnumeration instead of IBoolean. - Minor corrections to the text. - Updated the VB macro.  |\n| --- | --- | --- | --- |\n|  Release 2.2 | 17.12.2014 | Stephane Maurice, Matrox | - Now referring to PFNC as a sub module of SFNC and located on the EMVA web site. - Updated the Introduction text. - Added SensorShutterMode, BinningHorizontalMode, BinningModeVerticalMode, DecimationHorizontalMode, DecimationVerticalMode. - Added LinkTriggerN as the standard name for the Trigger messages transmitted over the Transport layer. - Added the Test Control category. - Added ExposureTimeSelector and ExposureTimeMode - Included quadrature Encoder features. - Included 3D Scan features. - Made visibility of the Source Control category features Beginner so that it will be visible when selecting beginner's features in other categories. - Added Tap Geometries (2XE-1Y2, 2XM-1Y2, 1X2-1Y2 and 2X-1Y2) and updated all the Tap tables and drawings with a more compact representation. - Added LineTrigger, LineStart and LineEnd, PreviousLine as possible values for certain features to better cover  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 988,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 988,
+      "bottomRightX": 392,
+      "bottomRightY": 1007,
+      "content": "Page 32 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 625,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

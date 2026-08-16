@@ -1,0 +1,129 @@
+{
+  "index": 35,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-51.jpeg](img-51.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 637,
+      "bottomRightY": 185,
+      "content": "<DisplayPrecision> elements which is a non-negative number. The last two elements map to the corresponding stdio items. Here an example:</DisplayPrecision>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 197,
+      "bottomRightX": 434,
+      "bottomRightY": 321,
+      "content": "<float name=\"Exposure\">\n<pvalue>ExposureReg</pvalue>\n<min>0.02</min>\n<max>10.0</max>\n<unit>ms</unit>\n<representation>PureNumber</representation>\n<displaynotation>Fixed</displaynotation>\n<displayprecision>3</displayprecision>\n</float>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 334,
+      "bottomRightX": 636,
+      "bottomRightY": 369,
+      "content": "As you can see in the example, <DisplayPrecision> is the amount of all digits left and right of the decimal point. This applies to all <DisplayNotation> in the same manner.</DisplayNotation>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 385,
+      "bottomRightX": 582,
+      "bottomRightY": 419,
+      "content": "The Float node can also work like a multiplexer or a value table like shown in the following examples:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 431,
+      "bottomRightX": 448,
+      "bottomRightY": 609,
+      "content": "<float name=\"Multiplexer\">\n<pindex>Selector</pindex>\n<pvalueindexed index=\"10\">SomeFloat1</pvalue>\n<pvalueindexed index=\"20\">SomeFloat2</pvalue>\n<valuedefault>0</valuedefault>\n</float>\n\n<float name=\"Table\">\n<pindex>Selector</pindex>\n<valueindexed index=\"10\">100</value>\n<valueindexed index=\"20\">200</value>\n<pvaluedefault>SomeNode</pvaluedefault>\n</float>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 631,
+      "bottomRightX": 637,
+      "bottomRightY": 699,
+      "content": "The  entry refers to an Integer node. Depending on its value one of the ValueIndexed> or  entries is selected which behave like Value or pValue entries respectively. Note that selecting an entry also means forwarding its properties Unit, Representation, DisplayNotation, and DisplayPrecision.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 704,
+      "bottomRightX": 636,
+      "bottomRightY": 739,
+      "content": "The two entry types can be mixed. If the index does not match the value given in <ValueDefault> or <pValueDefault> respectively is returned.</pValueDefault>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 746,
+      "bottomRightX": 637,
+      "bottomRightY": 814,
+      "content": "A FloatReg node can be used to extract a floating point value from a byte aligned register. The FloatReg node inherits the elements and nodes of the Register node. It also has an <Endianess> element. The Length can be either 4 bytes (single precision float) or 8 bytes (double precision float). The number format has to be according to IEEE standard 754-1985.</Endianess>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 825,
+      "bottomRightX": 295,
+      "bottomRightY": 845,
+      "content": "#### 2.8.10 Enumeration, EnumEntry",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 855,
+      "bottomRightX": 637,
+      "bottomRightY": 939,
+      "content": "The Enumeration node maps a name to an index value and implements the IEnumeration interface. The Enumeration node holds a list of EnumEntries with each representing a possible {name, index} pair. The Enumeration node inherits the elements and attributes of the Node node. In addition, it has either a <Value> element that represents the current index value or a <pValue> element that connects to a node with an Integer interface.</pValue></Value>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 636,
+      "bottomRightY": 974,
+      "content": "Page 36 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

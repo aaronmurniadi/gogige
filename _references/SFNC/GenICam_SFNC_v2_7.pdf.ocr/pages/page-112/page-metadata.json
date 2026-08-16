@@ -1,0 +1,132 @@
+{
+  "index": 111,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-16.jpeg](img-16.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 117,
+      "bottomRightX": 329,
+      "bottomRightY": 195,
+      "content": "|  Unit | C  |\n| --- | --- |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 218,
+      "bottomRightX": 535,
+      "bottomRightY": 253,
+      "content": "Device temperature in degrees Celsius (C). It is measured at the location selected by DeviceTemperatureSelector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 266,
+      "bottomRightX": 266,
+      "bottomRightY": 284,
+      "content": "3.62 DeviceClockSelector",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 286,
+      "bottomRightX": 332,
+      "bottomRightY": 552,
+      "content": "|  Name | DeviceClockSelector  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | SensorSensorDigitizationCameraLinkDevice-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 577,
+      "bottomRightX": 367,
+      "bottomRightY": 594,
+      "content": "Selects the clock frequency to access from the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 600,
+      "bottomRightX": 169,
+      "bottomRightY": 615,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 626,
+      "bottomRightX": 531,
+      "bottomRightY": 694,
+      "content": "- Sensor: Clock frequency of the image sensor of the camera.\n- SensorDigitization: Clock frequency of the camera A/D conversion stage.\n- CameraLink: Frequency of the Camera Link clock.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 706,
+      "bottomRightX": 285,
+      "bottomRightY": 727,
+      "content": "3.63 DeviceClockFrequency",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 728,
+      "bottomRightX": 338,
+      "bottomRightY": 943,
+      "content": "|  Name | DeviceClockFrequency[DeviceClockSelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/(Write)  |\n|  Unit | Hz  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 112 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

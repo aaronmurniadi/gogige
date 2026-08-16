@@ -1,0 +1,114 @@
+{
+  "index": 48,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-52.jpeg](img-52.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 156,
+      "bottomRightX": 279,
+      "bottomRightY": 174,
+      "content": "#### 5.4.1. GenCP Version",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 196,
+      "bottomRightX": 530,
+      "bottomRightY": 214,
+      "content": "Version of the GenCP specification this Bootstrap Register Map complies with.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 186,
+      "topLeftY": 242,
+      "bottomRightX": 533,
+      "bottomRightY": 388,
+      "content": "|  Offset | Hex 0  |\n| --- | --- |\n|  Length | 4  |\n|  Access Type | R  |\n|  Support | M  |\n|  Data Type | 2 x 16bit fields  |\n|  Factory Default | Implementation specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 410,
+      "bottomRightX": 644,
+      "bottomRightY": 550,
+      "content": "|  Bit offset (lsb << x) | Width (bits) | Description  |\n| --- | --- | --- |\n|  0 | 16 | Minor VersionMinor Version of the Standard this BRM and the protocol the device's implementation complies to.  |\n|  16 | 16 | Major VersionMajor Version of the Standard this BRM and the protocol the device's implementation complies to.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 550,
+      "bottomRightX": 447,
+      "bottomRightY": 565,
+      "content": "Table 20 – Register GenCP Version",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 593,
+      "bottomRightX": 314,
+      "bottomRightY": 611,
+      "content": "#### 5.4.2. Manufacturer Name",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 634,
+      "bottomRightX": 541,
+      "bottomRightY": 652,
+      "content": "Manufacturer Name is a string containing a human readable manufacturer name.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 186,
+      "topLeftY": 680,
+      "bottomRightX": 533,
+      "bottomRightY": 827,
+      "content": "|  Offset | Hex 4  |\n| --- | --- |\n|  Length | 64  |\n|  Access Type | R  |\n|  Support | M  |\n|  Data Type | String  |\n|  Factory Default | Device specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 49 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "index": 17,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 44,
+      "bottomRightX": 753,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | ![img-9.jpeg](img-9.jpeg)  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 151,
+      "bottomRightX": 232,
+      "bottomRightY": 169,
+      "content": "#### Bayer_NMML Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 175,
+      "bottomRightX": 686,
+      "bottomRightY": 213,
+      "content": "This is the format where the green component occupies the  \\( 2^{nd} \\)  and  \\( 3^{rd} \\)  cell within the tile. The blue component occupies the first cell while the red component fills the  \\( 4^{th} \\)  cell.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 218,
+      "bottomRightX": 230,
+      "bottomRightY": 238,
+      "content": "Ex: BayerBG8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 375,
+      "topLeftY": 259,
+      "bottomRightX": 438,
+      "bottomRightY": 317,
+      "content": "![img-10.jpeg](img-10.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-10.jpeg"
+    },
+    {
+      "topLeftX": 318,
+      "topLeftY": 325,
+      "bottomRightX": 495,
+      "bottomRightY": 343,
+      "content": "Figure 3-9: BayerBG array",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 374,
+      "bottomRightX": 550,
+      "bottomRightY": 525,
+      "content": "![img-11.jpeg](img-11.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-11.jpeg"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 531,
+      "bottomRightX": 542,
+      "bottomRightY": 550,
+      "content": "Figure 3-10: Bayer_NMML Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 591,
+      "bottomRightX": 232,
+      "bottomRightY": 609,
+      "content": "#### Bayer_MLNM Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 616,
+      "bottomRightX": 703,
+      "bottomRightY": 653,
+      "content": "This is the format where the green component occupies the  \\( 1^{st} \\)  and  \\( 4^{th} \\)  location within the tile. The red component occupies the  \\( 2^{nd} \\)  cell while the blue component fills the  \\( 3^{rd} \\)  cell.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 659,
+      "bottomRightX": 230,
+      "bottomRightY": 678,
+      "content": "Ex: BayerGR8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 375,
+      "topLeftY": 700,
+      "bottomRightX": 438,
+      "bottomRightY": 758,
+      "content": "![img-12.jpeg](img-12.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-12.jpeg"
+    },
+    {
+      "topLeftX": 314,
+      "topLeftY": 764,
+      "bottomRightX": 499,
+      "bottomRightY": 783,
+      "content": "Figure 3-11: BayerGR array",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 974,
+      "content": "Page 18 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

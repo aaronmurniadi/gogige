@@ -1,0 +1,214 @@
+{
+  "index": 383,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 187,
+      "topLeftY": 136,
+      "bottomRightX": 514,
+      "bottomRightY": 239,
+      "content": "![img-123.jpeg](img-123.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-123.jpeg"
+    },
+    {
+      "topLeftX": 132,
+      "topLeftY": 254,
+      "bottomRightX": 655,
+      "bottomRightY": 274,
+      "content": "A(i,j)world = A(i,j)*Scan3DCoordinateScale[C_A]+Scan3DCoordinateOffset[C_A]",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 135,
+      "topLeftY": 276,
+      "bottomRightX": 651,
+      "bottomRightY": 295,
+      "content": "B(i,j)world = B(i,j)*Scan3DCoordinateScale[C_B]+Scan3DCoordinateOffset[C_B]",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 135,
+      "topLeftY": 298,
+      "bottomRightX": 656,
+      "bottomRightY": 317,
+      "content": "C(i,j)world = C(i,j)*Scan3DCoordinateScale[C_C]+Scan3DCoordinateOffset[C_C]",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 193,
+      "topLeftY": 330,
+      "bottomRightX": 610,
+      "bottomRightY": 349,
+      "content": "Figure 21-16: Range image represented as 3 image planes, A,B,C.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 358,
+      "bottomRightX": 461,
+      "bottomRightY": 469,
+      "content": "![img-124.jpeg](img-124.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-124.jpeg"
+    },
+    {
+      "topLeftX": 129,
+      "topLeftY": 481,
+      "bottomRightX": 653,
+      "bottomRightY": 502,
+      "content": "A(i,j)world = i*Scan3DCoordinateScale[C_A] + Scan3DCoordinateOffset[C_A]",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 131,
+      "topLeftY": 504,
+      "bottomRightX": 653,
+      "bottomRightY": 523,
+      "content": "B(i,j)world = j*Scan3DCoordinateScale[C_B] + Scan3DCoordinateOffset[C_B]",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 131,
+      "topLeftY": 526,
+      "bottomRightX": 676,
+      "bottomRightY": 547,
+      "content": "C(i,j)world = C(i,j)*Scan3DCoordinateScale[C_C]+Scan3DCoordinateOffset[C_C]",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 554,
+      "bottomRightX": 724,
+      "bottomRightY": 574,
+      "content": "Figure 21-17: Extraction of A,B and C world coordinate information in a rectified range map image C.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 153,
+      "topLeftY": 612,
+      "bottomRightX": 400,
+      "bottomRightY": 717,
+      "content": "![img-125.jpeg](img-125.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-125.jpeg"
+    },
+    {
+      "topLeftX": 197,
+      "topLeftY": 733,
+      "bottomRightX": 361,
+      "bottomRightY": 752,
+      "content": "Calibrated (x, r) Points",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 413,
+      "topLeftY": 611,
+      "bottomRightX": 655,
+      "bottomRightY": 728,
+      "content": "![img-126.jpeg](img-126.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-126.jpeg"
+    },
+    {
+      "topLeftX": 499,
+      "topLeftY": 731,
+      "bottomRightX": 614,
+      "bottomRightY": 750,
+      "content": "Rectified profile",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 190,
+      "topLeftY": 763,
+      "bottomRightX": 614,
+      "bottomRightY": 782,
+      "content": "Figure 21-18: Point cloud rectified to uniform X sampling interval.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 160,
+      "topLeftY": 788,
+      "bottomRightX": 645,
+      "bottomRightY": 808,
+      "content": "(Yellow/Green shows using min/max of multiple points in a bin, red average)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 840,
+      "bottomRightX": 695,
+      "bottomRightY": 862,
+      "content": "### 21.2.3 Focal length and Baseline for 3D Reconstruction from Disparity",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 890,
+      "bottomRightX": 750,
+      "bottomRightY": 945,
+      "content": "The Disparity images contain the displacement of pixels in a stereo setup. The disparity of a pixel is directly linked to the distance of the pixel. The 3D reconstruction and calculation of a point cloud from disparity images is possible using parameters like the focal length and the baseline of the stereo camera.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 384 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 952,
+      "bottomRightX": 615,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

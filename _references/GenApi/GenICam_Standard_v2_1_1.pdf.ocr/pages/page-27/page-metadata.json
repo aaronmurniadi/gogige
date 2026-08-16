@@ -1,0 +1,165 @@
+{
+  "index": 26,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-40.jpeg](img-40.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 151,
+      "bottomRightX": 186,
+      "bottomRightY": 169,
+      "content": "#### 2.8.3 Register",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 178,
+      "bottomRightX": 637,
+      "bottomRightY": 264,
+      "content": "The Register node maps to a contiguous array of bytes in the register space of the camera. The Register node implements the IRegister interface and inherits its elements and attributes from the Node node. It in turn leaves its elements and nodes to all specialized register access nodes, such as IntReg, StringReg, etc. A Register node, however, can also be instantiated on its own giving access to the raw binary data. Here is a simple example:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 274,
+      "bottomRightX": 357,
+      "bottomRightY": 384,
+      "content": "<Register Name=\"SensorTemperature\">\n    <Address>0xff00</Address>\n    <Length>4</Length>\n    <AccessMode>RO</AccessMode>\n    <pPort>Device</pPort>\n    <Cachable>No</Cachable>\n    <PollingTime>10000</PollingTime>\n</Register>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 392,
+      "bottomRightX": 636,
+      "bottomRightY": 428,
+      "content": "The example exposes the temperature of the camera's sensor. The temperature can change at any time and is therefore not cacheable. If displayed, it should be polled every 10000 ms.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 433,
+      "bottomRightX": 591,
+      "bottomRightY": 451,
+      "content": "The <address> element gives the address of the register in the camera's register space.</address>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 457,
+      "bottomRightX": 636,
+      "bottomRightY": 491,
+      "content": "The <length> element gives the length of the register in bytes. Alternatively the length can be read from another node using an <pLength> entry.</pLength></length>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 497,
+      "bottomRightX": 636,
+      "bottomRightY": 532,
+      "content": "The <AccessMode> element can have the values RW (read/write), RO (read only), or WO (write only) and indicates what the camera can deliver.</AccessMode>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 538,
+      "bottomRightX": 636,
+      "bottomRightY": 572,
+      "content": "The <pPort> element contains the name of a Port node that gives access to the camera's register space (for details see section 2.8.16).</pPort>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 578,
+      "bottomRightX": 636,
+      "bottomRightY": 696,
+      "content": "The <cacheable> element can have the values NoCache, WriteThrough, and WriteAround. WriteThrough means that a value written to the camera is written to the cache as well. WriteAround means that only read values are written to the cache. The latter behavior makes sense, for example, with an IFloat::Gain node where the user can write any value, but when reading back, will retrieve a value that has been rounded by the camera to a value the internal analog-to-digital converter is able to deliver. Note that caching is an optional feature of any implementation.</cacheable>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 702,
+      "bottomRightX": 636,
+      "bottomRightY": 755,
+      "content": "The <PollingTime> element denotes a recommended time interval [in ms] after which a node should be invalidated. Note that polling is an optional feature of any implementation and the polling time is a hint only.</PollingTime>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 760,
+      "bottomRightX": 636,
+      "bottomRightY": 811,
+      "content": "Instead of a single <address> entry, a register can have multiple entries for the <address>, <pAddress>, and/or <IntSwissKnife> types. The values of these entries are summed, yielding the address of the register node.</pAddress></address>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 817,
+      "bottomRightX": 636,
+      "bottomRightY": 852,
+      "content": "The <pAddress> element points to a node implementing an IInteger interface delivering a contribution to the final address.</pAddress>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 857,
+      "bottomRightX": 636,
+      "bottomRightY": 892,
+      "content": "The <IntSwissKnife> element can be used to compute an address contribution from multiple sources (for details see section 2.8.12). </IntSwissKnife>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 899,
+      "bottomRightX": 636,
+      "bottomRightY": 933,
+      "content": "The <pIndex Offset=\"12\"> element points to a node implementing an IInteger interface delivering an index. The element has an attribute Offset. The product of index and Offset is",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 636,
+      "bottomRightY": 974,
+      "content": "Page 27 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

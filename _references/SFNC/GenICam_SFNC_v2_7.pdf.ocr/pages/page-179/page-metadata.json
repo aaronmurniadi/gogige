@@ -1,0 +1,175 @@
+{
+  "index": 178,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 135,
+      "bottomRightX": 295,
+      "bottomRightY": 157,
+      "content": "### 5.5.2 AcquisitionMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 159,
+      "bottomRightX": 386,
+      "bottomRightY": 407,
+      "content": "|  Name | AcquisitionMode  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | SingleFrame MultiFrame Continuous  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 431,
+      "bottomRightX": 750,
+      "bottomRightY": 467,
+      "content": "Sets the acquisition mode of the device. It defines mainly the number of frames to capture during an acquisition and the way the acquisition stops.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 474,
+      "bottomRightX": 177,
+      "bottomRightY": 492,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 502,
+      "bottomRightX": 714,
+      "bottomRightY": 573,
+      "content": "- SingleFrame: One frame is captured.\n- MultiFrame: The number of frames specified by AcquisitionFrameCount is captured.\n- Continuous: Frames are captured continuously until stopped with the AcquisitionStop command.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 581,
+      "bottomRightX": 645,
+      "bottomRightY": 600,
+      "content": "This feature is generally mandatory for transmitters and transceivers of most Transport Layers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 613,
+      "bottomRightX": 288,
+      "bottomRightY": 635,
+      "content": "### 5.5.3 AcquisitionStart",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 636,
+      "bottomRightX": 386,
+      "bottomRightY": 849,
+      "content": "|  Name | AcquisitionStart  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 875,
+      "bottomRightX": 694,
+      "bottomRightY": 894,
+      "content": "Starts the Acquisition of the device. The number of frames captured is specified by AcquisitionMode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 900,
+      "bottomRightX": 728,
+      "bottomRightY": 937,
+      "content": "The Acquisition might be conditioned by various triggers (See the Trigger... features). An AcquisitionStart command must be sent to the device before the acquisition related triggers become effective.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 179 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

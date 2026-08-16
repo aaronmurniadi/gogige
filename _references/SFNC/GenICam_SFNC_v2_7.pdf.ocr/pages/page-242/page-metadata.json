@@ -1,0 +1,137 @@
+{
+  "index": 241,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<ixCAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 161,
+      "bottomRightX": 459,
+      "bottomRightY": 180,
+      "content": "/* Counts the number of missed triggers during an Acquisition.*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 201,
+      "bottomRightX": 553,
+      "bottomRightY": 389,
+      "content": "CounterSelector         = Counter1;\nCounterTriggerSource    = AcquisitionStart;\nCounterResetSource      = CounterTrigger;\nCounterEventSource       = FrameTriggerMissed;\nAcquisitionMode          = Continuous;\nAcquisitionStart();\n...\nAcquisitionStop();\nNbPulses                = CounterValue;\nprintf(\"%ld Triggers missed during the acquisition.\", NbPulses);",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 435,
+      "bottomRightX": 553,
+      "bottomRightY": 454,
+      "content": "/* Counts the number of rising edge signals received on Line1 during a frame.*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 474,
+      "bottomRightX": 553,
+      "bottomRightY": 655,
+      "content": "CounterSelector         = Counter1;\nCounterTriggerSource    = FrameStart;\nCounterResetSource      = CounterTrigger;\nCounterEventSource       = Line1;\nCounterEventActivation   = RisingEdge;\nAcquisitionMode          = SingleFrame;\nAcquisitionStart();\n...\nNbPulses                = CounterValue;\nprintf(\"%ld Input Pulses received during the frame.\", NbPulses);",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 701,
+      "bottomRightX": 504,
+      "bottomRightY": 737,
+      "content": "/* Use a counter to generate an event at line 200 of each captured Frame\nin a continuous acquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 738,
+      "bottomRightX": 68,
+      "bottomRightY": 753,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 242 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

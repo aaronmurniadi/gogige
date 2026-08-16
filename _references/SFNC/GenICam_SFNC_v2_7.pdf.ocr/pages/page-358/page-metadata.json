@@ -1,0 +1,166 @@
+{
+  "index": 357,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 142,
+      "topLeftY": 136,
+      "bottomRightX": 245,
+      "bottomRightY": 172,
+      "content": "Stopped\nQueueOverflow",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 206,
+      "bottomRightX": 372,
+      "bottomRightY": 223,
+      "content": "Selects which status of the transfer module to read.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 231,
+      "bottomRightX": 177,
+      "bottomRightY": 248,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 258,
+      "bottomRightX": 740,
+      "bottomRightY": 400,
+      "content": "- Streaming: Data blocks are transmitted when enough data is available.\n- Stopping: Data blocks transmission is stopping. The current block transmission will be completed and the transfer state will stop.\n- Stopped: Data blocks transmission is stopped.\n- Paused: Data blocks transmission is suspended immediately.\n- QueueOverflow: Data blocks queue is in overflow state.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 416,
+      "bottomRightX": 249,
+      "bottomRightY": 435,
+      "content": "### 20.22 TransferStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 47,
+      "topLeftY": 438,
+      "bottomRightX": 515,
+      "bottomRightY": 670,
+      "content": "|  Name | TransferStatus[TransferStatusSelector]  |\n| --- | --- |\n|  Category | TransferControl  |\n|  Level | Recommended  |\n|  Interface | IBool  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 693,
+      "bottomRightX": 565,
+      "bottomRightY": 713,
+      "content": "Reads the status of the Transfer module signal selected by TransferStatusSelector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 727,
+      "bottomRightX": 347,
+      "bottomRightY": 748,
+      "content": "### 20.23 TransferComponentSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 47,
+      "topLeftY": 750,
+      "bottomRightX": 515,
+      "bottomRightY": 937,
+      "content": "|  Name | TransferComponentSelector[TransferSelector]  |\n| --- | --- |\n|  Category | TransferControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 358 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

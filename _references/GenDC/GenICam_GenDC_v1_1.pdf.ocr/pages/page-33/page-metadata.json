@@ -1,0 +1,102 @@
+{
+  "index": 32,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "GEN CAM\nVersion 1.1.0 GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 117,
+      "bottomRightX": 292,
+      "bottomRightY": 138,
+      "content": "### 3 GenDC and Transport Layers",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 156,
+      "bottomRightX": 716,
+      "bottomRightY": 208,
+      "content": "GenDC is agnostic to the Transport Layer and independent of it. To accomplish this, the notion of Flows is introduced as intermediate layer to decouple the Container content description from how it is transported and stored in receivers' memory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 220,
+      "bottomRightX": 580,
+      "bottomRightY": 429,
+      "content": "![img-3.jpeg](img-3.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-3.jpeg"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 442,
+      "bottomRightX": 535,
+      "bottomRightY": 458,
+      "content": "Figure 3-1: GenDC layer and Transport Layer coupled by GenDC Flows",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 471,
+      "bottomRightX": 716,
+      "bottomRightY": 576,
+      "content": "The top layer defines a GenDC Data Container and is the generic representation of a possibly complex data buffer to transmit/receive or that resides in memory. It is made of a group of standardized Headers called a Descriptor that gives the information about the Container itself, the Components and their individual Parts and describes the Container's data. This Container is \"what\" the device/system needs to generate, transmit, receive, store or manipulate the data. The Container definition and layout is self-described and independent of \"how\" it can be transported. For transmission the Container must use a linear memory layout. Example: a GenDC Container for 3D multi-Components image data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 593,
+      "bottomRightX": 716,
+      "bottomRightY": 714,
+      "content": "GenDC Flows adapt the top and bottom layer. Both layers need to be aware of the Flows. GenDC describes the Flows and the Transport Layer provides means to transfer them. This way, it is possible to have a fully GenDC agnostic Transport Layer which can transport Flows even in parallel without further knowledge of the GenDC Container. The Transport Layer only needs to know how to transport and store Flows. To accomplish this, it is necessary to have a Flow table from the upper layer just giving the FlowID and FlowSize for each Flow in addition to a matching table of Flow base addresses which is given by the user or allocated by the Transport Layer itself. Example: Transfer of the GenDC Container sequential to one base address in one Flow.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 731,
+      "bottomRightX": 704,
+      "bottomRightY": 802,
+      "content": "The bottom layer is the Transport Layer (not in the scope of GenDC). It transports the GenDC Container as defined in the transport layer protocol based on the transport layer media. It typically takes care of data consistency and any other transport media related mechanism necessary for efficient and reliable data transmission. Example: GigE Vision protocol packets that transmit the GenDC Data Container on Ethernet.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 83,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 33 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

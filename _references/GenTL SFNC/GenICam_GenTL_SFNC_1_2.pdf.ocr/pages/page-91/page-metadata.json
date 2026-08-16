@@ -1,0 +1,113 @@
+{
+  "index": 90,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 256,
+      "bottomRightY": 177,
+      "content": "Default value is “Legacy”.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 184,
+      "bottomRightX": 631,
+      "bottomRightY": 220,
+      "content": "Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory, otherwise recommended.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 233,
+      "bottomRightX": 305,
+      "bottomRightY": 252,
+      "content": "### 3.3.2.3 LinkCommandTimeout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 254,
+      "bottomRightX": 421,
+      "bottomRightY": 467,
+      "content": "|  Name | LinkCommandTimeout  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | us  |\n|  Visibility | Guru  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 493,
+      "bottomRightX": 677,
+      "bottomRightY": 581,
+      "content": "Specifies application timeout for the control channel communication. This feature defines the application timeout, and it is related to the device feature DeviceLinkCommandTimeout specifying the maximum time for handling a command in the device. Up to DeviceLinkCommandRetryCount attempts with this timeout are made before a command fails with a timeout error.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 597,
+      "bottomRightX": 328,
+      "bottomRightY": 615,
+      "content": "### 3.3.2.4 LinkCommandRetryCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 617,
+      "bottomRightX": 459,
+      "bottomRightY": 832,
+      "content": "|  Name | LinkCommandRetryCount  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | >=0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 855,
+      "bottomRightX": 599,
+      "bottomRightY": 873,
+      "content": "Specifies maximum number of tries before failing the control channel commands.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 91 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

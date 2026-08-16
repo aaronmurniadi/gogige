@@ -1,0 +1,85 @@
+{
+  "index": 20,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 115,
+      "bottomRightX": 277,
+      "bottomRightY": 133,
+      "content": "### 2.2.6 GenDC Part Header Description",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 155,
+      "bottomRightX": 607,
+      "bottomRightY": 173,
+      "content": "[ R-002] A GenDC compliant product must use the Part header types as defined by this specification.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 191,
+      "bottomRightX": 390,
+      "bottomRightY": 209,
+      "content": "#### 2.2.6.1 GenDC Part Header Common Fields Description",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 229,
+      "bottomRightX": 603,
+      "bottomRightY": 246,
+      "content": "This table describes the Part's common fields as presented in Figure 2-5: GenDC Part Header Layout.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 29,
+      "topLeftY": 246,
+      "bottomRightX": 730,
+      "bottomRightY": 823,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Description  |   |   |\n| --- | --- | --- | --- | --- |\n|  2 | 0 | HeaderType = Part Type Header format identifier (GDC_PART_HEADER = 0x4xxx).A GenDC Component must contain at least one Part Header.See section 2.2.7 for the table of defined Part types.  |   |   |\n|  2 | 2 | Flags = Part specific flagsFlags specifying the characteristics and format of the Part.For Part type GDC_METADATA_GENICAM_XML:  |   |   |\n|   |   |  Width (bits) | Bit offset (lsb << x) | Description  |\n|   |   |  8 | 0 | Reserved (set to 0).  |\n|   |   |  1 | 8 | ZipThe Part XML Data is zipped (compressed) according the Zip format used for GenICam XML.  |\n|   |   |  1 | 9 | ChunkThe Part XML data can be used for GenICam Chunk data Part decoding.  |\n|   |   |  6 | 10 | Reserved = Reserved (set to 0).  |\n|   |   |  For all the other Part types:  |   |   |\n|   |   |  Width (bits) | Bit offset (lsb << x) | Description  |\n|   |   |  16 | 0 | Reserved (set to 0).  |\n|  4 | 4 | HeaderSize = Size of the Part type specific Header.Size in bytes of the Part Header including Part Type specific fields.  |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 21 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

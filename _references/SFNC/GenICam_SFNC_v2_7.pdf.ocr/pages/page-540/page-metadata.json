@@ -1,0 +1,131 @@
+{
+  "index": 539,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 143,
+      "bottomRightX": 618,
+      "bottomRightY": 164,
+      "content": "If the standard IDs mode is not supported, this feature should return On and be read only.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 170,
+      "bottomRightX": 428,
+      "bottomRightY": 189,
+      "content": "This feature is not applicable for GigE Vision 1.x devices.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 203,
+      "bottomRightX": 230,
+      "bottomRightY": 223,
+      "content": "### 27.4.48 GevCCP",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 225,
+      "bottomRightX": 396,
+      "bottomRightY": 493,
+      "content": "|  Name | GevCCP  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | OpenAccess ExclusiveAccess ControlAccess ControlAccessSwitchoverActive  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 516,
+      "bottomRightX": 400,
+      "bottomRightY": 537,
+      "content": "Controls the device access privilege of an application.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 542,
+      "bottomRightX": 739,
+      "bottomRightY": 597,
+      "content": "Only one application is allowed to control the device. This application is able to write into device's registers. Other applications can read device's register only if the controlling application does not have the exclusive privilege.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 610,
+      "bottomRightX": 417,
+      "bottomRightY": 633,
+      "content": "### 27.4.49 GevPrimaryApplicationSocket",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 634,
+      "bottomRightX": 396,
+      "bottomRightY": 848,
+      "content": "|  Name | GevPrimaryApplicationSocket  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 871,
+      "bottomRightX": 414,
+      "bottomRightY": 892,
+      "content": "Returns the UDP source port of the primary application.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 951,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 951,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 540 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

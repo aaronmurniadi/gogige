@@ -1,0 +1,123 @@
+{
+  "index": 60,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-15.jpeg](img-15.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 590,
+      "bottomRightY": 297,
+      "content": "|  Interface | IInteger  |\n| --- | --- |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 321,
+      "bottomRightX": 602,
+      "bottomRightY": 359,
+      "content": "IP address of the selected subnet of this interface. Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 372,
+      "bottomRightX": 360,
+      "bottomRightY": 390,
+      "content": "3.2.1.12 GevInterfaceSubnetMask",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 391,
+      "bottomRightX": 561,
+      "bottomRightY": 631,
+      "content": "|  Name | GevInterfaceSubnetMask[GevInterfaceSubnetSelector]  |\n| --- | --- |\n|  Category | InterfaceInformation  |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 655,
+      "bottomRightX": 618,
+      "bottomRightY": 694,
+      "content": "Subnet mask of the selected subnet of this interface. Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 714,
+      "bottomRightX": 288,
+      "bottomRightY": 732,
+      "content": "#### 3.2.2 Device Enumeration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 745,
+      "bottomRightX": 682,
+      "bottomRightY": 780,
+      "content": "The Device Enumeration section describes all features related to discovery and enumeration of devices belonging to the Interface module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 796,
+      "bottomRightX": 285,
+      "bottomRightY": 812,
+      "content": "3.2.2.1 DeviceEnumeration",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 816,
+      "bottomRightX": 420,
+      "bottomRightY": 924,
+      "content": "|  Name | DeviceEnumeration  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 427,
+      "bottomRightY": 944,
+      "content": "Page 61 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "index": 275,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 135,
+      "bottomRightX": 732,
+      "bottomRightY": 172,
+      "content": "Does a software reset of the selected Encoder and starts it. The Encoder starts counting events immediately after the reset. EncoderReset can be used to reset the Encoder independently from the EncoderResetSource.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 179,
+      "bottomRightX": 649,
+      "bottomRightY": 215,
+      "content": "Note that the value of the Encoder at time of reset is automatically latched and reflected in the EncoderValueAtReset.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 256,
+      "bottomRightX": 222,
+      "bottomRightY": 273,
+      "content": "### 11.2.13 EncoderValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 279,
+      "bottomRightX": 391,
+      "bottomRightY": 492,
+      "content": "|  Name | EncoderValue[EncoderSelector]  |\n| --- | --- |\n|  Category | EncoderControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 516,
+      "bottomRightX": 567,
+      "bottomRightY": 534,
+      "content": "Reads or writes the current value of the position counter of the selected Encoder.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 542,
+      "bottomRightX": 607,
+      "bottomRightY": 561,
+      "content": "Writing to EncoderValue is typically used to set the start value of the position counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 600,
+      "bottomRightX": 291,
+      "bottomRightY": 620,
+      "content": "### 11.2.14 EncoderValueAtReset",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 623,
+      "bottomRightX": 432,
+      "bottomRightY": 838,
+      "content": "|  Name | EncoderValueAtReset[EncoderSelector]  |\n| --- | --- |\n|  Category | EncoderControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 861,
+      "bottomRightX": 724,
+      "bottomRightY": 897,
+      "content": "Reads the value of the of the position counter of the selected Encoder when it was reset by a signal or by an explicit EncoderReset command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 905,
+      "bottomRightX": 504,
+      "bottomRightY": 924,
+      "content": "It represents the last Encoder value latched before resetting the Encoder.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 276 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

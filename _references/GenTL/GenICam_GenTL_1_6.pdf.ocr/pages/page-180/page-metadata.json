@@ -1,0 +1,139 @@
+{
+  "index": 179,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-270.jpeg](img-270.jpeg)CAN |   | ![img-271.jpeg](img-271.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 569,
+      "bottomRightY": 161,
+      "content": "## 7 Standard Features Naming Convention for GenTL",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 166,
+      "bottomRightX": 636,
+      "bottomRightY": 283,
+      "content": "The different GenTL modules expose their features through the Port functions interface. To interpret the virtual register map of each module the GenICam GenApi is used. This document only contains the names of mandatory features that must be implemented to guarantee interoperability between the different GenTL Consumers and GenTL Producers. Additional features and descriptions can be found in the GenICam Standard Features Naming Convention document (SFNC) and in the GenTL Standard Features Naming Convention document (GenTL SFNC).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 291,
+      "bottomRightX": 637,
+      "bottomRightY": 425,
+      "content": "For technical reasons the different transport layer technologies and protocols (e.g., GigE Vision, IIDC 1394, Camera Link, etc.) have different feature sets. This is addressed in dedicated sections specialized on these technologies. Also features specific to one technology have a prefix indicating its origin, e.g., Gev for GigE Vision specific features or CI for Camera Link specific features. Mixed-type GenTL Producers must implement mandatory features of all supported technologies in the System node map. The mandatory technology specific features falling under the “InterfaceSelector” might be marked not-available (NA) when an interface implementing other technology is currently selected.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 430,
+      "bottomRightX": 636,
+      "bottomRightY": 483,
+      "content": "Interface, Device, Data Stream and Buffer node maps are unequivocally bound to a particular transfer technology and thus they must implement only technology specific features of the corresponding technology.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 488,
+      "bottomRightX": 636,
+      "bottomRightY": 556,
+      "content": "When updating features which are related to information covered also in the C interface it might happen that the data the node map refers to changes unexpectedly. Therefore these values should not be cached in the nodemap but read every time from the module. This especially applies to features under a module selector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 577,
+      "bottomRightX": 196,
+      "bottomRightY": 596,
+      "content": "### 7.1 Common",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 603,
+      "bottomRightX": 636,
+      "bottomRightY": 637,
+      "content": "The common feature set is mandatory for all GenTL Producer implementations and used for all transport layer technologies.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 651,
+      "bottomRightX": 246,
+      "bottomRightY": 669,
+      "content": "#### 7.1.1 System Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 673,
+      "bottomRightX": 636,
+      "bottomRightY": 726,
+      "content": "This is a description of all features which must be accessible in the System module: Port functions use the TL_HANDLE to access these features. The Port access for this module is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 218,
+      "topLeftY": 732,
+      "bottomRightX": 499,
+      "bottomRightY": 749,
+      "content": "Table 7-5: System module information features",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 753,
+      "bottomRightX": 641,
+      "bottomRightY": 911,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |\n|  TLVendorName | IString | R | Name of the GenTL Producer vendor.  |\n|  TLModelName | IString | R | Name of the GenTL Producer to distinguish different kinds of GenTL Producer implementations from one vendor.  |\n|  TLID | IString | R | Unique ID identifying a GenTL Producer. For example the filename of the GenTL Producer implementation  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 180 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

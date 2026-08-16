@@ -1,0 +1,156 @@
+{
+  "index": 6,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 40,
+      "bottomRightX": 640,
+      "bottomRightY": 113,
+      "content": "|  GEN<I>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 139,
+      "bottomRightX": 171,
+      "bottomRightY": 165,
+      "content": "## Tables",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 174,
+      "bottomRightX": 636,
+      "bottomRightY": 194,
+      "content": "Table 4-1: Local URL definition for XML description files in the module register map... 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 199,
+      "bottomRightX": 635,
+      "bottomRightY": 217,
+      "content": "Table 4-2: Event types per module ... 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 222,
+      "bottomRightX": 635,
+      "bottomRightY": 240,
+      "content": "Table 6-3: Function naming convention ... 59",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 247,
+      "bottomRightX": 634,
+      "bottomRightY": 264,
+      "content": "Table 6-4: C interface error codes... 61",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 271,
+      "bottomRightX": 635,
+      "bottomRightY": 287,
+      "content": "Table 7-5: System module information features ... 180",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 296,
+      "bottomRightX": 634,
+      "bottomRightY": 312,
+      "content": "Table 7-6: Interface enumeration features ... 181",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 319,
+      "bottomRightX": 634,
+      "bottomRightY": 336,
+      "content": "Table 7-7: Interface information features... 181",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 342,
+      "bottomRightX": 635,
+      "bottomRightY": 359,
+      "content": "Table 7-8: Device enumeration features ... 182",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 367,
+      "bottomRightX": 635,
+      "bottomRightY": 383,
+      "content": "Table 7-9: Device information features ... 183",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 389,
+      "bottomRightX": 635,
+      "bottomRightY": 406,
+      "content": "Table 7-10: Stream enumeration features ... 184",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 414,
+      "bottomRightX": 635,
+      "bottomRightY": 430,
+      "content": "Table 7-11: Data Stream information features ... 184",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 438,
+      "bottomRightX": 635,
+      "bottomRightY": 454,
+      "content": "Table 7-12: Buffer information features ... 185",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 7 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "index": 68,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 81,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 76,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 106,
+      "bottomRightX": 920,
+      "bottomRightY": 644,
+      "content": "|  Scan3dExtractionMethod[Scan3dExtractionSelector] | O | IEnumeration | R/W | - | E | Selects the method for extracting 3D from the input sensor data.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  Scan3dDistanceUnit[Scan3dExtractionSelector] | O | IEnumeration | R/(W) | - | E | Specifies the unit used when delivering (calibrated) distance data.  |\n|  Scan3dCoordinateSystem[Scan3dExtractionSelector] | O | IEnumeration | R/(W) | - | E | Specifies the Coordinate system to use for the device.  |\n|  Scan3dOutputMode[Scan3dExtractionSelector] | O | IEnumeration | R/(W) | - | E | Controls the Calibration and data organization of the device and the coordinates transmitted.  |\n|  Scan3dCoordinateSystemReference[Scan3dExtractionSelector] | O | IEnumeration | R/W | - | E | Defines coordinate system reference location.  |\n|  Scan3dCoordinateSelector[Scan3dExtractionSelector] | O | IEnumeration | R/W | - | E | Selects the individual coordinates in the vectors for 3D information/transformation.  |\n|  Scan3dCoordinateScale[Scan3dExtractionSelector][Scan3dCoordinateSelector] | O | IFloat | R/(W) | - | E | Scale factor when transforming a pixel from relative coordinates to world coordinates.  |\n|  Scan3dCoordinateOffset[Scan3dExtractionSelector][Scan3dCoordinateSelector] | O | IFloat | R/(W) | - | E | Offset when transforming a pixel from relative coordinates to world coordinates.  |\n|  Scan3dInvalidDataFlag[Scan3dExtractionSelector][Scan3dCoordinateSelector] | O | IBoolean | R/(W) | - | E | Enables the definition of a non-valid flag value in the data stream.  |\n|  Scan3dInvalidDataValue[Scan3dExtractionSelector][Scan3dCoordinateSelector] | O | IFloat | R/(W) | - | E | Value which identifies a non-valid pixel if Scan3dInvalidDataFlag is enabled.  |\n|  Scan3dAxisMin[Scan3dExtractionSelector][Scan3dCoordinateSelector] | O | IFloat | R | - | E | Minimum valid transmitted coordinate value of the selected Axis.  |\n|  Scan3dAxisMax[Scan3dExtractionSelector][Scan3dCoordinateSelector] | O | IFloat | R | - | E | Maximum valid transmitted coordinate value of the selected Axis.  |\n|  Scan3dCoordinateTransformSelector[Scan3dExtractionSelector] | O | IEnumeration | R/W | - | E | Sets the index to read/write a coordinate transform value.  |\n|  Scan3dTransformValue[Scan3dExtractionSelector][Scan3dCoordinateTransformSelector] | O | IFloat | R/W | - | E | Specifies the transform value selected.  |\n|  Scan3dCoordinateReferenceSelector[Sc | O | IEnumeration | R/W | - | E | Sets the index to read a coordinate system reference value defining the  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 651,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 69 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

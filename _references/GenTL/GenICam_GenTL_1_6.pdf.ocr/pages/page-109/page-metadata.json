@@ -1,0 +1,150 @@
+{
+  "index": 108,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 173,
+      "content": "function must return the error GC_ERR_NO_DATA. The GenTL Consumer would in this case avoid querying information about flows using DSGetFlowInfo.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 187,
+      "bottomRightX": 166,
+      "bottomRightY": 204,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 208,
+      "bottomRightX": 616,
+      "bottomRightY": 243,
+      "content": "|  [in] | hDataStream | Data Stream module to work on.  |\n| --- | --- | --- |\n|  [out] | piNumFlows | Number of flows currently configured for this data stream.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 255,
+      "bottomRightX": 141,
+      "bottomRightY": 271,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 277,
+      "bottomRightX": 636,
+      "bottomRightY": 552,
+      "content": "|  GC_ERR_SUCCESS: | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED: | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE: | The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream.  |\n|  GC_ERR_NOT_IMPLEMENTED: | The GenTL implementation does not support the flow functionality.  |\n|  GC_ERR_INVALID_PARAMETER: | Parameter piNumFlows is an invalid pointer (NULL or ~0x0).  |\n|  GC_ERR_NO_DATA: | The GenTL implementation supports flows, but the flow functionality is currently not available for any reason, for example because the given device/stream does not support flows or is in mode not involving flows.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 560,
+      "bottomRightX": 636,
+      "bottomRightY": 596,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 608,
+      "bottomRightX": 259,
+      "bottomRightY": 626,
+      "content": "##### 6.3.5.20 DSGetFlowInfo",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 645,
+      "bottomRightX": 641,
+      "bottomRightY": 750,
+      "content": "|  GC_ERROR | DSGetFlowInfo | ( DS_HANDLE | hDataStream,  |\n| --- | --- | --- | --- |\n|   |  | uint32_t | iFlowIndex,  |\n|   |  | FLOW_INFO_CMD | iInfoCmd,  |\n|   |  | INFO_DATATYPE * | piType,  |\n|   |  | void * | pBuffer,  |\n|   |  | size_t * | piSize )  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 757,
+      "bottomRightX": 635,
+      "bottomRightY": 793,
+      "content": "Inquires information about individual flows currently configured for this data stream as defined in FLOW_INFO_CMD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 799,
+      "bottomRightX": 636,
+      "bottomRightY": 850,
+      "content": "Note that the number of flows and their structure can be dynamic and depend on the configuration of the data stream and of the device output. It is recommended to query it after any configuration possibly affecting the stream and its contents is finished.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 863,
+      "bottomRightX": 166,
+      "bottomRightY": 879,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 883,
+      "bottomRightX": 464,
+      "bottomRightY": 901,
+      "content": "[in] hDataStream Data Stream module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 109 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

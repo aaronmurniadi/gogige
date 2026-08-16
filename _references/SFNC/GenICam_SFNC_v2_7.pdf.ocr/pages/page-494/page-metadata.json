@@ -1,0 +1,122 @@
+{
+  "index": 493,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 141,
+      "bottomRightX": 690,
+      "bottomRightY": 251,
+      "content": "|  Access | Read  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 274,
+      "bottomRightX": 241,
+      "bottomRightY": 292,
+      "content": "Returns the transform value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 308,
+      "bottomRightX": 496,
+      "bottomRightY": 328,
+      "content": "### 24.71 ChunkScan3dCoordinateReferenceSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 330,
+      "bottomRightX": 524,
+      "bottomRightY": 633,
+      "content": "|  Name | ChunkScan3dCoordinateReferenceSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | RotationX RotationY RotationZ TranslationX TranslationY TranslationZ  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 683,
+      "bottomRightX": 742,
+      "bottomRightY": 719,
+      "content": "Selector to read a coordinate system reference value defining the transform of a point from one system to the other.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 727,
+      "bottomRightX": 707,
+      "bottomRightY": 780,
+      "content": "The transformation from Anchor and Transformed to the Reference coordinate system should be implemented as described in section 21.2.2 (Coordinate system position and transformation). Here data describes the current transform, so no selection with Scan3dCoordinateSystemReference is needed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 788,
+      "bottomRightX": 187,
+      "bottomRightY": 805,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 815,
+      "bottomRightX": 327,
+      "bottomRightY": 939,
+      "content": "- RotationX: Rotation around X axis.\n- RotationY: Rotation around Y axis.\n- RotationZ: Rotation around Z axis.\n- TranslationX: X axis translation.\n- TranslationY: Y axis translation.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 494 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

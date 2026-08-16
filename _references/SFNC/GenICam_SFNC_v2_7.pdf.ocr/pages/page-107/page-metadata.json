@@ -1,0 +1,167 @@
+{
+  "index": 106,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 34,
+      "bottomRightX": 533,
+      "bottomRightY": 81,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 118,
+      "bottomRightX": 329,
+      "bottomRightY": 268,
+      "content": "|  Level | Optional  |\n| --- | --- |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 291,
+      "bottomRightX": 646,
+      "bottomRightY": 325,
+      "content": "This feature is deprecated (See DeviceEventChannelCount). It indicates the number of message/event channels supported by the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 339,
+      "bottomRightX": 259,
+      "bottomRightY": 357,
+      "content": "### 3.50 DeviceCharacterSet",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 360,
+      "bottomRightX": 332,
+      "bottomRightY": 577,
+      "content": "|  Name | DeviceCharacterSet  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | UTF8 ASCII  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 599,
+      "bottomRightX": 324,
+      "bottomRightY": 617,
+      "content": "Character set used by the strings of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 624,
+      "bottomRightX": 169,
+      "bottomRightY": 639,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 93,
+      "topLeftY": 648,
+      "bottomRightX": 352,
+      "bottomRightY": 689,
+      "content": "- UTF8: Device use UTF8 character set.\n- ASCII: Device use ASCII character set.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 705,
+      "bottomRightX": 199,
+      "bottomRightY": 722,
+      "content": "### 3.51 DeviceReset",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 727,
+      "bottomRightX": 332,
+      "bottomRightY": 925,
+      "content": "|  Name | DeviceReset  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | ICommand  |\n|  Access | Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 107 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "index": 181,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM</i></td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 385,
+      "bottomRightY": 215,
+      "content": "|  Unit | -  |\n| --- | --- |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 239,
+      "bottomRightX": 754,
+      "bottomRightY": 276,
+      "content": "Arms the device before an AcquisitionStart command. This optional command validates all the current features for consistency and prepares the device for a fast start of the Acquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 283,
+      "bottomRightX": 747,
+      "bottomRightY": 319,
+      "content": "If not used explicitly, this command will be automatically executed at the first AcquisitionStart but will not be repeated for the subsequent ones unless a feature is changed in the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 334,
+      "bottomRightX": 352,
+      "bottomRightY": 354,
+      "content": "### 5.5.4 AcquisitionFrameCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 358,
+      "bottomRightX": 385,
+      "bottomRightY": 570,
+      "content": "|  Name | AcquisitionFrameCount  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 594,
+      "bottomRightX": 447,
+      "bottomRightY": 613,
+      "content": "Number of frames to acquire in MultiFrame Acquisition mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 629,
+      "bottomRightX": 400,
+      "bottomRightY": 650,
+      "content": "### 5.5.5 AcquisitionBurstFrameCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 651,
+      "bottomRightX": 385,
+      "bottomRightY": 864,
+      "content": "|  Name | AcquisitionBurstFrameCount  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | Integer  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 889,
+      "bottomRightX": 443,
+      "bottomRightY": 907,
+      "content": "Number of frames to acquire for each FrameBurstStart trigger.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 182 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

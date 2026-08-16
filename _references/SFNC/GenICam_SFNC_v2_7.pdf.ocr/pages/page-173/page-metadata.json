@@ -1,0 +1,111 @@
+{
+  "index": 172,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 151,
+      "bottomRightX": 543,
+      "bottomRightY": 172,
+      "content": "### 5.4 Acquisition and Trigger features usage examples",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 721,
+      "bottomRightY": 232,
+      "content": "This section shows examples of typical use cases of acquisition and control of the SFNC features in C/C++ pseudo-code.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 241,
+      "bottomRightX": 751,
+      "bottomRightY": 276,
+      "content": "For simplicity, the object name is omitted (e.g., AcquisitionStart() instead of Camera.AcquisitionStart()) and the default state of the camera is assumed (e.g. Ready for a continuous acquisition start without trigger).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 309,
+      "bottomRightX": 459,
+      "bottomRightY": 328,
+      "content": "/* Continuous acquisition when the camera is in its reset state. */",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 348,
+      "bottomRightX": 280,
+      "bottomRightY": 425,
+      "content": "AcquisitionMode = Continuous;\nAcquisitionStart();\n...\nAcquisitionStop();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 463,
+      "bottomRightX": 593,
+      "bottomRightY": 481,
+      "content": "/* Single Frame acquisition in Hardware trigger mode using the external I/O Line 3. */",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 502,
+      "bottomRightX": 309,
+      "bottomRightY": 600,
+      "content": "AcquisitionMode = SingleFrame;\nTriggerSelector = FrameStart;\nTriggerMode = On;\nTriggerActivation = RisingEdge;\nTriggerSource = Line3;\nAcquisitionStart();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 173 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

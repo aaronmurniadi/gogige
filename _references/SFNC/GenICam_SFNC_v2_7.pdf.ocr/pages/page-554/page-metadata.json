@@ -1,0 +1,139 @@
+{
+  "index": 553,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 145,
+      "bottomRightX": 726,
+      "bottomRightY": 307,
+      "content": "- DualBase: The camera streams the data from multiple taps (that do not fit in the standard base configuration) through two Camera Link base ports. It is responsibility of the application or frame grabber to reconstruct the full image. Only one of the ports (fixed) serves as the \"master\" for serial communication and triggering.\n- EightyBit: Standard 80-bit configuration with 10 taps of 8 bits or 8 taps of 10 bits, as described by the Camera Link standard.\n- Deca (Deprecated): This enumeration entry is deprecated. It was used for Deca configuration with 10 taps of 8-bit. Use EightyBit instead.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 313,
+      "bottomRightX": 737,
+      "bottomRightY": 350,
+      "content": "If the feature is omitted, one of the standard configurations (Base-Medium-Full) is expected. In that case the configuration can be unequivocally deduced from the SensorDigitizationTaps and PixelSize values.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 365,
+      "bottomRightX": 314,
+      "bottomRightY": 384,
+      "content": "### 27.6.3 ClTimeSlotsCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 386,
+      "bottomRightX": 396,
+      "bottomRightY": 629,
+      "content": "|  Name | ClTimeSlotsCount  |\n| --- | --- |\n|  Category | CameraLink  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | One Two Three  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 652,
+      "bottomRightX": 732,
+      "bottomRightY": 689,
+      "content": "This Camera Link specific feature describes the time multiplexing of the camera link connection to transfer more than the configuration allows, in one single clock.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 696,
+      "bottomRightX": 187,
+      "bottomRightY": 713,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 723,
+      "bottomRightX": 254,
+      "bottomRightY": 793,
+      "content": "- One: One time slot.\n- Two: Two time slots.\n- One: Three time slots.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 828,
+      "bottomRightX": 619,
+      "bottomRightY": 847,
+      "content": "It indicates the number of consecutive time slots required to transfer one data of each tap.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 886,
+      "bottomRightX": 268,
+      "bottomRightY": 906,
+      "content": "### 27.7 CoaXPress Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 911,
+      "bottomRightX": 453,
+      "bottomRightY": 930,
+      "content": "This section describes the CoaXPress specific control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 554 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

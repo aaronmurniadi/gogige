@@ -1,0 +1,104 @@
+{
+  "index": 162,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-237.jpeg](img-237.jpeg) CAM |   | ![img-238.jpeg](img-238.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 639,
+      "bottomRightY": 293,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|  PART_DATATYPE_JPEG | 10 | JPEG compressed data in the format described in GEV 2.0.  |\n|  PART_DATATYPE_JPEG2000 | 11 | JPEG 2000 compressed data in the format described in GEV 2.0.  |\n|  PART_DATATYPE_CUSTOM_ID | 1000 | Starting value for GenTL Producer custom IDs which are implementation specific.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 296,
+      "bottomRightX": 636,
+      "bottomRightY": 377,
+      "content": "Note: GigE Vision reports chunk data (when attached to multi-part payload) as an additional “part” for its own stream protocol purposes. However, from a GenTL point of view, the chunk data is an extension of the basic payload, not part of it, therefore the chunk data should not be presented as one of the buffer parts. Therefore also no chunk data specific part datatype ID is introduced in the chapter above.",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 390,
+      "bottomRightX": 282,
+      "bottomRightY": 409,
+      "content": "##### 6.4.4.11 FLOW_INFO_CMD",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 431,
+      "bottomRightX": 244,
+      "bottomRightY": 448,
+      "content": "enum FLOW_INFO_CMD",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 459,
+      "bottomRightX": 635,
+      "bottomRightY": 490,
+      "content": "This enumeration defines commands to retrieve information with the DSGetFlowInfo function on a data stream handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 499,
+      "bottomRightX": 636,
+      "bottomRightY": 583,
+      "content": "The column labeled “Impl” in the following table lists if the implementation of a given command is mandatory (M), optional (O) or conditional mandatory (CM). Mandatory means that a GenTL Producer must implement the listed command. Optional means that it is up to the implementor if a given command is implemented or not. Conditional Mandatory means that command is to be implemented if possible.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 588,
+      "bottomRightX": 644,
+      "bottomRightY": 914,
+      "content": "|  Enumerator | Impl | Value | Description  |\n| --- | --- | --- | --- |\n|  FLOW_INFO_SIZE | M | 0 | Size of the flow in bytes.This information is essential for GenTL Consumer to be able to allocate suitable buffers for flow acquisition usingDSAnnounceCompositeBuffer.In case of GenDC streaming this directly corresponds to the information from GenDC mapping table.Note: querying the flow structure through FLOW_INFO_SIZE and throughSTREAM_INFO_FLOW_TABLE must yield same results.Data type: SIZET  |\n|  FLOW_INFO_CUSTOM_ID | O | 1000 | Starting value for GenTL Producer custom IDs which are implementation specific.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 163 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

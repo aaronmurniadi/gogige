@@ -1,0 +1,103 @@
+{
+  "index": 43,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<ICAM |   | ![img-59.jpeg](img-59.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 637,
+      "bottomRightY": 203,
+      "content": "A chunk port can have an element <CacheChunkData> which can have the values Yes and No. If chunk data caching is enabled a copy of the chunk data is held even if the corresponding buffer is detached.</CacheChunkData>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 215,
+      "bottomRightX": 228,
+      "bottomRightY": 232,
+      "content": "#### 2.8.17 Group element",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 244,
+      "bottomRightX": 636,
+      "bottomRightY": 277,
+      "content": "The <Group> element helps to make a large camera description file more readable. The element can be used to bundle blocks of nodes together as shown in the following example:</Group>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 289,
+      "bottomRightX": 360,
+      "bottomRightY": 648,
+      "content": "<Category Name=\"Root\">\n    <pFeature>Analog</pFeature>\n    <pFeature>Trigger</pFeature>\n</Category>\n\n<Group Comment=\"Analog section\">\n    <Category Name=\"Analog\">\n    <pFeature>Shutter</pFeature>\n    <pFeature>Gain</pFeature>\n    <pFeature>Offset</pFeature>\n    </Category>\n\n    <IntReg Name=\"Shutter\">\n    <!-- more elements -->\n    </IntReg>\n    <IntReg Name=\"Gain\">\n    <!-- more elements -->\n    </IntReg>\n    <IntReg Name=\"Offset\">\n    <!-- more elements -->\n    </IntReg>\n</Group>\n\n<Group Comment=\"Trigger section\">\n    <!-- more elements -->\n</Group>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 667,
+      "bottomRightX": 636,
+      "bottomRightY": 699,
+      "content": "A typical XML editor will be able to hide the contents of a group as shown in the following screen shot:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 704,
+      "bottomRightX": 511,
+      "bottomRightY": 853,
+      "content": "![img-60.jpeg](img-60.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-60.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 859,
+      "bottomRightX": 637,
+      "bottomRightY": 927,
+      "content": "The <Group> node has a Comment attribute, which is displayed by the editor when the group is folded away. Groups can be nested in any depth. They do not have any meaning with respect of the functionality of the camera. If the camera description file is interpreted, they are just stripped off.</Group>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 44 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "index": 37,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 16,
+      "bottomRightX": 743,
+      "bottomRightY": 97,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 116,
+      "bottomRightX": 212,
+      "bottomRightY": 136,
+      "content": "## 1.1 Conventions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 171,
+      "bottomRightX": 253,
+      "bottomRightY": 188,
+      "content": "### Feature Name and Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 196,
+      "bottomRightX": 671,
+      "bottomRightY": 287,
+      "content": "According to the GenICam standard, all the public features of a device must be included in the GenICam XML file and must use the SFNC Name and Interface type for those features if they exist. Other vendor specific or specialized features not mapping to existing SNFC features can be included but must be located in a vendor specific namespace in the GenICam XML and may use a vendor specific name.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 293,
+      "bottomRightX": 587,
+      "bottomRightY": 312,
+      "content": "This document lists for each feature, the Name and Interface type that must be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 345,
+      "bottomRightX": 182,
+      "bottomRightY": 365,
+      "content": "### Feature Category",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 370,
+      "bottomRightX": 636,
+      "bottomRightY": 406,
+      "content": "With the GenICam standard, each feature should be included in a \"Category\". The Category element defines in which group of features, the feature will be located.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 413,
+      "bottomRightX": 649,
+      "bottomRightY": 467,
+      "content": "The Category does not affect the functionality of the features but is used by the GUIs to group the features when displaying them. The purpose is mainly to insure that the GUI can present features in a more organized way.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 473,
+      "bottomRightX": 581,
+      "bottomRightY": 493,
+      "content": "This document lists for each feature, a recommended Category that should be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 517,
+      "bottomRightX": 158,
+      "bottomRightY": 535,
+      "content": "### Feature Level",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 543,
+      "bottomRightX": 586,
+      "bottomRightY": 561,
+      "content": "In this document, features are tagged according to the following requirement levels:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 568,
+      "bottomRightX": 657,
+      "bottomRightY": 691,
+      "content": "- M: Mandatory - Must be implemented to achieve compliance with the GenICam standard.\n- R: Recommended - This feature adds important aspects to the use case and must respect the naming convention if used.\n- O: Optional - This feature is less critical. Nevertheless, it is considered and must respect the naming convention if used.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 699,
+      "bottomRightX": 628,
+      "bottomRightY": 735,
+      "content": "For additional details about the mandatory features specific to a particular transport layers, please refer to the text of those standards.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 769,
+      "bottomRightX": 182,
+      "bottomRightY": 787,
+      "content": "### Feature Visibility",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 794,
+      "bottomRightX": 655,
+      "bottomRightY": 864,
+      "content": "According to the GenICam standard each feature can be assigned a \"Visibility\". The Visibility defines the type of user that should get access to the feature. Possible values are: Beginner, Expert, Guru and Invisible. The latter is required to make features accessible from the API, but invisible in the GUI.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 872,
+      "bottomRightX": 667,
+      "bottomRightY": 926,
+      "content": "The visibility does not affect the functionality of the features but is used by the GUI to decide which features to display based on the current user level. The purpose is mainly to insure that the GUI is not cluttered with information that is not intended at the current user level.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 934,
+      "bottomRightX": 612,
+      "bottomRightY": 953,
+      "content": "The following criteria have been used for the assignment of the recommended visibility:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 391,
+      "bottomRightY": 1008,
+      "content": "Page 38 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 624,
+      "bottomRightY": 1008,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

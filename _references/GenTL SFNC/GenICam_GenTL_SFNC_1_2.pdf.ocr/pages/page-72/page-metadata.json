@@ -1,0 +1,113 @@
+{
+  "index": 71,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-20.jpeg](img-20.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 388,
+      "bottomRightY": 175,
+      "content": "3.2.2.22 GevDeviceForceSubnetMask",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 177,
+      "bottomRightX": 504,
+      "bottomRightY": 418,
+      "content": "|  Name | GevDeviceForceSubnetMask[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 441,
+      "bottomRightX": 504,
+      "bottomRightY": 459,
+      "content": "Static subnet mask to set for GVCP interface of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 474,
+      "bottomRightX": 362,
+      "bottomRightY": 494,
+      "content": "3.2.2.23 GevDeviceForceGateway",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 497,
+      "bottomRightX": 482,
+      "bottomRightY": 735,
+      "content": "|  Name | GevDeviceForceGateway[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 759,
+      "bottomRightX": 570,
+      "bottomRightY": 777,
+      "content": "Static gateway IP address to set for the GVCP interface of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 799,
+      "bottomRightX": 248,
+      "bottomRightY": 817,
+      "content": "#### 3.2.3 Action Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 830,
+      "bottomRightX": 673,
+      "bottomRightY": 864,
+      "content": "Features in this section provide give access to the Action Control features within the Interface Module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 72 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

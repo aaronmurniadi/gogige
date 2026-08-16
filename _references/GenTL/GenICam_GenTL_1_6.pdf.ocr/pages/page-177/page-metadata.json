@@ -1,0 +1,220 @@
+{
+  "index": 176,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-264.jpeg](img-264.jpeg) CAM |   | ![img-265.jpeg](img-265.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 635,
+      "bottomRightY": 171,
+      "content": "the buffer size required to hold given information can be negotiated first as described for the pBuffer==NULL above.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 179,
+      "bottomRightX": 637,
+      "bottomRightY": 267,
+      "content": "When retrieving multiple infos through DSGetBufferPartInfoStacked call, each DS_BUFFER_PART_INFO_STACKED structure is handled independently on the others. GenTL Consumer should receive identical output (iResult and the value in pBuffer), no matter if it used single DSGetBufferPartInfoStacked or sequence of DSGetBufferPartInfo calls.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 273,
+      "bottomRightX": 636,
+      "bottomRightY": 324,
+      "content": "Each iResult member of the many DS_BUFFER_PART_INFO_STACKED structures represents the result of exactly one buffer part info query. The applicable error codes of the DSGetBufferPartInfo function are valid for iResult. These are listed below:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 332,
+      "bottomRightX": 209,
+      "bottomRightY": 351,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 332,
+      "bottomRightX": 569,
+      "bottomRightY": 351,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 358,
+      "bottomRightX": 278,
+      "bottomRightY": 376,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 358,
+      "bottomRightX": 541,
+      "bottomRightY": 376,
+      "content": "Specified iInfoCmd is not implemented.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 383,
+      "bottomRightX": 287,
+      "bottomRightY": 401,
+      "content": "GC_ERR_BUFFER_TOO_SMALL",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 383,
+      "bottomRightX": 635,
+      "bottomRightY": 418,
+      "content": "pBuffer is not NULL and the value of iSize is too small to receive the expected amount of data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 425,
+      "bottomRightX": 261,
+      "bottomRightY": 443,
+      "content": "GC_ERR_NOT_AVAILABLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 425,
+      "bottomRightX": 635,
+      "bottomRightY": 460,
+      "content": "The request is implemented but the requested information is currently not available for any reason.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 466,
+      "bottomRightX": 265,
+      "bottomRightY": 484,
+      "content": "GC_ERR_INVALID_INDEX:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 466,
+      "bottomRightX": 635,
+      "bottomRightY": 518,
+      "content": "iPartIndex is greater than the number of available buffer parts - 1 retrieved through a call to DSGetNumBufferParts.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 525,
+      "bottomRightX": 636,
+      "bottomRightY": 560,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 566,
+      "bottomRightX": 635,
+      "bottomRightY": 617,
+      "content": "(Note: The order of struct members in DS_BUFFER_PART_INFO_STACKED vs. DS_BUFFER_INFO_STACKED is intentionally slightly different to keep both structs naturally aligned.)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 630,
+      "bottomRightX": 284,
+      "bottomRightY": 649,
+      "content": "#### 6.5.2 Signaling Structures",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 662,
+      "bottomRightX": 345,
+      "bottomRightY": 682,
+      "content": "##### 6.5.2.1 EVENT_NEW_BUFFER_DATA",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 703,
+      "bottomRightX": 331,
+      "bottomRightY": 720,
+      "content": "struct EVENT_NEW_BUFFER_DATA",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 729,
+      "bottomRightX": 474,
+      "bottomRightY": 746,
+      "content": "Structure of the data returned from a signaled “New Buffer” event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 750,
+      "bottomRightX": 641,
+      "bottomRightY": 823,
+      "content": "|  Member | Type | Description  |\n| --- | --- | --- |\n|  BufferHandle | BUFFER_HANDLE | Buffer handle which contains new data.  |\n|  UserPointer | void * | User pointer provided at announcement of the buffer.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 177 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

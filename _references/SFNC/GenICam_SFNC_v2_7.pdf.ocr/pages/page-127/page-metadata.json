@@ -1,0 +1,102 @@
+{
+  "index": 126,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  ![img-27.jpeg](img-27.jpeg) |   | ![img-28.jpeg](img-28.jpeg)  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 120,
+      "bottomRightX": 637,
+      "bottomRightY": 271,
+      "content": "- Scatter: The acquisition of data measuring how much light is scattered around the reflected light. In processing this is used as an additional intensity image, often together with the standard intensity or reflectance.\n- Disparity: The acquisition of stereo camera disparity data is controlled. Disparity is a more specific range format approximately inversely proportional to distance. Disparity is typically given in pixel units.\n- Multispectral: The acquisition of multiple spectral bands corresponding to various light wavelengths is controlled.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 303,
+      "bottomRightX": 279,
+      "bottomRightY": 319,
+      "content": "# Multiple components from a region:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 325,
+      "bottomRightX": 652,
+      "bottomRightY": 376,
+      "content": "The ComponentSelector allows to control the multiple components of a single source region. In this case, all components are defined to be registered (i.e. for each pixel in all components, the data in all images refer to the same source region position.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 382,
+      "bottomRightX": 652,
+      "bottomRightY": 483,
+      "content": "Although the source data region for all the components is the same, the resulting components might be of different size. In that case, ComponentSelector can be used to specify that and for example, Width[SourceSelector][RegionSelector][ComponentSelector] would give the Size X of each individual component. Another example could be that each component would have a different PixelFormat (e.g. floating point for Range data, unsigned integer for Intensity and single bit for Confidence).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 515,
+      "bottomRightX": 401,
+      "bottomRightY": 532,
+      "content": "Example of multiple components acquisition from a sensor.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 537,
+      "bottomRightX": 580,
+      "bottomRightY": 637,
+      "content": "// Setup for 3D Range+Confidence+Reflectance sent as calibrated Range map.\nScan3dOutputMode = CalibratedABC_Grid; // XYZ Planar output.\nComponentSelector = Range;\nComponentEnable[Range] = True;\nComponentSelector = Confidence;\nComponentEnable[Confidence] = True;\nComponentSelector = Reflectance;\nComponentEnable[Reflectance] = True;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 127 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

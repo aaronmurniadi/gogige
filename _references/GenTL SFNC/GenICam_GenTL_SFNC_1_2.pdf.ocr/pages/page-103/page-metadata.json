@@ -1,0 +1,130 @@
+{
+  "index": 102,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 124,
+      "content": "<table><tr><td colspan=\"2\">GEN&lt;i&gt;CAM</td><td rowspan=\"2\">emva</td></tr><tr><td>Version 1.2.0</td><td>GenTL Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 131,
+      "topLeftY": 157,
+      "bottomRightX": 700,
+      "bottomRightY": 228,
+      "content": "This buffer handling mode is typically used if every image frame is to be acquired and the mean processing time is lower than acquisition time. No buffer is discarded or overwritten in the Output Buffer Queue and all filled buffers are delivered in the order they were acquired.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 207,
+      "topLeftY": 243,
+      "bottomRightX": 335,
+      "bottomRightY": 262,
+      "content": "Acquisition Engine",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 267,
+      "bottomRightX": 425,
+      "bottomRightY": 481,
+      "content": "![img-30.jpeg](img-30.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-30.jpeg"
+    },
+    {
+      "topLeftX": 520,
+      "topLeftY": 242,
+      "bottomRightX": 625,
+      "bottomRightY": 259,
+      "content": "Buffer Delivery",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 466,
+      "topLeftY": 267,
+      "bottomRightX": 689,
+      "bottomRightY": 522,
+      "content": "![img-31.jpeg](img-31.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-31.jpeg"
+    },
+    {
+      "topLeftX": 205,
+      "topLeftY": 530,
+      "bottomRightX": 581,
+      "bottomRightY": 550,
+      "content": "Figure 3-3.2: Buffer handling mode “OldestFirstOverwrite”",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 557,
+      "bottomRightX": 696,
+      "bottomRightY": 631,
+      "content": "- OldestFirstOverwrite (Recommended): The application always gets the buffer from the head of the Output Buffer Queue (thus, the oldest available one). If the Output Buffer Queue is empty, the application waits for a newly acquired buffer until the timeout expires.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 131,
+      "topLeftY": 647,
+      "bottomRightX": 681,
+      "bottomRightY": 757,
+      "content": "When data for a new buffer is available, the acquisition engine looks for any available buffer in the Input Buffer Pool, fills it, and appends it to the tail of the Output Buffer Queue. If the Input Buffer Pool is empty and the Output Buffer Queue is not empty, it discards the head of the Output Buffer Queue (i.e., the oldest buffer), overwrites it with the new data, and appends it to the tail of the Output Buffer Queue. If the Input Buffer Pool and the Output Buffer Queue are empty, the new data is dropped.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 131,
+      "topLeftY": 772,
+      "bottomRightX": 698,
+      "bottomRightY": 811,
+      "content": "This buffer handling mode is typically used if not every image frame is to be acquired and the application may not fall behind.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 827,
+      "bottomRightX": 686,
+      "bottomRightY": 883,
+      "content": "- NewestOnly (Recommended): The application always gets the latest completed buffer (the newest one). If the Output Buffer Queue is empty, the application waits for a newly acquired buffer until the timeout expires.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 103 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

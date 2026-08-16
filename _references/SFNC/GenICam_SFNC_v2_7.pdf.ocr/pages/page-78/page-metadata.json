@@ -1,0 +1,167 @@
+{
+  "index": 77,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 291,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 548,
+      "bottomRightY": 80,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 549,
+      "topLeftY": 65,
+      "bottomRightX": 590,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 76,
+      "bottomRightX": 119,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 173,
+      "topLeftY": 76,
+      "bottomRightX": 385,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 107,
+      "bottomRightX": 927,
+      "bottomRightY": 240,
+      "content": "|  ChunkScan3dFocalLength | O | IFloat | R | Pixel | E | Returns the focal length of the camera in pixel.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  ChunkScan3dBaseline | O | IFloat | R | m | E | Returns the baseline as the physical distance of two cameras in a stereo camera setup.  |\n|  ChunkScan3dPrincipalPointU | O | IFloat | R | Pixel | E | Returns the value of this feature gives the horizontal position of the principal point, relative to the region origin, i.  |\n|  ChunkScan3dPrincipalPointV | O | IFloat | R | Pixel | E | Returns the value of this feature gives the vertical position of the principal point, relative to the region origin, i.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 270,
+      "bottomRightX": 212,
+      "bottomRightY": 288,
+      "content": "## 2.23 Test Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 293,
+      "bottomRightX": 696,
+      "bottomRightY": 310,
+      "content": "Contains the features related to the control of the test features (See the Test Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 382,
+      "topLeftY": 317,
+      "bottomRightX": 591,
+      "bottomRightY": 334,
+      "content": "Table 2-23: Test Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 339,
+      "bottomRightX": 927,
+      "bottomRightY": 465,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  TestControl | R | ICategory | R | - | G | Category for Test Control features.  |\n|  TestPendingAck | O | IInteger | R/W | ms | G | Tests the device's pending acknowledge feature.  |\n|  TestEventGenerate | O | ICommand | (R)/W | - | G | Generates a Test Event.  |\n|  TestPayloadFormatMode | R | IEnumeration | R/W | - | G | This feature allows setting a device in test mode and to output a specific payload format for validation of data streaming.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 495,
+      "bottomRightX": 252,
+      "bottomRightY": 513,
+      "content": "## 2.24 GenICam Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 519,
+      "bottomRightX": 720,
+      "bottomRightY": 536,
+      "content": "Contains the features related to GenICam control and access (See the GenICam Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 366,
+      "topLeftY": 542,
+      "bottomRightX": 607,
+      "bottomRightY": 559,
+      "content": "Table 2-24: GenICam Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 564,
+      "bottomRightX": 927,
+      "bottomRightY": 633,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  Root | M | ICategory | R | - | B | Provides the Root of the GenICam features tree.  |\n|  Device | M | IPort | R/W | - | I | Provides the default GenICam port of the Device.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 652,
+      "bottomRightX": 121,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 652,
+      "bottomRightX": 374,
+      "bottomRightY": 669,
+      "content": "Page 78 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 653,
+      "bottomRightX": 591,
+      "bottomRightY": 669,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

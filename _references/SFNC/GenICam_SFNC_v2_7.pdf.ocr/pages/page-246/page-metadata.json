@@ -1,0 +1,157 @@
+{
+  "index": 245,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 728,
+      "bottomRightY": 217,
+      "content": "- LinkTriggerMissed0, LinkTriggerMissed1, LinkTriggerMissed2, ...: Counts the number of Link Triggers missed.\n- TimestampTick: Counts the number of clock ticks of the Timestamp clock. Can be used to create a programmable timer.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 232,
+      "bottomRightX": 353,
+      "bottomRightY": 252,
+      "content": "### 10.3.3 CounterEventActivation",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 253,
+      "bottomRightX": 459,
+      "bottomRightY": 504,
+      "content": "|  Name | CounterEventActivation[CounterSelector]  |\n| --- | --- |\n|  Category | CounterAndTimerControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | RisingEdge FallingEdge AnyEdge  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 527,
+      "bottomRightX": 360,
+      "bottomRightY": 547,
+      "content": "Selects the Activation mode Event Source signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 554,
+      "bottomRightX": 177,
+      "bottomRightY": 570,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 581,
+      "bottomRightX": 535,
+      "bottomRightY": 653,
+      "content": "- RisingEdge: Counts on the Rising Edge of the signal.\n- FallingEdge: Counts on the Falling Edge of the signal.\n- AnyEdge: Counts on the Falling or rising Edge of the selected signal.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 667,
+      "bottomRightX": 327,
+      "bottomRightY": 686,
+      "content": "### 10.3.4 CounterResetSource",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 690,
+      "bottomRightX": 424,
+      "bottomRightY": 949,
+      "content": "|  Name | CounterResetSource[CounterSelector]  |\n| --- | --- |\n|  Category | CounterAndTimerControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Off CounterTrigger AcquisitionTrigger AcquisitionTriggerMissed  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 246 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

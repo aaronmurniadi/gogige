@@ -1,0 +1,123 @@
+{
+  "index": 485,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 515,
+      "bottomRightY": 329,
+      "content": "|  Category | ChunkDataControl  |\n| --- | --- |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 354,
+      "bottomRightX": 430,
+      "bottomRightY": 374,
+      "content": "Returns the current number of blocks in the transfer queue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 386,
+      "bottomRightX": 319,
+      "bottomRightY": 407,
+      "content": "### 24.56 ChunkStreamChannelID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 411,
+      "bottomRightX": 396,
+      "bottomRightY": 625,
+      "content": "|  Name | ChunkStreamChannelID  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 647,
+      "bottomRightX": 459,
+      "bottomRightY": 667,
+      "content": "Returns identifier of the stream channel used to carry the block.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 674,
+      "bottomRightX": 643,
+      "bottomRightY": 692,
+      "content": "Note that the Stream Channel used can be changed using the TransferStreamChannel feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 707,
+      "bottomRightX": 369,
+      "bottomRightY": 728,
+      "content": "### 24.57 ChunkSequencerSetActive",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 730,
+      "bottomRightX": 432,
+      "bottomRightY": 922,
+      "content": "|  Name | ChunkSequencerSetActive  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 486 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

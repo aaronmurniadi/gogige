@@ -1,0 +1,83 @@
+{
+  "index": 1,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 199,
+      "topLeftY": 49,
+      "bottomRightX": 335,
+      "bottomRightY": 75,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 490,
+      "topLeftY": 42,
+      "bottomRightX": 596,
+      "bottomRightY": 85,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 90,
+      "bottomRightX": 143,
+      "bottomRightY": 104,
+      "content": "Version 1.6",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 284,
+      "topLeftY": 90,
+      "bottomRightX": 378,
+      "bottomRightY": 104,
+      "content": "GenTL Standard",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 139,
+      "bottomRightX": 203,
+      "bottomRightY": 164,
+      "content": "# Contents",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 197,
+      "bottomRightX": 636,
+      "bottomRightY": 909,
+      "content": "1 Introduction ... 12\n1.1 Purpose ... 12\n1.2 GenTL Subcommittee ... 12\n1.3 Acronyms and Definitions ... 12\n1.3.1 Acronyms ... 12\n1.3.2 Definitions ... 13\n1.4 References ... 13\n2 Architecture ... 14\n2.1 Overview ... 14\n2.1.1 GenICam GenTL ... 14\n2.1.2 GenICam GenApi ... 14\n2.1.3 GenICam GenTL SFNC ... 15\n2.2 GenTL Modules ... 15\n2.2.1 System Module ... 16\n2.2.2 Interface Module ... 16\n2.2.3 Device Module ... 17\n2.2.4 Data Stream Module ... 17\n2.2.5 Buffer Module ... 17\n2.3 GenTL Module Common Parts ... 17\n2.3.1 C Interface ... 18\n2.3.2 Configuration ... 19\n2.3.3 Signaling (Events) ... 19\n3 Module Enumeration and Instantiation ... 20\n3.1 Setup ... 20\n3.2 System ... 21\n3.3 Interface ... 22\n3.4 Device ... 24\n3.5 Data Stream ... 25\n3.6 Buffer ... 25\n3.7 Enumerated modules list overview ... 26",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 924,
+      "bottomRightX": 418,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 549,
+      "topLeftY": 924,
+      "bottomRightX": 636,
+      "bottomRightY": 944,
+      "content": "Page 2 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

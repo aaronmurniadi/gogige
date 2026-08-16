@@ -1,0 +1,141 @@
+{
+  "index": 440,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 219,
+      "bottomRightY": 164,
+      "content": "### 23.4.32 Shutter",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 498,
+      "bottomRightY": 380,
+      "content": "|  Name | Shutter[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 406,
+      "bottomRightX": 367,
+      "bottomRightY": 423,
+      "content": "Controls whether the shutter is opened or closed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 430,
+      "bottomRightX": 187,
+      "bottomRightY": 445,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 457,
+      "bottomRightX": 704,
+      "bottomRightY": 517,
+      "content": "- 0: The shutter is closed.\n- >0: The shutter is opened. Value is implementation dependent. The maximum value is the most opened.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 535,
+      "bottomRightX": 272,
+      "bottomRightY": 554,
+      "content": "### 23.4.33 FilterInitialize",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 558,
+      "bottomRightX": 498,
+      "bottomRightY": 770,
+      "content": "|  Name | FilterInitialize[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 796,
+      "bottomRightX": 700,
+      "bottomRightY": 849,
+      "content": "Initializes the filter and makes it ready for use. The filter position after initialization is implementation dependent. This feature is only implemented if an additional initialization is required after OpticControllerInitialize.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 865,
+      "bottomRightX": 256,
+      "bottomRightY": 885,
+      "content": "### 23.4.34 FilterStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 888,
+      "bottomRightX": 553,
+      "bottomRightY": 943,
+      "content": "|  Name | FilterStatus[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 441 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

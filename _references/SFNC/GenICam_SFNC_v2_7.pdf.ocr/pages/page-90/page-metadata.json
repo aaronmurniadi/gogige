@@ -1,0 +1,158 @@
+{
+  "index": 89,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 278,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 493,
+      "topLeftY": 35,
+      "bottomRightX": 577,
+      "bottomRightY": 81,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 75,
+      "bottomRightX": 107,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 75,
+      "bottomRightX": 374,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 119,
+      "bottomRightX": 241,
+      "bottomRightY": 139,
+      "content": "### 3.5 DeviceModelName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 142,
+      "bottomRightX": 330,
+      "bottomRightY": 338,
+      "content": "|  **Name** | DeviceModelName  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Recommended  |\n|  **Interface** | IString  |\n|  **Access** | Read  |\n|  **Unit** | -  |\n|  **Visibility** | Beginner  |\n|  **Values** | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 363,
+      "bottomRightX": 176,
+      "bottomRightY": 380,
+      "content": "Model of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 394,
+      "bottomRightX": 246,
+      "bottomRightY": 415,
+      "content": "### 3.6 DeviceFamilyName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 415,
+      "bottomRightX": 334,
+      "bottomRightY": 613,
+      "content": "|  **Name** | DeviceFamilyName  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Optional  |\n|  **Interface** | IString  |\n|  **Access** | Read  |\n|  **Unit** | -  |\n|  **Visibility** | Beginner  |\n|  **Values** | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 638,
+      "bottomRightX": 319,
+      "bottomRightY": 656,
+      "content": "Identifier of the product family of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 669,
+      "bottomRightX": 284,
+      "bottomRightY": 689,
+      "content": "### 3.7 DeviceManufacturerInfo",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 691,
+      "bottomRightX": 330,
+      "bottomRightY": 889,
+      "content": "|  **Name** | DeviceManufacturerInfo  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Recommended  |\n|  **Interface** | IString  |\n|  **Access** | Read  |\n|  **Unit** | -  |\n|  **Visibility** | Beginner  |\n|  **Values** | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 913,
+      "bottomRightX": 309,
+      "bottomRightY": 929,
+      "content": "Manufacturer information about the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 949,
+      "bottomRightX": 109,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 949,
+      "bottomRightX": 362,
+      "bottomRightY": 966,
+      "content": "Page 90 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 408,
+      "topLeftY": 949,
+      "bottomRightX": 579,
+      "bottomRightY": 966,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

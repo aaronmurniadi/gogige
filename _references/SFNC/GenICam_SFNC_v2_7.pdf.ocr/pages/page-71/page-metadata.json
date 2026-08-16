@@ -1,0 +1,130 @@
+{
+  "index": 70,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 291,
+      "bottomRightY": 61,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 548,
+      "bottomRightY": 80,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 549,
+      "topLeftY": 65,
+      "bottomRightX": 590,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 76,
+      "bottomRightX": 119,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 173,
+      "topLeftY": 76,
+      "bottomRightX": 385,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 107,
+      "bottomRightX": 927,
+      "bottomRightY": 218,
+      "content": "|  LightConnectionStatus[LightControllerSelector] | O | IEnumeration | R | - | B | Status of a light connected to the controller's output Line.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  LightCurrentMeasured[LightControllerSelector] | O | IFloat | R | Amp | B | The measured current applied to the lighting.  |\n|  LightVoltageMeasured[LightControllerSelector] | O | IFloat | R | Volt | B | The measured voltage applied to the lighting.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 248,
+      "bottomRightX": 220,
+      "bottomRightY": 268,
+      "content": "### 2.21 Optic Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 271,
+      "bottomRightX": 631,
+      "bottomRightY": 288,
+      "content": "Contains the features related to the Optic Control (See the Optic Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 378,
+      "topLeftY": 295,
+      "bottomRightX": 595,
+      "bottomRightY": 312,
+      "content": "Table 2-21: Optic Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 317,
+      "bottomRightX": 927,
+      "bottomRightY": 636,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  OpticControl | O | ICategory | R | - | B | Category for optical control features.  |\n|  OpticControllerSelector | O | IEnumeration | R/W | - | B | Selects which optic controller to configure.  |\n|  OpticControllerInitialize[OpticControllerSelector] | O | ICommand | (R)/W | - | B | Initializes the optic controller and makes it ready for use.  |\n|  OpticControllerDisconnect[OpticControllerSelector] | O | ICommand | (R)/W | - | B | Closes the optic controller connection and prepares it for removal.  |\n|  OpticControllerAbort[OpticControllerSelector] | O | ICommand | (R)/W | - | B | Aborts the current command or feature access.  |\n|  OpticControllerStatus[OpticControllerSelector] | O | IEnumeration | R | - | B | Reads the status of the optic controller.  |\n|  OpticControllerVendorName[OpticControllerSelector] | O | IString | R | - | B | Name of the manufacturer of the optic controller.  |\n|  OpticControllerFamilyName[OpticControllerSelector] | O | IString | R | - | B | Name of the device family of the optic controller.  |\n|  OpticControllerModelName[OpticControllerSelector] | O | IString | R | - | B | Model name of the optic controller.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 652,
+      "bottomRightX": 120,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 652,
+      "bottomRightX": 373,
+      "bottomRightY": 669,
+      "content": "Page 71 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 653,
+      "bottomRightX": 591,
+      "bottomRightY": 669,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

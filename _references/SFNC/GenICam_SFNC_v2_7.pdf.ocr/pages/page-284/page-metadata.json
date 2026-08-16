@@ -1,0 +1,121 @@
+{
+  "index": 283,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 606,
+      "bottomRightY": 189,
+      "content": "|  Visibility | Guru  |\n| --- | --- |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 213,
+      "bottomRightX": 333,
+      "bottomRightY": 232,
+      "content": "Selects the Logic Block's input to configure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 248,
+      "bottomRightX": 350,
+      "bottomRightY": 268,
+      "content": "### 12.2.6 LogicBlockInputSource",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 269,
+      "bottomRightX": 661,
+      "bottomRightY": 947,
+      "content": "|  Name | LogicBlockInputSource[LogicBlockSelector][LogicBlockInputSelector]  |\n| --- | --- |\n|  Category | LogicBlockControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | True False AcquisitionTriggerWait AcquisitionTrigger AcquisitionTriggerMissed AcquisitionActive FrameTriggerWait FrameTrigger FrameTriggerMissed FrameActive ExposureActive LineTriggerWait LineTrigger LineTriggerMissed LineActive Counter0Active, Counter1Active, Counter2Active, ... Timer0Active, Timer1Active, Timer2Active, ... Encoder0, Encoder1, Encoder2, ... LogicBlock0, LogicBlock1, LogicBlock2, ... SoftwareSignal0, SoftwareSignal1, SoftwareSignal2, ... Line0, Line1, Line2, ... UserOutput0, UserOutput1, UserOutput2, ... Stream0TransferActive, Stream1TransferActive, ... Stream0TransferPaused, Stream1TransferPaused, ... Stream0TransferStopping, Stream1TransferStopping, ... Stream0TransferStopped, Stream1TransferStopped, ... Stream0TransferOverflow, Stream1TransferOverflow, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 284 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

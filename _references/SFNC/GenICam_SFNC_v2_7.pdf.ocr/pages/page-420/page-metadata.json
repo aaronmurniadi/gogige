@@ -1,0 +1,95 @@
+{
+  "index": 419,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 524,
+      "bottomRightY": 329,
+      "content": "|  Category | LightControl  |\n| --- | --- |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read  |\n|  Unit | Amp  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 352,
+      "bottomRightX": 344,
+      "bottomRightY": 372,
+      "content": "The measured current applied to the lighting.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 386,
+      "bottomRightX": 351,
+      "bottomRightY": 407,
+      "content": "### 22.3.9 LightVoltageMeasured",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 410,
+      "bottomRightX": 524,
+      "bottomRightY": 624,
+      "content": "|  Name | LightVoltageMeasured[LightControllerSelector]  |\n| --- | --- |\n|  Category | LightControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read  |\n|  Unit | Volt  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 647,
+      "bottomRightX": 345,
+      "bottomRightY": 667,
+      "content": "The measured voltage applied to the lighting.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 420 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

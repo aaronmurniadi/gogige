@@ -1,0 +1,219 @@
+{
+  "index": 394,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 134,
+      "bottomRightX": 351,
+      "bottomRightY": 151,
+      "content": "ComponentEnable[Region0][Intensity] = False;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 164,
+      "bottomRightX": 405,
+      "bottomRightY": 177,
+      "content": "// Setup 3D Processing Module source and parameters.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 179,
+      "bottomRightX": 472,
+      "bottomRightY": 222,
+      "content": "Scan3dExtractionSelector = Scan3dExtraction0;\nScan3dExtractionSource[Scan3dExtraction0] = Region0;\nScan3dExtractionMethod[Scan3dExtraction0] = Default;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 236,
+      "bottomRightX": 485,
+      "bottomRightY": 249,
+      "content": "// Scan3dExtraction0 output Region (processed data output size).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 249,
+      "bottomRightX": 661,
+      "bottomRightY": 308,
+      "content": "RegionSelector = Scan3dExtraction0; // First 3D Extraction output Region.\nWidth[Scan3dExtraction0] = 800; // 3D Extraction output \"frame Width\".\nHeight[Scan3dExtraction0] = 640; // 3D Extraction output \"frame Height\".\nRegionMode[Scan3dExtraction0] = On;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 321,
+      "bottomRightX": 262,
+      "bottomRightY": 335,
+      "content": "// Enable 3D Range output only.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 338,
+      "bottomRightX": 472,
+      "bottomRightY": 395,
+      "content": "ComponentSelector = Range;\nComponentEnable[Scan3dExtraction0][Range] = True;\nComponentSelector = Reflectance;\nComponentEnable[Scan3dExtraction0][Reflectance] = False;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 407,
+      "bottomRightX": 275,
+      "bottomRightY": 421,
+      "content": "// Set Region1 position and size.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 422,
+      "bottomRightX": 580,
+      "bottomRightY": 509,
+      "content": "RegionSelector = Region1; // Second Sensor Region.\nOffsetX[Region1] = 80; // Position of Region on sensor.\nOffsetY[Region1] = 500; // Position of Region on sensor.\nWidth[Region1] = 800; // Number of rows of the sensor to read.\nHeight[Region1] = 300; // Number of lines of the sensor to read.\nRegionMode[Region1] = On; // Region 1 features (Width, Height, ...) active.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 522,
+      "bottomRightX": 431,
+      "bottomRightY": 537,
+      "content": "// Disable Sensor's Region 1 Intensity component output.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 538,
+      "bottomRightX": 546,
+      "bottomRightY": 566,
+      "content": "ComponentSelector = Intensity;\nComponentEnable[Region1][Intensity] = False; // No Region1 Intensity out.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 581,
+      "bottomRightX": 403,
+      "bottomRightY": 594,
+      "content": "// Setup 3D Processing Module source and parameters.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 595,
+      "bottomRightX": 472,
+      "bottomRightY": 638,
+      "content": "Scan3dExtractionSelector = Scan3dExtraction1;\nScan3dExtractionSource[Scan3dExtraction1] = Region1;\nScan3dExtractionMethod[Scan3dExtraction1] = Default;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 652,
+      "bottomRightX": 477,
+      "bottomRightY": 667,
+      "content": "// Scan3dExtraction1 output Region (processed data outputsize).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 668,
+      "bottomRightX": 661,
+      "bottomRightY": 724,
+      "content": "RegionSelector = Scan3dExtraction1; // Second 3D Extraction output Region.\nWidth[Scan3dExtraction1] = 800; // 3D Extraction output \"frame Width\".\nHeight[Scan3dExtraction1] = 900; // 3D Extraction output \"frame Height\".\nRegionMode[Scan3dExtraction1] = On;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 738,
+      "bottomRightX": 296,
+      "bottomRightY": 753,
+      "content": "// Enable 3D Range component output.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 754,
+      "bottomRightX": 472,
+      "bottomRightY": 811,
+      "content": "ComponentSelector = Range;\nComponentEnable[Scan3dExtraction1][Range] = True;\nComponentSelector = Reflectance;\nComponentEnable[Scan3dExtraction1][Reflectance] = False;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 824,
+      "bottomRightX": 195,
+      "bottomRightY": 839,
+      "content": "// Start Acquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 840,
+      "bottomRightX": 162,
+      "bottomRightY": 883,
+      "content": "AquisitionStart;\n--\nAquisitionStop;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 395 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

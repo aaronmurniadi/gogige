@@ -1,0 +1,105 @@
+{
+  "index": 180,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-272.jpeg](img-272.jpeg)CAN |   | ![img-273.jpeg](img-273.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 641,
+      "bottomRightY": 376,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |\n|   |  |  | including its path.  |\n|  TLVersion | IString | R | Vendor specific version string.  |\n|  TLPath | IString | R | Full path to the GenTL Producer driver including name and extension.  |\n|  TLType | IEnumeration | R | Identifies the transport layer technology of the GenTL Producer implementation. See chapter 6.6.1 for possible values.  |\n|  GenTLVersionMajor | IInteger | R | Major version number of the GenTL specification the GenTL Producer implementation complies with.  |\n|  GenTLVersionMinor | IInteger | R | Minor version number of the GenTL specification the GenTL Producer implementation complies with.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 236,
+      "topLeftY": 398,
+      "bottomRightX": 481,
+      "bottomRightY": 415,
+      "content": "Table 7-6: Interface enumeration features",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 421,
+      "bottomRightX": 641,
+      "bottomRightY": 780,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |\n|  InterfaceUpdateList | ICommand | (R)/W | Updates the internal interface list. This feature should be readable if the execution cannot performed immediately. The command then returns and the status can be polled. This function interacts with the TLUpdateInterfaceList of the GenTL Producer. It is up to the GenTL Consumer to handle access in case both methods are used.  |\n|  InterfaceSelector | IInteger | R/W | Selector for the different GenTL Producer interfaces.This interface list only changes on execution of InterfaceUpdateList.The selector is 0 based in order to match the index of the C interface.  |\n|  InterfaceID [InterfaceSelector] | IString | R | GenTL Producer wide unique identifier of the selected interface.This interface list only changes on execution of InterfaceUpdateList.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 808,
+      "bottomRightX": 256,
+      "bottomRightY": 825,
+      "content": "#### 7.1.2 Interface Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 831,
+      "bottomRightX": 636,
+      "bottomRightY": 866,
+      "content": "All features that must be accessible in the interface module are listed here. Port functions use the IF_HANDLE to access these features. The Port access for this module is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 237,
+      "topLeftY": 872,
+      "bottomRightX": 479,
+      "bottomRightY": 888,
+      "content": "Table 7-7: Interface information features",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 895,
+      "bottomRightX": 641,
+      "bottomRightY": 916,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 418,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 181 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "index": 428,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 602,
+      "bottomRightY": 251,
+      "content": "- NotInitialized: The optic controller is not initialized.\n- NotSupported: The optic controller is physically connected but not supported.\n- Busy: The optic controller executes a feature access/command.\n- Ready: The optic controller is ready to use.\n- Error: The optic controller encountered an error.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 267,
+      "bottomRightX": 400,
+      "bottomRightY": 289,
+      "content": "### 23.4.7 OpticControllerVendorName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 290,
+      "bottomRightX": 553,
+      "bottomRightY": 504,
+      "content": "|  Name | OpticControllerVendorName[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated String  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 527,
+      "bottomRightX": 371,
+      "bottomRightY": 547,
+      "content": "Name of the manufacturer of the optic controller.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 561,
+      "bottomRightX": 396,
+      "bottomRightY": 584,
+      "content": "### 23.4.8 OpticControllerFamilyName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 585,
+      "bottomRightX": 553,
+      "bottomRightY": 798,
+      "content": "|  Name | OpticControllerFamilyName[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated String  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 821,
+      "bottomRightX": 373,
+      "bottomRightY": 841,
+      "content": "Name of the device family of the optic controller.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 855,
+      "bottomRightX": 391,
+      "bottomRightY": 877,
+      "content": "### 23.4.9 OpticControllerModelName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 879,
+      "bottomRightX": 553,
+      "bottomRightY": 934,
+      "content": "|  Name | OpticControllerModelName[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 429 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

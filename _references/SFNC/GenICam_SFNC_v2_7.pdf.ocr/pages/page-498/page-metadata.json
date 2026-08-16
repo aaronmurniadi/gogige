@@ -1,0 +1,140 @@
+{
+  "index": 497,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 152,
+      "bottomRightX": 214,
+      "bottomRightY": 174,
+      "content": "## 25 Test Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 179,
+      "bottomRightX": 450,
+      "bottomRightY": 197,
+      "content": "Contains the features related to the control of the test features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 213,
+      "bottomRightX": 203,
+      "bottomRightY": 231,
+      "content": "### 25.1 TestControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 236,
+      "bottomRightX": 396,
+      "bottomRightY": 449,
+      "content": "|  Name | TestControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 473,
+      "bottomRightX": 282,
+      "bottomRightY": 492,
+      "content": "Category for Test Control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 507,
+      "bottomRightX": 245,
+      "bottomRightY": 527,
+      "content": "### 25.2 TestPendingAck",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 529,
+      "bottomRightX": 396,
+      "bottomRightY": 742,
+      "content": "|  Name | TestPendingAck  |\n| --- | --- |\n|  Category | TestControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | ms  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 767,
+      "bottomRightX": 734,
+      "bottomRightY": 804,
+      "content": "Tests the device's pending acknowledge feature. When this feature is written, the device waits a time period corresponding to the value of TestPendingAck before acknowledging the write.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 811,
+      "bottomRightX": 732,
+      "bottomRightY": 864,
+      "content": "If this time period is longer than the maximum device response time specified by DeviceLinkCommandTimeout, the device must use a pending acknowledge during the completion of this request.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 871,
+      "bottomRightX": 740,
+      "bottomRightY": 891,
+      "content": "When read, the device returns the current feature value without additional wait time before the acknowledge.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 498 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

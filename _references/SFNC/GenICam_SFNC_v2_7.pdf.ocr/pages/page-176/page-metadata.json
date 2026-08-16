@@ -1,0 +1,137 @@
+{
+  "index": 175,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 134,
+      "bottomRightX": 622,
+      "bottomRightY": 187,
+      "content": "/* Continuous Acquisition of frames in bursts of 10 frames. Each burst is triggered by a Hardware trigger on Line 1. The end of each burst capture is signalled to the host with a FrameBurstEnd event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 189,
+      "bottomRightX": 68,
+      "bottomRightY": 205,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 228,
+      "bottomRightX": 628,
+      "bottomRightY": 512,
+      "content": "AcquisitionMode = Continuous;\nAcquisitionBurstFrameCount = 10;\n\nTriggerSelector = FrameBurstStart;\nTriggerMode = On;\nTriggerActivation = RisingEdge;\nTriggerSource = Line1;\n\nRegister(Camera.EventFrameBurstEnd,CallbackDataObject,CallbackFunctionPtr)\nEventSelector = FrameBurstEnd;\nEventNotification = On;\n\nAcquisitionStart();\n\n...\n\n// In the callback of the end of burst event, get the event timestamp:\nTimestamp = EventExposureEndTimestamp;\n\n...\n\nAcquisitionStop();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 559,
+      "bottomRightX": 638,
+      "bottomRightY": 595,
+      "content": "/* Multi-Frame Acquisition of 50 frames in 5 bursts of 10 frames. Each burst is triggered by a Hardware trigger on Line 1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 596,
+      "bottomRightX": 68,
+      "bottomRightY": 610,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 634,
+      "bottomRightX": 364,
+      "bottomRightY": 769,
+      "content": "AcquisitionMode = MultiFrame;\nAcquisitionFrameCount = 50;\nAcquisitionBurstFrameCount = 10;\n\nTriggerSelector = FrameBurstStart;\nTriggerMode = On;\nTriggerActivation = RisingEdge;\nTriggerSource = Line1;\n\nAcquisitionStart();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 176 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

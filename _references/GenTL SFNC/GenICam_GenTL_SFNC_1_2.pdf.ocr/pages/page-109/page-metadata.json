@@ -1,0 +1,131 @@
+{
+  "index": 108,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 159,
+      "bottomRightX": 698,
+      "bottomRightY": 215,
+      "content": "If a buffer is passed to DSAnnounceBuffer which is not aligned according to the alignment size it is up to the Producer to either reject the buffer and return a GC_ERR_INVALID_BUFFER error code or to cope with a potential overhead and use the unaligned buffer as is.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 223,
+      "bottomRightX": 675,
+      "bottomRightY": 243,
+      "content": "Corresponds to the STREAM_INFO_BUF_ALIGNMENT command of DSGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 263,
+      "bottomRightX": 267,
+      "bottomRightY": 282,
+      "content": "#### 3.4.4 GenICam Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 294,
+      "bottomRightX": 701,
+      "bottomRightY": 329,
+      "content": "This chapter provides the necessary features to use the GenICam feature tree of the Device module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 336,
+      "bottomRightX": 701,
+      "bottomRightY": 375,
+      "content": "Note: In case of discrepancy between the features described in this chapter and the “GenICam Standard text” the GenTL SFNC document prevails.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 389,
+      "bottomRightX": 184,
+      "bottomRightY": 406,
+      "content": "3.4.4.1 Root",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 408,
+      "bottomRightX": 421,
+      "bottomRightY": 621,
+      "content": "|  Name | Root  |\n| --- | --- |\n|  Category | None  |\n|  Level | Mandatory  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 646,
+      "bottomRightX": 391,
+      "bottomRightY": 664,
+      "content": "Provides the Root of the GenICam features tree.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 679,
+      "bottomRightX": 230,
+      "bottomRightY": 696,
+      "content": "3.4.4.2 StreamPort",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 699,
+      "bottomRightX": 421,
+      "bottomRightY": 912,
+      "content": "|  Name | StreamPort  |\n| --- | --- |\n|  Category | None  |\n|  Level | Mandatory  |\n|  Interface | IPort  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 109 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "index": 144,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-41.jpeg](img-41.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 120,
+      "bottomRightX": 507,
+      "bottomRightY": 687,
+      "content": "• Data8s: Generic non-pixel data 8 bit signed.\n• Data16: Generic non-pixel data 16 bit.\n• Data16s: Generic non-pixel data 16 bit signed.\n• Data32: Generic non-pixel data 32 bit.\n• Data32s: Generic non-pixel data 32 bit signed.\n• Data32f: Generic non-pixel data 32 bit floating point.\n• Data64: Generic non-pixel data 64 bit.\n• Data64s: Generic non-pixel data 64 bit signed.\n• Data64f: Generic non-pixel data 64 bit floating point.\n- Raw8: Raw 8 bit.\n- Raw16: Raw 16 bit.\n- Mono12Packed: Mono 12 bit packed (GigE Vision Specific).\n- BayerGR10Packed: Bayer GR 10 bit packed (GigE Vision Specific).\n- BayerRG10Packed: Bayer RG 10 bit packed (GigE Vision Specific).\n- BayerGB10Packed: Bayer GB 10 bit packed (GigE Vision Specific).\n- BayerBG10Packed: Bayer BG 10 bit packed (GigE Vision Specific).\n- BayerGR12Packed: Bayer GR 12 bit packed (GigE Vision Specific).\n- BayerRG12Packed: Bayer RG 12 bit packed (GigE Vision Specific).\n- BayerGB12Packed: Bayer GB 12 bit packed (GigE Vision Specific).\n- BayerBG12Packed: Bayer BG 12 bit packed (GigE Vision Specific).\n- RGB10V1Packed: RGB 10 bit packed (GigE Vision Specific).\n- RGB12V1Packed: RGB 12 bit packed (GigE Vision Specific).\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 725,
+      "bottomRightX": 301,
+      "bottomRightY": 744,
+      "content": "4.36 PixelFormatInfoSelector",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 746,
+      "bottomRightX": 363,
+      "bottomRightY": 946,
+      "content": "|  Name | PixelFormatInfoSelector  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | Mono1p  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 145 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 950,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

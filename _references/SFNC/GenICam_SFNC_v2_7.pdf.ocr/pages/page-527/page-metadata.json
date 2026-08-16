@@ -1,0 +1,141 @@
+{
+  "index": 526,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 144,
+      "bottomRightX": 542,
+      "bottomRightY": 164,
+      "content": "Controls whether PAUSE Frames can be generated on the given logical link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 177,
+      "bottomRightX": 429,
+      "bottomRightY": 198,
+      "content": "### 27.4.17 GevCurrentIPConfigurationLLA",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 201,
+      "bottomRightX": 541,
+      "bottomRightY": 413,
+      "content": "|  Name | GevCurrentIPConfigurationLLA[GevInterfaceSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | True  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 437,
+      "bottomRightX": 711,
+      "bottomRightY": 457,
+      "content": "Controls whether the Link Local Address IP configuration scheme is activated on the given logical link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 463,
+      "bottomRightX": 552,
+      "bottomRightY": 482,
+      "content": "Note: Currently as per the GigE Vision specification, LLA cannot be disabled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 497,
+      "bottomRightX": 444,
+      "bottomRightY": 518,
+      "content": "### 27.4.18 GevCurrentIPConfigurationDHCP",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 519,
+      "bottomRightX": 551,
+      "bottomRightY": 751,
+      "content": "|  Name | GevCurrentIPConfigurationDHCP[GevInterfaceSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 776,
+      "bottomRightX": 629,
+      "bottomRightY": 795,
+      "content": "Controls whether the DHCP IP configuration scheme is activated on the given logical link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 809,
+      "bottomRightX": 498,
+      "bottomRightY": 830,
+      "content": "### 27.4.19 GevCurrentIPConfigurationPersistentIP",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 832,
+      "bottomRightX": 588,
+      "bottomRightY": 940,
+      "content": "|  Name | GevCurrentIPConfigurationPersistentIP[GevInterfaceSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IBoolean  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 527 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

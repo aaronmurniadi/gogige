@@ -1,0 +1,194 @@
+{
+  "index": 42,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 16,
+      "bottomRightX": 744,
+      "bottomRightY": 97,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 115,
+      "bottomRightX": 660,
+      "bottomRightY": 179,
+      "content": "|   | is bidirectional and initiated by the Host System.  |\n| --- | --- |\n|  Event | An asynchronous notification of the occurrence of a fact. Events are transmitted on an Event Channel.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 212,
+      "bottomRightX": 360,
+      "bottomRightY": 232,
+      "content": "## 1.5 Device Communication Model",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 239,
+      "bottomRightX": 700,
+      "bottomRightY": 294,
+      "content": "This section presents the general communication model for the devices controlled using the SFNC. It presents the main elements involved in the communication for control and data streaming between the Host System and the acquisition Device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 338,
+      "bottomRightX": 696,
+      "bottomRightY": 623,
+      "content": "![img-1.jpeg](img-1.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-1.jpeg"
+    },
+    {
+      "topLeftX": 245,
+      "topLeftY": 647,
+      "bottomRightX": 518,
+      "bottomRightY": 667,
+      "content": "Figure 1-1: Device Communication Model",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 692,
+      "bottomRightX": 367,
+      "bottomRightY": 711,
+      "content": "In general, the Device Communication model is:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 727,
+      "bottomRightX": 533,
+      "bottomRightY": 744,
+      "content": "The remote Device and the Host System communicate using a virtual Link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 745,
+      "bottomRightX": 607,
+      "bottomRightY": 763,
+      "content": "The virtual Link is established on an Interface using one or more physical Connections.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 763,
+      "bottomRightX": 670,
+      "bottomRightY": 780,
+      "content": "The Host System controls the remote Device using the features present in its GenICam XML file.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 781,
+      "bottomRightX": 553,
+      "bottomRightY": 799,
+      "content": "The remote Transmitter Device has a data Source that generates a data Stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 799,
+      "bottomRightX": 585,
+      "bottomRightY": 816,
+      "content": "The data Stream is sent to the Host System on a Stream Channel of the virtual Link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 817,
+      "bottomRightX": 626,
+      "bottomRightY": 835,
+      "content": "The reception of the data Stream on a Host Interface is handled by a local receiver Device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 835,
+      "bottomRightX": 547,
+      "bottomRightY": 852,
+      "content": "The local receiver Device writes the data Stream to the Host System memory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 870,
+      "bottomRightX": 571,
+      "bottomRightY": 888,
+      "content": "See section 1.4 Standard Definitions section above for more detailed information.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 903,
+      "bottomRightX": 322,
+      "bottomRightY": 926,
+      "content": "## 1.6 Device Acquisition Model",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 946,
+      "bottomRightX": 695,
+      "bottomRightY": 965,
+      "content": "This section presents the general data acquisition model for the devices controlled using the SFNC. It",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 989,
+      "bottomRightX": 391,
+      "bottomRightY": 1008,
+      "content": "Page 43 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 624,
+      "bottomRightY": 1008,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "index": 101,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-15.jpeg](img-15.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 120,
+      "bottomRightX": 324,
+      "bottomRightY": 141,
+      "content": "3.37 DeviceLinkThroughputLimit",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 141,
+      "bottomRightX": 381,
+      "bottomRightY": 358,
+      "content": "|  Name | DeviceLinkThroughputLimit[DeviceLinkSelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | Bps  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 380,
+      "bottomRightX": 624,
+      "bottomRightY": 431,
+      "content": "Limits the maximum bandwidth of the data that will be streamed out by the device on the selected Link. If necessary, delays will be uniformly inserted between transport layer packets in order to control the peak bandwidth.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 437,
+      "bottomRightX": 616,
+      "bottomRightY": 472,
+      "content": "If the device uses many connections to transmit the data, the feature represents the sum of all the traffic and the bandwidth should be distributed uniformly on the various connections.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 487,
+      "bottomRightX": 641,
+      "bottomRightY": 523,
+      "content": "Any Transport Layer specific bandwidth controls should be kept in sync with this control as much as possible.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 559,
+      "bottomRightX": 329,
+      "bottomRightY": 578,
+      "content": "3.38 DeviceLinkConnectionCount",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 580,
+      "bottomRightX": 381,
+      "bottomRightY": 798,
+      "content": "|  Name | DeviceLinkConnectionCount[DeviceLinkSelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 819,
+      "bottomRightX": 534,
+      "bottomRightY": 838,
+      "content": "Returns the number of physical connection of the device used by a particular Link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 868,
+      "bottomRightX": 310,
+      "bottomRightY": 887,
+      "content": "3.39 DeviceLinkHeartbeatMode",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 889,
+      "bottomRightX": 381,
+      "bottomRightY": 934,
+      "content": "|  Name | DeviceLinkHeartbeatMode[DeviceLinkSelector]  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 102 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

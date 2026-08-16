@@ -1,0 +1,102 @@
+{
+  "index": 27,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-41.jpeg](img-41.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 152,
+      "bottomRightX": 637,
+      "bottomRightY": 202,
+      "content": "added to the address. Alternatively the offset can be taken from a node <pIndex pOffset=\"OffsetValue\">. If neither Offset nor pOffset attribute is given the register's length is taken as offset.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 209,
+      "bottomRightX": 636,
+      "bottomRightY": 243,
+      "content": "The <pInvalidator> element contains the name of a node that when changed, will invalidate the content of this node as described in section 2.6.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 248,
+      "bottomRightX": 636,
+      "bottomRightY": 283,
+      "content": "The following example shows how to use this mechanism for indirect addressing (see also Figure 13):",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 296,
+      "bottomRightX": 393,
+      "bottomRightY": 611,
+      "content": "<Integer Name=\"BaseAddress\">\n    <Value>0xff00</Value>\n</Integer>\n\n<IntReg Name=\"Gain\">\n    <Address>0x04</Address>\n    <pAddress>BaseAddress</pAddress>\n    <Length>4</Length>\n    <AccessMode>RW</AccessMode>\n    <pPort>Device</pPort>\n    <Sign>Unsigned</Sign>\n    <Endianess>LittleEndian</Endianess>\n</IntReg>\n\n<IntReg Name=\"Offset\">\n    <Address>0x08</Address>\n    <pAddress>BaseAddress</pAddress>\n    <Length>4</Length>\n    <AccessMode>RW</AccessMode>\n    <pPort>Device</pPort>\n    <Sign>Unsigned</Sign>\n    <Endianess>LittleEndian</Endianess>\n</IntReg>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 619,
+      "bottomRightX": 374,
+      "bottomRightY": 636,
+      "content": "This example mimics a C/C++ struct of the form:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 647,
+      "bottomRightX": 427,
+      "bottomRightY": 716,
+      "content": "struct { // BaseAddress 0xff00\n    uint32_t Reserved;\n    uint32_t Gain; // Offset 0x04\n    uint32_t Offset; // Offset 0x08\n};",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 725,
+      "bottomRightX": 636,
+      "bottomRightY": 775,
+      "content": "The value for the struct's base address comes from a BaseAddress constant integer node and is fed into the node using a <pAddress> element. Each element of the (Gain and Offset) struct has an offset that is added to the base address using an <Address> element.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 28 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

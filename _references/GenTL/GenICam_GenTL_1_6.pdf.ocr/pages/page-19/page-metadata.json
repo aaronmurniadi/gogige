@@ -1,0 +1,129 @@
+{
+  "index": 18,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 616,
+      "bottomRightY": 247,
+      "content": "- Dynamic loading of libraries: it is easily possible to dynamically load and call C style functions. This enables the implementation of a GenTL Consumer dynamically loading one or more GenTL Producers at runtime.\n- Upgradeability: a C library can be designed in a way that it is binary compatible to earlier versions. Thus the GenTL Consumer does not need to be recompiled if a version change occurs.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 254,
+      "bottomRightX": 635,
+      "bottomRightY": 305,
+      "content": "Although a C interface was chosen because of the reasons mentioned above, the actual GenTL Producer implementation can be done in an object-oriented language. Except for the global functions, all interface functions work on handles which can be mapped to objects.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 311,
+      "bottomRightX": 635,
+      "bottomRightY": 344,
+      "content": "Any programming language that can export a library with a C interface can be used to implement a GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 352,
+      "bottomRightX": 635,
+      "bottomRightY": 400,
+      "content": "To guarantee interchangeability of GenTL Producers and GenTL Consumers no language specific feature except the ones compatible to ANSI C may be used in the interface of the GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 416,
+      "bottomRightX": 234,
+      "bottomRightY": 435,
+      "content": "#### 2.3.2 Configuration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 437,
+      "bottomRightX": 636,
+      "bottomRightY": 538,
+      "content": "Each module provides GenTL Port functionality so that the GenICam GenApi (or any other similar, non-reference implementations) can be used to access a module's configuration. The basic operations on a GenTL Producer implementation can be done with the C interface without using a specific module configuration. More complex or implementation-specific access can be done via the flexible GenApi Feature interface using the GenTL Port functionality and the provided GenApi XML description.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 544,
+      "bottomRightX": 635,
+      "bottomRightY": 612,
+      "content": "Each module brings this XML description along with which the module's port can be used to read and/or modify settings in the module. To do that each module has its own virtual register map that can be accessed by the Port functions. Thus, the generic way of accessing the configuration of a remote device has been extended to the transport layer modules themselves.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 626,
+      "bottomRightX": 267,
+      "bottomRightY": 646,
+      "content": "#### 2.3.3 Signaling (Events)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 648,
+      "bottomRightX": 635,
+      "bottomRightY": 715,
+      "content": "Each module provides the possibility to notify the GenTL Consumer of certain events. As an example, a New Buffer event can be raised/signaled if new image data has arrived from a remote device. The number of events supported for a specific module depends on the module and its implementation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 721,
+      "bottomRightX": 635,
+      "bottomRightY": 756,
+      "content": "The C interface enables the GenTL Consumer to register events on a module. The event object used is platform and implementation dependent, but is encapsulated in the C interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 19 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

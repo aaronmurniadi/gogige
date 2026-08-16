@@ -1,0 +1,123 @@
+{
+  "index": 436,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 258,
+      "bottomRightY": 164,
+      "content": "### 23.4.24 FocalPower",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 497,
+      "bottomRightY": 436,
+      "content": "|  Name | FocalPower [OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | dpt  |\n|  Visibility | Beginner  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 459,
+      "bottomRightX": 734,
+      "bottomRightY": 495,
+      "content": "Sets the focal power (in diopters/dpt). This is mostly used for liquid lenses and indicates how much a liquid lens focuses.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 512,
+      "bottomRightX": 349,
+      "bottomRightY": 532,
+      "content": "### 23.4.25 ObjectSensorDistance",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 535,
+      "bottomRightX": 497,
+      "bottomRightY": 804,
+      "content": "|  Name | ObjectSensorDistance [OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | mm  |\n|  Visibility | Beginner  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 827,
+      "bottomRightX": 524,
+      "bottomRightY": 847,
+      "content": "Distance from the image sensor surface to the object in millimeters (mm).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 861,
+      "bottomRightX": 335,
+      "bottomRightY": 883,
+      "content": "### 23.4.26 FocalLengthInitialize",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 885,
+      "bottomRightX": 497,
+      "bottomRightY": 940,
+      "content": "|  Name | FocalLengthInitialize[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 437 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

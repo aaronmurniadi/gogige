@@ -1,0 +1,121 @@
+{
+  "index": 57,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 292,
+      "bottomRightY": 61,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 77,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 77,
+      "bottomRightX": 387,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 65,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 920,
+      "bottomRightY": 224,
+      "content": "|  UserOutputSelector | R | IEnumeration | R/W | - | E | Selects which bit of the User Output register will be set by UserOutputValue.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  UserOutputValue[UserOutputSelector] | R | IBoolean | R/W | - | E | Sets the value of the bit selected by UserOutputSelector.  |\n|  UserOutputValueAll | O | IInteger | R/W | - | E | Sets the value of all the bits of the User Output register.  |\n|  UserOutputValueAllMask | O | IInteger | R/W | - | E | Sets the write mask to apply to the value specified by UserOutputValueAll before writing it in the User Output register.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 256,
+      "bottomRightX": 321,
+      "bottomRightY": 275,
+      "content": "## 2.8 Counter and Timer Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 279,
+      "bottomRightX": 886,
+      "bottomRightY": 295,
+      "content": "Contains the features related to the usage of programmable counters and timers (See the Counter and Timer Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 303,
+      "bottomRightX": 632,
+      "bottomRightY": 319,
+      "content": "Table 2-8: Counter and Timer Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 325,
+      "bottomRightX": 920,
+      "bottomRightY": 643,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  CounterAndTimerControl | R | ICategory | R | - | E | Category that contains the Counter and Timer control features.  |\n|  CounterSelector | R | IEnumeration | R/W | - | E | Selects which Counter to configure.  |\n|  CounterEventSource[CounterSelector] | R | IEnumeration | R/W | - | E | Select the events that will be the source to increment the Counter.  |\n|  CounterEventActivation[CounterSelector] | R | IEnumeration | R/W | - | E | Selects the Activation mode Event Source signal.  |\n|  CounterResetSource[CounterSelector] | R | IEnumeration | R/W | - | E | Selects the signals that will be the source to reset the Counter.  |\n|  CounterResetActivation[CounterSelector] | R | IEnumeration | R/W | - | E | Selects the Activation mode of the Counter Reset Source signal.  |\n|  CounterReset[CounterSelector] | R | ICommand | (R)/W | - | E | Does a software reset of the selected Counter and starts it.  |\n|  CounterValue[CounterSelector] | R | IInteger | R/W | - | E | Reads or writes the current value of the selected Counter.  |\n|  CounterValueAtReset[CounterSelector] | R | IInteger | R | - | E | Reads the value of the selected Counter when it was reset by a trigger or by an explicit CounterReset command.  |\n|  CounterDuration[CounterSelector] | R | IInteger | R/W | - | E | Sets the duration (or number of events) before the CounterEnd event is generated.  |\n|  CounterStatus[CounterSelector] | R | IEnumeration | R | - | E | Returns the current status of the Counter.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 375,
+      "bottomRightY": 668,
+      "content": "Page 58 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

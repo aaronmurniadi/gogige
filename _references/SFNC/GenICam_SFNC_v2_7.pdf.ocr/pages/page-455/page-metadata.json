@@ -1,0 +1,131 @@
+{
+  "index": 454,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 141,
+      "bottomRightX": 496,
+      "bottomRightY": 279,
+      "content": "|  Interface | Integer  |\n| --- | --- |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 300,
+      "bottomRightX": 589,
+      "bottomRightY": 319,
+      "content": "Returns the unique integer Identifier value of the Region that the image comes from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 326,
+      "bottomRightX": 475,
+      "bottomRightY": 345,
+      "content": "This generally maps to the corresponding RegionIDValue feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 386,
+      "bottomRightX": 335,
+      "bottomRightY": 407,
+      "content": "### 24.9 ChunkComponentSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 410,
+      "bottomRightX": 396,
+      "bottomRightY": 800,
+      "content": "|  Name | ChunkComponentSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Intensity Infrared Ultraviolet Range Reflectance Disparity Confidence Scatter Multispectral Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 825,
+      "bottomRightX": 418,
+      "bottomRightY": 844,
+      "content": "Selects the Component from which to retrieve data from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 850,
+      "bottomRightX": 499,
+      "bottomRightY": 869,
+      "content": "This generally maps to the corresponding ComponentSelector feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 877,
+      "bottomRightX": 187,
+      "bottomRightY": 893,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 903,
+      "bottomRightX": 490,
+      "bottomRightY": 948,
+      "content": "- Intensity: The image data is the intensity component (visible).\n- Infrared: The image data is the infrared component.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 455 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

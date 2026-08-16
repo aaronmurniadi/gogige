@@ -1,0 +1,110 @@
+{
+  "index": 284,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 161,
+      "bottomRightX": 745,
+      "bottomRightY": 179,
+      "content": "Selects the source signal for the input into the Logic Block. True or False indicates the input is forced constant.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 186,
+      "bottomRightX": 177,
+      "bottomRightY": 203,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 213,
+      "bottomRightX": 736,
+      "bottomRightY": 927,
+      "content": "- **True**: Logic Block input is forced to One.\n- **False**: Logic Block input is forced to Zero.\n- **AcquisitionTriggerWait**: Device is currently waiting for a trigger for the capture of one or many Frames.\n- **AcquisitionTrigger**: Device is receiving a trigger for the capture of one or many Frames.\n- **AcquisitionTriggerMissed**: Device has missed a trigger for the capture of one or many Frames.\n- **AcquisitionActive**: Device is acquiring one or many Frames.\n- **FrameTriggerWait**: Device is currently waiting for a Frame start trigger.\n- **FrameTrigger**: Device is receiving a Frame start trigger.\n- **FrameTriggerMissed**: Device has missed a Frame start trigger.\n- **FrameActive**: Device is currently doing the capture of a Frame.\n- **ExposureActive**: Device is doing the exposure of a Frame (or Line).\n- **LineTriggerWait**: Device is currently waiting for a Line start trigger.\n- **LineTrigger**: Device is receiving a Line start trigger.\n- **LineTriggerMissed**: Device has missed a Line start trigger.\n- **LineActive**: Device is currently doing the capture of a Line.\n- **Counter0Active, Counter1Active, Counter2Active**, ...: The chosen counter is in active state (counting).\n- **Timer0Active, Timer1Active, Timer2Active**, ...: The chosen Timer is in active state.\n- **Encoder0, Encoder1, Encoder2**, ...: The chosen Encoder Output state.\n- **LogicBlock0, LogicBlock1, LogicBlock2**, ...: The choosen Logic Block output state.\n- **Line0, Line1, Line2**, ...: The chosen I/OLine state.\n- **UserOutput0, UserOutput1, UserOutput2**, ...: The chosen User Output bit state as defined by its current **UserOutputValue**.\n- **SoftwareSignal0, SoftwareSignal1, SoftwareSignal2**, ...: The choosen Software Signal output state.\n- **Stream0TransferActive, Stream1TransferActive**, ...: Transfer on the stream is active.\n- **Stream0TransferPaused, Stream1TransferPaused**, ...: Transfer on the stream is paused.\n- **Stream0TransferStopping, Stream1TransferStopping**, ...: Transfer on the stream is stopping.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 285 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "index": 38,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-37.jpeg](img-37.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 155,
+      "bottomRightX": 648,
+      "bottomRightY": 191,
+      "content": "the Device Capability register. In case the length_written field (and the 2 reserved bytes) is sent, the length field is to be set to 4. In case the length_written field is not sent the length field is 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 218,
+      "bottomRightX": 335,
+      "bottomRightY": 238,
+      "content": "#### 4.4.5. Pending Acknowledge",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 259,
+      "bottomRightX": 649,
+      "bottomRightY": 376,
+      "content": "The pending acknowledge informs the sender that the command, sent with the given request_id, needs more time to execute than stated in the MDRT register. This allows the temporary adjustment of the timeout mechanism on the command sender side. This “new” temporary timeout is only valid for the command referenced by request_id. Multiple pending acknowledges can be sent consecutively. The start time for the timeout specified is the time when the pending ack is sent, assuming that the time needed to transfer the command is roughly known. The timeout is not referring to the time the original command is sent.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 404,
+      "bottomRightX": 645,
+      "bottomRightY": 637,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Description  |\n| --- | --- | --- |\n|  Prefix  |   |   |\n|  CCD-ACK (command_id = PENDING_ACK)  |   |   |\n|  2 | 0 | reservedReserved, set to 0.  |\n|  2 | 2 | temporary timeoutTemporary timeout for the command sent with the givenrequest_id. The timeout is specified in ms. The reference time/start time for the temporary timeout is the time the PendingAck is sent.  |\n|  Postfix  |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 268,
+      "topLeftY": 637,
+      "bottomRightX": 450,
+      "bottomRightY": 652,
+      "content": "Table 12 – Pending Ack SCD-Fields",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 680,
+      "bottomRightX": 389,
+      "bottomRightY": 699,
+      "content": "#### 4.4.6. ReadMemStacked Command",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 720,
+      "bottomRightX": 644,
+      "bottomRightY": 789,
+      "content": "The ReadMemStacked Command allows sending multiple read requests in one packet. The resulting data must not exceed the maximum packet size. Start address and length of any read access is byte aligned unless the underlying technology is not. The count of read commands within the packet n has to be deduced by the receiver using the packet size sent by the transmitter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 816,
+      "bottomRightX": 645,
+      "bottomRightY": 861,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Description  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 39 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

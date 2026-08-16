@@ -1,0 +1,120 @@
+{
+  "index": 146,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 533,
+      "bottomRightY": 81,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 118,
+      "bottomRightX": 364,
+      "bottomRightY": 510,
+      "content": "|  Category | ImageFormatControl  |\n| --- | --- |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | Mono MonoSigned MonoPacked RGBPacked BGRPacked RGBAPacked BGRAPacked RGBPlanar YUV411Packed YUV422Packed YUV444Packed YUYVPacked Raw RawPacked  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 532,
+      "bottomRightX": 653,
+      "bottomRightY": 566,
+      "content": "This feature is deprecated. It represents the coding of the pixels in the image. Raw gives the data in the native format of the sensor.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 574,
+      "bottomRightX": 169,
+      "bottomRightY": 589,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 598,
+      "bottomRightX": 310,
+      "bottomRightY": 941,
+      "content": "- Mono: Mono.\n- MonoSigned: Mono signed.\n- MonoPacked: Mono packed.\n- RGBPacked: RGB packed.\n- BGRPacked: BGR packed.\n- RGBAPacked: RGBA packed.\n- BGRAPacked: BGRA packed.\n- RGBPlanar: RGB planar.\n- YUV411Packed: YUV 411 packed.\n- YUV422Packed: YUV 422 packed.\n- YUV444Packed: YUV 444 packed.\n- YUYVPacked: YUYV packed.\n- Raw: Raw.\n- RawPacked: Raw packed.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 147 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

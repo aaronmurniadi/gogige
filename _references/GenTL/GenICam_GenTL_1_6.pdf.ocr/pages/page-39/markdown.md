@@ -1,0 +1,19 @@
+|  ![img-49.jpeg](img-49.jpeg)CAN |   | ![img-50.jpeg](img-50.jpeg)emva  |
+| --- | --- | --- |
+|  Version 1.6 | GenTL Standard  |   |
+
+through calls to EventGetData are terminated with a GC ERR ABORT when the event object is unregistered through GCUnregisterEvent.
+
+After an EVENT_HANDLE is obtained the GenTL Consumer can wait for the event object to be signaled by calling the EventGetData function. Upon delivery of an event, the event object carries data. This data is copied into a GenTL Consumer provided buffer when the call to EventGetData was successful.
+
+##### 4.2.3.2 Notification and Data Retrieval
+
+If the event object is signaled, data was put into the event data queue at some point in time. The EventGetData function can be called to retrieve the actual data. As long as there is only one listener thread this function always returns the stored data or, if no data is available waits for an event being signaled with the provided timeout. If multiple listener threads are present only one of them returns with the event data while the others stay in a waiting state until either a timeout occurs, EventKill is issued or until the next event data becomes available. If EventKill is called exactly one call to EventGetData will return GC ERR ABORT even if EventKill is called while no EventGetData call was waiting. Also the return of GC ERR ABORT has higher priority than delivering the next event from the queue so that even if there are one or more events in the queue ready to be delivered to the user through a call to EventGetData, after a call to EventKill the next call to EventGetData will return GC ERR ABORT. In this case no event is removed from the queue and no data is delivered to the GenTL Consumer. The counter EVENT_NUM_FIRED is not affected by the calls to EventKill.
+
+In case an event object is unregistered through a call to GCUnregisterEvent, it's previous state will be lost. This also applies to previous calls to the EventKill function. When re-registering an event through a call to to GCRegisterEvent on this port later on EventGetData will not return GC ERR ABORT until EventKill is called again.
+
+When data is read with this function the data is removed from the queue. Afterwards the GenTL Producer implementation checks whether the event data queue is empty or not. If there is more data available the event object stays signaled and the next call to EventGetData will deliver the next queue entry. Otherwise the event object is reset to not signaled state. The maximum size of the buffer delivered through EventGetData can be queried using EVENT_SIZE_MAX with the EventGetInfo function. The GenTL Consumer must not perform data size queries since a call of EventGetData with a NULL pointer for the buffer will remove the data from the queue without delivering it. In this case the event is counted as if it would have been fired and the data is discarded.
+
+The exact type of data is dependent on the event type and the GenTL Producer implementation. The data is copied into an user buffer allocated by the GenTL Consumer. The content of the event data can be queried with the EventGetDataInfo function. The maximum size of the buffer to be filled is defined by the event type and can be queried using EVENT_INFO_DATA_SIZE_MAX after the buffer is delivered. This information can be queried using the EventGetInfo function.
+
+The events are handled as described in the following steps:

@@ -1,0 +1,84 @@
+{
+  "index": 80,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 292,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 77,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 77,
+      "bottomRightX": 387,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 510,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 921,
+      "bottomRightY": 640,
+      "content": "|  GevDeviceModeCharacterSet | O | IEnumeration | R | - | I | This feature is deprecated (See DeviceCharacterSet).  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  GevPhysicalLinkConfiguration | O | IEnumeration | R/W | - | E | Controls the principal physical link configuration to use on next restart/power-up of the device.  |\n|  GevCurrentPhysicalLinkConfiguration | O | IEnumeration | R | - | E | Indicates the current physical link configuration of the device.  |\n|  GevActiveLinkCount | O | IInteger | R | - | I | Indicates the current number of active logical links.  |\n|  GevSupportedOptionSelector | O | IEnumeration | R/W | - | E | Selects the GEV option to interrogate for existing support.  |\n|  GevSupportedOption[GevSupportedOptionSelector] | O | IBoolean | R | - | E | Returns if the selected GEV option is supported.  |\n|  GevInterfaceSelector | O | IInteger | R/W | - | B | Selects which logical link to control.  |\n|  GevLinkSpeed[GevInterfaceSelector] | O | IInteger | R | Mbps | I | This feature is deprecated (See DeviceLinkSpeed).  |\n|  GevMACAddress[GevInterfaceSelector] | O | IInteger | R | - | B | MAC address of the logical link.  |\n|  GevPAUSEFrameReception[GevInterfaceSelector] | O | IBoolean | R/(W) | - | E | Controls whether incoming PAUSE Frames are handled on the given logical link.  |\n|  GevPAUSEFrameTransmission[GevInterfaceSelector] | O | IBoolean | R/(W) | - | E | Controls whether PAUSE Frames can be generated on the given logical link.  |\n|  GevCurrentIPConfigurationLLA[GevInterfaceSelector] | O | IBoolean | R/W | - | B | Controls whether the Link Local Address IP configuration scheme is activated on the given logical link.  |\n|  GevCurrentIPConfigurationDHCP[GevInterfaceSelector] | O | IBoolean | R/W | - | B | Controls whether the DHCP IP configuration scheme is activated on the given logical link.  |\n|  GevCurrentIPConfigurationPersistentIP[GevInterfaceSelector] | O | IBoolean | R/W | - | B | Controls whether the PersistentIP configuration scheme is activated on the given logical link.  |\n|  GevCurrentIPAddress[GevInterfaceSelector] | O | IInteger | R | - | B | Reports the IP address for the given logical link.  |\n|  GevCurrentSubnetMask[GevInterfaceSelector] | O | IInteger | R | - | B | Reports the subnet mask of the given logical link.  |\n|  GevCurrentDefaultGateway[GevInterfaceSelector] | O | IInteger | R | - | B | Reports the default gateway IP address of the given logical link.  |\n|  GevIPConfigurationStatus[GevInterface | O | IEnumeration | R | - | B | Reports the current IP configuration status.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 122,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 375,
+      "bottomRightY": 668,
+      "content": "Page 81 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

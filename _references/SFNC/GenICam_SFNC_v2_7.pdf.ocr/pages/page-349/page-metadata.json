@@ -1,0 +1,156 @@
+{
+  "index": 348,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 570,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 531,
+      "bottomRightY": 262,
+      "content": "- Stream0: The transfer features control the data stream 0.\n- Stream1: The transfer features control the data stream 1.\n- Stream2: The transfer features control the data stream 2.\n- ...\n- All: The transfer features control all the data streams simultaneously.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 276,
+      "bottomRightX": 277,
+      "bottomRightY": 295,
+      "content": "## 20.5 TransferControlMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 299,
+      "bottomRightX": 515,
+      "bottomRightY": 548,
+      "content": "|  Name | TransferControlMode[TransferSelector]  |\n| --- | --- |\n|  Category | TransferControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Basic Automatic UserControlled  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 572,
+      "bottomRightX": 325,
+      "bottomRightY": 590,
+      "content": "Selects the control method for the transfers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 598,
+      "bottomRightX": 177,
+      "bottomRightY": 614,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 634,
+      "bottomRightX": 754,
+      "bottomRightY": 835,
+      "content": "- Basic: Transfer flow control mechanism is disabled. The TransferStart, TransferPause, TransferResume, TransferStop and TransferAbort features are not available to the user. This transfer mode is used to ensure compatibility with devices not aware of the transfer flow control mechanism.\n- Automatic: Transfer flow control mechanism is controlled automatically. The Transfer features are controlled transparently by the acquisition features.\n  - TransferStart is called during the AcquisitionStart.\n  - TransferStop is never called.\n  - TransferAbort is called during the AcquisitionAbort.\n  - TransferOperationMode is read only and set to \"Continuous\".",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 851,
+      "bottomRightX": 660,
+      "bottomRightY": 869,
+      "content": "If available, the TransferPause and TransferResume features are controlled by the user.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 887,
+      "bottomRightX": 752,
+      "bottomRightY": 924,
+      "content": "- UserControlled: Transfer flow control mechanism is controlled by the user. The TransferMode, TransferStart, TransferStop, TransferAbort, TransferPause and TransferResume features are used",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 349 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

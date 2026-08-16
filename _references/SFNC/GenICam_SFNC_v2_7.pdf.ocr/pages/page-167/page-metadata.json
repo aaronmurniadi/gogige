@@ -1,0 +1,67 @@
+{
+  "index": 166,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 48,
+      "topLeftY": 41,
+      "bottomRightX": 704,
+      "bottomRightY": 118,
+      "content": "|  ![img-65.jpeg](img-65.jpeg) |   | ![img-66.jpeg](img-66.jpeg)emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 173,
+      "bottomRightX": 846,
+      "bottomRightY": 513,
+      "content": "![img-67.jpeg](img-67.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-67.jpeg"
+    },
+    {
+      "topLeftX": 299,
+      "topLeftY": 538,
+      "bottomRightX": 750,
+      "bottomRightY": 559,
+      "content": "Figure 5-10: Multi-Frame Acquisition with AcquisitionStart trigger",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 685,
+      "bottomRightX": 121,
+      "bottomRightY": 700,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 279,
+      "topLeftY": 685,
+      "bottomRightX": 377,
+      "bottomRightY": 702,
+      "content": "Page 167 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 423,
+      "topLeftY": 686,
+      "bottomRightX": 591,
+      "bottomRightY": 702,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

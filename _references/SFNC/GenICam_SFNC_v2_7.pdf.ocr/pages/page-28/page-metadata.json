@@ -1,0 +1,93 @@
+{
+  "index": 27,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 159,
+      "topLeftY": 27,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GEN<|i>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 577,
+      "bottomRightY": 77,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 139,
+      "bottomRightX": 679,
+      "bottomRightY": 886,
+      "content": "|  Version | Date | Changed by | Change  |\n| --- | --- | --- | --- |\n|  Release 1.5.1 | 20.09.2011 | Stephane Maurice, Matrox | - Added FrameBurst triggers functionality and their associated features. - Corrected signal names in the figures of the Acquisition control chapter. - Added acquisition timing diagrams in the Acquisition control chapter to illustrate the typical acquisition cases. - Removed and changed some GigE Vision mentions that were too standard specific to accommodate other TL standards. - UserOutputValueAll now mentions that UserOutput0 maps to the Lsb of the register instead of saying Bit 0. - AcquisitionStart is now (Read)/Write instead of Read/Write. - Added Timestamp features. - Added clarifications for Width, WidthMax, Height, and HeightMax. - Added clarifications for the usage of the All enumeration of GainSelector, BlackLevelSelector and WhiteClipSelector. - Replaced AOI per ROI to better match other standards nomenclature. - Made DeviceTapGeometry less Camera Link specific. - Added a note for ExposureTime that the feature is inactive if ExposureAuto is On. - Added a note for AcquisitionLineRate that the feature is inactive if TriggerMode is On. - Minor corrections from 1.5.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 295,
+      "topLeftY": 989,
+      "bottomRightX": 390,
+      "bottomRightY": 1007,
+      "content": "Page 28 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 623,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

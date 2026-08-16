@@ -1,0 +1,95 @@
+{
+  "index": 135,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-188.jpeg](img-188.jpeg)CAM |   | ![img-189.jpeg](img-189.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 136,
+      "bottomRightX": 644,
+      "bottomRightY": 560,
+      "content": "|  Enumerator | Impl | Value | Description  |\n| --- | --- | --- | --- |\n|  DEVICE_INFO_VERSION | O | 8 | Device version in string format. If the information is not known, the query should result in GC_ERR_NOT_AVAILABLE. Data type: STRING  |\n|  DEVICE_INFO_TIMESTAMP_FREQUENCY | O | 9 | Tick frequency of the device's timestamp counter in ticks per second. The counter is used for example to assign timestamps to the individual acquired buffers (BUFFER_INFO_TIMESTAMP). Data type: UINT64  |\n|  DEVICE_INFO_CUSTOM_ID | O | 1000 | Starting value for GenTL Producer custom IDs which are implementation specific. If a generic GenTL Consumer is using custom DEVICE_INFO_CMDs provided through a specific GenTL Producer implementation it must differentiate the handling of different GenTL Producer implementations in case other implementations will not provide that custom id or will use a different meaning with it.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 590,
+      "bottomRightX": 332,
+      "bottomRightY": 607,
+      "content": "#### 6.4.4 Data Stream Enumerations",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 622,
+      "bottomRightX": 277,
+      "bottomRightY": 640,
+      "content": "##### 6.4.4.1 ACQ_QUEUE_TYPE",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 663,
+      "bottomRightX": 252,
+      "bottomRightY": 680,
+      "content": "enum ACQ_QUEUE_TYPE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 689,
+      "bottomRightX": 637,
+      "bottomRightY": 724,
+      "content": "This enumeration commands define from which to which queue/pool buffers are flushed with the DSFlushQueue function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 729,
+      "bottomRightX": 641,
+      "bottomRightY": 750,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 136 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

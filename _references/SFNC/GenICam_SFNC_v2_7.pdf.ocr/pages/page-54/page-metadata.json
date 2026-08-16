@@ -1,0 +1,84 @@
+{
+  "index": 53,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 76,
+      "bottomRightX": 122,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 106,
+      "bottomRightX": 923,
+      "bottomRightY": 635,
+      "content": "|  AcquisitionStatus[AcquisitionStatusSelector] | R | IBoolean | R | - | E | Reads the state of the internal acquisition signal selected using AcquisitionStatusSelector.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  TriggerSelector | R | IEnumeration | R/W | - | B | Selects the type of trigger to configure.  |\n|  TriggerMode[TriggerSelector] | R | IEnumeration | R/W | - | B | Controls if the selected trigger is active.  |\n|  TriggerSoftware[TriggerSelector] | R | ICommand | (R)/W | - | B | Generates an internal trigger.  |\n|  TriggerSource[TriggerSelector] | R | IEnumeration | R/W | - | B | Specifies the internal signal or physical input Line to use as the trigger source.  |\n|  TriggerActivation[TriggerSelector] | R | IEnumeration | R/W | - | B | Specifies the activation mode of the trigger.  |\n|  TriggerOverlap[TriggerSelector] | R | IEnumeration | R/W | - | E | Specifies the type trigger overlap permitted with the previous frame or line.  |\n|  TriggerDelay[TriggerSelector] | R | IFloat | R/W | us | E | Specifies the delay in microseconds (us) to apply after the trigger reception before activating it.  |\n|  TriggerDivider[TriggerSelector] | R | IInteger | R/W | - | E | Specifies a division factor for the incoming trigger pulses.  |\n|  TriggerMultiplier[TriggerSelector] | R | IInteger | R/W | - | E | Specifies a multiplication factor for the incoming trigger pulses.  |\n|  ExposureMode | R | IEnumeration | R/W | - | B | Sets the operation mode of the Exposure.  |\n|  ExposureTimeMode | O | IEnumeration | R/W | - | B | Sets the configuration mode of the ExposureTime feature.  |\n|  ExposureTimeSelector | O | IEnumeration | R/W | - | B | Selects which exposure time is controlled by the ExposureTime feature.  |\n|  ExposureTime[ExposureTimeSelector] | R | IFloat | R/W | us | B | Sets the Exposure time when ExposureMode is Timed and ExposureAuto is Off.  |\n|  ExposureAuto | O | IEnumeration | R/W | - | B | Sets the automatic exposure mode when ExposureMode is Timed.  |\n|  MultiSlopeMode | O | IEnumeration | R/W | - | B | Controls multi-slope exposure state.  |\n|  MultiSlopeKneePointCount | O | IInteger | R/W | - | E | The number of knee-points as well as the number of additional exposure slopes used for multi-slope exposure.  |\n|  MultiSlopeKneePointSelector | O | IInteger | R/W | - | E | Selects the parameters for controlling an additional slope in multi-slope exposure.  |\n|  MultiSlopeExposureLimit[MultiSlopeKneePointSelector] | O | IFloat | R/W | % | E | Percent of the ExposureTime at a certain knee-point of multi-slope exposure.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 54 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

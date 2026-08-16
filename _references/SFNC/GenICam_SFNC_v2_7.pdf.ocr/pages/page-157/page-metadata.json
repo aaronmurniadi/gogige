@@ -1,0 +1,121 @@
+{
+  "index": 156,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-49.jpeg](img-49.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 127,
+      "bottomRightX": 259,
+      "bottomRightY": 150,
+      "content": "## 5 Acquisition Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 153,
+      "bottomRightX": 635,
+      "bottomRightY": 202,
+      "content": "The Acquisition Control chapter describes all features related to image acquisition, including the trigger and exposure control. It describes the basic model for acquisition and the typical behavior of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 234,
+      "bottomRightX": 468,
+      "bottomRightY": 256,
+      "content": "### 5.1 Acquisition related vocabulary and signals",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 273,
+      "bottomRightX": 644,
+      "bottomRightY": 323,
+      "content": "This section describes the vocabulary and terms used to describe and name the acquisition related features. It also defines the acquisition related signals and their position in time during the acquisition of images by a device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 331,
+      "bottomRightX": 652,
+      "bottomRightY": 383,
+      "content": "An Acquisition is composed of one or many Frames made of Line(s). The Frames of an Acquisition can optionally be grouped in smaller Bursts that are triggered individually. An Acquisition is defined as the capture of a sequence of one or many Frame(s) (See Figure 5-1).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 388,
+      "bottomRightX": 619,
+      "bottomRightY": 423,
+      "content": "The transfer of the frame(s) of an Acquisition starts with the beginning of the transfer of the first frame and ends with the completion of the transfer of the last one.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 26,
+      "topLeftY": 450,
+      "bottomRightX": 639,
+      "bottomRightY": 824,
+      "content": "![img-50.jpeg](img-50.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-50.jpeg"
+    },
+    {
+      "topLeftX": 228,
+      "topLeftY": 832,
+      "bottomRightX": 474,
+      "bottomRightY": 850,
+      "content": "Figure 5-1: Acquisition signals definition",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 157 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

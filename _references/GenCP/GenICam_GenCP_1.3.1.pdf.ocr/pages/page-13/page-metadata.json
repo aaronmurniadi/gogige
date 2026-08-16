@@ -1,0 +1,138 @@
+{
+  "index": 12,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-7.jpeg](img-7.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 155,
+      "bottomRightX": 641,
+      "bottomRightY": 191,
+      "content": "A change in the Major Version Number indicates a significant feature change and a potential break in backward compatibility.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 196,
+      "bottomRightX": 578,
+      "bottomRightY": 230,
+      "content": "A change in the Minor Version Number indicates minor feature changes, bug fixes, text clarifications and assures backward compatibility.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 257,
+      "bottomRightX": 193,
+      "bottomRightY": 277,
+      "content": "### 2.5. CRC",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 298,
+      "bottomRightX": 634,
+      "bottomRightY": 353,
+      "content": "The CRC checksum used on the packets depends on the underlying technology. If the underlying technology already provides a CRC, that service is used. If the underlying technology does not provide a CRC, the checksum is defined in the Appendix.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 378,
+      "bottomRightX": 191,
+      "bottomRightY": 397,
+      "content": "### 2.6. Link",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 419,
+      "bottomRightX": 637,
+      "bottomRightY": 471,
+      "content": "A link is the physical end to end connection between a device and a host used for control communication. For example, for Camera Link Medium, despite the fact that there are two cables carrying data, there is only one serial link for the RS232 communication.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 476,
+      "bottomRightX": 603,
+      "bottomRightY": 511,
+      "content": "Each link can carry multiple logical communication channels. GenCP assumes a single link between a host and a device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 539,
+      "bottomRightX": 224,
+      "bottomRightY": 558,
+      "content": "### 2.7. Channel",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 579,
+      "bottomRightX": 648,
+      "bottomRightY": 766,
+      "content": "A channel is a logical communication path between two entities communicating over a link. There may be multiple logical channels on a single link. Each channel is identified by a unique id number. This number is used in the communication between two entities to identify the channel a packet belongs to. This is either part of the protocol layers below the protocol described here or in the PacketPrefix (see chapter 4.2), depending on the technology. This number is called “channel_id”. A channel’s communication is unidirectional, meaning that on a single channel, the sender and receiver side for commands and the sender and receiver side for acknowledges are fixed. Different logical channels may have different directions. The protocol also defines packet layouts and the communication scheme between a device and a host. This document assumes that for the master control channel the host is the command sender and the device is the command receiver even though the roles may change in real live.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 793,
+      "bottomRightX": 286,
+      "bottomRightY": 812,
+      "content": "#### 2.7.1. Default Channel",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 834,
+      "bottomRightX": 639,
+      "bottomRightY": 870,
+      "content": "The default channel (first control channel) is technology dependent. For example, on Ethernet this would be a port number. For another technology it might be an arbitrary number.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 932,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 932,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 13 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

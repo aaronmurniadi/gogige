@@ -1,0 +1,112 @@
+{
+  "index": 56,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-80.jpeg](img-80.jpeg) CAM |   | ![img-81.jpeg](img-81.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 208,
+      "topLeftY": 132,
+      "bottomRightX": 510,
+      "bottomRightY": 449,
+      "content": "![img-82.jpeg](img-82.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-82.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 453,
+      "bottomRightX": 636,
+      "bottomRightY": 539,
+      "content": "When one or more announced composite buffers are not sufficient for acquisition given the current flow configuration, the GC ERR BUFFER TOO SMALL error code is used in the same way as defined for non-composite buffers in 5.2.1. It is used the very same way either when starting the acquisition or when discovering the problem at runtime, including use of the BUFFER INFO IS INCOMPLETE and",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 541,
+      "bottomRightX": 425,
+      "bottomRightY": 558,
+      "content": "BUFFER INFO DATA LARGER THAN BUFFER flags.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 565,
+      "bottomRightX": 636,
+      "bottomRightY": 633,
+      "content": "The configuration of the acquisition data mapping into flows is in general beyond scope of the GenTL specification. The principal use case for flows is, however, GenDC streaming. In case of use with GenDC, the flow mapping rules will adhere to the GenDC specification and related sections in SFNC or GenTL SFNC documents.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 646,
+      "bottomRightX": 265,
+      "bottomRightY": 665,
+      "content": "#### 5.7.3 GenDC Streaming",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 668,
+      "bottomRightX": 636,
+      "bottomRightY": 720,
+      "content": "GenTL supports data acquisition in the GenDC format (PAYLOAD TYPE GENDC). In this case, the structure and contents of the data is defined by the GenDC specification and should be interpreted according its rules.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 727,
+      "bottomRightX": 635,
+      "bottomRightY": 761,
+      "content": "To guarantee flawless GenDC data exchange, independent of transport layer specific details, the GenTL Producer and GenTL Consumer must stick to a few basic rules described below.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 767,
+      "bottomRightX": 636,
+      "bottomRightY": 887,
+      "content": "The buffer delivered with GenDC payload (PAYLOAD TYPE GENDC) must contain exactly one GenDC container descriptor (as defined by GenDC) and it must be the “final” descriptor type. If given transport layer technology does not deliver the descriptor within the data payload (but e.g. within data leader section used by some technologies), the GenTL Producer has to guarantee that the container descriptor is copied into the destination buffer. This implies that the GenTL Producer also provides correct PayloadSize information including space for the descriptor. Note that these requirements are important to hide transport layer",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 57 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

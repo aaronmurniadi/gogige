@@ -1,0 +1,238 @@
+{
+  "index": 43,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 16,
+      "bottomRightX": 745,
+      "bottomRightY": 97,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 117,
+      "bottomRightX": 689,
+      "bottomRightY": 170,
+      "content": "presents the main elements involved in the data acquisition by a Device and the typical data flow for transfer of images to the Host System. It covers the typical devices with a single data source and the more complex devices with multi-source, multi-region of interest and data transfer control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 177,
+      "bottomRightX": 702,
+      "bottomRightY": 248,
+      "content": "Basic acquisition Devices with one source of data, one region of interest and automatic control of the transfer of data such as the one shown in Figure 1-2, are simple particular case of this model where the Source, Region and Transfer features are fixed and cannot be changed (so the corresponding fixed features can be omitted).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 284,
+      "bottomRightX": 706,
+      "bottomRightY": 430,
+      "content": "![img-2.jpeg](img-2.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-2.jpeg"
+    },
+    {
+      "topLeftX": 192,
+      "topLeftY": 462,
+      "bottomRightX": 581,
+      "bottomRightY": 481,
+      "content": "Figure 1-2: Basic acquisition device with fixed configuration.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 505,
+      "bottomRightX": 687,
+      "bottomRightY": 542,
+      "content": "The typical features setting for such a basic device where the values of Source, Region and Transfer Control Stream are fixed is typically reduced to:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 105,
+      "topLeftY": 548,
+      "bottomRightX": 190,
+      "bottomRightY": 564,
+      "content": "Width = 320",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 567,
+      "bottomRightX": 192,
+      "bottomRightY": 584,
+      "content": "Height = 240",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 586,
+      "bottomRightX": 211,
+      "bottomRightY": 603,
+      "content": "AcquisitionStart",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 611,
+      "bottomRightX": 126,
+      "bottomRightY": 620,
+      "content": "...",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 622,
+      "bottomRightX": 211,
+      "bottomRightY": 639,
+      "content": "AcquisitionStop",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 664,
+      "bottomRightX": 588,
+      "bottomRightY": 682,
+      "content": "But in general, for more complex devices, the acquisition and data transfer model is:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 690,
+      "bottomRightX": 296,
+      "bottomRightY": 707,
+      "content": "A Device has one or many Source(s).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 708,
+      "bottomRightX": 364,
+      "bottomRightY": 724,
+      "content": "A Source has one or many Region(s) of interest.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 725,
+      "bottomRightX": 330,
+      "bottomRightY": 742,
+      "content": "A Region of interest goes to a data Stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 743,
+      "bottomRightX": 596,
+      "bottomRightY": 760,
+      "content": "The data generation by the Source is controlled by the \"Acquisition Control\" features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 761,
+      "bottomRightX": 649,
+      "bottomRightY": 778,
+      "content": "The dimensions of a Region of interest are controlled by the \"Image Format Control\" features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 779,
+      "bottomRightX": 573,
+      "bottomRightY": 797,
+      "content": "The outgoing data flow of a Stream is controlled by a \"Transfer Control\" features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 798,
+      "bottomRightX": 496,
+      "bottomRightY": 814,
+      "content": "The output of the Transfer Control module goes to a Stream Channel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 815,
+      "bottomRightX": 391,
+      "bottomRightY": 830,
+      "content": "The Stream Channel is transmitted on a virtual Link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 832,
+      "bottomRightX": 705,
+      "bottomRightY": 850,
+      "content": "The virtual Link is established with a Host System using one or many Device's physical Connection(s).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 876,
+      "bottomRightX": 704,
+      "bottomRightY": 910,
+      "content": "Figure 1-3 below presents an example of a more complex device supporting multi-source, multi-region with data stream transfer control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 989,
+      "bottomRightX": 391,
+      "bottomRightY": 1007,
+      "content": "Page 44 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

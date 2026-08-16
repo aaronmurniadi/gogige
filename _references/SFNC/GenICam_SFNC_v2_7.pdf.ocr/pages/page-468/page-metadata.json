@@ -1,0 +1,57 @@
+{
+  "index": 467,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 144,
+      "bottomRightX": 602,
+      "bottomRightY": 938,
+      "content": "- Coord3D_ABC16_Planar: 3D coordinates, 3 components 16 bit planar.\n- Coord3D_A32f: 3D coordinate, first component 32 bit float.\n- Coord3D_B32f: 3D coordinate, second component 32 bit float.\n- Coord3D_C32f: 3D coordinate, third component 32 bit float.\n- Coord3D_ABC32f: 3D coordinates, 3 components 32 bit float.\n- Coord3D_ABC32f_Planar: 3D coordinates, 3 components 32 bit float planar.\n- Confidence1: Confidence data 1 bit.\n- Confidence1p: Confidence data 1 bit packed.\n- Confidence8: Confidence data 8 bit.\n- Confidence16: Confidence data 16 bit.\n- Confidence32f: Confidence data 32 bit float.\n- Data8: Generic non-pixel data 8 bit.\n- Data8s: Generic non-pixel data 8 bit signed.\n- Data16: Generic non-pixel data 16 bit.\n- Data16s: Generic non-pixel data 16 bit signed.\n- Data32: Generic non-pixel data 32 bit.\n- Data32s: Generic non-pixel data 32 bit signed.\n- Data32f: Generic non-pixel data 32 bit floating point.\n- Data64: Generic non-pixel data 64 bit.\n- Data64s: Generic non-pixel data 64 bit signed.\n- Data64f: Generic non-pixel data 64 bit floating point.\n- Raw8: Raw 8 bit.\n- Raw16: Raw 16 bit.\n- Mono12Packed: Mono 12 bit packed (GigE Vision Specific).\n- BayerGR10Packed: Bayer GR 10 bit packed (GigE Vision Specific).\n- BayerRG10Packed: Bayer RG 10 bit packed (GigE Vision Specific).\n- BayerGB10Packed: Bayer GB 10 bit packed (GigE Vision Specific).\n- BayerBG10Packed: Bayer BG 10 bit packed (GigE Vision Specific).\n- BayerGR12Packed: Bayer GR 12 bit packed (GigE Vision Specific).\n- BayerRG12Packed: Bayer RG 12 bit packed (GigE Vision Specific).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 468 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

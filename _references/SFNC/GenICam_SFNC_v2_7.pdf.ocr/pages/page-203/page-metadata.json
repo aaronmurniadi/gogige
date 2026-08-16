@@ -1,0 +1,184 @@
+{
+  "index": 202,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 134,
+      "bottomRightX": 715,
+      "bottomRightY": 172,
+      "content": "With the additional feature MultiSlopeIntensityLimit, you may directly observe or even control the limit between slopes in your intensity histogram, as will be shown in the next chapter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 179,
+      "bottomRightX": 708,
+      "bottomRightY": 215,
+      "content": "With the additional feature MultiSlopeExposureGradient, you may directly observe or even control the gradient of an additional slope as seen in the Figure 5-17: Multi-slope exposure model.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 222,
+      "bottomRightX": 722,
+      "bottomRightY": 258,
+      "content": "Automatic configuration is also possible by selecting one of three values for MultiSlopeMode, PresetSoft, PresetMedium, and PresetAggressive.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 292,
+      "bottomRightX": 131,
+      "bottomRightY": 313,
+      "content": "## Example",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 319,
+      "bottomRightX": 748,
+      "bottomRightY": 354,
+      "content": "For illustration of the effects of multi-slope exposure, let's look at the consequences in an artificial illumination scene resulting in the following intensity histogram:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 360,
+      "bottomRightX": 657,
+      "bottomRightY": 541,
+      "content": "![img-77.jpeg](img-77.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-77.jpeg"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 549,
+      "bottomRightX": 754,
+      "bottomRightY": 621,
+      "content": "In this histogram (taken at an exemplary ExposureTime of 2000μs), many intensity values are not filled at all, and the ones that are filled are clustered around some spots. The goal of multi-slope exposure is a histogram that allows better segmentation of objects according to their intensity, while still keeping gradations in the bulk of intensities. In this case, two additional exposure slopes are chosen.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 628,
+      "bottomRightX": 743,
+      "bottomRightY": 699,
+      "content": "For defining multi-slope exposure, start with an exposure time that shows all the low-key intensities (in this example 10000μs), but with enough spare intensities to the right side to accommodate the high-key values that should now appear as top-value intensities like in the left diagram. This is the ExposureTime that you need for your result image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 707,
+      "bottomRightX": 740,
+      "bottomRightY": 742,
+      "content": "Then define the parameters for the next slope to get the next intensities into the histogram, again leaving some space to the right (as can be seen in the right diagram).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 749,
+      "bottomRightX": 584,
+      "bottomRightY": 921,
+      "content": "![img-78.jpeg](img-78.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-78.jpeg"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 928,
+      "bottomRightX": 712,
+      "bottomRightY": 946,
+      "content": "Finally, define the last slope to get also the highest keys into the histogram like in the following diagram :",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 203 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "index": 31,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 29,
+      "topLeftY": 114,
+      "bottomRightX": 731,
+      "bottomRightY": 244,
+      "content": "|  4 | 68 | **SpropInitBufTime** This parameter may be used to signal the properties of a NAL unit stream. This parameter is not applicable if the value of the packetization mode is equal to zero or one. Otherwise, the parameter signals the initial buffering time that a receiver must buffer before starting decoding to recover the NAL unit decoding order from the transmission order as per RFC3984.  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 179,
+      "topLeftY": 256,
+      "bottomRightX": 557,
+      "bottomRightY": 271,
+      "content": "Table 2-9: Part specific Header fields description for H.264 compressed image",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 32 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

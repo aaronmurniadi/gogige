@@ -1,0 +1,120 @@
+{
+  "index": 242,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM</i></td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 150,
+      "bottomRightX": 612,
+      "bottomRightY": 374,
+      "content": "CounterSelector = Counter1;\nCounterEventSource = LineStart;\nCounterDuration = 200;\nCounterTriggerSource = FrameStart;\nCounterResetSource = CounterTrigger;\n\nRegister(Camera.EventCounter1End,CallbackDataObject,CallbackFunctionPtr)\nEventSelector = Counter1End;\nEventNotification = On;\nAcquisitionMode = Continuous;\nAcquisitionStart();\n...\nAcquisitionStop();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 25,
+      "topLeftY": 428,
+      "bottomRightX": 238,
+      "bottomRightY": 447,
+      "content": "### 10.3 Counter features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 471,
+      "bottomRightX": 325,
+      "bottomRightY": 487,
+      "content": "This section describes the Counter features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 504,
+      "bottomRightX": 290,
+      "bottomRightY": 523,
+      "content": "#### 10.3.1 CounterSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 526,
+      "bottomRightX": 386,
+      "bottomRightY": 794,
+      "content": "|  Name | CounterSelector  |\n| --- | --- |\n|  Category | CounterAndTimerControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Counter0 (If 0 based), Counter1, Counter2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 818,
+      "bottomRightX": 277,
+      "bottomRightY": 837,
+      "content": "Selects which Counter to configure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 845,
+      "bottomRightX": 177,
+      "bottomRightY": 860,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 870,
+      "bottomRightX": 305,
+      "bottomRightY": 941,
+      "content": "- Counter0: Selects the counter 0.\n- Counter1: Selects the counter 1.\n- Counter2: Selects the counter 2.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 243 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

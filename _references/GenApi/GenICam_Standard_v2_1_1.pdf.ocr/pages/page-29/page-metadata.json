@@ -1,0 +1,103 @@
+{
+  "index": 28,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-42.jpeg](img-42.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 245,
+      "topLeftY": 159,
+      "bottomRightX": 469,
+      "bottomRightY": 328,
+      "content": "![img-43.jpeg](img-43.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-43.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 342,
+      "bottomRightX": 423,
+      "bottomRightY": 360,
+      "content": "Figure 13 Indirect addressing: mapping a C/C++ struct",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 373,
+      "bottomRightX": 636,
+      "bottomRightY": 425,
+      "content": "Note that this mechanism is used very frequently with 1394 DCAM compliant cameras where the whole standard register block has a common base address that must be parsed from a IEEE 1212 configuration ROM structure at run-time (see also the ConfRom node type).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 438,
+      "bottomRightX": 267,
+      "bottomRightY": 456,
+      "content": "#### 2.8.4 Arrays and Selectors",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 466,
+      "bottomRightX": 636,
+      "bottomRightY": 501,
+      "content": "Indirect addressing as described in the previous chapter is also used for accessing arrays. The following example shows how this is done (see also Figure 14):",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 515,
+      "bottomRightX": 458,
+      "bottomRightY": 764,
+      "content": "<Integer Name=\"LUTIndex\">\n    <Value>0</Value>\n    <Min>0</Min>\n    <Max>255</Max>\n    <pSelected>LUTEntry</pSelected>\n</Integer>\n\n<IntReg Name=\"LUTEntry\">\n    <IntSwissKnife Name=\"LUTEntryAddress\">\n    <pVariable Name=\"INDEX\">LUTIndex</pVariable>\n    <Formula>0xff00 + INDEX * 4</Formula>\n    </IntSwissKnife>\n    <Length>4</Length>\n    <AccessMode>RW</AccessMode>\n    <pPort>Device</pPort>\n    <Sign>Unsigned</Sign>\n    <Endianess>LittleEndian</Endianess>\n</IntReg>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 784,
+      "bottomRightX": 637,
+      "bottomRightY": 871,
+      "content": "A LUT Entry element is used as a pointer into the LUT. The address of this element is computed using an embedded  \\( \\langle IntSwissKnife\\rangle \\)  element that computes the address of the LUTEntry element according to the formula:  \\( BaseAddress + LUTIndex \\cdot sizeof(LUTEntry) \\) . The LUTIndex is a “floating” Integer node that is not connected to the camera. Instead, it starts with  \\( \\langle Value\\rangle \\)  and can be changed between  \\( \\langle Min\\rangle \\)  and  \\( \\langle Max\\rangle \\)  by the user.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 636,
+      "bottomRightY": 974,
+      "content": "Page 29 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "index": 458,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 485,
+      "bottomRightY": 303,
+      "content": "|  Level | Optional  |\n| --- | --- |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 328,
+      "bottomRightX": 694,
+      "bottomRightY": 365,
+      "content": "Returns a unique Identifier value that corresponds to the Group of Components of the selected chunk Component.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 371,
+      "bottomRightX": 522,
+      "bottomRightY": 390,
+      "content": "This value generally maps to corresponding GroupIDValue feature value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 404,
+      "bottomRightX": 445,
+      "bottomRightY": 426,
+      "content": "### 24.15 ChunkImageComponent (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 427,
+      "bottomRightX": 396,
+      "bottomRightY": 819,
+      "content": "|  Name | ChunkImageComponent  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | Intensity Infrared Ultraviolet Range Reflectance Disparity Scatter Confidence Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 843,
+      "bottomRightX": 721,
+      "bottomRightY": 881,
+      "content": "This feature is deprecated (See ChunkComponentID). It was representing the component of the payload image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 887,
+      "bottomRightX": 652,
+      "bottomRightY": 906,
+      "content": "To help backward compatibility, this feature can be included as Invisible in the device's XML.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 459 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

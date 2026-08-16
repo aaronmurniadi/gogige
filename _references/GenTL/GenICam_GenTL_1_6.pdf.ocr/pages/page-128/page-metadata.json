@@ -1,0 +1,159 @@
+{
+  "index": 127,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 138,
+      "bottomRightX": 533,
+      "bottomRightY": 155,
+      "content": "GENTL INVALID HANDLE before calling",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 156,
+      "bottomRightX": 577,
+      "bottomRightY": 173,
+      "content": "GCRegisterEvent to indicate an invalid handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 187,
+      "bottomRightX": 141,
+      "bottomRightY": 203,
+      "content": "Returns",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 209,
+      "bottomRightX": 636,
+      "bottomRightY": 510,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hModule is invalid (NULL) or does not reference a previously instatiated module.  |\n|  GC_ERR_RESOURCE_IN_USE | The given iEventID has been registered before on the given hModule.  |\n|  GC_ERR_NOT_IMPLEMENTED | The specified event type is not implemented in the provided module of the GenTL Producer. Applies also if specified iEventID is not a valid event type for given module.  |\n|  GC_ERR_NOT_AVAILABLE | The specified event type is not available in the provided module hModule (for example because the remote device does not implement it).  |\n|  GC_ERR_INVALID_PARAMETER | Parameter phEvent is an invalid pointer (NULL or ~0x0)  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 540,
+      "bottomRightX": 636,
+      "bottomRightY": 576,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 587,
+      "bottomRightX": 273,
+      "bottomRightY": 606,
+      "content": "##### 6.3.7.7 GCUnregisterEvent",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 628,
+      "bottomRightX": 582,
+      "bottomRightY": 662,
+      "content": "GC_ERROR GCUnregisterEvent ( EVENTSRC_HANDLE hModule, EVENT_TYPE iEventID )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 671,
+      "bottomRightX": 636,
+      "bottomRightY": 724,
+      "content": "A call to this function will unregister the given iEventID from the given hModule. This will terminate all pending wait operations of EventGetData with the error code GC_ERR_ABORT. Pending events are silently discarded.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 732,
+      "bottomRightX": 636,
+      "bottomRightY": 782,
+      "content": "For the EVENT_NEW_BUFFER all pending buffers in the output queue are set to a non-queued state to match the behavior of normal events. All buffers in the input pool or buffers currently being filled are not touched.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 796,
+      "bottomRightX": 166,
+      "bottomRightY": 812,
+      "content": "Parameters",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 816,
+      "bottomRightX": 586,
+      "bottomRightY": 852,
+      "content": "|  [in] | hModule | Module handle to unregister event with.  |\n| --- | --- | --- |\n|  [in] | iEventID | Event type to unregister as defined in EVENT_TYPE.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 865,
+      "bottomRightX": 141,
+      "bottomRightY": 881,
+      "content": "Returns",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 888,
+      "bottomRightX": 569,
+      "bottomRightY": 905,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 128 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

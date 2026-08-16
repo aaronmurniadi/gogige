@@ -1,0 +1,104 @@
+{
+  "index": 73,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 140,
+      "content": "|  GEN<i>CAM |   | ![img-79.jpeg](img-79.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 155,
+      "bottomRightX": 591,
+      "bottomRightY": 191,
+      "content": "On a serial link, a baud rate of 9600 must be supported and set at start up so that an initial communication can be established.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 223,
+      "bottomRightX": 295,
+      "bottomRightY": 242,
+      "content": "#### 1.8.2. Current Baudrate",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 263,
+      "bottomRightX": 652,
+      "bottomRightY": 298,
+      "content": "Register indicating the currently used baud rate. The register is RW with the exception that only one baud rate is supported. In this case the register may also be read only.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 186,
+      "topLeftY": 326,
+      "bottomRightX": 534,
+      "bottomRightY": 474,
+      "content": "|  Offset | Hex 004  |\n| --- | --- |\n|  Length | 4  |\n|  Access Type | RW  |\n|  Support | M  |\n|  Data Type | Bitfield  |\n|  Factory Default | 1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 494,
+      "bottomRightX": 645,
+      "bottomRightY": 756,
+      "content": "|  Bit offset (lsb << x) | Width (bits) | Description  |\n| --- | --- | --- |\n|  0 | 32 | Current BaudrateBAUDRATE_9600 = 0x00000001BAUDRATE_19200 = 0x00000002BAUDRATE_38400 = 0x00000004BAUDRATE_57600 = 0x00000008BAUDRATE_115200 = 0x00000010BAUDRATE_230400 = 0x00000020BAUDRATE_460800 = 0x00000040BAUDRATE_921600 = 0x00000080A single bit may be set according to the current baudrate setting. 0 is an invalid value.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 241,
+      "topLeftY": 756,
+      "bottomRightX": 477,
+      "bottomRightY": 770,
+      "content": "Table 38 – Register – Serial – Current Baudrate",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 778,
+      "bottomRightX": 644,
+      "bottomRightY": 812,
+      "content": "In case the Heartbeat timeout of a serial device expires, the device must fall back to factory default communication parameters (baud rate) in order to allow further communication with the host.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 74 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

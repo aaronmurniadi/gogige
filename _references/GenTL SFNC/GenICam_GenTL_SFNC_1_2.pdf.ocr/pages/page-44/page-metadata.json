@@ -1,0 +1,123 @@
+{
+  "index": 43,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-10.jpeg](img-10.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 315,
+      "content": "|  Level | Recommended  |\n| --- | --- |\n|  Interface | IString  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 341,
+      "bottomRightX": 366,
+      "bottomRightY": 359,
+      "content": "User readable name of the GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 369,
+      "bottomRightX": 618,
+      "bottomRightY": 387,
+      "content": "Corresponds to the TL_INFO_DISPLAYNAME command of TLGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 400,
+      "bottomRightX": 198,
+      "bottomRightY": 418,
+      "content": "3.1.1.8 TLPath",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 421,
+      "bottomRightX": 421,
+      "bottomRightY": 635,
+      "content": "|  Name | TLPath  |\n| --- | --- |\n|  Category | SystemInformation  |\n|  Level | Mandatory  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 659,
+      "bottomRightX": 507,
+      "bottomRightY": 678,
+      "content": "Full path to the GenTL Producer including filename and extension.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 686,
+      "bottomRightX": 591,
+      "bottomRightY": 705,
+      "content": "Corresponds to the TL_INFO_PATHNAME command of TLGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 719,
+      "bottomRightX": 200,
+      "bottomRightY": 738,
+      "content": "3.1.1.9 TLType",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 739,
+      "bottomRightX": 421,
+      "bottomRightY": 926,
+      "content": "|  Name | TLType  |\n| --- | --- |\n|  Category | SystemInformation  |\n|  Level | Mandatory  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 427,
+      "bottomRightY": 944,
+      "content": "Page 44 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

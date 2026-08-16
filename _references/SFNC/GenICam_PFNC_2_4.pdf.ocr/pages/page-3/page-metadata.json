@@ -1,0 +1,83 @@
+{
+  "index": 2,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 250,
+      "topLeftY": 61,
+      "bottomRightX": 397,
+      "bottomRightY": 91,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 613,
+      "topLeftY": 61,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 150,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 105,
+      "bottomRightX": 466,
+      "bottomRightY": 122,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 148,
+      "bottomRightX": 747,
+      "bottomRightY": 834,
+      "content": "6.1.1 lsb Unpacked... 31\n6.1.2 msb Unpacked... 32\n6.2 Cluster marker... 33\n6.3 Packed tag... 34\n6.3.1 lsb Packed... 34\n6.3.2 msb Packed... 35\n6.4 Grouped tag... 36\n6.4.1 lsb Grouped... 37\n6.4.2 msb Grouped... 38\n6.5 Align tag... 39\n6.6 Packing Style Summary... 41\n6.7 Dealing with Line and Image Boundaries... 42\n7 Interface-specific... 43\n7.1 Planar mode... 43\n7.2 Semiplanar mode... 43\n7.3 Components Sequencing... 44\n8 Appendix A - Color Space Transforms... 45\n8.1 Gamma Correction... 45\n8.2 Y’CbCr Conversions... 46\n8.2.1 Generic Full Scale Y’CbCr (8-bit)... 46\n8.2.2 Y’CbCr601 (8-bit)... 48\n8.2.3 Y’CbCr709 (8-bit)... 51\n9 Appendix B - Sub-sampling notation... 54\n9.1 Co-sited Positioning... 54\n9.2 Centered Positioning... 55\n10 Appendix C - Pixel Format Value Reference... 56\n11 Document History... 57",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 953,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 953,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 662,
+      "topLeftY": 953,
+      "bottomRightX": 747,
+      "bottomRightY": 973,
+      "content": "Page 3 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "index": 75,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-107.jpeg](img-107.jpeg)CAN |   | ![img-108.jpeg](img-108.jpeg)  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 138,
+      "bottomRightX": 270,
+      "bottomRightY": 157,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 303,
+      "topLeftY": 138,
+      "bottomRightX": 637,
+      "bottomRightY": 191,
+      "content": "The handle hIface is invalid (NULL) or does not reference an open Interface module retrieved through a call to TLOpenInterface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 220,
+      "bottomRightX": 636,
+      "bottomRightY": 256,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 267,
+      "bottomRightX": 203,
+      "bottomRightY": 284,
+      "content": "##### 6.3.3.2 IFGetInfo",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 308,
+      "bottomRightX": 251,
+      "bottomRightY": 325,
+      "content": "GC_ERROR IFGetInfo",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 308,
+      "bottomRightX": 602,
+      "bottomRightY": 391,
+      "content": "( IF_HANDLE hIface,\nINTERFACE_INFO_CMD iInfoCmd,\nINFO_DATATYPE * piType,\nvoid * pBuffer,\nsize_t * piSize )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 400,
+      "bottomRightX": 637,
+      "bottomRightY": 453,
+      "content": "Inquires information about the Interface module as defined in INTERFACE_INFO_CMD. The reported information should be in sync to information retrieved through the TLGetInterfaceInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 490,
+      "bottomRightX": 166,
+      "bottomRightY": 505,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 511,
+      "bottomRightX": 174,
+      "bottomRightY": 527,
+      "content": "[in] hIface",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 511,
+      "bottomRightX": 443,
+      "bottomRightY": 526,
+      "content": "Interface module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 528,
+      "bottomRightX": 193,
+      "bottomRightY": 544,
+      "content": "[in] iInfoCmd",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 528,
+      "bottomRightX": 510,
+      "bottomRightY": 560,
+      "content": "Information to be retrieved as defined in INTERFACE_INFO_CMD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 562,
+      "bottomRightX": 177,
+      "bottomRightY": 581,
+      "content": "[out] piType",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 562,
+      "bottomRightX": 577,
+      "bottomRightY": 595,
+      "content": "Data type of the pBuffer content as defined in the INTERFACE_INFO_CMD and INFO_DATATYPE.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 597,
+      "bottomRightX": 182,
+      "bottomRightY": 614,
+      "content": "[in,out] pBuffer",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 597,
+      "bottomRightX": 634,
+      "bottomRightY": 664,
+      "content": "Pointer to a user allocated buffer to receive the requested information. If this parameter is NULL, piSize will contain the minimal size of pBuffer in bytes. If the piType is a string the size includes the terminating 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 666,
+      "bottomRightX": 173,
+      "bottomRightY": 684,
+      "content": "[in,out] piSize",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 666,
+      "bottomRightX": 623,
+      "bottomRightY": 751,
+      "content": "pBuffer equal NULL:\nout: minimal size of pBuffer in bytes to hold all information\npBuffer unequal NULL:\nin: size of the provided pBuffer in bytes\nout: number of bytes filled by the function",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 765,
+      "bottomRightX": 141,
+      "bottomRightY": 781,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 788,
+      "bottomRightX": 208,
+      "bottomRightY": 804,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 787,
+      "bottomRightX": 568,
+      "bottomRightY": 804,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 812,
+      "bottomRightX": 278,
+      "bottomRightY": 829,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 812,
+      "bottomRightX": 510,
+      "bottomRightY": 829,
+      "content": "No preceding call to GCInitLib",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 838,
+      "bottomRightX": 269,
+      "bottomRightY": 855,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 837,
+      "bottomRightX": 635,
+      "bottomRightY": 889,
+      "content": "The handle hIface is invalid (NULL) or does not reference an open Interface module retrieved through a call to TLOpenInterface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 897,
+      "bottomRightX": 278,
+      "bottomRightY": 914,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 896,
+      "bottomRightX": 541,
+      "bottomRightY": 913,
+      "content": "Specified iInfoCmd is not implemented.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 76 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

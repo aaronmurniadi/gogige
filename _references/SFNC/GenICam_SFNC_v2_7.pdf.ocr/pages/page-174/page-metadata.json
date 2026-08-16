@@ -1,0 +1,146 @@
+{
+  "index": 173,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 570,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 134,
+      "bottomRightX": 614,
+      "bottomRightY": 187,
+      "content": "/* Multi-Frame acquisition started by a single Software trigger delayed by 1 millisecond.\nThe Trigger starts the whole sequence acquisition. The Exposure time for each frame is\nset to 500 us.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 189,
+      "bottomRightX": 68,
+      "bottomRightY": 205,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 228,
+      "bottomRightX": 372,
+      "bottomRightY": 400,
+      "content": "AcquisitionMode = MultiFrame;\nAcquisitionFrameCount = 20;\nTriggerSelector = AcquisitionStart;\nTriggerMode = On;\nTriggerSource = Software;\nTriggerDelay = 1000;\nExposureMode = Timed;\nExposureTime = 500;\nAcquisitionStart();\nTriggerSoftware();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 446,
+      "bottomRightX": 656,
+      "bottomRightY": 518,
+      "content": "/* Continuous acquisition in Hardware trigger mode. The Frame triggers are Rising Edge signals\ncoming from the physical Line 2. The Exposure time is 500us. An exposure end event is also\nsent to the Host application after the exposure of each frame to signal that the inspected part\ncan be moved. The timestamp of the event is also read.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 519,
+      "bottomRightX": 68,
+      "bottomRightY": 535,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 557,
+      "bottomRightX": 628,
+      "bottomRightY": 864,
+      "content": "AcquisitionMode = Continuous;\nTriggerSelector = FrameStart;\nTriggerMode = On;\nTriggerActivation = RisingEdge;\nTriggerSource = Line2;\nExposureMode = Timed;\nExposureTime = 500;\nRegister(Camera.EventExposureEnd, CallbackDataObject, CallbackFunctionPtr)\nEventSelector = ExposureEnd;\nEventNotification = On;\nAcquisitionStart();\n...\n// In the callback of the ExposureEnd event, get the event timestamp:\nTimestamp = EventExposureEndTimestamp;\n...\nAcquisitionStop();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 911,
+      "bottomRightX": 594,
+      "bottomRightY": 948,
+      "content": "/* Multi-Frame acquisition with each frame triggered by a Hardware trigger on Line 1.\nA negative pulse of the exposure signal duration (500us) is also sent to the physical",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 174 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

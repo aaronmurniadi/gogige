@@ -1,0 +1,105 @@
+{
+  "index": 61,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 264,
+      "content": "|  Access | Read  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 289,
+      "bottomRightX": 588,
+      "bottomRightY": 307,
+      "content": "Category that contains all Device Enumeration features of the Interface module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 323,
+      "bottomRightX": 270,
+      "bottomRightY": 340,
+      "content": "### 3.2.2.2 DeviceUpdateList",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 343,
+      "bottomRightX": 421,
+      "bottomRightY": 555,
+      "content": "|  Name | DeviceUpdateList  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Mandatory  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 580,
+      "bottomRightX": 671,
+      "bottomRightY": 653,
+      "content": "Updates the internal device list. This feature should be readable if the execution cannot be performed immediately. The command then returns and the status can be polled. This feature interacts with the IFUpdateDeviceList function of the GenTL Producer. It is up to the GenTL Consumer to handle access in case both methods are used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 668,
+      "bottomRightX": 303,
+      "bottomRightY": 686,
+      "content": "### 3.2.2.3 DeviceUpdateTimeout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 688,
+      "bottomRightX": 421,
+      "bottomRightY": 902,
+      "content": "|  Name | DeviceUpdateTimeout  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | ms  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 62 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

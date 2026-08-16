@@ -1,0 +1,103 @@
+{
+  "index": 173,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-258.jpeg](img-258.jpeg) CAM |   | ![img-259.jpeg](img-259.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 136,
+      "bottomRightX": 641,
+      "bottomRightY": 677,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|   |  | This event type used to be called EVENT_FEATURE_DEVEVENT but has been renamed for a more intuitive understanding.  |\n|  EVENT_MODULE | 5 | Notification that one GenTL Producer module wants to inform the GenICam GenApi instance of this module that a GenApi compatible event was fired. This Event is to be registered on any module handle except on the Remote Device. Values that can be retrieved are:EVENT_DATA_IDString representation of the EventID number in hexadecimal numbers with even number of digits and without the leading ‘0x’.Data type: STRING (Event ID)EVENT_DATA_VALUECorresponds to the data addressable through the module’s nodemap event port, beginning of the buffer corresponding to address 0.Data type: BUFFER (optional data)  |\n|  EVENT_CUSTOM_ID | 1000 | Starting value for GenTL Producer custom events which are implementation specific. If a generic GenTL Consumer is using custom EVENT_TYPEs provided through a specific GenTL Producer implementation it must differentiate the handling of different GenTL Producer implementations in case other implementations will not provide that custom id or will use a different meaning with it.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 713,
+      "bottomRightX": 208,
+      "bottomRightY": 732,
+      "content": "### 6.5 Structures",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 740,
+      "bottomRightX": 569,
+      "bottomRightY": 757,
+      "content": "Structures are byte aligned. The size of pointers as members is platform dependent.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 771,
+      "bottomRightX": 305,
+      "bottomRightY": 789,
+      "content": "#### 6.5.1 Data Stream Structures",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 803,
+      "bottomRightX": 302,
+      "bottomRightY": 821,
+      "content": "##### 6.5.1.1 SINGLE_CHUNK_DATA",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 844,
+      "bottomRightX": 295,
+      "bottomRightY": 860,
+      "content": "struct SINGLE_CHUNK_DATA",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 870,
+      "bottomRightX": 635,
+      "bottomRightY": 906,
+      "content": "Layout of the array elements being used in the function DSGetBufferChunkData to carry information about individual chunks present in the buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 174 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

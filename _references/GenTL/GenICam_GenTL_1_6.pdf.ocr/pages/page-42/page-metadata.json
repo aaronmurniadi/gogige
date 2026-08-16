@@ -1,0 +1,165 @@
+{
+  "index": 41,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GEN<I>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 288,
+      "bottomRightY": 161,
+      "content": "## 5 Acquisition Engine",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 181,
+      "bottomRightX": 199,
+      "bottomRightY": 200,
+      "content": "### 5.1 Overview",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 207,
+      "bottomRightX": 635,
+      "bottomRightY": 243,
+      "content": "The acquisition engine is the core of the GenTL data stream. Its task is the transportation itself, which mainly consists of the buffer management.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 248,
+      "bottomRightX": 636,
+      "bottomRightY": 331,
+      "content": "As stated before, the goal for the acquisition engine is to abstract the underlying data transfer mechanism so that it can be used, if not for all, then for most technologies on the market. The target is to acquire data coming from an input stream into memory buffers provided by the GenTL Consumer or made accessible to the GenTL Consumer. The internal design is up to the individual implementation, but there are a few directives it has to follow.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 338,
+      "bottomRightX": 635,
+      "bottomRightY": 372,
+      "content": "As an essential management element a GenTL acquisition engine holds a number of internal logical buffer pools.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 386,
+      "bottomRightX": 305,
+      "bottomRightY": 403,
+      "content": "#### 5.1.1 Announced Buffer Pool",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 409,
+      "bottomRightX": 636,
+      "bottomRightY": 510,
+      "content": "All announced buffers are referenced here and are thus known to the acquisition engine. A buffer is known from the point when it is announced until it is revoked (removed from the acquisition engine). It depends on the GenTL Producer if a buffer may be announced during an ongoing acquisition (see 5.2.2). A buffer will stay in this pool even when it is referenced from other queues/pools like the Input Buffer Pool (see 5.1.2) or the Output Buffer Queue (see 5.1.3) or when it is delivered to the GenTL Consumer until it is revoked.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 516,
+      "bottomRightX": 635,
+      "bottomRightY": 567,
+      "content": "The order of the buffers in the pool is not defined. The maximum possible number of buffers in this pool is only limited due to system resources. The minimum number of buffers in the pool is one or more depending on the technology or the implementation to allow streaming.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 580,
+      "bottomRightX": 257,
+      "bottomRightY": 598,
+      "content": "#### 5.1.2 Input Buffer Pool",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 601,
+      "bottomRightX": 635,
+      "bottomRightY": 704,
+      "content": "When the acquisition engine receives data from a device it will fill a buffer from this pool. While a buffer is filled it is removed from the pool and if successfully filled, it is put into the output buffer queue. If the transfer was not successful or if the acquisition has been stopped with ACQ STOP FLAGS KILL specified the buffer is placed into the output buffer queue by default. It is up to the implementor to provide additional buffer handling modes which would hand that partially filled buffer differently.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 711,
+      "bottomRightX": 636,
+      "bottomRightY": 760,
+      "content": "The order of the buffers in the pool is not defined. Only buffers present in the Announced Buffer Pool can be in this pool. The maximum number of buffers in this pool is the number of announced buffers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 775,
+      "bottomRightX": 285,
+      "bottomRightY": 794,
+      "content": "#### 5.1.3 Output Buffer Queue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 797,
+      "bottomRightX": 635,
+      "bottomRightY": 847,
+      "content": "Once a buffer has been successfully filled, it is placed into this queue. As soon as there is at least one buffer in the output buffer queue a previous registered event object gets signaled and the GenTL Consumer can retrieve the event data and thus can identify the filled buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 854,
+      "bottomRightX": 635,
+      "bottomRightY": 889,
+      "content": "When the event data is retrieved the associated buffer is removed from the output buffer queue. This also means that the data and thus the buffer can only be retrieved once. After the",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 42 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

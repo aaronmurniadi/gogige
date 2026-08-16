@@ -1,0 +1,84 @@
+{
+  "index": 3,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 87,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 533,
+      "topLeftY": 29,
+      "bottomRightX": 623,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 116,
+      "bottomRightX": 662,
+      "bottomRightY": 968,
+      "content": "|  3.50 | DEVICECHARACTERSET | 107  |\n| --- | --- | --- |\n|  3.51 | DEVICERESET | 107  |\n|  3.52 | DEVICEINDICATORMODE | 108  |\n|  3.53 | DEVICEFEATUREPERSISTENCESTART | 108  |\n|  3.54 | DEVICEFEATUREPERSISTENCEEND | 109  |\n|  3.55 | DEVICEREGISTERSSTREAMINGSTART | 109  |\n|  3.56 | DEVICEREGISTERSSTREAMINGEND | 109  |\n|  3.57 | DEVICEREGISTERSCHECK | 110  |\n|  3.58 | DEVICEREGISTERSVALID | 110  |\n|  3.59 | DEVICEREGISTERSENDIANNESS | 110  |\n|  3.60 | DEVICETEMPERATURESELECTOR | 111  |\n|  3.61 | DEVICETEMPERATURE | 111  |\n|  3.62 | DEVICECLOCKSELECTOR | 112  |\n|  3.63 | DEVICECLOCKFREQUENCY | 112  |\n|  3.64 | DEVICESERIALPORTSELECTOR | 113  |\n|  3.65 | DEVICESERIALPORTBAUDRATE | 113  |\n|  3.66 | TIMESTAMP | 114  |\n|  3.67 | TIMESTAMPRESET | 114  |\n|  3.68 | TIMESTAMPLATCH | 115  |\n|  3.69 | TIMESTAMPLATCHVALUE | 115  |\n|  **4** | **IMAGE FORMAT CONTROL** | **116**  |\n|  4.1 | IMAGEFORMATCONTROL | 117  |\n|  4.2 | SENSORWIDTH | 117  |\n|  4.3 | SENSORHEIGHT | 118  |\n|  4.4 | SENSORPIXELWIDTH | 118  |\n|  4.1 | SENSORPIXELHEIGHT | 118  |\n|  4.1 | SENSORNAME | 119  |\n|  4.2 | SENSORSHUTTERMODE | 119  |\n|  4.3 | SENSORTAPS | 120  |\n|  4.4 | SENSORDIGITIZATIONTAPS | 121  |\n|  4.5 | WIDTHMAX | 122  |\n|  4.6 | HEIGHTMAX | 122  |\n|  4.7 | REGIONSELECTOR | 122  |\n|  4.8 | REGIONMODE | 124  |\n|  4.9 | REGIONDESTINATION | 124  |\n|  4.10 | REGIONIDVALUE | 125  |\n|  4.11 | COMPONENTSELECTOR | 125  |\n|  4.12 | COMPONENTENABLE | 128  |\n|  4.13 | COMPONENTIDVALUE | 129  |\n|  4.14 | GROUPSELECTOR | 129  |\n|  4.15 | GROUPIDVALUE | 130  |\n|  4.16 | IMAGECOMPONENTSELECTOR (DEPRECATED) | 131  |\n|  4.17 | IMAGECOMPONENTENABLE (DEPRECATED) | 132  |\n|  4.18 | WIDTH | 132  |\n|  4.19 | HEIGHT | 132  |\n|  4.20 | OFFSETX | 133  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 989,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 989,
+      "bottomRightX": 388,
+      "bottomRightY": 1007,
+      "content": "Page 4 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 989,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

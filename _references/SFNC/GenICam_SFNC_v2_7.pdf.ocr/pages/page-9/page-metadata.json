@@ -1,0 +1,137 @@
+{
+  "index": 8,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 27,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 87,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 622,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 116,
+      "bottomRightX": 661,
+      "bottomRightY": 186,
+      "content": "12.2.8 LOGICBLOCKLUTINDEX ...286\n12.2.9 LOGICBLOCKLUTVALUE ...287\n12.2.10 LOGICBLOCKLUTVALUEALL ...287\n12.2.11 LOGICBLOCKLUTSELECTOR ...287",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 203,
+      "bottomRightX": 661,
+      "bottomRightY": 220,
+      "content": "# **13 SOFTWARE SIGNAL CONTROL ...289**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 236,
+      "bottomRightX": 661,
+      "bottomRightY": 289,
+      "content": "13.1 SOFTWARESIGNALCONTROL ...289\n13.2 SOFTWARESIGNALSELECTOR ...289\n13.3 SOFTWARESIGNALPULSE ...290",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 305,
+      "bottomRightX": 661,
+      "bottomRightY": 323,
+      "content": "# **14 ACTION CONTROL ...291**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 338,
+      "bottomRightX": 661,
+      "bottomRightY": 499,
+      "content": "14.1 ACTION USAGE MODEL ...291\n14.2 ACTION CONTROL FEATURES ...292\n14.2.1 ACTIONCONTROL ...292\n14.2.2 ACTIONUNCONDITIONALMODE ...292\n14.2.3 ACTIONDEVICEKEY ...293\n14.2.4 ACTIONQUEUESIZE ...293\n14.2.5 ACTIONSELECTOR ...294\n14.2.6 ACTIONGROUPMASK ...294\n14.2.7 ACTIONGROUPKEY ...295",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 514,
+      "bottomRightX": 661,
+      "bottomRightY": 531,
+      "content": "# **15 EVENT CONTROL ...296**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 547,
+      "bottomRightX": 661,
+      "bottomRightY": 957,
+      "content": "15.1 EVENTCONTROL ...298\n15.2 EVENTSELECTOR ...298\n15.3 EVENTNOTIFICATION ...302\n15.4 FRAME TRIGGER EVENT (EXAMPLE #1) ...303\n15.4.1 EVENTFRAMETRIGGERDATA ...303\n15.4.2 EVENTFRAMETRIGGER ...303\n15.4.3 EVENTFRAMETRIGGERTIMESTAMP ...304\n15.4.4 EVENTFRAMETRIGGERFRAMEID ...304\n15.5 EXPOSURE END EVENT (EXAMPLE #2) ...304\n15.5.1 EVENTEXPOSUREENDDATA ...305\n15.5.2 EVENTEXPOSUREEND ...305\n15.5.3 EVENTEXPOSUREENDTIMESTAMP ...305\n15.5.4 EVENTEXPOSUREENDFRAMEID ...306\n15.6 ERROR EVENT (EXAMPLE #3) ...306\n15.6.1 EVENTERRORDATA ...306\n15.6.2 EVENTERROR ...307\n15.6.3 EVENTERRORTIMESTAMP ...307\n15.6.4 EVENTERRORFRAMEID ...307\n15.6.5 EVENTERRORCODE ...308\n15.7 EVENT TEST (EXAMPLE #4) ...308\n15.7.1 EVENTTESTDATA ...308\n15.7.2 EVENTTEST ...309\n15.7.3 EVENTTESTTIMESTAMP ...309",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 989,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 989,
+      "bottomRightX": 388,
+      "bottomRightY": 1007,
+      "content": "Page 9 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 989,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

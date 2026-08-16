@@ -1,0 +1,157 @@
+{
+  "index": 203,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 54,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 570,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 102,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 133,
+      "bottomRightX": 317,
+      "bottomRightY": 299,
+      "content": "![img-79.jpeg](img-79.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-79.jpeg"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 305,
+      "bottomRightX": 500,
+      "bottomRightY": 325,
+      "content": "The overall effect may be summarized by the following transformation:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 336,
+      "bottomRightX": 485,
+      "bottomRightY": 653,
+      "content": "![img-80.jpeg](img-80.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-80.jpeg"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 660,
+      "bottomRightX": 561,
+      "bottomRightY": 680,
+      "content": "Figure 5-19: Multi-slope exposure example.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 712,
+      "bottomRightX": 671,
+      "bottomRightY": 731,
+      "content": "For the transformation of the shown diagrams, the following approximate parameters would apply:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 737,
+      "bottomRightX": 527,
+      "bottomRightY": 756,
+      "content": "MultiSlopeExposureLimit[1]=53,9%, MultiSlopeExposureLimit[2]=97,8%,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 756,
+      "bottomRightX": 581,
+      "bottomRightY": 773,
+      "content": "MultiSlopeSaturationThreshold[1]=28%, MultiSlopeSaturationThreshold[2]=88,9%.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 773,
+      "bottomRightX": 679,
+      "bottomRightY": 811,
+      "content": "This results in MultiSlopeIntensityLimit[1] of 52% and MultiSlopeIntensityLimit[2] of 92%, and an MultiSlopeExposureGradient[1] of 1.4 and MultiSlopeExposureGradient[2] of 5.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 204 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

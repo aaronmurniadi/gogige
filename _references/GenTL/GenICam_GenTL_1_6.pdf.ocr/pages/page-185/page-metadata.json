@@ -1,0 +1,86 @@
+{
+  "index": 184,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-278.jpeg](img-278.jpeg)CAN |   | ![img-279.jpeg](img-279.jpeg)  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 639,
+      "bottomRightY": 206,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |\n|  StreamType | IEnumeration | R | Identifies the transport layer technology of the stream. See chapter 6.6.1 for possible values.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 235,
+      "bottomRightX": 235,
+      "bottomRightY": 254,
+      "content": "#### 7.1.5 Buffer Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 259,
+      "bottomRightX": 635,
+      "bottomRightY": 328,
+      "content": "All features that must be accessible on a buffer if a Port access is provided are listed here. Port functions use the BUFFER_HANDLE to access these features. The Port access for the BUFFER_HANDLE is not mandatory. Thus all features listed here need not be implemented. If a Port access is implemented on the handle though, all mandatory features must be present.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 241,
+      "topLeftY": 334,
+      "bottomRightX": 476,
+      "bottomRightY": 351,
+      "content": "Table 7-12: Buffer information features",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 357,
+      "bottomRightX": 639,
+      "bottomRightY": 562,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |\n|  BufferData | IRegister | R/(W) | Entire buffer data.  |\n|  BufferUserData | IInteger | R | Pointer to user data (pPrivate) casted to an integer number referencing GenTL Consumer specific data. It is reflecting the pointer provided by the user data pointer (pPrivate) at buffer announcement.(see chapter 6.3.5 Data Stream Functions page 89ff). This allows the GenTL Consumer to attach information to a buffer.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 185 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

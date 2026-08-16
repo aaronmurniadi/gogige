@@ -1,0 +1,103 @@
+{
+  "index": 72,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 77,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 77,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 508,
+      "topLeftY": 36,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "![img-9.jpeg](img-9.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-9.jpeg"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 107,
+      "bottomRightX": 921,
+      "bottomRightY": 569,
+      "content": "|  tor] |  |  |  |  |  |   |\n| --- | --- | --- | --- | --- | --- | --- |\n|  FocalLength[OpticControllerSelector] | O | IFloat | R/W | mm | B | Focal length in millimeters (mm).  |\n|  FocalLengthStepper[OpticControllerSelector] | O | IInteger | R/W | - | E | FocalLengthStepper controls the stepper value of the focal length.  |\n|  ShutterInitialize[OpticControllerSelector] | O | ICommand | (R)/W | - | B | Initializes the shutter and makes it ready for use.  |\n|  ShutterStatus[OpticControllerSelector] | O | IEnumeration | R | - | B | Reads the status of the shutter.  |\n|  Shutter[OpticControllerSelector] | O | IInteger | R/W | - | B | Controls whether the shutter is opened or closed.  |\n|  FilterInitialize[OpticControllerSelector] | O | ICommand | (R)/W | - | B | Initializes the filter and makes it ready for use.  |\n|  FilterStatus[OpticControllerSelector] | O | IEnumeration | R | - | B | Reads the status of the filter.  |\n|  Filter[OpticControllerSelector] | O | IInteger | R/W | - | B | Filter positions in native number system.  |\n|  StabilizationInitialize[OpticControllerSelector] | O | ICommand | (R)/W | - | B | Initializes the stabilization and makes it ready for use.  |\n|  StabilizationStatus[OpticControllerSelector] | O | IEnumeration | R | - | B | Reads the status of the stabilization.  |\n|  Stabilization[OpticControllerSelector] | O | IInteger | R/W | - | B | Control of image stabilization function build into the optic controller.  |\n|  MagnificationInitialize[OpticControllerSelector] | O | ICommand | (R)/W | - | B | Initializes the magnification and makes it ready for use.  |\n|  MagnificationStatus[OpticControllerSelector] | O | IEnumeration | R | - | B | Reads the status of the magnification.  |\n|  Magnification[OpticControllerSelector] | O | IFloat | R/W | - | B | Magnification of the lens, defined as ratio between apparent size of an image and its true size.  |\n|  MagnificationStepper[OpticControllerSelector] | O | IInteger | R/W | - | E | MagnificationStepper controls the stepper value of the magnification.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 600,
+      "bottomRightX": 273,
+      "bottomRightY": 619,
+      "content": "## 2.22 Chunk Data Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 624,
+      "bottomRightX": 707,
+      "bottomRightY": 640,
+      "content": "Contains the features related to the Chunk Data Control (See the Chunk Data Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 73 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

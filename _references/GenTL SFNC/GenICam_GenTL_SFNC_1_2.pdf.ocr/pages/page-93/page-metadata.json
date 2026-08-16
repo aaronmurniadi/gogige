@@ -1,0 +1,132 @@
+{
+  "index": 92,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-27.jpeg](img-27.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 315,
+      "content": "|  Level | Mandatory  |\n| --- | --- |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 341,
+      "bottomRightX": 668,
+      "bottomRightY": 379,
+      "content": "Device unique ID for the stream. Not Mandator for non-streaming DeviceCorresponds to the DevGetDataStreamID function with the index corresponding to \"StreamSelector\".",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 400,
+      "bottomRightX": 268,
+      "bottomRightY": 420,
+      "content": "#### 3.3.4 GenICam Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 430,
+      "bottomRightX": 701,
+      "bottomRightY": 466,
+      "content": "This chapter provides the necessary features to use the GenICam feature tree of the Device module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 474,
+      "bottomRightX": 701,
+      "bottomRightY": 512,
+      "content": "Note: In case of discrepancy between the features described in this chapter and the “GenICam Standard text” the GenTL SFNC document prevails.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 524,
+      "bottomRightX": 184,
+      "bottomRightY": 542,
+      "content": "##### 3.3.4.1 Root",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 546,
+      "bottomRightX": 421,
+      "bottomRightY": 759,
+      "content": "|  Name | Root  |\n| --- | --- |\n|  Category | None  |\n|  Level | Mandatory  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 784,
+      "bottomRightX": 391,
+      "bottomRightY": 802,
+      "content": "Provides the Root of the GenICam features tree.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 816,
+      "bottomRightX": 225,
+      "bottomRightY": 834,
+      "content": "##### 3.3.4.2 DevicePort",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 837,
+      "bottomRightX": 421,
+      "bottomRightY": 919,
+      "content": "|  Name | DevicePort  |\n| --- | --- |\n|  Category | None  |\n|  Level | Mandatory  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 945,
+      "content": "Page 93 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

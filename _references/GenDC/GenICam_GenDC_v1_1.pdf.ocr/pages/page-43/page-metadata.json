@@ -1,0 +1,149 @@
+{
+  "index": 42,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 118,
+      "bottomRightX": 372,
+      "bottomRightY": 138,
+      "content": "## Appendix B Typical GenDC Containers layout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 157,
+      "bottomRightX": 706,
+      "bottomRightY": 193,
+      "content": "This section contains various examples of GenDC data Container layouts that can be used to represent typical Imaging data payloads.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 206,
+      "bottomRightX": 143,
+      "bottomRightY": 225,
+      "content": "### B.1 1D Array",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 259,
+      "bottomRightX": 549,
+      "bottomRightY": 279,
+      "content": "1D Array Container including one Component of one data Part made of 32 bit integers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 201,
+      "topLeftY": 289,
+      "bottomRightX": 487,
+      "bottomRightY": 309,
+      "content": "1D Array Container (32 bits Integers):",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 319,
+      "bottomRightX": 597,
+      "bottomRightY": 522,
+      "content": "![img-8.jpeg](img-8.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-8.jpeg"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 534,
+      "bottomRightX": 472,
+      "bottomRightY": 549,
+      "content": "Figure 5-4: 1D Array (32 bit Integers)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 576,
+      "bottomRightX": 266,
+      "bottomRightY": 596,
+      "content": "### B.2 2D Image (monochrome)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 613,
+      "bottomRightX": 550,
+      "bottomRightY": 630,
+      "content": "2D Image Container including one monochrome Intensity Component of one data Part.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 206,
+      "topLeftY": 641,
+      "bottomRightX": 496,
+      "bottomRightY": 663,
+      "content": "2D Image Container (Intensity Mono):",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 674,
+      "bottomRightX": 573,
+      "bottomRightY": 878,
+      "content": "![img-9.jpeg](img-9.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-9.jpeg"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 896,
+      "bottomRightX": 484,
+      "bottomRightY": 912,
+      "content": "Figure 5-5: 2D Image (monochrome 8 bit)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 43 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

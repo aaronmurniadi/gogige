@@ -1,0 +1,102 @@
+{
+  "index": 26,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 250,
+      "topLeftY": 61,
+      "bottomRightX": 397,
+      "bottomRightY": 91,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 613,
+      "topLeftY": 61,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 150,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 273,
+      "topLeftY": 105,
+      "bottomRightX": 466,
+      "bottomRightY": 122,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 147,
+      "bottomRightX": 748,
+      "bottomRightY": 707,
+      "content": "|  Component designation | Positioning in Image | Description  |\n| --- | --- | --- |\n|  “SCF1WGWB” | SCF1_LNLM location | Sparse Color Filter #1, White-Green-White-Blue pattern  |\n|  “SCF1WRWG” | SCF1_LOLN location | Sparse Color Filter #1, White-Red-White-Green pattern  |\n|  “SCF1WGWR” | SCF1_LNLO location | Sparse Color Filter #1, White-Green-White-Red pattern  |\n|  “CIELAB” | LMN444 location | CIE 1976 L*a*b* color space  |\n|  “CIEXYZ” | LMN444 location | CIE 1931 XYZ color space  |\n|  “HSI” | LMN444 location | Hue, Saturation, Intensity  |\n|  “HSV” | LMN444 location | Hue, Saturation, Value  |\n|  “Coord3D_ABC” | LMN444 location | Used for 3D imaging data. Coordinates of the 3D pixel. The depth/range is always represented by coordinate C. *Note: the coordinate system (meaning and unit of individual coordinates) is defined through other means by each device as specified in the GenICam SFNC standard.*  |\n|  “Coord3D_A” | Mono location | Used for 3D imaging data. Coordinate A only.  |\n|  “Coord3D_B” | Mono location | Used for 3D imaging data. Coordinate B only.  |\n|  “Coord3D_C” | Mono location | Used for 3D imaging data. Coordinate C only (the coordinate expressing depth/range). *Note: if the C coordinate is transferred alone, the other two coordinates are implicit as specified in the GenICam SFNC standard.*  |\n|  “Coord3D_AC” | LM44 location | Used for 3D imaging data. Coordinates A and C of the 3D pixel. *Note: intended for line scan 3D devices. The second coordinate is implicit as specified in the GenICam SFNC standard.*  |\n|  “Confidence” | Mono location | Confidence of the pixel value. Expresses the level of validity of the given pixel value.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 707,
+      "bottomRightX": 740,
+      "bottomRightY": 724,
+      "content": "Note 1: The full scale R, G or B (256 values) can be replaced by their scaled down version r, g or b (235 values) when necessary.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 755,
+      "bottomRightX": 742,
+      "bottomRightY": 792,
+      "content": "Unless specified otherwise, the order in which the components are listed is the order they will appear on the wire or in memory. The first component appears in the first byte(s) and so on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 953,
+      "bottomRightX": 102,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 953,
+      "bottomRightX": 463,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 653,
+      "topLeftY": 953,
+      "bottomRightX": 747,
+      "bottomRightY": 972,
+      "content": "Page 27 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

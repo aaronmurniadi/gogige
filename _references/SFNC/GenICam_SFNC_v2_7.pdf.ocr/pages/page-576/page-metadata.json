@@ -1,0 +1,156 @@
+{
+  "index": 575,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 161,
+      "bottomRightX": 330,
+      "bottomRightY": 185,
+      "content": "# 29 Tap Geometry Appendix",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 217,
+      "bottomRightX": 203,
+      "bottomRightY": 238,
+      "content": "## 29.1 Motivations",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 268,
+      "bottomRightX": 708,
+      "bottomRightY": 304,
+      "content": "This appendix defines standard names to uniquely identify the geometrical properties of most device's sensor taps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 310,
+      "bottomRightX": 712,
+      "bottomRightY": 348,
+      "content": "For example, the initial release of the Camera Link® standard didn't include any information about the geometrical properties of taps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 354,
+      "bottomRightX": 595,
+      "bottomRightY": 374,
+      "content": "Frame grabbers are able to reconstruct the image from multi-tap cameras on-the-fly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 380,
+      "bottomRightX": 681,
+      "bottomRightY": 417,
+      "content": "Camera manufacturers should clearly specify what geometry(ies) is (are) required. Frame grabber manufacturers should also clearly specify what geometry(ies) is (are) supported.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 425,
+      "bottomRightX": 714,
+      "bottomRightY": 459,
+      "content": "The customer can then check the compatibility, and select the appropriate geometry for the camera and the frame grabber.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 467,
+      "bottomRightX": 614,
+      "bottomRightY": 486,
+      "content": "Considering the limited amount of cases, a unique name is assigned for each geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 500,
+      "bottomRightX": 430,
+      "bottomRightY": 521,
+      "content": "## 29.2 Identifying the Geometrical Properties",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 529,
+      "bottomRightX": 378,
+      "bottomRightY": 550,
+      "content": "### 29.2.1 Image Geometrical Properties",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 557,
+      "bottomRightX": 550,
+      "bottomRightY": 576,
+      "content": "The relevant geometrical properties required for reconstructing the image:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 124,
+      "topLeftY": 584,
+      "bottomRightX": 721,
+      "bottomRightY": 923,
+      "content": "- **Vantage point**: An enumerated value that specifies the position of the pixel with coordinate X=1, Y=1 in the scene.\n{Top-Left, Top-Right, Bottom-Left, Bottom-Right}\nDefault is Top-Left.\n- **ImageWidth**: An integer value declaring the image width expressed in pixels.\n- **ImageHeight**: An integer value declaring the image height expressed in pixels. This parameter is irrelevant in case of line-scan or TDI cameras.\n- **TapGeometry**: An enumerated type of parameter that summarizes the following properties for each tap:\n  - XStart: X-coordinate of the first pixel column\n  - YStart: Y-coordinate if the first pixel row\n  - XEnd: X-coordinate of the last pixel column\n  - YEnd: Y-coordinate of the last pixel row\n  - XStep: Difference of X-coordinates between consecutive pixel columns; X-step is positive when X-coordinates are increasing along a row; it is negative otherwise.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 970,
+      "content": "Page 576 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "index": 40,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-56.jpeg](img-56.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 152,
+      "bottomRightX": 637,
+      "bottomRightY": 184,
+      "content": "probing the function. The converter will also apply the FormulaFrom equation to all value of the <ValidValueSet>.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 192,
+      "bottomRightX": 636,
+      "bottomRightY": 226,
+      "content": "The following example shows a Converter which computes an absolute shutter value (a float) by multiplying a raw shutter value (an integer) with a time base (another integer).",
+      "confidenceScores": null,
+      "type": "text"
+    }
+  ]
+}

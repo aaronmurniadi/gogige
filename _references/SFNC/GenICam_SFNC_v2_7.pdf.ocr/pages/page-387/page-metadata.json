@@ -1,0 +1,57 @@
+{
+  "index": 386,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 133,
+      "bottomRightX": 691,
+      "bottomRightY": 324,
+      "content": "ScaleHorizontal = DisparityScaleHorizontal/IntensityScaleHorizontal;\nScaleVertical = DisparityScaleVertical/IntensityScaleVertical;\n\n// Generates the Intensity texture image corresponding to the Disparity image.\nfor (row = 0; row < DisparityHeight; row++)\n{\n    for (col = 0; col < DisparityWidth; col++)\n    {\n        IntensityTexturePixel[row][col] = IntensityPixel[row*ScaleHorizontal][col*ScaleVertical];\n    }\n}\n\n// ...",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 387 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

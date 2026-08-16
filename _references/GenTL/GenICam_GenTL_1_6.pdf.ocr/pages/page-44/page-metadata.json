@@ -1,0 +1,76 @@
+{
+  "index": 43,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-57.jpeg](img-57.jpeg)CAN |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 137,
+      "topLeftY": 133,
+      "bottomRightX": 580,
+      "bottomRightY": 669,
+      "content": "![img-58.jpeg](img-58.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-58.jpeg"
+    },
+    {
+      "topLeftX": 174,
+      "topLeftY": 676,
+      "bottomRightX": 543,
+      "bottomRightY": 695,
+      "content": "Figure 5-5: Acquisition chain seen from a buffer's perspective",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 706,
+      "bottomRightX": 257,
+      "bottomRightY": 725,
+      "content": "#### 5.2.1 Allocate Memory",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 728,
+      "bottomRightX": 636,
+      "bottomRightY": 885,
+      "content": "First the size of a single buffer has to be obtained. In order to obtain that information the GenTL Consumer must query the GenTL Data Stream module (important: not the remote device) to check if the payload size information is provided through the GenTL Producer by calling DSGetInfo function with the command STREAM_INFO_DEFINES_PAYLOADSIZE. If the returned information is true the Consumer must call DSGetInfo with STREAM_INFO_PAYLOAD_SIZE to retrieve the current payload size. Additionally the GenTL Producer may provide a “PayloadSize” feature in the node map of the Data Stream Module reflecting the GenTL Producer’s payload size. The value reported through that feature must be the same as provided through DSGetInfo.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 418,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 44 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

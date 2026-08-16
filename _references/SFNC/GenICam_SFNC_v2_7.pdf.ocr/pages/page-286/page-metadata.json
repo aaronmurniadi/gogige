@@ -1,0 +1,175 @@
+{
+  "index": 285,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 102,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 728,
+      "bottomRightY": 181,
+      "content": "- Stream0TransferStopped, Stream1TransferStopped, ...: Transfer on the stream is stopped.\n- Stream0TransferOverflow, Stream1TransferOverflow, ...: Transfer on the stream is in overflow.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 197,
+      "bottomRightX": 356,
+      "bottomRightY": 218,
+      "content": "### 12.2.7 LogicBlockInputInverter",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 220,
+      "bottomRightX": 633,
+      "bottomRightY": 443,
+      "content": "|  Name | LogicBlockInputInverter[LogicBlockSelector][LogicBlockInputSelector]  |\n| --- | --- |\n|  Category | LogicBlockControl  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 467,
+      "bottomRightX": 702,
+      "bottomRightY": 502,
+      "content": "Selects if the selected Logic Block Input source signal is inverted. This feature is not available when the LogicBlockInputSource is set to True or False.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 512,
+      "bottomRightX": 724,
+      "bottomRightY": 546,
+      "content": "Note: When applied to a clock input, if LogicBlockInputInverter is set to False, this corresponds to a rising edge clock activation and if set to True to a falling edge activation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 554,
+      "bottomRightX": 177,
+      "bottomRightY": 569,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 580,
+      "bottomRightX": 381,
+      "bottomRightY": 617,
+      "content": "- True: The Logic Block Input is inverted.\n- False: The Logic Block Input is not inverted.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 636,
+      "bottomRightX": 327,
+      "bottomRightY": 656,
+      "content": "### 12.2.8 LogicBlockLUTIndex",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 659,
+      "bottomRightX": 449,
+      "bottomRightY": 872,
+      "content": "|  Name | LogicBlockLUTIndex[LogicBlockSelector]  |\n| --- | --- |\n|  Category | LogicBlockControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 897,
+      "bottomRightX": 466,
+      "bottomRightY": 914,
+      "content": "Controls the index of the truth table to access in the selected LUT.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 286 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

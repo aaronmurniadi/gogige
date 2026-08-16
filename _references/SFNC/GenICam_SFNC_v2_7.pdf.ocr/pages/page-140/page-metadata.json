@@ -1,0 +1,461 @@
+{
+  "index": 139,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 535,
+      "bottomRightY": 79,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 161,
+      "topLeftY": 120,
+      "bottomRightX": 231,
+      "bottomRightY": 138,
+      "content": "RGB10p32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 139,
+      "bottomRightX": 208,
+      "bottomRightY": 151,
+      "content": "RGB12",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 155,
+      "bottomRightX": 252,
+      "bottomRightY": 169,
+      "content": "RGB12_Planar",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 171,
+      "bottomRightX": 208,
+      "bottomRightY": 185,
+      "content": "RGB16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 189,
+      "bottomRightX": 252,
+      "bottomRightY": 202,
+      "content": "RGB16_Planar",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 205,
+      "bottomRightX": 223,
+      "bottomRightY": 220,
+      "content": "RGB565p",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 246,
+      "bottomRightX": 208,
+      "bottomRightY": 260,
+      "content": "BGR10",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 262,
+      "bottomRightX": 208,
+      "bottomRightY": 275,
+      "content": "BGR12",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 278,
+      "bottomRightX": 208,
+      "bottomRightY": 292,
+      "content": "BGR16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 296,
+      "bottomRightX": 223,
+      "bottomRightY": 312,
+      "content": "BGR565p",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 313,
+      "bottomRightX": 201,
+      "bottomRightY": 326,
+      "content": "BGR8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 328,
+      "bottomRightX": 207,
+      "bottomRightY": 342,
+      "content": "BGRa8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 368,
+      "bottomRightX": 231,
+      "bottomRightY": 385,
+      "content": "YUV422_8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 409,
+      "bottomRightX": 241,
+      "bottomRightY": 424,
+      "content": "YCbCr411_8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 426,
+      "bottomRightX": 241,
+      "bottomRightY": 441,
+      "content": "YCbCr422_8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 443,
+      "bottomRightX": 270,
+      "bottomRightY": 459,
+      "content": "YCbCr601_422_8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 460,
+      "bottomRightX": 270,
+      "bottomRightY": 475,
+      "content": "YCbCr709_422_8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 476,
+      "bottomRightX": 213,
+      "bottomRightY": 490,
+      "content": "YCbCr8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 516,
+      "bottomRightX": 226,
+      "bottomRightY": 532,
+      "content": "BayerBG8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 534,
+      "bottomRightX": 226,
+      "bottomRightY": 548,
+      "content": "BayerGB8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 550,
+      "bottomRightX": 226,
+      "bottomRightY": 566,
+      "content": "BayerGR8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 568,
+      "bottomRightX": 226,
+      "bottomRightY": 582,
+      "content": "BayerRG8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 584,
+      "bottomRightX": 233,
+      "bottomRightY": 598,
+      "content": "BayerBG10",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 600,
+      "bottomRightX": 233,
+      "bottomRightY": 615,
+      "content": "BayerGB10",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 618,
+      "bottomRightX": 233,
+      "bottomRightY": 632,
+      "content": "BayerGR10",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 634,
+      "bottomRightX": 233,
+      "bottomRightY": 648,
+      "content": "BayerRG10",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 650,
+      "bottomRightX": 233,
+      "bottomRightY": 665,
+      "content": "BayerBG12",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 667,
+      "bottomRightX": 233,
+      "bottomRightY": 682,
+      "content": "BayerGB12",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 684,
+      "bottomRightX": 233,
+      "bottomRightY": 698,
+      "content": "BayerGR12",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 700,
+      "bottomRightX": 233,
+      "bottomRightY": 715,
+      "content": "BayerRG12",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 717,
+      "bottomRightX": 233,
+      "bottomRightY": 732,
+      "content": "BayerBG16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 734,
+      "bottomRightX": 233,
+      "bottomRightY": 748,
+      "content": "BayerGB16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 750,
+      "bottomRightX": 233,
+      "bottomRightY": 765,
+      "content": "BayerGR16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 767,
+      "bottomRightX": 233,
+      "bottomRightY": 784,
+      "content": "BayerRG16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 800,
+      "bottomRightX": 242,
+      "bottomRightY": 815,
+      "content": "Coord3D_A8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 817,
+      "bottomRightX": 241,
+      "bottomRightY": 832,
+      "content": "Coord3D_B8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 834,
+      "bottomRightX": 241,
+      "bottomRightY": 849,
+      "content": "Coord3D_C8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 851,
+      "bottomRightX": 262,
+      "bottomRightY": 865,
+      "content": "Coord3D_ABC8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 867,
+      "bottomRightX": 306,
+      "bottomRightY": 882,
+      "content": "Coord3D_ABC8_Planar",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 883,
+      "bottomRightX": 249,
+      "bottomRightY": 898,
+      "content": "Coord3D_A16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 901,
+      "bottomRightX": 249,
+      "bottomRightY": 915,
+      "content": "Coord3D_B16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 917,
+      "bottomRightX": 249,
+      "bottomRightY": 932,
+      "content": "Coord3D_C16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 266,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 140 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

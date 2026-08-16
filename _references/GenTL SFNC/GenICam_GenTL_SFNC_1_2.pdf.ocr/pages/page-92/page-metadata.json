@@ -1,0 +1,132 @@
+{
+  "index": 91,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-26.jpeg](img-26.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 290,
+      "bottomRightY": 175,
+      "content": "#### 3.3.3 Stream Enumeration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 187,
+      "bottomRightX": 694,
+      "bottomRightY": 223,
+      "content": "The Stream Enumeration section describes all features related to the enumeration of data streams belonging to the Device module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 238,
+      "bottomRightX": 287,
+      "bottomRightY": 256,
+      "content": "##### 3.3.3.1 StreamEnumeration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 258,
+      "bottomRightX": 421,
+      "bottomRightY": 471,
+      "content": "|  Name | StreamEnumeration  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 497,
+      "bottomRightX": 576,
+      "bottomRightY": 514,
+      "content": "Category that contains all Stream Enumeration features of the Device module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 529,
+      "bottomRightX": 257,
+      "bottomRightY": 546,
+      "content": "##### 3.3.3.2 StreamSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 549,
+      "bottomRightX": 421,
+      "bottomRightY": 763,
+      "content": "|  Name | StreamSelector  |\n| --- | --- |\n|  Category | StreamEnumeration  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 788,
+      "bottomRightX": 684,
+      "bottomRightY": 822,
+      "content": "Selector for the different stream channels. The selector is 0-based in order to match the index of the C interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 839,
+      "bottomRightX": 216,
+      "bottomRightY": 855,
+      "content": "##### 3.3.3.3 StreamID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 858,
+      "bottomRightX": 421,
+      "bottomRightY": 914,
+      "content": "|  Name | StreamID[StreamSelector]  |\n| --- | --- |\n|  Category | StreamEnumeration  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 92 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

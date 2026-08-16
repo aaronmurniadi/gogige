@@ -1,0 +1,84 @@
+{
+  "index": 343,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 143,
+      "bottomRightX": 245,
+      "bottomRightY": 167,
+      "content": "## 20 Transfer Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 736,
+      "bottomRightY": 232,
+      "content": "The Transfer Control chapter describes the model and features related to the explicit control of the transfer of the data acquired by a device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 241,
+      "bottomRightX": 716,
+      "bottomRightY": 294,
+      "content": "A general model of the acquisition of images by a device and the role of the Transfer Control module was already presented in the section 1.6 \"Device Acquisition Model\" and illustrated in detail in the section 19.1 \"Source Control usage model with Multiple Regions and Transfers\".",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 300,
+      "bottomRightX": 569,
+      "bottomRightY": 319,
+      "content": "So this chapter will concentrates only on describing the Transfer mechanism itself.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 344 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

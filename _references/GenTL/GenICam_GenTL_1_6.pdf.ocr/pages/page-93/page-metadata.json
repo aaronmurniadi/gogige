@@ -1,0 +1,300 @@
+{
+  "index": 92,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-131.jpeg](img-131.jpeg) CAM |   | ![img-132.jpeg](img-132.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 179,
+      "bottomRightX": 277,
+      "bottomRightY": 199,
+      "content": "GC_ERR_RESOURCE_IN_USE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 171,
+      "content": "the ppSegments array is invalid pointer (NULL or ~0x0) or iNumSegments is zero.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 179,
+      "bottomRightX": 635,
+      "bottomRightY": 265,
+      "content": "One or more of the specified ppSegments is already announced to this Data Stream module or, depending on the implementation of the GenTL Producer, it has already been announced to another instance of the Data Stream module (see chapter 3.6).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 272,
+      "bottomRightX": 182,
+      "bottomRightY": 291,
+      "content": "GC_ERR_BUSY",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 272,
+      "bottomRightX": 635,
+      "bottomRightY": 322,
+      "content": "The acquisition has been started and the GenTL Producer does not support announcing buffers while the acquisition is active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 353,
+      "bottomRightX": 635,
+      "bottomRightY": 388,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 399,
+      "bottomRightX": 198,
+      "bottomRightY": 416,
+      "content": "##### 6.3.5.4 DSClose",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 440,
+      "bottomRightX": 234,
+      "bottomRightY": 457,
+      "content": "GC ERROR DSClose",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 441,
+      "bottomRightX": 439,
+      "bottomRightY": 457,
+      "content": "( DS HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 441,
+      "bottomRightX": 607,
+      "bottomRightY": 457,
+      "content": "hDataStream )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 466,
+      "bottomRightX": 635,
+      "bottomRightY": 499,
+      "content": "Closes the Data Stream module associated with the given hDataStream handle. This frees all resources of the Data Stream module, discards and revokes all buffers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 514,
+      "bottomRightX": 166,
+      "bottomRightY": 530,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 534,
+      "bottomRightX": 216,
+      "bottomRightY": 551,
+      "content": "[in] hDataStream",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 534,
+      "bottomRightX": 488,
+      "bottomRightY": 550,
+      "content": "Data Stream module handle to close.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 566,
+      "bottomRightX": 141,
+      "bottomRightY": 581,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 587,
+      "bottomRightX": 208,
+      "bottomRightY": 604,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 586,
+      "bottomRightX": 568,
+      "bottomRightY": 603,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 611,
+      "bottomRightX": 277,
+      "bottomRightY": 630,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 611,
+      "bottomRightX": 512,
+      "bottomRightY": 630,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 638,
+      "bottomRightX": 269,
+      "bottomRightY": 656,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 637,
+      "bottomRightX": 635,
+      "bottomRightY": 690,
+      "content": "The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 719,
+      "bottomRightX": 635,
+      "bottomRightY": 754,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 767,
+      "bottomRightX": 242,
+      "bottomRightY": 784,
+      "content": "##### 6.3.5.5 DSFlushQueue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 807,
+      "bottomRightX": 276,
+      "bottomRightY": 825,
+      "content": "GC ERROR DSFlushQueue",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 808,
+      "bottomRightX": 439,
+      "bottomRightY": 823,
+      "content": "( DS HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 808,
+      "bottomRightX": 599,
+      "bottomRightY": 823,
+      "content": "hDataStream,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 357,
+      "topLeftY": 825,
+      "bottomRightX": 482,
+      "bottomRightY": 842,
+      "content": "ACQ_QUEUE_TYPE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 825,
+      "bottomRightX": 599,
+      "bottomRightY": 841,
+      "content": "iOperation )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 850,
+      "bottomRightX": 635,
+      "bottomRightY": 886,
+      "content": "Flushes the by iOperation defined internal buffer pool or queue to another one as defined in ACQ_QUEUE_TYPE.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 93 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

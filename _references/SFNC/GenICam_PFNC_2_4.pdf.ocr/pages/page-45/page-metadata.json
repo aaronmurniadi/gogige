@@ -1,0 +1,157 @@
+{
+  "index": 44,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 751,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 152,
+      "bottomRightX": 435,
+      "bottomRightY": 175,
+      "content": "## 8 Appendix A - Color Space Transforms",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 182,
+      "bottomRightX": 728,
+      "bottomRightY": 238,
+      "content": "This section describes the equations a camera should use to convert from gamma-corrected R'G'B' color space into a new color space. The \"prime\" symbol denotes a gamma corrected value. Most equations assume 8-bit color components (ranging from 0 to 255) and can be easily adjusted for different bit depths.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 251,
+      "bottomRightX": 260,
+      "bottomRightY": 271,
+      "content": "### 8.1 Gamma Correction",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 279,
+      "bottomRightX": 743,
+      "bottomRightY": 334,
+      "content": "Gamma correction is used to compensate for non-linearity of the display apparatus. This is a non-linear operation that might impact digital image processing. For instance, a threshold is no longer linear. But it can be useful to amplify low-intensity details at the expense of brighter image details.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 365,
+      "bottomRightX": 135,
+      "bottomRightY": 384,
+      "content": "\\[\n\\mathrm{R} ^ {\\prime} = \\mathrm{R} ^ {1 / \\gamma}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 390,
+      "bottomRightX": 135,
+      "bottomRightY": 408,
+      "content": "\\[\n\\mathrm{G} ^ {\\prime} = \\mathrm{G} ^ {1 / \\gamma}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 416,
+      "bottomRightX": 135,
+      "bottomRightY": 433,
+      "content": "\\[\n\\mathrm{B} ^ {\\prime} = \\mathrm{B} ^ {1 / \\gamma}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 443,
+      "bottomRightX": 396,
+      "bottomRightY": 462,
+      "content": "where  \\( \\gamma \\)  is the gamma value used for the correction",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 302,
+      "topLeftY": 471,
+      "bottomRightX": 509,
+      "bottomRightY": 488,
+      "content": "Equation 1: Gamma Correction",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 303,
+      "topLeftY": 519,
+      "bottomRightX": 512,
+      "bottomRightY": 731,
+      "content": "![img-44.jpeg](img-44.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-44.jpeg"
+    },
+    {
+      "topLeftX": 247,
+      "topLeftY": 742,
+      "bottomRightX": 564,
+      "bottomRightY": 773,
+      "content": "Figure 8-1: Gamma Correction for ITU-R BT.601 (image from Wikipedia)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 805,
+      "bottomRightX": 736,
+      "bottomRightY": 842,
+      "content": "The prime symbol (') is used to indicate a gamma-corrected component. In the literature, the prime symbol is frequently omitted creating some confusion.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 974,
+      "content": "Page 45 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

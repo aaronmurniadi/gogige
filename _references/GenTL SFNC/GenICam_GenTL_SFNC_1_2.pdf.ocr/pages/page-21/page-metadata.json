@@ -1,0 +1,122 @@
+{
+  "index": 20,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 54,
+      "bottomRightX": 358,
+      "bottomRightY": 82,
+      "content": "GEN<i>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 538,
+      "topLeftY": 54,
+      "bottomRightX": 583,
+      "bottomRightY": 103,
+      "content": "![img-4.jpeg](img-4.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-4.jpeg"
+    },
+    {
+      "topLeftX": 100,
+      "topLeftY": 97,
+      "bottomRightX": 167,
+      "bottomRightY": 111,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 201,
+      "topLeftY": 97,
+      "bottomRightX": 471,
+      "bottomRightY": 112,
+      "content": "GenTL Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 584,
+      "topLeftY": 86,
+      "bottomRightX": 631,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 156,
+      "bottomRightX": 1010,
+      "bottomRightY": 388,
+      "content": "|  GenTLVersionMajor | M | All | IInteger | R | - | E | Major version number of the GenTL specification the GenTL Producer implementation complies with.  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  GenTLVersionMinor | M | All | IInteger | R | - | E | Minor version number of the GenTL specification the GenTL Producer implementation complies with.  |\n|  GenTLSFNCVersionMajor | R | All | IInteger | R | - | E | Major version number of the GenTL Standard Features Naming Convention that was used to create the GenTL Producer's XML.  |\n|  GenTLSFNCVersionMinor | R | All | IInteger | R | - | E | Minor version number of the GenTL Standard Features Naming Convention that was used to create the GenTL Producer's XML.  |\n|  GevVersionMajor | O | GEV | IInteger | R | - | E | This feature is deprecated (See InterfaceTLVersionMajor).  |\n|  GevVersionMinor | O | GEV | IInteger | R | - | E | This feature is deprecated (See InterfaceTLVersionMinor).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 428,
+      "bottomRightX": 302,
+      "bottomRightY": 445,
+      "content": "#### 2.1.2 Interface Enumeration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 458,
+      "bottomRightX": 887,
+      "bottomRightY": 476,
+      "content": "Contains the features related to the enumeration of available Interface modules within the System module of a GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 483,
+      "bottomRightX": 648,
+      "bottomRightY": 501,
+      "content": "Table 2-2: Interface Enumeration Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 508,
+      "bottomRightX": 1010,
+      "bottomRightY": 680,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  InterfaceEnumeration | R | All | ICategory | R | - | B | Category that contains all Interface Enumeration features of the System module.  |\n|  InterfaceUpdateList | M | All | ICommand | (R)/W | - | B | Updates the internal list of the interfaces.  |\n|  InterfaceUpdateTimeout | R | All | IInteger | R/W | ms | E | Specifies timeout for the InterfaceUpdateList Command.  |\n|  InterfaceSelector | M | All | IInteger | R/W | - | B | Selector for the different GenTL Producer interfaces.  |\n|  InterfaceID[InterfaceSelector] | M | All | IString | R | - | B | GenTL Producer wide unique identifier of the selected interface.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 694,
+      "bottomRightX": 164,
+      "bottomRightY": 710,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 694,
+      "bottomRightX": 428,
+      "bottomRightY": 712,
+      "content": "Page 21 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

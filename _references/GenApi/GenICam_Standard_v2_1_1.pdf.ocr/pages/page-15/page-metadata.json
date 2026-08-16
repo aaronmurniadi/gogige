@@ -1,0 +1,103 @@
+{
+  "index": 14,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-21.jpeg](img-21.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 152,
+      "bottomRightX": 637,
+      "bottomRightY": 270,
+      "content": "The BytesPerPacket feature of DCAM compliant 1394 cameras is a typical example for making a feature temporarily locked. The user can change this camera parameter, but only if the DMA of the PC adapter card is not yet set up for grabbing. \\( ^{5} \\)  Setting up the DMA means that the transport layer asks the camera for the BytesPerPacket parameter and configures that value to the DMA. After this has been done, BytesPerPacket must not be changed until the transport layer releases the DMA. In the meantime, the parameter must be locked in the camera.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 276,
+      "bottomRightX": 637,
+      "bottomRightY": 327,
+      "content": "Note that the camera itself has no way of knowing whether the DMA is set up or not. As a consequence, the “normal” nodes in the camera description files cannot be used for controlling the lock status of BytesPerPacket.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 350,
+      "bottomRightX": 587,
+      "bottomRightY": 617,
+      "content": "![img-22.jpeg](img-22.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-22.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 637,
+      "bottomRightX": 268,
+      "bottomRightY": 656,
+      "content": "Figure 6 Locking a feature",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 667,
+      "bottomRightX": 637,
+      "bottomRightY": 787,
+      "content": "The solution within GenApi is to provide a floating Integer node TLParamsLocked (see Figure 6). The BytesPerPacket links to this node with a pIsLocked link. The transport layer (TL) needs to reflect its DMA status by updating the value of the TLParamsLocked node. Before it sets up the DMA, it locks the respective camera parameters (e.g., BytesPerPacket) by setting TLParamsLocked to 1, and after the grab has been finished, it sets TLParamsLocked 0 again. Changing the TLParamsLocked node will in turn update the lock status of all dependent nodes, for example, the BytesPerPacket node.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 792,
+      "bottomRightX": 637,
+      "bottomRightY": 862,
+      "content": "Note that in order for this scheme to work generically, TLParamsLocked must be a standard node name and the transport layer must have access to the GenApi interface of the camera. In addition, the designer of the camera description file must be aware of which parameters will be locked by the transport layer. This information is included in the transport layer standard,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 889,
+      "bottomRightX": 598,
+      "bottomRightY": 943,
+      "content": "\\( ^{5} \\)  The reason is that the DMA of a OHCI compliant PC adapter card needs to know the BytesPerPacket parameter in advance of the data transfer to ensure that the frames are transferred to memory without causing CPU load.",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 975,
+      "content": "Page 15 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

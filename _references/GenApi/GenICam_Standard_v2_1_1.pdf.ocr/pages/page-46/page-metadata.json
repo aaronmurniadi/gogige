@@ -1,0 +1,138 @@
+{
+  "index": 45,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 637,
+      "bottomRightY": 118,
+      "content": "|  GENICAM |   | ![img-62.jpeg](img-62.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 634,
+      "bottomRightY": 281,
+      "content": "- Int64 GetDisplayPrecision() – determines the precision to display the float number with\n- IInteger *GetIntAlias() - returns a node with represents the same value in integer type\n- IEnumeration *GetEnumAlias() - returns a node with represents the same value in enumeration type\n- void ImposeMin( int64 ) – restricts the minimum\n- void ImposeMax( int64 ) – restricts the maximum",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 293,
+      "bottomRightX": 234,
+      "bottomRightY": 312,
+      "content": "#### 2.9.3 IString Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 322,
+      "bottomRightX": 482,
+      "bottomRightY": 388,
+      "content": "- string GetValue() – returns the value\n- void SetValue( string ) – sets the value\n- int64 GetMaxLength() – gets the maximum length of the string",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 400,
+      "bottomRightX": 277,
+      "bottomRightY": 417,
+      "content": "#### 2.9.4 IEnumeration Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 428,
+      "bottomRightX": 634,
+      "bottomRightY": 624,
+      "content": "- int64 GetIntValue() – returns the index value corresponding to the enumeration value\n- void SetIntValue( int64 ) – sets the index value corresponding to the enumeration value\n- NodeList GetEntries() – returns a list of pointers to the EnumEntry nodes of the enumeration\n- void GetSymbolics( StringList& ) – returns a list of valid enumeration values\n- IEnumEntry *GetEntryByName( string ) – gets the EnumEntry corresponding to the symbolic\n- IEnumEntry *GetEntry ( int64 ) – gets the EnumEntry corresponding to the integer value\n- IEnumEntry *GetCurrentEntry ( int64 ) – gets the currently active EnumEntry",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 637,
+      "bottomRightX": 262,
+      "bottomRightY": 653,
+      "content": "#### 2.9.5 ICommand Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 664,
+      "bottomRightX": 634,
+      "bottomRightY": 721,
+      "content": "- void Execute() – submits the command\n- boolean IsDone() – returns true if the command has been executed; false as long as it still executes.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 736,
+      "bottomRightX": 248,
+      "bottomRightY": 752,
+      "content": "#### 2.9.6 IBoolean Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 763,
+      "bottomRightX": 349,
+      "bottomRightY": 804,
+      "content": "- boolean GetValue() – returns the value\n- void SetValue( boolean ) – sets the value",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 819,
+      "bottomRightX": 249,
+      "bottomRightY": 837,
+      "content": "#### 2.9.7 IRegister Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 847,
+      "bottomRightX": 584,
+      "bottomRightY": 936,
+      "content": "- void Get( uint8 *pBuffer, int64 Length ) – gets the register's content to a buffer\n- void Set( uint8 *pBuffer, int64 Length ) – sets the register's content from a buffer\n- int64 GetAddress() – gets the register's address\n- int64 GetLength() – gets the register's length in bytes",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 300,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 46 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

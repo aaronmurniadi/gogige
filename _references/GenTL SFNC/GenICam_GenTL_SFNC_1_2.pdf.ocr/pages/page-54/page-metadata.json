@@ -1,0 +1,150 @@
+{
+  "index": 53,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<I>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 212,
+      "content": "|  Visibility | Invisible  |\n| --- | --- |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 238,
+      "bottomRightX": 500,
+      "bottomRightY": 256,
+      "content": "The GenICam port through which the System module is accessed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 262,
+      "bottomRightX": 692,
+      "bottomRightY": 299,
+      "content": "Note that TLPort is a port node (not a feature node) and is generally not accessed by the end user directly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 319,
+      "bottomRightX": 240,
+      "bottomRightY": 338,
+      "content": "#### 3.1.4 Event Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 350,
+      "bottomRightX": 689,
+      "bottomRightY": 386,
+      "content": "Controls the generation of events for an instance of the interface module. An Event is a message that is sent to the host application to notify it of the occurrence of an internal event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 394,
+      "bottomRightX": 431,
+      "bottomRightY": 411,
+      "content": "See GenICam SFNC for more details on event control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 420,
+      "bottomRightX": 442,
+      "bottomRightY": 438,
+      "content": "EventSelector selects which particular Event to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 452,
+      "bottomRightX": 240,
+      "bottomRightY": 469,
+      "content": "##### 3.1.4.1 EventControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 473,
+      "bottomRightX": 421,
+      "bottomRightY": 686,
+      "content": "|  Name | EventControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 711,
+      "bottomRightX": 375,
+      "bottomRightY": 729,
+      "content": "Category that contains Event control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 743,
+      "bottomRightX": 246,
+      "bottomRightY": 760,
+      "content": "##### 3.1.4.2 EventSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 764,
+      "bottomRightX": 504,
+      "bottomRightY": 925,
+      "content": "|  Name | EventSelector  |\n| --- | --- |\n|  Category | EventControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 54 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

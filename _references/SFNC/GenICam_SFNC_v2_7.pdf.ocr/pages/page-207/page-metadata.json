@@ -1,0 +1,185 @@
+{
+  "index": 206,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 567,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 572,
+      "bottomRightY": 217,
+      "content": "|  Unit | %  |\n| --- | --- |\n|  Visibility | Expert  |\n|  Values | 0..100  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 241,
+      "bottomRightX": 679,
+      "bottomRightY": 258,
+      "content": "The percentage of the full saturation that is applied at a certain knee-point of a multi-slope exposure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 266,
+      "bottomRightX": 539,
+      "bottomRightY": 284,
+      "content": "The limits are sensor-specific and might not span the whole range of 0..100%.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 290,
+      "bottomRightX": 745,
+      "bottomRightY": 328,
+      "content": "In principle, setting this value to 100% would effectively disable this knee-point, while setting this value to 0% would effectively start exposure at this knee-point.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 334,
+      "bottomRightX": 358,
+      "bottomRightY": 355,
+      "content": "### 5.8.6 MultiSlopeIntensityLimit",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 358,
+      "bottomRightX": 535,
+      "bottomRightY": 570,
+      "content": "|  Name | MultiSlopeIntensityLimit[MultiSlopeKneePointSelector]  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/(Write)  |\n|  Unit | %  |\n|  Visibility | Expert  |\n|  Values | 0..100  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 595,
+      "bottomRightX": 597,
+      "bottomRightY": 613,
+      "content": "The relative intensity which divides intensities influenced by different exposure slopes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 621,
+      "bottomRightX": 397,
+      "bottomRightY": 642,
+      "content": "### 5.8.7 MultiSlopeExposureGradient",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 644,
+      "bottomRightX": 558,
+      "bottomRightY": 857,
+      "content": "|  Name | MultiSlopeExposureGradient[MultiSlopeKneePointSelector]  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 882,
+      "bottomRightX": 488,
+      "bottomRightY": 900,
+      "content": "The gradient of the additional slope that is defined by this knee-point.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 906,
+      "bottomRightX": 710,
+      "bottomRightY": 944,
+      "content": "This gradient is computed by (MultiSlopeSaturationThreshold[n+1]- MultiSlopeSaturationThreshold[n]) / (MultiSlopeExposureLimit[n+1]- MultiSlopeExposureLimit[n]).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 207 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,569 @@
+{
+  "index": 20,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 27,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 28,
+      "bottomRightX": 624,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 119,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 72,
+      "bottomRightX": 403,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 116,
+      "bottomRightX": 700,
+      "bottomRightY": 131,
+      "content": "FIGURE 21-20: TYPICAL LINESCAN 3D ACQUISITION SETUP...389",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 132,
+      "bottomRightX": 700,
+      "bottomRightY": 145,
+      "content": "FIGURE 21-21: LINESCAN 3D RANGE AND REFLECTANCE COMPONENTS OUTPUT...390",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 146,
+      "bottomRightX": 700,
+      "bottomRightY": 160,
+      "content": "FIGURE 21-22: LINESCAN 3D SENSOR INTENSITY COMPONENTS OUTPUT...392",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 162,
+      "bottomRightX": 700,
+      "bottomRightY": 175,
+      "content": "FIGURE 21-23: LINESCAN 3D RANGE AND REFLECTANCE COMPONENTS OUTPUT...393",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 177,
+      "bottomRightX": 700,
+      "bottomRightY": 189,
+      "content": "FIGURE 21-24: LINESCAN 3D WITH DUAL RANGE COMPONENTS OUTPUT...394",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 191,
+      "bottomRightX": 700,
+      "bottomRightY": 203,
+      "content": "FIGURE 23-1: BASIC SCHEMATIC OF AN IMAGING OPTICAL SYSTEM...421",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 206,
+      "bottomRightX": 700,
+      "bottomRightY": 218,
+      "content": "FIGURE 23-2: IMAGING OPTICAL SYSTEM WITH A LIQUID LENS...422",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 221,
+      "bottomRightX": 700,
+      "bottomRightY": 232,
+      "content": "FIGURE 23-3: REPRESENTATION OF STANDARD APERTURE SIZES...423",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 236,
+      "bottomRightX": 700,
+      "bottomRightY": 248,
+      "content": "FIGURE 23-4: OPTIC CONTROLLER AND OPTICAL AXIS STATE MACHINE...426",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 251,
+      "bottomRightX": 700,
+      "bottomRightY": 263,
+      "content": "FIGURE 24-1: FRAME WITH CHUNKS DISABLED...447",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 266,
+      "bottomRightX": 700,
+      "bottomRightY": 279,
+      "content": "FIGURE 24-2: FRAME WITH CHUNKS ENABLED...447",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 282,
+      "bottomRightX": 700,
+      "bottomRightY": 294,
+      "content": "FIGURE 24-3: ILLUSTRATION OF MULTI-COMPONENT/MULTI-PART DATA AND CHUNKS...448",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 295,
+      "bottomRightX": 700,
+      "bottomRightY": 308,
+      "content": "FIGURE 29-1: GEOMETRY 1X-1Y (AREA-SCAN)...584",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 309,
+      "bottomRightX": 700,
+      "bottomRightY": 324,
+      "content": "FIGURE 29-2: GEOMETRY 1X (LINE-SCAN)...584",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 325,
+      "bottomRightX": 700,
+      "bottomRightY": 338,
+      "content": "FIGURE 29-3: GEOMETRY 1X2-1Y (AREA-SCAN)...585",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 339,
+      "bottomRightX": 700,
+      "bottomRightY": 352,
+      "content": "FIGURE 29-4: GEOMETRY 1X2 (LINE-SCAN)...585",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 354,
+      "bottomRightX": 700,
+      "bottomRightY": 369,
+      "content": "FIGURE 29-5: GEOMETRY 2X-1Y (AREA-SCAN)...585",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 370,
+      "bottomRightX": 700,
+      "bottomRightY": 384,
+      "content": "FIGURE 29-6: GEOMETRY 2X (LINE-SCAN)...585",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 385,
+      "bottomRightX": 700,
+      "bottomRightY": 397,
+      "content": "FIGURE 29-7: GEOMETRY 2XE-1Y (AREA-SCAN)...586",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 399,
+      "bottomRightX": 700,
+      "bottomRightY": 412,
+      "content": "FIGURE 29-8: GEOMETRY 2XE (LINE-SCAN)...586",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 413,
+      "bottomRightX": 700,
+      "bottomRightY": 426,
+      "content": "FIGURE 29-9: GEOMETRY 2XM-1Y (AREA-SCAN)...586",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 428,
+      "bottomRightX": 700,
+      "bottomRightY": 441,
+      "content": "FIGURE 29-10: GEOMETRY 2XM (LINE-SCAN)...586",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 443,
+      "bottomRightX": 700,
+      "bottomRightY": 456,
+      "content": "FIGURE 29-11: GEOMETRY 1X-1Y2 (AREA-SCAN)...587",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 458,
+      "bottomRightX": 700,
+      "bottomRightY": 471,
+      "content": "FIGURE 29-12: GEOMETRY 1X-2YE (AREA-SCAN)...587",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 473,
+      "bottomRightX": 700,
+      "bottomRightY": 486,
+      "content": "FIGURE 29-13: GEOMETRY 1X3-1Y (AREA-SCAN)...588",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 487,
+      "bottomRightX": 700,
+      "bottomRightY": 502,
+      "content": "FIGURE 29-14: GEOMETRY 1X3 (LINE-SCAN)...588",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 503,
+      "bottomRightX": 700,
+      "bottomRightY": 516,
+      "content": "FIGURE 29-15: GEOMETRY 3X-1Y (AREA-SCAN)...588",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 517,
+      "bottomRightX": 700,
+      "bottomRightY": 530,
+      "content": "FIGURE 29-16: GEOMETRY 3X (LINE-SCAN)...588",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 532,
+      "bottomRightX": 700,
+      "bottomRightY": 546,
+      "content": "FIGURE 29-17: GEOMETRY 1X4-1Y (AREA-SCAN)...589",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 548,
+      "bottomRightX": 700,
+      "bottomRightY": 561,
+      "content": "FIGURE 29-18: GEOMETRY 1X4 (LINE-SCAN)...589",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 563,
+      "bottomRightX": 700,
+      "bottomRightY": 576,
+      "content": "FIGURE 29-19: GEOMETRY 4X-1Y (AREA-SCAN)...589",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 578,
+      "bottomRightX": 700,
+      "bottomRightY": 591,
+      "content": "FIGURE 29-20: GEOMETRY 4X (LINE-SCAN)...589",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 593,
+      "bottomRightX": 700,
+      "bottomRightY": 606,
+      "content": "FIGURE 29-21: GEOMETRY 2X2-1Y (AREA-SCAN)...590",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 607,
+      "bottomRightX": 700,
+      "bottomRightY": 620,
+      "content": "FIGURE 29-22: GEOMETRY 2X2 (LINE-SCAN)...590",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 622,
+      "bottomRightX": 700,
+      "bottomRightY": 635,
+      "content": "FIGURE 29-23: GEOMETRY 2X2E-1Y (AREA-SCAN)...590",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 637,
+      "bottomRightX": 700,
+      "bottomRightY": 649,
+      "content": "FIGURE 29-24: GEOMETRY 2X2E (LINE-SCAN)...590",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 651,
+      "bottomRightX": 700,
+      "bottomRightY": 665,
+      "content": "FIGURE 29-25: GEOMETRY 2X2M-1Y (AREA-SCAN)...591",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 667,
+      "bottomRightX": 700,
+      "bottomRightY": 680,
+      "content": "FIGURE 29-26: GEOMETRY 2X2M (LINE-SCAN)...591",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 682,
+      "bottomRightX": 700,
+      "bottomRightY": 694,
+      "content": "FIGURE 29-27: GEOMETRY 1X2-2YE (AREA-SCAN)...591",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 696,
+      "bottomRightX": 700,
+      "bottomRightY": 710,
+      "content": "FIGURE 29-28: GEOMETRY 2X-2YE (AREA-SCAN)...592",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 712,
+      "bottomRightX": 700,
+      "bottomRightY": 724,
+      "content": "FIGURE 29-29: GEOMETRY 2XE-2YE (AREA-SCAN)...592",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 726,
+      "bottomRightX": 700,
+      "bottomRightY": 739,
+      "content": "FIGURE 29-30: GEOMETRY 2XM-2YE (AREA-SCAN)...592",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 741,
+      "bottomRightX": 700,
+      "bottomRightY": 754,
+      "content": "FIGURE 29-31: GEOMETRY 1X8-1Y (AREA-SCAN)...593",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 756,
+      "bottomRightX": 700,
+      "bottomRightY": 769,
+      "content": "FIGURE 29-32: GEOMETRY 1X8 (LINE-SCAN)...593",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 771,
+      "bottomRightX": 700,
+      "bottomRightY": 783,
+      "content": "FIGURE 29-33: GEOMETRY 8X-1Y (AREA-SCAN)...593",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 785,
+      "bottomRightX": 700,
+      "bottomRightY": 799,
+      "content": "FIGURE 29-34: GEOMETRY 8X (LINE-SCAN)...593",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 801,
+      "bottomRightX": 700,
+      "bottomRightY": 814,
+      "content": "FIGURE 29-35: GEOMETRY 4X2-1Y (AREA-SCAN)...594",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 816,
+      "bottomRightX": 700,
+      "bottomRightY": 828,
+      "content": "FIGURE 29-36: GEOMETRY 4X2 (LINE-SCAN)...594",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 830,
+      "bottomRightX": 700,
+      "bottomRightY": 843,
+      "content": "FIGURE 29-37: GEOMETRY 4X2E-1Y (AREA-SCAN)...594",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 845,
+      "bottomRightX": 700,
+      "bottomRightY": 858,
+      "content": "FIGURE 29-38: GEOMETRY 4X2E (LINE-SCAN)...594",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 860,
+      "bottomRightX": 700,
+      "bottomRightY": 873,
+      "content": "FIGURE 29-39: GEOMETRY 2X2E-2YE (AREA-SCAN)...595",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 876,
+      "bottomRightX": 700,
+      "bottomRightY": 888,
+      "content": "FIGURE 29-40: GEOMETRY 1X10-1Y (AREA-SCAN)...596",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 890,
+      "bottomRightX": 700,
+      "bottomRightY": 903,
+      "content": "FIGURE 29-41: GEOMETRY 1X10 (LINE-SCAN)...596",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 905,
+      "bottomRightX": 700,
+      "bottomRightY": 918,
+      "content": "FIGURE 29-42: GEOMETRY 10X-1Y (LINE-SCAN)...596",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 920,
+      "bottomRightX": 700,
+      "bottomRightY": 932,
+      "content": "FIGURE 29-43: GEOMETRY 10X (LINE-SCAN)...597",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1005,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 390,
+      "bottomRightY": 1007,
+      "content": "Page 21 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 623,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

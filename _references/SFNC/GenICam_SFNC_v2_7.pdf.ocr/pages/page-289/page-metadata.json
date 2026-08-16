@@ -1,0 +1,140 @@
+{
+  "index": 288,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 143,
+      "bottomRightX": 320,
+      "bottomRightY": 167,
+      "content": "## 13 Software Signal Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 742,
+      "bottomRightY": 232,
+      "content": "The Software Signal Control chapter describes the model and features related to the control and the generation of software generated signals.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 241,
+      "bottomRightX": 730,
+      "bottomRightY": 274,
+      "content": "A software signal is a general source and can be used as a trigger signal source for diverse functions in other SFNC modules.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 292,
+      "bottomRightX": 298,
+      "bottomRightY": 312,
+      "content": "### 13.1 SoftwareSignalControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 314,
+      "bottomRightX": 515,
+      "bottomRightY": 526,
+      "content": "|  Name | SoftwareSignalControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Optional  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 544,
+      "bottomRightX": 430,
+      "bottomRightY": 562,
+      "content": "Category that contains the Software Signal Control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 578,
+      "bottomRightX": 304,
+      "bottomRightY": 598,
+      "content": "### 13.2 SoftwareSignalSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 600,
+      "bottomRightX": 515,
+      "bottomRightY": 832,
+      "content": "|  Name | SoftwareSignalSelector  |\n| --- | --- |\n|  Category | SoftwareSignalControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | SoftwareSignal0 (If 0 based) SoftwareSignal1, SoftwareSignal2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 848,
+      "bottomRightX": 364,
+      "bottomRightY": 866,
+      "content": "Selects which Software Signal features to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 891,
+      "bottomRightX": 177,
+      "bottomRightY": 908,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 289 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 615,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

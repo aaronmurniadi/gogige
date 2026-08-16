@@ -1,0 +1,94 @@
+{
+  "index": 573,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 144,
+      "bottomRightX": 524,
+      "bottomRightY": 190,
+      "content": "- Off: PoCXP is forced off.\n- Tripped: The Link has shut down because of an over-current trip.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 197,
+      "bottomRightX": 554,
+      "bottomRightY": 215,
+      "content": "This feature shall be present only on Receiver Device that controls the PoCXP.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 231,
+      "bottomRightX": 465,
+      "bottomRightY": 253,
+      "content": "### 27.7.27 CxpFirstLineTriggerWithFrameStart",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 253,
+      "bottomRightX": 534,
+      "bottomRightY": 497,
+      "content": "|  Name | CxpFirstLineTriggerWithFrameStart  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 520,
+      "bottomRightX": 565,
+      "bottomRightY": 540,
+      "content": "Specifies if a FrameStart trigger also triggers the first LineStart at the same time.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 574 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 623,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

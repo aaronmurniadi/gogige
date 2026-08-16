@@ -1,0 +1,130 @@
+{
+  "index": 318,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 136,
+      "bottomRightX": 282,
+      "bottomRightY": 191,
+      "content": "- ExposureTime = 2000\n- Gain = 2.0\n- SequencerSetNext[0] = 0",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 193,
+      "bottomRightX": 375,
+      "bottomRightY": 212,
+      "content": "- SequencerTriggerSource[0] = ExposureEnd",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 228,
+      "bottomRightX": 139,
+      "bottomRightY": 244,
+      "content": "### Set 2:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 248,
+      "bottomRightX": 282,
+      "bottomRightY": 304,
+      "content": "- ExposureTime = 32000\n- Gain = 1.0\n- SequencerSetNext[0] = 0",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 305,
+      "bottomRightX": 375,
+      "bottomRightY": 324,
+      "content": "- SequencerTriggerSource[0] = ExposureEnd",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 340,
+      "bottomRightX": 139,
+      "bottomRightY": 355,
+      "content": "### Set 3:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 359,
+      "bottomRightX": 385,
+      "bottomRightY": 471,
+      "content": "- ExposureTime = 16000\n- Gain = 2.0\n- SequencerSetNext[0] = 0\n- SequencerTriggerSource[0] = Timer1End\n- SequencerSetNext[1] = 2\n- SequencerTriggerSource[1] = Timer0End",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 489,
+      "bottomRightX": 415,
+      "bottomRightY": 508,
+      "content": "The working diagram is shown in the following figure:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 522,
+      "bottomRightX": 710,
+      "bottomRightY": 911,
+      "content": "![img-94.jpeg](img-94.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-94.jpeg"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 319 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

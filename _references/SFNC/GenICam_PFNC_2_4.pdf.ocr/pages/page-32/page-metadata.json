@@ -1,0 +1,168 @@
+{
+  "index": 31,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 751,
+      "bottomRightY": 125,
+      "content": "|  ![img-32.jpeg](img-32.jpeg) |   | ![img-33.jpeg](img-33.jpeg)  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 170,
+      "topLeftY": 175,
+      "bottomRightX": 642,
+      "bottomRightY": 246,
+      "content": "![img-34.jpeg](img-34.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-34.jpeg"
+    },
+    {
+      "topLeftX": 308,
+      "topLeftY": 254,
+      "bottomRightX": 504,
+      "bottomRightY": 272,
+      "content": "Figure 6-3: Mono12 unpacked",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 305,
+      "bottomRightX": 426,
+      "bottomRightY": 325,
+      "content": "#### Pixel construction rules for the “lsb Unpacked” style",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 331,
+      "bottomRightX": 263,
+      "bottomRightY": 348,
+      "content": "To construct the pixel stream:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 349,
+      "bottomRightX": 528,
+      "bottomRightY": 402,
+      "content": "1) Put the component in the least significant bits.\n2) Pad the most significant bits to the nearest 8-bit boundary if needed.\n3) Start with the next component on the next 8-bit boundary.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 463,
+      "bottomRightX": 224,
+      "bottomRightY": 482,
+      "content": "#### 6.1.2 msb Unpacked",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 488,
+      "bottomRightX": 736,
+      "bottomRightY": 544,
+      "content": "For msb unpacked, each component is filled msb first and its lsb's are zero-padded to the nearest byte (8-bit) boundary. Hence next component (or pixel) always starts on the next byte. For PFNC-compliant image buffers, msb unpacked must be explicitly specified in the pixel format name by appending \"msb\".",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 569,
+      "bottomRightX": 673,
+      "bottomRightY": 602,
+      "content": "Note: If the component size is a multiple of 8 bits, then use lsb unpacked since no padding bits is necessary and this convention aims for the shortest string to represent the pixel name.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 638,
+      "bottomRightX": 625,
+      "bottomRightY": 657,
+      "content": "Note that in the following figures, we put byte 0 on the left to help illustrate the concept.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 170,
+      "topLeftY": 688,
+      "bottomRightX": 642,
+      "bottomRightY": 759,
+      "content": "![img-35.jpeg](img-35.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-35.jpeg"
+    },
+    {
+      "topLeftX": 297,
+      "topLeftY": 767,
+      "bottomRightX": 515,
+      "bottomRightY": 785,
+      "content": "Figure 6-4: Mono10msb unpacked",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 170,
+      "topLeftY": 817,
+      "bottomRightX": 642,
+      "bottomRightY": 888,
+      "content": "![img-36.jpeg](img-36.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-36.jpeg"
+    },
+    {
+      "topLeftX": 295,
+      "topLeftY": 896,
+      "bottomRightX": 517,
+      "bottomRightY": 914,
+      "content": "Figure 6-5: Mono12msb unpacked",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 32 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

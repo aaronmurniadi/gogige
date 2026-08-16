@@ -1,0 +1,147 @@
+{
+  "index": 6,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 43,
+      "bottomRightX": 681,
+      "bottomRightY": 122,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 131,
+      "bottomRightX": 702,
+      "bottomRightY": 167,
+      "content": "3.4.2.5 DeviceStreamChannelPacketSizeInc 100\n3.4.2.6 DeviceStreamChannelNegotiatePacketSize 100",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 175,
+      "bottomRightX": 700,
+      "bottomRightY": 193,
+      "content": "### 3.4.3 Buffer Handling Control 101",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 200,
+      "bottomRightX": 700,
+      "bottomRightY": 467,
+      "content": "3.4.3.1 BufferHandlingControl 101\n3.4.3.2 StreamAnnouncedBufferCount 101\n3.4.3.3 StreamBufferHandlingMode 101\n3.4.3.4 StreamAnnounceBufferMinimum 104\n3.4.3.5 StreamDeliveredFrameCount 105\n3.4.3.6 StreamLostFrameCount 105\n3.4.3.7 StreamInputBufferCount 105\n3.4.3.8 StreamOutputBufferCount 106\n3.4.3.9 StreamStartedFrameCount 106\n3.4.3.10 PayloadSize 107\n3.4.3.11 StreamIsGrabbing 107\n3.4.3.12 StreamChunkCountMaximum 108\n3.4.3.13 StreamBufferAlignment 108",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 476,
+      "bottomRightX": 700,
+      "bottomRightY": 492,
+      "content": "### 3.4.4 GenICam Control 109",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 500,
+      "bottomRightX": 700,
+      "bottomRightY": 534,
+      "content": "3.4.4.1 Root 109\n3.4.4.2 StreamPort 109",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 543,
+      "bottomRightX": 700,
+      "bottomRightY": 559,
+      "content": "### 3.4.5 Event Control 110",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 567,
+      "bottomRightX": 700,
+      "bottomRightY": 623,
+      "content": "3.4.5.1 EventControl 110\n3.4.5.2 EventSelector 110\n3.4.5.3 EventNotification 111",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 632,
+      "bottomRightX": 700,
+      "bottomRightY": 648,
+      "content": "### 3.5 BUFFER MODULE 112",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 657,
+      "bottomRightX": 700,
+      "bottomRightY": 674,
+      "content": "#### 3.5.1 Buffer Information 112",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 681,
+      "bottomRightX": 700,
+      "bottomRightY": 759,
+      "content": "3.5.1.1 BufferInformation 112\n3.5.1.2 BufferUserData 113\n3.5.1.3 BufferType 113\n3.5.1.4 BufferSize 114",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 767,
+      "bottomRightX": 700,
+      "bottomRightY": 784,
+      "content": "#### 3.5.2 Buffer Data Information 114",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 792,
+      "bottomRightX": 700,
+      "bottomRightY": 933,
+      "content": "3.5.2.1 BufferDataInformation 115\n3.5.2.2 BufferData 115\n3.5.2.3 BufferTimeStamp 115\n3.5.2.4 BufferNewData 116\n3.5.2.5 BufferIsQueued 116\n3.5.2.6 BufferIsAcquiring 117\n3.5.2.7 BufferIsIncomplete 117",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 952,
+      "bottomRightX": 164,
+      "bottomRightY": 968,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 561,
+      "topLeftY": 952,
+      "bottomRightX": 650,
+      "bottomRightY": 970,
+      "content": "Page 7 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

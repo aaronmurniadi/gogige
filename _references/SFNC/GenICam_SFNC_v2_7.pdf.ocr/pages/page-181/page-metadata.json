@@ -1,0 +1,194 @@
+{
+  "index": 180,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 82,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 386,
+      "bottomRightY": 166,
+      "content": "|   | ImmediateWithPadding  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 190,
+      "bottomRightX": 752,
+      "bottomRightY": 246,
+      "content": "Controls how the AcquisitionStop command and the acquisition stopped using a trigger (e.g. AcquisitionActive, FrameBurstActive, FrameActive or FrameEnd trigger), ends an ongoing frame. This feature is mainly used in Linescan devices where each line in a frame is acquired sequentially.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 253,
+      "bottomRightX": 752,
+      "bottomRightY": 287,
+      "content": "- **Complete**: When stopped during a frame, the device will continue acquisition of lines until the specified Height is reached to deliver a complete default size frame.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 288,
+      "bottomRightX": 697,
+      "bottomRightY": 324,
+      "content": "Note that if each line is triggered from an external source and this line trigger stops no frame is delivered, and an AcquisitionAbort is needed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 325,
+      "bottomRightX": 740,
+      "bottomRightY": 358,
+      "content": "- **Immediate**: Acquisition stops immediately even during a frame and only the lines acquired at the time are delivered.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 361,
+      "bottomRightX": 741,
+      "bottomRightY": 396,
+      "content": "- **ImmediateWithPadding**: Acquisition stops immediately even during a frame but the remaining of the frame will be padded with data to deliver a complete default Height frame.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 397,
+      "bottomRightX": 750,
+      "bottomRightY": 433,
+      "content": "Note: How the receiver knows which data is valid is beyond the scope of this feature, it can for example be done using chunk information.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 474,
+      "bottomRightX": 295,
+      "bottomRightY": 495,
+      "content": "### 5.5.2 AcquisitionAbort",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 497,
+      "bottomRightX": 386,
+      "bottomRightY": 711,
+      "content": "|  Name | AcquisitionAbort  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 735,
+      "bottomRightX": 747,
+      "bottomRightY": 772,
+      "content": "Aborts the Acquisition immediately. This will end the capture without completing the current Frame or waiting on a trigger. If no Acquisition is in progress, the command is ignored.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 786,
+      "bottomRightX": 282,
+      "bottomRightY": 807,
+      "content": "### 5.5.3 AcquisitionArm",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 809,
+      "bottomRightX": 386,
+      "bottomRightY": 943,
+      "content": "|  Name | AcquisitionArm  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 181 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

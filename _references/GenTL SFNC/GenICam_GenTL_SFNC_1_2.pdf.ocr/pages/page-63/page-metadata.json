@@ -1,0 +1,132 @@
+{
+  "index": 62,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 434,
+      "bottomRightY": 177,
+      "content": "Specifies timeout for the DeviceUpdateList Command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 191,
+      "bottomRightX": 253,
+      "bottomRightY": 208,
+      "content": "#### 3.2.2.4 DeviceSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 212,
+      "bottomRightX": 421,
+      "bottomRightY": 425,
+      "content": "|  Name | DeviceSelector  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 449,
+      "bottomRightX": 660,
+      "bottomRightY": 486,
+      "content": "Selector for the different devices on this interface. This value only changes on execution of \"DeviceUpdateList\". The selector is 0-based in order to match the index of the C interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 499,
+      "bottomRightX": 213,
+      "bottomRightY": 516,
+      "content": "#### 3.2.2.5 DeviceID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 519,
+      "bottomRightX": 421,
+      "bottomRightY": 733,
+      "content": "|  Name | DeviceID[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Mandatory  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 758,
+      "bottomRightX": 686,
+      "bottomRightY": 795,
+      "content": "Interface wide unique identifier of the selected device. This value only changes on execution of the DeviceUpdateList command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 802,
+      "bottomRightX": 591,
+      "bottomRightY": 839,
+      "content": "Corresponds to the IFGetDeviceID function with the index corresponding to \"DeviceSelector\".",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 853,
+      "bottomRightX": 288,
+      "bottomRightY": 870,
+      "content": "#### 3.2.2.6 DeviceVendorName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 873,
+      "bottomRightX": 449,
+      "bottomRightY": 904,
+      "content": "|  Name | DeviceVendorName[DeviceSelector]  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 945,
+      "content": "Page 63 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

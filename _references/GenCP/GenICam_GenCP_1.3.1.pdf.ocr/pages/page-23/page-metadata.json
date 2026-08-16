@@ -1,0 +1,102 @@
+{
+  "index": 22,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-21.jpeg](img-21.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 171,
+      "bottomRightX": 653,
+      "bottomRightY": 257,
+      "content": "There is a corner case if the device was opened and only one single command was sent or if the request_id got a wraparound to 0, the device was closed and a new application starts with request_id being 0. In this case the CommandResent bit would not be set but the receiver should not discard the command. Therefore, commands with request_id equal to 0 must always be read commands and must always be executed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 272,
+      "bottomRightX": 649,
+      "bottomRightY": 339,
+      "content": "If a received command is invalid (combination of command and flags) or is not supported/unknown by the receiver, but at least the CCD is correct (guaranteed by the underlying technology or by CRC) so that the content of the packet is as sent by the originator and the RequestAck bit is set in the flags field, an acknowledge must be sent back with the following content:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 85,
+      "topLeftY": 354,
+      "bottomRightX": 642,
+      "bottomRightY": 472,
+      "content": "- the status code is to be set to GENCP_INVALID_HEADER or GENCP_NOT_IMPLEMENTED (see 4.3.2.1)\n- the command_id is copied from the received packet and the acknowledge flag (see 4.3.3) is set\n- the length is set to 0, the SCD is discarded\n- the request_id is copied from the received packet and left untouched\n- CRCs (if existing) must be adjusted",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 489,
+      "bottomRightX": 301,
+      "bottomRightY": 505,
+      "content": "and then it is sent back to the originator.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 130,
+      "topLeftY": 534,
+      "bottomRightX": 421,
+      "bottomRightY": 555,
+      "content": "##### 3.1.4.4. Acknowledge packet failure",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 576,
+      "bottomRightX": 640,
+      "bottomRightY": 609,
+      "content": "If an acknowledge packet is lost on the link, if the CRC of the acknowledge packet is corrupt or if the content is not as expected, the following actions are supposed to happen:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 633,
+      "bottomRightX": 637,
+      "bottomRightY": 685,
+      "content": "The resend of the command packet uses the same request_id as the original. This allows the receiver to identify a resend in case the request_id is already processed. In this case the command must not be processed again but the previous result should be resent.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 23 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

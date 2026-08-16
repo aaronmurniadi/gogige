@@ -1,0 +1,299 @@
+{
+  "index": 1,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 43,
+      "bottomRightX": 683,
+      "bottomRightY": 123,
+      "content": "GENICAM\nVersion 1.2.0 GenTL Standard Features Naming Convention\nemva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 132,
+      "bottomRightX": 290,
+      "bottomRightY": 157,
+      "content": "# Table of Contents",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 174,
+      "bottomRightX": 702,
+      "bottomRightY": 193,
+      "content": "TABLE OF CONTENTS 2",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 215,
+      "bottomRightX": 702,
+      "bottomRightY": 232,
+      "content": "HISTORY 9",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 256,
+      "bottomRightX": 702,
+      "bottomRightY": 273,
+      "content": "1 INTRODUCTION 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 101,
+      "topLeftY": 298,
+      "bottomRightX": 701,
+      "bottomRightY": 314,
+      "content": "1.1 GENICAM REFERENCE DOCUMENTS 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 324,
+      "bottomRightX": 702,
+      "bottomRightY": 339,
+      "content": "1.2 TL SPECIFIC FEATURES 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 349,
+      "bottomRightX": 702,
+      "bottomRightY": 365,
+      "content": "1.3 STANDARD DEFINITIONS 14",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 375,
+      "bottomRightX": 702,
+      "bottomRightY": 391,
+      "content": "1.3.1 Events in GenTL 15",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 400,
+      "bottomRightX": 702,
+      "bottomRightY": 416,
+      "content": "1.3.2 Feature Persistence in GenTL 15",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 425,
+      "bottomRightX": 702,
+      "bottomRightY": 441,
+      "content": "1.4 CONVENTIONS 16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 451,
+      "bottomRightX": 702,
+      "bottomRightY": 467,
+      "content": "1.5 STANDARD UNITS 18",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 476,
+      "bottomRightX": 702,
+      "bottomRightY": 493,
+      "content": "1.6 ACRONYMS 19",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 502,
+      "bottomRightX": 702,
+      "bottomRightY": 519,
+      "content": "2 FEATURES SUMMARY 20",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 101,
+      "topLeftY": 544,
+      "bottomRightX": 702,
+      "bottomRightY": 560,
+      "content": "2.1 SYSTEM MODULE 20",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 568,
+      "bottomRightX": 702,
+      "bottomRightY": 586,
+      "content": "2.1.1 System Information 20",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 594,
+      "bottomRightX": 702,
+      "bottomRightY": 611,
+      "content": "2.1.2 Interface Enumeration 21",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 620,
+      "bottomRightX": 702,
+      "bottomRightY": 636,
+      "content": "2.1.3 GenICam Control 22",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 645,
+      "bottomRightX": 702,
+      "bottomRightY": 662,
+      "content": "2.1.4 Event Control 23",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 101,
+      "topLeftY": 672,
+      "bottomRightX": 702,
+      "bottomRightY": 688,
+      "content": "2.2 INTERFACE MODULE 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 696,
+      "bottomRightX": 702,
+      "bottomRightY": 715,
+      "content": "2.2.1 Interface Information 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 722,
+      "bottomRightX": 702,
+      "bottomRightY": 739,
+      "content": "2.2.2 Device Enumeration 25",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 748,
+      "bottomRightX": 702,
+      "bottomRightY": 765,
+      "content": "2.2.3 Action Control 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 773,
+      "bottomRightX": 702,
+      "bottomRightY": 791,
+      "content": "2.2.4 GenICam Control 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 799,
+      "bottomRightX": 702,
+      "bottomRightY": 815,
+      "content": "2.2.5 Event Control 28",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 101,
+      "topLeftY": 824,
+      "bottomRightX": 702,
+      "bottomRightY": 841,
+      "content": "2.3 DEVICE MODULE 28",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 851,
+      "bottomRightX": 702,
+      "bottomRightY": 867,
+      "content": "2.3.1 Device Information 28",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 876,
+      "bottomRightX": 702,
+      "bottomRightY": 893,
+      "content": "2.3.2 Device Control 31",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 901,
+      "bottomRightX": 702,
+      "bottomRightY": 919,
+      "content": "2.3.3 Stream Enumeration 31",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 927,
+      "bottomRightX": 702,
+      "bottomRightY": 943,
+      "content": "2.3.4 GenICam Control 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 951,
+      "bottomRightX": 165,
+      "bottomRightY": 969,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 561,
+      "topLeftY": 951,
+      "bottomRightX": 652,
+      "bottomRightY": 971,
+      "content": "Page 2 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

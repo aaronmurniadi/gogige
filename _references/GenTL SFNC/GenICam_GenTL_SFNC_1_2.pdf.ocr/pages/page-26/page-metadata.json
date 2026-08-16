@@ -1,0 +1,75 @@
+{
+  "index": 25,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 54,
+      "bottomRightX": 359,
+      "bottomRightY": 83,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 54,
+      "bottomRightX": 633,
+      "bottomRightY": 104,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 100,
+      "topLeftY": 97,
+      "bottomRightX": 169,
+      "bottomRightY": 112,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 97,
+      "bottomRightX": 472,
+      "bottomRightY": 113,
+      "content": "GenTL Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 156,
+      "bottomRightX": 1010,
+      "bottomRightY": 594,
+      "content": "|   |  |  |  |  |  |  | remote device.  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  GevDeviceSubnetMask[DeviceSelector] | M | GEV | IInteger | R | - | E | Current subnet mask of the GVCP interface of the selected remote device.  |\n|  GevDeviceGateway[DeviceSelector] | R | GEV | IInteger | R | - | E | Current gateway IP address of the GVCP interface of the selected remote device.  |\n|  GevDeviceIPConfigurationStatus[DeviceSelector] | R | GEV | IEnum | R/W | - | E | Device IP configuration of the GVCP interface of the selected remote device.  |\n|  GevDeviceMACAddress[DeviceSelector] | M | GEV | IInteger | R | - | E | 48-bit MAC address of the GVCP interface of the selected remote device.  |\n|  GevDeviceCurrentControlMode[DeviceSelector] | O | GEV | IEnum | R/W | - | E | The current control mode of the device.  |\n|  GevApplicationSwitchoverKey[DeviceSelector] | O | GEV | IInteger | W | - | E | Application switchover key to use when requesting ControlAccess switchover.  |\n|  GevDeviceForceIP[DeviceSelector] | R | GEV | ICommand | (R)/W | - | E | Apply the force IP settings (GevDeviceForceIPAddress, GevDeviceForceSubnetMask and GevDeviceForceGateway) in the Device using ForceIP command.  |\n|  GevDeviceForceIPAddress[DeviceSelector] | R | GEV | IInteger | R/W | - | E | Static IP address to set for the GVCP interface of the remote device.  |\n|  GevDeviceForceSubnetMask[DeviceSelector] | R | GEV | IInteger | R/W | - | E | Static subnet mask to set for GVCP interface of the remote device.  |\n|  GevDeviceForceGateway[DeviceSelector] | R | GEV | IInteger | R/W | - | E | Static gateway IP address to set for the GVCP interface of the remote device.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 694,
+      "bottomRightX": 164,
+      "bottomRightY": 710,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 331,
+      "topLeftY": 694,
+      "bottomRightX": 428,
+      "bottomRightY": 712,
+      "content": "Page 26 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

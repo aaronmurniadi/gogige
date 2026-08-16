@@ -1,0 +1,103 @@
+{
+  "index": 34,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "<table><tr><td colspan=\"2\">GEN&lt;i&gt;CAM</td><td rowspan=\"2\">emva</td></tr><tr><td>Version 1.1.0</td><td>GenDC</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 146,
+      "bottomRightX": 247,
+      "bottomRightY": 164,
+      "content": "### 3.2.1 GenDC Flow mapping table",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 182,
+      "bottomRightX": 698,
+      "bottomRightY": 235,
+      "content": "The Transport Layer gets the Flow mapping table that provides the Flow information about the number of Flows and the size of each Flow in a Transport Layer specific way, for example using the device XML or bootstrap registers. The Flow information is static after TLParamsLocked has been set.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 30,
+      "topLeftY": 249,
+      "bottomRightX": 708,
+      "bottomRightY": 336,
+      "content": "|  HeaderType |   | Flags | HeaderSize  |\n| --- | --- | --- | --- |\n|  VersionMajor | VersionMinor | Reserved | FlowCount  |\n|  FlowSize[FlowCount] ...  |   |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 257,
+      "topLeftY": 348,
+      "bottomRightX": 479,
+      "bottomRightY": 364,
+      "content": "Figure 3-3: GenDC Flow mapping table layout",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 39,
+      "topLeftY": 391,
+      "bottomRightX": 732,
+      "bottomRightY": 884,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Description  |   |   |\n| --- | --- | --- | --- | --- |\n|  2 | 0 | **HeaderType** = Unique Header format identifier (Flow Mapping Table Header) (GDC_FLOW_MAPPING_HEADER = 0x7000).  |   |   |\n|  2 | 2 | **Flags** = Flags specifying the characteristics and format of the Table.  |   |   |\n|   |   |  Width (bits) | Bit offset (lsb << x) | Description  |\n|   |   |  16 | 0 | Reserved (set to 0)  |\n|  4 | 4 | **HeaderSize** = Size of the Flow Mapping Table Size of the Flow Mapping Table Header in bytes including the variable sized FlowSize array (i.e.16+ FlowCount x 8)  |   |   |\n|  1 | 8 | **VersionMajor** = Major Version of this table. Must be set to 1 for this GenDC specification.  |   |   |\n|  1 | 9 | **VersionMinor** = Minor Version of this table. Must be set to 0 for this GenDC specification.  |   |   |\n|  2 | 10 | **Reserved** = Reserved for future use (set to 0).  |   |   |\n|  4 | 12 | **FlowCount** = Number of entries (=Flows) in the table  |   |   |\n|  FlowCount x 8 | 16 | **FlowSize**[] Array of the size in bytes of each Flow. The size of the array is **FlowCount** x 8 bytes.  |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 245,
+      "topLeftY": 898,
+      "bottomRightX": 490,
+      "bottomRightY": 912,
+      "content": "Table 3-1: GenDC Flow mapping table description",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 925,
+      "bottomRightX": 689,
+      "bottomRightY": 961,
+      "content": "The GenDC Container is transmitted using linear addressing relative to the Container start. The Transport Layer can keep this and assign the Flow base addresses also in a linear way or it can use any other Flow base addresses for",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 83,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 35 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

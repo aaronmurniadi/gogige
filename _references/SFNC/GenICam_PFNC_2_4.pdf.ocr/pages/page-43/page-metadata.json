@@ -1,0 +1,185 @@
+{
+  "index": 42,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 752,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 152,
+      "bottomRightX": 251,
+      "bottomRightY": 174,
+      "content": "## 7 Interface-specific",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 181,
+      "bottomRightX": 733,
+      "bottomRightY": 237,
+      "content": "The various camera interfaces in the machine vision industry might need to provide additional information about how the data is put onto the interface. This might include the sequence of components in the data packets or the usage of multiple streams to transfer the various components (ex: planar mode).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 243,
+      "bottomRightX": 677,
+      "bottomRightY": 262,
+      "content": "Any interface-specific field must be delimited by an underscore ‘_’ from the rest of the pixel text.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 268,
+      "bottomRightX": 726,
+      "bottomRightY": 288,
+      "content": "Although this convention does not try to cover all possibilities, it does list the following typical use cases.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 302,
+      "bottomRightX": 207,
+      "bottomRightY": 322,
+      "content": "### 7.1 Planar mode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 331,
+      "bottomRightX": 629,
+      "bottomRightY": 366,
+      "content": "When each component is transmitted over a different stream/plane or as a separate single-component/monochromatic image, then the pixel format should use the “Planar” suffix.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 101,
+      "topLeftY": 373,
+      "bottomRightX": 679,
+      "bottomRightY": 393,
+      "content": "Ex: RGB10_Planar transmitted as 3 different streams: red plane, green plane and blue plane",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 423,
+      "bottomRightX": 745,
+      "bottomRightY": 602,
+      "content": "![img-43.jpeg](img-43.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-43.jpeg"
+    },
+    {
+      "topLeftX": 317,
+      "topLeftY": 608,
+      "bottomRightX": 495,
+      "bottomRightY": 626,
+      "content": "Figure 7-1: RGB10_Planar",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 658,
+      "bottomRightX": 564,
+      "bottomRightY": 676,
+      "content": "The camera interface standard must indicate how those streams are transmitted.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 693,
+      "bottomRightX": 245,
+      "bottomRightY": 714,
+      "content": "### 7.2 Semiplanar mode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 718,
+      "bottomRightX": 733,
+      "bottomRightY": 772,
+      "content": "When two or more components are combined in one stream/plane, then the pixel format should use the “Semiplanar” suffix. Hence within this pixel format we have 1 or more planes with multiple components.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 779,
+      "bottomRightX": 736,
+      "bottomRightY": 814,
+      "content": "Ex: YCbCr420 Semi-Planar mode as 2 different streams: one Y plane and one CbCr plane with interleaved and sub-sampled blue and red data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 814,
+      "bottomRightX": 745,
+      "bottomRightY": 869,
+      "content": "|  Plane/stream1 | Y0 | Y1 | Y2 | Y3 | Y4 | Y5 | Y6 | Y7 | ...  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  Plane/stream2 | Cb0 | Cr0 | Cb2 | Cr2 | Cb4 | Cr4 | Cb6 | Cr6 | ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 876,
+      "bottomRightX": 742,
+      "bottomRightY": 913,
+      "content": "To symbolize the plane/component sequence in a Semiplanar pixel format name, an underscore (‘_’) is used to separate the planes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 461,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 43 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

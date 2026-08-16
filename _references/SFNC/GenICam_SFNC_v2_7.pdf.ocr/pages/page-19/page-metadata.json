@@ -1,0 +1,93 @@
+{
+  "index": 18,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 27,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 623,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 116,
+      "bottomRightX": 662,
+      "bottomRightY": 882,
+      "content": "|  2X-1Y (area-scan) | 585  |\n| --- | --- |\n|  2X (line-scan) | 585  |\n|  2XE-1Y (area-scan) | 586  |\n|  2XE (line-scan) | 586  |\n|  2XM-1Y (area-scan) | 586  |\n|  2XM (line-scan) | 586  |\n|  1X-1Y2 (area-scan) | 587  |\n|  1X-2YE (area-scan) | 587  |\n|  29.4 TRIPLE TAP GEOMETRIES | 588  |\n|  1X3-1Y (area-scan) | 588  |\n|  1X3 (line-scan) | 588  |\n|  3X-1Y (area-scan) | 588  |\n|  3X (line-scan) | 588  |\n|  29.5 QUAD TAP GEOMETRIES | 589  |\n|  1X4-1Y (area-scan) | 589  |\n|  1X4 (line-scan) | 589  |\n|  4X-1Y (area-scan) | 589  |\n|  4X (line-scan) | 589  |\n|  2X2-1Y (area-scan) | 590  |\n|  2X2 (line-scan) | 590  |\n|  2X2E-1Y (area-scan) | 590  |\n|  2X2E (line-scan) | 590  |\n|  2X2M-1Y (area-scan) | 591  |\n|  2X2M (line-scan) | 591  |\n|  1X2-2YE (area-scan) | 591  |\n|  2X-2YE (area-scan) | 592  |\n|  2XE-2YE (area-scan) | 592  |\n|  2XM-2YE (area-scan) | 592  |\n|  29.6 OCTAL TAP GEOMETRIES | 593  |\n|  1X8-1Y (area-scan) | 593  |\n|  1X8 (line-scan) | 593  |\n|  8X-1Y (area-scan) | 593  |\n|  8X (line-scan) | 593  |\n|  4X2-1Y (area-scan) | 594  |\n|  4X2 (line-scan) | 594  |\n|  4X2E-1Y (area-scan) | 594  |\n|  4X2E (line-scan) | 594  |\n|  2X2E-2YE (area-scan) | 594  |\n|  29.7 DECA TAP GEOMETRIES | 596  |\n|  1X10-1Y (area-scan) | 596  |\n|  1X10 (line-scan) | 596  |\n|  10X1Y (line-scan) | 596  |\n|  10X (line-scan) | 597  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 925,
+      "bottomRightX": 206,
+      "bottomRightY": 947,
+      "content": "## Table of Figures",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 988,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 988,
+      "bottomRightX": 391,
+      "bottomRightY": 1007,
+      "content": "Page 19 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

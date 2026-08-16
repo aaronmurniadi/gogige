@@ -1,0 +1,123 @@
+{
+  "index": 50,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 303,
+      "bottomRightY": 176,
+      "content": "### 3.1.2.6 InterfaceDisplayName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 177,
+      "bottomRightX": 473,
+      "bottomRightY": 391,
+      "content": "|  Name | InterfaceDisplayName[InterfaceSelector]  |\n| --- | --- |\n|  Category | InterfaceEnumeration  |\n|  Level | Recommended  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 416,
+      "bottomRightX": 327,
+      "bottomRightY": 435,
+      "content": "A user-friendly name of the Interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 441,
+      "bottomRightX": 620,
+      "bottomRightY": 477,
+      "content": "Corresponds to the TLGetInterfaceID function with the index corresponding to \"InterfaceSelector\".",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 493,
+      "bottomRightX": 330,
+      "bottomRightY": 512,
+      "content": "### 3.1.2.7 GevInterfaceMACAddress",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 513,
+      "bottomRightX": 499,
+      "bottomRightY": 753,
+      "content": "|  Name | GevInterfaceMACAddress[InterfaceSelector]  |\n| --- | --- |\n|  Category | InterfaceEnumeration  |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 778,
+      "bottomRightX": 692,
+      "bottomRightY": 835,
+      "content": "48-bit MAC address of the selected interface. Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory, and that the Representation element should be used in the XML to facilitate understanding the data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 846,
+      "bottomRightX": 359,
+      "bottomRightY": 864,
+      "content": "### 3.1.2.8 GevInterfaceDefaultIPAddress",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 867,
+      "bottomRightX": 524,
+      "bottomRightY": 923,
+      "content": "|  Name | GevInterfaceDefaultIPAddress[InterfaceSelector]  |\n| --- | --- |\n|  Category | InterfaceEnumeration  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 428,
+      "bottomRightY": 945,
+      "content": "Page 51 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

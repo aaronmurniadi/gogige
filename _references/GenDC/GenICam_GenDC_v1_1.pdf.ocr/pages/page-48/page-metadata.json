@@ -1,0 +1,85 @@
+{
+  "index": 47,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 97,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 130,
+      "bottomRightX": 576,
+      "bottomRightY": 151,
+      "content": "### B.8 3D Image (X, Y, Z Planar Point Cloud, Confidence and Reflectance)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 41,
+      "topLeftY": 185,
+      "bottomRightX": 689,
+      "bottomRightY": 236,
+      "content": "3D scene Container including 3 Components point cloud format. The XYZ Component is planar (3 separate data Parts) and the Confidence and Reflectance Components have one data Part each. The 3 Components can have different pixel formats.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 192,
+      "topLeftY": 243,
+      "bottomRightX": 651,
+      "bottomRightY": 263,
+      "content": "3D Image (XYZ Planar Point Cloud, Confidence, Reflectance):",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 282,
+      "bottomRightX": 776,
+      "bottomRightY": 686,
+      "content": "![img-15.jpeg](img-15.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-15.jpeg"
+    },
+    {
+      "topLeftX": 184,
+      "topLeftY": 704,
+      "bottomRightX": 552,
+      "bottomRightY": 720,
+      "content": "Figure 5-11: 3D Image (XYZ planar point cloud, confidence and reflectance)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 48 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

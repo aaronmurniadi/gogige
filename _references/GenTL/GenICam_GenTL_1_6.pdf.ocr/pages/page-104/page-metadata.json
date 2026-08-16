@@ -1,0 +1,139 @@
+{
+  "index": 103,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GEN<ICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 295,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 189,
+      "content": "a call to DevOpenDataStream or the handle hBuffer is invalid (NULL) or does not reference an announced Buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 198,
+      "bottomRightX": 635,
+      "bottomRightY": 232,
+      "content": "GC_ERR_NOT_IMPLEMENTED: The GenTL implementation does not support querying information about buffer parts.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 238,
+      "bottomRightX": 635,
+      "bottomRightY": 273,
+      "content": "GC_ERR_INVALID_PARAMETER: Parameter piNumParts is an invalid pointer (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 280,
+      "bottomRightX": 635,
+      "bottomRightY": 366,
+      "content": "GC_ERR_NO_DATA: The GenTL implementation supports querying information about buffer parts, but the information about number of data parts in the buffer is currently not available for any reason, for example because the buffer does not contain multi-part payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 371,
+      "bottomRightX": 635,
+      "bottomRightY": 407,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 419,
+      "bottomRightX": 297,
+      "bottomRightY": 436,
+      "content": "##### 6.3.5.16 DSGetBufferPartInfo",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 457,
+      "bottomRightX": 641,
+      "bottomRightY": 578,
+      "content": "GC_ERROR DSGetBufferPartInfo ( DS_HANDLE hDataStream,\n    BUFFER_HANDLE hBuffer,\n    uint32_t iPartIndex,\n    BUFFER_PART_INFO_CMD iInfoCmd,\n    INFO_DATATYPE * piType,\n    void * pBuffer,\n    size_t * piSize )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 584,
+      "bottomRightX": 635,
+      "bottomRightY": 636,
+      "content": "Inquires information about individual data parts of the buffer encapsulated in the Buffer module associated with hBuffer on the hDataStream instance as defined in BUFFER_PART_INFO_CMD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 642,
+      "bottomRightX": 635,
+      "bottomRightY": 694,
+      "content": "To retrieve multiple infos about one or more buffer parts at once and reduce the number of calls from the GenTL Consumer to the GenTL Producer, DSGetBufferPartInfoStacked function can be used instead.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 708,
+      "bottomRightX": 166,
+      "bottomRightY": 724,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 729,
+      "bottomRightX": 635,
+      "bottomRightY": 883,
+      "content": "|  [in] | hDataStream | Data Stream module to work on.  |\n| --- | --- | --- |\n|  [in] | hBuffer | Buffer handle to retrieve information about.  |\n|  [in] | iPartIndex | Zero based index of the buffer part to query.  |\n|  [in] | iInfoCmd | Information to be retrieved as defined inBUFFER_PART_INFO_CMD.  |\n|  [out] | piType | Data type of the pBuffer content as defined in theBUFFER_PART_INFO_CMD and INFO_DATATYPE.  |\n|  [in,out] | pBuffer | Pointer to a user allocated buffer to receive the requested information. If this parameter is NULL, piSize will contain the  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 104 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

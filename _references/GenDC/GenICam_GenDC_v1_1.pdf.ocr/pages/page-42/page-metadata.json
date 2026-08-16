@@ -1,0 +1,85 @@
+{
+  "index": 41,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 117,
+      "bottomRightX": 576,
+      "bottomRightY": 137,
+      "content": "### A.3 GenDC Container typical layout for a multi-Components 3D scene.",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 175,
+      "bottomRightX": 551,
+      "bottomRightY": 195,
+      "content": "#### GenDC Data Container typical layout :",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 208,
+      "topLeftY": 198,
+      "bottomRightX": 606,
+      "bottomRightY": 232,
+      "content": "(A 3D Scene Container including a color RGB planar Intensity Component, a Range Component and the corresponding metadata chunk Component)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 25,
+      "topLeftY": 253,
+      "bottomRightX": 747,
+      "bottomRightY": 804,
+      "content": "![img-7.jpeg](img-7.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-7.jpeg"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 818,
+      "bottomRightX": 643,
+      "bottomRightY": 849,
+      "content": "Figure 5-3: GenDC Container's typical layout for a multi-Components 3D scene with Intensity, Range and Metadata. (One Container of three Components with different number of data Parts)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 42 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

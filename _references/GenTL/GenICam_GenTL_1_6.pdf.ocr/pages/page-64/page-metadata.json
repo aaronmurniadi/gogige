@@ -1,0 +1,210 @@
+{
+  "index": 63,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GEN<I>CAM |   | ![img-95.jpeg](img-95.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 634,
+      "bottomRightY": 170,
+      "content": "version number and a minor version number in a notation “x.y” with ‘x’ being the major version number and ‘y’ being the minor version number.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 104,
+      "topLeftY": 178,
+      "bottomRightX": 262,
+      "bottomRightY": 194,
+      "content": "• Major Version Numbers",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 196,
+      "bottomRightX": 613,
+      "bottomRightY": 246,
+      "content": "Different major version numbers indicate major additions to the interface and/or breaking changes. This means for example a removal of functions or a complete new feature set. The newer interface is therefore not backward compatible.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 104,
+      "topLeftY": 255,
+      "bottomRightX": 264,
+      "bottomRightY": 268,
+      "content": "• Minor Version Numbers",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 270,
+      "bottomRightX": 606,
+      "bottomRightY": 320,
+      "content": "Changes in the minor version number of the software interface may indicate new functionality and clarifications in the text describing the interface. If only the minor version changes the interface stays backward compatible.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 321,
+      "bottomRightX": 605,
+      "bottomRightY": 337,
+      "content": "Changing feature names without functionl change is also allowed in minor releases.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 343,
+      "bottomRightX": 634,
+      "bottomRightY": 378,
+      "content": "When developing a GenTL Consumer that should be compatible with a widest range of GenTL Producer versions, special care might be required to consider these differences.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 384,
+      "bottomRightX": 634,
+      "bottomRightY": 436,
+      "content": "When using an enumeration unknown to the GenTL Producer, the function getting that value as a parameter would return an appropriate error code. For example when querying an unknown info command, the GenTL Producer would return GC_ERR_NOT_IMPLEMENTED.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 443,
+      "bottomRightX": 634,
+      "bottomRightY": 526,
+      "content": "When trying to use a GenTL interface function unknown to the GenTL Producer, the function implementation will be simply missing in the GenTL Producer's binary. For the functions that are not universally available in all GenTL specification versions, the Consumer should check their presence in the GenTL Producer's interface at load time and if possible, consider a suitable fallback behaviour for GenTL Producers not implementing that function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 548,
+      "bottomRightX": 259,
+      "bottomRightY": 569,
+      "content": "### 6.2 Used Data Types",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 575,
+      "bottomRightX": 587,
+      "bottomRightY": 592,
+      "content": "To have a defined stack layout certain data types have a primitive data type as its base.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 605,
+      "bottomRightX": 221,
+      "bottomRightY": 623,
+      "content": "#### 6.2.1.1 GC_ERROR",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 627,
+      "bottomRightX": 456,
+      "bottomRightY": 643,
+      "content": "The return value of all functions is a 32 bit signed integer value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 657,
+      "bottomRightX": 195,
+      "bottomRightY": 673,
+      "content": "#### 6.2.1.2 Handles",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 679,
+      "bottomRightX": 634,
+      "bottomRightY": 713,
+      "content": "All handles like TL_HANDLE or PORT_HANDLE are void*. The size is platform dependent (e.g., 32 bit on 32 bit platforms).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 728,
+      "bottomRightX": 235,
+      "bottomRightY": 743,
+      "content": "#### 6.2.1.3 Enumerations",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 748,
+      "bottomRightX": 634,
+      "bottomRightY": 799,
+      "content": "All enumerations are of type enum. In order to allow implementation specific extensions all enums are set to a specific 32 bit integer value. On platforms/compilers where this is not the case a primitive data type with a matching size has to be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 813,
+      "bottomRightX": 288,
+      "bottomRightY": 831,
+      "content": "#### 6.2.1.4 Buffers and C Strings",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 835,
+      "bottomRightX": 634,
+      "bottomRightY": 888,
+      "content": "Buffers are normally typed as void* if arbitrary data is accessed. Specialized buffers like C strings are by default ASCII encoded and a char* is used unless reported different through the type information provided by the info functions (for example IFGetInfo). A char is",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 64 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

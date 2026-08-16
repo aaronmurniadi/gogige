@@ -1,0 +1,49 @@
+{
+  "index": 51,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 637,
+      "bottomRightY": 117,
+      "content": "|  GENICAM |   | ![img-68.jpeg](img-68.jpeg)emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 149,
+      "bottomRightX": 636,
+      "bottomRightY": 928,
+      "content": "|   | Representation | PureNumber  |\n| --- | --- | --- |\n|   |  Streamable | No  |\n|   |  Unit | Empty string  |\n|   |  ValidValueSet | All values between Min and Max with respect to Inc are valid  |\n|  IntReg | Cachable | WriteTrough  |\n|   |  Representation | PureNumber  |\n|   |  Sign | Unsigned  |\n|   |  Streamable | No  |\n|   |  Unit | Empty string  |\n|  IntSwissKnife | Representation | PureNumber  |\n|   |  Streamable | No  |\n|   |  Unit | Empty string  |\n|  MaskedIntReg | Cachable | WriteTrough  |\n|   |  Representation | PureNumber  |\n|   |  Sign | Unsigned  |\n|   |  Streamable | No  |\n|   |  Unit | Empty string  |\n|  NodeAttributeTemplate | NameSpace | Custom  |\n|   |  MergePriority | 0  |\n|  NodeElementTemplate | Description | Empty string  |\n|   |  DisplayName | The node's name  |\n|   |  DocuURL | Empty string  |\n|   |  IsDeprecated | No  |\n|   |  ImposedAccessMode | RW  |\n|   |  ToolTip | Empty string  |\n|   |  Visibility | Beginner  |\n|  Port | CacheChunkData | No  |\n|   |  SwapEndianess | No  |\n|  RegisterDescription | ToolTip | Empty string  |\n|  RegisterElementTemplate | Cachable | WriteTrough  |\n|   |  Streamable | No  |\n|  String | Streamable | No  |\n|  StructEntry | Cachable | WriteTrough  |\n|   |  Description | Empty string  |\n|   |  DisplayName | Empty string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 300,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 52 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

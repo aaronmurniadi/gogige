@@ -1,0 +1,885 @@
+{
+  "index": 55,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 637,
+      "bottomRightY": 117,
+      "content": "|  GEN<I>CAM |   | ![img-72.jpeg](img-72.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 151,
+      "bottomRightX": 195,
+      "bottomRightY": 167,
+      "content": "Group element 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 168,
+      "bottomRightX": 231,
+      "bottomRightY": 182,
+      "content": "Comment attribute 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 185,
+      "bottomRightX": 120,
+      "bottomRightY": 199,
+      "content": "#### —I—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 202,
+      "bottomRightX": 259,
+      "bottomRightY": 217,
+      "content": "IBoolean interface 32, 34, 46",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 218,
+      "bottomRightX": 241,
+      "bottomRightY": 233,
+      "content": "ICategory interface 25, 47",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 235,
+      "bottomRightX": 249,
+      "bottomRightY": 250,
+      "content": "ICommand interface 35, 46",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 252,
+      "bottomRightX": 264,
+      "bottomRightY": 267,
+      "content": "IEnumeration interface 36, 46",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 268,
+      "bottomRightX": 218,
+      "bottomRightY": 282,
+      "content": "IFloat interface 35, 45",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 284,
+      "bottomRightX": 252,
+      "bottomRightY": 301,
+      "content": "IInteger interface 30, 45, 46",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 302,
+      "bottomRightX": 208,
+      "bottomRightY": 317,
+      "content": "IInteger Interface 45",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 318,
+      "bottomRightX": 231,
+      "bottomRightY": 333,
+      "content": "implementation node 26",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 335,
+      "bottomRightX": 217,
+      "bottomRightY": 351,
+      "content": "indirect addressing 28",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 353,
+      "bottomRightX": 247,
+      "bottomRightY": 367,
+      "content": "IntConverter see Converter",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 368,
+      "bottomRightX": 148,
+      "bottomRightY": 383,
+      "content": "Integer 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 385,
+      "bottomRightX": 141,
+      "bottomRightY": 399,
+      "content": "Inc 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 401,
+      "bottomRightX": 148,
+      "bottomRightY": 416,
+      "content": "Max 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 418,
+      "bottomRightX": 146,
+      "bottomRightY": 432,
+      "content": "Min 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 435,
+      "bottomRightX": 148,
+      "bottomRightY": 450,
+      "content": "pInc 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 452,
+      "bottomRightX": 161,
+      "bottomRightY": 468,
+      "content": "pIndex 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 469,
+      "bottomRightX": 156,
+      "bottomRightY": 484,
+      "content": "pMax 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 485,
+      "bottomRightX": 154,
+      "bottomRightY": 500,
+      "content": "pMin 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 502,
+      "bottomRightX": 178,
+      "bottomRightY": 518,
+      "content": "pSelected 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 519,
+      "bottomRightX": 164,
+      "bottomRightY": 534,
+      "content": "pValue 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 535,
+      "bottomRightX": 195,
+      "bottomRightY": 551,
+      "content": "pValueCopy 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 552,
+      "bottomRightX": 207,
+      "bottomRightY": 568,
+      "content": "pValueDefault 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 569,
+      "bottomRightX": 210,
+      "bottomRightY": 585,
+      "content": "pValueIndexed 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 586,
+      "bottomRightX": 208,
+      "bottomRightY": 601,
+      "content": "Representation 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 602,
+      "bottomRightX": 148,
+      "bottomRightY": 617,
+      "content": "Unit 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 619,
+      "bottomRightX": 156,
+      "bottomRightY": 633,
+      "content": "Value 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 635,
+      "bottomRightX": 200,
+      "bottomRightY": 650,
+      "content": "ValueDefault 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 651,
+      "bottomRightX": 203,
+      "bottomRightY": 666,
+      "content": "ValueIndexed 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 669,
+      "bottomRightX": 148,
+      "bottomRightY": 685,
+      "content": "IntKey 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 686,
+      "bottomRightX": 146,
+      "bottomRightY": 701,
+      "content": "Key 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 702,
+      "bottomRightX": 195,
+      "bottomRightY": 717,
+      "content": "p1212Parser 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 718,
+      "bottomRightX": 146,
+      "bottomRightY": 734,
+      "content": "IntReg 30",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 735,
+      "bottomRightX": 179,
+      "bottomRightY": 750,
+      "content": "Endianess 31",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 752,
+      "bottomRightX": 178,
+      "bottomRightY": 767,
+      "content": "pSelected 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 768,
+      "bottomRightX": 148,
+      "bottomRightY": 784,
+      "content": "Sign 31",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 786,
+      "bottomRightX": 265,
+      "bottomRightY": 800,
+      "content": "IntSwissKnife see SwissKnife",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 802,
+      "bottomRightX": 191,
+      "bottomRightY": 816,
+      "content": "IPort Interface 47",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 819,
+      "bottomRightX": 215,
+      "bottomRightY": 835,
+      "content": "IRegister interface 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 836,
+      "bottomRightX": 216,
+      "bottomRightY": 851,
+      "content": "IRegister Interface 46",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 852,
+      "bottomRightX": 236,
+      "bottomRightY": 867,
+      "content": "ISelector interface 30, 47",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 869,
+      "bottomRightX": 224,
+      "bottomRightY": 885,
+      "content": "IString interface 38, 46",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 886,
+      "bottomRightX": 128,
+      "bottomRightY": 900,
+      "content": "#### —M—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 903,
+      "bottomRightX": 191,
+      "bottomRightY": 918,
+      "content": "MaskedIntReg 31",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 919,
+      "bottomRightX": 138,
+      "bottomRightY": 933,
+      "content": "Bit 31",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 151,
+      "bottomRightX": 443,
+      "bottomRightY": 166,
+      "content": "LSB 31",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 168,
+      "bottomRightX": 448,
+      "bottomRightY": 182,
+      "content": "MSB 31",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 184,
+      "bottomRightX": 474,
+      "bottomRightY": 201,
+      "content": "pSelected 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 379,
+      "topLeftY": 202,
+      "bottomRightX": 422,
+      "bottomRightY": 216,
+      "content": "#### —N—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 218,
+      "bottomRightX": 435,
+      "bottomRightY": 232,
+      "content": "Node 22",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 235,
+      "bottomRightX": 485,
+      "bottomRightY": 251,
+      "content": "Description 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 252,
+      "bottomRightX": 497,
+      "bottomRightY": 268,
+      "content": "DisplayName 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 269,
+      "bottomRightX": 478,
+      "bottomRightY": 282,
+      "content": "DocuURL 25",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 284,
+      "bottomRightX": 467,
+      "bottomRightY": 300,
+      "content": "EventID 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 302,
+      "bottomRightX": 494,
+      "bottomRightY": 317,
+      "content": "ExposeStatic 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 318,
+      "bottomRightX": 476,
+      "bottomRightY": 332,
+      "content": "Extension 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 334,
+      "bottomRightX": 542,
+      "bottomRightY": 351,
+      "content": "ImposedAccessMode 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 352,
+      "bottomRightX": 489,
+      "bottomRightY": 368,
+      "content": "IsDeprecated 25",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 369,
+      "bottomRightX": 499,
+      "bottomRightY": 384,
+      "content": "MergePriority 23",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 385,
+      "bottomRightX": 452,
+      "bottomRightY": 399,
+      "content": "Name 23",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 401,
+      "bottomRightX": 486,
+      "bottomRightY": 418,
+      "content": "NameSpace 23",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 419,
+      "bottomRightX": 455,
+      "bottomRightY": 434,
+      "content": "pAlias 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 435,
+      "bottomRightX": 500,
+      "bottomRightY": 451,
+      "content": "pBlockPolling 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 452,
+      "bottomRightX": 481,
+      "bottomRightY": 468,
+      "content": "pCastAlias 25",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 469,
+      "bottomRightX": 455,
+      "bottomRightY": 484,
+      "content": "pError 25",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 485,
+      "bottomRightX": 489,
+      "bottomRightY": 500,
+      "content": "pInvalidator 28",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 502,
+      "bottomRightX": 492,
+      "bottomRightY": 518,
+      "content": "pIsAvailable 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 519,
+      "bottomRightX": 512,
+      "bottomRightY": 534,
+      "content": "pIsImplemented 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 535,
+      "bottomRightX": 479,
+      "bottomRightY": 550,
+      "content": "pIsLocked 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 552,
+      "bottomRightX": 474,
+      "bottomRightY": 568,
+      "content": "pSelected 30",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 569,
+      "bottomRightX": 482,
+      "bottomRightY": 584,
+      "content": "Streamable 25",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 585,
+      "bottomRightX": 465,
+      "bottomRightY": 601,
+      "content": "ToolTip 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 602,
+      "bottomRightX": 472,
+      "bottomRightY": 618,
+      "content": "Visibility 24",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 379,
+      "topLeftY": 620,
+      "bottomRightX": 422,
+      "bottomRightY": 633,
+      "content": "#### —P—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 636,
+      "bottomRightX": 427,
+      "bottomRightY": 649,
+      "content": "Port 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 651,
+      "bottomRightX": 520,
+      "bottomRightY": 666,
+      "content": "CacheChunkData 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 669,
+      "bottomRightX": 471,
+      "bottomRightY": 684,
+      "content": "ChunkID 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 686,
+      "bottomRightX": 479,
+      "bottomRightY": 701,
+      "content": "pChunkID 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 702,
+      "bottomRightX": 508,
+      "bottomRightY": 718,
+      "content": "SwapEndianess 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 379,
+      "topLeftY": 719,
+      "bottomRightX": 422,
+      "bottomRightY": 733,
+      "content": "#### —R—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 735,
+      "bottomRightX": 544,
+      "bottomRightY": 751,
+      "content": "reference implementation 8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 752,
+      "bottomRightX": 451,
+      "bottomRightY": 767,
+      "content": "Register 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 768,
+      "bottomRightX": 492,
+      "bottomRightY": 783,
+      "content": "AccessMode 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 785,
+      "bottomRightX": 465,
+      "bottomRightY": 799,
+      "content": "Address 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 802,
+      "bottomRightX": 478,
+      "bottomRightY": 816,
+      "content": "Cacheable 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 819,
+      "bottomRightX": 500,
+      "bottomRightY": 834,
+      "content": "IntSwissKnife 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 836,
+      "bottomRightX": 458,
+      "bottomRightY": 851,
+      "content": "Length 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 852,
+      "bottomRightX": 472,
+      "bottomRightY": 868,
+      "content": "pAddress 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 869,
+      "bottomRightX": 479,
+      "bottomRightY": 885,
+      "content": "pIndex 27, 28",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 886,
+      "bottomRightX": 465,
+      "bottomRightY": 901,
+      "content": "pLength 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 903,
+      "bottomRightX": 490,
+      "bottomRightY": 918,
+      "content": "PollingTime 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 919,
+      "bottomRightX": 449,
+      "bottomRightY": 935,
+      "content": "pPort 27",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 957,
+      "bottomRightX": 299,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 56 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

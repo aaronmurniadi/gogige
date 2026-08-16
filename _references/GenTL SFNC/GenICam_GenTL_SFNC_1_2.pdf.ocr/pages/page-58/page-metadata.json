@@ -1,0 +1,113 @@
+{
+  "index": 57,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 159,
+      "bottomRightX": 340,
+      "bottomRightY": 231,
+      "content": "- GigEVision: GigE Vision\n- USB3Vision: USB3 Vision\n- Custom: Custom transport layer",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 239,
+      "bottomRightX": 636,
+      "bottomRightY": 258,
+      "content": "Corresponds to the INTERFACE_INFO_TLTYPE command of IFGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 272,
+      "bottomRightX": 319,
+      "bottomRightY": 290,
+      "content": "### 3.2.1.5 InterfaceTLVersionMajor",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 293,
+      "bottomRightX": 421,
+      "bottomRightY": 507,
+      "content": "|  Name | InterfaceTLVersionMajor  |\n| --- | --- |\n|  Category | InterfaceInformation  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 530,
+      "bottomRightX": 696,
+      "bottomRightY": 585,
+      "content": "Major version number of the transport layer specification the GenTL Producer interface complies with. The TL version of the Interface can be compared with the TL version of the device to assure compatibility.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 599,
+      "bottomRightX": 319,
+      "bottomRightY": 616,
+      "content": "### 3.2.1.6 InterfaceTLVersionMinor",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 619,
+      "bottomRightX": 421,
+      "bottomRightY": 833,
+      "content": "|  Name | InterfaceTLVersionMinor  |\n| --- | --- |\n|  Category | InterfaceInformation  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 857,
+      "bottomRightX": 698,
+      "bottomRightY": 912,
+      "content": "Minor version number of the transport layer specification the GenTL Producer interface complies with. The TL version of the Interface can be compared with the TL version of the device to assure compatibility.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 58 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

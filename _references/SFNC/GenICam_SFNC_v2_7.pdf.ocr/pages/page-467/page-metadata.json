@@ -1,0 +1,57 @@
+{
+  "index": 466,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | ![img-151.jpeg](img-151.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 550,
+      "bottomRightY": 938,
+      "content": "- YCbCr411_8: YCrCb 411 8 bit.\n- YCbCr422_8: YCrCb 422 8 bit.\n- YCbCr601_422_8: YCrCb 601 422 8 bit.\n- YCbCr709_422_8: YCrCb 709 422 8 bit.\n- YCbCr8: YCbCr 8 bit.\n• BayerBG8: Bayer Blue Green 8 bit.\n• BayerGB8: Bayer Green Blue 8 bit.\n• BayerGR8: Bayer Green Red 8 bit.\n• BayerRG8: Bayer Red Green 8 bit.\n• BayerBG10: Bayer Blue Green 10 bit.\n• BayerGB10: Bayer Green Blue 10 bit.\n• BayerGR10: Bayer Green Red 10 bit.\n• BayerRG10: Bayer Red Green 10 bit.\n• BayerBG12: Bayer Blue Green 12 bit\n• BayerGB12: Bayer Green Blue 12 bit\n• BayerGR12: Bayer Green Red 12 bit.\n• BayerRG12: Bayer Red Green 12 bit.\n• BayerBG16: Bayer Blue Green 16 bit.\n• BayerGB16: Bayer Green Blue 16 bit.\n• BayerGR16: Bayer Green Red 16 bit.\n• BayerRG16: Bayer Red Green 16 bit.\n• Coord3D_A8: 3D coordinate, first component 8 bit.\n• Coord3D_B8: 3D coordinate, second component 8 bit.\n• Coord3D_C8: 3D coordinate, third component 8 bit.\n• Coord3D_ABC8: 3D coordinates, 3 components 8 bit.\n• Coord3D_ABC8_Planar: 3D coordinates, 3 components 8 bit planar.\n• Coord3D_A16: 3D coordinate, first component 16 bit.\n• Coord3D_B16: 3D coordinate, second component 16 bit.\n• Coord3D_C16: 3D coordinate, third component 16 bit.\n• Coord3D_ABC16: 3D coordinates, 3 components 16 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 467 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

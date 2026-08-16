@@ -1,0 +1,74 @@
+{
+  "index": 4,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 199,
+      "topLeftY": 49,
+      "bottomRightX": 335,
+      "bottomRightY": 75,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 490,
+      "topLeftY": 42,
+      "bottomRightX": 596,
+      "bottomRightY": 85,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 89,
+      "bottomRightX": 144,
+      "bottomRightY": 104,
+      "content": "Version 1.6",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 284,
+      "topLeftY": 89,
+      "bottomRightX": 378,
+      "bottomRightY": 104,
+      "content": "GenTL Standard",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 135,
+      "bottomRightX": 636,
+      "bottomRightY": 847,
+      "content": "6.2 Used Data Types ... 64\n6.3 Function Declarations ... 65\n6.3.1 Library Functions ... 65\n6.3.2 System Functions ... 68\n6.3.3 Interface Functions ... 75\n6.3.4 Device Functions ... 82\n6.3.5 Data Stream Functions ... 89\n6.3.6 Port Functions ... 113\n6.3.7 Signaling Functions ... 123\n6.4 Enumerations ... 129\n6.4.1 Library and System Enumerations ... 129\n6.4.2 Interface Enumerations ... 132\n6.4.3 Device Enumerations ... 133\n6.4.4 Data Stream Enumerations ... 136\n6.4.5 Port Enumerations ... 165\n6.4.6 Signaling Enumerations ... 170\n6.5 Structures ... 174\n6.5.1 Data Stream Structures ... 174\n6.5.2 Signaling Structures ... 177\n6.5.3 Port Structures ... 178\n6.6 String Constants ... 178\n6.6.1 Transport Layer Types ... 178\n6.7 Numeric Constants ... 179\n7 Standard Features Naming Convention for GenTL ... 180\n7.1 Common ... 180\n7.1.1 System Module ... 180\n7.1.2 Interface Module ... 181\n7.1.3 Device Module ... 183\n7.1.4 Data Stream Module ... 184\n7.1.5 Buffer Module ... 185",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 924,
+      "bottomRightX": 418,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 549,
+      "topLeftY": 924,
+      "bottomRightX": 636,
+      "bottomRightY": 944,
+      "content": "Page 5 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

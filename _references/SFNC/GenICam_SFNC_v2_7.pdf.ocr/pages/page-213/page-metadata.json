@@ -1,0 +1,157 @@
+{
+  "index": 212,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 499,
+      "bottomRightY": 446,
+      "content": "- AnalogTap2: Analog gain will be applied to Tap 2.\n- ...\n- DigitalAll: Gain will be applied to all digital channels or taps.\n- DigitalRed: Gain will be applied to the red digital channel.\n- DigitalGreen: Gain will be applied to the green digital channel.\n- DigitalBlue: Gain will be applied to the blue digital channel.\n- DigitalY: Gain will be applied to Y digital channel.\n- DigitalU: Gain will be applied to U digital channel.\n- DigitalV: Gain will be applied to V digital channel.\n- DigitalTap1: Digital gain will be applied to Tap 1.\n- DigitalTap2: Digital gain will be applied to Tap 2.\n- ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 463,
+      "bottomRightX": 134,
+      "bottomRightY": 481,
+      "content": "### 6.3 Gain",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 486,
+      "bottomRightX": 386,
+      "bottomRightY": 699,
+      "content": "|  Name | Gain[GainSelector]  |\n| --- | --- |\n|  Category | AnalogControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 724,
+      "bottomRightX": 721,
+      "bottomRightY": 760,
+      "content": "Controls the selected gain as an absolute physical value. This is an amplification factor applied to the video signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 767,
+      "bottomRightX": 740,
+      "bottomRightY": 804,
+      "content": "The unit and values of this feature are specific to the device and must be defined in the GenICam XML device description file.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 811,
+      "bottomRightX": 615,
+      "bottomRightY": 830,
+      "content": "For color or multi-tap cameras, GainSelector indicates the color channel or tap to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 869,
+      "bottomRightX": 174,
+      "bottomRightY": 889,
+      "content": "### 6.4 GainAuto",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 892,
+      "bottomRightX": 386,
+      "bottomRightY": 948,
+      "content": "|  Name | GainAuto[GainSelector]  |\n| --- | --- |\n|  Category | AnalogControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 213 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

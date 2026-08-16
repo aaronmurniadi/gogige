@@ -1,0 +1,158 @@
+{
+  "index": 15,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 752,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 151,
+      "bottomRightX": 249,
+      "bottomRightY": 169,
+      "content": "#### 3.1.4 LMN411 Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 176,
+      "bottomRightX": 711,
+      "bottomRightY": 232,
+      "content": "This format is a 4:1:1 co-sited sub-sampled representation of a 3 component color space. The M and N components are sub-sampled by 4 horizontally and are thus associated to 4 consecutive columns. Their position is co-sited starting with the first L sample.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 263,
+      "bottomRightX": 248,
+      "bottomRightY": 282,
+      "content": "Ex: YCbCr411_8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 208,
+      "topLeftY": 312,
+      "bottomRightX": 631,
+      "bottomRightY": 467,
+      "content": "|   | 1 | 2 | 3 | 4 | 5 | ...  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  1 | \\( LMN_{11} \\) | \\( L_{12} \\) | \\( L_{13} \\) | \\( L_{14} \\) | \\( LMN_{15} \\) | ...  |\n|  2 | \\( LMN_{21} \\) | \\( L_{22} \\) | \\( L_{23} \\) | \\( L_{24} \\) | \\( LMN_{25} \\) | ...  |\n|  3 | \\( LMN_{31} \\) | \\( L_{32} \\) | \\( L_{33} \\) | \\( L_{34} \\) | \\( LMN_{35} \\) | ...  |\n|  4 | \\( LMN_{41} \\) | \\( L_{42} \\) | \\( L_{43} \\) | \\( L_{44} \\) | \\( LMN_{45} \\) | ...  |\n|  ... | ... | ... | ... | ... | ... | ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 473,
+      "bottomRightX": 522,
+      "bottomRightY": 492,
+      "content": "Figure 3-4: LMN411 Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 523,
+      "bottomRightX": 704,
+      "bottomRightY": 561,
+      "content": "When 4:1:1 sub-sampling is used, the components are transmitted using the following order, unless a component order is explicitly stated in the standard referencing the Pixel Format Naming Convention.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 567,
+      "bottomRightX": 515,
+      "bottomRightY": 586,
+      "content": "\\[\n\\mathrm{L} _ {1 1}, \\mathrm{L} _ {1 2}, \\mathrm{M} _ {1 1}, \\mathrm{L} _ {1 3}, \\mathrm{L} _ {1 4}, \\mathrm{N} _ {1 1}, \\mathrm{L} _ {1 5}, \\mathrm{L} _ {1 6}, \\mathrm{M} _ {1 5}, \\mathrm{L} _ {1 7}, \\mathrm{L} _ {1 8}, \\mathrm{N} _ {1 5} \\dots\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 627,
+      "bottomRightX": 271,
+      "bottomRightY": 645,
+      "content": "#### 3.1.5 LMNO4444 Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 653,
+      "bottomRightX": 724,
+      "bottomRightY": 690,
+      "content": "This format is typically used for any 4 component color space, such as aRGB (where 'a' represents alpha compositing). No sub-sampling is performed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 697,
+      "bottomRightX": 211,
+      "bottomRightY": 714,
+      "content": "Ex: aRGB8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 242,
+      "topLeftY": 747,
+      "bottomRightX": 596,
+      "bottomRightY": 899,
+      "content": "|   | 1 | 2 | 3 | 4 | ...  |\n| --- | --- | --- | --- | --- | --- |\n|  1 | \\( LMNO_{11} \\) | \\( LMNO_{12} \\) | \\( LMNO_{13} \\) | \\( LMNO_{14} \\) | ...  |\n|  2 | \\( LMNO_{21} \\) | \\( LMNO_{22} \\) | \\( LMNO_{23} \\) | \\( LMNO_{24} \\) | ...  |\n|  3 | \\( LMNO_{31} \\) | \\( LMNO_{32} \\) | \\( LMNO_{33} \\) | \\( LMNO_{34} \\) | ...  |\n|  4 | \\( LMNO_{41} \\) | \\( LMNO_{42} \\) | \\( LMNO_{43} \\) | \\( LMNO_{44} \\) | ...  |\n|  ... | ... | ... | ... | ... | ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 905,
+      "bottomRightX": 531,
+      "bottomRightY": 924,
+      "content": "Figure 3-5: LMNO4444 Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 974,
+      "content": "Page 16 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

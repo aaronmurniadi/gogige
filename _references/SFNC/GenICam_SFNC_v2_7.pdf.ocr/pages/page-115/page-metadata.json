@@ -1,0 +1,141 @@
+{
+  "index": 114,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  ![img-17.jpeg](img-17.jpeg) |   | ![img-18.jpeg](img-18.jpeg)  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 118,
+      "bottomRightX": 335,
+      "bottomRightY": 145,
+      "content": "|  Values | -  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 168,
+      "bottomRightX": 386,
+      "bottomRightY": 185,
+      "content": "Resets the current value of the device timestamp counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 193,
+      "bottomRightX": 498,
+      "bottomRightY": 210,
+      "content": "After executing this command, the timestamp counter restarts automatically.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 224,
+      "bottomRightX": 232,
+      "bottomRightY": 245,
+      "content": "3.68 TimestampLatch",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 246,
+      "bottomRightX": 332,
+      "bottomRightY": 444,
+      "content": "|  Name | TimestampLatch  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 468,
+      "bottomRightX": 443,
+      "bottomRightY": 485,
+      "content": "Latches the current timestamp counter into TimestampLatchValue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 499,
+      "bottomRightX": 277,
+      "bottomRightY": 519,
+      "content": "3.69 TimestampLatchValue",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 521,
+      "bottomRightX": 332,
+      "bottomRightY": 719,
+      "content": "|  Name | TimestampLatchValue  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | ns  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 743,
+      "bottomRightX": 352,
+      "bottomRightY": 760,
+      "content": "Returns the latched value of the timestamp counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 766,
+      "bottomRightX": 644,
+      "bottomRightY": 801,
+      "content": "Note that the increment of the TimestampLatchValue feature must correspond to the resolution of the devices's timestamp in nanoseconds.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 115 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 950,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

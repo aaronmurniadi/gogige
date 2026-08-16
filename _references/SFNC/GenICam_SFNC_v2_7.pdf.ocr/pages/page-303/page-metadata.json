@@ -1,0 +1,140 @@
+{
+  "index": 302,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 44,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 680,
+      "bottomRightY": 154,
+      "content": "Activate or deactivate the notification to the host application of the occurrence of the selected Event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 162,
+      "bottomRightX": 177,
+      "bottomRightY": 177,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 187,
+      "bottomRightX": 638,
+      "bottomRightY": 258,
+      "content": "- Off: The selected Event notification is disabled.\n- On: The selected Event notification is enabled.\n- Once: The selected Event notification is enabled for one event then return to Off state.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 299,
+      "bottomRightX": 396,
+      "bottomRightY": 324,
+      "content": "### 15.4 Frame Trigger Event (Example #1)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 341,
+      "bottomRightX": 527,
+      "bottomRightY": 360,
+      "content": "Below are the recommended features for the Frame Trigger Event handling.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 375,
+      "bottomRightX": 353,
+      "bottomRightY": 396,
+      "content": "#### 15.4.1 EventFrameTriggerData",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 399,
+      "bottomRightX": 386,
+      "bottomRightY": 611,
+      "content": "|  Name | EventFrameTriggerData  |\n| --- | --- |\n|  Category | EventControl  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 636,
+      "bottomRightX": 538,
+      "bottomRightY": 655,
+      "content": "Category that contains all the data features related to the FrameTrigger Event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 669,
+      "bottomRightX": 314,
+      "bottomRightY": 690,
+      "content": "#### 15.4.2 EventFrameTrigger",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 692,
+      "bottomRightX": 386,
+      "bottomRightY": 905,
+      "content": "|  Name | EventFrameTrigger  |\n| --- | --- |\n|  Category | EventFrameTriggerData  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 303 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "index": 9,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 111,
+      "content": "|  GEN<i>CAM |   | ![img-12.jpeg](img-12.jpeg) emva  |\n| --- | --- | --- |\n|  V1.2 | CLProtocol Standard Module  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 123,
+      "bottomRightX": 634,
+      "bottomRightY": 222,
+      "content": "- The CLProtocol driver library checks which XML descriptions the camera can provide itself. In order to support this, the camera might implement a Manifest register as described in the GenICam GenCP standard.\n- The CLProtocol driver library itself might contain suitable XML description, e.g. compiled in as Windows resource.\n- The directory containing the CLProtocol driver library may contains additional XML files. The name of these files must be <XML ID>.xml, e.g.:",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 105,
+      "topLeftY": 227,
+      "bottomRightX": 444,
+      "bottomRightY": 240,
+      "content": "\"SchemaVersion.1.0@MyVendor#MyFamily@XMLVersion.1.2.3.xml\"",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 247,
+      "bottomRightX": 634,
+      "bottomRightY": 276,
+      "content": "Note that the retrieval of the XML files stored on the file system is performed by the CLProtocol module of the reference implementation so the CLProtocol driver library does not have to implement that part.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 282,
+      "bottomRightX": 367,
+      "bottomRightY": 296,
+      "content": "If a XML ID is retrieved two immediate checks are made:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 303,
+      "bottomRightX": 634,
+      "bottomRightY": 353,
+      "content": "■ If the SchemaVersion cannot be handle by the GenApi version used the XML ID is discarded.\n- If the DeviceID template contained in the XML ID does not match the current DeviceID the XML ID is discarded as well.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 360,
+      "bottomRightX": 199,
+      "bottomRightY": 374,
+      "content": "Example 1: A XML ID",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 383,
+      "bottomRightX": 445,
+      "bottomRightY": 395,
+      "content": "\"SchemaVersion.1.2@CameraManufacturer@XMLVersion.1.2.3.xml\"",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 403,
+      "bottomRightX": 595,
+      "bottomRightY": 418,
+      "content": "would be rejected by GenICam v2.0 because that version can handle only schema versions v1.0 and v1.1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 424,
+      "bottomRightX": 403,
+      "bottomRightY": 438,
+      "content": "Example 2 : If the DeviceID is \"MyVendor#Family1\" a XML ID",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 447,
+      "bottomRightX": 440,
+      "bottomRightY": 461,
+      "content": "\"SchemaVersion.1.2@MyVendor#Family2@XMLVersion.1.2.3.xml\"",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 468,
+      "bottomRightX": 332,
+      "bottomRightY": 482,
+      "content": "would not match (wrong family) and be discarded.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 510,
+      "bottomRightX": 483,
+      "bottomRightY": 523,
+      "content": "Finally the list of not rejected XML IDs is sorted according to the following rules:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 530,
+      "bottomRightX": 587,
+      "bottomRightY": 587,
+      "content": "■ A higher SchemaVersion number goes first.\n■ Within the same SchemaVersion a longer DeviceID template goes first\n■ Within the same SchemaVersion and DeviceID template a higher DeviceVersion number goes first",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 593,
+      "bottomRightX": 133,
+      "bottomRightY": 607,
+      "content": "Example:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 121,
+      "topLeftY": 617,
+      "bottomRightX": 461,
+      "bottomRightY": 662,
+      "content": "\"SchemaVersion.1.1@MyVendor#Family2@XMLVersion.1.2.0.xml\"\n\"SchemaVersion.1.1@MyVendor#Family2@XMLVersion.1.0.0.xml\"\n\"SchemaVersion.1.1@MyVendor@XMLVersion.3.0.0.xml\"\n\"SchemaVersion.1.0@MyVendor@XMLVersion.3.0.0.xml\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 669,
+      "bottomRightX": 634,
+      "bottomRightY": 698,
+      "content": "The user can select a XML ID (possibly the fist one which is the best matching) and use this to retrieve the XML description itself. Using this description GenApi can then give access to the camera features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 711,
+      "bottomRightX": 137,
+      "bottomRightY": 727,
+      "content": "### Summary",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 733,
+      "bottomRightX": 634,
+      "bottomRightY": 760,
+      "content": "The following list summarizes the steps a client program has to take in order to retrieve an XML description for an already connected camera.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 103,
+      "topLeftY": 767,
+      "bottomRightX": 634,
+      "bottomRightY": 839,
+      "content": "1. Retrieve a sorted list of XML IDs\n2. Optionally present the list to the user to select one. The default selection is the first and – due to the sorting – best matching XML ID\n3. Retrieve the XML description associated with the selected XML ID",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 853,
+      "bottomRightX": 303,
+      "bottomRightY": 873,
+      "content": "## 5 Handling the Baud Rate",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 882,
+      "bottomRightX": 634,
+      "bottomRightY": 940,
+      "content": "A special feature of the camera is the BaudRate. It is special because when changed it must be changed in the camera and the frame grabber at the same time; otherwise connection to the camera is lost. The frame grabber's baud rate can be changed by the CLProtocol driver library via the CLAllSerial interface which also provides means to query a list of possible baud rates supported by the grabber (see section 6.2).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 960,
+      "bottomRightX": 245,
+      "bottomRightY": 974,
+      "content": "GenICam_CLProtocol_Standard",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 321,
+      "topLeftY": 960,
+      "bottomRightX": 421,
+      "bottomRightY": 974,
+      "content": "September 18, 2018",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 565,
+      "topLeftY": 960,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 10 of 13",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

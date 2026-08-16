@@ -1,0 +1,114 @@
+{
+  "index": 119,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 315,
+      "content": "|  Level | Optional  |\n| --- | --- |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 341,
+      "bottomRightX": 700,
+      "bottomRightY": 377,
+      "content": "The buffer part to extract information from. For non-multipart the value is 0. The maximum value should be dynamic and reflect the number of parts possible to index.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 391,
+      "bottomRightX": 295,
+      "bottomRightY": 410,
+      "content": "##### 3.5.2.11 BufferSizeFilled",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 413,
+      "bottomRightX": 421,
+      "bottomRightY": 625,
+      "content": "|  Name | BufferSizeFilled  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | Byte  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 650,
+      "bottomRightX": 679,
+      "bottomRightY": 686,
+      "content": "Number of bytes written into the buffer last time it was filled. This value is reset to 0 when the buffer is placed into the Input Buffer Pool.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 694,
+      "bottomRightX": 652,
+      "bottomRightY": 729,
+      "content": "Corresponds to the BUFFER_INFO_SIZE_FILLED command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 745,
+      "bottomRightX": 321,
+      "bottomRightY": 765,
+      "content": "##### 3.5.2.12 BufferPartDataType",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 767,
+      "bottomRightX": 469,
+      "bottomRightY": 926,
+      "content": "|  Name | BufferPartDataType[BufferPartSelector]  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 927,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 120 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

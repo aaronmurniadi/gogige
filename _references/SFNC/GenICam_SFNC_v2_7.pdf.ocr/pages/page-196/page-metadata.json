@@ -1,0 +1,165 @@
+{
+  "index": 195,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 135,
+      "bottomRightX": 277,
+      "bottomRightY": 157,
+      "content": "### 5.7.1 ExposureMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 159,
+      "bottomRightX": 377,
+      "bottomRightY": 425,
+      "content": "|  Name | ExposureMode  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Off Timed TriggerWidth TriggerControlled  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 449,
+      "bottomRightX": 311,
+      "bottomRightY": 467,
+      "content": "Sets the operation mode of the Exposure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 476,
+      "bottomRightX": 177,
+      "bottomRightY": 492,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 502,
+      "bottomRightX": 751,
+      "bottomRightY": 708,
+      "content": "- **Off**: Disables the Exposure and let the shutter open.\n- **Timed**: Timed exposure. The exposure duration time is set using the ExposureTime or ExposureAuto features and the exposure starts with the FrameStart or LineStart.\n- **TriggerWidth**: Uses the width of the current Frame or Line trigger signal(s) pulse to control the exposure duration. Note that if the Frame or Line **TriggerActivation** is RisingEdge or LevelHigh, the exposure duration will be the time the trigger stays High. If **TriggerActivation** is FallingEdge or LevelLow, the exposure time will last as long as the trigger stays Low.\n- **TriggerControlled**: Uses one or more trigger signal(s) to control the exposure duration independently from the current Frame or Line triggers. See **ExposureStart**, **ExposureEnd** and **ExposureActive** of the **TriggerSelector** feature.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 714,
+      "bottomRightX": 628,
+      "bottomRightY": 751,
+      "content": "Note also that **ExposureMode** has priority over the Exposure Trigger settings defined using **TriggerSelector=Exposure...** and defines which trigger (if any) is active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 758,
+      "bottomRightX": 155,
+      "bottomRightY": 776,
+      "content": "For example, if:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 798,
+      "bottomRightX": 240,
+      "bottomRightY": 837,
+      "content": "ExposureMode = Timed;\nExposureTime = 200;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 867,
+      "bottomRightX": 721,
+      "bottomRightY": 886,
+      "content": "Then the Exposure will be controlled using the **ExposureTime** Feature, even if the following code is done:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 196 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

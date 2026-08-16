@@ -1,0 +1,148 @@
+{
+  "index": 315,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 135,
+      "bottomRightX": 285,
+      "bottomRightY": 152,
+      "content": "The trigger is defined by the features",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 154,
+      "bottomRightX": 565,
+      "bottomRightY": 170,
+      "content": "SequencerTriggerSource[SequencerSetSelector][SequencerPathSelector] and",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 171,
+      "bottomRightX": 739,
+      "bottomRightY": 225,
+      "content": "SequencerTriggerActivation[SequencerSetSelector][SequencerPathSelector]. The functions of these features are the same as TriggerSource and TriggerActivation. For a flexible sequencer implementation, the SequencerPathSelector[SequencerSetSelector] should be part of the sequencer sets.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 232,
+      "bottomRightX": 382,
+      "bottomRightY": 249,
+      "content": "A sequencer set should contain the following values:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 252,
+      "bottomRightX": 745,
+      "bottomRightY": 325,
+      "content": "- Camera data which should be controlled by the device\n- SequencerPathSelector[SequencerSetSelector] with at least one path\n- SequencerSetNext, SequencerTriggerSource and SequencerTriggerActivation for every path which is selectable by the SequencerPathSelector.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 343,
+      "bottomRightX": 453,
+      "bottomRightY": 359,
+      "content": "An example of a sequencer set is shown in the following figure:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 184,
+      "topLeftY": 376,
+      "bottomRightX": 624,
+      "bottomRightY": 655,
+      "content": "![img-92.jpeg](img-92.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-92.jpeg"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 696,
+      "bottomRightX": 251,
+      "bottomRightY": 717,
+      "content": "## Operation of a sequencer",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 736,
+      "bottomRightX": 750,
+      "bottomRightY": 790,
+      "content": "The sequencer is started or stopped using the feature SequencerMode. If the sequencer is switched on, the start set which is defined by SequencerSetStart is loaded. The SequencerStartSet can take the same values as SequencerSetSelector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 798,
+      "bottomRightX": 742,
+      "bottomRightY": 834,
+      "content": "While the sequencer is running, the SequencerSetActive is updated each time a new set is loaded. The feature can be used to read the current set – and the user might monitor the sequencer triggers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 841,
+      "bottomRightX": 751,
+      "bottomRightY": 931,
+      "content": "If a trigger, which is selected by SequencerTriggerSource[SequencerSetSelector][SequencerPathSelector] and SequencerTriggerActivation[SequencerSetSelector][SequencerPathSelector] occurs, the sequencer switches to the next set. This set is configured by SequencerSetNext[SequencerSetSelector][SequencerPathSelector], which is also part of a special sequencer path. If there is more than one path selected, the sequencer switches to the set whose trigger primarily occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 316 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

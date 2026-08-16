@@ -1,0 +1,300 @@
+{
+  "index": 107,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-148.jpeg](img-148.jpeg) CAM |   | ![img-149.jpeg](img-149.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 137,
+      "bottomRightX": 631,
+      "bottomRightY": 170,
+      "content": "provides the results. The details of the structure members and their use for the info exchange are defined in",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 171,
+      "bottomRightX": 566,
+      "bottomRightY": 187,
+      "content": "DS BUFFER PART INFO STACKED (6.5.1.3).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 187,
+      "bottomRightX": 198,
+      "bottomRightY": 205,
+      "content": "[in] iNumInfos",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 189,
+      "bottomRightX": 549,
+      "bottomRightY": 205,
+      "content": "Number of stacked buffer part infos to retrieve.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 218,
+      "bottomRightX": 141,
+      "bottomRightY": 234,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 240,
+      "bottomRightX": 213,
+      "bottomRightY": 259,
+      "content": "GC_ERR_SUCCESS:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 240,
+      "bottomRightX": 635,
+      "bottomRightY": 342,
+      "content": "Operation was successful; no error occurred. This does not indicate whether every buffer part info was retrieved successfully. Therefore each DS_BUFFER_PART_INFO_STACKED::iResult needs to be checked individually as described in DS_BUFFER_PART_INFO_STACKED.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 350,
+      "bottomRightX": 282,
+      "bottomRightY": 368,
+      "content": "GC_ERR_NOT_INITIALIZED:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 350,
+      "bottomRightX": 512,
+      "bottomRightY": 368,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 376,
+      "bottomRightX": 273,
+      "bottomRightY": 394,
+      "content": "GC_ERR_INVALID_HANDLE:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 375,
+      "bottomRightX": 635,
+      "bottomRightY": 461,
+      "content": "The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream or the handle hBuffer is invalid (NULL) or does not reference an announced Buffer module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 470,
+      "bottomRightX": 282,
+      "bottomRightY": 488,
+      "content": "GC_ERR_NOT_IMPLEMENTED:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 470,
+      "bottomRightX": 635,
+      "bottomRightY": 504,
+      "content": "The GenTL implementation does not support querying information about buffer parts.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 512,
+      "bottomRightX": 295,
+      "bottomRightY": 530,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 512,
+      "bottomRightX": 635,
+      "bottomRightY": 546,
+      "content": "Parameter pInfoStacked is an invalid pointer (NULL or ~0x0) or iNumInfos is 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 553,
+      "bottomRightX": 213,
+      "bottomRightY": 572,
+      "content": "GC_ERR_NO_DATA:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 552,
+      "bottomRightX": 635,
+      "bottomRightY": 588,
+      "content": "The buffer referenced by hBuffer does not contain data parts.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 594,
+      "bottomRightX": 635,
+      "bottomRightY": 629,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 642,
+      "bottomRightX": 273,
+      "bottomRightY": 658,
+      "content": "##### 6.3.5.19 DSGetNumFlows",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 683,
+      "bottomRightX": 156,
+      "bottomRightY": 698,
+      "content": "GC ERROR",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 170,
+      "topLeftY": 683,
+      "bottomRightX": 285,
+      "bottomRightY": 697,
+      "content": "DSGetNumFlows",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 683,
+      "bottomRightX": 439,
+      "bottomRightY": 698,
+      "content": "( DS HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 683,
+      "bottomRightX": 599,
+      "bottomRightY": 698,
+      "content": "hDataStream,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 358,
+      "topLeftY": 700,
+      "bottomRightX": 446,
+      "bottomRightY": 715,
+      "content": "uint32_t *",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 700,
+      "bottomRightX": 599,
+      "bottomRightY": 715,
+      "content": "piNumFlows )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 725,
+      "bottomRightX": 496,
+      "bottomRightY": 742,
+      "content": "Inquires the number of flows currently configured for this data stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 748,
+      "bottomRightX": 635,
+      "bottomRightY": 799,
+      "content": "Note that the number of flows and their structure can be dynamic and depend on the configuration of the data stream and of the device output. It is recommended to query it after any configuration possibly affecting the stream and its contents is finished.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 806,
+      "bottomRightX": 635,
+      "bottomRightY": 840,
+      "content": "Note also that in case of GenDC streaming the number of flows corresponds to the size of the GenDC flow mapping table.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 846,
+      "bottomRightX": 635,
+      "bottomRightY": 880,
+      "content": "If querying flow-related information is not relevant in the moment, for example because the device itself does not support flows (or does not expose them in current working mode), the",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 108 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

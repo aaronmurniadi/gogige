@@ -1,0 +1,194 @@
+{
+  "index": 136,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 535,
+      "bottomRightY": 79,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 75,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 75,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 120,
+      "bottomRightX": 485,
+      "bottomRightY": 137,
+      "content": "A value of 1 indicates that no vertical binning is performed by the camera.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 151,
+      "bottomRightX": 316,
+      "bottomRightY": 169,
+      "content": "### 4.29 Decimation Horizontal Mode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 172,
+      "bottomRightX": 364,
+      "bottomRightY": 364,
+      "content": "|  Name | Decimation Horizontal Mode  |\n| --- | --- |\n|  Level | Optional  |\n|  Interface | I Enumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Discard Average  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 386,
+      "bottomRightX": 592,
+      "bottomRightY": 403,
+      "content": "Sets the mode used to reduce the horizontal resolution when Decimation Horizontal is used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 411,
+      "bottomRightX": 169,
+      "bottomRightY": 426,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 435,
+      "bottomRightX": 490,
+      "bottomRightY": 471,
+      "content": "- Discard: The value of every Nth pixel is kept, others are discarded.\n- Average: The values of a group of N adjacent pixels are averaged.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 501,
+      "bottomRightX": 271,
+      "bottomRightY": 519,
+      "content": "### 4.30 Decimation Horizontal",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 522,
+      "bottomRightX": 364,
+      "bottomRightY": 722,
+      "content": "|  Name | Decimation Horizontal  |\n| --- | --- |\n|  Category | Image Format Control  |\n|  Level | Optional  |\n|  Interface | I Integer  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 746,
+      "bottomRightX": 641,
+      "bottomRightY": 779,
+      "content": "Horizontal sub-sampling of the image. This reduces the horizontal resolution (width) of the image by the specified horizontal decimation factor.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 786,
+      "bottomRightX": 481,
+      "bottomRightY": 803,
+      "content": "A value of 1 indicates that the camera performs no horizontal decimation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 817,
+      "bottomRightX": 295,
+      "bottomRightY": 835,
+      "content": "### 4.31 Decimation Vertical Mode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 839,
+      "bottomRightX": 364,
+      "bottomRightY": 940,
+      "content": "|  Name | Decimation Vertical Mode  |\n| --- | --- |\n|  Level | Optional  |\n|  Interface | I Enumeration  |\n|  Access | Read/(Write)  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 137 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

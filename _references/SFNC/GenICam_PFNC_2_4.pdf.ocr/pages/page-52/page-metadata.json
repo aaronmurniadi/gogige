@@ -1,0 +1,166 @@
+{
+  "index": 51,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 752,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 150,
+      "bottomRightX": 171,
+      "bottomRightY": 167,
+      "content": "### Full scale RGB",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 175,
+      "bottomRightX": 732,
+      "bottomRightY": 212,
+      "content": "Full scale RGB uses (8) to define the relationship between the R', G' and B' components and E'R, E'G and E'B.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 215,
+      "topLeftY": 243,
+      "bottomRightX": 595,
+      "bottomRightY": 329,
+      "content": "![img-49.jpeg](img-49.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-49.jpeg"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 336,
+      "bottomRightX": 532,
+      "bottomRightY": 355,
+      "content": "Figure 8-5 : Full scale RGB for BT.709",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 389,
+      "bottomRightX": 269,
+      "bottomRightY": 406,
+      "content": "Replacing (8) into (14) leads to:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 411,
+      "bottomRightX": 488,
+      "bottomRightY": 510,
+      "content": "\\(\\mathrm{Y}^{\\prime}_{709} = 0.18259\\mathrm{R}^{\\prime}\\) \\(+0.61423\\mathrm{G}^{\\prime} + 0.06201\\mathrm{B}^{\\prime} + 16\\) \\(\\mathrm{Cb} = -0.10064\\mathrm{R}^{\\prime}\\) \\(-0.33857\\mathrm{G}^{\\prime} + 0.43922\\mathrm{B}^{\\prime} + 128\\) \\(\\mathrm{Cr} = 0.43922\\mathrm{R}^{\\prime}\\) \\(-0.39894\\mathrm{G}^{\\prime}\\) \\(-0.04027\\mathrm{B}^{\\prime} + 128\\) with \\(\\mathrm{R}^{\\prime},\\mathrm{G}^{\\prime}\\) and \\(\\mathrm{B}^{\\prime}\\) in the range [0, 255].",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 516,
+      "bottomRightX": 610,
+      "bottomRightY": 537,
+      "content": "Equation 8 : Full scale R'G'B' to Y'CbCr709 conversion (8 bits)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 568,
+      "bottomRightX": 462,
+      "bottomRightY": 587,
+      "content": "For 8-bit data, the valid range of values for each component is:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 593,
+      "bottomRightX": 673,
+      "bottomRightY": 665,
+      "content": "❖ R', G' and B' in range [0, 255], unsigned (256 levels)\n❖ Y'709 in the range [16, 235], unsigned (220 levels)\n❖ Cb and Cr in range [16, 240], signed shifted by 128, with 128 representing 0 (225 levels)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 670,
+      "bottomRightX": 346,
+      "bottomRightY": 689,
+      "content": "Values must be truncated to fit in that range.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 722,
+      "bottomRightX": 291,
+      "bottomRightY": 739,
+      "content": "The reverse equations are given by:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 744,
+      "bottomRightX": 581,
+      "bottomRightY": 844,
+      "content": "\\(\\begin{array}{r l r l} \\mathrm{R}^{\\prime} = & 1.16438 (\\mathrm{Y}^{\\prime}_{709} - 16) & + 1.79274 (\\mathrm{Cr} - 128) \\\\ \\mathrm{G}^{\\prime} = & 1.16438 (\\mathrm{Y}^{\\prime}_{709} - 16) & -0.21325 (\\mathrm{Cb} - 128) & -0.53291 (\\mathrm{Cr} - 128) \\\\ \\mathrm{B}^{\\prime} = & 1.16438 (\\mathrm{Y}^{\\prime}_{709} - 16) & + 2.11240 (\\mathrm{Cb} - 128) \\\\ \\end{array}\\) with \\(\\mathrm{Y}^{\\prime}_{709}\\) in the range [16, 235] and, \\(\\mathrm{Cb}\\) and \\(\\mathrm{Cr}\\) in the range [16, 240].",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 851,
+      "bottomRightX": 610,
+      "bottomRightY": 870,
+      "content": "Equation 9 : Full scale Y'CbCr601 to R'G'B' conversion (8 bits)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 974,
+      "content": "Page 52 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

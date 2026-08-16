@@ -1,0 +1,84 @@
+{
+  "index": 15,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENCAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 623,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 87,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 116,
+      "bottomRightX": 662,
+      "bottomRightY": 971,
+      "content": "|  27.2.8 | GENDCDESCRIPTOR | 508  |\n| --- | --- | --- |\n|  27.2.9 | GENDCFLOWMAPPINGTABLE | 508  |\n|  27.2.10 | DEVICETAPGEOMETRY | 509  |\n|  27.3 | PTP CONTROL | 512  |\n|  27.3.1 | PTPCONTROL | 512  |\n|  27.3.2 | PTPENABLE | 513  |\n|  27.3.3 | PTPCLOCKACCURACY | 514  |\n|  27.3.4 | PTPDATASETLATCH | 514  |\n|  27.3.5 | PTPSTATUS | 515  |\n|  27.3.6 | PTPSERVOSTATUS | 515  |\n|  27.3.7 | PTPOFFSETFROMMASTER | 516  |\n|  27.3.8 | PTPCLOCKID | 516  |\n|  27.3.9 | PTPPARENTCLOCKID | 517  |\n|  27.3.10 | PTPGRANDMASTERCLOCKID | 517  |\n|  27.3.11 | PTPMEANPROPAGATIONDELAY | 517  |\n|  27.4 | GIGE VISION CONTROL | 519  |\n|  27.4.1 | GIGEVISION | 519  |\n|  27.4.2 | GEVVERSIONMAJOR (DEPRECATED) | 519  |\n|  27.4.3 | GEVVERSIONMINOR (DEPRECATED) | 519  |\n|  27.4.4 | GEVDEVICEMODEISBIGENDIAN (DEPRECATED) | 520  |\n|  27.4.5 | GEVDEVICECLASS (DEPRECATED) | 520  |\n|  27.4.6 | GEVDEVICEMODECHARACTERSET (DEPRECATED) | 521  |\n|  27.4.7 | GEVPHYSICALLINKCONFIGURATION | 521  |\n|  27.4.8 | GEVCURRENTPHYSICALLINKCONFIGURATION | 522  |\n|  27.4.9 | GEVACTIVELINKCOUNT (DEPRECATED) | 522  |\n|  27.4.10 | GEVSUPPORTEDOPTIONSELECTOR | 522  |\n|  27.4.11 | GEVSUPPORTEDOPTION | 524  |\n|  27.4.12 | GEVINTERFACESELECTOR | 525  |\n|  27.4.13 | GEVLINKSPEED (DEPRECATED) | 525  |\n|  27.4.14 | GEVMACADDRESS | 525  |\n|  27.4.15 | GEVPAUSEFRAMERECEPTION | 526  |\n|  27.4.16 | GEVPAUSEFRAMETRANSMISSION | 526  |\n|  27.4.17 | GEVCURRENTIPCONFIGURATIONLLA | 527  |\n|  27.4.18 | GEVCURRENTIPCONFIGURATIONDHCP | 527  |\n|  27.4.19 | GEVCURRENTIPCONFIGURATIONPERSISTENTIP | 527  |\n|  27.4.20 | GEVCURRENTIPADDRESS | 528  |\n|  27.4.21 | GEVCURRENTSUBNETMASK | 528  |\n|  27.4.22 | GEVCURRENTDEFAULTGATEWAY | 529  |\n|  27.4.23 | GEVIPCONFIGURATIONSTATUS | 529  |\n|  27.4.24 | GEVFIRSTURL (DEPRECATED) | 529  |\n|  27.4.25 | GEVSECONDURL(DEPRECATED) | 530  |\n|  27.4.26 | GEVNUMBEROFINTERFACES (DEPRECATED) | 530  |\n|  27.4.27 | GEVPERSISTENTIPADDRESS | 531  |\n|  27.4.28 | GEVPERSISTENTSUBNETMASK | 531  |\n|  27.4.29 | GEVPERSISTENTDEFAULTGATEWAY | 531  |\n|  27.4.30 | GEVMESSAGECHANNELCOUNT (DEPRECATED) | 532  |\n|  27.4.31 | GEVSTREAMCHANNELCOUNT (DEPRECATED) | 532  |\n|  27.4.32 | GEVHEARTBEATTIMEOUT (DEPRECATED) | 533  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 989,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 392,
+      "bottomRightY": 1007,
+      "content": "Page 16 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 989,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "index": 6,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-0.jpeg](img-0.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 156,
+      "bottomRightX": 188,
+      "bottomRightY": 176,
+      "content": "Change History",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 190,
+      "bottomRightX": 656,
+      "bottomRightY": 519,
+      "content": "|  Version | Date | Description  |\n| --- | --- | --- |\n|  1.0 |  | \\( 1^{st} \\) Version  |\n|  1.1 | Oct 2014 | Clarification of RequestAck bit.Added MultipleEvents per Event Command description including capability and enable bit.Clarify command execution on request_id = 0Clarify that acknowledges on corrupt command packetsMake Heartbeat for devices using GenCP over a serial link mandatory to allow baud rate switching  |\n|  1.2 | Feb 2016 | Renaming of Filetypes to Fileformats and adding new Filetypes for Buffer-XML.Moving all Serial-Link based paragraphs to an appendixRemoving link to U3V  |\n|  1.3 | June 2018 | Stacked RW accessClarification of register Device VersionAdded register Device Software Interface Version  |\n|  1.3.1 | Oct 2024 | Fixed inconsistency between text and table regarding CRC calculations for serial prefix in Appendix for Serial Port ImplementationsFixed problems with missing and duplicate or invisible figure descriptionsFixed several typos and added missing commasChanged referenced standards to reflect renaming of AIA to A3  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 542,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 7 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "index": 300,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<icCAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 704,
+      "bottomRightY": 938,
+      "content": "- ExposureStart: Device just started the exposure of one Frame (or Line).\n- ExposureEnd: Device just completed the exposure of one Frame (or Line).\n- Stream0TransferStart: Device just started the transfer of one or many Blocks.\n- Stream0TransferEnd: Device just completed the transfer of one or many Blocks.\n- Stream0TransferPause: Device just paused the transfer.\n- Stream0TransferResume: Device just resumed the transfer.\n- Stream0TransferBlockStart: Device just started the transfer of one Block.\n- Stream0TransferBlockEnd: Device just completed the transfer of one Block.\n- Stream0TransferBlockTrigger: Device just received a trigger to start the transfer of one Block.\n- Stream0TransferBurstStart: Device just started the transfer of a burst of Blocks.\n- Stream0TransferBurstEnd: Device just completed the transfer of a burst of Blocks.\n- Stream0TransferOverflow: Device transfer queue overflowed.\n- SequencerSetChange: Device sequencer set has changed.\n- Counter0Start: The event will be generated when counter 0 starts counting.\n- Counter0End: The event will be generated when counter 0 ends counting.\n- Counter1Start: The event will be generated when counter 1 starts counting.\n- Counter1End: The event will be generated when counter 1 ends counting.\n- Timer0Start: The event will be generated when Timer 0 starts counting.\n- Timer0End: The event will be generated when Timer 0 ends counting.\n- Timer1Start: The event will be generated when Timer 1 starts counting.\n- Timer1End: The event will be generated when Timer 1 ends counting.\n- Encoder0Stopped: The event will be generated when the Encoder 0 stops for longer than EncoderTimeout.\n- Encoder1Stopped: The event will be generated when the Encoder 1 stops for longer than EncoderTimeout.\n- Encoder0Restarted: The event will be generated when the Encoder 0 restarts moving.\n- Encoder1Restarted: The event will be generated when the Encoder 1 restarts moving.\n- Line0RisingEdge: The event will be generated when a Rising Edge is detected on the Line 0.\n- Line1RisingEdge: The event will be generated when a Rising Edge is detected on the Line 1.\n- Line0FallingEdge: The event will be generated when a Falling Edge is detected on the Line 0.\n- Line1FallingEdge: The event will be generated when a Falling Edge is detected on the Line 1.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 301 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

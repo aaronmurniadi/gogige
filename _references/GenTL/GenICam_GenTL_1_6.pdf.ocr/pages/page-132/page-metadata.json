@@ -1,0 +1,104 @@
+{
+  "index": 131,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-181.jpeg](img-181.jpeg) CAM |   | ![img-182.jpeg](img-182.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 644,
+      "bottomRightY": 341,
+      "content": "|  Enumerator | Impl | Value | Description  |\n| --- | --- | --- | --- |\n|   |  |  | custom IDs which are implementation specific.If a generic GenTL Consumer is using custom TL_INFO_CMDs provided through a specific GenTL Producer implementation it must differentiate the handling of different GenTL Producer implementations in case other implementations will not provide that custom id or will use a different meaning with it.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 371,
+      "bottomRightX": 305,
+      "bottomRightY": 388,
+      "content": "#### 6.4.2 Interface Enumerations",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 403,
+      "bottomRightX": 305,
+      "bottomRightY": 421,
+      "content": "##### 6.4.2.1 INTERFACE_INFO_CMD",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 444,
+      "bottomRightX": 286,
+      "bottomRightY": 462,
+      "content": "enum INTERFACE_INFO_CMD",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 471,
+      "bottomRightX": 635,
+      "bottomRightY": 505,
+      "content": "This enumeration defines commands to retrieve information with the IFGetInfo function from the Interface module or through TLGetInterfaceInfo.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 513,
+      "bottomRightX": 635,
+      "bottomRightY": 548,
+      "content": "The column labeled “Impl” in the following table lists if the implementation of a given command is mandatory (M) or optional (O).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 551,
+      "bottomRightX": 644,
+      "bottomRightY": 910,
+      "content": "|  Enumerator | Impl | Value | Description  |\n| --- | --- | --- | --- |\n|  INTERFACE_INFO_ID | M | 0 | Unique ID of the interface.Data type: STRING  |\n|  INTERFACE_INFO_DISPLAYNAME | M | 1 | User readable name of the interface.Data type: STRING  |\n|  INTERFACE_INFO_TLTYPE | M | 2 | Transport layer technology that is supported. See string constants in chapter 6.6.1.Data type: STRING  |\n|  INTERFACE_INFO_CUSTOM_ID | O | 1000 | Starting value for GenTL Producer custom IDs which are implementation specific.If a generic GenTL Consumer is using custom INTERFACE_INFO_CMDs provided through a specific GenTL Producer implementation it must differentiate the handling of different GenTL Producer implementations in case other implementations will not provide that custom id or will use a different meaning with it.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 132 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

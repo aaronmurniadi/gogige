@@ -1,0 +1,129 @@
+{
+  "index": 299,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 133,
+      "bottomRightX": 469,
+      "bottomRightY": 339,
+      "content": "|   | Line1AnyEdge, ... LinkTrigger0 (If 0 based), LinkTrigger1, ... LinkSpeedChange ActionLate Error Test Device-specific - GigE Vision Specific: PrimaryApplicationSwitch  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 365,
+      "bottomRightX": 383,
+      "bottomRightY": 382,
+      "content": "Selects which Event to signal to the host application.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 389,
+      "bottomRightX": 409,
+      "bottomRightY": 408,
+      "content": "See Figure 5-1 to Figure 5-4 and Figure 19-1 for details..",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 416,
+      "bottomRightX": 177,
+      "bottomRightY": 431,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 441,
+      "bottomRightX": 729,
+      "bottomRightY": 942,
+      "content": "- AcquisitionTrigger: Device just received a trigger for the Acquisition of one or many Frames.\n- AcquisitionTriggerMissed: Device just missed a trigger for the Acquisition of one or many Frames.\n- AcquisitionStart: Device just started the Acquisition of one or many Frames.\n- AcquisitionEnd: Device just completed the Acquisition of one or many Frames.\n- AcquisitionTransferStart: Device just started the transfer of one or many Frames.\n- AcquisitionTransferEnd: Device just completed the transfer of one or many Frames.\n- AcquisitionError: Device just detected an error during the active Acquisition.\n- FrameBurstStart: Device just started the capture of a burst of Frames.\n- FrameBurstEnd: Device just completed the capture of a burst of Frames.\n- FrameTrigger: Device just received a trigger to start the capture of one Frame.\n- FrameTriggerMissed: Device just missed a trigger to start the capture of one Frame.\n- FrameStart: Device just started the capture of one Frame.\n- FrameEnd: Device just completed the capture of one Frame.\n- FrameTransferStart: Device just started the transfer of one Frame.\n- FrameTransferEnd: Device just completed the transfer of one Frame.\n- LineTrigger: Device just received a trigger to start the capture of one Line.\n- LineTriggerMissed: Device just missed a trigger to start the capture of one Line.\n- LineStart: Device just started the capture of one Line.\n- LineEnd: Device just completed the capture of one Line.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 300 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

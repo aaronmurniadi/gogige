@@ -1,0 +1,160 @@
+{
+  "index": 105,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 118,
+      "bottomRightX": 529,
+      "bottomRightY": 145,
+      "content": "|   | Little  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 169,
+      "bottomRightX": 352,
+      "bottomRightY": 185,
+      "content": "Endianness of multi-byte pixel data for this stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 193,
+      "bottomRightX": 169,
+      "bottomRightY": 208,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 93,
+      "topLeftY": 218,
+      "bottomRightX": 369,
+      "bottomRightY": 251,
+      "content": "- Big: Stream channel data is big Endian.\n- Little: Stream channel data is little Endian.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 266,
+      "bottomRightX": 365,
+      "bottomRightY": 284,
+      "content": "3.47 DeviceStreamChannelPacketSize",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 288,
+      "bottomRightX": 529,
+      "bottomRightY": 503,
+      "content": "|  Name | DeviceStreamChannelPacketSize[DeviceStreamChannelSelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | B  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 527,
+      "bottomRightX": 652,
+      "bottomRightY": 561,
+      "content": "Specifies the stream packet size, in bytes, to send on the selected channel for a Transmitter or specifies the maximum packet size supported by a receiver.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 575,
+      "bottomRightX": 314,
+      "bottomRightY": 593,
+      "content": "3.48 DeviceEventChannelCount",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 596,
+      "bottomRightX": 329,
+      "bottomRightY": 796,
+      "content": "|  Name | DeviceEventChannelCount  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 819,
+      "bottomRightX": 426,
+      "bottomRightY": 837,
+      "content": "Indicates the number of event channels supported by the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 874,
+      "bottomRightX": 448,
+      "bottomRightY": 895,
+      "content": "3.49 DeviceMessageChannelCount (Deprecated)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 896,
+      "bottomRightX": 329,
+      "bottomRightY": 947,
+      "content": "|  Name | DeviceMessageChannelCount  |\n| --- | --- |\n|  Category | DeviceControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 951,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 106 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

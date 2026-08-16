@@ -1,0 +1,166 @@
+{
+  "index": 342,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 109,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 405,
+      "bottomRightY": 297,
+      "content": "|  Visibility | Beginner  |\n| --- | --- |\n|  Values | Source0 (If 0 based) Source1 Source2 ... All Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 321,
+      "bottomRightX": 233,
+      "bottomRightY": 338,
+      "content": "Selects the source to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 346,
+      "bottomRightX": 177,
+      "bottomRightY": 361,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 374,
+      "bottomRightX": 319,
+      "bottomRightY": 497,
+      "content": "- Source0: Selects the data source 0.\n- Source1: Selects the data source 1.\n- Source2: Selects the data source 2.\n- ...\n- All: Selects all the data sources.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 530,
+      "bottomRightX": 743,
+      "bottomRightY": 568,
+      "content": "The \"All\" value can be used to change the features of all the sources at the same time. For example, this can be useful to simultaneously start and stop multiple acquisitions.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 582,
+      "bottomRightX": 229,
+      "bottomRightY": 601,
+      "content": "### 19.6SourceIDValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 604,
+      "bottomRightX": 424,
+      "bottomRightY": 819,
+      "content": "|  Name | SourceIDValue[SourceSelector]  |\n| --- | --- |\n|  Category | SourceControl  |\n|  Level | Optional  |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 843,
+      "bottomRightX": 503,
+      "bottomRightY": 862,
+      "content": "Returns a unique Identifier value that correspond to the selected Source.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 868,
+      "bottomRightX": 649,
+      "bottomRightY": 887,
+      "content": "This value is typically used by the Transport Layer to specify the source of the transmitted data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 343 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

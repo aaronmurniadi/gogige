@@ -1,0 +1,129 @@
+{
+  "index": 28,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-33.jpeg](img-33.jpeg)CAN |   | ![img-34.jpeg](img-34.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 136,
+      "bottomRightX": 223,
+      "bottomRightY": 186,
+      "content": "return hNewIface;\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 207,
+      "bottomRightX": 255,
+      "bottomRightY": 226,
+      "content": "#### 3.8.5 OpenFirstDevice",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 229,
+      "bottomRightX": 256,
+      "bottomRightY": 245,
+      "content": "Retrieve first Device Handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 251,
+      "bottomRightX": 418,
+      "bottomRightY": 505,
+      "content": "DEV_HANDLE OpenFirstDevice(hIF)\n{\n    IFUpdateDeviceList(hIF);\n    IFGetNumDevices(hTL, NumDevices);\n    if (NumDevices > 0)\n    {\n    // First query the buffer size\n    IFGetDeviceID(hIF, 0, DeviceID, &bufferSize);\n\n    // Open interface with index 0\n    IFOpenDevice(hIF, DeviceID, hNewDevice);\n    return hNewDevice;\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 525,
+      "bottomRightX": 291,
+      "bottomRightY": 544,
+      "content": "#### 3.8.6 OpenFirstDataStream",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 548,
+      "bottomRightX": 238,
+      "bottomRightY": 562,
+      "content": "Retrieve first data Stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 570,
+      "bottomRightX": 451,
+      "bottomRightY": 800,
+      "content": "DS_HANDLE OpenFirstDataStream(hDev)\n{\n    // Retrieve the number of Data Stream\n    DevGetNumDataStreams(hDev, NumStreams);\n\n    if (NumStreams > 0)\n    {\n    // Get ID of first stream using\n    DevGetDataStreamID(hdev, 0, StreamID, buffersize);\n    // Instantiate Data Stream\n    DevOpenDataStream(hDev, StreamID, hNewStream);\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 820,
+      "bottomRightX": 259,
+      "bottomRightY": 838,
+      "content": "#### 3.8.7 CloseDataStream",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 843,
+      "bottomRightX": 198,
+      "bottomRightY": 857,
+      "content": "Close Data Stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 864,
+      "bottomRightX": 293,
+      "bottomRightY": 896,
+      "content": "void CloseDataStream ( hStream ) {",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 29 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

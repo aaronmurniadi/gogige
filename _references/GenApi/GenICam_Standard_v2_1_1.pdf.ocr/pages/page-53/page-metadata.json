@@ -1,0 +1,49 @@
+{
+  "index": 52,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-69.jpeg](img-69.jpeg)emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 149,
+      "bottomRightX": 636,
+      "bottomRightY": 459,
+      "content": "|   | DocuURL | Empty string  |\n| --- | --- | --- |\n|   |  ImposedAccessMode | RW  |\n|   |  IsDeprecated | No  |\n|   |  Representation | PureNumber  |\n|   |  Sign | Unsigned  |\n|   |  Streamable | No  |\n|   |  ToolTip | Empty string  |\n|   |  Visibility | Beginner  |\n|   |  Unit | Empty string  |\n|  SwissKnife | DisplayNotation | Automatic  |\n|   |  DisplayPrecision | 6  |\n|   |  Representation | PureNumber  |\n|   |  Streamable | No  |\n|   |  Unit | Empty string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 957,
+      "bottomRightX": 300,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 53 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

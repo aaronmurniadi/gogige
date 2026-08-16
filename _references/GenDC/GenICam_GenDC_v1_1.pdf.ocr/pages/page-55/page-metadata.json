@@ -1,0 +1,76 @@
+{
+  "index": 54,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 117,
+      "bottomRightX": 580,
+      "bottomRightY": 137,
+      "content": "### C.3 GenDC Container typical transmission using out of order transfers",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 174,
+      "bottomRightX": 628,
+      "bottomRightY": 195,
+      "content": "Typical GenDC Data Container layout and out of order transmission:",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 208,
+      "bottomRightX": 737,
+      "bottomRightY": 833,
+      "content": "![img-23.jpeg](img-23.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-23.jpeg"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 860,
+      "bottomRightX": 609,
+      "bottomRightY": 877,
+      "content": "Figure 5-18: Typical GenDC Container's layout and out of order transmission (One RGB planar image)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 55 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

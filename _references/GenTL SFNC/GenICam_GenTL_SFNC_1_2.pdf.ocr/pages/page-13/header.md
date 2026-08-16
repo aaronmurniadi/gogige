@@ -1,0 +1,1 @@
+<table><tr><td colspan="2">GEN&lt;I&gt;CAM</td><td rowspan="2">emva</td></tr><tr><td>Version 1.2.0</td><td>GenTL Standard Features Naming Convention</td></tr></table>

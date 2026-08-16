@@ -1,0 +1,142 @@
+{
+  "index": 9,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 44,
+      "bottomRightX": 753,
+      "bottomRightY": 126,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 152,
+      "bottomRightX": 277,
+      "bottomRightY": 170,
+      "content": "### 1.3 Reference Documents",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 195,
+      "bottomRightX": 761,
+      "bottomRightY": 428,
+      "content": "|  IEC 60559:1989 | Binary floating-point arithmetic for microprocessor systems, second edition (IEC 60559:1989), also known as IEEE Standard for Binary Floating-Point Arithmetic (ANSI/IEEE 754-1985)  |\n| --- | --- |\n|  GenICam | Generic Interface for Camera, version 3.0  |\n|  GenICam SFNC | GenICam Standard Features Naming Convention, version 2.2  |\n|  ITU-R BT.601-7 | Studio encoding parameters of digital television for standard 4:3 and wide screen 16:9 aspect ratios  |\n|  ITU-R BT.709-5 | Parameter values for the HDTV standards for production and international programme exchange  |\n|  JFIF | JPEG File Interchange Format, version 1.02  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 442,
+      "bottomRightX": 209,
+      "bottomRightY": 463,
+      "content": "### 1.4 Assumptions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 470,
+      "bottomRightX": 732,
+      "bottomRightY": 609,
+      "content": "- Pixels have a maximum of 4 components (ex: alpha-red-green-blue). In this text, we use the generic LMNO designation to represent those components (ex: LMN could represent RGB where R = L, G = M and B = N).\n- Some components might be sub-sampled (ex: Y’CbCr 4:2:2 and 4:1:1).\n- The following figure illustrates 8-bit, 16-bit and 32-bit data words respectively. The way this data is stored in memory (little-endian or big-endian) is not defined by this convention, though the illustrations use little-endian.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 287,
+      "topLeftY": 617,
+      "bottomRightX": 526,
+      "bottomRightY": 664,
+      "content": "![img-1.jpeg](img-1.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-3.jpeg"
+    },
+    {
+      "topLeftX": 316,
+      "topLeftY": 671,
+      "bottomRightX": 495,
+      "bottomRightY": 689,
+      "content": "Figure 1-1 : 8-bit pixel data",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 170,
+      "topLeftY": 721,
+      "bottomRightX": 642,
+      "bottomRightY": 768,
+      "content": "![img-2.jpeg](img-2.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-3.jpeg"
+    },
+    {
+      "topLeftX": 312,
+      "topLeftY": 774,
+      "bottomRightX": 499,
+      "bottomRightY": 793,
+      "content": "Figure 1-2 : 16-bit pixel data",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 170,
+      "topLeftY": 824,
+      "bottomRightX": 642,
+      "bottomRightY": 871,
+      "content": "![img-3.jpeg](img-3.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-3.jpeg"
+    },
+    {
+      "topLeftX": 312,
+      "topLeftY": 879,
+      "bottomRightX": 499,
+      "bottomRightY": 897,
+      "content": "Figure 1-3 : 32-bit pixel data",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 974,
+      "content": "Page 10 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

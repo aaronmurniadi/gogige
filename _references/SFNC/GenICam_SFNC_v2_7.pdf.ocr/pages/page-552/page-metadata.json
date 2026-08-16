@@ -1,0 +1,141 @@
+{
+  "index": 551,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 144,
+      "bottomRightX": 470,
+      "bottomRightY": 164,
+      "content": "### 27.5.3 aPAUSEMACCtrlFramesTransmitted",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 587,
+      "bottomRightY": 380,
+      "content": "|  Name | aPAUSEMACCtrlFramesTransmitted[GevInterfaceSelector]  |\n| --- | --- |\n|  Category | oMACControlFunctionEntity  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 406,
+      "bottomRightX": 381,
+      "bottomRightY": 423,
+      "content": "Reports the number of transmitted PAUSE frames.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 438,
+      "bottomRightX": 445,
+      "bottomRightY": 458,
+      "content": "### 27.5.4 aPAUSEMACCtrlFramesReceived",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 461,
+      "bottomRightX": 569,
+      "bottomRightY": 675,
+      "content": "|  Name | aPAUSEMACCtrlFramesReceived[GevInterfaceSelector]  |\n| --- | --- |\n|  Category | oMACControlFunctionEntity  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 699,
+      "bottomRightX": 364,
+      "bottomRightY": 717,
+      "content": "Reports the number of received PAUSE frames.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 47,
+      "topLeftY": 759,
+      "bottomRightX": 280,
+      "bottomRightY": 777,
+      "content": "### 27.6 Camera Link Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 803,
+      "bottomRightX": 466,
+      "bottomRightY": 821,
+      "content": "This section describes the Camera Link specific control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 855,
+      "bottomRightX": 261,
+      "bottomRightY": 873,
+      "content": "### 27.6.1 CameraLink",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 878,
+      "bottomRightX": 409,
+      "bottomRightY": 933,
+      "content": "|  Name | CameraLink  |\n| --- | --- |\n|  Category | TransportLayerControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 552 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

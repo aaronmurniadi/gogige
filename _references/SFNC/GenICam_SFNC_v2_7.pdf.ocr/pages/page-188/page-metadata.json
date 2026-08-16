@@ -1,0 +1,122 @@
+{
+  "index": 187,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 569,
+      "bottomRightY": 154,
+      "content": "The drawing below shows the functional model of the trigger generation in SFNC.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 161,
+      "bottomRightX": 732,
+      "bottomRightY": 198,
+      "content": "It shows the order and the stages that an input signal received on an external line may pass to become a valid trigger (Ex: a FrameTrigger).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 203,
+      "bottomRightX": 712,
+      "bottomRightY": 241,
+      "content": "Note that the signal received on an external line or generated from an internal circuit is considered a valid trigger for the Acquisition section only after passing all those stages (if they re implemented).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 269,
+      "bottomRightX": 676,
+      "bottomRightY": 406,
+      "content": "![img-74.jpeg](img-74.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-74.jpeg"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 426,
+      "bottomRightX": 580,
+      "bottomRightY": 445,
+      "content": "Figure 5-16: Trigger generation functional model.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 472,
+      "bottomRightX": 724,
+      "bottomRightY": 639,
+      "content": "- Input Signal represents an electrical signal received on an external Line or an internal signal.\n- Line I/O Control represents the Line Control Block as described in the Figure 6-1.\n- Trigger Mode/Activation represents the effect of the TriggerMode and TriggerActivation features.\n- Trigger Divider/Multiplier represents the effect of the TriggerDivider and TriggerMultiplier features.\n- Trigger Delay represents the effect of the TriggerDelay feature\n- Trigger Overlap Control represents the effect of the TriggerOverlap feature.\n- Valid Trigger represents when an incoming signal becomes a valid Trigger.\n- Missed Trigger represents when an incoming signal does not become a valid Trigger.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 653,
+      "bottomRightX": 282,
+      "bottomRightY": 676,
+      "content": "### 5.6.1 TriggerSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 677,
+      "bottomRightX": 386,
+      "bottomRightY": 936,
+      "content": "|  Name | TriggerSelector  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | AcquisitionStart AcquisitionEnd AcquisitionActive FrameStart  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 188 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

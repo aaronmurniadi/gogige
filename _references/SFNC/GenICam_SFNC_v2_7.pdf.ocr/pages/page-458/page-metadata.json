@@ -1,0 +1,168 @@
+{
+  "index": 457,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 432,
+      "bottomRightY": 198,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | Group0, Group1, Group2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 222,
+      "bottomRightX": 459,
+      "bottomRightY": 241,
+      "content": "Selects the component Group from which to retrieve data from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 248,
+      "bottomRightX": 466,
+      "bottomRightY": 267,
+      "content": "This generally maps to the corresponding GroupSelector feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 273,
+      "bottomRightX": 187,
+      "bottomRightY": 290,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 299,
+      "bottomRightX": 343,
+      "bottomRightY": 374,
+      "content": "- Group0: Selects Components group 0.\n- Group1: Selects Components group 1.\n- Group2: Selects Components group 2.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 386,
+      "bottomRightX": 285,
+      "bottomRightY": 408,
+      "content": "### 24.13 ChunkGroupID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 411,
+      "bottomRightX": 447,
+      "bottomRightY": 623,
+      "content": "|  Name | ChunkGroupID[ChunkGroupSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Group0, Group1, Group2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 646,
+      "bottomRightX": 736,
+      "bottomRightY": 684,
+      "content": "Returns a unique Identifier corresponding to the selected Group of components. This can be used to identify the component Group of a multi-group payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 690,
+      "bottomRightX": 466,
+      "bottomRightY": 710,
+      "content": "This generally maps to the corresponding GroupSelector feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 716,
+      "bottomRightX": 187,
+      "bottomRightY": 732,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 742,
+      "bottomRightX": 343,
+      "bottomRightY": 816,
+      "content": "- Group0: Selects Components group 0.\n- Group1: Selects Components group 1.\n- Group2: Selects Components group 2.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 847,
+      "bottomRightX": 333,
+      "bottomRightY": 868,
+      "content": "### 24.14 ChunkGroupIDValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 870,
+      "bottomRightX": 485,
+      "bottomRightY": 927,
+      "content": "|  Name | ChunkGroupIDValue[ChunkGroupSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 458 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

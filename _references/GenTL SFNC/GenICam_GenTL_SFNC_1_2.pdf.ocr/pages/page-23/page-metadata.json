@@ -1,0 +1,102 @@
+{
+  "index": 22,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 54,
+      "bottomRightX": 361,
+      "bottomRightY": 83,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 54,
+      "bottomRightX": 633,
+      "bottomRightY": 104,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 97,
+      "bottomRightX": 171,
+      "bottomRightY": 112,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 97,
+      "bottomRightX": 475,
+      "bottomRightY": 113,
+      "content": "GenTL Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 173,
+      "bottomRightX": 242,
+      "bottomRightY": 191,
+      "content": "## 2.1.4 Event Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 203,
+      "bottomRightX": 382,
+      "bottomRightY": 221,
+      "content": "Category that contains Event Control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 398,
+      "topLeftY": 229,
+      "bottomRightX": 625,
+      "bottomRightY": 247,
+      "content": "Table 2-4: Event Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 251,
+      "bottomRightX": 1003,
+      "bottomRightY": 362,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  EventControl | R | All | ICategory | R | - | E | Category that contains Event control features.  |\n|  EventSelector | R | All | IEnumeration | R/W | - | E | Selects which Event to signal to the host application.  |\n|  EventNotification[EventSelector] | R | All | IEnumeration | R/W | - | E | Activate or deactivate the notification to the host application of the occurrence of the selected Event.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 694,
+      "bottomRightX": 167,
+      "bottomRightY": 711,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 329,
+      "topLeftY": 694,
+      "bottomRightX": 431,
+      "bottomRightY": 712,
+      "content": "Page 23 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

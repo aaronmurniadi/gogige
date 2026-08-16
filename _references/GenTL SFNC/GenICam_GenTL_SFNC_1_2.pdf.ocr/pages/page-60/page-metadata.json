@@ -1,0 +1,105 @@
+{
+  "index": 59,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 370,
+      "content": "|  Category | InterfaceInformation  |\n| --- | --- |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 394,
+      "bottomRightX": 698,
+      "bottomRightY": 447,
+      "content": "48-bit MAC address of this interface. Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory, and that the Representation element should be used in the XML to facilitate understanding the data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 462,
+      "bottomRightX": 380,
+      "bottomRightY": 479,
+      "content": "3.2.1.10 GevInterfaceSubnetSelector",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 482,
+      "bottomRightX": 421,
+      "bottomRightY": 723,
+      "content": "|  Name | GevInterfaceSubnetSelector  |\n| --- | --- |\n|  Category | InterfaceInformation  |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 747,
+      "bottomRightX": 641,
+      "bottomRightY": 784,
+      "content": "Selector for the subnet of this interface. Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 797,
+      "bottomRightX": 394,
+      "bottomRightY": 814,
+      "content": "3.2.1.11 GevInterfaceSubnetIPAddress",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 818,
+      "bottomRightX": 589,
+      "bottomRightY": 927,
+      "content": "|  Name | GevInterfaceSubnetIPAddress[GevInterfaceSubnetSelector]  |\n| --- | --- |\n|  Category | InterfaceInformation  |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 60 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

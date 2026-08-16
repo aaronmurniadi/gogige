@@ -1,0 +1,147 @@
+{
+  "index": 125,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 533,
+      "bottomRightY": 79,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 75,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 75,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 117,
+      "bottomRightX": 399,
+      "bottomRightY": 385,
+      "content": "|  Access | Read/Write  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Intensity Infrared Ultraviolet Range Reflectance Confidence Scatter Disparity Multispectral Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 409,
+      "bottomRightX": 409,
+      "bottomRightY": 426,
+      "content": "Selects a component to activate/deactivate its data streaming.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 441,
+      "bottomRightX": 646,
+      "bottomRightY": 510,
+      "content": "The **ComponentSelector** determines which data acquisition component to control. In a standard (2D) Areascan or Linescan device, Intensity is the typical image component available and it can typically not be turned off. However, for 3D cameras it is often relevant to be able to enable and disable the acquisition of different components.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 516,
+      "bottomRightX": 645,
+      "bottomRightY": 599,
+      "content": "In a general case, different regions of the sensor can be used to acquire and transmit different content. A typical case is found in many linescan 3D cameras where a region is used to acquire 3D Components while another is used to acquire a different 2D Component. In that case, the ComponentEnable feature will be selected by a RegionSelector in addition to the usual ComponentSelector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 606,
+      "bottomRightX": 631,
+      "bottomRightY": 640,
+      "content": "Note that this use case can also be addressed using a SourceSelector and defining multiple (virtual) sensors as described in the Source Control chapter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 647,
+      "bottomRightX": 169,
+      "bottomRightY": 662,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 672,
+      "bottomRightX": 641,
+      "bottomRightY": 948,
+      "content": "- **Intensity**: The acquisition of intensity (monochrome or color) of the visible reflected light is controlled.\n- **Infrared**: The acquisition of non-visible infrared light is controlled.\n- **Ultraviolet**: The acquisition of non-visible ultraviolet light is controlled.\n- **Range**: The acquisition of range (distance) data is controlled. The data produced may be only range (2.5D) or a point cloud giving the 3D coordinates depending on the Scan3dControl features.\n- **Reflectance**: The reflected intensity acquired together with Range in a Linescan3D sensor acquiring a single linescan profile for each exposure of the sensor.\n- **Confidence**: The acquisition of confidence map of the acquired image is controlled. Confidence data may be binary (0 - invalid) or an integer where 0 is invalid and increasing value is increased confidence in the data in the corresponding pixel. If floating point representation is used the confidence image is normalized to the range [0,1], for integer representation the maximum possible integer represents maximum confidence.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 126 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

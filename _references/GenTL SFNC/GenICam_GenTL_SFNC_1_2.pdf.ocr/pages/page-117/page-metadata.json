@@ -1,0 +1,123 @@
+{
+  "index": 116,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 283,
+      "content": "|  Access | Read  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 305,
+      "bottomRightX": 515,
+      "bottomRightY": 325,
+      "content": "Flag to indicate if the buffer is in the input pool or output buffer queue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 333,
+      "bottomRightX": 692,
+      "bottomRightY": 352,
+      "content": "Corresponds to the BUFFER_INFO_IS_QUEUED command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 366,
+      "bottomRightX": 267,
+      "bottomRightY": 385,
+      "content": "### 3.5.2.6 BufferIsAcquiring",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 386,
+      "bottomRightX": 421,
+      "bottomRightY": 616,
+      "content": "|  Name | BufferIsAcquiring  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 642,
+      "bottomRightX": 493,
+      "bottomRightY": 660,
+      "content": "Flag to indicate that the buffer is currently being filled with data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 668,
+      "bottomRightX": 663,
+      "bottomRightY": 704,
+      "content": "Corresponds to the BUFFER_INFO_IS_ACQUIRING command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 719,
+      "bottomRightX": 280,
+      "bottomRightY": 737,
+      "content": "### 3.5.2.7 BufferIsIncomplete",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 739,
+      "bottomRightX": 421,
+      "bottomRightY": 926,
+      "content": "|  Name | BufferIsIncomplete  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 927,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 117 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

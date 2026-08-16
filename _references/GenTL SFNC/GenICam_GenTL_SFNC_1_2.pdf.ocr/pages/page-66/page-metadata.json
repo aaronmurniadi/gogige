@@ -1,0 +1,113 @@
+{
+  "index": 65,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 591,
+      "bottomRightY": 195,
+      "content": "Serial number of the remote device. This value only changes on execution of the DeviceUpdateList command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 202,
+      "bottomRightX": 679,
+      "bottomRightY": 273,
+      "content": "Corresponds to the \"DeviceSerialNumber\" feature of the remote device and is retrieved during device discovery. Note that this feature was added in GenICam SFNC 2.0 and later, thus, for remote devices following an older GenICam SFNC version it corresponds to the \"DeviceID\" feature of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 313,
+      "bottomRightX": 280,
+      "bottomRightY": 330,
+      "content": "#### 3.2.2.10 DeviceUserID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 334,
+      "bottomRightX": 450,
+      "bottomRightY": 547,
+      "content": "|  Name | DeviceUserID[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Optional  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 571,
+      "bottomRightX": 695,
+      "bottomRightY": 607,
+      "content": "User-programmable device identifier of the remote device. This value only changes on execution of the DeviceUpdateList command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 614,
+      "bottomRightX": 662,
+      "bottomRightY": 651,
+      "content": "Corresponds to the \"DeviceUserID\" feature of the remote device and it is usually retrieved during device discovery.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 666,
+      "bottomRightX": 341,
+      "bottomRightY": 684,
+      "content": "#### 3.2.2.11 DeviceTLVersionMajor",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 686,
+      "bottomRightX": 471,
+      "bottomRightY": 900,
+      "content": "|  Name | DeviceTLVersionMajor[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 66 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

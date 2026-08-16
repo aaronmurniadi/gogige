@@ -1,0 +1,111 @@
+{
+  "index": 325,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 752,
+      "bottomRightY": 743,
+      "content": "- FrameTriggerMissed: Starts with the reception of the missed Frame Trigger.\n- FrameStart: Starts with the reception of the Frame Start.\n- FrameEnd: Starts with the reception of the Frame End.\n- FrameBurstStart: Starts with the reception of the Frame Burst Start.\n- FrameBurstEnd: Starts with the reception of the Frame Burst End.\n- ExposureStart: Starts with the reception of the Exposure Start.\n- ExposureEnd: Starts with the reception of the Exposure End.\n- Line0 (If 0 based), Line1, Line2, ...: Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.\n- UserOutput0, UserOutput1, UserOutput2, ...: Specifies which User Output bit signal to use as internal source for the trigger.\n- Counter0Start, Counter1Start, Counter2Start, ...: Starts with the reception of the Counter Start.\n- Counter0End, Counter1End, Counter2End, ...: Starts with the reception of the Counter End.\n- Timer0Start, Timer1Start, Timer2Start, ...: Starts with the reception of the Timer Start.\n- Timer0End, Timer1End, Timer2End, ...: Starts with the reception of the Timer End.\n- Encoder0, Encoder1, Encoder2, ...: Starts with the reception of the Encoder output signal.\n- LogicBlock0, LogicBlock1, LogicBlock2, ...: Starts with the reception of the Logic Block output signal.\n- SoftwareSignal0, SoftwareSignal1, SoftwareSignal2, ...: Starts on the reception of the Software Signal.\n- Action0, Action1, Action2, ...: Starts with the assertion of the chosen action signal.\n- LinkTrigger0, LinkTrigger1, LinkTrigger2, ...: Starts with the reception of the chosen Link Trigger.\n- CC1, CC2, CC3, CC4: Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 757,
+      "bottomRightX": 343,
+      "bottomRightY": 778,
+      "content": "### 17.17 SequencerTriggerActivation",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 780,
+      "bottomRightX": 524,
+      "bottomRightY": 933,
+      "content": "|  Name | SequencerTriggerActivation[SequencerSetSelector][SequencerPathSelector]  |\n| --- | --- |\n|  Category | SequencerControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 326 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

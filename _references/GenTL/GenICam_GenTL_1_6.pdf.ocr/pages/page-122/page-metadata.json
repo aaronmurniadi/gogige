@@ -1,0 +1,282 @@
+{
+  "index": 121,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-169.jpeg](img-169.jpeg) CAM |   | ![img-170.jpeg](img-170.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 635,
+      "bottomRightY": 189,
+      "content": "allows a uint32_t aligned access and the calling GenTL Consumer wants to read 5 bytes starting at address 2. The implementation has to read 8 bytes starting at address 0 and to extract the 5 bytes requested.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 195,
+      "bottomRightX": 635,
+      "bottomRightY": 245,
+      "content": "In case of an error the function returns the number of successful reads in piNumEntries even though it returns an error code as return value. This is an exception to the statement in the section Error Handling.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 259,
+      "bottomRightX": 166,
+      "bottomRightY": 273,
+      "content": "#### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 279,
+      "bottomRightX": 172,
+      "bottomRightY": 294,
+      "content": "[in] hPort",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 297,
+      "bottomRightX": 187,
+      "bottomRightY": 312,
+      "content": "[in] pEntries",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 313,
+      "bottomRightX": 218,
+      "bottomRightY": 330,
+      "content": "[in,out] piNumEntries",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 279,
+      "bottomRightX": 630,
+      "bottomRightY": 294,
+      "content": "Module or remote device port handle to access the Port from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 297,
+      "bottomRightX": 624,
+      "bottomRightY": 312,
+      "content": "Array of structures containing read address and data to read.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 313,
+      "bottomRightX": 633,
+      "bottomRightY": 345,
+      "content": "In: Number of entries in the array, Out: Number of successful executed reads according to the entries in the pEntries array.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 360,
+      "bottomRightX": 141,
+      "bottomRightY": 375,
+      "content": "#### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 381,
+      "bottomRightX": 208,
+      "bottomRightY": 399,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 381,
+      "bottomRightX": 568,
+      "bottomRightY": 398,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 407,
+      "bottomRightX": 278,
+      "bottomRightY": 425,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 407,
+      "bottomRightX": 512,
+      "bottomRightY": 425,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 432,
+      "bottomRightX": 269,
+      "bottomRightY": 449,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 431,
+      "bottomRightX": 635,
+      "bottomRightY": 466,
+      "content": "The handle hPort is invalid (NULL) or does not reference an open module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 474,
+      "bottomRightX": 295,
+      "bottomRightY": 491,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 474,
+      "bottomRightX": 635,
+      "bottomRightY": 507,
+      "content": "Parameters pEntries and/or piNumEntries are invalid pointers (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 515,
+      "bottomRightX": 260,
+      "bottomRightY": 533,
+      "content": "GC_ERR_ACCESS_DENIED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 515,
+      "bottomRightX": 635,
+      "bottomRightY": 582,
+      "content": "The access to at least one of the requested registers is denied because the register is not readable or because the Port module is opened in a way that it does not allow read access.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 591,
+      "bottomRightX": 278,
+      "bottomRightY": 608,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 591,
+      "bottomRightX": 635,
+      "bottomRightY": 625,
+      "content": "The provided module handle does not have a Port module implemented.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 632,
+      "bottomRightX": 278,
+      "bottomRightY": 650,
+      "content": "GC_ERR_INVALID_ADDRESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 632,
+      "bottomRightX": 635,
+      "bottomRightY": 716,
+      "content": "One or more addresses in the entries in pEntries has an invalid address for example because the port's register space is only 32Bit wide and Address is in the 64Bit register space or because there is no register with the specified address.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 725,
+      "bottomRightX": 165,
+      "bottomRightY": 743,
+      "content": "GC_ERR_IO",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 724,
+      "bottomRightX": 545,
+      "bottomRightY": 740,
+      "content": "Communication error or connection lost.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 772,
+      "bottomRightX": 635,
+      "bottomRightY": 807,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 122 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

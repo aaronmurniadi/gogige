@@ -1,0 +1,67 @@
+{
+  "index": 5,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 118,
+      "bottomRightX": 79,
+      "bottomRightY": 138,
+      "content": "## History",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 160,
+      "bottomRightX": 462,
+      "bottomRightY": 176,
+      "content": "This section lists the major milestones of the GenDC specification definition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 194,
+      "bottomRightX": 717,
+      "bottomRightY": 673,
+      "content": "|  Version | Date | Changed by | Change  |\n| --- | --- | --- | --- |\n|  Version 0.1 | 2015-03-09 | Stephane Maurice, Matrox | Initial draft of GenSP based on the concept of a TL independent, self-described and generic imaging Data Container format.  |\n|  Version 0.5 | 2017-04-11 | Stephane Maurice, Matrox | GenSP proposal presented for adoption as a GenICam module.  |\n|  Version 0.7 | 2017-11-10 | Stephane Maurice, Matrox | GenSP renamed to GenDC Some Headers' field names changed. Notion of data Flow added. Added rules and recommendations.  |\n|  Version 0.82 | 2018-08-13 | Thomas Hopfner, MVTec | General review. Restructuration of the document chapters. Some Headers' field names and position changed. Described the different Descriptor types. Improved Flow notion documentation. Added numbered requirements. Added disclaimer.  |\n|  Version 1.0.0 | 2018-12-10 | Stéphane Maurice, Matrox | Official initial release. Updated the specification and requirements according to the conclusion of the Austin IVSM meeting and included the corrections received.  |\n|  Version 1.1.0 | 2020-6-25 | Stéphane Maurice, Matrox | Added GenICam Chunk data detailed encoding description and GDC_METADATA_GENICAM_XML Part type. Added reserved GroupId 0xFxxx. Separated Metadata and 1D Part header fields descriptions in individual chapters. Added clarifications.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 83,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 555,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 6 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

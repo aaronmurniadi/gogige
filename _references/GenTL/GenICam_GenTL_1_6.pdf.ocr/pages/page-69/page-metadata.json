@@ -1,0 +1,120 @@
+{
+  "index": 68,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-97.jpeg](img-97.jpeg) CAM |   | ![img-98.jpeg](img-98.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 137,
+      "bottomRightX": 207,
+      "bottomRightY": 154,
+      "content": "##### 6.3.2.2 TLGetInfo",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 176,
+      "bottomRightX": 251,
+      "bottomRightY": 194,
+      "content": "GC ERROR TLGetInfo",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 176,
+      "bottomRightX": 573,
+      "bottomRightY": 260,
+      "content": "( TL_HANDLE hSystem,\nTL_INFO_CMD iInfoCmd,\nINFO_DATATYPE * piType,\nvoid * pBuffer,\nsize_t * piSize )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 268,
+      "bottomRightX": 531,
+      "bottomRightY": 285,
+      "content": "Inquire information about the System module as defined in TL_INFO_CMD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 300,
+      "bottomRightX": 166,
+      "bottomRightY": 315,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 320,
+      "bottomRightX": 635,
+      "bottomRightY": 545,
+      "content": "[in] hSystem System module to work on.\n[in] iInfoCmd Information to be retrieved as defined in TL_INFO_CMD.\n[out] piType Data type of the pBuffer content as defined in the TL_INFO_CMD and INFO_DATATYPE.\n[in,out] pBuffer Pointer to a user allocated buffer to receive the requested information. If this parameter is NULL, piSize will contain the minimal size of pBuffer in bytes. If the piType is a string the size includes the terminating 0.\n[in,out] piSize pBuffer equal NULL:\nout: minimal size of pBuffer in bytes to hold all information\npBuffer unequal NULL:\nin: size of the provided pBuffer in bytes\nout: number of bytes filled by the function",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 557,
+      "bottomRightX": 141,
+      "bottomRightY": 574,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 580,
+      "bottomRightX": 635,
+      "bottomRightY": 836,
+      "content": "GC_ERR_SUCCESS Operation was successful; no error occurred.\nGC_ERR_NOT_INITIALIZED No preceding call to GCInitLib.\nGC_ERR_INVALID_HANDLE The handle hSystem is invalid (NULL) or does not reference an open System module retrieved through a call to TLOpen.\nGC_ERR_NOT_IMPLEMENTED Specified iInfoCmd is not implemented.\nGC_ERR_INVALID_PARAMETER Parameters piSize and/or piType are invalid pointers (NULL or ~0x0).\nGC_ERR_BUFFER_TOO_SMALL pBuffer is not NULL and the value of *piSize is too small to receive the expected amount of data.\nGC_ERR_NOT_AVAILABLE The request is implemented but the requested information is currently not available for any reason.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 857,
+      "bottomRightX": 635,
+      "bottomRightY": 892,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 69 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

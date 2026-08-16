@@ -1,0 +1,84 @@
+{
+  "index": 479,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 159,
+      "topLeftY": 55,
+      "bottomRightX": 304,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM</i></td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 85,
+      "topLeftY": 144,
+      "bottomRightX": 499,
+      "bottomRightY": 589,
+      "content": "- AnalogBlue: Gain will be applied to the blue analog channel.\n- AnalogY: Gain will be applied to Y analog channel.\n- AnalogU: Gain will be applied to U analog channel.\n- AnalogV: Gain will be applied to V analog channel.\n- AnalogTap1: Analog gain will be applied to Tap 1.\n- AnalogTap2: Analog gain will be applied to Tap 2.\n- ...\n- DigitalAll: Gain will be applied to all digital channels or taps.\n- DigitalRed: Gain will be applied to the red digital channel.\n- DigitalGreen: Gain will be applied to the green digital channel.\n- DigitalBlue: Gain will be applied to the blue digital channel.\n- DigitalY: Gain will be applied to Y digital channel.\n- DigitalU: Gain will be applied to U digital channel.\n- DigitalV: Gain will be applied to V digital channel.\n- DigitalTap1: Digital gain will be applied to Tap 1.\n- DigitalTap2: Digital gain will be applied to Tap 2.\n- ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 605,
+      "bottomRightX": 234,
+      "bottomRightY": 624,
+      "content": "# 24.45 ChunkGain",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 627,
+      "bottomRightX": 414,
+      "bottomRightY": 843,
+      "content": "|  Name | ChunkGain[ChunkGainSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IFloat  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 866,
+      "bottomRightX": 333,
+      "bottomRightY": 885,
+      "content": "Returns the gain used to capture the image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 480 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

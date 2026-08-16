@@ -1,0 +1,264 @@
+{
+  "index": 85,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-120.jpeg](img-120.jpeg) CAM |   | ![img-121.jpeg](img-121.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 270,
+      "bottomRightY": 157,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 303,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 190,
+      "content": "The handle hDevice is invalid (NULL) or does not reference an open Device module retrieved through a call to IFOpenDevice.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 198,
+      "bottomRightX": 295,
+      "bottomRightY": 216,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 198,
+      "bottomRightX": 635,
+      "bottomRightY": 232,
+      "content": "Parameter piNumDataStreams is an invalid pointer (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 263,
+      "bottomRightX": 635,
+      "bottomRightY": 298,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 311,
+      "bottomRightX": 219,
+      "bottomRightY": 327,
+      "content": "##### 6.3.4.5 DevGetPort",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 351,
+      "bottomRightX": 259,
+      "bottomRightY": 367,
+      "content": "GC ERROR DevGetPort",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 351,
+      "bottomRightX": 608,
+      "bottomRightY": 384,
+      "content": "( DEV_HANDLE hDevice,\nPORT_HANDLE * phRemoteDev )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 393,
+      "bottomRightX": 425,
+      "bottomRightY": 410,
+      "content": "Retrieves the port handle for the associated remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 417,
+      "bottomRightX": 635,
+      "bottomRightY": 451,
+      "content": "This function does not return the handle for the Port functions for the Device module but for the physical remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 458,
+      "bottomRightX": 635,
+      "bottomRightY": 492,
+      "content": "The phRemoteDev handle must not be closed explicitly. This is done automatically when DevClose is called on this Device module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 499,
+      "bottomRightX": 635,
+      "bottomRightY": 535,
+      "content": "The remote device Port handle is no valid source for Events. Therefore it must not be used to register Events through GCRegisterEvent.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 549,
+      "bottomRightX": 166,
+      "bottomRightY": 565,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 570,
+      "bottomRightX": 219,
+      "bottomRightY": 603,
+      "content": "[in] hDevice\n[out] phRemoteDev",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 570,
+      "bottomRightX": 618,
+      "bottomRightY": 639,
+      "content": "Device module to work on.\nPort handle for the remote device. It is recommended to initialize *phRemoteDev to GENTL_INVALID_HANDLE before calling DevGetPort to indicate an invalid handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 653,
+      "bottomRightX": 141,
+      "bottomRightY": 668,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 675,
+      "bottomRightX": 208,
+      "bottomRightY": 691,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 674,
+      "bottomRightX": 568,
+      "bottomRightY": 691,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 699,
+      "bottomRightX": 278,
+      "bottomRightY": 716,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 699,
+      "bottomRightX": 513,
+      "bottomRightY": 716,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 726,
+      "bottomRightX": 270,
+      "bottomRightY": 743,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 303,
+      "topLeftY": 725,
+      "bottomRightX": 635,
+      "bottomRightY": 776,
+      "content": "The handle hDevice is invalid (NULL) or does not reference an open Device module retrieved through a call to IFOpenDevice.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 784,
+      "bottomRightX": 295,
+      "bottomRightY": 802,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 784,
+      "bottomRightX": 635,
+      "bottomRightY": 817,
+      "content": "Parameter phRemoteDev is an invalid pointer (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 849,
+      "bottomRightX": 635,
+      "bottomRightY": 883,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 86 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+|  ![img-83.jpeg](img-83.jpeg) CAM |   | ![img-84.jpeg](img-84.jpeg) emva  |
+| --- | --- | --- |
+|  Version 1.6 | GenTL Standard  |   |
+
+specifics and guarantee that acquired buffers are self-described even after device/stream configuration has changed.
+
+The GenDC data can optionally be transferred using stream flows (5.7.2). The GenDC container layout within the buffer memory depends how it was announced – as contiguous or composite buffer.
+
+#### GenDC container acquired into a contiguous buffer:
+
+- A contiguous buffer is announced using DSAllocAndAnnounceBuffer or DSAnnounceBuffer and consists of single blob of contiguous memory.
+- The GenTL Producer stores the data into the buffer as a linear GenDC container (as defined in the GenDC specification). When using multiple flows, the GenTL Producer is responsible for figuring out the flow destination offsets in the buffer based on the flow mapping table (see 5.7.2).
+- The GenDC descriptor is stored at offset 0 from start of the buffer.
+- The GenTL Consumer locates the individual GenDC container components/parts' data based on their linear DataOffset's from start of the buffer (DataOffset is a GenDC part header field standardized in GenDC).
+
+#### GenDC container acquired into a composite buffer:
+
+- A composite buffer is announced using DSAnnounceCompositeBuffer and consists of multiple memory segments (5.7.1), corresponding to configured data stream flows.
+- The GenTL Producer stores the data into the buffer segments „per flow“. Data from flow #0 in segment #0, flow #1 to segment #1, etc. The GenTL Consumer is responsible to query the flow mapping table prior to acquisition start and announce the composite buffers (see 5.7.2).
+- The GenDC descriptor is stored at offset 0 from start of the buffer segment #0 (GenDC mandates transferring the descriptor in flow #0).
+- The GenTL Consumer locates the individual GenDC container components/parts' data based on their FlowOffset from start of their corresponding buffer segment (FlowOffset is GenDC part header field standardized in GenDC, FlowId field in the same header assigns each part to given flow and thus to corresponding target segment in the composite buffer).
+
+When receiving GenDC payload, the GenTL Consumer must interpret the payload data based on the information stored in the GenDC descriptor rather than querying the data properties (such as image dimensions or pixel format) using DSGetBufferInfo.
+
+The GenTL Producer may support a mode in which it presents all acquired data as GenDC payload, even if it was not originally generated in GenDC format by the device. In this case the GenTL Producer is responsible to provide information about required target buffers (flow table and/or payload size) to accommodate the entire data including the GenDC descriptor.

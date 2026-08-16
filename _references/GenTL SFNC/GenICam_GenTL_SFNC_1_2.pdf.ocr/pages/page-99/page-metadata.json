@@ -1,0 +1,95 @@
+{
+  "index": 98,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 405,
+      "bottomRightY": 175,
+      "content": "### 3.4.2.3 DeviceStreamChannelPacketSizeMin",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 177,
+      "bottomRightX": 450,
+      "bottomRightY": 418,
+      "content": "|  Name | DeviceStreamChannelPacketSizeMin  |\n| --- | --- |\n|  Category | DeviceStreamChannelControl  |\n|  Level | Optional  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | B  |\n|  Visibility | Guru  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 441,
+      "bottomRightX": 679,
+      "bottomRightY": 514,
+      "content": "Controls desired minimum of the packet size feature to be used for the stream channel. Affects both the direct control of the packet size as well as the negotiation algorithm. The GenTL Consumer can set the value in accordance with the known limits of the remote device or apply further restrictions e.g. based on additional knowledge of the system.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 527,
+      "bottomRightX": 412,
+      "bottomRightY": 546,
+      "content": "### 3.4.2.4 DeviceStreamChannelPacketSizeMax",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 549,
+      "bottomRightX": 452,
+      "bottomRightY": 788,
+      "content": "|  Name | DeviceStreamChannelPacketSizeMax  |\n| --- | --- |\n|  Category | DeviceStreamChannelControl  |\n|  Level | Optional  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | B  |\n|  Visibility | Guru  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 813,
+      "bottomRightX": 684,
+      "bottomRightY": 887,
+      "content": "Controls desired maximum of the packet size feature to be used for the stream channel. Affects both the direct control of the packet size as well as the negotiation algorithm. The GenTL Consumer can set the value in accordance with the known limits of the remote device or apply further restrictions e.g. based on additional knowledge of the system.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 99 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

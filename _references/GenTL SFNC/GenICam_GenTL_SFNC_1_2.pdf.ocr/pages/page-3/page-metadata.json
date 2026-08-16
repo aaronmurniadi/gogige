@@ -1,0 +1,354 @@
+{
+  "index": 2,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 43,
+      "bottomRightX": 681,
+      "bottomRightY": 122,
+      "content": "|  ![img-0.jpeg](img-0.jpeg)CAM |   | ![img-1.jpeg](img-1.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 132,
+      "bottomRightX": 700,
+      "bottomRightY": 148,
+      "content": "2.3.5 Event Control 32",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 159,
+      "bottomRightX": 700,
+      "bottomRightY": 174,
+      "content": "2.4 DATA STREAM MODULE 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 184,
+      "bottomRightX": 700,
+      "bottomRightY": 201,
+      "content": "2.4.1 Stream Information 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 208,
+      "bottomRightX": 700,
+      "bottomRightY": 225,
+      "content": "2.4.2 Device Stream Channel Control 33",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 236,
+      "bottomRightX": 700,
+      "bottomRightY": 252,
+      "content": "2.4.3 Buffer Handling Control 34",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 259,
+      "bottomRightX": 700,
+      "bottomRightY": 276,
+      "content": "2.4.4 GenICam Control 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 287,
+      "bottomRightX": 700,
+      "bottomRightY": 302,
+      "content": "2.4.5 Event Control 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 312,
+      "bottomRightX": 700,
+      "bottomRightY": 328,
+      "content": "2.5 BUFFER MODULE 37",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 338,
+      "bottomRightX": 700,
+      "bottomRightY": 354,
+      "content": "2.5.1 Buffer Information 37",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 364,
+      "bottomRightX": 700,
+      "bottomRightY": 380,
+      "content": "2.5.2 Buffer Data Information 37",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 389,
+      "bottomRightX": 700,
+      "bottomRightY": 404,
+      "content": "2.5.3 GenICam Control 37",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 413,
+      "bottomRightX": 700,
+      "bottomRightY": 430,
+      "content": "3 GENERAL FEATURES 41",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 456,
+      "bottomRightX": 700,
+      "bottomRightY": 471,
+      "content": "3.1 SYSTEM MODULE 41",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 481,
+      "bottomRightX": 700,
+      "bottomRightY": 498,
+      "content": "3.1.1 System Information 41",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 507,
+      "bottomRightX": 700,
+      "bottomRightY": 520,
+      "content": "3.1.1.1 SystemInformation 41",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 526,
+      "bottomRightX": 700,
+      "bottomRightY": 541,
+      "content": "3.1.1.2 TLID 41",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 548,
+      "bottomRightX": 700,
+      "bottomRightY": 561,
+      "content": "3.1.1.3 TLVendorName 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 568,
+      "bottomRightX": 700,
+      "bottomRightY": 583,
+      "content": "3.1.1.4 TLModelName 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 590,
+      "bottomRightX": 700,
+      "bottomRightY": 603,
+      "content": "3.1.1.5 TLVersion 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 610,
+      "bottomRightX": 700,
+      "bottomRightY": 625,
+      "content": "3.1.1.6 TLFileName 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 632,
+      "bottomRightX": 700,
+      "bottomRightY": 646,
+      "content": "3.1.1.7 TLDisplayName 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 653,
+      "bottomRightX": 700,
+      "bottomRightY": 668,
+      "content": "3.1.1.8 TLPath 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 675,
+      "bottomRightX": 700,
+      "bottomRightY": 689,
+      "content": "3.1.1.9 TLType 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 696,
+      "bottomRightX": 700,
+      "bottomRightY": 711,
+      "content": "3.1.1.10 GenTLVersionMajor 46",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 717,
+      "bottomRightX": 700,
+      "bottomRightY": 731,
+      "content": "3.1.1.11 GenTLVersionMinor 46",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 737,
+      "bottomRightX": 700,
+      "bottomRightY": 752,
+      "content": "3.1.1.12 GenTLSFNCVersionMajor 47",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 759,
+      "bottomRightX": 700,
+      "bottomRightY": 773,
+      "content": "3.1.1.13 GenTLSFNCVersionMinor 47",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 780,
+      "bottomRightX": 700,
+      "bottomRightY": 795,
+      "content": "3.1.1.14 GevVersionMajor (Deprecated) 47",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 801,
+      "bottomRightX": 700,
+      "bottomRightY": 815,
+      "content": "3.1.1.15 GevVersionMinor (Deprecated) 48",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 823,
+      "bottomRightX": 700,
+      "bottomRightY": 840,
+      "content": "3.1.2 Interface Enumeration 48",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 848,
+      "bottomRightX": 700,
+      "bottomRightY": 862,
+      "content": "3.1.2.1 InterfaceEnumeration 49",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 868,
+      "bottomRightX": 700,
+      "bottomRightY": 884,
+      "content": "3.1.2.2 InterfaceUpdateList 49",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 890,
+      "bottomRightX": 700,
+      "bottomRightY": 904,
+      "content": "3.1.2.3 InterfaceUpdateTimeout 49",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 911,
+      "bottomRightX": 700,
+      "bottomRightY": 926,
+      "content": "3.1.2.4 InterfaceSelector 50",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 933,
+      "bottomRightX": 700,
+      "bottomRightY": 947,
+      "content": "3.1.2.5 InterfaceID 50",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 952,
+      "bottomRightX": 164,
+      "bottomRightY": 968,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 561,
+      "topLeftY": 952,
+      "bottomRightX": 650,
+      "bottomRightY": 970,
+      "content": "Page 3 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

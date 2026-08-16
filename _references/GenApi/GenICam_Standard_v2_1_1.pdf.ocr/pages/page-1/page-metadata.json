@@ -1,0 +1,76 @@
+{
+  "index": 0,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<i>CAM |   | ![img-0.jpeg](img-0.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 198,
+      "bottomRightX": 621,
+      "bottomRightY": 250,
+      "content": "## GenICam Standard",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 350,
+      "bottomRightX": 517,
+      "bottomRightY": 372,
+      "content": "Generic Interface for Cameras",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 312,
+      "topLeftY": 464,
+      "bottomRightX": 404,
+      "bottomRightY": 480,
+      "content": "Version 2.1.1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 128,
+      "topLeftY": 693,
+      "bottomRightX": 588,
+      "bottomRightY": 776,
+      "content": "![img-1.jpeg](img-1.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-1.jpeg"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 957,
+      "bottomRightX": 300,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 1 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

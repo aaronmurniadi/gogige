@@ -1,0 +1,94 @@
+{
+  "index": 558,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 569,
+      "bottomRightY": 223,
+      "content": "|   | CXP12_X8 CXP25_X8 Device-specific  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 247,
+      "bottomRightX": 671,
+      "bottomRightY": 266,
+      "content": "Provides the Link configuration that allows the Transmitter Device to operate in its default mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 272,
+      "bottomRightX": 740,
+      "bottomRightY": 325,
+      "content": "The Link configuration is returned as the combination of the Connection speed and the number of active Connections using the following format \"CXPm_Xn\", where m is the Connection speed and n the number of active Connections.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 334,
+      "bottomRightX": 187,
+      "bottomRightY": 349,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 356,
+      "bottomRightX": 580,
+      "bottomRightY": 942,
+      "content": "- CXP1_X1: 1 Connection operating at CXP-1 speed (1.25 Gbps).\n- CXP2_X1: 1 Connection operating at CXP-2 speed (2.50 Gbps).\n- CXP3_X1: 1 Connection operating at CXP-3 speed (3.125 Gbps).\n- CXP5_X1: 1 Connection operating at CXP-5 speed (5.00 Gbps).\n- CXP6_X1: 1 Connection operating at CXP-6 speed (6.25 Gbps).\n- CXP10_X1: 1 Connection operating at CXP-10 speed (10.00 Gbps).\n- CXP12_X1: 1 Connection operating at CXP-12 speed (12.50 Gbps).\n- CXP25_X1: 1 Connection operating at CXP-25 speed (25.78125 Gbps).\n- CXP1_X2: 2 Connections operating at CXP-1 speed (1.25 Gbps).\n- CXP2_X2: 2 Connections operating at CXP-2 speed (2.50 Gbps).\n- CXP3_X2: 2 Connections operating at CXP-3 speed (3.125 Gbps).\n- CXP5_X2: 2 Connections operating at CXP-5 speed (5.00 Gbps).\n- CXP6_X2: 2 Connections operating at CXP-6 speed (6.25 Gbps).\n- CXP10_X2: 2 Connections operating at CXP-10 speed (10.00 Gbps).\n- CXP12_X2: 2 Connections operating at CXP-12 speed (12.50 Gbps).\n- CXP25_X2: 2 Connections operating at CXP-25 speed (25.78125 Gbps).\n- CXP1_X4: 4 Connections operating at CXP-1 speed (1.25 Gbps).\n- CXP2_X4: 4 Connections operating at CXP-2 speed (2.50 Gbps).\n- CXP3_X4: 4 Connections operating at CXP-3 speed (3.125 Gbps).\n- CXP5_X4: 4 Connections operating at CXP-5 speed (5.00 Gbps).\n- CXP6_X4: 4 Connections operating at CXP-6 speed (6.25 Gbps).\n- CXP10_X4: 4 Connections operating at CXP-10 speed (10.00 Gbps).\n- CXP12_X4: 4 Connections operating at CXP-12 speed (12.50 Gbps).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 559 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

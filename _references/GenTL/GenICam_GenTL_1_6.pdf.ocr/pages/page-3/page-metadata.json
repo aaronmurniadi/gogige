@@ -1,0 +1,74 @@
+{
+  "index": 2,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 199,
+      "topLeftY": 49,
+      "bottomRightX": 335,
+      "bottomRightY": 75,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 489,
+      "topLeftY": 42,
+      "bottomRightX": 596,
+      "bottomRightY": 84,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 89,
+      "bottomRightX": 144,
+      "bottomRightY": 104,
+      "content": "Version 1.6",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 89,
+      "bottomRightX": 378,
+      "bottomRightY": 104,
+      "content": "GenTL Standard",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 135,
+      "bottomRightX": 636,
+      "bottomRightY": 896,
+      "content": "3.8 Example... 27\n3.8.1 Basic Device Access ... 27\n3.8.2 InitLib... 28\n3.8.3 OpenTL ... 28\n3.8.4 OpenFirstInterface... 28\n3.8.5 OpenFirstDevice... 29\n3.8.6 OpenFirstDataStream ... 29\n3.8.7 CloseDataStream ... 29\n3.8.8 CloseDevice ... 30\n3.8.9 CloseInterface... 30\n3.8.10 CloseTL... 30\n3.8.11 CloseLib ... 30\n4 Configuration and Signaling ... 31\n4.1 Configuration ... 31\n4.1.1 Modules... 31\n4.1.2 XML Description ... 32\n4.1.3 Example... 35\n4.2 Signaling... 35\n4.2.1 Event Objects ... 36\n4.2.2 Event Data Queue... 38\n4.2.3 Event Handling... 38\n4.2.4 Example... 41\n5 Acquisition Engine... 42\n5.1 Overview ... 42\n5.1.1 Announced Buffer Pool... 42\n5.1.2 Input Buffer Pool... 42\n5.1.3 Output Buffer Queue ... 42\n5.2 Acquisition Chain... 43\n5.2.1 Allocate Memory... 44\n5.2.2 Announce Buffers ... 45\n5.2.3 Queue Buffers ... 46\n5.2.4 Register New Buffer Event ... 46",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 924,
+      "bottomRightX": 418,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 549,
+      "topLeftY": 924,
+      "bottomRightX": 636,
+      "bottomRightY": 944,
+      "content": "Page 3 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

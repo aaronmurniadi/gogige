@@ -1,0 +1,132 @@
+{
+  "index": 521,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 144,
+      "bottomRightX": 485,
+      "bottomRightY": 167,
+      "content": "### 27.4.8 GevCurrentPhysicalLinkConfiguration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 432,
+      "bottomRightY": 433,
+      "content": "|  Name | GevCurrentPhysicalLinkConfiguration  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | SingleLink MultiLink StaticLAG DynamicLAG  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 458,
+      "bottomRightX": 450,
+      "bottomRightY": 476,
+      "content": "Indicates the current physical link configuration of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 483,
+      "bottomRightX": 704,
+      "bottomRightY": 520,
+      "content": "Note: When multi-link and LAG configurations are used concurrently, the device shall report the LAG configuration.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 535,
+      "bottomRightX": 451,
+      "bottomRightY": 557,
+      "content": "### 27.4.9 GevActiveLinkCount (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 558,
+      "bottomRightX": 396,
+      "bottomRightY": 770,
+      "content": "|  Name | GevActiveLinkCount  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | > 0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 796,
+      "bottomRightX": 383,
+      "bottomRightY": 814,
+      "content": "Indicates the current number of active logical links.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 829,
+      "bottomRightX": 411,
+      "bottomRightY": 851,
+      "content": "### 27.4.10 GevSupportedOptionSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 852,
+      "bottomRightX": 561,
+      "bottomRightY": 934,
+      "content": "|  Name | GevSupportedOptionSelector  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 522 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

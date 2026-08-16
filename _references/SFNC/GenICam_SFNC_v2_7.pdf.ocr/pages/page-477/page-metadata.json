@@ -1,0 +1,122 @@
+{
+  "index": 476,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 487,
+      "bottomRightY": 252,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | EncoderUp EncoderDown EncoderIdle EncoderStatic  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 276,
+      "bottomRightX": 372,
+      "bottomRightY": 293,
+      "content": "Returns the motion status of the selected encoder.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 302,
+      "bottomRightX": 196,
+      "bottomRightY": 317,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 329,
+      "bottomRightX": 480,
+      "bottomRightY": 425,
+      "content": "- EncoderUp: The encoder counter last incremented.\n- EncoderDown: The encoder counter last decremented.\n- EncoderIdle: The encoder is not active.\n- EncoderStatic: No motion within the EncoderTimeout time.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 440,
+      "bottomRightX": 390,
+      "bottomRightY": 462,
+      "content": "### 24.42 ChunkExposureTimeSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 464,
+      "bottomRightX": 524,
+      "bottomRightY": 882,
+      "content": "|  Name | ChunkExposureTimeSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Common Red Green Blue Cyan Magenta Yellow Infrared Ultraviolet Stage1 Stage2 ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 905,
+      "bottomRightX": 526,
+      "bottomRightY": 925,
+      "content": "Selects which exposure time is read by the ChunkExposureTime feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 931,
+      "bottomRightX": 435,
+      "bottomRightY": 949,
+      "content": "The possible values for ChunkExposureTimeSelector are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 477 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 623,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "index": 37,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 54,
+      "bottomRightX": 359,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 538,
+      "topLeftY": 54,
+      "bottomRightX": 583,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 584,
+      "topLeftY": 86,
+      "bottomRightX": 631,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 100,
+      "topLeftY": 97,
+      "bottomRightX": 167,
+      "bottomRightY": 111,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 201,
+      "topLeftY": 97,
+      "bottomRightX": 471,
+      "bottomRightY": 113,
+      "content": "GenTL Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 155,
+      "bottomRightX": 1010,
+      "bottomRightY": 680,
+      "content": "|  BufferData | O | All | IRegister | R/(W) | - | E | Entire buffer data.  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  BufferTimeStamp | O | All | IInteger | R | - | E | Timestamp the buffer was acquired.  |\n|  BufferNewData | O | All | IBoolean | R | - | E | Flag to indicate that the buffer contains new data since the last delivery.  |\n|  BufferIsQueued | O | All | IBoolean | R | - | E | Flag to indicate if the buffer is in the input pool or output buffer queue.  |\n|  BufferIsAcquiring | O | All | IBoolean | R | - | E | Flag to indicate that the buffer is currently being filled with data.  |\n|  BufferIsIncomplete | O | All | IBoolean | R | - | E | Flag to indicate that a buffer was filled but an error occurred during that process.  |\n|  BufferPayloadType | O | All | IEnumeration | R | - | E | Payload type of the data.  |\n|  BufferNumberOfParts | O | All | IInteger | R | - | E | The number of parts in the current buffer as delivered by the transport mechanism.  |\n|  BufferPartSelector | O | All | IInteger | R | - | E | The buffer part to extract information from.  |\n|  BufferSizeFilled | O | All | IInteger | R | Byte | E | Number of bytes written into the buffer last time it was filled.  |\n|  BufferPartDataType[BufferPartSelector] | O | All | IEnumeration | R | - | E | The data type of the part.  |\n|  BufferPartSourceIDValue[BufferPartSelector] | O | All | IInteger | R | - | E | The Source ID type of the part.  |\n|  BufferPartRegionIDValue[BufferPartSelector] | O | All | IInteger | R | - | E | The Region ID type of the part.  |\n|  BufferPartComponentIDValue[BufferPartSelector] | O | All | IInteger | R | - | E | The Component ID type of the part.  |\n|  BufferWidth[BufferPartSelector] | O | All | IInteger | R | - | E | Width of the data in the buffer in number of pixels.  |\n|  BufferHeight[BufferPartSelector] | O | All | IInteger | R | - | E | Height of the data in the buffer in number of pixels as configured.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 694,
+      "bottomRightX": 164,
+      "bottomRightY": 709,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 331,
+      "topLeftY": 694,
+      "bottomRightX": 427,
+      "bottomRightY": 712,
+      "content": "Page 38 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

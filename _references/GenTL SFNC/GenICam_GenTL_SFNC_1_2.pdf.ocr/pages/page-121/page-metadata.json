@@ -1,0 +1,105 @@
+{
+  "index": 120,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-34.jpeg](img-34.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 470,
+      "bottomRightY": 433,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | Image2DBiplanarImagePlane2DTriplanarImagePlane2DQuadPlanarImagePlane2DImage3DBiplanarImagePlane3DTriplanarImagePlane3DQuadPlanarImagePlane3DConfidenceMapChunkJpegJpeg2000Custom  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 458,
+      "bottomRightX": 248,
+      "bottomRightY": 476,
+      "content": "The data type of the part.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 492,
+      "bottomRightX": 359,
+      "bottomRightY": 508,
+      "content": "3.5.2.13 BufferPartSourceIDValue",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 512,
+      "bottomRightX": 504,
+      "bottomRightY": 725,
+      "content": "|  Name | BufferPartSourceIDValue[BufferPartSelector]  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 750,
+      "bottomRightX": 285,
+      "bottomRightY": 768,
+      "content": "The Source ID type of the part.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 782,
+      "bottomRightX": 359,
+      "bottomRightY": 801,
+      "content": "3.5.2.14 BufferPartRegionIDValue",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 803,
+      "bottomRightX": 506,
+      "bottomRightY": 911,
+      "content": "|  Name | BufferPartRegionIDValue[BufferPartSelector]  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IInteger  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 927,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 927,
+      "bottomRightX": 432,
+      "bottomRightY": 945,
+      "content": "Page 121 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

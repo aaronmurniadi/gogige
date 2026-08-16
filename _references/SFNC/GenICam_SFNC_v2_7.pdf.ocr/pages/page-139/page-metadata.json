@@ -1,0 +1,130 @@
+{
+  "index": 138,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 533,
+      "bottomRightY": 81,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 577,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 120,
+      "bottomRightX": 174,
+      "bottomRightY": 138,
+      "content": "### 4.34 ReverseY",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 142,
+      "bottomRightX": 363,
+      "bottomRightY": 357,
+      "content": "|  Name | ReverseY  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Recommended  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 380,
+      "bottomRightX": 606,
+      "bottomRightY": 398,
+      "content": "Flip vertically the image sent by the device. The Region of interest is applied after the flipping.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 411,
+      "bottomRightX": 195,
+      "bottomRightY": 429,
+      "content": "### 4.35 PixelFormat",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 432,
+      "bottomRightX": 578,
+      "bottomRightY": 949,
+      "content": "|  Name | PixelFormat[ComponentSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Mono1p Mono2p Mono4p Mono8 Mono8s Mono10 Mono10p Mono12 Mono12p Mono14 Mono16 R8 G8 B8 RGB8 RGB8_Planar RGBa8 RGB10 RGB10_Planar  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 951,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 266,
+      "topLeftY": 951,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 139 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

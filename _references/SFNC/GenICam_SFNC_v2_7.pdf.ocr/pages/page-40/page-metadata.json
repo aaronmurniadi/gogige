@@ -1,0 +1,102 @@
+{
+  "index": 39,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 27,
+      "bottomRightX": 305,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 624,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 121,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 406,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 115,
+      "bottomRightX": 233,
+      "bottomRightY": 136,
+      "content": "## 1.2 Standard Units",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 166,
+      "bottomRightX": 654,
+      "bottomRightY": 204,
+      "content": "The following abbreviations are used as standard units for features described in this document.\nNote that all units are using plain ASCII characters.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 248,
+      "topLeftY": 233,
+      "bottomRightX": 511,
+      "bottomRightY": 681,
+      "content": "|  ns | nanoseconds  |\n| --- | --- |\n|  us | microseconds  |\n|  ms | milliseconds  |\n|  m | meter  |\n|  mm | millimeter  |\n|  in | inch  |\n|  s | seconds  |\n|  B | Bytes  |\n|  Bps | Bytes per second  |\n|  MBps | Mega Bytes per second  |\n|  Mbps | Mega bits per second  |\n|  Fps | Frames per second  |\n|  dB | decibels  |\n|  C | Celsius  |\n|  Hz | Hertz  |\n|  % | Percent  |\n|  dpt | diopter  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 988,
+      "bottomRightX": 123,
+      "bottomRightY": 1007,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 988,
+      "bottomRightX": 393,
+      "bottomRightY": 1008,
+      "content": "Page 40 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 625,
+      "bottomRightY": 1008,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

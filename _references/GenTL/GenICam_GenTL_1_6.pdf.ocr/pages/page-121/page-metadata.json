@@ -1,0 +1,103 @@
+{
+  "index": 120,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-167.jpeg](img-167.jpeg) CAM |   | ![img-168.jpeg](img-168.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 141,
+      "bottomRightY": 153,
+      "content": "Returns",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 158,
+      "bottomRightX": 637,
+      "bottomRightY": 613,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hPort is invalid (NULL) or does not reference an open module.  |\n|  GC_ERR_INVALID_PARAMETER | Parameters pEntries and/or piNumEntries are invalid pointers (NULL or ~0x0).  |\n|  GC_ERR_ACCESS_DENIED | The access to at least one of the requested registers is denied because the register is not writable or because the Port module is opened in a way that it does not allow write access.  |\n|  GC_ERR_NOT_IMPLEMENTED | The provided module handle does not have a Port module implemented.  |\n|  GC_ERR_INVALID_ADDRESS | One or more entries in pEntries has an invalid address for example because the port's register space is only 32Bit wide and Address is in the 64Bit register space or because there is no register with the specified address.  |\n|  GC_ERR_INVALID_VALUE | An invalid value has been written. This error code is to be returned if the underlying registermap provides that information. In case the underlying technology/registermap does not provide that level of information a GC_ERR_ACCESS_DENIED is to be returned.  |\n|  GC_ERR_IO | Communication error or connection lost.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 643,
+      "bottomRightX": 636,
+      "bottomRightY": 678,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 691,
+      "bottomRightX": 281,
+      "bottomRightY": 707,
+      "content": "##### 6.3.6.8 GCReadPortStacked",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 730,
+      "bottomRightX": 595,
+      "bottomRightY": 798,
+      "content": "GC_ERROR GCReadPortStacked ( PORT_HANDLE hPort,\n    PORT_REGISTER_STACK_ENTRY *\n    pEntries,\n    size_t * piNumEntries )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 807,
+      "bottomRightX": 637,
+      "bottomRightY": 858,
+      "content": "Reads a number of bytes from the given address on the specified hPort for every element in the pEntries array. The endianness of the data content is specified by the GCGetPortInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 865,
+      "bottomRightX": 636,
+      "bottomRightY": 900,
+      "content": "If the underlying technology has alignment restrictions on the port access the GenTL Provider implementation has to handle this internally. For example if the underlying technology only",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 121 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

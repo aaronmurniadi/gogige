@@ -1,0 +1,85 @@
+{
+  "index": 44,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 117,
+      "bottomRightX": 543,
+      "bottomRightY": 137,
+      "content": "### B.5 Multispectral Image (Intensity of multiple wavelength bands)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 41,
+      "topLeftY": 172,
+      "bottomRightX": 712,
+      "bottomRightY": 223,
+      "content": "2D Image Container including one Multispectral Component of 3 wavelength planes. The Component has 3 data Parts each containing the data of a specific wavelength. Note that Container format is the same as RGB planar with one Plane/Part per wavelength band.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 206,
+      "topLeftY": 232,
+      "bottomRightX": 419,
+      "bottomRightY": 253,
+      "content": "Multispectral Image planar:",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 284,
+      "bottomRightX": 759,
+      "bottomRightY": 591,
+      "content": "![img-12.jpeg](img-12.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-12.jpeg"
+    },
+    {
+      "topLeftX": 249,
+      "topLeftY": 598,
+      "bottomRightX": 515,
+      "bottomRightY": 613,
+      "content": "Figure 5-8: Multispectral Image (3 wavelength planes)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 82,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 45 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

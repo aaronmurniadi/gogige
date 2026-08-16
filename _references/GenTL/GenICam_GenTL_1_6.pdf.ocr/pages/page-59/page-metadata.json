@@ -1,0 +1,157 @@
+{
+  "index": 58,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-85.jpeg](img-85.jpeg) CAM |   | ![img-86.jpeg](img-86.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 281,
+      "bottomRightY": 159,
+      "content": "## 6 Software Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 181,
+      "bottomRightX": 199,
+      "bottomRightY": 200,
+      "content": "### 6.1 Overview",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 207,
+      "bottomRightX": 635,
+      "bottomRightY": 259,
+      "content": "A GenTL Producer implementation is provided as a platform dependent dynamic loadable library; under Microsoft Windows platform this would be a dynamic link library (DLL). The file extension of the library is “cti” for “Common Transport Interface”.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 265,
+      "bottomRightX": 635,
+      "bottomRightY": 332,
+      "content": "To enable easy dynamical loading and to support a wide range of languages a C interface is defined. It is designed to be minimal and complete regarding enumeration and the access to Configuration and Signaling. This enables a quick implementation and reduces the workload on testing.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 338,
+      "bottomRightX": 635,
+      "bottomRightY": 374,
+      "content": "All functions defined in this chapter are mandatory and must be implemented and exported in the libraries interface even if no implementation for a function is necessary.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 386,
+      "bottomRightX": 213,
+      "bottomRightY": 404,
+      "content": "#### 6.1.1 Installation",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 408,
+      "bottomRightX": 635,
+      "bottomRightY": 546,
+      "content": "In order to install a GenTL Producer an installer needs to add the path where the GenTL Producer implementation can be found to a path variable with the name GENICAM_GENTL{32/64}_PATH. The entries within the variable are separated by ‘;’ on Windows and ‘:’ on UNIX based systems. In order to allow different directories for 32Bit and 64Bit implementations residing on the same system two variables are defined: GENICAM_GENTL32_PATH for 32Bit GenTL Producer implementations and GENICAM_GENTL64_PATH for 64Bit GenTL Producer implementations. A consumer may pick the appropriate version of the environment variable.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 559,
+      "bottomRightX": 349,
+      "bottomRightY": 579,
+      "content": "#### 6.1.2 Function Naming Convention",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 582,
+      "bottomRightX": 430,
+      "bottomRightY": 599,
+      "content": "All functions of the TLI follow a common naming scheme:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 605,
+      "bottomRightX": 241,
+      "bottomRightY": 623,
+      "content": "Prefix Operation Specifier",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 630,
+      "bottomRightX": 430,
+      "bottomRightY": 647,
+      "content": "Entries in italics are replaced by an actual value as follows:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 241,
+      "topLeftY": 654,
+      "bottomRightX": 476,
+      "bottomRightY": 671,
+      "content": "Table 6-3: Function naming convention",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 675,
+      "bottomRightX": 641,
+      "bottomRightY": 907,
+      "content": "|  Entry | Description  |\n| --- | --- |\n|  Prefix | Specifies the handle the function works on. The handle represents the module used.Values:GC if applicable for no or all modules (GC for GenICam)TL for System module (TL for Transport Layer)IF for Interface module (IF for Interface)Dev for Device module (Dev for Device)DS for Data Stream module (DS for Data Stream)Event for Event Objects  |\n|  Operation | Specifies the operation done on a certain module.Values (choice):Open to instantiate a module  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 59 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

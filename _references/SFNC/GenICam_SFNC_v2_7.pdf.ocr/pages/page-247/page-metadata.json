@@ -1,0 +1,120 @@
+{
+  "index": 246,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 422,
+      "bottomRightY": 735,
+      "content": "|   | AcquisitionStart AcquisitionEnd FrameTrigger FrameTriggerMissed FrameStart FrameEnd LineTrigger LineTriggerMissed LineStart LineEnd ExposureStart ExposureEnd Line0 (If 0 based), Line1, Line2, ... UserOutput0, UserOutput1, UserOutput2,... Counter0Start (If 0 based), Counter1Start, Counter2Start, ... Counter0End (If 0 based), Counter1End, Counter2End, ... Timer0Start (If 0 based), Timer1Start, Timer2Start, ... Timer0End (If 0 based), Timer1End, Timer2End, ... Encoder0 (if 0 based), Encoder1, Encoder2, ... LogicBlock0 (If 0 based), LogicBlock1, LogicBlock2, ... SoftwareSignal0 (If 0 based), SoftwareSignal1, SoftwareSignal2, ... Action0 (If 0 based), Action1, Action2, ... LinkTrigger0 (If 0 based), LinkTrigger1, LinkTrigger2, ...  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 758,
+      "bottomRightX": 439,
+      "bottomRightY": 776,
+      "content": "Selects the signals that will be the source to reset the Counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 784,
+      "bottomRightX": 177,
+      "bottomRightY": 800,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 810,
+      "bottomRightX": 681,
+      "bottomRightY": 936,
+      "content": "- **Off**: Disable the Counter Reset trigger.\n- **CounterTrigger**: Resets with the reception of a trigger on the **CounterTriggerSource**.\n- **AcquisitionTrigger**: Resets with the reception of the Acquisition Trigger.\n- **AcquisitionTriggerMissed**: Resets with the reception of the missed Acquisition start trigger.\n- **AcquisitionStart**: Resets with the reception of the Acquisition Start.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 247 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "index": 510,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | ![img-156.jpeg](img-156.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 143,
+      "bottomRightX": 734,
+      "bottomRightY": 182,
+      "content": "This device tap geometry feature describes the geometrical properties characterizing the taps of a camera as presented at the output of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 187,
+      "bottomRightX": 193,
+      "bottomRightY": 205,
+      "content": "Possibles values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 213,
+      "bottomRightX": 328,
+      "bottomRightY": 232,
+      "content": "Geometry_1X_1Y: 1 X 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 238,
+      "bottomRightX": 343,
+      "bottomRightY": 258,
+      "content": "Geometry_1X2_1Y: 1 X2 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 263,
+      "bottomRightX": 358,
+      "bottomRightY": 284,
+      "content": "Geometry_1X2_1Y2: 1 X2 1Y2 tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 289,
+      "bottomRightX": 327,
+      "bottomRightY": 309,
+      "content": "Geometry_2X_1Y: 2 X 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 314,
+      "bottomRightX": 343,
+      "bottomRightY": 334,
+      "content": "Geometry_2X_1Y2: 2 X 1Y2 tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 340,
+      "bottomRightX": 347,
+      "bottomRightY": 359,
+      "content": "Geometry_2XE_1Y: 2 XE 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 366,
+      "bottomRightX": 362,
+      "bottomRightY": 386,
+      "content": "Geometry_2XE_1Y2: 2 XE 1Y2 tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 391,
+      "bottomRightX": 356,
+      "bottomRightY": 411,
+      "content": "Geometry_2XM_1Y: 2 XM 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 417,
+      "bottomRightX": 371,
+      "bottomRightY": 437,
+      "content": "Geometry_2XM_1Y2: 2 XM 1Y2 tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 442,
+      "bottomRightX": 343,
+      "bottomRightY": 462,
+      "content": "Geometry_1X_1Y2: 1 X 1Y2 tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 468,
+      "bottomRightX": 347,
+      "bottomRightY": 487,
+      "content": "Geometry_1X_2YE: 1 X 2YE tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 493,
+      "bottomRightX": 343,
+      "bottomRightY": 513,
+      "content": "Geometry_1X3_1Y: 1 X3 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 519,
+      "bottomRightX": 327,
+      "bottomRightY": 539,
+      "content": "Geometry_3X_1Y: 3 X 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 545,
+      "bottomRightX": 277,
+      "bottomRightY": 564,
+      "content": "Geometry_1X: 1 X tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 570,
+      "bottomRightX": 293,
+      "bottomRightY": 590,
+      "content": "Geometry_1X2: 1 X2 tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 596,
+      "bottomRightX": 277,
+      "bottomRightY": 615,
+      "content": "Geometry_2X: 2 X tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 622,
+      "bottomRightX": 298,
+      "bottomRightY": 641,
+      "content": "Geometry_2XE: 2 XE tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 647,
+      "bottomRightX": 306,
+      "bottomRightY": 667,
+      "content": "Geometry_2XM: 2 XM tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 673,
+      "bottomRightX": 293,
+      "bottomRightY": 693,
+      "content": "Geometry_1X3: 1 X3 tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 698,
+      "bottomRightX": 277,
+      "bottomRightY": 718,
+      "content": "Geometry_3X: 3 X tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 724,
+      "bottomRightX": 343,
+      "bottomRightY": 744,
+      "content": "Geometry_1X4_1Y: 1 X4 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 750,
+      "bottomRightX": 327,
+      "bottomRightY": 769,
+      "content": "Geometry_4X_1Y: 4 X 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 775,
+      "bottomRightX": 343,
+      "bottomRightY": 795,
+      "content": "Geometry_2X2_1Y: 2 X2 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 801,
+      "bottomRightX": 362,
+      "bottomRightY": 820,
+      "content": "Geometry_2X2E_1Y: 2 X2E 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 826,
+      "bottomRightX": 371,
+      "bottomRightY": 846,
+      "content": "Geometry_2X2M_1Y: 2 X2M 1Y tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 852,
+      "bottomRightX": 362,
+      "bottomRightY": 872,
+      "content": "Geometry_1X2_2YE: 1 X2 2YE tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 878,
+      "bottomRightX": 347,
+      "bottomRightY": 897,
+      "content": "Geometry_2X_2YE: 2 X 2YE tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 903,
+      "bottomRightX": 367,
+      "bottomRightY": 924,
+      "content": "Geometry_2XE_2YE: 2 XE 2YE tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 929,
+      "bottomRightX": 375,
+      "bottomRightY": 948,
+      "content": "Geometry_2XM_2YE: 2 XM 2YE tap geometry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 511 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

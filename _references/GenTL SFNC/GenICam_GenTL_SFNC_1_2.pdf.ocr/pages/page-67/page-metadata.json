@@ -1,0 +1,132 @@
+{
+  "index": 66,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 656,
+      "bottomRightY": 177,
+      "content": "Major version number of the transport layer specification the remote device complies with.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 191,
+      "bottomRightX": 341,
+      "bottomRightY": 208,
+      "content": "### 3.2.2.12 DeviceTLVersionMinor",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 212,
+      "bottomRightX": 471,
+      "bottomRightY": 425,
+      "content": "|  Name | DeviceTLVersionMinor[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 449,
+      "bottomRightX": 656,
+      "bottomRightY": 467,
+      "content": "Minor version number of the transport layer specification the remote device complies with.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 481,
+      "bottomRightX": 333,
+      "bottomRightY": 499,
+      "content": "### 3.2.2.13 GevDeviceIPAddress",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 502,
+      "bottomRightX": 455,
+      "bottomRightY": 741,
+      "content": "|  Name | GevDeviceIPAddress[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 766,
+      "bottomRightX": 694,
+      "bottomRightY": 802,
+      "content": "Current IP address of the GVCP interface of the selected remote device. This value only changes on execution of the DeviceUpdateList command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 810,
+      "bottomRightX": 631,
+      "bottomRightY": 846,
+      "content": "Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 860,
+      "bottomRightX": 347,
+      "bottomRightY": 878,
+      "content": "### 3.2.2.14 GevDeviceSubnetMask",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 882,
+      "bottomRightX": 469,
+      "bottomRightY": 910,
+      "content": "|  Name | GevDeviceSubnetMask[DeviceSelector]  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 67 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

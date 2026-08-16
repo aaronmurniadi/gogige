@@ -1,0 +1,309 @@
+{
+  "index": 99,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 77,
+      "topLeftY": 40,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-139.jpeg](img-139.jpeg) CAM |   | ![img-140.jpeg](img-140.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 208,
+      "bottomRightY": 156,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 163,
+      "bottomRightX": 278,
+      "bottomRightY": 181,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 189,
+      "bottomRightX": 270,
+      "bottomRightY": 206,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 248,
+      "bottomRightX": 278,
+      "bottomRightY": 266,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 289,
+      "bottomRightX": 295,
+      "bottomRightY": 308,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 315,
+      "bottomRightX": 270,
+      "bottomRightY": 333,
+      "content": "GC_ERR_INVALID_BUFFER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 409,
+      "bottomRightX": 278,
+      "bottomRightY": 427,
+      "content": "GC_ERR_RESOURCE_IN_USE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 434,
+      "bottomRightX": 286,
+      "bottomRightY": 452,
+      "content": "GC_ERR_BUFFER_TOO_SMALL",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 138,
+      "bottomRightX": 568,
+      "bottomRightY": 155,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 163,
+      "bottomRightX": 512,
+      "bottomRightY": 181,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 187,
+      "bottomRightX": 635,
+      "bottomRightY": 240,
+      "content": "The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 248,
+      "bottomRightX": 635,
+      "bottomRightY": 282,
+      "content": "One or more flags set in iStartFlags referencing functionality which is not implemented.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 289,
+      "bottomRightX": 430,
+      "bottomRightY": 307,
+      "content": "iNumToAcquire is 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 314,
+      "bottomRightX": 635,
+      "bottomRightY": 400,
+      "content": "The number of buffers announced through one of the buffer announcement functions is smaller than the number retrieved through a call to DSGetInfo using the STREAM_INFO_BUFF_ANNOUNCE_MIN command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 409,
+      "bottomRightX": 504,
+      "bottomRightY": 426,
+      "content": "The Acquisition is already active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 433,
+      "bottomRightX": 635,
+      "bottomRightY": 535,
+      "content": "One or more of the announced buffers are smaller than the expected payload size required. This is optional to the GenTL Producer implementation if it chooses to not start acquisition in this case or if the acquisition is started and the buffers are not or only partially filled (see chapter 5.2.1).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 566,
+      "bottomRightX": 635,
+      "bottomRightY": 600,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 612,
+      "bottomRightX": 286,
+      "bottomRightY": 632,
+      "content": "##### 6.3.5.12 DSStopAcquisition",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 653,
+      "bottomRightX": 600,
+      "bottomRightY": 688,
+      "content": "GC_ERROR DSStopAcquisition (DS_HANDLE hDataStream, ACQ_STOP_FLAGS iStopFlags)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 697,
+      "bottomRightX": 635,
+      "bottomRightY": 765,
+      "content": "Stops the acquisition engine on the host. There must be a call to DSStopAcquisition accompanying each call to DSStartAcquisition even though the stream already stopped because the number of frames to acquire was reached. This is also independent of the acquisition modes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 780,
+      "bottomRightX": 166,
+      "bottomRightY": 795,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 800,
+      "bottomRightX": 215,
+      "bottomRightY": 816,
+      "content": "[in] hDataStream",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 817,
+      "bottomRightX": 201,
+      "bottomRightY": 835,
+      "content": "[in] iStopFlags",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 800,
+      "bottomRightX": 464,
+      "bottomRightY": 816,
+      "content": "Data Stream module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 817,
+      "bottomRightX": 602,
+      "bottomRightY": 835,
+      "content": "Stops the acquisition as defined in ACQ_STOP_FLAGS.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 848,
+      "bottomRightX": 141,
+      "bottomRightY": 864,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 870,
+      "bottomRightX": 208,
+      "bottomRightY": 888,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 896,
+      "bottomRightX": 278,
+      "bottomRightY": 913,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 870,
+      "bottomRightX": 568,
+      "bottomRightY": 888,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 895,
+      "bottomRightX": 512,
+      "bottomRightY": 913,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 100 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

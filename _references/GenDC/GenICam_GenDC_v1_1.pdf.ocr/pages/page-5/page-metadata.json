@@ -1,0 +1,101 @@
+{
+  "index": 4,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 133,
+      "topLeftY": 31,
+      "bottomRightX": 278,
+      "bottomRightY": 59,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 527,
+      "topLeftY": 32,
+      "bottomRightX": 616,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 8,
+      "topLeftY": 74,
+      "bottomRightX": 75,
+      "bottomRightY": 88,
+      "content": "Version 1.1.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 245,
+      "topLeftY": 70,
+      "bottomRightX": 291,
+      "bottomRightY": 85,
+      "content": "GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 117,
+      "bottomRightX": 123,
+      "bottomRightY": 136,
+      "content": "## List of Tables",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 159,
+      "bottomRightX": 717,
+      "bottomRightY": 396,
+      "content": "Table 1-1: Terms and Definitions ... 8\nTable 1-2: Requirements terminology... 9\nTable 2-1: GenDC Container Header Description... 16\nTable 2-2: GenDC Component Header fields description ... 19\nTable 2-3: GenDC Component Header Part common fields description... 22\nTable 2-4: GenDC Component Header Part type specific fields description... 23\nTable 2-5: GenDC Part Types ... 25\nTable 2-6: Part specific Header fields description for Metadata ... 26\nTable 2-7: Part specific Header fields description for 1D Array or Image ... 29\nTable 2-8: Part specific Header fields description for 2D uncompressed, JPEG or JPEG2000 compressed image ... 29\nTable 2-9: Part specific Header fields description for H.264 compressed image... 32\nTable 3-1: GenDC Flow mapping table description ... 35",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 426,
+      "bottomRightX": 296,
+      "bottomRightY": 445,
+      "content": "## List of Requirements and Objectives",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 462,
+      "bottomRightX": 717,
+      "bottomRightY": 879,
+      "content": "[ R-001] A GenDC compliant product must use the headers and flags as defined by this specification. ... 12\n[ R-002] A GenDC compliant product must use the Part header types as defined by this specification. ... 21\n[ R-003] A GenDC compliant transmitter must provide a Flow mapping table (stored in little-endian ordering). ... 36\n[ R-004] The GenDC Container Descriptor must be always stored in little-endian ordering. ... 37\n[ R-005] Container data Part in PFNC format must use little-endian ordering. ... 37\n[ R-006] For Transmission and file storage, a GenDC Container is always represented as a continuous block of linear\nmemory starting with the Descriptor. ... 37\n[ R-007] The Part's DataOffset is always the offset of the data in bytes from the start of the Descriptor. ... 37\n[ R-008] The Part's FlowOffset is always the offset of the data in bytes from the start of the Flow specified by the Part's\nFlowId. ... 37\n[ R-009] The Descriptor is always transferred in Flow 0. ... 38\n[ R-010] A Part must only be mapped to a single Flow. ... 38\n[ R-011] Flow must be numbered sequentially starting from 0. ... 38\n[ R-014] When storing a GenDC Container using the \".gendc\" file extension, the standard GenDC binary format must be\nused. ... 38\n[ R-015] When storing a GenDC Container, a linear Container must be used. ... 38\n[ R-016] When adding metadata to a Container, this must be done using a separate Metadata Component. ... 38\n[ CR-012] If a Container has variable content during the transmission the VariableFields flags of the Container must be\nset accordingly. ... 38\n[ CR-013] If any of the Container's VariableFields flags is set, a final Descriptor must be sent as soon as possible but at\nleast just after the transmission of the data section. ... 38",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1004,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 553,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1005,
+      "content": "Page 5 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

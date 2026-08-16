@@ -1,0 +1,93 @@
+{
+  "index": 30,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 159,
+      "topLeftY": 27,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 27,
+      "bottomRightX": 578,
+      "bottomRightY": 77,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 579,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 139,
+      "bottomRightX": 679,
+      "bottomRightY": 965,
+      "content": "|  Version | Date | Changed by | Change  |\n| --- | --- | --- | --- |\n|  Release 2.0 (cont.) | 25.10.2012 | Stephane Maurice, Matrox | - Added option to have 0 based Timers, Counters, Actions, Sources, Streams,... - Added the CoaXPress transport layer specific features. - Added the Deinterlacing feature. - Added the Image Compression features. - Added DeviceIndicatorMode feature. - GenICam Access chapter was renamed GenICam Control. - Updated the VB macro.  |\n|  Release 2.0 (syntax update) | 30.10.2012 | Stephane Maurice, Matrox | - Minor correction to the text format of few features to help the parsing by theVB macro. - Updated the VB macro.  |\n|  Release 2.1 | 12.12.2013 | Stephane Maurice, Matrox | - Added UserSetFeatureSelector and UserSetFeatureEnable features. - Added Sequencer Control category and other sequencer related features. - Added Software Signal Control category and other related features. - Added Geometry_4X2E and Geometry_4X2E_1Y tap geometries. - Deprecated the Gev... features that were redundant with the Device... features (Ex: GevDeviceClass is replaced by the generic DeviceType). - Added PixelFormatInfoSelector and PixelFormatInfoIDfeatures. - Update to the CXP TL specific features description. - Allowed PayloadSize to be 0. - Created TimestampLatch, TimestampLatchValue and ChunkTimestampLatchValue features and deprecated their GigE Vision counterpart.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 988,
+      "bottomRightX": 120,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 988,
+      "bottomRightX": 390,
+      "bottomRightY": 1007,
+      "content": "Page 31 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

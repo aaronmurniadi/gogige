@@ -1,0 +1,165 @@
+{
+  "index": 317,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM</i></td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 215,
+      "topLeftY": 133,
+      "bottomRightX": 599,
+      "bottomRightY": 547,
+      "content": "![img-93.jpeg](img-93.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-93.jpeg"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 571,
+      "bottomRightX": 559,
+      "bottomRightY": 593,
+      "content": "### Example 2: Complex changes to features with multiples selectors.",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 599,
+      "bottomRightX": 736,
+      "bottomRightY": 654,
+      "content": "In this example, the camera has 4 configurable sets. Set 0 and Set 1 are the main sets for the device to capture images. The only parameters within the sequencer sets are **Exposure Time**, **Gain** and the **SequencerPathSelector** and therefore **SequencerSetNext**, **SequencerTriggerSource**.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 659,
+      "bottomRightX": 747,
+      "bottomRightY": 732,
+      "content": "After the camera has captured an image with Set 0 the sequencer switches to Set 1. Then after the camera has captured another image with Set 1, the sequencer switches back to Set 0. So the most time the sequencer is alternating between Set 0 and Set 1. But 2 timers with different run times are also used to activate Set 2 and Set 3 when required.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 739,
+      "bottomRightX": 312,
+      "bottomRightY": 758,
+      "content": "The parameters of the individual sets are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 767,
+      "bottomRightX": 139,
+      "bottomRightY": 782,
+      "content": "- **Set 0:**",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 785,
+      "bottomRightX": 398,
+      "bottomRightY": 879,
+      "content": "- ExposureTime = 4000\n- Gain = 1.0\n- SequencerSetNext[0] = 1\n- SequencerTriggerSource[0] = ExposureEnd\n- SequencerSetNext[1] = 3",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 881,
+      "bottomRightX": 362,
+      "bottomRightY": 899,
+      "content": "- SequencerTriggerSource[1] = Timer0End",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 915,
+      "bottomRightX": 139,
+      "bottomRightY": 932,
+      "content": "**Set 1:**",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 318 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

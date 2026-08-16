@@ -1,0 +1,156 @@
+{
+  "index": 337,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 135,
+      "bottomRightX": 312,
+      "bottomRightY": 154,
+      "content": "## Multi-Source Features setting example",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 179,
+      "bottomRightX": 762,
+      "bottomRightY": 268,
+      "content": "Figure 19-1 above presents an example of a relatively complex device supporting multi-source, multi-region with data stream transfer control. This device features two regions of interest for each video source. In this particular example, both regions of interest from Source1 are streamed on the same output stream channel, while a separate stream channel is used for each region of interest of Source2. The three stream channels are transmitted out of the device using the same external Link to the target Host System.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 293,
+      "bottomRightX": 736,
+      "bottomRightY": 365,
+      "content": "The features setting for this use case is presented below. The detailed description of the feature to control the Sources can be found in section 19.2: \"Source Control features below. The features for Region of interest and image format and handling are documented in chapter 4: \"Image Format Control\" and chapter 20: \"Transfer Control\" presents the features for explicit control of data Transfer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 372,
+      "bottomRightX": 626,
+      "bottomRightY": 390,
+      "content": "So for the particular use case illustrated in Figure 19-1: above, the features would be set to:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 397,
+      "bottomRightX": 179,
+      "bottomRightY": 416,
+      "content": "Source 1, Region 1:",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 423,
+      "bottomRightX": 497,
+      "bottomRightY": 531,
+      "content": "SourceSelector = Source1\nRegionSelector[SourceSelector] = Region1\nRegionMode[SourceSelector][RegionSelector] = On\nRegionDestination[SourceSelector][RegionSelector] = Stream0\nWidth[SourceSelector][RegionSelector] = 320\nHeight[SourceSelector][RegionSelector] = 240",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 538,
+      "bottomRightX": 179,
+      "bottomRightY": 556,
+      "content": "Source 1, Region 2:",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 563,
+      "bottomRightX": 497,
+      "bottomRightY": 672,
+      "content": "SourceSelector = Source1\nRegionSelector[SourceSelector] = Region2\nRegionMode[SourceSelector][RegionSelector] = On\nRegionDestination[SourceSelector][RegionSelector] = Stream0\nWidth[SourceSelector][RegionSelector] = 420\nHeight[SourceSelector][RegionSelector] = 340",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 678,
+      "bottomRightX": 428,
+      "bottomRightY": 696,
+      "content": "Source 1, Region 1 and 2, Transfer and Acquisition control:",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 704,
+      "bottomRightX": 463,
+      "bottomRightY": 848,
+      "content": "TransferSelector = Stream0\nTransferControlMode[TransferSelector] = UserControlled\nTransferStreamChannel[TransferSelector] = 0\nTransferStart[TransferSelector]\nAcquisitionStart[SourceSelector]\n...\nAcquisitionStop[SourceSelector]\nTransferStop[TransferSelector]",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 872,
+      "bottomRightX": 174,
+      "bottomRightY": 890,
+      "content": "Source 2 Region 1:",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 898,
+      "bottomRightX": 368,
+      "bottomRightY": 935,
+      "content": "SourceSelector = Source2\nRegionSelector[SourceSelector] = Region1",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 338 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "index": 117,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GEN<I>CAM |   | ![img-162.jpeg](img-162.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 635,
+      "bottomRightY": 173,
+      "content": "data has been read. The GenTL Producer is not allowed to report success (GC_ERR_SUCCESS) if the operation was finished only partially.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 185,
+      "bottomRightX": 166,
+      "bottomRightY": 202,
+      "content": "Parameters",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 206,
+      "bottomRightX": 634,
+      "bottomRightY": 358,
+      "content": "|  [in] | hPort | Module or remote device port handle to access Port from.  |\n| --- | --- | --- |\n|  [in] | iAddress | Byte address to read from.  |\n|  [out] | pBuffer | Pointer to a user allocated byte buffer to receive data; this must not be NULL.  |\n|  [in,out] | piSize | Size of the provided pBuffer and thus the amount of bytes to read from the register map; after the read operation this parameter holds the information about the bytes actually read (if that is different from the requested size, the function return value should indicate the reason).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 372,
+      "bottomRightX": 141,
+      "bottomRightY": 387,
+      "content": "Returns",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 392,
+      "bottomRightX": 637,
+      "bottomRightY": 707,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hPort is invalid (NULL) or does not reference an open module.  |\n|  GC_ERR_INVALID_PARAMETER | Parameters pBuffer and/or piSize are invalid pointers (NULL or ~0x0).  |\n|  GC_ERR_ACCESS_DENIED | The access to the requested register iAddress is denied because the register is not readable.  |\n|  GC_ERR_INVALID_ADDRESS | iAddress is invalid for example because the port's register space is only 32Bit wide and iAddress is in the 64Bit register space or because there is no register with the provided iAddress.  |\n|  GC_ERR_NOT_IMPLEMENTED | The provided module handle does not have a Port module implemented.  |\n|  GC_ERR_IO | Communication error or connection lost.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 759,
+      "bottomRightX": 637,
+      "bottomRightY": 794,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 118 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "index": 534,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 143,
+      "bottomRightX": 730,
+      "bottomRightY": 181,
+      "content": "It is necessary to latch the 64-bit timestamp value to guarantee its integrity when performing the two 32-bit read accesses to retrieve the higher and lower 32-bit portions.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 196,
+      "bottomRightX": 360,
+      "bottomRightY": 217,
+      "content": "### 27.4.37 GevDiscoveryAckDelay",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 218,
+      "bottomRightX": 396,
+      "bottomRightY": 431,
+      "content": "|  Name | GevDiscoveryAckDelay  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | ms  |\n|  Visibility | Expert  |\n|  Values | ≥0 and ≤1000  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 456,
+      "bottomRightX": 696,
+      "bottomRightY": 476,
+      "content": "Indicates the maximum randomized delay the device will wait to acknowledge a discovery command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 488,
+      "bottomRightX": 388,
+      "bottomRightY": 512,
+      "content": "### 27.4.38 GevIEEE1588 (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 512,
+      "bottomRightX": 504,
+      "bottomRightY": 743,
+      "content": "|  Name | GevIEEE1588  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 793,
+      "bottomRightX": 733,
+      "bottomRightY": 832,
+      "content": "This feature is deprecated (See PtpEnable). It was used to enable the IEEE 1588 Precision Time Protocol to control the timestamp register.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 844,
+      "bottomRightX": 520,
+      "bottomRightY": 867,
+      "content": "### 27.4.39 GevIEEE1588ClockAccuracy (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 867,
+      "bottomRightX": 422,
+      "bottomRightY": 949,
+      "content": "|  Name | GevIEEE1588ClockAccuracy  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 535 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

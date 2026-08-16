@@ -1,0 +1,103 @@
+{
+  "index": 391,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 44,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 105,
+      "topLeftY": 135,
+      "bottomRightX": 523,
+      "bottomRightY": 159,
+      "content": "### 21.3.1.2 Linescan 3D sensor's Intensity output",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 186,
+      "bottomRightX": 702,
+      "bottomRightY": 223,
+      "content": "Here the Intensity of the Area sensor's Region0 is streamed out. The Region0 (A) is used directly as 2D Intensity data source to stream out and the Scan 3D Extraction processing module output is disabled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 252,
+      "bottomRightX": 397,
+      "bottomRightY": 272,
+      "content": "Linescan 3D device sensor Intensity output:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 284,
+      "bottomRightX": 682,
+      "bottomRightY": 514,
+      "content": "![img-130.jpeg](img-130.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-130.jpeg"
+    },
+    {
+      "topLeftX": 201,
+      "topLeftY": 523,
+      "bottomRightX": 606,
+      "bottomRightY": 544,
+      "content": "Figure 21-22: Linescan 3D sensor Intensity components output.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 561,
+      "bottomRightX": 502,
+      "bottomRightY": 840,
+      "content": "// 2. DeviceScanType = Areascan\n// Switch to sensor 2D image output mode (Sensor Intensity out).\n// ---\n// Dataflow: Region0 -> Stream0\n\n// Enable Region0 Intensity output.\nRegionSelector = Region0;\nComponentSelector = Intensity;\nComponentEnable[Region0][Intensity] = True;\n\n// Disable Scan3dExtraction0 3D output (Range and Reflectance).\nRegionSelector = Scan3dExtraction0;\nRegionMode[Scan3dExtraction0] = Off; // Disable the Region output.\n\n// Start and eventually Stop acquisition.\nAquisitionStart;\n...\n// Stop acquisition.\nAquisitionStop;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 392 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 616,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "index": 109,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 184,
+      "bottomRightX": 533,
+      "bottomRightY": 203,
+      "content": "The GenICam port through which the Data Stream module is accessed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 208,
+      "bottomRightX": 689,
+      "bottomRightY": 246,
+      "content": "Note that StreamPort is a port node (not a feature node) and is generally not accessed by the end user directly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 267,
+      "bottomRightX": 240,
+      "bottomRightY": 285,
+      "content": "### 3.4.5 Event Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 299,
+      "bottomRightX": 696,
+      "bottomRightY": 334,
+      "content": "Controls the generation of events for an instance of the buffer module. An Event is a message that is sent to the host application to notify it of the occurrence of an internal event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 341,
+      "bottomRightX": 431,
+      "bottomRightY": 358,
+      "content": "See GenICam SFNC for more details on event control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 366,
+      "bottomRightX": 439,
+      "bottomRightY": 385,
+      "content": "EventSelector selects which particular Event to control",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 399,
+      "bottomRightX": 240,
+      "bottomRightY": 416,
+      "content": "#### 3.4.5.1 EventControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 420,
+      "bottomRightX": 421,
+      "bottomRightY": 633,
+      "content": "|  Name | EventControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 658,
+      "bottomRightX": 375,
+      "bottomRightY": 676,
+      "content": "Category that contains Event control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 690,
+      "bottomRightX": 246,
+      "bottomRightY": 708,
+      "content": "#### 3.4.5.2 EventSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 711,
+      "bottomRightX": 504,
+      "bottomRightY": 924,
+      "content": "|  Name | EventSelector  |\n| --- | --- |\n|  Category | EventControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | NewBufferData  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 927,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 110 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "index": 354,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 514,
+      "bottomRightY": 233,
+      "content": "|   | TransferPause TransferResume TransferActive TransferBurstStart TransferBurstStop  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 251,
+      "bottomRightX": 348,
+      "bottomRightY": 269,
+      "content": "Selects the type of transfer trigger to configure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 278,
+      "bottomRightX": 177,
+      "bottomRightY": 294,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 304,
+      "bottomRightX": 665,
+      "bottomRightY": 544,
+      "content": "- **TransferStart**: Selects a trigger to start the transfers.\n- **TransferStop**: Selects a trigger to stop the transfers.\n- **TransferAbort**: Selects a trigger to abort the transfers.\n- **TransferPause**: Selects a trigger to pause the transfers.\n- **TransferResume**: Selects a trigger to Resume the transfers.\n- **TransferActive**: Selects a trigger to Activate the transfers. This trigger type is used when TriggerActivation is set LevelHigh or levelLow.\n- **TransferBurstStart**: Selects a trigger to start the transfer of a burst of frames specified by TransferBurstCount.\n- **TransferBurstStop**: Selects a trigger to end the transfer of a burst of frames.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 559,
+      "bottomRightX": 274,
+      "bottomRightY": 581,
+      "content": "### 20.18 TransferTriggerMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 583,
+      "bottomRightX": 588,
+      "bottomRightY": 814,
+      "content": "|  Name | TransferTriggerMode[TransferSelector][TransferTriggerSelector]  |\n| --- | --- |\n|  Category | TransferControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | Off On  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 838,
+      "bottomRightX": 306,
+      "bottomRightY": 856,
+      "content": "Controls if the selected trigger is active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 863,
+      "bottomRightX": 177,
+      "bottomRightY": 880,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 890,
+      "bottomRightX": 311,
+      "bottomRightY": 935,
+      "content": "- **Off**: Disables the selected trigger.\n- **On**: Enable the selected trigger.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 355 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

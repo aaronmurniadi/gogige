@@ -1,0 +1,159 @@
+{
+  "index": 131,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  ![img-34.jpeg](img-34.jpeg) |   | ![img-35.jpeg](img-35.jpeg)  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 120,
+      "bottomRightX": 637,
+      "bottomRightY": 171,
+      "content": "- Disparity: The acquisition of stereo camera disparity data is controlled. Disparity is a more specific range format approximately inversely proportional to distance. Disparity is typically given in pixel units.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 185,
+      "bottomRightX": 404,
+      "bottomRightY": 206,
+      "content": "4.17 ImageComponentEnable (Deprecated)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 207,
+      "bottomRightX": 587,
+      "bottomRightY": 423,
+      "content": "|  Name | ImageComponentEnable[RegionSelector][ComponentSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | TrueFalse  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 445,
+      "bottomRightX": 644,
+      "bottomRightY": 480,
+      "content": "This feature is deprecated (See ComponentEnable). It was used to control if the selected component streaming is active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 492,
+      "bottomRightX": 603,
+      "bottomRightY": 511,
+      "content": "To help backward compatibility, this feature can be included as Invisible in the device's XML.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 524,
+      "bottomRightX": 145,
+      "bottomRightY": 542,
+      "content": "4.18Width",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 544,
+      "bottomRightX": 364,
+      "bottomRightY": 745,
+      "content": "|  Name | Width[RegionSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 767,
+      "bottomRightX": 370,
+      "bottomRightY": 786,
+      "content": "Width of the image provided by the device (in pixels).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 792,
+      "bottomRightX": 653,
+      "bottomRightY": 843,
+      "content": "This reflects the current Region of interest. The maximum value of this feature takes into account horizontal binning, decimation, or any other function changing the maximum horizontal dimensions of the image and is typically equal to WidthMax - OffsetX.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 849,
+      "bottomRightX": 605,
+      "bottomRightY": 867,
+      "content": "This feature is generally mandatory for transmitters and transceivers of most Transport Layers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 880,
+      "bottomRightX": 151,
+      "bottomRightY": 901,
+      "content": "4.19 Height",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 902,
+      "bottomRightX": 364,
+      "bottomRightY": 929,
+      "content": "|  Name | Height[RegionSelector]  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 966,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 132 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

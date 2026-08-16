@@ -1,0 +1,141 @@
+{
+  "index": 93,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-28.jpeg](img-28.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 290,
+      "content": "|  Interface | IPort  |\n| --- | --- |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 336,
+      "bottomRightX": 690,
+      "bottomRightY": 375,
+      "content": "The GenICam port through which the Device module is accessed. Note that DevicePort is a port node (not a feature node) and is generally not accessed by the end user directly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 395,
+      "bottomRightX": 240,
+      "bottomRightY": 412,
+      "content": "#### 3.3.5 Event Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 425,
+      "bottomRightX": 679,
+      "bottomRightY": 461,
+      "content": "Controls the generation of events for an instance of the Device module. An Event is a message that is sent to the host application to notify it of the occurrence of an internal event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 469,
+      "bottomRightX": 431,
+      "bottomRightY": 486,
+      "content": "See GenICam SFNC for more details on event control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 495,
+      "bottomRightX": 442,
+      "bottomRightY": 513,
+      "content": "EventSelector selects which particular Event to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 526,
+      "bottomRightX": 240,
+      "bottomRightY": 544,
+      "content": "##### 3.3.5.1 EventControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 547,
+      "bottomRightX": 421,
+      "bottomRightY": 760,
+      "content": "|  Name | EventControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 785,
+      "bottomRightX": 375,
+      "bottomRightY": 803,
+      "content": "Category that contains Event control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 818,
+      "bottomRightX": 246,
+      "bottomRightY": 836,
+      "content": "##### 3.3.5.2 EventSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 839,
+      "bottomRightX": 504,
+      "bottomRightY": 920,
+      "content": "|  Name | EventSelector  |\n| --- | --- |\n|  Category | EventControl  |\n|  Level | Recommended  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 94 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

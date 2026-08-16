@@ -1,0 +1,194 @@
+{
+  "index": 154,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 533,
+      "bottomRightY": 81,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 533,
+      "topLeftY": 64,
+      "bottomRightX": 577,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 118,
+      "bottomRightX": 409,
+      "bottomRightY": 220,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | FixBitrate FixQuality ... Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 243,
+      "bottomRightX": 636,
+      "bottomRightY": 277,
+      "content": "Two rate controlling options are offered: fixed bit rate or fixed quality. The exact implementation to achieve one or the other is vendor-specific.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 283,
+      "bottomRightX": 555,
+      "bottomRightY": 302,
+      "content": "Note that not all compression techniques or implementations may support this feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 308,
+      "bottomRightX": 169,
+      "bottomRightY": 324,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 332,
+      "bottomRightX": 644,
+      "bottomRightY": 401,
+      "content": "- FixBitrate: Output stream follows a constant bit rate. Allows easy bandwidth management on the link.\n- FixQuality: Output stream has a constant image quality. Can be used when image processing algorithms are sensitive to image degradation caused by excessive data compression.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 415,
+      "bottomRightX": 356,
+      "bottomRightY": 435,
+      "content": "### 4.47.3 ImageCompressionQuality",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 436,
+      "bottomRightX": 409,
+      "bottomRightY": 635,
+      "content": "|  Name | ImageCompressionQuality  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | Integer  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 658,
+      "bottomRightX": 377,
+      "bottomRightY": 676,
+      "content": "Control the quality of the produced compressed stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 683,
+      "bottomRightX": 633,
+      "bottomRightY": 717,
+      "content": "This feature is available when ImageCompressionRateOption is equal to FixQuality or if the device only supports the FixQuality mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 724,
+      "bottomRightX": 618,
+      "bottomRightY": 757,
+      "content": "The list of valid values is device-specific. A higher value means a better quality for the produced compressed stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 771,
+      "bottomRightX": 352,
+      "bottomRightY": 792,
+      "content": "### 4.47.4 ImageCompressionBitrate",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 793,
+      "bottomRightX": 409,
+      "bottomRightY": 943,
+      "content": "|  Name | ImageCompressionBitrate  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | Float  |\n|  Access | Read/(Write)  |\n|  Unit | Mbps  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 155 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

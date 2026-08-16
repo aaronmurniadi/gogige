@@ -1,0 +1,346 @@
+{
+  "index": 368,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  ![img-108.jpeg](img-108.jpeg)CAN |   | ![img-109.jpeg](img-109.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 134,
+      "bottomRightX": 258,
+      "bottomRightY": 146,
+      "content": "// ***",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 164,
+      "bottomRightX": 458,
+      "bottomRightY": 177,
+      "content": "// Output Disparity map & Intensity from a 2 sensors device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 179,
+      "bottomRightX": 633,
+      "bottomRightY": 193,
+      "content": "// The 2 sensors features can be controlled using SourceSelector = Source1 or Source2.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 193,
+      "bottomRightX": 499,
+      "bottomRightY": 207,
+      "content": "// Using Source1 here to get the combined resulting disparity out.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 208,
+      "bottomRightX": 417,
+      "bottomRightY": 221,
+      "content": "// No explicit Region selector is used in the example.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 222,
+      "bottomRightX": 222,
+      "bottomRightY": 236,
+      "content": "SourceSelector = Source1;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 249,
+      "bottomRightX": 560,
+      "bottomRightY": 263,
+      "content": "// Setup 3D formatting, uncalibrated 2.5D disparity-coded range map output.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 264,
+      "bottomRightX": 538,
+      "bottomRightY": 279,
+      "content": "// Disparity has e.g. 0.25 (pixel) resolution and an offset 50 (pixels).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 279,
+      "bottomRightX": 675,
+      "bottomRightY": 294,
+      "content": "Scan3dOutputMode[Source1] = Disparity; // This can change Pixel Format, so set before query.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 294,
+      "bottomRightX": 196,
+      "bottomRightY": 307,
+      "content": "OffsetX[Source1] = 0;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 308,
+      "bottomRightX": 196,
+      "bottomRightY": 321,
+      "content": "OffsetY[Source1] = 0;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 323,
+      "bottomRightX": 215,
+      "bottomRightY": 335,
+      "content": "Width[Source1] = 2048;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 336,
+      "bottomRightX": 215,
+      "bottomRightY": 350,
+      "content": "Height[Source1] = 1024;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 365,
+      "bottomRightX": 325,
+      "bottomRightY": 379,
+      "content": "// Setup acquisition for selected sensor",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 380,
+      "bottomRightX": 488,
+      "bottomRightY": 394,
+      "content": "ComponentSelector[Source1] = Disparity; // Disparity",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 395,
+      "bottomRightX": 350,
+      "bottomRightY": 408,
+      "content": "ComponentEnable[Source1][Disparity] = True;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 408,
+      "bottomRightX": 607,
+      "bottomRightY": 422,
+      "content": "PixelFormat[Source1][Disparity] = Coord3D_C16; // 3D disparity output format.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 423,
+      "bottomRightX": 488,
+      "bottomRightY": 436,
+      "content": "ComponentSelector[Source1] = Confidence; //Confidence",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 437,
+      "bottomRightX": 350,
+      "bottomRightY": 451,
+      "content": "ComponentEnable[Source1][Confidence] = True;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 452,
+      "bottomRightX": 397,
+      "bottomRightY": 466,
+      "content": "PixelFormat[Source1][Confidence] = Confidence8;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 466,
+      "bottomRightX": 488,
+      "bottomRightY": 479,
+      "content": "ComponentSelector[Source1] = Intensity; // Intensity",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 481,
+      "bottomRightX": 350,
+      "bottomRightY": 494,
+      "content": "ComponentEnable[Source1][Intensity] = True;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 495,
+      "bottomRightX": 553,
+      "bottomRightY": 509,
+      "content": "PixelFormat[Source1][Intensity] = Mono8 // 2D Sensor 1 output.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 522,
+      "bottomRightX": 256,
+      "bottomRightY": 537,
+      "content": "// Get Disparity informations.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 538,
+      "bottomRightX": 667,
+      "bottomRightY": 552,
+      "content": "Scan3dCoordinateSelector[Source1] = CoordinateC; // Coordinate C -> Disparity.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 552,
+      "bottomRightX": 554,
+      "bottomRightY": 565,
+      "content": "scaleC = Scan3dCoordinateScale[Source1][CoordinateC]; // e.g. 0.25",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 566,
+      "bottomRightX": 542,
+      "bottomRightY": 580,
+      "content": "offsetC = Scan3dCoordinateOffset[Source1][CoordinateC]; // e.g. 50",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 581,
+      "bottomRightX": 620,
+      "bottomRightY": 595,
+      "content": "invalidFlagC = Scan3dInvalidDataFlag[Source1][CoordinateC]; // Invalid flag state.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 596,
+      "bottomRightX": 534,
+      "bottomRightY": 609,
+      "content": "invalidValueC = Scan3dInvalidDataValue[Source1][CoordinateC]; // e.g. 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 610,
+      "bottomRightX": 534,
+      "bottomRightY": 624,
+      "content": "bboxMinC = Scan3dAxisMin[Source1][CoordinateC]; // e.g. 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 625,
+      "bottomRightX": 569,
+      "bottomRightY": 638,
+      "content": "bboxMaxC = Scan3dAxisMax[Source1][CoordinateC]; // e.g. = 200",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 668,
+      "bottomRightX": 743,
+      "bottomRightY": 701,
+      "content": "The data output could in this case, and with the second sensor setup as the first (not shown) could be formatted as:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 726,
+      "bottomRightX": 702,
+      "bottomRightY": 932,
+      "content": "|  Component | Part | Source | Region | data type | data format  |\n| --- | --- | --- | --- | --- | --- |\n|  Disparity | 0 | 1 | Region 0 | 3D disparity image | Coord3D_C16  |\n|  Confidence | 1 | 1 | Region 0 | 3D confidence image | Confidence8  |\n|  Intensity | 2 | 1 | Region 0 | 2D image | Mono8  |\n|  Disparity | 3 | 2 | Region 0 | 3D disparity image | Coord3D_C16  |\n|  Confidence | 4 | 2 | Region 0 | 3D confidence image | Confidence8  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 369 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

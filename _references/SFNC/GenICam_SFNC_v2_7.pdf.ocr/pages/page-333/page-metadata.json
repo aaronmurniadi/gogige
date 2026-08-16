@@ -1,0 +1,131 @@
+{
+  "index": 332,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 754,
+      "bottomRightY": 218,
+      "content": "- Write: Writes FileAccessLength bytes taken from the FileAccessBuffer into the device storage at the file relative offset FileAccessOffset.\n- Delete: Deletes the file selected by FileSelector in the device. Note that deleting a device file should not remove the associated FileSelector entry to allow future operation on this file.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 232,
+      "bottomRightX": 288,
+      "bottomRightY": 253,
+      "content": "### 18.4 FileOperationExecute",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 253,
+      "bottomRightX": 553,
+      "bottomRightY": 468,
+      "content": "|  Name | FileOperationExecute[FileSelector][FileOperationSelector]  |\n| --- | --- |\n|  Category | FileAccessControl  |\n|  Level | Recommended  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 493,
+      "bottomRightX": 546,
+      "bottomRightY": 512,
+      "content": "Executes the operation selected by FileOperationSelector on the selected file.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 526,
+      "bottomRightX": 226,
+      "bottomRightY": 547,
+      "content": "### 18.5 FileOpenMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 549,
+      "bottomRightX": 386,
+      "bottomRightY": 798,
+      "content": "|  Name | FileOpenMode[FileSelector]  |\n| --- | --- |\n|  Category | FileAccessControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | Read Write ReadWrite  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 822,
+      "bottomRightX": 447,
+      "bottomRightY": 841,
+      "content": "Selects the access mode in which a file is opened in the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 848,
+      "bottomRightX": 177,
+      "bottomRightY": 864,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 876,
+      "bottomRightX": 465,
+      "bottomRightY": 946,
+      "content": "- Read: This mode selects read-only open mode.\n- Write: This mode selects write-only open mode.\n- ReadWrite: This mode selects read and write open mode.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 333 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 615,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "index": 67,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 291,
+      "bottomRightY": 61,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 548,
+      "bottomRightY": 80,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 549,
+      "topLeftY": 65,
+      "bottomRightX": 590,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 76,
+      "bottomRightX": 119,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 173,
+      "topLeftY": 76,
+      "bottomRightX": 385,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 927,
+      "bottomRightY": 432,
+      "content": "|  TransferResume[TransferSelector] | O | ICommand | (R)/W | - | G | Resumes a data Blocks streaming that was previously paused by a TransferPause command.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  TransferTriggerSelector[TransferSelector] | O | IEnumeration | R/W | - | G | Selects the type of transfer trigger to configure.  |\n|  TransferTriggerMode[TransferSelector][TransferTriggerSelector] | R | IEnumeration | R/W | - | G | Controls if the selected trigger is active.  |\n|  TransferTriggerSource[TransferTriggerSelector] | O | IEnumeration | R/W | - | G | Specifies the signal to use as the trigger source for transfers.  |\n|  TransferTriggerActivation[TransferTriggerSelector] | O | IEnumeration | R/W | - | G | Specifies the activation mode of the transfer control trigger.  |\n|  TransferStatusSelector[TransferSelector] | R | IEnumeration | R/W | - | G | Selects which status of the transfer module to read.  |\n|  TransferStatus[TransferStatusSelector] | R | IBool | R | - | G | Reads the status of the Transfer module signal selected by TransferStatusSelector.  |\n|  TransferComponentSelector[TransferSelector] | O | IEnumeration | R/W | - | G | Selects the color component for the control of the TransferStreamChannel feature.  |\n|  TransferStreamChannel[TransferSelector][TransferComponentSelector] | O | IInteger | R/W | - | G | Selects the streaming channel that will be used to transfer the selected stream of data.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 462,
+      "bottomRightX": 245,
+      "bottomRightY": 480,
+      "content": "### 2.19Scan 3D Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 485,
+      "bottomRightX": 746,
+      "bottomRightY": 502,
+      "content": "Contains the features related to the control of the 3D scan features (See the 3D Scan Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 370,
+      "topLeftY": 509,
+      "bottomRightX": 603,
+      "bottomRightY": 526,
+      "content": "Table 2-19: 3D Scan Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 531,
+      "bottomRightX": 927,
+      "bottomRightY": 650,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  Scan3dControl | O | ICategory | R | - | B | Category for control of 3D camera specific features.  |\n|  Scan3dExtractionSelector | O | IEnumeration | R/W | - | E | Selects the 3D Extraction processing module to control (if multiple ones are present).  |\n|  Scan3dExtractionSource[Scan3dExtractionSelector] | O | IEnumeration | R/W | - | E | Selects the sensor's data source region for 3D Extraction module.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 652,
+      "bottomRightX": 120,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 652,
+      "bottomRightX": 373,
+      "bottomRightY": 669,
+      "content": "Page 68 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 653,
+      "bottomRightX": 591,
+      "bottomRightY": 669,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

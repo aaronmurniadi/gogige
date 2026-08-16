@@ -1,0 +1,132 @@
+{
+  "index": 270,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 132,
+      "bottomRightX": 515,
+      "bottomRightY": 189,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | > 0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 213,
+      "bottomRightX": 704,
+      "bottomRightY": 232,
+      "content": "Sets how many Encoder increments/decrements are needed to generate an Encoder output pulse signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 272,
+      "bottomRightX": 282,
+      "bottomRightY": 294,
+      "content": "### 11.2.7 EncoderOutputMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 294,
+      "bottomRightX": 515,
+      "bottomRightY": 598,
+      "content": "|  Name | EncoderOutputMode[EncoderSelector]  |\n| --- | --- |\n|  Category | EncoderControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Off PositionUp PositionDown DirectionUp DirectionDown Motion  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 622,
+      "bottomRightX": 620,
+      "bottomRightY": 640,
+      "content": "Selects the conditions for the Encoder interface to generate a valid Encoder output signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 647,
+      "bottomRightX": 188,
+      "bottomRightY": 664,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 674,
+      "bottomRightX": 749,
+      "bottomRightY": 859,
+      "content": "- Off: No output pulse are generated.\n- PositionUp: Output pulses are generated at all new positions in the positive direction. If the encoder reverses no output pulse are generated until it has again passed the position where the reversal started.\n- PositionDown: Output pulses are generated at all new positions in the negative direction. If the encoder reverses no output pulse are generated until it has again passed the position where the reversal started.\n- DirectionUp: Output pulses are generated at all position increments in the positive direction while ignoring negative direction motion.\n- DirectionDown: Output pulses are generated at all position increments in the negative direction while ignoring positive direction motion.\n- Motion: Output pulses are generated at all motion increments in both directions.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 891,
+      "bottomRightX": 230,
+      "bottomRightY": 910,
+      "content": "### 11.2.8 EncoderStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 914,
+      "bottomRightX": 515,
+      "bottomRightY": 944,
+      "content": "|  Name | EncoderStatus[EncoderSelector]  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 271 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

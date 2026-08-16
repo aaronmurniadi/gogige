@@ -1,0 +1,167 @@
+{
+  "index": 286,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 82,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 109,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 102,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 134,
+      "bottomRightX": 747,
+      "bottomRightY": 189,
+      "content": "There must always be 2ⁿ entries in the LUT, where n is the number of input in the LUT. The index must be 0 based and row 0 refers to the entry with all inputs at logic level 0 (False). Index value of 2ⁿ-1 refers to the entry with all inputs at logic level 1 (True).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 203,
+      "bottomRightX": 329,
+      "bottomRightY": 225,
+      "content": "### 12.2.9 LogicBlockLUTValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 227,
+      "bottomRightX": 615,
+      "bottomRightY": 459,
+      "content": "|  Name | LogicBlockLUTValue[LogicBlockSelector][LogicBlockLUTIndex]  |\n| --- | --- |\n|  Category | LogicBlockControl  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 482,
+      "bottomRightX": 697,
+      "bottomRightY": 502,
+      "content": "Read or Write the Value associated with the entry at index LogicBlockLUTIndex of the selected LUT.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 515,
+      "bottomRightX": 352,
+      "bottomRightY": 537,
+      "content": "### 12.2.10 LogicBlockLUTValueAll",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 539,
+      "bottomRightX": 615,
+      "bottomRightY": 752,
+      "content": "|  Name | LogicBlockLUTValueAll[LogicBlockSelector]  |\n| --- | --- |\n|  Category | LogicBlockControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 776,
+      "bottomRightX": 734,
+      "bottomRightY": 833,
+      "content": "Sets the values of all the output bits of the selected LUT in one access ignoring LogicBlockLUTIndex. LogicBlockLUTValueAll value can be any binary number and each bit correspond to the output value for the corresponding index (i.e. Bit 0 = LUT Index 0 output binary value).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 870,
+      "bottomRightX": 352,
+      "bottomRightY": 892,
+      "content": "### 12.2.11 LogicBlockLUTSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 894,
+      "bottomRightX": 463,
+      "bottomRightY": 950,
+      "content": "|  Name | LogicBlockLUTSelector[LogicBlockSelector]  |\n| --- | --- |\n|  Category | LogicBlockControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 287 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

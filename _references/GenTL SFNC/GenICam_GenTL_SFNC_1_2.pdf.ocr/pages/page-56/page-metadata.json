@@ -1,0 +1,123 @@
+{
+  "index": 55,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-14.jpeg](img-14.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 191,
+      "bottomRightX": 286,
+      "bottomRightY": 208,
+      "content": "3.2.1.1 InterfaceInformation",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 212,
+      "bottomRightX": 421,
+      "bottomRightY": 425,
+      "content": "|  Name | InterfaceInformation  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 449,
+      "bottomRightX": 591,
+      "bottomRightY": 467,
+      "content": "Category that contains all Interface Information features of the Interface module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 481,
+      "bottomRightX": 224,
+      "bottomRightY": 499,
+      "content": "3.2.1.2 InterfaceID",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 502,
+      "bottomRightX": 421,
+      "bottomRightY": 715,
+      "content": "|  Name | InterfaceID  |\n| --- | --- |\n|  Category | InterfaceInformation  |\n|  Level | Mandatory  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 739,
+      "bottomRightX": 491,
+      "bottomRightY": 758,
+      "content": "GenTL Producer wide unique identifier of the selected interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 767,
+      "bottomRightX": 599,
+      "bottomRightY": 785,
+      "content": "Corresponds to the INTERFACE_INFO_ID command of IFGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 800,
+      "bottomRightX": 301,
+      "bottomRightY": 818,
+      "content": "3.2.1.3 InterfaceDisplayName",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 820,
+      "bottomRightX": 421,
+      "bottomRightY": 902,
+      "content": "|  Name | InterfaceDisplayName  |\n| --- | --- |\n|  Category | InterfaceInformation  |\n|  Level | Recommended  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 427,
+      "bottomRightY": 944,
+      "content": "Page 56 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

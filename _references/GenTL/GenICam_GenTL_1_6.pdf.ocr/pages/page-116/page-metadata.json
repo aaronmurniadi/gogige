@@ -1,0 +1,327 @@
+{
+  "index": 115,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-158.jpeg](img-158.jpeg)CAM |   | ![img-159.jpeg](img-159.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 138,
+      "bottomRightX": 270,
+      "bottomRightY": 157,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 172,
+      "content": "The handle hPort is invalid (NULL) or does not reference an open module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 180,
+      "bottomRightX": 295,
+      "bottomRightY": 199,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 180,
+      "bottomRightX": 635,
+      "bottomRightY": 214,
+      "content": "Parameter piNumURLs is an invalid pointer (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 222,
+      "bottomRightX": 278,
+      "bottomRightY": 240,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 222,
+      "bottomRightX": 635,
+      "bottomRightY": 257,
+      "content": "The provided module handle does not have a Port module implemented.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 264,
+      "bottomRightX": 165,
+      "bottomRightY": 282,
+      "content": "GC_ERR_IO",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 264,
+      "bottomRightX": 545,
+      "bottomRightY": 280,
+      "content": "Communication error or connection lost.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 312,
+      "bottomRightX": 635,
+      "bottomRightY": 346,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 359,
+      "bottomRightX": 270,
+      "bottomRightY": 376,
+      "content": "##### 6.3.6.4 GCGetPortURLInfo",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 399,
+      "bottomRightX": 156,
+      "bottomRightY": 416,
+      "content": "GC ERROR",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 169,
+      "topLeftY": 399,
+      "bottomRightX": 311,
+      "bottomRightY": 415,
+      "content": "GCGetPortURLInfo",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 399,
+      "bottomRightX": 583,
+      "bottomRightY": 498,
+      "content": "( PORT_HANDLE hPort,\n    uint32_t iURLIndex,\n    URL_INFO_CMD iInfoCmd,\n    INFO_DATATYPE * piType,\n    void * pBuffer,\n    size_t * piSize )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 507,
+      "bottomRightX": 468,
+      "bottomRightY": 525,
+      "content": "Queries detailed port information as defined in URL_INFO_CMD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 532,
+      "bottomRightX": 635,
+      "bottomRightY": 568,
+      "content": "In case a module does not support multiple URLs and/or the related information the function will return GC_ERR_NOT_AVAILABLE for information which cannot be retrieved.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 611,
+      "bottomRightX": 165,
+      "bottomRightY": 628,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 632,
+      "bottomRightX": 172,
+      "bottomRightY": 649,
+      "content": "[in] hPort",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 633,
+      "bottomRightX": 608,
+      "bottomRightY": 649,
+      "content": "Module or remote device port handle to access Port from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 650,
+      "bottomRightX": 202,
+      "bottomRightY": 666,
+      "content": "[in] iURLIndex",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 650,
+      "bottomRightX": 499,
+      "bottomRightY": 666,
+      "content": "Zero based index of the URL to query.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 667,
+      "bottomRightX": 193,
+      "bottomRightY": 684,
+      "content": "[in] iInfoCmd",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 667,
+      "bottomRightX": 621,
+      "bottomRightY": 684,
+      "content": "Information to be retrieved as defined in URL_INFO_CMD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 685,
+      "bottomRightX": 177,
+      "bottomRightY": 702,
+      "content": "[out] piType",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 685,
+      "bottomRightX": 593,
+      "bottomRightY": 718,
+      "content": "Data type of the pBuffer content as defined in the URL URL_INFO_CMD and INFO_DATATYPE.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 719,
+      "bottomRightX": 182,
+      "bottomRightY": 737,
+      "content": "[in,out] pBuffer",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 719,
+      "bottomRightX": 634,
+      "bottomRightY": 787,
+      "content": "Pointer to a user allocated buffer to receive the requested information. If this parameter is NULL, piSize will contain the minimal size of pBuffer in bytes. If the piType is a string the size includes the terminating 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 788,
+      "bottomRightX": 172,
+      "bottomRightY": 805,
+      "content": "[in,out] piSize",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 789,
+      "bottomRightX": 395,
+      "bottomRightY": 805,
+      "content": "pBuffer equal NULL:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 805,
+      "bottomRightX": 625,
+      "bottomRightY": 839,
+      "content": "out: minimal size of pBuffer in bytes to hold all information.\npBuffer unequal NULL:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 840,
+      "bottomRightX": 507,
+      "bottomRightY": 856,
+      "content": "in: size of the provided pBuffer in bytes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 857,
+      "bottomRightX": 524,
+      "bottomRightY": 873,
+      "content": "out: number of bytes filled by the function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 887,
+      "bottomRightX": 141,
+      "bottomRightY": 904,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 116 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

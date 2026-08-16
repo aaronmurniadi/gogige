@@ -1,0 +1,132 @@
+{
+  "index": 546,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 378,
+      "bottomRightY": 166,
+      "content": "### 27.4.65 GevSCPSDoNotFragment",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 541,
+      "bottomRightY": 397,
+      "content": "|  Name | GevSCPSDoNotFragment[GevStreamChannelSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 422,
+      "bottomRightX": 737,
+      "bottomRightY": 461,
+      "content": "The state of this feature is copied into the \"do not fragment\" bit of IP header of each stream packet. It can be used by the application to prevent IP fragmentation of packets on the stream channel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 473,
+      "bottomRightX": 445,
+      "bottomRightY": 497,
+      "content": "### 27.4.66 GevSCPSBigEndian (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 497,
+      "bottomRightX": 504,
+      "bottomRightY": 727,
+      "content": "|  Name | GevSCPSBigEndian[GevStreamChannelSelector]  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 752,
+      "bottomRightX": 729,
+      "bottomRightY": 788,
+      "content": "This feature is deprecated (See DeviceStreamChannelEndianness). It was used to control the endianness of multi-byte pixel data for this stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 796,
+      "bottomRightX": 734,
+      "bottomRightY": 832,
+      "content": "This is an optional feature. A device that does not support this feature must support little-endian and always leave that bit clear.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 847,
+      "bottomRightX": 335,
+      "bottomRightY": 867,
+      "content": "### 27.4.67 GevSCPSPacketSize",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 869,
+      "bottomRightX": 504,
+      "bottomRightY": 926,
+      "content": "|  Name | GevSCPSPacketSize[GevStreamChannelSelector]  |\n| --- | --- |\n|  Category | GigEVision  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 547 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

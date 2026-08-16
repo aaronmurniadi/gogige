@@ -1,0 +1,131 @@
+{
+  "index": 396,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 456,
+      "bottomRightY": 180,
+      "content": "- Scan3dExtraction2: Selects Scan3d Extraction module 2.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 197,
+      "bottomRightX": 363,
+      "bottomRightY": 216,
+      "content": "21.4.3 Scan3dExtractionSource",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 218,
+      "bottomRightX": 504,
+      "bottomRightY": 512,
+      "content": "|  Name | Scan3dExtractionSource[Scan3dExtractionSelector]  |\n| --- | --- |\n|  Category | Scan3dControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Region0, Region1, Region2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 536,
+      "bottomRightX": 462,
+      "bottomRightY": 554,
+      "content": "Selects the sensor's data source region for 3D Extraction module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 561,
+      "bottomRightX": 572,
+      "bottomRightY": 581,
+      "content": "Typically these are Sensor Regions, but it could also be another ProcessingModule.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 587,
+      "bottomRightX": 177,
+      "bottomRightY": 603,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 613,
+      "bottomRightX": 382,
+      "bottomRightY": 711,
+      "content": "- Region0: Data come from Sensor's Region0.\n- Region1: Data come from Sensor's Region1.\n- Region2: Data come from Sensor's Region2.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 727,
+      "bottomRightX": 364,
+      "bottomRightY": 747,
+      "content": "21.4.4 Scan3dExtractionMethod",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 750,
+      "bottomRightX": 510,
+      "bottomRightY": 937,
+      "content": "|  Name | Scan3dExtractionMethod[Scan3dExtractionSelector]  |\n| --- | --- |\n|  Category | Scan3dControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 397 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

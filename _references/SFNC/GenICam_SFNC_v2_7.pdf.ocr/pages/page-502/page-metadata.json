@@ -1,0 +1,112 @@
+{
+  "index": 501,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 743,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 143,
+      "bottomRightX": 738,
+      "bottomRightY": 198,
+      "content": "Note: Device is the name of the standard port that is used to connect the node map to the transport layer and access the control port of the device. Device is a port node (not a feature node) and is generally not accessed by the end user directly. Device must not be included in the root feature tree.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 213,
+      "bottomRightX": 350,
+      "bottomRightY": 233,
+      "content": "### 26.1.1 ValueArrayCandidates",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 236,
+      "bottomRightX": 396,
+      "bottomRightY": 450,
+      "content": "|  Name | ValueArrayCandidates  |\n| --- | --- |\n|  Category | None  |\n|  Level | Optional  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 473,
+      "bottomRightX": 740,
+      "bottomRightY": 510,
+      "content": "Advertises selector/value feature pairs suitable for use with GenApi ValueArrayAdapter utility which allows efficient extraction of features under selectors (for example Chunk features).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 516,
+      "bottomRightX": 677,
+      "bottomRightY": 554,
+      "content": "The features are listed in a comma separated list with the syntax FeatureA[SelectorB], for instance ChunkTimestamp[ChunkScanLineSelector].",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 561,
+      "bottomRightX": 597,
+      "bottomRightY": 580,
+      "content": "The string is expected to be static, not changing its value depending on other features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 586,
+      "bottomRightX": 742,
+      "bottomRightY": 641,
+      "content": "The ValueArrayAdapter utility provides optimized access to a (large) array of values that has to be otherwise read using the value feature itself and associated selector (acting as the array index). If the array is large and reasonably compact (non-sparse), the adapter can bring significant performance advantage.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 502 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

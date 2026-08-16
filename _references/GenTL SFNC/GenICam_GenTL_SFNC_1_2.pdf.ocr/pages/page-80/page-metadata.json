@@ -1,0 +1,132 @@
+{
+  "index": 79,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 185,
+      "content": "|  Values | Any NULL-terminated string  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 211,
+      "bottomRightX": 380,
+      "bottomRightY": 228,
+      "content": "Interface-wide unique identifier of this device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 238,
+      "bottomRightX": 581,
+      "bottomRightY": 257,
+      "content": "Corresponds to the DEVICE_INFO_ID command of DevGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 269,
+      "bottomRightX": 293,
+      "bottomRightY": 288,
+      "content": "### 3.3.1.3 DeviceSerialNumber",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 290,
+      "bottomRightX": 421,
+      "bottomRightY": 504,
+      "content": "|  Name | DeviceSerialNumber  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Recommended  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 529,
+      "bottomRightX": 314,
+      "bottomRightY": 547,
+      "content": "Serial number of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 553,
+      "bottomRightX": 695,
+      "bottomRightY": 626,
+      "content": "Corresponds to the \"DeviceSerialNumber\" feature of the remote device and usually is retrieved via the bootstrap register of the remote device. Note that this feature has been added in GenICam SFNC 2.0, thus, for remote devices following an older GenICam SFNC version it corresponds to the \"DeviceID\" feature of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 634,
+      "bottomRightX": 684,
+      "bottomRightY": 653,
+      "content": "Corresponds to the DEVICE_INFO_SERIAL_NUMBER command of DevGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 667,
+      "bottomRightX": 245,
+      "bottomRightY": 684,
+      "content": "### 3.3.1.4 DeviceUserID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 687,
+      "bottomRightX": 421,
+      "bottomRightY": 901,
+      "content": "|  Name | DeviceUserID  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Optional  |\n|  Interface | IString  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 945,
+      "content": "Page 80 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "index": 244,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 135,
+      "bottomRightX": 462,
+      "bottomRightY": 152,
+      "content": "Select the events that will be the source to increment the Counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 161,
+      "bottomRightX": 384,
+      "bottomRightY": 179,
+      "content": "See Figure 5-1, Figure 5-3 and Figure 5-4 for details.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 186,
+      "bottomRightX": 177,
+      "bottomRightY": 203,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 213,
+      "bottomRightX": 717,
+      "bottomRightY": 926,
+      "content": "- Off: Counter is stopped.\n- AcquisitionTrigger: Counts the number of Acquisition Trigger.\n- AcquisitionTriggerMissed: Counts the number of missed Acquisition Start Trigger.\n- AcquisitionStart: Counts the number of Acquisition Start.\n- AcquisitionEnd: Counts the number of Acquisition End.\n- FrameTrigger: Counts the number of Frame Start Trigger.\n- FrameTriggerMissed: Counts the number of missed Frame Start Trigger.\n- FrameStart: Counts the number of Frame Start.\n- FrameEnd: Counts the number of Frame End.\n- FrameBurstStart: Counts the number of Frame Burst Start.\n- FrameBurstEnd: Counts the number of Frame Burst End.\n- LineTrigger: Counts the number of Line Start Trigger.\n- LineTriggerMissed: Counts the number of missed Line Start Trigger.\n- LineStart: Counts the number of Line Start.\n- LineEnd: Counts the number of Line End.\n- ExposureStart: Counts the number of Exposure Start.\n- ExposureEnd: Counts the number of Exposure End.\n- Line0, Line1, Line2, ...: Counts the number of transitions on the chosen I/O Line.\n- Counter0Start, Counter1Start, Counter2Start, ...: Counts the number of Counter Start.\n- Counter0End, Counter1End, Counter2End, ...: Counts the number of Counter End.\n- Timer0Start, Timer1Start, Timer2Start, ...: Counts the number of Timer Start pulses generated.\n- Timer0End, Timer1End, Timer2End, ...: Counts the number of Timer End pulses generated.\n- Encoder0, Encoder1, Encoder2, ...: Counts the number of Encoder output pulses.\n- LogicBlock0, LogicBlock1, LogicBlock2, ...: Counts the number of Logic Block output pulses.\n- SoftwareSignal0, SoftwareSignal1, SoftwareSignal2, ...: Counts the number of Software Signal.\n- Action0, Action1, Action2, ...: Counts the number of assertions of the chosen action signal.\n- LinkTrigger0, LinkTrigger1, LinkTrigger2, ...: Counts the number of Link Triggers.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 245 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "index": 174,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-260.jpeg](img-260.jpeg)CAN |   | ![img-261.jpeg](img-261.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 136,
+      "bottomRightX": 644,
+      "bottomRightY": 242,
+      "content": "|  Member | Type | Description  |\n| --- | --- | --- |\n|  ChunkID | uint64_t | Numeric representation of the chunk's ChunkID.  |\n|  ChunkOffset | ptrdiff_t | Offset of the chunk's data from the start of the buffer (in bytes).  |\n|  ChunkLength | size_t | Size of the given chunk data (in bytes).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 271,
+      "bottomRightX": 347,
+      "bottomRightY": 289,
+      "content": "#### 6.5.1.2 DS_BUFFER_INFO_STACKED",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 312,
+      "bottomRightX": 339,
+      "bottomRightY": 328,
+      "content": "struct DS_BUFFER_INFO_STACKED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 338,
+      "bottomRightX": 637,
+      "bottomRightY": 374,
+      "content": "Layout of the array elements being used in the function DSGetBufferInfoStacked to carry information about multiple buffer infos as defined in BUFFER_INFO_CMD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 379,
+      "bottomRightX": 644,
+      "bottomRightY": 677,
+      "content": "|  Member | Type | Description  |\n| --- | --- | --- |\n|  iInfoCmd [in] | BUFFER_INFO_CMD | The buffer info to be retrieved.  |\n|  iType [out] | INFO_DATATYPE | Data type of the pBuffer content as defined in the BUFFER_INFO_CMD and INFO_DATATYPE.  |\n|  pBuffer [in,out] | void* | Pointer to a user allocated buffer to receive the requested information. If this parameter is NULL, iSize will contain the minimal size of pBuffer in bytes. If the iType is a string the size includes the terminating 0.  |\n|  iSize [in,out] | size_t | pBuffer equal NULL: out: minimal size of pBuffer in bytes to hold all information.pBuffer unequal NULL: in: size of the provided pBuffer in bytes. out: number of bytes filled by the function.  |\n|  iResult [out] | GC_ERROR | The result of the buffer info query.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 678,
+      "bottomRightX": 637,
+      "bottomRightY": 712,
+      "content": "DSGetBufferInfoStacked queries multiple buffer infos as defined in BUFFER_INFO_CMD at once.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 718,
+      "bottomRightX": 637,
+      "bottomRightY": 789,
+      "content": "The purpose and “direction” (in/out) of the structure data members is same as corresponding parameters of the DSGetBufferInfo function. Similar as other get-info functions, the buffer size required to hold given information can be negotiated first as described for the pBuffer==NULL above.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 797,
+      "bottomRightX": 637,
+      "bottomRightY": 866,
+      "content": "When retrieving multiple infos through DSGetBufferInfoStacked call, each DS_BUFFER_INFO_STACKED structure is handled independently on the others. GenTL Consumer should receive identical output (iResult and the value in pBuffer), no matter if it used single DSGetBufferInfoStacked or sequence of DSGetBufferInfo calls.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 175 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "index": 124,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-26.jpeg](img-26.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 117,
+      "bottomRightX": 399,
+      "bottomRightY": 293,
+      "content": "|  Interface | IEnumeration  |\n| --- | --- |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Stream0Stream1Stream2...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 316,
+      "bottomRightX": 319,
+      "bottomRightY": 333,
+      "content": "Control the destination of the selected region.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 340,
+      "bottomRightX": 169,
+      "bottomRightY": 356,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 365,
+      "bottomRightX": 445,
+      "bottomRightY": 457,
+      "content": "- Stream0: The destination of the region is the data stream 0.\n- Stream1: The destination of the region is the data stream 1.\n- Stream2: The destination of the region is the data stream 2.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 479,
+      "bottomRightX": 218,
+      "bottomRightY": 498,
+      "content": "4.10RegionIDValue",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 499,
+      "bottomRightX": 399,
+      "bottomRightY": 700,
+      "content": "|  Name | RegionIDValue[RegionSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 721,
+      "bottomRightX": 480,
+      "bottomRightY": 739,
+      "content": "Returns a unique Identifier value that corresponds to the selected Region.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 745,
+      "bottomRightX": 640,
+      "bottomRightY": 779,
+      "content": "This value is typically used by the Transport Layer to specify the Region from which the transmitted data come from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 818,
+      "bottomRightX": 259,
+      "bottomRightY": 838,
+      "content": "4.11 ComponentSelector",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 840,
+      "bottomRightX": 399,
+      "bottomRightY": 941,
+      "content": "|  Name | ComponentSelector  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 125 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

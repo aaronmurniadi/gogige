@@ -1,0 +1,121 @@
+{
+  "index": 66,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 292,
+      "bottomRightY": 61,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 76,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 171,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 107,
+      "bottomRightX": 920,
+      "bottomRightY": 153,
+      "content": "|  SourceSelector | O | IEnumeration | R/W | - | B | Selects the source to control.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  SourceIDValue[SourceSelector] | O | IInteger | R | - | E | Returns a unique Identifier value that correspond to the selected Source.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 184,
+      "bottomRightX": 246,
+      "bottomRightY": 202,
+      "content": "## 2.18 Transfer Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 207,
+      "bottomRightX": 707,
+      "bottomRightY": 224,
+      "content": "Contains the features related to the control of the Transfers (See the Transfer Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 370,
+      "topLeftY": 231,
+      "bottomRightX": 605,
+      "bottomRightY": 248,
+      "content": "Table 2-18: Transfer Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 253,
+      "bottomRightX": 920,
+      "bottomRightY": 630,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  TransferControl | R | ICategory | R | - | E | Category for the data Transfer Control features.  |\n|  TransferSelector | O | IEnumeration | R/(W) | - | E | Selects which stream transfers are currently controlled by the selected Transfer features.  |\n|  TransferControlMode[TransferSelector] | R | IEnumeration | R/(W) | - | E | Selects the control method for the transfers.  |\n|  TransferOperationMode[TransferSelector] | O | IEnumeration | R/(W) | - | E | Selects the operation mode of the transfer.  |\n|  TransferBlockCount[TransferSelector] | O | IInteger | R/(W) | - | E | Specifies the number of data Blocks that the device should stream before stopping.  |\n|  TransferBurstCount | O | IInteger | R/W | - | E | Number of Block(s) to transfer for each TransferBurstStart trigger.  |\n|  TransferQueueMaxBlockCount[TransferSelector] | O | IInteger | R/(W) | - | E | Controls the maximum number of data blocks that can be stored in the block queue of the selected stream.  |\n|  TransferQueueCurrentBlockCount[TransferSelector] | O | IInteger | R | - | E | Returns the number of Block(s) currently in the transfer queue.  |\n|  TransferQueueMode[TransferSelector] | O | IEnumeration | R/(W) | - | E | Specifies the operation mode of the transfer queue.  |\n|  TransferStart[TransferSelector] | O | ICommand | (R)/W | - | E | Starts the streaming of data blocks out of the device.  |\n|  TransferStop[TransferSelector] | O | ICommand | (R)/W | - | E | Stops the streaming of data Block(s).  |\n|  TransferAbort[TransferSelector] | O | ICommand | (R)/W | - | E | Aborts immediately the streaming of data block(s).  |\n|  TransferPause[TransferSelector] | O | ICommand | (R)/W | - | G | Pauses the streaming of data Block(s).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 651,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 67 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

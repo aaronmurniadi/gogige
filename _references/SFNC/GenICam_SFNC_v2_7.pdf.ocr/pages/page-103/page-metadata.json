@@ -1,0 +1,158 @@
+{
+  "index": 102,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 142,
+      "topLeftY": 34,
+      "bottomRightX": 278,
+      "bottomRightY": 63,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 492,
+      "topLeftY": 37,
+      "bottomRightX": 577,
+      "bottomRightY": 84,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 77,
+      "bottomRightX": 107,
+      "bottomRightY": 93,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 158,
+      "topLeftY": 77,
+      "bottomRightX": 373,
+      "bottomRightY": 94,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 119,
+      "bottomRightX": 376,
+      "bottomRightY": 309,
+      "content": "|  **Category** | DeviceControl  |\n| --- | --- |\n|  **Level** | Optional  |\n|  **Interface** | IEnumeration  |\n|  **Access** | Read/Write  |\n|  **Unit** | -  |\n|  **Visibility** | Expert  |\n|  **Values** | On Off  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 332,
+      "bottomRightX": 304,
+      "bottomRightY": 351,
+      "content": "Activate or deactivate the Link's heartbeat.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 358,
+      "bottomRightX": 171,
+      "bottomRightY": 374,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 382,
+      "bottomRightX": 292,
+      "bottomRightY": 417,
+      "content": "- **Off:** Disables the Link heartbeat.\n- **On:** Enables the Link heartbeat.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 430,
+      "bottomRightX": 333,
+      "bottomRightY": 450,
+      "content": "### 3.40 DeviceLinkHeartbeatTimeout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 451,
+      "bottomRightX": 376,
+      "bottomRightY": 666,
+      "content": "|  **Name** | DeviceLinkHeartbeatTimeout [DeviceLinkSelector]  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Optional  |\n|  **Interface** | IFloat  |\n|  **Access** | Read/Write  |\n|  **Unit** | us  |\n|  **Visibility** | Guru  |\n|  **Values** | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 691,
+      "bottomRightX": 397,
+      "bottomRightY": 708,
+      "content": "Controls the current heartbeat timeout of the specific Link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 721,
+      "bottomRightX": 338,
+      "bottomRightY": 742,
+      "content": "### 3.41 DeviceLinkCommandTimeout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 743,
+      "bottomRightX": 376,
+      "bottomRightY": 931,
+      "content": "|  **Name** | DeviceLinkCommandTimeout [DeviceLinkSelector]  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Optional  |\n|  **Interface** | IFloat  |\n|  **Access** | Read  |\n|  **Unit** | us  |\n|  **Visibility** | Guru  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 948,
+      "bottomRightX": 109,
+      "bottomRightY": 966,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 948,
+      "bottomRightX": 365,
+      "bottomRightY": 967,
+      "content": "Page 103 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 948,
+      "bottomRightX": 579,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

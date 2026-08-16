@@ -1,0 +1,139 @@
+{
+  "index": 197,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 133,
+      "bottomRightX": 377,
+      "bottomRightY": 445,
+      "content": "|  Access | Read/Write  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Common Red Green Blue Cyan Magenta Yellow Infrared Ultraviolet Stage1 Stage2 ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 469,
+      "bottomRightX": 734,
+      "bottomRightY": 507,
+      "content": "Selects which exposure time is controlled by the ExposureTime feature. This allows for independent control over the exposure components.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 513,
+      "bottomRightX": 382,
+      "bottomRightY": 532,
+      "content": "The possible values for ExposureTimeSelector are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 540,
+      "bottomRightX": 405,
+      "bottomRightY": 766,
+      "content": "- Common: Selects the common ExposureTime.\n- Red: Selects the red common ExposureTime.\n- Green: Selects the green ExposureTime.\n- Blue: Selects the blue ExposureTime.\n- Cyan: Selects the cyan common ExposureTime.\n- Magenta: Selects the magenta ExposureTime.\n- Yellow: Selects the yellow ExposureTime.\n- Infrared: Selects the infrared ExposureTime.\n- Ultraviolet: Selects the ultraviolet ExposureTime.\n- Stage1: Selects the first stage ExposureTime.\n- Stage2: Selects the second stage ExposureTime.\n- ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 782,
+      "bottomRightX": 272,
+      "bottomRightY": 804,
+      "content": "### 5.7.4 ExposureTime",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 805,
+      "bottomRightX": 424,
+      "bottomRightY": 940,
+      "content": "|  Name | ExposureTime[ExposureTimeSelector]  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 198 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "index": 69,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 522,
+      "bottomRightY": 370,
+      "content": "|  TLType | GigEVision  |\n| --- | --- |\n|  Interface | IEnum  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Open ControlAccess ExclusiveAccess NoAccess  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 395,
+      "bottomRightX": 622,
+      "bottomRightY": 447,
+      "content": "The current control mode of the device. This value only changes on execution of the DeviceUpdateList command. See also DeviceAccessStatus, which gives a similar TL independent status. The values are.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 458,
+      "bottomRightX": 699,
+      "bottomRightY": 607,
+      "content": "- Open : The device is open for control or exclusive access.\n- ControlAccess: The device is controlled by another host, but switchover or readonly access is possible.\n- ExclusiveAccess: The device is under exclusive access by a host and cannot be accessed by another.\n- NoAccess: The device cannot be accessed, for instance it may be a GigE Vision device on a subnet different from the interface.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 624,
+      "bottomRightX": 391,
+      "bottomRightY": 643,
+      "content": "### 3.2.2.19 GevApplicationSwitchoverKey",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 644,
+      "bottomRightX": 516,
+      "bottomRightY": 884,
+      "content": "|  Name | GevApplicationSwitchoverKey[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Optional  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 70 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

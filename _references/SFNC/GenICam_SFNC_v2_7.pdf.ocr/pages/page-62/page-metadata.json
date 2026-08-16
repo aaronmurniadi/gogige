@@ -1,0 +1,122 @@
+{
+  "index": 61,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 49,
+      "topLeftY": 24,
+      "bottomRightX": 701,
+      "bottomRightY": 99,
+      "content": "|  **GEN<i>CAM** |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 109,
+      "bottomRightX": 231,
+      "bottomRightY": 128,
+      "content": "## 2.12 Action Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 133,
+      "bottomRightX": 812,
+      "bottomRightY": 150,
+      "content": "Contains the features related to the control of the Action command mechanism (See the Action Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 375,
+      "topLeftY": 157,
+      "bottomRightX": 599,
+      "bottomRightY": 173,
+      "content": "Table 2-12: Action Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 178,
+      "bottomRightX": 921,
+      "bottomRightY": 424,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  ActionControl | R | ICategory | R | - | G | Category that contains the Action control features.  |\n|  ActionUnconditionalMode | O | IEnumeration | R/W | - | G | Enables the unconditional action command mode where action commands are processed even when the primary control channel is closed.  |\n|  ActionDeviceKey | O | IInteger | W-O | - | G | Provides the device key that allows the device to check the validity of action commands.  |\n|  ActionQueueSize | O | IInteger | R | - | G | Indicates the size of the scheduled action commands queue.  |\n|  ActionSelector | O | IInteger | R/W | - | G | Selects to which Action Signal further Action settings apply.  |\n|  ActionGroupMask[ActionSelector] | O | IInteger | R/W | - | G | Provides the mask that the device will use to validate the action on reception of the action protocol message.  |\n|  ActionGroupKey[ActionSelector] | O | IInteger | R/W | - | G | Provides the key that the device will use to validate the action on reception of the action protocol message.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 455,
+      "bottomRightX": 225,
+      "bottomRightY": 474,
+      "content": "## 2.13 Event Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 479,
+      "bottomRightX": 826,
+      "bottomRightY": 496,
+      "content": "Contains the features related to the generation of Event notifications by the device (See the Event Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 377,
+      "topLeftY": 503,
+      "bottomRightX": 597,
+      "bottomRightY": 519,
+      "content": "Table 2-13: Event Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 525,
+      "bottomRightX": 921,
+      "bottomRightY": 627,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  EventControl | R | ICategory | R | - | E | Category that contains Event control features.  |\n|  EventSelector | R | IEnumeration | R/W | - | E | Selects which Event to signal to the host application.  |\n|  EventNotification[EventSelector] | R | IEnumeration | R/W | - | E | Activate or deactivate the notification to the host application of the occurrence of the selected Event.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 375,
+      "bottomRightY": 668,
+      "content": "Page 62 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

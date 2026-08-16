@@ -1,0 +1,94 @@
+{
+  "index": 54,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 44,
+      "bottomRightX": 753,
+      "bottomRightY": 126,
+      "content": "|  ![img-52.jpeg](img-52.jpeg) |   | ![img-53.jpeg](img-53.jpeg)  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 152,
+      "bottomRightX": 272,
+      "bottomRightY": 172,
+      "content": "### 9.2 Centered Positioning",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 179,
+      "bottomRightX": 732,
+      "bottomRightY": 216,
+      "content": "When centered positioning is used, the chroma samples are put mid-way between the chroma samples that have been averaged during the decimation process.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 232,
+      "bottomRightX": 544,
+      "bottomRightY": 464,
+      "content": "![img-54.jpeg](img-54.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-54.jpeg"
+    },
+    {
+      "topLeftX": 234,
+      "topLeftY": 472,
+      "bottomRightX": 578,
+      "bottomRightY": 492,
+      "content": "Figure 9-2 : Chroma positioning (centered alignment)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 522,
+      "bottomRightX": 530,
+      "bottomRightY": 542,
+      "content": "The TIFF file format uses centered chroma sample positioning by default.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 746,
+      "bottomRightY": 974,
+      "content": "Page 55 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

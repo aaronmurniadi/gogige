@@ -1,0 +1,93 @@
+{
+  "index": 128,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "<table><tr><td colspan=\"2\">GEN&lt;i&gt;CAM</td><td rowspan=\"2\">emva</td></tr><tr><td>Version 1.2.0</td><td>GenTL Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 459,
+      "bottomRightY": 713,
+      "content": "|   | BayerRG10 BayerRG10g12 BayerBG12 BayerBG12g BayerGB12 BayerGB12g BayerGR12 BayerGR12g BayerRG12 BayerRG12g BayerBG16 BayerGB16 BayerGR16 BayerRG16 Raw16 Raw8 Device-specific - GigE Vision Specific: Mono12Packed BayerGR10Packed BayerRG10Packed BayerGB10Packed BayerBG10Packed BayerGR12Packed BayerRG12Packed BayerGB12Packed BayerBG12Packed RGB10V1Packed BGR10V1Packed RGB12V1Packed  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 737,
+      "bottomRightX": 364,
+      "bottomRightY": 757,
+      "content": "Format of the pixels provided by the buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 763,
+      "bottomRightX": 686,
+      "bottomRightY": 799,
+      "content": "Note that the value list already follows the updated value list of the \"PixelFormat\" feature from GenICam SFNC 2.0, i.e., this feature does not exactly correspond to the",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 800,
+      "bottomRightX": 690,
+      "bottomRightY": 836,
+      "content": "BUFFER_INFO_PIXELFORMAT command of DSGetBufferInfo function in the GenICam GenTL 1.3 standard. For multipart buffers this corresponds to",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 838,
+      "bottomRightX": 519,
+      "bottomRightY": 857,
+      "content": "BUFFER_PART_INFO_DATA_FORMAT for PFNC formatted parts.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 863,
+      "bottomRightX": 684,
+      "bottomRightY": 900,
+      "content": "Note that only a subset of the possible pixel formats is listed here. The complete list of possible standard pixel formats and their detailed layout can be found in the \"Pixel Format Naming",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 129 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

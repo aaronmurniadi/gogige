@@ -1,0 +1,57 @@
+{
+  "index": 38,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 117,
+      "bottomRightX": 134,
+      "bottomRightY": 138,
+      "content": "## 5 Summary",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 156,
+      "bottomRightX": 711,
+      "bottomRightY": 330,
+      "content": "The definition of a Generic Data Container in the context of a GenDC GenICam module permits to standardize the format of the data buffers transmitted and received by the various present and future Transport Layer Protocol (TLP) standards. Those Transport Layers Protocols are then able to concentrate their effort on implementing efficient, reliable and real-time data transmission over a particular physical media. They are no more affected by the data representation changes and new payload types can be added without TLP specification modifications. The GenDC Data Container is defined and standardized only once by a group of representatives of each TLP. The basic principle of GenDC is to define a layer that decouples “what” to transport from “how” to transport it using a particular media. Also, since the GenDC Container specification defines a self-described data format, it defines at the same time, a standard way to represent almost any imaging related data information and can be used in many different contexts outside of the data exchange between a Transmitter and a Receiver.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 39 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

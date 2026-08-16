@@ -1,0 +1,157 @@
+{
+  "index": 112,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 35,
+      "bottomRightX": 278,
+      "bottomRightY": 63,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 492,
+      "topLeftY": 37,
+      "bottomRightX": 577,
+      "bottomRightY": 84,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 77,
+      "bottomRightX": 107,
+      "bottomRightY": 92,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 158,
+      "topLeftY": 77,
+      "bottomRightX": 373,
+      "bottomRightY": 94,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 146,
+      "bottomRightX": 313,
+      "bottomRightY": 163,
+      "content": "Returns the frequency of the selected Clock.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 177,
+      "bottomRightX": 301,
+      "bottomRightY": 196,
+      "content": "### 3.64 DeviceSerialPortSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 198,
+      "bottomRightX": 334,
+      "bottomRightY": 428,
+      "content": "|  **Name** | DeviceSerialPortSelector  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Recommended  |\n|  **Interface** | IEnumeration  |\n|  **Access** | Read/(Write)  |\n|  **Unit** | -  |\n|  **Visibility** | Expert  |\n|  **Values** | CameraLink Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 452,
+      "bottomRightX": 339,
+      "bottomRightY": 471,
+      "content": "Selects which serial port of the device to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 477,
+      "bottomRightX": 170,
+      "bottomRightY": 493,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 501,
+      "bottomRightX": 492,
+      "bottomRightY": 520,
+      "content": "- **CameraLink:** Serial port associated to the Camera link connection.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 532,
+      "bottomRightX": 313,
+      "bottomRightY": 552,
+      "content": "### 3.65 DeviceSerialPortBaudRate",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 554,
+      "bottomRightX": 334,
+      "bottomRightY": 901,
+      "content": "|  **Name** | DeviceSerialPortBaudRate [DeviceSerialPortSelector]  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Recommended  |\n|  **Interface** | IEnumeration  |\n|  **Access** | Read/(Write)  |\n|  **Unit** | -  |\n|  **Visibility** | Expert  |\n|  **Values** | Baud9600 Baud19200 Baud38400 Baud57600 Baud115200 Baud230400 Baud460800 Baud921600 ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 923,
+      "bottomRightX": 440,
+      "bottomRightY": 944,
+      "content": "This feature controls the baud rate used by the selected serial port.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 948,
+      "bottomRightX": 110,
+      "bottomRightY": 966,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 948,
+      "bottomRightX": 365,
+      "bottomRightY": 967,
+      "content": "Page 113 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 948,
+      "bottomRightX": 579,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

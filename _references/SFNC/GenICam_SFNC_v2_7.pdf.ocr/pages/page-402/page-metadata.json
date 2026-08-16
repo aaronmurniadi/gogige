@@ -1,0 +1,183 @@
+{
+  "index": 401,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 754,
+      "bottomRightY": 170,
+      "content": "If an encoder is used to trigger the camera at specific displacement intervals this displacement can be set as the scale, and a \"non-linescan\" mode can be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 179,
+      "bottomRightX": 184,
+      "bottomRightY": 197,
+      "content": "### Use case Examples:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 204,
+      "bottomRightX": 621,
+      "bottomRightY": 221,
+      "content": "Here we illustrate the calculation of 3D world coordinates for the calibrated formats above.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 237,
+      "bottomRightX": 550,
+      "bottomRightY": 255,
+      "content": "In the following examples, consider the common definitions of scale and offset:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 269,
+      "bottomRightX": 398,
+      "bottomRightY": 444,
+      "content": "// CoordinateA - X/Theta.\nChunkScan3dCoordinateSelector = CoordinateA;\nscaleA = ChunkScan3dCoordinateScale[CoordinateA];\noffsetA = ChunkScan3dCoordinateOffset[CoordinateA];\n// CoordinateB - Y / Phi\nChunkScan3dCoordinateSelector = CoordinateB;\nscaleB = ChunkScan3dCoordinateScale[CoordinateB];\noffsetB = ChunkScan3dCoordinateOffset[CoordinateB];\n// CoordinateC - Z / Rho\nChunkScan3dCoordinateSelector = CoordinateC;\nscaleC = ChunkScan3dCoordinateScale[CoordinateC];\noffsetC = ChunkScan3dCoordinateOffset[CoordinateC];",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 469,
+      "bottomRightX": 184,
+      "bottomRightY": 485,
+      "content": "Then, for each mode",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 494,
+      "bottomRightX": 190,
+      "bottomRightY": 512,
+      "content": "### CalibratedABC_Grid",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 519,
+      "bottomRightX": 694,
+      "bottomRightY": 538,
+      "content": "The transmitted coordinates can be transformed to world coordinates using the following pseudo-code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 544,
+      "bottomRightX": 440,
+      "bottomRightY": 677,
+      "content": "for(row = 0; row < Height; row++)\n{\n    for(col = 0; col < Width; col++)\n    {\n    coordA [row,col] = imageA [row,col]*scaleA+offsetA;\n    coordB [row,col] = imageB [row,col]*scaleB+offsetB;\n    coordC [row,col] = imageC [row,col]*scaleC+offsetC;\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 688,
+      "bottomRightX": 232,
+      "bottomRightY": 707,
+      "content": "### CalibratedABC_PointCloud",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 715,
+      "bottomRightX": 696,
+      "bottomRightY": 751,
+      "content": "In this format N pixel values in a vector are transmitted each frame. The transmitted coordinates can be transformed to world coordinates using the following pseudo-code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 757,
+      "bottomRightX": 339,
+      "bottomRightY": 845,
+      "content": "for(i=1; i<N; i++)\n{\n    coordA [i] = imageA [i]*scaleA+offsetA;\n    coordB [i] = imageB [i]*scaleB+offsetB;\n    coordC [i] = imageC [i]*scaleC+offsetC;\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 858,
+      "bottomRightX": 143,
+      "bottomRightY": 875,
+      "content": "### CalibratedAC",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 883,
+      "bottomRightX": 694,
+      "bottomRightY": 901,
+      "content": "The transmitted coordinates can be transformed to world coordinates using the following pseudo-code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 908,
+      "bottomRightX": 277,
+      "bottomRightY": 939,
+      "content": "for(row = 0; row < Height; row++)\n{",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 951,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 402 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

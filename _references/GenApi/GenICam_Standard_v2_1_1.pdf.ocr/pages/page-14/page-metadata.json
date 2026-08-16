@@ -1,0 +1,112 @@
+{
+  "index": 13,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<i>CAM |   | ![img-19.jpeg](img-19.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 185,
+      "topLeftY": 159,
+      "bottomRightX": 535,
+      "bottomRightY": 510,
+      "content": "![img-20.jpeg](img-20.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-20.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 523,
+      "bottomRightX": 412,
+      "bottomRightY": 541,
+      "content": "Figure 5 Controlling whether a feature is accessible",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 554,
+      "bottomRightX": 636,
+      "bottomRightY": 589,
+      "content": "The TriggerPolarity node has a pIsAvailable link that needs to point to a node exposing an Integer interface. If the value of this node is zero, the node is temporarily not accessible. \\( ^{4} \\)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 595,
+      "bottomRightX": 636,
+      "bottomRightY": 662,
+      "content": "In the example, pIsAvailable could directly point to TriggerReg because Trigger=On is mapped to 1 and Trigger=Off is mapped to 0. If this is not the case, a node of the IntSwissKnife type comes in handy. It computes an integer result from any number of other integer nodes using a mathematical formula. In the XML file, the node looks like this:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 116,
+      "topLeftY": 676,
+      "bottomRightX": 624,
+      "bottomRightY": 744,
+      "content": "<IntSwissKnife Name=\"TriggerEnabled\">\n    <ToolTip>Determines if the Trigger feature is switched on</ToolTip>\n    <pVariable Name=\"TRIGGER\">TriggerReg</pVariable>\n    <Formula>TRIGGER==1</Formula>\n</IntSwissKnife>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 765,
+      "bottomRightX": 637,
+      "bottomRightY": 849,
+      "content": "The mathematical formula in the <Formula> entry is evaluated, yielding the result of the node. Before the evaluation, the symbolic names of the variables are replaced by the integer values of the corresponding nodes. In the example, there is only one <pVariable> entry pointing to the TriggerReg node and having the symbolic name TRIGGER. This is also found in the formula that reads “TRIGGER==1”.</pVariable></pVariable>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 855,
+      "bottomRightX": 636,
+      "bottomRightY": 908,
+      "content": "So if the graphical user interface is updated, it will ask the TriggerPolarity node whether it is enabled. The TriggerPolarity node will in turn check the IntSwissKnife, which will in turn compute the outcome from the value of the TriggerReg node.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 922,
+      "bottomRightX": 541,
+      "bottomRightY": 942,
+      "content": "\\( ^{4} \\)  This follows the C/C++ semantic for interpreting integers as Boolean values.",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 14 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

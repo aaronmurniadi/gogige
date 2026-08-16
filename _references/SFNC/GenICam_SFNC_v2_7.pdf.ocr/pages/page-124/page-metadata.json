@@ -1,0 +1,175 @@
+{
+  "index": 123,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GEN<ICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 533,
+      "bottomRightY": 79,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 119,
+      "bottomRightX": 652,
+      "bottomRightY": 203,
+      "content": "Note that if multiple Regions of interest are supported by the device, the RegionSelector can be added to various features such as Width, Height,... to specify the characteristics of the selected Region. In order to simplify the standard text and feature descriptions (see above example), the optional RegionSelector is not explicitly propagated to all the features of the SFNC that it can potentially select.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 211,
+      "bottomRightX": 169,
+      "bottomRightY": 226,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 235,
+      "bottomRightX": 613,
+      "bottomRightY": 451,
+      "content": "- Region0: Selected feature will control the region 0.\n- Region1: Selected feature will control the region 1.\n- Region2: Selected feature will control the region 2.\n- ...\n- Scan3dExtraction0: Selected feature will control the Scan3dExtraction0 output Region.\n- Scan3dExtraction1: Selected feature will control the Scan3dExtraction1 output Region.\n- Scan3dExtraction2: Selected feature will control the Scan3dExtraction2 output Region.\n- ...\n- All: Selected features will control all the regions at the same time.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 466,
+      "bottomRightX": 191,
+      "bottomRightY": 486,
+      "content": "### 4.8 RegionMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 487,
+      "bottomRightX": 376,
+      "bottomRightY": 703,
+      "content": "|  Name | RegionMode[RegionSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  sUnit | -  |\n|  Visibility | Beginner  |\n|  Values | Off On  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 727,
+      "bottomRightX": 436,
+      "bottomRightY": 744,
+      "content": "Controls if the selected Region of interest is active and streaming.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 751,
+      "bottomRightX": 169,
+      "bottomRightY": 766,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 775,
+      "bottomRightX": 314,
+      "bottomRightY": 818,
+      "content": "- Off: Disable the usage of the Region.\n- On: Enable the usage of the Region.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 840,
+      "bottomRightX": 239,
+      "bottomRightY": 859,
+      "content": "### 4.9 RegionDestination",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 860,
+      "bottomRightX": 399,
+      "bottomRightY": 937,
+      "content": "|  Name | RegionDestination[RegionSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 124 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

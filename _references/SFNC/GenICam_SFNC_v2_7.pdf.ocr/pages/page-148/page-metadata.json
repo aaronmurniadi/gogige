@@ -1,0 +1,112 @@
+{
+  "index": 147,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-43.jpeg](img-43.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 120,
+      "bottomRightX": 616,
+      "bottomRightY": 153,
+      "content": "Raw is mainly used for Bayer sensor. This value must always be coherent with the PixelFormat feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 167,
+      "bottomRightX": 171,
+      "bottomRightY": 184,
+      "content": "4.39 PixelSize",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 189,
+      "bottomRightX": 363,
+      "bottomRightY": 639,
+      "content": "|  Name | PixelSize[ComponentSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Bpp1Bpp2Bpp4Bpp8Bpp10Bpp12Bpp14Bpp16Bpp20Bpp24Bpp30Bpp32Bpp36Bpp48Bpp64Bpp96  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 661,
+      "bottomRightX": 288,
+      "bottomRightY": 679,
+      "content": "Total size in bits of a pixel of the image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 686,
+      "bottomRightX": 441,
+      "bottomRightY": 702,
+      "content": "This value must always be coherent with the PixelFormat feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 710,
+      "bottomRightX": 169,
+      "bottomRightY": 726,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 734,
+      "bottomRightX": 245,
+      "bottomRightY": 927,
+      "content": "• Bpp1: 1 bit per pixel.\n• Bpp2: 2 bits per pixel.\n• Bpp4: 4 bits per pixel.\n• Bpp8: 8 bits per pixel.\n• Bpp10: 10 bits per pixel.\n• Bpp12: 12 bits per pixel.\n• Bpp14: 14 bits per pixel.\n• Bpp16: 16 bits per pixel.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 148 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 950,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "index": 33,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 751,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 151,
+      "bottomRightX": 193,
+      "bottomRightY": 171,
+      "content": "### 6.3 Packed tag",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 179,
+      "bottomRightX": 742,
+      "bottomRightY": 268,
+      "content": "Packed (“p”) is a common packing style where there is no bit spacing left between components (or possibly between successive pixels). The packed tag is followed by an optional number providing the number of bits the data is packed into (when it is not using all the available bits and padding bits are necessary) and by an optional bit order indicating if packing starts from lsb or msb. Empty bit must be padded to 0. The first component starts in byte 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 284,
+      "bottomRightX": 194,
+      "bottomRightY": 301,
+      "content": "#### 6.3.1 lsb Packed",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 310,
+      "bottomRightX": 718,
+      "bottomRightY": 329,
+      "content": "lsb packed is the default packed mode and does not need to be explicitly specified after the 'p' indicator.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 335,
+      "bottomRightX": 743,
+      "bottomRightY": 409,
+      "content": "For lsb packed, the data is filled lsb first in the lowest address byte (byte 0) starting with the first component and continue in the lsb of byte 1 (and so on). Padding bits, if any, would thus be the msb's of the last byte after putting all the components. Padding bits are necessary when the \"p\" packing tag is followed by a number indicating to how many bits we need to align the pixel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 415,
+      "bottomRightX": 636,
+      "bottomRightY": 434,
+      "content": "Note that in the following figures, we put byte 0 on the right to help illustrate the concept.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 440,
+      "bottomRightX": 743,
+      "bottomRightY": 530,
+      "content": "The following figure represents an example of a 3 color component pixel using 10 bits for each color component packed into a 32-bit data. The data is lsb packed; meaning byte 0 contains the least significant bits of the first color component. We start filling data with the lsb of byte 0 and continue with the lsb of byte 1 (and so on). The fact there is a 32 after the “p” packing tag indicates that padding bits are necessary to align the pixel to 32-bit in this example.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 141,
+      "topLeftY": 560,
+      "bottomRightX": 672,
+      "bottomRightY": 651,
+      "content": "|   | byte 3 | byte 2 | byte 1 | byte 0  |\n| --- | --- | --- | --- | --- |\n|  ... | p p 9 . . . . 4N | 3 . . 0 9 . . 6N M | 5 . . . . 0 9 8M L | 7 . . . . . . 0L  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 165,
+      "topLeftY": 658,
+      "bottomRightX": 645,
+      "bottomRightY": 678,
+      "content": "Figure 6-7 :3 components in 10-bit lsb packed into 32-bit pixel (RGB10p32)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 710,
+      "bottomRightX": 700,
+      "bottomRightY": 747,
+      "content": "Notice that bits are put successively for each component with no spacing in-between, followed by the padding bits.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 754,
+      "bottomRightX": 743,
+      "bottomRightY": 791,
+      "content": "Here is another example typical for RGB565 lsb packed. Notice there is no number after the “p” packing tag hence no padding bit.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 796,
+      "bottomRightX": 556,
+      "bottomRightY": 884,
+      "content": "|   | byte 1 |   |   | byte 0  |   |   |\n| --- | --- | --- | --- | --- | --- | --- |\n|  ... | 4. | 0 | 5. | 3 | 2. | 0  |\n|   | N | M |  | M | L |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 198,
+      "topLeftY": 893,
+      "bottomRightX": 612,
+      "bottomRightY": 912,
+      "content": "Figure 6-8 :3 components lsb packed into 16-bit pixel (RGB565p)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 461,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 34 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

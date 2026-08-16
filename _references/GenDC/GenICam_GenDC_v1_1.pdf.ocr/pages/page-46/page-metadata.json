@@ -1,0 +1,85 @@
+{
+  "index": 45,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 117,
+      "bottomRightX": 258,
+      "bottomRightY": 137,
+      "content": "### B.6 2D Image (Compressed)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 172,
+      "bottomRightX": 630,
+      "bottomRightY": 189,
+      "content": "2D Image Container including one color Component that has one JPEG compressed stream data Part.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 201,
+      "topLeftY": 200,
+      "bottomRightX": 413,
+      "bottomRightY": 220,
+      "content": "2D Image Container (JPEG):",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 232,
+      "bottomRightX": 595,
+      "bottomRightY": 416,
+      "content": "![img-13.jpeg](img-13.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-13.jpeg"
+    },
+    {
+      "topLeftX": 299,
+      "topLeftY": 431,
+      "bottomRightX": 466,
+      "bottomRightY": 446,
+      "content": "Figure 5-9: 2D Image (color JPEG)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 46 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

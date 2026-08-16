@@ -1,0 +1,151 @@
+{
+  "index": 128,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  ![img-30.jpeg](img-30.jpeg) |   | ![img-31.jpeg](img-31.jpeg)  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 120,
+      "bottomRightX": 254,
+      "bottomRightY": 141,
+      "content": "4.13 ComponentIDValue",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 141,
+      "bottomRightX": 430,
+      "bottomRightY": 340,
+      "content": "|  Name | ComponentIDValue[ComponentSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 363,
+      "bottomRightX": 562,
+      "bottomRightY": 397,
+      "content": "Returns a unique Identifier value that corresponds to type of the component selected by ComponentSelector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 404,
+      "bottomRightX": 639,
+      "bottomRightY": 437,
+      "content": "This value is typically used by the Transport Layer to specify the type of information included in the transmitted component data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 444,
+      "bottomRightX": 535,
+      "bottomRightY": 479,
+      "content": "The standard values that must be used for the known component types listed in the ComponentSelector feature are (range 0x0000-Ox7FFF):",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 485,
+      "bottomRightX": 227,
+      "bottomRightY": 653,
+      "content": "|  Undefined | = 0 (Reserved)  |\n| --- | --- |\n|  Intensity | = 1  |\n|  Infrared | = 2  |\n|  Ultraviolet | = 3  |\n|  Range | = 4  |\n|  Reflectance | = 5  |\n|  Confidence | = 6  |\n|  Scatter | = 7  |\n|  Disparity | = 8  |\n|  Multispectral | = 9  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 659,
+      "bottomRightX": 347,
+      "bottomRightY": 678,
+      "content": "Other standard Component types that can be used:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 693,
+      "bottomRightX": 261,
+      "bottomRightY": 742,
+      "content": "|  Metadata | = 0x8001  |\n| --- | --- |\n|  Custom | = 0xFF00-0xFFFE  |\n|  Reserved | = 0xFFFF  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 766,
+      "bottomRightX": 642,
+      "bottomRightY": 816,
+      "content": "Note: Custom components are device specific component types that can be used when none of the predefined types apply. Those custom Component types must have a unique ID in the range 0xFF00-0xFFFE.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 832,
+      "bottomRightX": 215,
+      "bottomRightY": 851,
+      "content": "4.14 GroupSelector",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 853,
+      "bottomRightX": 399,
+      "bottomRightY": 929,
+      "content": "|  Name | GroupSelector  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 129 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "index": 1,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 637,
+      "bottomRightY": 110,
+      "content": "|  GEN<i>CAM |   | ![img-1.jpeg](img-1.jpeg) emva  |\n| --- | --- | --- |\n|  V1.2 | CLProtocol Standard Module  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 131,
+      "bottomRightX": 230,
+      "bottomRightY": 150,
+      "content": "## Table of Contents",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 168,
+      "bottomRightX": 635,
+      "bottomRightY": 398,
+      "content": "1 OVERVIEW...3\n2 INSTALLING AND REGISTERING CLPROTOCOL DRIVER LIBRARIES 4\n3 SELECTING A CLPROTOCOL DRIVER LIBRARY AND IDENTIFYING A CAMERA...5\n4 RETRIEVING AN XML FILE FOR A CAMERA...9\n5 HANDLING THE BAUD RATE...10\n6 STANDARDIZED PROGRAMMING INTERFACES...11",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 418,
+      "bottomRightX": 634,
+      "bottomRightY": 432,
+      "content": "6.1 ISERIAL INTERFACE 11",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 432,
+      "bottomRightX": 634,
+      "bottomRightY": 446,
+      "content": "6.2 CLPROTOCOL INTERFACE...11",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 508,
+      "bottomRightX": 141,
+      "bottomRightY": 523,
+      "content": "HISTORY",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 543,
+      "bottomRightX": 637,
+      "bottomRightY": 838,
+      "content": "|  Version | Date | Changed by | Change  |\n| --- | --- | --- | --- |\n|  1.0 | 08.12.2009 | Fritz Dierks, Basler | First Draft  |\n|  1.0.1 | 30.08.2010 | Fritz Dierks, Basler | Added bootstrap registers  |\n|  1.1 | 04.06.2011 | Fritz Dierks, Basler | Added v1.1 extensions  |\n|  1.1.1 | 31.10.2011 | Fritz Dierks, Basler | Clarified baud rate handling  |\n|  1.1.2 | 08.07.2015 | Fritz Dierks, Basler | Clarified that in CCLPort initialize the cookie value is a reserved value  |\n|  1.2 | 09.07.201818.09.2018 | Silvio Voitzsch, Baumer Christoph Zierl, MVTec | - Added Linux support- Added new parameter to stop probing- Added new function to deal with device events- Fixed some spelling mistakes and added some clarifications- Added enumeration procedure for CLSerXXX modules  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 960,
+      "bottomRightX": 245,
+      "bottomRightY": 975,
+      "content": "GenICam_CLProtocol_Standard",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 321,
+      "topLeftY": 960,
+      "bottomRightX": 421,
+      "bottomRightY": 975,
+      "content": "September 18, 2018",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 572,
+      "topLeftY": 960,
+      "bottomRightX": 635,
+      "bottomRightY": 975,
+      "content": "Page 2 of 13",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

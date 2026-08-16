@@ -1,0 +1,137 @@
+{
+  "index": 415,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<icCAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 154,
+      "bottomRightX": 184,
+      "bottomRightY": 170,
+      "content": "### Timed Pulse",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 171,
+      "bottomRightX": 745,
+      "bottomRightY": 208,
+      "content": "The light is normally off. When a trigger is received the light waits for a delay then pulses for a defined time. The main configuration parameters are the brightness, delay before pulse and pulse width.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 223,
+      "bottomRightX": 488,
+      "bottomRightY": 242,
+      "content": "// A pulse sent to the light upon reception of a delayed trigger.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 243,
+      "bottomRightX": 751,
+      "bottomRightY": 456,
+      "content": "TimerSelector = Timer0; // Select the Timer1.\nTimerDelay[Timer0] = 20; // Set the delay before the pulse starts to 20us.\nTimerDuration[Timer0] = 200; // Set the pulse duration to 200us.\nTimerTriggerSource = Line8; // Set external input Line 8 as Trigger source for the Timer1.\nTimerTriggerActivation = RisingEdge; // Choose rising edge to trigger the Timer.\nTimerTriggerArmDelay[Timer0] = 500; // Set the minimum delay before next pulse to 500us.\nLightControllerSelector=LightController0; // Select the Light Controller.\nLightControllerSource[LightController0] = Timer1Active; // Put the Timer Output as source.\nLightVoltageRating[LightController0] = 24.0; // Max Voltage the light supports.\nLightBrightness[LightController0] = 250; // Overdrive to 250 % brightness for a short period.\nLineSelector = Line1; // Select the external output Line 1.\nLineSource[Line1]=LightController0; // Put the Light controller as its source.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 464,
+      "bottomRightX": 639,
+      "bottomRightY": 481,
+      "content": "Note that a dedicated Line can be hard-wired to a light controller (no setting required).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 482,
+      "bottomRightX": 749,
+      "bottomRightY": 536,
+      "content": "In the case of embedded lighting, the light controller would be connected directly to the device's embedded light (no setting required). The above features should still be present for information purpose but read only.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 416 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "index": 40,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-53.jpeg](img-53.jpeg) CAM |   | ![img-54.jpeg](img-54.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 637,
+      "bottomRightY": 207,
+      "content": "Note: to improve interoperability, it is recommended that for device events based on \"standard\" event data formats, the buffer delivered through EventGetData is directly the buffer that can be fed to the corresponding standard GenApi event adapter. For example, in case of GigE Vision it would be the entire EVENTDATA packet including the header.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 212,
+      "bottomRightX": 637,
+      "bottomRightY": 284,
+      "content": "If queued event data is not needed anymore the queue can be emptied by calling the EventFlush function on the associated EVENT_HANDLE. To inquire the queue state of a buffer the GenTL Consumer can call DSGetBufferInfo with the info command BUFFER_INFO_IS_QUEUED.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 290,
+      "bottomRightX": 636,
+      "bottomRightY": 326,
+      "content": "Signals that occur without a corresponding event object being registered using GCRRegisterEvent are silently discarded.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 332,
+      "bottomRightX": 418,
+      "bottomRightY": 350,
+      "content": "A single event notification carries one event and its data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 356,
+      "bottomRightX": 636,
+      "bottomRightY": 408,
+      "content": "For example, a GigE Vision device event sent through the message channel carrying multiple EventIDs in a single packet must result in multiple GenTL Producer events. Each GenTL Producer event will then provide a single GigE Vision EventID.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 421,
+      "bottomRightX": 196,
+      "bottomRightY": 440,
+      "content": "#### 4.2.4 Example",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 442,
+      "bottomRightX": 409,
+      "bottomRightY": 460,
+      "content": "This sample shows how to register a New Buffer event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 466,
+      "bottomRightX": 464,
+      "bottomRightY": 515,
+      "content": "{\n    GCRRegisterEvent(hDS, EVENT_NEW_BUFFER, hNewBufferEvent);\n    CreateThread(AcqFunction);\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 529,
+      "bottomRightX": 228,
+      "bottomRightY": 547,
+      "content": "##### 4.2.4.1 AcqFunction",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 549,
+      "bottomRightX": 415,
+      "bottomRightY": 568,
+      "content": "This sample shows the wait loop to retrieve new buffers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 573,
+      "bottomRightX": 392,
+      "bottomRightY": 697,
+      "content": "{\n    while (!EndRun)\n    {\n    EventGetData(hNewBufferEvent, EventData);\n    if (successful)\n    {\n    // Do something with the new buffer\n    }\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 41 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "index": 196,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 150,
+      "bottomRightX": 348,
+      "bottomRightY": 232,
+      "content": "TriggerSelector = ExposureActive;\nTriggerMode = On;\nTriggerActivation = LevelHigh;\nTriggerSource = Line1;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 267,
+      "bottomRightX": 193,
+      "bottomRightY": 285,
+      "content": "But simply by adding:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 293,
+      "bottomRightX": 333,
+      "bottomRightY": 308,
+      "content": "ExposureMode = TriggerControlled;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 341,
+      "bottomRightX": 680,
+      "bottomRightY": 359,
+      "content": "The Exposure duration will become controlled by the length of the positive pulse on physical Line 1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 375,
+      "bottomRightX": 319,
+      "bottomRightY": 395,
+      "content": "### 5.7.2 ExposureTimeMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 397,
+      "bottomRightX": 377,
+      "bottomRightY": 629,
+      "content": "|  Name | ExposureTimeMode  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Common Individual  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 653,
+      "bottomRightX": 420,
+      "bottomRightY": 672,
+      "content": "Sets the configuration mode of the ExposureTime feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 679,
+      "bottomRightX": 366,
+      "bottomRightY": 696,
+      "content": "The possible values for ExposureTimeMode are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 706,
+      "bottomRightX": 750,
+      "bottomRightY": 778,
+      "content": "- Common: The exposure time is common to all the color components. The common ExposureTime value to use can be set selecting it with ExposureTimeSelector[Common].\n- Individual: The exposure time is individual for each color component. Each individual ExposureTime values to use can be set by selecting them with ExposureTimeSelector.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 811,
+      "bottomRightX": 343,
+      "bottomRightY": 832,
+      "content": "### 5.7.3 ExposureTimeSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 834,
+      "bottomRightX": 377,
+      "bottomRightY": 942,
+      "content": "|  Name | ExposureTimeSelector  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 197 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

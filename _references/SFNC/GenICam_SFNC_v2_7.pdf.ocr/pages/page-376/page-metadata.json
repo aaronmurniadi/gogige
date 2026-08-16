@@ -1,0 +1,139 @@
+{
+  "index": 375,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 133,
+      "bottomRightX": 466,
+      "bottomRightY": 166,
+      "content": "Scan3dCoordinateOffset[Scan3dExtraction2] = 225;\nScan3dCoordinateScale[Scan3dExtraction2][CoordinateC] = -0.1;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 177,
+      "bottomRightX": 539,
+      "bottomRightY": 295,
+      "content": "// 3.c. Setup Processing Region functionality.\nRegionSelector = Scan3dExtraction2;\nRegionMode[Scan3dExtraction2] = On; // Transmit 3D Scan Extraction.\nWidth[Scan3dExtraction2] = 100; // Number of columns outbut buffer.\nHeight[Scan3dExtraction2] = 500; // Scans per buffer.\nComponentSelector[Scan3dExtraction2] = Range;\nComponentEnable[Scan3dExtraction2][Range] = True;\nPixelFormat[Scan3dExtraction2][Range] = Coord3D_ABC32f;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 307,
+      "bottomRightX": 367,
+      "bottomRightY": 325,
+      "content": "The data output could in this case be formatted as:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 348,
+      "bottomRightX": 702,
+      "bottomRightY": 547,
+      "content": "|  Component | Part | Source | Region | data type | data format  |\n| --- | --- | --- | --- | --- | --- |\n|  Range | 0 | 1 | Scan3dExtraction 0 | 3D point cloud image | Coord3D_ABC32f  |\n|  Range | 1 | 1 | Scan3dExtraction 1 | 3D point cloud image | Coord3D_ABC32f  |\n|  Range | 2 | 1 | Scan3dExtraction 2 | 3D point cloud image | Coord3D_ABC32f  |\n|  Chunk data | (3) | - | All components chunk data if enabled (not shown). | (Chunk data) | GenICam Chunk  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 570,
+      "bottomRightX": 269,
+      "bottomRightY": 589,
+      "content": "### Calculating World Coordinates:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 596,
+      "bottomRightX": 755,
+      "bottomRightY": 650,
+      "content": "There are multiple methods on how to transform transmitted coordinates to world coordinates using the scale and offsets. The Scan3dOutputMode defines which method is applicable, if the mode is rectified, the X and/or Y coordinates are implicit and the world coordinates are calculated from the pixel coordinates.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 656,
+      "bottomRightX": 754,
+      "bottomRightY": 694,
+      "content": "In uncalibrated data transfer scaling and offset can also be used to allow meaningful scaling, for instance to allow mapping the result to the sensors coordinate system.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 700,
+      "bottomRightX": 740,
+      "bottomRightY": 755,
+      "content": "The pseudo code shows how to read and use scale and offset in a full 3D calibrated image using ChunkData. The SourceID and RegionID information for a component/part should be given by the TransportLayer, so that the selectors in the ChunkData can be set correctly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 775,
+      "bottomRightX": 691,
+      "bottomRightY": 850,
+      "content": "// Reading chunk data from received buffer and scaling 3D image to world coordinates.\n// For the Scan3dExtraction0 processing Region:\nChunkRegionSelector = Scan3dExtraction0;\nCoordinateSystem = ChunkScan3dCoordinateSystem[Scan3dExtraction0]; // Example is for Cartesian\nScanMode = ChunkScan3dOutputMode[Scan3dExtraction0];",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 861,
+      "bottomRightX": 405,
+      "bottomRightY": 949,
+      "content": "if (ScanMode == CalibratedABC_Grid)\n{\n    // Calculating World coordinates - Framescan.\n    // ***\n    // CoordinateA -> X\n    ChunkScan3dCoordinateSelector = CoordinateA;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 376 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

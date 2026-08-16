@@ -1,0 +1,166 @@
+{
+  "index": 18,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 251,
+      "topLeftY": 61,
+      "bottomRightX": 396,
+      "bottomRightY": 90,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 614,
+      "topLeftY": 61,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 148,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 105,
+      "bottomRightX": 465,
+      "bottomRightY": 122,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 157,
+      "bottomRightX": 548,
+      "bottomRightY": 308,
+      "content": "![img-13.jpeg](img-13.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-13.jpeg"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 315,
+      "bottomRightX": 542,
+      "bottomRightY": 334,
+      "content": "Figure 3-12: Bayer_MLNM Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 373,
+      "bottomRightX": 231,
+      "bottomRightY": 391,
+      "content": "# Bayer_MNLM Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 398,
+      "bottomRightX": 708,
+      "bottomRightY": 435,
+      "content": "This is the format where the green component occupies the 1st and 4th location within the tile. The blue component occupies the 2nd cell while the red component fills the 3rd cell.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 112,
+      "topLeftY": 442,
+      "bottomRightX": 230,
+      "bottomRightY": 461,
+      "content": "Ex: BayerGB8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 314,
+      "topLeftY": 572,
+      "bottomRightX": 498,
+      "bottomRightY": 591,
+      "content": "Figure 3-13: BayerGB array",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 623,
+      "bottomRightX": 548,
+      "bottomRightY": 775,
+      "content": "![img-14.jpeg](img-14.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-14.jpeg"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 782,
+      "bottomRightX": 542,
+      "bottomRightY": 800,
+      "content": "Figure 3-14: Bayer_MNLM Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 841,
+      "bottomRightX": 302,
+      "bottomRightY": 860,
+      "content": "### 3.1.8 BiColor_LMNO Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 867,
+      "bottomRightX": 744,
+      "bottomRightY": 939,
+      "content": "Bi-color is a color filter array (CFA) that refers to an image composed of two-color component pixels. The sensor can contain up to four color components (L, M, N and O), but each pixel only has information on two of those components (either L and M, or N and O). The missing color components of a pixel can be interpolated from adjacent pixels in a fashion similar to a CFA.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 970,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 461,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 744,
+      "bottomRightY": 973,
+      "content": "Page 19 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

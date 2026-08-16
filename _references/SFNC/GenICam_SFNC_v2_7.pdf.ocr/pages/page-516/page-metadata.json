@@ -1,0 +1,140 @@
+{
+  "index": 515,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 162,
+      "bottomRightX": 739,
+      "bottomRightY": 232,
+      "content": "Returns the latched state of the clock servo. When the servo is in a locked state, the value returned is 'Locked'. When the servo is in a non-locked state, a device-specific value can be returned to give specific information. If no device-specific value is available to describe the current state of the clock servo, the value should be 'Unknown'.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 242,
+      "bottomRightX": 187,
+      "bottomRightY": 258,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 268,
+      "bottomRightX": 331,
+      "bottomRightY": 309,
+      "content": "- Unknown: Servo state is unknown.\n- Locked: Servo is locked",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 328,
+      "bottomRightX": 341,
+      "bottomRightY": 348,
+      "content": "### 27.3.7 PtpOffsetFromMaster",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 349,
+      "bottomRightX": 365,
+      "bottomRightY": 502,
+      "content": "|  Name | PtpOffsetFromMaster  |\n| --- | --- |\n|  Category | PtpControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | ns  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 518,
+      "bottomRightX": 496,
+      "bottomRightY": 537,
+      "content": "Returns the latched offset from the PTP master clock in nanoseconds.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 552,
+      "bottomRightX": 253,
+      "bottomRightY": 572,
+      "content": "### 27.3.8 PtpClockID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 574,
+      "bottomRightX": 365,
+      "bottomRightY": 726,
+      "content": "|  Name | PtpClockID  |\n| --- | --- |\n|  Category | PtpControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 742,
+      "bottomRightX": 359,
+      "bottomRightY": 760,
+      "content": "Returns the latched clock ID of the PTP device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 768,
+      "bottomRightX": 488,
+      "bottomRightY": 786,
+      "content": "Note: Byte 0 of the IEEE ClockIdentity field is mapped to the MSB.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 516 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

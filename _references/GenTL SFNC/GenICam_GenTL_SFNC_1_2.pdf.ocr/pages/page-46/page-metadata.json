@@ -1,0 +1,113 @@
+{
+  "index": 45,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-11.jpeg](img-11.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 160,
+      "bottomRightX": 364,
+      "bottomRightY": 233,
+      "content": "• PCI (Deprecated): PCI / PCIe\n• USB3 (Deprecated): USB3 Vision\n• UVC (Deprecated): USB video class",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 252,
+      "bottomRightX": 572,
+      "bottomRightY": 272,
+      "content": "Corresponds to the TL_INFO_TLTYPE command of TLGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 285,
+      "bottomRightX": 325,
+      "bottomRightY": 304,
+      "content": "3.1.1.10 GenTLVersionMajor",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 305,
+      "bottomRightX": 421,
+      "bottomRightY": 518,
+      "content": "|  Name | GenTLVersionMajor  |\n| --- | --- |\n|  Category | SystemInformation  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 543,
+      "bottomRightX": 695,
+      "bottomRightY": 579,
+      "content": "Major version number of the GenTL specification the GenTL Producer implementation complies with.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 594,
+      "bottomRightX": 325,
+      "bottomRightY": 611,
+      "content": "3.1.1.11 GenTLVersionMinor",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 614,
+      "bottomRightX": 421,
+      "bottomRightY": 827,
+      "content": "|  Name | GenTLVersionMinor  |\n| --- | --- |\n|  Category | SystemInformation  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 852,
+      "bottomRightX": 696,
+      "bottomRightY": 888,
+      "content": "Minor version number of the GenTL specification the GenTL Producer implementation complies with.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 945,
+      "content": "Page 46 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "index": 362,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 82,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 109,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 102,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 227,
+      "topLeftY": 139,
+      "bottomRightX": 588,
+      "bottomRightY": 411,
+      "content": "![img-104.jpeg](img-104.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-104.jpeg"
+    },
+    {
+      "topLeftX": 143,
+      "topLeftY": 431,
+      "bottomRightX": 663,
+      "bottomRightY": 451,
+      "content": "Figure 21-4: 3D invalid or missing data due to occlusion around the box (in black).",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 489,
+      "bottomRightX": 527,
+      "bottomRightY": 512,
+      "content": "### 21.13D Scan usage model and configuration scenarios",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 541,
+      "bottomRightX": 752,
+      "bottomRightY": 611,
+      "content": "This section illustrates few possible 3D system setups and how sensors, regions, data formatting and coordinate systems can be defined. The SFNC and PFNC definitions are used in pseudo code examples covering the main setup points. Note that due to naming restriction in some programming language, the 3D control features use the prefix Scan3d instead of 3dScan.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 646,
+      "bottomRightX": 225,
+      "bottomRightY": 664,
+      "content": "### Default 3D configuration:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 671,
+      "bottomRightX": 740,
+      "bottomRightY": 725,
+      "content": "The default configuration uses Cartesian coordinates with mm units in the Anchored coordinate system. In the examples below the features Scan3dCoordinateSystem, Scan3dDistanceUnit and Scan3dCoordinateSystemReference are not used unless a value different from the default is used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 731,
+      "bottomRightX": 717,
+      "bottomRightY": 785,
+      "content": "Also, for the default basic 3D system examples, only a single sensor with a single region is used (i.e. No SourceSelector or RegionSelector used). For more detailed examples see the chapter 21.3 (3D Device data output control).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 819,
+      "bottomRightX": 146,
+      "bottomRightY": 836,
+      "content": "### Multi-source:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 845,
+      "bottomRightX": 755,
+      "bottomRightY": 917,
+      "content": "The SFNC standard covers cameras with multiple sources using the SourceControl and the SourceSelector concept. This is aimed at cameras with multiple physical sensors such as color and IR, but can also be used with a single physical sensor exposing multiple virtual sensors (sources). This is applicable for advanced 3D cameras. Multiple sources can be used when the camera has multiple physical sources that deliver data, as in a",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 363 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

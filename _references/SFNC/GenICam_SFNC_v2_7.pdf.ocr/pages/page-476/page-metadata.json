@@ -1,0 +1,131 @@
+{
+  "index": 475,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 159,
+      "topLeftY": 54,
+      "bottomRightX": 304,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM</i></td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 142,
+      "bottomRightX": 413,
+      "bottomRightY": 215,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | Encoder0 (If 0 based), Encoder1, Encoder2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 241,
+      "bottomRightX": 340,
+      "bottomRightY": 258,
+      "content": "Selects which Encoder to retrieve data from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 266,
+      "bottomRightX": 188,
+      "bottomRightY": 282,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 292,
+      "bottomRightX": 348,
+      "bottomRightY": 389,
+      "content": "- Encoder0: Selects the first Encoder.\n- Encoder1: Selects the first Encoder.\n- Encoder2: Selects the second Encoder.\n- ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 406,
+      "bottomRightX": 315,
+      "bottomRightY": 425,
+      "content": "### 24.40 ChunkEncoderValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 428,
+      "bottomRightX": 633,
+      "bottomRightY": 643,
+      "content": "|  Name | ChunkEncoderValue[ChunkEncoderSelector][ChunkScanLineSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 667,
+      "bottomRightX": 722,
+      "bottomRightY": 702,
+      "content": "Returns the counter's value of the selected Encoder at the time of the FrameStart in area scan mode or the counter's value at the time of the LineStart selected by ChunkScanLineSelector in Linescan mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 743,
+      "bottomRightX": 322,
+      "bottomRightY": 763,
+      "content": "### 24.41 ChunkEncoderStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 765,
+      "bottomRightX": 487,
+      "bottomRightY": 945,
+      "content": "|  Name | ChunkEncoderStatus[ChunkEncoderSelector][ChunkScanLineSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | Enumeration  |\n|  Access | Read  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 476 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

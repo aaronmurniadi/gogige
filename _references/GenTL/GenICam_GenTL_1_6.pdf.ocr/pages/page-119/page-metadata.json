@@ -1,0 +1,273 @@
+{
+  "index": 118,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-163.jpeg](img-163.jpeg) CAM |   | ![img-164.jpeg](img-164.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 137,
+      "bottomRightX": 226,
+      "bottomRightY": 154,
+      "content": "##### 6.3.6.6 GCWritePort",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 176,
+      "bottomRightX": 268,
+      "bottomRightY": 194,
+      "content": "GC ERROR GCWritePort",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 176,
+      "bottomRightX": 573,
+      "bottomRightY": 244,
+      "content": "( PORT_HANDLE hPort,\nuint64_t iAddress,\nconst void * pBuffer,\nsize_t * piSize )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 251,
+      "bottomRightX": 635,
+      "bottomRightY": 319,
+      "content": "Writes a number of bytes at the given iAddress to the specified hPort. This is the global GenICam GenApi write access function for all ports implemented in the GenTL implementation. The endianness of the data content is specified by the GCGetPortInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 326,
+      "bottomRightX": 635,
+      "bottomRightY": 411,
+      "content": "If the underlying technology has alignment restrictions on the port write the GenTL Provider implementation has to handle this internally. For example if the underlying technology only allows a uint32_t aligned access and the calling GenTL Consumer wants to write 5 bytes starting at address 2. The implementation has to read 8 bytes starting at address 0, replace the 5 bytes provided and then write the 8 bytes back (read modify write).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 417,
+      "bottomRightX": 635,
+      "bottomRightY": 503,
+      "content": "The function is used to handle GenICam GenApi port write access when it is in general unknown which type of data is being written and whether it is acceptable to write only part of the requested piSize bytes. The operation is therefore considered successful only if all requested data has been written. The GenTL Producer is not allowed to report success (GC_ERR_SUCCESS) if the operation was finished only partially.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 516,
+      "bottomRightX": 166,
+      "bottomRightY": 532,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 536,
+      "bottomRightX": 173,
+      "bottomRightY": 552,
+      "content": "[in] hPort",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 554,
+      "bottomRightX": 188,
+      "bottomRightY": 570,
+      "content": "[in] iAddress",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 572,
+      "bottomRightX": 182,
+      "bottomRightY": 588,
+      "content": "[in] pBuffer",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 604,
+      "bottomRightX": 173,
+      "bottomRightY": 622,
+      "content": "[in,out] piSize",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 536,
+      "bottomRightX": 630,
+      "bottomRightY": 553,
+      "content": "Module or remote device port handle to access the Port from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 554,
+      "bottomRightX": 415,
+      "bottomRightY": 570,
+      "content": "Byte address to write to.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 571,
+      "bottomRightX": 621,
+      "bottomRightY": 603,
+      "content": "Pointer to a user allocated byte buffer containing the data to write; this must not be NULL.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 604,
+      "bottomRightX": 625,
+      "bottomRightY": 688,
+      "content": "Size of the provided pBuffer and thus the amount of bytes to write to the register map; after the write operation this parameter holds the information about the bytes actually written (if that is different from the requested size, the function return value should indicate the reason).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 703,
+      "bottomRightX": 141,
+      "bottomRightY": 718,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 725,
+      "bottomRightX": 208,
+      "bottomRightY": 742,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 749,
+      "bottomRightX": 278,
+      "bottomRightY": 767,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 775,
+      "bottomRightX": 269,
+      "bottomRightY": 793,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 816,
+      "bottomRightX": 295,
+      "bottomRightY": 834,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 859,
+      "bottomRightX": 260,
+      "bottomRightY": 877,
+      "content": "GC_ERR_ACCESS_DENIED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 724,
+      "bottomRightX": 568,
+      "bottomRightY": 741,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 749,
+      "bottomRightX": 512,
+      "bottomRightY": 766,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 774,
+      "bottomRightX": 635,
+      "bottomRightY": 809,
+      "content": "The handle hPort is invalid (NULL) or does not reference an open module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 815,
+      "bottomRightX": 635,
+      "bottomRightY": 851,
+      "content": "Parameters pBuffer and/or piSize are invalid pointers (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 858,
+      "bottomRightX": 635,
+      "bottomRightY": 894,
+      "content": "The access to the requested register iAddress is denied because the register is not writable or because the Port",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 119 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

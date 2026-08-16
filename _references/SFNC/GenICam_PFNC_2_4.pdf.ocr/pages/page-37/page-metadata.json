@@ -1,0 +1,160 @@
+{
+  "index": 36,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 44,
+      "bottomRightX": 753,
+      "bottomRightY": 126,
+      "content": "|  ![img-37.jpeg](img-37.jpeg) |   | ![img-38.jpeg](img-38.jpeg)  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 152,
+      "bottomRightX": 207,
+      "bottomRightY": 171,
+      "content": "#### 6.4.1 lsb Grouped",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 177,
+      "bottomRightX": 739,
+      "bottomRightY": 197,
+      "content": "lsb grouped is the default grouping mode and does not need to be explicitly specified after the 'g' indicator.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 203,
+      "bottomRightX": 721,
+      "bottomRightY": 258,
+      "content": "For lsb grouped, the msb's of the components are extracted and put in sequence starting with the first component in byte 0. The lsb's of the components are grouped together in a separate byte that is put last. This last byte is filled by grouping components starting from the lsb using the component order.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 263,
+      "bottomRightX": 637,
+      "bottomRightY": 284,
+      "content": "Note that in the following figures, we put byte 0 on the right to help illustrate the concept.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 313,
+      "bottomRightX": 615,
+      "bottomRightY": 402,
+      "content": "![img-39.jpeg](img-39.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-39.jpeg"
+    },
+    {
+      "topLeftX": 139,
+      "topLeftY": 411,
+      "bottomRightX": 673,
+      "bottomRightY": 430,
+      "content": "Figure 6-12: 2 monochrome 10-bit pixels with lsb grouped into 12 bits (Mono10g12)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 461,
+      "bottomRightX": 615,
+      "bottomRightY": 549,
+      "content": "![img-40.jpeg](img-40.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-40.jpeg"
+    },
+    {
+      "topLeftX": 146,
+      "topLeftY": 557,
+      "bottomRightX": 666,
+      "bottomRightY": 578,
+      "content": "Figure 6-13: 2 monochrome 12-bit pixels with lsb grouped into 24 bits (Mono12g)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 142,
+      "topLeftY": 608,
+      "bottomRightX": 673,
+      "bottomRightY": 697,
+      "content": "![img-41.jpeg](img-41.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-41.jpeg"
+    },
+    {
+      "topLeftX": 143,
+      "topLeftY": 705,
+      "bottomRightX": 669,
+      "bottomRightY": 724,
+      "content": "Figure 6-14: 3 components of 10-bit with lsb grouped into 32-bit pixel (RGB10g32)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 754,
+      "bottomRightX": 726,
+      "bottomRightY": 845,
+      "content": "![img-42.jpeg](img-42.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-42.jpeg"
+    },
+    {
+      "topLeftX": 139,
+      "topLeftY": 852,
+      "bottomRightX": 671,
+      "bottomRightY": 871,
+      "content": "Figure 6-15 : 3 components of 12-bit with lsb grouped into 40-bit pixel (RGB12g40)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 746,
+      "bottomRightY": 974,
+      "content": "Page 37 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

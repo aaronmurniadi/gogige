@@ -1,0 +1,151 @@
+{
+  "index": 119,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  ![img-20.jpeg](img-20.jpeg) |   | ![img-21.jpeg](img-21.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 120,
+      "bottomRightX": 652,
+      "bottomRightY": 190,
+      "content": "- Rolling: The shutter opens and closes sequentially for groups (typically lines) of pixels. All the pixels are exposed for the same length of time but not at the same time.\n- GlobalReset: The shutter opens at the same time for all pixels but ends in a sequential manner. The pixels are exposed for different lengths of time.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 220,
+      "bottomRightX": 199,
+      "bottomRightY": 236,
+      "content": "# Shutter modes diagrams:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 245,
+      "bottomRightX": 98,
+      "bottomRightY": 259,
+      "content": "Global:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 263,
+      "bottomRightX": 529,
+      "bottomRightY": 350,
+      "content": "![img-22.jpeg](img-22.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-22.jpeg"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 381,
+      "bottomRightX": 98,
+      "bottomRightY": 397,
+      "content": "Rolling",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 400,
+      "bottomRightX": 528,
+      "bottomRightY": 484,
+      "content": "![img-23.jpeg](img-23.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-23.jpeg"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 517,
+      "bottomRightX": 133,
+      "bottomRightY": 532,
+      "content": "Global Reset:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 537,
+      "bottomRightX": 528,
+      "bottomRightY": 622,
+      "content": "![img-24.jpeg](img-24.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-24.jpeg"
+    },
+    {
+      "topLeftX": 179,
+      "topLeftY": 630,
+      "bottomRightX": 391,
+      "bottomRightY": 647,
+      "content": "Figure 4-2: Shutter modes diagrams",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 678,
+      "bottomRightX": 186,
+      "bottomRightY": 697,
+      "content": "4.3 SensorTaps",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 699,
+      "bottomRightX": 363,
+      "bottomRightY": 942,
+      "content": "|  Name | SensorTaps  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | OneTwoThreeFour  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 120 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

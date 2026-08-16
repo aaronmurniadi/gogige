@@ -1,0 +1,149 @@
+{
+  "index": 507,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<I>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 144,
+      "bottomRightX": 187,
+      "bottomRightY": 161,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 171,
+      "bottomRightX": 538,
+      "bottomRightY": 217,
+      "content": "- Off: The device will only stream data in its native format.\n- On: The device will stream all its data in the generic GenDC format.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 256,
+      "bottomRightX": 310,
+      "bottomRightY": 279,
+      "content": "### 27.2.8 GenDCDescriptor",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 280,
+      "bottomRightX": 396,
+      "bottomRightY": 493,
+      "content": "|  Name | GenDCDescriptor  |\n| --- | --- |\n|  Category | TransportLayerControl  |\n|  Level | Recommended  |\n|  Interface | IRegister  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | GenDC specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 516,
+      "bottomRightX": 737,
+      "bottomRightY": 570,
+      "content": "Returns a preliminary GenDC Descriptor that can be used as reference for the data Container to be streamed out by the device in its current configuration. This information can be used to set up the receiver in advance to be ready for the data Containers to come.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 578,
+      "bottomRightX": 726,
+      "bottomRightY": 614,
+      "content": "The format of the GenDC Descriptor returned by this feature is defined by the GenICam GenDC standard. The receiver must interpret its content based on the version of this Descriptor.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 622,
+      "bottomRightX": 733,
+      "bottomRightY": 675,
+      "content": "It is updated in synchronization with PayloadSize and must be static after TLParamsLocked is asserted to guarantee that it accurately represents the typical Descriptor (all the headers) of the Containers that will be streamed out when AcquisitionStart is executed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 683,
+      "bottomRightX": 735,
+      "bottomRightY": 737,
+      "content": "In the case of variable Containers, this preliminary Descriptor must represent the maximum size, number of Components and number of Parts that can be sent during the Acquisition. All the Offset fields of the Descriptor must also stay fixed during an acquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 743,
+      "bottomRightX": 740,
+      "bottomRightY": 834,
+      "content": "The GenDCDescriptor feature must be provided for payloads transmitted using GenDC unless the Container Descriptor is totally variable due to some special device setting (e.g. special Sequencer usage). In that case, this feature should be made unavailable. The Receiver then cannot make any assumption about the Container format to come and should rely solely on the Container Descriptor sent on the TL for each individual Container.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 875,
+      "bottomRightX": 381,
+      "bottomRightY": 896,
+      "content": "### 27.2.9 GenDCFlowMappingTable",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 897,
+      "bottomRightX": 635,
+      "bottomRightY": 927,
+      "content": "|  Name | GenDCFlowMappingTable  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 508 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

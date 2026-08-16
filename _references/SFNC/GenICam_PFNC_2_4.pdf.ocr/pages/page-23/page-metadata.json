@@ -1,0 +1,122 @@
+{
+  "index": 22,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 752,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | ![img-25.jpeg](img-25.jpeg)  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 150,
+      "bottomRightX": 732,
+      "bottomRightY": 203,
+      "content": "on first line and green-only on the second line. It can be used to express CFA larger than 2x2 as illustrated below. For instance “CFA_GWRWGWRWBWGWBWGW” is the sequence represented by the pattern below.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 311,
+      "topLeftY": 252,
+      "bottomRightX": 502,
+      "bottomRightY": 361,
+      "content": "![img-26.jpeg](img-26.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-26.jpeg"
+    },
+    {
+      "topLeftX": 260,
+      "topLeftY": 368,
+      "bottomRightX": 551,
+      "bottomRightY": 387,
+      "content": "Figure 3-22 : Examples of a generic 4x4 CFA",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 414,
+      "bottomRightX": 652,
+      "bottomRightY": 475,
+      "content": "Note: When a specific CFA pattern becomes widespread, it is possible to assign it a shorter name to reference it. This could be a display name that is more human-readable. To enable interoperability, this short name has to be included in this naming convention. Bayer and Sparse Color Filter are 2 examples used by this convention.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 518,
+      "bottomRightX": 581,
+      "bottomRightY": 540,
+      "content": "#### 3.1.11 CFA<#lines>by<#columns>_xxxx Location (non-square pattern)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 546,
+      "bottomRightX": 743,
+      "bottomRightY": 654,
+      "content": "Some Color Filter Arrays (CFA) have a non-square pattern. For these cases, the dimensions of the pattern must be explicitly specified. This is achieved by directly indicating the number of lines followed by the number of columns used by the pattern right after the CFA prefix. The rest of the pixel name follows the same principle of the CFA_xxxx presented above: 'xxxx' explicitly represents the sequence of color components in the pattern presented in raster-scan (left to right, then top to bottom). This type of pattern can be used in linescan applications.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 348,
+      "topLeftY": 676,
+      "bottomRightX": 463,
+      "bottomRightY": 706,
+      "content": "![img-27.jpeg](img-27.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-27.jpeg"
+    },
+    {
+      "topLeftX": 287,
+      "topLeftY": 713,
+      "bottomRightX": 524,
+      "bottomRightY": 732,
+      "content": "Figure 3-23: CFA1by4_GRGB array",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 974,
+      "content": "Page 23 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "index": 97,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 370,
+      "bottomRightY": 175,
+      "content": "### 3.4.2 Device Stream Channel Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 191,
+      "bottomRightX": 355,
+      "bottomRightY": 208,
+      "content": "3.4.2.1 DeviceStreamChannelControl",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 212,
+      "bottomRightX": 421,
+      "bottomRightY": 451,
+      "content": "|  Name | DeviceStreamChannelControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 474,
+      "bottomRightX": 695,
+      "bottomRightY": 548,
+      "content": "Category containing features to control the stream channel shared between the remote device and the GenTL Producer's data stream module. Applicable for GigE Vision stream channels, and operating on the boot strap registers of the device since the nodemap for the device is not accessible to the GenTL producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 561,
+      "bottomRightX": 381,
+      "bottomRightY": 579,
+      "content": "3.4.2.2 DeviceStreamChannelPacketSize",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 582,
+      "bottomRightX": 424,
+      "bottomRightY": 821,
+      "content": "|  Name | DeviceStreamChannelPacketSize  |\n| --- | --- |\n|  Category | DeviceStreamChannelControl  |\n|  Level | Recommended  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | B  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 846,
+      "bottomRightX": 668,
+      "bottomRightY": 900,
+      "content": "Specifies the stream packet size, in bytes, to send on the selected channel for a transmitter or specifies the maximum packet size supported by a receiver. Controls the packet size configuration of the remote device and if needed the GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 98 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

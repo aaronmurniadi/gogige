@@ -1,0 +1,113 @@
+{
+  "index": 439,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 497,
+      "bottomRightY": 252,
+      "content": "|  Access | (Read)/Write  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 273,
+      "bottomRightX": 726,
+      "bottomRightY": 330,
+      "content": "Initializes the shutter and makes it ready for use. The shutter position after initialization is implementation dependent. This feature is only implemented if an additional initialization is required after OpticControllerInitialize.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 344,
+      "bottomRightX": 275,
+      "bottomRightY": 365,
+      "content": "### 23.4.31 ShutterStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 367,
+      "bottomRightX": 553,
+      "bottomRightY": 707,
+      "content": "|  Name | ShutterStatus[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | NotConnected NotInitialized NotSupported Busy Ready Error Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 730,
+      "bottomRightX": 254,
+      "bottomRightY": 747,
+      "content": "Reads the status of the shutter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 755,
+      "bottomRightX": 187,
+      "bottomRightY": 771,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 781,
+      "bottomRightX": 612,
+      "bottomRightY": 908,
+      "content": "- NotConnected: The shutter controller is physically not connected.\n- NotInitialized: The shutter controller is not initialized.\n- NotSupported: The shutter controller is physically connected but not supported.\n- Busy: The shutter controller executes a feature access/command.\n- Ready: The shutter controller is ready to use.\n- Error: The shutter controller encountered an error.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 440 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

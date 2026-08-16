@@ -1,0 +1,75 @@
+{
+  "index": 174,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 135,
+      "bottomRightX": 585,
+      "bottomRightY": 171,
+      "content": "output line 2 to activate a light during the exposure time of each frame. The end of the sequence capture is signalled to the host with an acquisition end event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 172,
+      "bottomRightX": 67,
+      "bottomRightY": 186,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 211,
+      "bottomRightX": 637,
+      "bottomRightY": 515,
+      "content": "AcquisitionMode = MultiFrame;\nAcquisitionFrameCount = 20;\n\nTriggerSelector = FrameStart;\nTriggerMode = On;\nTriggerActivation = RisingEdge;\nTriggerSource = Line1;\n\nExposureMode = Timed;\nExposureTime = 500;\n\nLineSelector = Line2;\nLineMode = Output;\nLineInverter = True;\nLineSource = ExposureActive\n\nRegister(Camera.EventAcquisitionEnd,CallbackDataObject,CallbackFunctionPtr)\n\nEventSelector = AcquisitionEnd;\nEventNotification = On;\n\nAcquisitionStart();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 175 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

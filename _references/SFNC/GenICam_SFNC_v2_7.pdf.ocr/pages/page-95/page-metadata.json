@@ -1,0 +1,123 @@
+{
+  "index": 94,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GENICAM |   | ![img-12.jpeg](img-12.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 120,
+      "bottomRightX": 396,
+      "bottomRightY": 139,
+      "content": "3.19 DeviceManifestXMLSubMinorVersion",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 142,
+      "bottomRightX": 551,
+      "bottomRightY": 357,
+      "content": "|  Name | DeviceManifestXMLSubMinorVersion[DeviceManifestEntrySelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 380,
+      "bottomRightX": 615,
+      "bottomRightY": 397,
+      "content": "Indicates the subminor version number of the GenICam XML file of the selected manifest entry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 411,
+      "bottomRightX": 393,
+      "bottomRightY": 431,
+      "content": "3.20 DeviceManifestSchemaMajorVersion",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 433,
+      "bottomRightX": 542,
+      "bottomRightY": 649,
+      "content": "|  Name | DeviceManifestSchemaMajorVersion[DeviceManifestEntrySelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 672,
+      "bottomRightX": 545,
+      "bottomRightY": 689,
+      "content": "Indicates the major version number of the schema file of the selected manifest entry.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 703,
+      "bottomRightX": 394,
+      "bottomRightY": 721,
+      "content": "3.21 DeviceManifestSchemaMinorVersion",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 725,
+      "bottomRightX": 543,
+      "bottomRightY": 941,
+      "content": "|  Name | DeviceManifestSchemaMinorVersion[DeviceManifestEntrySelector]  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 950,
+      "bottomRightX": 360,
+      "bottomRightY": 967,
+      "content": "Page 95 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

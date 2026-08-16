@@ -1,0 +1,86 @@
+{
+  "index": 33,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 83,
+      "topLeftY": 44,
+      "bottomRightX": 682,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 157,
+      "bottomRightX": 1010,
+      "bottomRightY": 298,
+      "content": "|   |  |  |  |  |  |  | used for the stream channel.  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  DeviceStreamChannelPacketSizeMax | O | GEV | IInteger | R/(W) | B | G | Controls desired maximum of the packet size feature to be used for the stream channel.  |\n|  DeviceStreamChannelPacketSizeInc | O | GEV | IInteger | R/(W) | B | G | Controls desired increment of the packet size feature to be used for the stream channel.  |\n|  DeviceStreamChannelNegotiatePacketSize | O | GEV | ICommand | (R)/W | - | E | Starts negotiation for the optimal packet size considering the remote device, host and their connection path.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 337,
+      "bottomRightX": 314,
+      "bottomRightY": 356,
+      "content": "### 2.4.3 Buffer Handling Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 367,
+      "bottomRightX": 681,
+      "bottomRightY": 385,
+      "content": "Contains the features related to GenICam control and access of a specific Data Stream module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 381,
+      "topLeftY": 394,
+      "bottomRightX": 638,
+      "bottomRightY": 412,
+      "content": "Table 2-17: GenICam Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 416,
+      "bottomRightX": 1010,
+      "bottomRightY": 674,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  BufferHandlingControl | R | All | ICategory | R | - | B | Contains all features of the Data Stream module that control the used buffers.  |\n|  StreamAnnouncedBufferCount | M | All | IInteger | R | - | E | Number of announced (known) buffers on this stream.  |\n|  StreamBufferHandlingMode | M | All | IEnumeration | R/(W) | - | B | Available buffer handling modes of this Data Stream.  |\n|  StreamAnnounceBufferMinimum | M | All | IInteger | R | - | E | Minimal number of buffers to announce to enable selected buffer handling mode.  |\n|  StreamDeliveredFrameCount | R | All | IInteger | R | - | E | Number of delivered frames since last acquisition start.  |\n|  StreamLostFrameCount | R | All | IInteger | R | - | E | Number of lost frames due to queue underrun.  |\n|  StreamInputBufferCount | O | All | IInteger | R | - | E | Number of buffers in the input buffer pool plus the buffers(s) currently being filled.  |\n|  StreamOutputBufferCount | R | All | IInteger | R | - | E | Number of buffers in the output buffer queue.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 694,
+      "bottomRightX": 164,
+      "bottomRightY": 710,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 694,
+      "bottomRightX": 428,
+      "bottomRightY": 712,
+      "content": "Page 34 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

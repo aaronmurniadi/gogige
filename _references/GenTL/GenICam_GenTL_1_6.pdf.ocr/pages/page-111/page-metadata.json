@@ -1,0 +1,165 @@
+{
+  "index": 110,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-150.jpeg](img-150.jpeg) CAM |   | ![img-151.jpeg](img-151.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 344,
+      "bottomRightY": 156,
+      "content": "##### 6.3.5.21 DSGetNumBufferSegments",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 176,
+      "bottomRightX": 626,
+      "bottomRightY": 228,
+      "content": "GC_ERROR DSGetNumBufferSegments ( DS_HANDLE hDataStream, BUFFER_HANDLE hBuffer, uint32_t * piNumSegments )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 236,
+      "bottomRightX": 344,
+      "bottomRightY": 253,
+      "content": "Inquires the number of segments in a buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 259,
+      "bottomRightX": 635,
+      "bottomRightY": 312,
+      "content": "If hBuffer references a composite buffer (announced using DSAnnounceCompositeBuffer), the function reports the number of “real” segments, as announced in DSAnnounceCompositeBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 320,
+      "bottomRightX": 635,
+      "bottomRightY": 405,
+      "content": "If hBuffer references a contiguous buffer (announced using DSAllocAndAnnounceBuffer or DSAnnounceBuffer), the function reports the number of “virtual” segments created within the buffer by the acquisition engine when it was last time filled. When flows were used for the acquisition, the virtual segments correspond to the flow structure  \\( (5.7.2) \\) , otherwise the buffer is assumed to consist of a single segment.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 418,
+      "bottomRightX": 166,
+      "bottomRightY": 434,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 438,
+      "bottomRightX": 602,
+      "bottomRightY": 505,
+      "content": "[in] hDataStream Data Stream module to work on.\n[in] hBuffer Buffer handle to retrieve information about.\n[out] piNumSegments Number of segments the composite buffer contains. The reported number is expected to be non-zero.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 519,
+      "bottomRightX": 141,
+      "bottomRightY": 535,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 541,
+      "bottomRightX": 569,
+      "bottomRightY": 558,
+      "content": "GC_ERR_SUCCESS: Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 566,
+      "bottomRightX": 513,
+      "bottomRightY": 584,
+      "content": "GC_ERR_NOT_INITIALIZED: No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 591,
+      "bottomRightX": 635,
+      "bottomRightY": 676,
+      "content": "GC_ERR_INVALID_HANDLE: The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream or the handle hBuffer is invalid (NULL) or does not reference an announced Buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 686,
+      "bottomRightX": 635,
+      "bottomRightY": 719,
+      "content": "GC_ERR_NOT_IMPLEMENTED: The GenTL implementation does not support composite buffers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 727,
+      "bottomRightX": 635,
+      "bottomRightY": 761,
+      "content": "GC_ERR_INVALID_PARAMETER: Parameter piNumSegments is an invalid pointer (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 768,
+      "bottomRightX": 635,
+      "bottomRightY": 803,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 111 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

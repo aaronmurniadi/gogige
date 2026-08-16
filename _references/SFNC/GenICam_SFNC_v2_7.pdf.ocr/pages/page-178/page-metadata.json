@@ -1,0 +1,121 @@
+{
+  "index": 177,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 519,
+      "bottomRightY": 187,
+      "content": "/* Framescan continuous acquisition with 1 Hardware trigger controlling the start of the acquisition and 2 others hardware triggers to start and stop the exposure of each frame.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 190,
+      "bottomRightX": 68,
+      "bottomRightY": 205,
+      "content": "*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 213,
+      "bottomRightX": 333,
+      "bottomRightY": 467,
+      "content": "AcquisitionMode = Continuous;\nTriggerSelector = AcquisitionStart;\nTriggerMode = On;\nTriggerSource = Line1;\nExposureMode = TriggerControlled;\nTriggerSelector = ExposureStart;\nTriggerMode = On;\nTriggerSource = Line3;\nTriggerSelector = ExposureStop;\nTriggerMode = On;\nTriggerSource = Line4;\nAcquisitionStart();\n...\nAcquisitionStop();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 551,
+      "bottomRightX": 336,
+      "bottomRightY": 572,
+      "content": "## 5.5 Acquisition Control features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 597,
+      "bottomRightX": 553,
+      "bottomRightY": 615,
+      "content": "This section gives the detailed description of all the Acquisition related features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 630,
+      "bottomRightX": 311,
+      "bottomRightY": 651,
+      "content": "### 5.5.1 AcquisitionControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 652,
+      "bottomRightX": 386,
+      "bottomRightY": 865,
+      "content": "|  Name | AcquisitionControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 891,
+      "bottomRightX": 405,
+      "bottomRightY": 910,
+      "content": "Category for the acquisition and trigger control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 178 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

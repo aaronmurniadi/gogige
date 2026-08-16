@@ -1,0 +1,113 @@
+{
+  "index": 54,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-59.jpeg](img-59.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 155,
+      "bottomRightX": 648,
+      "bottomRightY": 206,
+      "content": "command. This is not including the time needed to receive the command or send the acknowledge packet but only the time needed to execute the command. In case a device needs longer to process a command, it must send a pending ack.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 212,
+      "bottomRightX": 592,
+      "bottomRightY": 247,
+      "content": "The maximum time needed to transfer the message is depending on the link speed and the maximum size of the message.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 253,
+      "bottomRightX": 627,
+      "bottomRightY": 287,
+      "content": "This number may have direct impact on the behavior of software layers above. It is to be kept as short as possible.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 293,
+      "bottomRightX": 600,
+      "bottomRightY": 326,
+      "content": "The maximum response time must not exceed 300 ms in order to guarantee a good device's behavior.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 333,
+      "bottomRightX": 423,
+      "bottomRightY": 351,
+      "content": "Reading this register must not exceed 50 ms processing time.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 186,
+      "topLeftY": 379,
+      "bottomRightX": 533,
+      "bottomRightY": 527,
+      "content": "|  Offset | Hex 1CC  |\n| --- | --- |\n|  Length | 4  |\n|  Access Type | R  |\n|  Support | M  |\n|  Data Type | UINT32  |\n|  Factory Default | Implementation Specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 547,
+      "bottomRightX": 644,
+      "bottomRightY": 653,
+      "content": "|  Bit offset (lsb << x) | Width (bits) | Description  |\n| --- | --- | --- |\n|  0 | 32 | Maximum Device Response TimeMaximum time until a device sends a response upon a received command, not including the time needed to send the response over the link in ms.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 226,
+      "topLeftY": 653,
+      "bottomRightX": 492,
+      "bottomRightY": 667,
+      "content": "Table 22 – Register Maximum Device Response Time",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 55 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "index": 158,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 535,
+      "bottomRightY": 81,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 66,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 144,
+      "bottomRightX": 652,
+      "bottomRightY": 211,
+      "content": "A **Frame** is defined as the capture of **Width** pixels x **Height** lines. A **Frame** starts with an optional **Exposure** period and ends with the completion of the sensor read out. Generally, a transfer period will start during the sensor read out and will finish sometime after it but it is not considered as part of the Frame.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 26,
+      "topLeftY": 232,
+      "bottomRightX": 659,
+      "bottomRightY": 757,
+      "content": "![img-54.jpeg](img-54.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-54.jpeg"
+    },
+    {
+      "topLeftX": 231,
+      "topLeftY": 765,
+      "bottomRightX": 446,
+      "bottomRightY": 784,
+      "content": "Figure 5-3: Frame signals definition",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 159 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

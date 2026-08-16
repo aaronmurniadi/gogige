@@ -1,0 +1,84 @@
+{
+  "index": 340,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 149,
+      "topLeftY": 53,
+      "bottomRightX": 294,
+      "bottomRightY": 82,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 55,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 98,
+      "bottomRightX": 112,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 98,
+      "bottomRightX": 397,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 131,
+      "bottomRightX": 681,
+      "bottomRightY": 852,
+      "content": "|  Categories | Potential Selectees  |\n| --- | --- |\n|   | entries.  |\n|  Image Format Control Acquisition Control Analog Control LUT Control Color Transformation Control Scan 3D Control | All features of these categories could potentially be selected by the source selector based on the product specificities.  |\n|  Digital I/O Control Counter and Timer Control | The features of these categories are likely not selected by the source selector but could be depending on the particular device implementation. **Note:** The LineSelector, LineSource, CounterEventSource, CounterResetSource, CounterTriggerSource and TimerTriggerSource features may have more enumeration entries.  |\n|  Event Control | The EventSelector feature could have more enumeration entries. In this case, the name of the source would be prepended to an existing enumeration entry name. For instance, the Source1AcquisitionStart and Source2AcquisitionStart enumeration entries can be added to enable the generation of events upon acquisition start for Source1 and Source2 respectively.  |\n|  GenICam Control | The TLParamsLocked feature could potentially be selected by the source selector feature.  |\n|  Transport Layer Control | The CIConfiguration, CITimeSlotsCount and DeviceTapGeometry feature could potentially be selected by the source selector feature.  |\n|  User Set Control | The features of this category are likely not selected by the source selector feature.  |\n|  Chunk Data Control | The ChunkSelector feature could have more enumeration entries.  |\n|  File Access Control | The FileSelector feature could have more enumeration entries.  |\n|  Action Control | No features can be selected by the source selector feature.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 387,
+      "bottomRightY": 970,
+      "content": "Page 341 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 951,
+      "bottomRightX": 615,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

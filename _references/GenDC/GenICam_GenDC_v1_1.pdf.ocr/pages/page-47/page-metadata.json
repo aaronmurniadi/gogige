@@ -1,0 +1,85 @@
+{
+  "index": 46,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 97,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 143,
+      "bottomRightX": 429,
+      "bottomRightY": 164,
+      "content": "### B.7 3D Image (Range, Confidence and Reflectance)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 41,
+      "topLeftY": 198,
+      "bottomRightX": 716,
+      "bottomRightY": 232,
+      "content": "3D scene Container including 3 Components of one data Part each. The 3 individual Components can have different pixel formats.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 206,
+      "topLeftY": 247,
+      "bottomRightX": 538,
+      "bottomRightY": 267,
+      "content": "3D Scene (Range, Confidence, Reflectance):",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 279,
+      "bottomRightX": 714,
+      "bottomRightY": 586,
+      "content": "![img-14.jpeg](img-14.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-14.jpeg"
+    },
+    {
+      "topLeftX": 226,
+      "topLeftY": 597,
+      "bottomRightX": 510,
+      "bottomRightY": 613,
+      "content": "Figure 5-10: 3D Scene (range, confidence and reflectance)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 47 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

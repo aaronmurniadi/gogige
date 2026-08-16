@@ -1,0 +1,85 @@
+{
+  "index": 29,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 45,
+      "bottomRightX": 749,
+      "bottomRightY": 124,
+      "content": "|  **GEN<i>CAM** |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 151,
+      "bottomRightX": 375,
+      "bottomRightY": 174,
+      "content": "## 5 Optional “Data type” indicator",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 182,
+      "bottomRightX": 725,
+      "bottomRightY": 218,
+      "content": "This field allows to specify the data type of the pixel component values. If omitted, unsigned integer data type is assumed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 144,
+      "topLeftY": 240,
+      "bottomRightX": 685,
+      "bottomRightY": 411,
+      "content": "|  *Empty* or “u” | Default for most component. Unsigned integer data.  |\n| --- | --- |\n|  “s” | Signed integer data (two’s complement).  |\n|  “f” | Floating point data (binary floating point format compatible with IEC 60559:1989 standard) *Note: need to handle specific floating point values, in particular NaN’s, during pixel data processing might incur performance penalties, it might be desirable to avoid such values within pixel data whenever possible.*  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 444,
+      "bottomRightX": 724,
+      "bottomRightY": 499,
+      "content": "Use one value if all components have same data type, otherwise must list as many data type indicators as there are components in the pixel, successively with no space in-between in the same order they are presented in the “Components and Location” field.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 954,
+      "bottomRightX": 103,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 954,
+      "bottomRightX": 463,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 654,
+      "topLeftY": 954,
+      "bottomRightX": 747,
+      "bottomRightY": 973,
+      "content": "Page 30 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

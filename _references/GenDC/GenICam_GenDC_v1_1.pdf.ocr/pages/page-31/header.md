@@ -1,0 +1,4 @@
+GEN<|>CAM
+Version 1.1.0
+GenDC
+[LOGO]

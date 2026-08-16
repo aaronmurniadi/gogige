@@ -1,0 +1,122 @@
+{
+  "index": 84,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 592,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 76,
+      "bottomRightX": 122,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 171,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 107,
+      "bottomRightX": 920,
+      "bottomRightY": 238,
+      "content": "|  Name |  |  |  |  |  |   |\n| --- | --- | --- | --- | --- | --- | --- |\n|  oMACControlFunctionEntity | O | ICategory | R | - | G | Category that contains statistics pertaining to the MAC control PAUSE function of the device.  |\n|  aPAUSEMACCtrlFramesTransmitted[GevInterfaceSelector] | O | IInteger | R | - | G | Reports the number of transmitted PAUSE frames.  |\n|  aPAUSEMACCtrlFramesReceived[GevInterfaceSelector] | O | IInteger | R | - | G | Reports the number of received PAUSE frames.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 446,
+      "topLeftY": 262,
+      "bottomRightX": 529,
+      "bottomRightY": 278,
+      "content": "# Camera Link",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 284,
+      "bottomRightX": 920,
+      "bottomRightY": 429,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  CameraLink | O | ICategory | R | - | B | Category that contains the features pertaining to the Camera Link transport layer of the device.  |\n|  ClConfiguration | R | IEnumeration | R/(W) | - | B | This Camera Link specific feature describes the configuration used by the camera.  |\n|  ClTimeSlotsCount | O | IEnumeration | R/(W) | - | E | This Camera Link specific feature describes the time multiplexing of the camera link connection to transfer more than the configuration allows, in one single clock.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 451,
+      "topLeftY": 446,
+      "bottomRightX": 524,
+      "bottomRightY": 463,
+      "content": "# CoaXPress",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 468,
+      "bottomRightX": 920,
+      "bottomRightY": 635,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  CoaXPress | O | ICategory | R | - | B | Category that contains the features pertaining to the CoaXPress transport layer of the device.  |\n|  CxpLinkConfigurationStatus | R | IEnumeration | R | - | B | This feature indicates the current and active Link configuration used by the Device.  |\n|  CxpLinkConfigurationPreferred | R | IEnumeration | R | - | E | Provides the Link configuration that allows the Transmitter Device to operate in its default mode.  |\n|  CxpLinkConfiguration | R | IEnumeration | R/W | - | B | This feature allows specifying the Link configuration for the communication between the Receiver and Transmitter Device.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 651,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 85 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "index": 15,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 132,
+      "topLeftY": 30,
+      "bottomRightX": 278,
+      "bottomRightY": 59,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 527,
+      "topLeftY": 31,
+      "bottomRightX": 616,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 8,
+      "topLeftY": 74,
+      "bottomRightX": 74,
+      "bottomRightY": 88,
+      "content": "Version 1.1.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 244,
+      "topLeftY": 70,
+      "bottomRightX": 291,
+      "bottomRightY": 85,
+      "content": "GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 173,
+      "topLeftY": 141,
+      "bottomRightX": 352,
+      "bottomRightY": 160,
+      "content": "VariableFields (continued)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 188,
+      "topLeftY": 182,
+      "bottomRightX": 722,
+      "bottomRightY": 412,
+      "content": "|  Width (bits) | Bit offset (lsb << x) | Description  |\n| --- | --- | --- |\n|  1 | 6 | **ComponentCount** If True, some Components might not be transmitted. The omitted Components must be the last ones.  |\n|  1 | 7 | **ComponentInvalid** If True, the **Invalid** flag of certain Components of the Container might change.  |\n|  8 | 8 | **Reserved** (set to 0).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 420,
+      "bottomRightX": 730,
+      "bottomRightY": 863,
+      "content": "|  6 | 26 | **Reserved** Reserved for future use (set to 0).  |\n| --- | --- | --- |\n|  8 | 32 | **DataSize** Maximum size of the entire Container's data section in bytes. Note: Does not include the size of the Container Descriptor.  |\n|  8 | 40 | **DataOffset** Offset in bytes of the start of the entire Container's data section relative to the start of the Container's Descriptor.  |\n|  4 | 48 | **DescriptorSize** Size of the Container Descriptor in bytes. This represents the cumulative size of the Container Header, all the Component Headers and their Part Headers.  |\n|  4 | 52 | **ComponentCount** Number of Components in the entire Container.  |\n|  Component Count x8 | 56 | **ComponentOffset[]** Array of the offsets in bytes of the start of each of the Component Headers relative to the start of the Container's Descriptor. The size of the array is **ComponentCount** x 8 bytes.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 251,
+      "topLeftY": 875,
+      "bottomRightX": 485,
+      "bottomRightY": 889,
+      "content": "Table 2-1: GenDC Container Header Description",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 83,
+      "bottomRightY": 1004,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1005,
+      "content": "Page 16 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

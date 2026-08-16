@@ -1,0 +1,327 @@
+{
+  "index": 74,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GEN<ICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 166,
+      "bottomRightY": 153,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 158,
+      "bottomRightX": 185,
+      "bottomRightY": 173,
+      "content": "[in] hSystem",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 175,
+      "bottomRightX": 205,
+      "bottomRightY": 193,
+      "content": "[out] pbChanged",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 210,
+      "bottomRightX": 190,
+      "bottomRightY": 227,
+      "content": "[in] iTimeout",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 158,
+      "bottomRightX": 434,
+      "bottomRightY": 173,
+      "content": "System module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 175,
+      "bottomRightX": 631,
+      "bottomRightY": 209,
+      "content": "Contains true if the internal list was changed and false otherwise. If set to NULL nothing is written to this parameter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 210,
+      "bottomRightX": 631,
+      "bottomRightY": 327,
+      "content": "Timeout in ms. If set to GENTL_INFINITE the timeout is infinite and the function will only return after the operation is completed. In any case the GenTL Producer must make sure that this operation is completed in a reasonable amount of time depending on the underlying technology. Please be aware that there is no defined way of terminating such an update operation. On the other hand it is the GenTL",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 328,
+      "bottomRightX": 583,
+      "bottomRightY": 361,
+      "content": "Consumer's responsibility to call this function with a reasonable timeout.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 375,
+      "bottomRightX": 141,
+      "bottomRightY": 390,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 396,
+      "bottomRightX": 208,
+      "bottomRightY": 414,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 422,
+      "bottomRightX": 277,
+      "bottomRightY": 439,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 447,
+      "bottomRightX": 269,
+      "bottomRightY": 465,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 506,
+      "bottomRightX": 208,
+      "bottomRightY": 525,
+      "content": "GC_ERR_TIMEOUT",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 396,
+      "bottomRightX": 568,
+      "bottomRightY": 414,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 422,
+      "bottomRightX": 510,
+      "bottomRightY": 439,
+      "content": "No preceding call to GCInitLib",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 446,
+      "bottomRightX": 635,
+      "bottomRightY": 499,
+      "content": "The handle hSystem is invalid (NULL) or does not reference an open System module retrieved through a call to TLOpen.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 506,
+      "bottomRightX": 635,
+      "bottomRightY": 557,
+      "content": "The specified iTimeout expired before the Producer was able to completely update the list. In this case the “old” list stays valid.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 588,
+      "bottomRightX": 635,
+      "bottomRightY": 622,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 636,
+      "bottomRightX": 275,
+      "bottomRightY": 653,
+      "content": "#### 6.3.3 Interface Functions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 667,
+      "bottomRightX": 191,
+      "bottomRightY": 684,
+      "content": "##### 6.3.3.1 IFClose",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 708,
+      "bottomRightX": 233,
+      "bottomRightY": 725,
+      "content": "GC ERROR IFClose",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 709,
+      "bottomRightX": 439,
+      "bottomRightY": 725,
+      "content": "( IF HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 709,
+      "bottomRightX": 564,
+      "bottomRightY": 725,
+      "content": "hIface )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 735,
+      "bottomRightX": 635,
+      "bottomRightY": 766,
+      "content": "Closes the Interface module associated with the given hIface handle. This closes all dependent Device modules and frees all interface related resources.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 783,
+      "bottomRightX": 166,
+      "bottomRightY": 798,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 803,
+      "bottomRightX": 174,
+      "bottomRightY": 820,
+      "content": "[in] hIface",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 803,
+      "bottomRightX": 467,
+      "bottomRightY": 819,
+      "content": "Interface module handle to close.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 834,
+      "bottomRightX": 141,
+      "bottomRightY": 849,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 855,
+      "bottomRightX": 208,
+      "bottomRightY": 872,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 880,
+      "bottomRightX": 277,
+      "bottomRightY": 898,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 855,
+      "bottomRightX": 568,
+      "bottomRightY": 872,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 880,
+      "bottomRightX": 512,
+      "bottomRightY": 898,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 75 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "index": 356,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 53,
+      "bottomRightX": 294,
+      "bottomRightY": 83,
+      "content": "GEN<|}>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 56,
+      "bottomRightX": 613,
+      "bottomRightY": 104,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 112,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 397,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 134,
+      "bottomRightX": 331,
+      "bottomRightY": 156,
+      "content": "## 20.20 TransferTriggerActivation",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 157,
+      "bottomRightX": 519,
+      "bottomRightY": 440,
+      "content": "|  **Name** | TransferTriggerActivation[TransferTriggerSelector]  |\n| --- | --- |\n|  **Category** | TransferControl  |\n|  **Level** | Optional  |\n|  **Interface** | IEnumeration  |\n|  **Access** | Read/Write  |\n|  **Unit** | -  |\n|  **Visibility** | Guru  |\n|  **Values** | RisingEdge FallingEdge AnyEdge LevelHigh LevelLow  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 458,
+      "bottomRightX": 428,
+      "bottomRightY": 477,
+      "content": "Specifies the activation mode of the transfer control trigger.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 484,
+      "bottomRightX": 179,
+      "bottomRightY": 502,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 512,
+      "bottomRightX": 750,
+      "bottomRightY": 673,
+      "content": "- **RisingEdge:** Specifies that the trigger is considered valid on the rising edge of the source signal.\n- **FallingEdge:** Specifies that the trigger is considered valid on the falling edge of the source signal.\n- **AnyEdge:** Specifies that the trigger is considered valid on the falling or rising edge of the source signal.\n- **LevelHigh:** Specifies that the trigger is considered valid as long as the level of the source signal is high. This can apply to TransferActive and TransferPause trigger.\n- **LevelLow:** Specifies that the trigger is considered valid as long as the level of the source signal is low. This can apply to TransferActive and TransferPause trigger.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 687,
+      "bottomRightX": 308,
+      "bottomRightY": 708,
+      "content": "## 20.21 TransferStatusSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 710,
+      "bottomRightX": 511,
+      "bottomRightY": 950,
+      "content": "|  **Name** | TransferStatusSelector[TransferSelector]  |\n| --- | --- |\n|  **Category** | TransferControl  |\n|  **Level** | Recommended  |\n|  **Interface** | IEnumeration  |\n|  **Access** | Read/Write  |\n|  **Unit** | -  |\n|  **Visibility** | Guru  |\n|  **Values** | Streaming Paused Stopping  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 387,
+      "bottomRightY": 969,
+      "content": "Page 357 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 951,
+      "bottomRightX": 615,
+      "bottomRightY": 969,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

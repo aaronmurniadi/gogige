@@ -1,0 +1,246 @@
+{
+  "index": 50,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 44,
+      "bottomRightX": 753,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 176,
+      "bottomRightX": 427,
+      "bottomRightY": 195,
+      "content": "For 8-bit data, the range of values for each component is:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 202,
+      "bottomRightX": 673,
+      "bottomRightY": 246,
+      "content": "❖ Y'601, r', g' and b' in range [16, 235], unsigned (220 levels)\n❖ Cb and Cr in range [16, 240], signed shifted by 128, with 128 representing 0 (225 levels)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 253,
+      "bottomRightX": 346,
+      "bottomRightY": 272,
+      "content": "Values must be truncated to fit in that range.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 304,
+      "bottomRightX": 291,
+      "bottomRightY": 321,
+      "content": "The reverse equations are given by:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 329,
+      "bottomRightX": 490,
+      "bottomRightY": 348,
+      "content": "$$\\mathrm{r}' = \\quad \\mathrm{Y}'_{601} \\quad + 1.37071 \\ (\\mathrm{Cr} - 128)$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 121,
+      "topLeftY": 354,
+      "bottomRightX": 486,
+      "bottomRightY": 375,
+      "content": "$$\\mathrm{g}' = \\quad \\mathrm{Y}'_{601} \\quad - 0.33645 \\ (\\mathrm{Cb} - 128) \\quad - 0.69820 \\ (\\mathrm{Cr} - 128)$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 121,
+      "topLeftY": 380,
+      "bottomRightX": 352,
+      "bottomRightY": 399,
+      "content": "$$\\mathrm{b}' = \\quad \\mathrm{Y}'_{601} \\quad + 1.73245 \\ (\\mathrm{Cb} - 128)$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 121,
+      "topLeftY": 406,
+      "bottomRightX": 565,
+      "bottomRightY": 425,
+      "content": "with Y'601 in the range [16, 235] and, Cb and Cr in the range [16, 240].",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 238,
+      "topLeftY": 432,
+      "bottomRightX": 573,
+      "bottomRightY": 452,
+      "content": "Equation 7: Y'CbCr601 to r'g'b' conversion (8 bits)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 492,
+      "bottomRightX": 250,
+      "bottomRightY": 510,
+      "content": "### 8.2.3 Y'CbCr709 (8-bit)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 518,
+      "bottomRightX": 726,
+      "bottomRightY": 555,
+      "content": "ITU-R BT.709 provides a definition of the Y', Cb and Cr based on (1). It defines signal range identical to BT.601, as expressed in (9).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 562,
+      "bottomRightX": 610,
+      "bottomRightY": 581,
+      "content": "But its luma equation is based on (2). Hence its 2 color difference signals are given by:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 587,
+      "bottomRightX": 702,
+      "bottomRightY": 606,
+      "content": "$$\\mathrm{E}'_{\\mathrm{B}} - \\mathrm{E}'_{\\mathrm{Y}} \\quad \\text{is in the range } [-0.9278, +0.9278] \\tag{12}$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 612,
+      "bottomRightX": 419,
+      "bottomRightY": 632,
+      "content": "$$\\mathrm{E}'_{\\mathrm{R}} - \\mathrm{E}'_{\\mathrm{Y}} \\quad \\text{is in the range } [-0.7874, +0.7874]$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 665,
+      "bottomRightX": 389,
+      "bottomRightY": 683,
+      "content": "After normalization to occupy the [-0.5, 0.5] range:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 689,
+      "bottomRightX": 702,
+      "bottomRightY": 709,
+      "content": "$$\\mathrm{E}'_{\\mathrm{Cb}} = (0.5 / 0.9278) (\\mathrm{E}'_{\\mathrm{B}} - \\mathrm{E}'_{\\mathrm{Y}}) \\tag{13}$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 715,
+      "bottomRightX": 368,
+      "bottomRightY": 734,
+      "content": "$$\\mathrm{E}'_{\\mathrm{Cr}} = (0.5 / 0.7874) (\\mathrm{E}'_{\\mathrm{R}} - \\mathrm{E}'_{\\mathrm{Y}})$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 767,
+      "bottomRightX": 517,
+      "bottomRightY": 785,
+      "content": "Considering (9) that provides the range for Y', Cb and Cr, (13) leads to:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 793,
+      "bottomRightX": 702,
+      "bottomRightY": 811,
+      "content": "$$\\mathrm{Y}'_{709} = 219 \\ \\mathrm{E}'_{\\mathrm{Y}} + 16 \\tag{14}$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 817,
+      "bottomRightX": 599,
+      "bottomRightY": 836,
+      "content": "$$\\mathrm{Cb} = 224 \\ \\mathrm{E}'_{\\mathrm{Cb}} + 128 = 224 \\times (0.5 / 0.9278) (\\mathrm{E}'_{\\mathrm{B}} - \\mathrm{E}'_{\\mathrm{Y}}) + 128$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 843,
+      "bottomRightX": 599,
+      "bottomRightY": 862,
+      "content": "$$\\mathrm{Cr} = 224 \\ \\mathrm{E}'_{\\mathrm{Cr}} + 128 = 224 \\times (0.5 / 0.7874) (\\mathrm{E}'_{\\mathrm{R}} - \\mathrm{E}'_{\\mathrm{Y}}) + 128$$",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 869,
+      "bottomRightX": 646,
+      "bottomRightY": 888,
+      "content": "Again, two options exist depending on the allowed range of values for the RGB components.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 461,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 51 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

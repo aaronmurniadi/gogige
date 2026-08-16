@@ -1,0 +1,95 @@
+{
+  "index": 78,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 49,
+      "topLeftY": 24,
+      "bottomRightX": 701,
+      "bottomRightY": 99,
+      "content": "|  **GEN<i>CAM** |   |   |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 921,
+      "bottomRightY": 159,
+      "content": "|  ValueArrayCandidates | O | IString | R | - | I | Advertises selector/value feature pairs suitable for use with GenApi ValueArrayAdapter utility which allows efficient extraction of features under selectors (for example Chunk features).  |\n| --- | --- | --- | --- | --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 191,
+      "bottomRightX": 307,
+      "bottomRightY": 211,
+      "content": "## 2.25 Transport Layer Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 213,
+      "bottomRightX": 757,
+      "bottomRightY": 231,
+      "content": "Contains the features related to the Transport Layer Control (See the Transport Layer Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 349,
+      "topLeftY": 237,
+      "bottomRightX": 627,
+      "bottomRightY": 255,
+      "content": "Table 2-25: Transport Layer Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 259,
+      "bottomRightX": 921,
+      "bottomRightY": 626,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  TransportLayerControl | R | ICategory | R | - | B | Category that contains the transport Layer control features.  |\n|  TLParamsLocked | M | IInteger | R/W | - | I | Used by the Transport Layer to prevent critical features from changing during acquisition.  |\n|  TLParamsLockedSelector | O | IEnumeration | R/(W) | - | G | Selects the type of feature for which the locking behavior will be configured.  |\n|  TLParamsLockedState[TLParamsLockedSelector] | O | IBoolean | R/(W) | - | G | Controls if the selected parameters are locked during acquisition.  |\n|  PayloadSize | R | IInteger | R | B | E | Provides the number of bytes transferred for each data buffer or chunk on the stream channel.  |\n|  GenDCStreamingMode | R | IEnumeration | R/W | - | G | Controls the device's streaming format.  |\n|  GenDCStreamingStatus | R | IEnumeration | R | - | G | Returns whether the current device data streaming format is GenDC.  |\n|  GenDCDescriptor | R | IRegister | R | - | G | Returns a preliminary GenDC Descriptor that can be used as reference for the data Container to be streamed out by the device in its current configuration.  |\n|  GenDCFlowMappingTable | R | IRegister | R | - | G | Returns the GenDC Container data Flow mapping table that will be used to transport the GenDC Container.  |\n|  DeviceTapGeometry | R | IEnumeration | R/(W) | - | E | This device tap geometry feature describes the geometrical properties characterizing the taps of a camera as presented at the output of the device.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 651,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 79 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

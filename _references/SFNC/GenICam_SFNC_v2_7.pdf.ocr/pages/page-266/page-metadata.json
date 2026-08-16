@@ -1,0 +1,121 @@
+{
+  "index": 265,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "<table><tr><td colspan=\"2\">GEN&lt;i&gt;CAM</td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 277,
+      "topLeftY": 166,
+      "bottomRightX": 531,
+      "bottomRightY": 402,
+      "content": "![img-87.jpeg](img-87.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-87.jpeg"
+    },
+    {
+      "topLeftX": 235,
+      "topLeftY": 410,
+      "bottomRightX": 572,
+      "bottomRightY": 428,
+      "content": "Figure 11-3: Encoder 4 states up and down counting.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 461,
+      "bottomRightX": 269,
+      "bottomRightY": 478,
+      "content": "### High resolution motion tracking",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 484,
+      "bottomRightX": 757,
+      "bottomRightY": 557,
+      "content": "In some applications, a higher resolution is required, but this will be available without jitter filtering. In this case the counter can increment or decrement for each of the quadrature phases in the state diagram as illustrated below. This mode supports all Encoder Control output modes, but is not recommended in the Motion mode since jitter between two states may result in continuous output pulses.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 219,
+      "topLeftY": 594,
+      "bottomRightX": 593,
+      "bottomRightY": 799,
+      "content": "![img-88.jpeg](img-88.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-88.jpeg"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 820,
+      "bottomRightX": 686,
+      "bottomRightY": 841,
+      "content": "Figure 11-4: Encoder Control interface and EncoderValue in both motion tracking modes.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 872,
+      "bottomRightX": 240,
+      "bottomRightY": 892,
+      "content": "### Motion Tracking Direction:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 898,
+      "bottomRightX": 749,
+      "bottomRightY": 936,
+      "content": "The Encoder Control interface use an A and a B EncoderSource input connected to the quadrature encoder outputs. These typically correspond to the A and B labelled outputs on the quadrature encoder. The direction of",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 266 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 952,
+      "bottomRightX": 616,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

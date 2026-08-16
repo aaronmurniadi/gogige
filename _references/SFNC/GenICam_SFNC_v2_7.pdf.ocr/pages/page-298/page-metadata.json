@@ -1,0 +1,166 @@
+{
+  "index": 297,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 152,
+      "bottomRightX": 704,
+      "bottomRightY": 189,
+      "content": "Here below, in addition to EventControl, EventSelector and EventNotification should be listed all the categories and data related features for each Event listed in the EventSelector enumeration feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 206,
+      "bottomRightX": 741,
+      "bottomRightY": 243,
+      "content": "For simplicity, all the categories and their data members are not listed explicitly in that document but a precise naming convention for the categories and their member is provided above instead.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 259,
+      "bottomRightX": 750,
+      "bottomRightY": 297,
+      "content": "Below, the detailed features for the members of the EventSelector are only listed for 4 typically recommended events: FrameTrigger, ExposureEnd, Error and EventTest.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 313,
+      "bottomRightX": 716,
+      "bottomRightY": 349,
+      "content": "All the other members of the EventSelector feature should follow the exact same pattern for their features naming and category if they are present in a device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 382,
+      "bottomRightX": 215,
+      "bottomRightY": 400,
+      "content": "### 15.1 EventControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 47,
+      "topLeftY": 406,
+      "bottomRightX": 386,
+      "bottomRightY": 617,
+      "content": "|  Name | EventControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 643,
+      "bottomRightX": 339,
+      "bottomRightY": 660,
+      "content": "Category that contains Event control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 676,
+      "bottomRightX": 222,
+      "bottomRightY": 695,
+      "content": "### 15.2 EventSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 47,
+      "topLeftY": 699,
+      "bottomRightX": 468,
+      "bottomRightY": 886,
+      "content": "|  Name | EventSelector  |\n| --- | --- |\n|  Category | EventControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 298 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

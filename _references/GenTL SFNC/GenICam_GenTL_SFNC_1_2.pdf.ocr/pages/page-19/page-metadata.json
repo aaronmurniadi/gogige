@@ -1,0 +1,58 @@
+{
+  "index": 18,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 43,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 140,
+      "bottomRightX": 226,
+      "bottomRightY": 162,
+      "content": "### 1.6 Acronyms",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 189,
+      "bottomRightX": 636,
+      "bottomRightY": 484,
+      "content": "|  AIA | Automated Imaging Association. See http://www.visiononline.org  |\n| --- | --- |\n|  DHCP | Dynamic Host Configuration Protocol  |\n|  EMVA | European Machine Vision Association. See http://www.emva.org  |\n|  ID | Identifier  |\n|  IP | Internet Protocol  |\n|  LLA | Link-Local Address  |\n|  MAC | Media Access Control  |\n|  R | Read (or Recommended, depends on the context)  |\n|  R/W | Read and Write, if one of the letters is in brackets either read or write is optional, for example R(/W) means read and optionally write  |\n|  W | Write  |\n|  XML | eXtensible Markup Language  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 952,
+      "bottomRightX": 165,
+      "bottomRightY": 968,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 553,
+      "topLeftY": 952,
+      "bottomRightX": 650,
+      "bottomRightY": 970,
+      "content": "Page 19 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

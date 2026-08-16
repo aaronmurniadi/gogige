@@ -1,0 +1,138 @@
+{
+  "index": 28,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 749,
+      "bottomRightY": 124,
+      "content": "|  **GEN<i>CAM** |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 151,
+      "bottomRightX": 413,
+      "bottomRightY": 173,
+      "content": "## 4 Number of bits for each component",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 181,
+      "bottomRightX": 555,
+      "bottomRightY": 200,
+      "content": "This field provides the number of bits for each component. Typical values are",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 207,
+      "bottomRightX": 459,
+      "bottomRightY": 243,
+      "content": "- ○ 1, 2, 4, 5, 6, 8, 10, 12, 14 and 16 for integer data types;\n- ○ 32 and 64 for floating point data types.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 250,
+      "bottomRightX": 742,
+      "bottomRightY": 305,
+      "content": "Use one number if all components of the pixel have same number of bits (ex: Mono8), otherwise one must successively list one number for each component with no space in-between using the same number of digits for all components (including a leading zero when necessary)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 311,
+      "bottomRightX": 463,
+      "bottomRightY": 354,
+      "content": "Ex: RGB565 = 5-bit R + 6-bit G + 5-bit B\nYCbCr160808 = 16-bit Y' + 8-bit Cb + 8-bit Cr",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 388,
+      "bottomRightX": 743,
+      "bottomRightY": 441,
+      "content": "From the above, one can deduce the number of bits occupied by the pixel (not including padding bits). If a single value is listed, then the number of bits is equal to number of components multiplied by the number of bits:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 449,
+      "bottomRightX": 487,
+      "bottomRightY": 494,
+      "content": "Ex: RGB8 = 3 components of 8-bit = 24 bits\nCoord3D_AC16 = 2 components of 16-bit = 32 bits",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 526,
+      "bottomRightX": 655,
+      "bottomRightY": 545,
+      "content": "When the components don't use the same number of bits, then it is the concatenation of them:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 551,
+      "bottomRightX": 624,
+      "bottomRightY": 569,
+      "content": "Ex: RGB565 = 5-bit for red + 6-bit for G + 5-bit for B = 16 bits for each pixel",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 603,
+      "bottomRightX": 746,
+      "bottomRightY": 657,
+      "content": "The \"Packing Style\" section introduces padding bits that increases to overall size of the pixel. In those situations where padding bits are used, the packing style might include a number representing the number of bits used by the pixel, including zero-padding.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 953,
+      "bottomRightX": 103,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 953,
+      "bottomRightX": 463,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 654,
+      "topLeftY": 953,
+      "bottomRightX": 747,
+      "bottomRightY": 973,
+      "content": "Page 29 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

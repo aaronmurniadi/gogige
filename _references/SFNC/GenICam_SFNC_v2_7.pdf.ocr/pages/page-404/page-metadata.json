@@ -1,0 +1,157 @@
+{
+  "index": 403,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 125,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 133,
+      "bottomRightX": 439,
+      "bottomRightY": 238,
+      "content": "for(col = 0; col < Width; col++)\n{\n    coordA [row,col] = col*scaleA+offsetA;\n    coordB [row,col] = row*scaleB+offsetB;\n    coordC [row,col] = imageC [row,col]*scaleC+offsetC;\n}\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 261,
+      "bottomRightX": 185,
+      "bottomRightY": 279,
+      "content": "# RectifiedC_Linescan",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 287,
+      "bottomRightX": 694,
+      "bottomRightY": 305,
+      "content": "The transmitted coordinates can be transformed to world coordinates using the following pseudo-code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 310,
+      "bottomRightX": 514,
+      "bottomRightY": 472,
+      "content": "for(row = 0; row < Height; row++)\n{\n    for(col = 0; col < Width; col++)\n    {\n    coordA [row,col] = col*scaleA+offsetA;\n    ChunkScanLineSelector = row;\n    // Note: Here encoder wrap-around handling is not illustrated.\n    coordB [row,col] = ChunkEncoderValue[row]*scaleB+offsetB;\n    coordC [row,col] = imageC [row,col]*scaleC+offsetC;\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 483,
+      "bottomRightX": 127,
+      "bottomRightY": 502,
+      "content": "# DisparityC",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 508,
+      "bottomRightX": 751,
+      "bottomRightY": 545,
+      "content": "The transmitted disparity can be scaled and an offset added using the following pseudo-code (see Section 21.2.3 for 3D reconstruction):",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 551,
+      "bottomRightX": 439,
+      "bottomRightY": 654,
+      "content": "for(row = 0; row < Height; row++)\n{\n    for(col = 0; col < Width; col++)\n    {\n    coordC [row,col] = imageC [row,col]*scaleC+offsetC;\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 679,
+      "bottomRightX": 189,
+      "bottomRightY": 697,
+      "content": "# DisparityC_Linescan",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 705,
+      "bottomRightX": 728,
+      "bottomRightY": 724,
+      "content": "The transmitted B (Y) coordinate can be transformed to world coordinates using the following pseudo-code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 728,
+      "bottomRightX": 688,
+      "bottomRightY": 878,
+      "content": "for(row = 0; row < Height; row++)\n{\n    for(col = 0; col < Width; col++)\n    {\n    ChunkScanLineSelector = row;\n    // Note: Here encoder wrap-around handling is not illustrated.\n    coordB [row,col] = ChunkEncoderValue[row]*scaleB+offsetB;\n    coordC [row,col] = imageC [row,col]*scaleC+offsetC; // Just scaling to e.g. pixel scale.\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 889,
+      "bottomRightX": 451,
+      "bottomRightY": 910,
+      "content": "### 21.4.8 Scan3dCoordinateSystemReference",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 912,
+      "bottomRightX": 561,
+      "bottomRightY": 944,
+      "content": "|  Name | Scan3dCoordinateSystemReference[Scan3dExtractionSelector]  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 404 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

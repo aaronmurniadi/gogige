@@ -1,0 +1,132 @@
+{
+  "index": 492,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 688,
+      "bottomRightY": 172,
+      "content": "|  Values | -  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 196,
+      "bottomRightX": 705,
+      "bottomRightY": 215,
+      "content": "Returns the Maximum Axis value for the selected coordinate axis of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 228,
+      "bottomRightX": 498,
+      "bottomRightY": 248,
+      "content": "### 24.69 ChunkScan3dCoordinateTransformSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 252,
+      "bottomRightX": 688,
+      "bottomRightY": 555,
+      "content": "|  Name | ChunkScan3dCoordinateTransformSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | RotationX RotationY RotationZ TranslationX TranslationY TranslationZ  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 579,
+      "bottomRightX": 249,
+      "bottomRightY": 595,
+      "content": "Selector for transform values.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 605,
+      "bottomRightX": 187,
+      "bottomRightY": 621,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 632,
+      "bottomRightX": 356,
+      "bottomRightY": 782,
+      "content": "- RotationX: Rotation around X axis.\n- RotationY: Rotation around Y axis.\n- RotationZ: Rotation around Z axis.\n- TranslationX: Translation along X axis.\n- TranslationY: Translation along Y axis.\n- TranslationZ: Translation along Z axis.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 798,
+      "bottomRightX": 378,
+      "bottomRightY": 818,
+      "content": "### 24.70 ChunkScan3dTransformValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 821,
+      "bottomRightX": 688,
+      "bottomRightY": 930,
+      "content": "|  Name | ChunkScan3dTransformValue[ChunkScan3dCoordinateTransformSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 493 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

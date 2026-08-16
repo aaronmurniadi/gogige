@@ -1,0 +1,140 @@
+{
+  "index": 233,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 421,
+      "bottomRightY": 321,
+      "content": "|  Interface | IEnumeration  |\n| --- | --- |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Line0 (If 0 based), Line1, Line2, ... LinkTrigger0 (If 0 based), LinkTrigger1, LinkTrigger2, ... CC1, CC2, CC3, CC4, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 345,
+      "bottomRightX": 730,
+      "bottomRightY": 382,
+      "content": "Selects the physical line (or pin) of the external device connector or the virtual line of the Transport Layer to configure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 389,
+      "bottomRightX": 734,
+      "bottomRightY": 425,
+      "content": "When a Line is selected, all the other Line features will be applied to its associated I/O control block and will condition the resulting input or output signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 432,
+      "bottomRightX": 177,
+      "bottomRightY": 449,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 459,
+      "bottomRightX": 745,
+      "bottomRightY": 584,
+      "content": "- Line0 (If 0 based), Line1, Line2, ...: Index of the physical line and associated I/O control block to use.\n- LinkTrigger0 (If 0 based), LinkTrigger1, LinkTrigger2, ...: Index of the virtual line going on the Transport layer to use.\n- CC1, CC2, CC3, CC4: Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 600,
+      "bottomRightX": 232,
+      "bottomRightY": 619,
+      "content": "### 9.2.3 LineMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 622,
+      "bottomRightX": 385,
+      "bottomRightY": 852,
+      "content": "|  Name | LineMode[LineSelector]  |\n| --- | --- |\n|  Category | DigitalIOControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Input Output  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 878,
+      "bottomRightX": 451,
+      "bottomRightY": 897,
+      "content": "Controls if the physical Line is used to Input or Output a signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 904,
+      "bottomRightX": 734,
+      "bottomRightY": 923,
+      "content": "When a Line supports input and output mode, the default state is Input to avoid possible electrical contention.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 930,
+      "bottomRightX": 177,
+      "bottomRightY": 946,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 234 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

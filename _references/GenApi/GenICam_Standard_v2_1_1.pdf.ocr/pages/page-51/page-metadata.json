@@ -1,0 +1,49 @@
+{
+  "index": 50,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 637,
+      "bottomRightY": 117,
+      "content": "|  GENICAM |   | ![img-67.jpeg](img-67.jpeg)emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 150,
+      "bottomRightX": 634,
+      "bottomRightY": 920,
+      "content": "|  Node Type | Node Element / Attribute | Default value  |\n| --- | --- | --- |\n|  |   |   |\n|  Boolean | OffValue | 0  |\n|   |  OnValue | 1  |\n|   |  Streamable | No  |\n|  Converter | DisplayNotation | Automatic  |\n|   |  DisplayPrecision | 6  |\n|   |  IsLinear | No  |\n|   |  Representation | PureNumber  |\n|   |  Slope | Automatic  |\n|   |  Streamable | No  |\n|   |  Unit | Empty string  |\n|  EnumEntry | IsSelfClearing | No  |\n|  Enumeration | Streamable | No  |\n|  Float | DisplayNotation | Automatic  |\n|   |  DisplayPrecision | 6  |\n|   |  Inc | If not given the Float has no Inc  |\n|   |  Max | Largest double value  |\n|   |  Min | Smallest double value  |\n|   |  Representation | PureNumber  |\n|   |  Streamable | No  |\n|   |  Unit | Empty string  |\n|  FloatReg | Cachable | WriteAround  |\n|   |  DisplayNotation | Automatic  |\n|   |  DisplayPrecision | 6  |\n|   |  Representation | PureNumber  |\n|   |  Unit | Empty string  |\n|  IntConverter | Representation | PureNumber  |\n|   |  Slope | Automatic  |\n|   |  Streamable | No  |\n|   |  Unit | Empty string  |\n|  Integer | Inc | 1  |\n|   |  Max | Largest integer value according to it's number representation  |\n|   |  Min | Smallest integer value according to it's number representation  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 957,
+      "bottomRightX": 300,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 51 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

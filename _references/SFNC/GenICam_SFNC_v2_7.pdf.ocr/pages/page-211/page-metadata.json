@@ -1,0 +1,131 @@
+{
+  "index": 210,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 384,
+      "bottomRightY": 268,
+      "content": "|   | DigitalRed DigitalGreen DigitalBlue DigitalY DigitalU DigitalV DigitalTap1, DigitalTap2, ...  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 295,
+      "bottomRightX": 438,
+      "bottomRightY": 313,
+      "content": "Selects which Gain is controlled by the various Gain features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 319,
+      "bottomRightX": 736,
+      "bottomRightY": 356,
+      "content": "In general, there are 2 types of gain that can exist in a camera, analog or digital. Some camera will implement one or other or both. This is why there are 3 possible sets of gain.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 365,
+      "bottomRightX": 732,
+      "bottomRightY": 400,
+      "content": "The first one, without the **Analog** or **Digital** prefix, is to be used when only one type of gain is implemented. This permits to have an implementation independent way to set the gain.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 407,
+      "bottomRightX": 696,
+      "bottomRightY": 442,
+      "content": "The second and the third, with the **Analog** and **Digital** prefix, is to be used when both types of gain are implemented. This permits to have independent control over each one.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 451,
+      "bottomRightX": 704,
+      "bottomRightY": 486,
+      "content": "The All gain are intended to be a pre or post stage amplification across all channels or taps, rather than a convenient way to set all the channels or tap gains in a single step.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 517,
+      "bottomRightX": 573,
+      "bottomRightY": 710,
+      "content": "![img-81.jpeg](img-81.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-81.jpeg"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 718,
+      "bottomRightX": 524,
+      "bottomRightY": 737,
+      "content": "Figure 6-1: Gain All pre amplification",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 748,
+      "bottomRightX": 68,
+      "bottomRightY": 760,
+      "content": "or",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 211 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

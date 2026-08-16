@@ -1,0 +1,58 @@
+{
+  "index": 3,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 637,
+      "bottomRightY": 119,
+      "content": "|  ![img-4.jpeg](img-4.jpeg) CAM |   | ![img-5.jpeg](img-5.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 159,
+      "bottomRightX": 153,
+      "bottomRightY": 174,
+      "content": "HISTORY",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 211,
+      "bottomRightX": 634,
+      "bottomRightY": 530,
+      "content": "|  Version | Date | Changed by | Change  |\n| --- | --- | --- | --- |\n|  1.0 | 13.06.2006 | Fritz Dierks, Basler | Released version as voted on during the Montreal meeting  |\n|  1.1 draft 1 | 25.03.2008 | Fritz Dierks, Basler | First draft for version 1.1  |\n|  2.0 | 06.11.2009 | Fritz Dierks, Basler | Released  |\n|  2.0.1 | 17.10.2013 | Fritz Dierks, Basler | Fixed some minor miss-spellings and added some clarifications  |\n|  2.1 | 30.09.2015 | Fritz Dierks, BaslerRene Weber, Baumer | - Added a description of default values which are either already given in the schema or in the reference implementation- Added ValidValueSet- Added clarifications provided by Eric Bourbonnais, Dalsa  |\n|  2.1.1 | 18.01.2016 | Fritz Dierks, BaslerMattias Josefsson, Sick | - Fixed several typos  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 957,
+      "bottomRightX": 300,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 4 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

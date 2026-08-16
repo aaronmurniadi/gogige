@@ -1,0 +1,104 @@
+{
+  "index": 16,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<ICAM |   | ![img-25.jpeg](img-25.jpeg)emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 162,
+      "bottomRightX": 574,
+      "bottomRightY": 433,
+      "content": "![img-26.jpeg](img-26.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-26.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 440,
+      "bottomRightX": 256,
+      "bottomRightY": 459,
+      "content": "Figure 8 Area of Interest",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 472,
+      "bottomRightX": 636,
+      "bottomRightY": 525,
+      "content": "To explain this, a more elaborate example must be used. Figure 8 shows an area of interest (AOI) on the imager in a camera. The camera will send only the data from within the AOI, which is given as a rectangle defined by the parameters Top, Left, Width, and Height.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 135,
+      "topLeftY": 544,
+      "bottomRightX": 587,
+      "bottomRightY": 729,
+      "content": "![img-27.jpeg](img-27.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-27.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 743,
+      "bottomRightX": 347,
+      "bottomRightY": 761,
+      "content": "Figure 9 Controlling the Area of Interest",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 773,
+      "bottomRightX": 636,
+      "bottomRightY": 825,
+      "content": "Each of these four parameters is exposed through a register as shown in Figure 9. This simple scheme, however, cannot deal with the fact that none of the four parameters has an unlimited range. Assuming that the pixel coordinates start with 0, the following restrictions apply:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 126,
+      "topLeftY": 831,
+      "bottomRightX": 293,
+      "bottomRightY": 918,
+      "content": "\\(0 \\leq Left \\leq ImagerWidth - Width\\)  \n\\(0 \\leq Top \\leq ImagerHeight - Height\\)  \n\\(1 \\leq Width \\leq ImagerWidth - Left\\)  \n\\(1 \\leq Height \\leq ImagerHeight - Top\\)",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 17 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

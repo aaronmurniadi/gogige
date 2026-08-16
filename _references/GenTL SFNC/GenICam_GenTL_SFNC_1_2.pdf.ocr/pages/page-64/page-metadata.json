@@ -1,0 +1,123 @@
+{
+  "index": 63,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-16.jpeg](img-16.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 449,
+      "bottomRightY": 344,
+      "content": "|  Category | DeviceEnumeration  |\n| --- | --- |\n|  Level | Mandatory  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 369,
+      "bottomRightX": 657,
+      "bottomRightY": 402,
+      "content": "Name of the device vendor. This value only changes on execution of the DeviceUpdateList command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 411,
+      "bottomRightX": 673,
+      "bottomRightY": 447,
+      "content": "Corresponds to the \"DeviceVendorName\" feature of the remote device and is retrieved during device discovery.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 462,
+      "bottomRightX": 280,
+      "bottomRightY": 479,
+      "content": "##### 3.2.2.7 DeviceModelName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 482,
+      "bottomRightX": 443,
+      "bottomRightY": 696,
+      "content": "|  Name | DeviceModelName[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Mandatory  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 720,
+      "bottomRightX": 653,
+      "bottomRightY": 755,
+      "content": "Name of the device model. This value only changes on execution of the DeviceUpdateList command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 764,
+      "bottomRightX": 667,
+      "bottomRightY": 800,
+      "content": "Corresponds to the \"DeviceModelName\" feature of the remote device and is retrieved during device discovery.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 814,
+      "bottomRightX": 290,
+      "bottomRightY": 832,
+      "content": "##### 3.2.2.8 DeviceAccessStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 835,
+      "bottomRightX": 447,
+      "bottomRightY": 918,
+      "content": "|  Name | DeviceAccessStatus[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Mandatory  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 64 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

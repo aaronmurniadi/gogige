@@ -1,0 +1,120 @@
+{
+  "index": 13,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-8.jpeg](img-8.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 156,
+      "bottomRightX": 183,
+      "bottomRightY": 178,
+      "content": "## 3. Operation",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 207,
+      "bottomRightX": 226,
+      "bottomRightY": 225,
+      "content": "### 3.1. Protocol",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 255,
+      "bottomRightX": 466,
+      "bottomRightY": 275,
+      "content": "#### 3.1.1. Command & Acknowledge Mechanism",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 297,
+      "bottomRightX": 646,
+      "bottomRightY": 413,
+      "content": "The protocol uses a command/acknowledge pattern. On each channel each entity has a defined role of being either a “command sender and acknowledge receiver” or a “command receiver and acknowledge sender”. It is defined in the BRM which channel acts as a command channel from the host to the device, and which channel is used for the opposite direction from the device to the host. The command sender sends a command and waits for the acknowledge packet. The command receiver receives the command, acts according to the command, and sends the acknowledge packet with the result.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 420,
+      "bottomRightX": 646,
+      "bottomRightY": 470,
+      "content": "The communication on the default communication channel defines the role of an entity. The sender of a command on the default communication channel is called the host. The command receiver on the default communication channel is called the (remote) device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 477,
+      "bottomRightX": 630,
+      "bottomRightY": 544,
+      "content": "A command packet contains a number called command_id, which specifies the action to be executed by the receiver and some additional data to be used when executing the command. The command receiver is expected to process the command and return the result to the sender of the command using an acknowledge packet.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 550,
+      "bottomRightX": 651,
+      "bottomRightY": 636,
+      "content": "There are commands which always need an acknowledge packet (for example ReadMem) and commands where the acknowledge packet is optional (for example WriteMem). The demand for an acknowledge packet is indicated by a bit in the command packet. In case no acknowledge packet is requested, it is recommended for the command sender to wait the Maximum Device Response Time before the next command is sent.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 642,
+      "bottomRightX": 630,
+      "bottomRightY": 692,
+      "content": "All commands on a channel are sent sequentially. After a command has been sent, the command sender must wait for an acknowledge packet if requested or wait for a timeout and process the failure before the next command may be sent.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 699,
+      "bottomRightX": 610,
+      "bottomRightY": 736,
+      "content": "Each command is sent with a sequentially incremented request id. This id allows resending a command in case of a failure. A successful communication would follow this schema:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 14 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

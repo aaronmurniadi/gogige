@@ -1,0 +1,67 @@
+{
+  "index": 165,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 48,
+      "topLeftY": 41,
+      "bottomRightX": 704,
+      "bottomRightY": 118,
+      "content": "|  GEN<i>CAM |   | ![img-63.jpeg](img-63.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 162,
+      "bottomRightX": 789,
+      "bottomRightY": 487,
+      "content": "![img-64.jpeg](img-64.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-64.jpeg"
+    },
+    {
+      "topLeftX": 401,
+      "topLeftY": 518,
+      "bottomRightX": 648,
+      "bottomRightY": 538,
+      "content": "Figure 5-9: Multi-Frame Acquisition",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 685,
+      "bottomRightX": 121,
+      "bottomRightY": 700,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 279,
+      "topLeftY": 685,
+      "bottomRightX": 378,
+      "bottomRightY": 702,
+      "content": "Page 166 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 423,
+      "topLeftY": 686,
+      "bottomRightX": 591,
+      "bottomRightY": 702,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

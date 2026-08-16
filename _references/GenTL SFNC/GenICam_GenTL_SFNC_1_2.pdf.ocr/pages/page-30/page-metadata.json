@@ -1,0 +1,85 @@
+{
+  "index": 29,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 54,
+      "bottomRightX": 359,
+      "bottomRightY": 83,
+      "content": "## GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 100,
+      "topLeftY": 97,
+      "bottomRightX": 167,
+      "bottomRightY": 111,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 201,
+      "topLeftY": 97,
+      "bottomRightX": 471,
+      "bottomRightY": 113,
+      "content": "GenTL Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 52,
+      "bottomRightX": 583,
+      "bottomRightY": 103,
+      "content": "![img-7.jpeg](img-7.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-7.jpeg"
+    },
+    {
+      "topLeftX": 584,
+      "topLeftY": 87,
+      "bottomRightX": 631,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 156,
+      "bottomRightX": 1010,
+      "bottomRightY": 235,
+      "content": "|  GevDeviceSubnetMask | M | GEV | Integer | R | - | E | Current subnet mask of the GVCP interface of the remote device.  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  GevDeviceGateway | M | GEV | Integer | R | - | E | Current gateway IP address of the GVCP interface of the remote device.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 695,
+      "bottomRightX": 164,
+      "bottomRightY": 709,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 331,
+      "topLeftY": 695,
+      "bottomRightX": 427,
+      "bottomRightY": 712,
+      "content": "Page 30 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

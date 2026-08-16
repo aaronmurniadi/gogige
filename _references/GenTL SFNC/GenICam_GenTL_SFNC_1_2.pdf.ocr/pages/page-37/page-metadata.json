@@ -1,0 +1,122 @@
+{
+  "index": 36,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 83,
+      "topLeftY": 44,
+      "bottomRightX": 683,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 192,
+      "bottomRightX": 260,
+      "bottomRightY": 211,
+      "content": "### 2.5 Buffer Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 234,
+      "bottomRightX": 274,
+      "bottomRightY": 251,
+      "content": "#### 2.5.1 Buffer Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 264,
+      "bottomRightX": 611,
+      "bottomRightY": 283,
+      "content": "Contains the features related to general information about a specific Buffer module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 378,
+      "topLeftY": 316,
+      "bottomRightX": 643,
+      "bottomRightY": 334,
+      "content": "Table 2-20: Buffer Information Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 340,
+      "bottomRightX": 1010,
+      "bottomRightY": 491,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  BufferInformation | O | All | ICategory | R | - | E | Category that contains all Buffer Information features of the Buffer module.  |\n|  BufferUserData | O | All | IInteger | R | - | E | Pointer to user data casted to an integer number referencing GenTL Consumer specific data.  |\n|  BufferType | O | All | IEnumeration | R | - | E | Transport layer type of the buffer.  |\n|  BufferSize | O | All | IInteger | R | Byte | E | Size of the buffer in bytes.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 528,
+      "bottomRightX": 312,
+      "bottomRightY": 546,
+      "content": "#### 2.5.2 Buffer Data Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 559,
+      "bottomRightX": 611,
+      "bottomRightY": 577,
+      "content": "Contains the features related to the currently filled data of a specific Buffer module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 361,
+      "topLeftY": 585,
+      "bottomRightX": 658,
+      "bottomRightY": 603,
+      "content": "Table 2-21: Buffer Data Information Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 607,
+      "bottomRightX": 1010,
+      "bottomRightY": 673,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  BufferDataInformation | O | All | ICategory | R | - | E | Contains all Buffer Data Information features of the Buffer module.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 694,
+      "bottomRightX": 164,
+      "bottomRightY": 710,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 694,
+      "bottomRightX": 428,
+      "bottomRightY": 712,
+      "content": "Page 37 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

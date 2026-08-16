@@ -1,0 +1,57 @@
+{
+  "index": 376,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 131,
+      "bottomRightX": 673,
+      "bottomRightY": 950,
+      "content": "scaleA = ChunkScan3dCoordinateScale[Scan3dExtraction0][CoordinateA];\noffsetA = ChunkScan3dCoordinateOffset[Scan3dExtraction0][CoordinateA];\n// CoordinateB -> Y\nChunkScan3dCoordinateSelector = CoordinateB;\nscaleB = ChunkScan3dCoordinateScale[Scan3dExtraction0][CoordinateB];\noffsetB = ChunkScan3dCoordinateOffset[Scan3dExtraction0][CoordinateB];\n// CoordinateC -> Z\nChunkScan3dCoordinateSelector = CoordinateC;\nscaleC = ChunkScan3dCoordinateScale[Scan3dExtraction0][CoordinateC];\noffsetC = ChunkScan3dCoordinateOffset[Scan3dExtraction0][CoordinateC];\nfor (row = 0; row < Height; row++)\n{\n    for (col = 0; col < Width; col++)\n    {\n    xCoord[row,col]= imageA[row,col]*scaleA+offsetA;\n    yCoord[row,col]= imageB[row,col]*scaleB+offsetB;\n    zCoord[row,col]= imageC[row,col]*scaleC+offsetC;\n    }\n    }\n}\n\nif (ScanMode = CalibratedACLineScan)\n{\n    // Calculating World coordinates - Linescan.\n    // ***\n    // Reading chunk data from received buffer and scaling 3D image to world coordinates.\n    // The image is in Cartesian coordinates.\n    // CoordinateA -> X\n    ChunkScan3dCoordinateSelector = CoordinateA;\n    scaleA = ChunkScan3dCoordinateScale[Scan3dExtraction0][CoordinateA];\n    offsetA = ChunkScan3dCoordinateOffset[Scan3dExtraction0][CoordinateA];\n    // CoordinateB -> Y\n    ChunkScan3dCoordinateSelector = CoordinateB;\n    scaleB = ChunkScan3dCoordinateScale[Scan3dExtraction0][CoordinateB];\n    offsetB = ChunkScan3dCoordinateOffset[Scan3dExtraction0][CoordinateB];\n    // CoordinateC -> Z\n    ChunkScan3dCoordinateSelector = CoordinateC;\n    scaleC = ChunkScan3dCoordinateScale[Scan3dExtraction0][CoordinateC];\n    offsetC = ChunkScan3dCoordinateOffset[Scan3dExtraction0][CoordinateC];\n\n    for (row = 0; row < Height; row++)\n    {\n    for (col = 0; col < Width; col++)\n    {\n    xCoord[row,col] = imageA[row,col] * scaleA + offsetA;\n    ChunkScanLineSelector = row;\n    // Note: Here encoder wrap-around handling is not illustrated.\n    yCoord[row,col] = ChunkEncoderValue[ChunkScanLineSelector]*scaleB+offsetB;\n    zCoord[row,col] = imageC[row,col]*scaleC+offsetC;\n    }\n    }\n}\n\nif (ScanMode == RectifiedC)\n{",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 377 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "index": 10,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 250,
+      "topLeftY": 61,
+      "bottomRightX": 397,
+      "bottomRightY": 91,
+      "content": "GEN<ICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 613,
+      "topLeftY": 61,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 150,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 105,
+      "bottomRightX": 467,
+      "bottomRightY": 122,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 157,
+      "bottomRightX": 694,
+      "bottomRightY": 195,
+      "content": "**Important:** The standard referencing this Pixel Format Naming Convention is expected to define in their document if little-endian or big-endian is used (when necessary).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 228,
+      "bottomRightX": 744,
+      "bottomRightY": 450,
+      "content": "- A **cluster** represents a group of successive single-component/monochrome pixels put together and considered as one unit for alignment purpose. This can be used to align single-component/monochrome data to a given boundary, such as 32-bit or 64-bit, when at least a full byte of zeros is used for padding. This allows re-using some of the multi-components/color pixel packing concepts for a group of single-component/monochrome pixels. A cluster is considered a multi-component pixel.\n- Historically, YUV is the standard color space used for analog television transmission, while Y’CbCr is used for digital encoding of color information suited for video and still-image compression and transmission such as JPEG and MPEG. However, the YUV nomenclature is now used rather loosely and many times incorrectly refers to digital components. This naming convention recognizes this mismatch. It nevertheless refers to YUV in some situations, even though Y’CbCr would be the appropriate representation, as this mismatch has widespread usage in the industry. Therefore, this text assumes that YUV is a general term for a color space working along the principles of Y’CbCr.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 953,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 953,
+      "bottomRightX": 463,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 654,
+      "topLeftY": 953,
+      "bottomRightX": 747,
+      "bottomRightY": 972,
+      "content": "Page 11 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

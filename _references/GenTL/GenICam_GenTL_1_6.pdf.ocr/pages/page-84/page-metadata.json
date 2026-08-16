@@ -1,0 +1,123 @@
+{
+  "index": 83,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-117.jpeg](img-117.jpeg) CAM |   | ![img-118.jpeg](img-118.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 141,
+      "bottomRightY": 153,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 158,
+      "bottomRightX": 637,
+      "bottomRightY": 414,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hDevice is invalid (NULL) or does not reference an open Device module retrieved through a call to IFOpenDevice.  |\n|  GC_ERR_NOT_IMPLEMENTED | Specified iInfoCmd is not implemented.  |\n|  GC_ERR_INVALID_PARAMETER | Parameters piSize and/or piType are invalid pointers (NULL or ~0x0).  |\n|  GC_ERR_BUFFER_TOO_SMALL | pBuffer is not NULL and the value of *piSize is too small to receive the expected amount of data.  |\n|  GC_ERR_NOT_AVAILABLE | The request is implemented but the requested information is currently not available for any reason.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 442,
+      "bottomRightX": 636,
+      "bottomRightY": 478,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 489,
+      "bottomRightX": 285,
+      "bottomRightY": 506,
+      "content": "##### 6.3.4.3 DevGetDataStreamID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 527,
+      "bottomRightX": 641,
+      "bottomRightY": 599,
+      "content": "|  GC_ERROR | DevGetDataStreamID | ( DEV_HANDLE | hDevice,  |\n| --- | --- | --- | --- |\n|   |  | uint32_t | iIndex,  |\n|   |  | char * | sDataStreamID,  |\n|   |  | size_t * | piSize )  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 605,
+      "bottomRightX": 555,
+      "bottomRightY": 623,
+      "content": "Queries the unique ID of the data stream at iIndex in the internal data stream list.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 630,
+      "bottomRightX": 636,
+      "bottomRightY": 682,
+      "content": "For GenTL Producers which do not provide a data stream the number of available data streams is zero. Calls to DevGetDataStreamID or DevOpenDataStream will fail. Nevertheless a GenTL Producer must export all functions of the public interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 695,
+      "bottomRightX": 166,
+      "bottomRightY": 711,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 715,
+      "bottomRightX": 630,
+      "bottomRightY": 887,
+      "content": "|  [in] | hDevice | Device module to work on.  |\n| --- | --- | --- |\n|  [in] | iIndex | Zero-based index of the data stream on this device.  |\n|  [in,out] | sDataStreamID | Pointer to a user allocated C string buffer to receive the Datastream module ID at the given iIndex. If this parameter is NULL, piSize will contain the needed size of sDataStreamID in bytes. The size includes the terminating 0.  |\n|  [in,out] | piSize | sDataStreamID equal NULL:out: minimal size of sDataStreamID in bytes to hold all information sDataStreamID unequal NULL:  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 84 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

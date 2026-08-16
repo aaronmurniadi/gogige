@@ -1,0 +1,140 @@
+{
+  "index": 425,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 214,
+      "topLeftY": 144,
+      "bottomRightX": 589,
+      "bottomRightY": 162,
+      "content": "Figure 23-4: Optic controller and optical axis state machine",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 170,
+      "bottomRightX": 715,
+      "bottomRightY": 223,
+      "content": "The command “Initialize” can also be handled internally which means that it is not required to start initialization with the command “Initialize” by the user but this can also be done automatically at system startup. The detection if an optic controller or optical axis is present or not is quality of implementation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 231,
+      "bottomRightX": 733,
+      "bottomRightY": 287,
+      "content": "The state “Busy” is a transition state, so the state machine can switch to this state with every transition shown in the state machine above before reaching the new end state. Depending on the implementation of a feature access or command execution (blocking or non-blocking) this state can be visible to the user or not.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 325,
+      "bottomRightX": 303,
+      "bottomRightY": 348,
+      "content": "### 23.4 Optic Control features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 371,
+      "bottomRightX": 531,
+      "bottomRightY": 390,
+      "content": "This section gives the detailed description of all the Optic Control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 404,
+      "bottomRightX": 272,
+      "bottomRightY": 425,
+      "content": "#### 23.4.1 OpticControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 427,
+      "bottomRightX": 553,
+      "bottomRightY": 640,
+      "content": "|  Name | OpticControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Optional  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 665,
+      "bottomRightX": 295,
+      "bottomRightY": 683,
+      "content": "Category for optical control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 698,
+      "bottomRightX": 366,
+      "bottomRightY": 719,
+      "content": "#### 23.4.2 OpticControllerSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 721,
+      "bottomRightX": 553,
+      "bottomRightY": 944,
+      "content": "|  Name | OpticControllerSelector  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | OpticController0 (If 0 based), OpticController1,  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 426 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "index": 35,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 218,
+      "topLeftY": 78,
+      "bottomRightX": 353,
+      "bottomRightY": 105,
+      "content": "### GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 119,
+      "bottomRightX": 141,
+      "bottomRightY": 132,
+      "content": "Version 1.3.1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 289,
+      "topLeftY": 118,
+      "bottomRightX": 403,
+      "bottomRightY": 133,
+      "content": "GenCP Standard",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 503,
+      "topLeftY": 67,
+      "bottomRightX": 575,
+      "bottomRightY": 136,
+      "content": "![img-34.jpeg](img-34.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-34.jpeg"
+    },
+    {
+      "topLeftX": 577,
+      "topLeftY": 113,
+      "bottomRightX": 649,
+      "bottomRightY": 133,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 148,
+      "topLeftY": 153,
+      "bottomRightX": 571,
+      "bottomRightY": 442,
+      "content": "|  Command Name | command_id  |\n| --- | --- |\n|  READMEM_CMD | Hex 0800  |\n|  READMEM_ACK | Hex 0801  |\n|  WRITEMEM_CMD | Hex 0802  |\n|  WRITEMEM_ACK | Hex 0803  |\n|  PENDING_ACK | Hex 0805  |\n|  READMEM_STACKED_CMD | Hex 0806  |\n|  READMEM_STACKED_ACK | Hex 0807  |\n|  WRITEMEM_STACKED_CMD | Hex 0808  |\n|  WRITEMEM_STACKED_ACK | Hex 0809  |\n|  EVENT_CMD | Hex 0C00  |\n|  EVENT_ACK | Hex 0C01  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 284,
+      "topLeftY": 442,
+      "bottomRightX": 435,
+      "bottomRightY": 456,
+      "content": "Table 7 – Command Identifier",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 617,
+      "bottomRightY": 950,
+      "content": "Page 36 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

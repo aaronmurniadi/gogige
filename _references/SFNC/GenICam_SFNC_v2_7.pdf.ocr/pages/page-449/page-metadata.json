@@ -1,0 +1,157 @@
+{
+  "index": 448,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 150,
+      "bottomRightX": 373,
+      "bottomRightY": 230,
+      "content": "...\n// Enable the Range and Confidence Components.\nComponentSelector = Range;\nComponentEnable = True;\nComponentSelector = Confidence;\nComponentEnable = True;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 246,
+      "bottomRightX": 352,
+      "bottomRightY": 331,
+      "content": "// Enable the Image and PixelFormat chunks.\nChunkModeActive = True;\nChunkSelector = Image;\nChunkEnable = True;\nChunkSelector = PixelFormat;\nChunkEnable = True;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 344,
+      "bottomRightX": 568,
+      "bottomRightY": 389,
+      "content": "// Start the acquisition of the multi-component buffer with its chunk data.\nAcquisitionStart();\n...",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 407,
+      "bottomRightX": 161,
+      "bottomRightY": 423,
+      "content": "# Reception side:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 430,
+      "bottomRightX": 704,
+      "bottomRightY": 504,
+      "content": "// At reception of a multi-component payload, the components' pixel format are retrieved using:\nChunkComponentSelector = Range;\nRangePixelFormat = ChunkPixelFormat[Range];\nComponentSelector = Confidence;\nConfidencePixelFormat = ChunkPixelFormat[Confidence];",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 529,
+      "bottomRightX": 230,
+      "bottomRightY": 547,
+      "content": "# ChunkScanLineSelector:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 555,
+      "bottomRightX": 726,
+      "bottomRightY": 625,
+      "content": "Linescan cameras can have features that vary on per line basis. ExposureTime and EncoderValue are examples of such features that can vary from line to line. In order to handle properly those features in linescan mode, their value for each scan line must be included in the Chunk Data. ChunkScanLineSelector can then be used to retrieve each value in the received chunk.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 659,
+      "bottomRightX": 286,
+      "bottomRightY": 681,
+      "content": "# Chunk Features description:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 706,
+      "bottomRightX": 314,
+      "bottomRightY": 723,
+      "content": "The chunk features are described below.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 731,
+      "bottomRightX": 742,
+      "bottomRightY": 767,
+      "content": "Note that the naming scheme to access the data of the chunk associated with a feature Name is ChunkName and any SFNC feature can have a chunk counterpart when this applies.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 808,
+      "bottomRightX": 269,
+      "bottomRightY": 827,
+      "content": "# 24.1 ChunkDataControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 832,
+      "bottomRightX": 394,
+      "bottomRightY": 939,
+      "content": "|  Name | ChunkDataControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 449 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 623,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

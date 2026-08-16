@@ -1,0 +1,93 @@
+{
+  "index": 46,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 637,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-63.jpeg](img-63.jpeg)emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 151,
+      "bottomRightX": 255,
+      "bottomRightY": 169,
+      "content": "#### 2.9.8 ICategory Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 178,
+      "bottomRightX": 522,
+      "bottomRightY": 196,
+      "content": "- NodeList GetFeatures() – returns a list of pointers to the feature nodes",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 209,
+      "bottomRightX": 223,
+      "bottomRightY": 226,
+      "content": "#### 2.9.9 IPort Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 236,
+      "bottomRightX": 634,
+      "bottomRightY": 312,
+      "content": "- void Read( uint8 *pBuffer, int64 Address, int64 Length ) – reads an array of bytes located in the device at [Address, Address+Length]\n- void Write( uint8 *pBuffer, int64 Address, int64 Length ) – writes an array of bytes to the device at [Address, Address+Length]",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 326,
+      "bottomRightX": 248,
+      "bottomRightY": 341,
+      "content": "#### 2.9.10 ISelector Interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 354,
+      "bottomRightX": 634,
+      "bottomRightY": 472,
+      "content": "- boolean IsSelector() – indicates if that node is a selector\n- void GetSelectedFeatures(FeatureList_t &) – returns a list of pointers to the feature nodes which are selected by the current node.\n- void GetSelectingFeatures(FeatureList_t &) – returns a list of pointers to the feature nodes which are selecting the current node.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 299,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 973,
+      "content": "Page 47 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

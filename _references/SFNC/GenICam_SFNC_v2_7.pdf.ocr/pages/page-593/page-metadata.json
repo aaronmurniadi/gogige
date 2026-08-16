@@ -1,0 +1,204 @@
+{
+  "index": 592,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "<table><tr><td colspan=\"2\">GEN&lt;ì&gt;CAM</td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 143,
+      "bottomRightX": 337,
+      "bottomRightY": 167,
+      "content": "## 29.6 Octal Tap Geometries",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 200,
+      "bottomRightX": 248,
+      "bottomRightY": 218,
+      "content": "1X8-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 286,
+      "topLeftY": 228,
+      "bottomRightX": 518,
+      "bottomRightY": 247,
+      "content": "1 zone in X with 8 taps, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 224,
+      "topLeftY": 258,
+      "bottomRightX": 580,
+      "bottomRightY": 370,
+      "content": "![img-204.jpeg](img-204.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-204.jpeg"
+    },
+    {
+      "topLeftX": 260,
+      "topLeftY": 376,
+      "bottomRightX": 543,
+      "bottomRightY": 395,
+      "content": "Figure 29-31: Geometry 1X8-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 373,
+      "topLeftY": 402,
+      "bottomRightX": 481,
+      "bottomRightY": 421,
+      "content": "1X8 (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 431,
+      "bottomRightX": 477,
+      "bottomRightY": 451,
+      "content": "1 zone in X with 8 taps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 224,
+      "topLeftY": 461,
+      "bottomRightX": 580,
+      "bottomRightY": 498,
+      "content": "![img-205.jpeg](img-205.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-205.jpeg"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 509,
+      "bottomRightX": 530,
+      "bottomRightY": 527,
+      "content": "Figure 29-32: Geometry 1X8 (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 360,
+      "topLeftY": 536,
+      "bottomRightX": 491,
+      "bottomRightY": 554,
+      "content": "8X-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 319,
+      "topLeftY": 564,
+      "bottomRightX": 485,
+      "bottomRightY": 581,
+      "content": "8 zones in X, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 594,
+      "bottomRightX": 640,
+      "bottomRightY": 675,
+      "content": "![img-206.jpeg](img-206.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-206.jpeg"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 683,
+      "bottomRightX": 539,
+      "bottomRightY": 701,
+      "content": "Figure 29-33: Geometry 8X-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 375,
+      "topLeftY": 710,
+      "bottomRightX": 476,
+      "bottomRightY": 728,
+      "content": "8X (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 359,
+      "topLeftY": 738,
+      "bottomRightX": 444,
+      "bottomRightY": 755,
+      "content": "8 zones in X.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 763,
+      "bottomRightX": 639,
+      "bottomRightY": 781,
+      "content": "![img-207.jpeg](img-207.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-207.jpeg"
+    },
+    {
+      "topLeftX": 277,
+      "topLeftY": 791,
+      "bottomRightX": 526,
+      "bottomRightY": 810,
+      "content": "Figure 29-34: Geometry 8X (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 593 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

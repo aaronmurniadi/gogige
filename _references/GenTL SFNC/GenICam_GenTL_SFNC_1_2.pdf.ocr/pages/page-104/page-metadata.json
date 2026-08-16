@@ -1,0 +1,132 @@
+{
+  "index": 103,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 132,
+      "topLeftY": 157,
+      "bottomRightX": 676,
+      "bottomRightY": 196,
+      "content": "This buffer handling mode is typically used in a live display GUI where it is important that there is no lag between camera and display.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 205,
+      "bottomRightX": 459,
+      "bottomRightY": 443,
+      "content": "![img-32.jpeg](img-32.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-32.jpeg"
+    },
+    {
+      "topLeftX": 497,
+      "topLeftY": 205,
+      "bottomRightX": 723,
+      "bottomRightY": 486,
+      "content": "![img-33.jpeg](img-33.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-33.jpeg"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 495,
+      "bottomRightX": 424,
+      "bottomRightY": 513,
+      "content": "Figure 3-3.3. Buffer Handling Mode \"Newest Only\".",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 521,
+      "bottomRightX": 483,
+      "bottomRightY": 540,
+      "content": "- Default (Deprecated): Same behavior as \"OldestFirst\".",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 548,
+      "bottomRightX": 663,
+      "bottomRightY": 584,
+      "content": "Note that depending on the actual payload not only pure images, but any kind of data can be acquired.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 598,
+      "bottomRightX": 372,
+      "bottomRightY": 615,
+      "content": "### 3.4.3.4 StreamAnnounceBufferMinimum",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 619,
+      "bottomRightX": 426,
+      "bottomRightY": 833,
+      "content": "|  Name | StreamAnnounceBufferMinimum  |\n| --- | --- |\n|  Category | BufferHandlingControl  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 857,
+      "bottomRightX": 595,
+      "bottomRightY": 876,
+      "content": "Minimal number of buffers to announce to enable selected buffer handling mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 883,
+      "bottomRightX": 643,
+      "bottomRightY": 919,
+      "content": "Corresponds to the STREAM_INFO_BUF_ANNOUNCE_MIN command of DSGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 104 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

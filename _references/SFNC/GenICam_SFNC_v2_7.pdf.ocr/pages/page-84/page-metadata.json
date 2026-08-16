@@ -1,0 +1,103 @@
+{
+  "index": 83,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 76,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 171,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 106,
+      "bottomRightX": 920,
+      "bottomRightY": 515,
+      "content": "|  GevSCPHostPort[GevStreamChannelSelector] | O | IInteger | R/W | - | G | Controls the port of the selected channel to which a GVSP transmitter must send data stream or the port from which a GVSP receiver may receive data stream.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  GevSCPSFireTestPacket[GevStreamChannelSelector] | O | IBoolean | R/W | - | G | Sends a test packet.  |\n|  GevSCPSDoNotFragment[GevStreamChannelSelector] | O | IBoolean | R/W | - | G | The state of this feature is copied into the \"do not fragment\" bit of IP header of each stream packet.  |\n|  GevSCPSBigEndian[GevStreamChannelSelector] | O | IBoolean | R/W | - | I | This feature is deprecated (See DeviceStreamChannelEndianness).  |\n|  GevSCPSPacketSize[GevStreamChannelSelector] | R | IInteger | R/(W) | B | E | This GigE Vision specific feature corresponds to DeviceStreamChannelPacketSize and should be kept in sync with it.  |\n|  GevSCPD[GevStreamChannelSelector] | R | IInteger | R/W | - | E | Controls the delay (in GEV timestamp counter unit) to insert between each packet for this stream channel.  |\n|  GevSCDA[GevStreamChannelSelector] | O | IInteger | R/W | - | G | Controls the destination IP address of the selected stream channel to which a GVSP transmitter must send data stream or the destination IP address from which a GVSP receiver may receive data stream.  |\n|  GevSCSP[GevStreamChannelSelector] | O | IInteger | R | - | G | Indicates the source port of the stream channel.  |\n|  GevSCZoneCount[GevStreamChannelSelector] | O | IInteger | R | - | G | Reports the number of zones per block transmitted on the selected stream channel.  |\n|  GevSCZoneDirectionAll[GevStreamChannelSelector] | O | IInteger | R | - | G | Reports the transmission direction of each zone transmitted on the selected stream channel.  |\n|  GevSCZoneConfigurationLock[GevStreamChannelSelector] | O | IBoolean | R/W | - | G | Controls whether the selected stream channel multi-zone configuration is locked.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 431,
+      "topLeftY": 540,
+      "bottomRightX": 544,
+      "bottomRightY": 556,
+      "content": "# Network Statistics",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 562,
+      "bottomRightX": 920,
+      "bottomRightY": 643,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  NetworkStatistics | O | ICategory | R | - | G | Category that contains statistics pertaining to various modules of the GigE Vision transport layer.  |\n|   | Level | Interface | Access | Unit | Visibility | Description  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 651,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 84 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

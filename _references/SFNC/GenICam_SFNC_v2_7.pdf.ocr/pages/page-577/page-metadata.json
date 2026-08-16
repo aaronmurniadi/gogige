@@ -1,0 +1,174 @@
+{
+  "index": 576,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 161,
+      "topLeftY": 143,
+      "bottomRightX": 721,
+      "bottomRightY": 292,
+      "content": "○ YStep: Difference of Y-coordinates between consecutive pixel rows; Y-step is positive when Y-coordinates is increasing at the end of a line; it is negative otherwise.\n○ Allocation of taps to ports. The camera taps are indexed using following conventional sorting rule:\nFirst by increasing values of YStart then by increasing value of XStart. The tap T1 is the sensor tap that exhibits the smallest XStart for the smallest YStart.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 325,
+      "bottomRightX": 293,
+      "bottomRightY": 343,
+      "content": "### 29.2.1.1 Restrictions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 352,
+      "bottomRightX": 435,
+      "bottomRightY": 451,
+      "content": "- All zones have the same size.\n- Zones do not overlap.\n- All zones have the same number of taps.\n- All taps are carrying the same amount of pixels.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 481,
+      "bottomRightX": 381,
+      "bottomRightY": 502,
+      "content": "### 29.2.1.2 Tap Naming Convention",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 509,
+      "bottomRightX": 458,
+      "bottomRightY": 527,
+      "content": "A tap configuration for area-scan camera is designated by:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 532,
+      "bottomRightX": 327,
+      "bottomRightY": 554,
+      "content": "<TapGeometryX>-<TapGeometryY></TapGeometryX>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 560,
+      "bottomRightX": 567,
+      "bottomRightY": 580,
+      "content": "A tap configuration for line-scan or TDI-line-scan camera is designated by:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 585,
+      "bottomRightX": 207,
+      "bottomRightY": 606,
+      "content": "<TapGeometryX></TapGeometryX>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 195,
+      "topLeftY": 613,
+      "bottomRightX": 607,
+      "bottomRightY": 633,
+      "content": "TapGeometryX is designated by <ZoneX>X(<TapX>)(<ExtX>)</ExtX></ZoneX>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 232,
+      "topLeftY": 638,
+      "bottomRightX": 708,
+      "bottomRightY": 674,
+      "content": "<ZoneX>: An integer in the range of {1, 2, 3, 4, 8, 10} declaring number of zones encountered across horizontal direction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 232,
+      "topLeftY": 683,
+      "bottomRightX": 702,
+      "bottomRightY": 754,
+      "content": "<TapX>: An integer in range {∅, 2, 3, 4, 8, 10} declaring the number of consecutive pixels in the horizontal direction that are outputted simultaneously from a zone. This field is omitted when all pixels are in the same column.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 232,
+      "topLeftY": 763,
+      "bottomRightX": 716,
+      "bottomRightY": 852,
+      "content": "<ExtX>: A letter in the range of {∅, E, M} declaring the location of the pixels extractors in the horizontal direction. The value E indicates that pixel extractors are at both ends of the line. Value M indicates that pixel extractors are in the middle of the line. This field is omitted when all pixel extractors are all at the left end of each zone.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 195,
+      "topLeftY": 886,
+      "bottomRightX": 607,
+      "bottomRightY": 905,
+      "content": "TapGeometryY is designated by <ZoneY>Y(<TapY>)(<ExtY>)</ExtY></ZoneY>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 232,
+      "topLeftY": 911,
+      "bottomRightX": 700,
+      "bottomRightY": 947,
+      "content": "<ZoneY>: An integer in the range of {1, 2} declaring the number of zones encountered in the vertical direction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 951,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 970,
+      "content": "Page 577 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "index": 23,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 305,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 30,
+      "bottomRightX": 624,
+      "bottomRightY": 78,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 73,
+      "bottomRightX": 122,
+      "bottomRightY": 88,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 175,
+      "topLeftY": 72,
+      "bottomRightX": 405,
+      "bottomRightY": 89,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 115,
+      "bottomRightX": 675,
+      "bottomRightY": 619,
+      "content": "|   |  |  | GenICam standard. Specified that features with big value such as GevMACAddress, GEVTimestampTickFrequency and GEVTimestampValue must be returned as a single 64 bit values.  |\n| --- | --- | --- | --- |\n|  Release 1.00.00 | 20.06.2007 | Stephane Maurice, Matrox | Final release Version 1.00 Note: This release includes all the features as they were defined in the draft 1.00.02 referenced in the final GigE Vision specification version 1.00.  |\n|  Draft 1.01.01 | 04.07.2007 | Vincent Rowley, Pleora Technologies Inc. | Added SensorTaps, SensorDigitizationTaps, GevCurrentIPConfigurationLLA, GevCurrentIPConfigurationDHCP, GevCurrentIPConfigurationPersistentIP and GevIPConfigurationStatus features. Deprecated GevCurrentIPConfiguration. Added OpenAccess to the list of valid values for the GevCCP feature.  |\n|  Draft 1.01.02 | 24.07.2007 | Stephane Maurice Matrox | Added the PixelFormat description chapter and note about zero based user bits.  |\n|  Release 1.1 | 2.10.2007 | Stephane Maurice, Matrox | Final release Version 1.1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 987,
+      "bottomRightX": 123,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 987,
+      "bottomRightX": 393,
+      "bottomRightY": 1007,
+      "content": "Page 24 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 441,
+      "topLeftY": 987,
+      "bottomRightX": 625,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

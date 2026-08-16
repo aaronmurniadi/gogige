@@ -1,0 +1,158 @@
+{
+  "index": 567,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 144,
+      "bottomRightX": 285,
+      "bottomRightY": 189,
+      "content": "- Off: Test mode is disabled.\n- Mode1: Test mode is one.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 198,
+      "bottomRightX": 596,
+      "bottomRightY": 215,
+      "content": "This can be used to test communication errors of the system cabling between devices.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 215,
+      "bottomRightX": 698,
+      "bottomRightY": 252,
+      "content": "When enabled, this feature results in special test packets being sent continuously by the Device on the connection specified by CxpConnectionSelector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 268,
+      "bottomRightX": 724,
+      "bottomRightY": 307,
+      "content": "The Device receiving the test packet on the other end of the connection can check for errors by reading its own corresponding CxpConnectionTestErrorCount and CxpConnectionTestPacketCount features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 323,
+      "bottomRightX": 666,
+      "bottomRightY": 340,
+      "content": "Typically, the test will need to be run for some time (e.g. minutes) to get a meaningful error rate.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 354,
+      "bottomRightX": 425,
+      "bottomRightY": 376,
+      "content": "### 27.7.16 CxpConnectionTestErrorCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 379,
+      "bottomRightX": 572,
+      "bottomRightY": 593,
+      "content": "|  Name | CxpConnectionTestErrorCount[CxpConnectionSelector]  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 609,
+      "bottomRightX": 738,
+      "bottomRightY": 645,
+      "content": "Reports the current connection error count for test packets received by the device on the connection selected by CxpConnectionSelector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 662,
+      "bottomRightX": 728,
+      "bottomRightY": 698,
+      "content": "The transmission of those test packets is enabled by the CxpConnectionTestMode feature of the Device on the other end of the connection under test.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 716,
+      "bottomRightX": 696,
+      "bottomRightY": 751,
+      "content": "This feature can be read at any time while a test is running. It can be written to zero when a test is not running to reset the counter between tests.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 783,
+      "bottomRightX": 376,
+      "bottomRightY": 805,
+      "content": "### 27.7.17 CxpSendReceiveSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 807,
+      "bottomRightX": 570,
+      "bottomRightY": 947,
+      "content": "|  Name | CxpSendReceiveSelector  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 568 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

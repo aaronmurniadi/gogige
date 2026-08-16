@@ -1,0 +1,103 @@
+{
+  "index": 387,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 358,
+      "bottomRightY": 157,
+      "content": "### 21.3 3D Device data output control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 181,
+      "bottomRightX": 735,
+      "bottomRightY": 272,
+      "content": "A 3D extraction device typically has its sensor's data sent to a 3D extraction processing module to calculate information such as Range, Reflectance, etc. A sensor Region can optionally be used to limit the area of the sensor to process and the 3D extraction processing module also have a separate configurable output region to control the size and format of processed data to stream out. Most of the 3D extraction devices also have an option to directly stream out the raw sensor's 2D data for visualization during setup.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 309,
+      "bottomRightX": 474,
+      "bottomRightY": 329,
+      "content": "Linescan 3D device Regions and Components output",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 334,
+      "bottomRightX": 696,
+      "bottomRightY": 764,
+      "content": "![img-127.jpeg](img-127.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-127.jpeg"
+    },
+    {
+      "topLeftX": 169,
+      "topLeftY": 772,
+      "bottomRightX": 636,
+      "bottomRightY": 792,
+      "content": "Figure 21-19: Linescan 3D device regions and components output control.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 822,
+      "bottomRightX": 755,
+      "bottomRightY": 896,
+      "content": "In the Figure 21-19 above, the 2D sensor's Region (A) of a Linescan 3D device is used to limit the area to analyse. A separate Scan 3D Extraction Region (B) defines the Width and Height of the 3D extraction output frame generated. The streaming of the Range, Reflectance or Intensity image components can be also enabled or disabled individually.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 388 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "index": 25,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 250,
+      "topLeftY": 61,
+      "bottomRightX": 397,
+      "bottomRightY": 91,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 613,
+      "topLeftY": 61,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 150,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 105,
+      "bottomRightX": 466,
+      "bottomRightY": 122,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 147,
+      "bottomRightX": 749,
+      "bottomRightY": 943,
+      "content": "|  Component designation | Positioning in Image | Description  |\n| --- | --- | --- |\n|  “BayerRG” | Bayer_LMMN location | Bayer filter Red-Green-Green-Blue  |\n|  “BayerGB” | Bayer_MNLM location | Bayer filter Green-Blue-Red-Green  |\n|  “BayerBG” | Bayer_NMML location | Bayer filter Blue-Green-Green-Red  |\n|  “BiColorRGBG” | BiColor_LMNO location | Bi-color pixel Red/Green - Blue/Green  |\n|  “BiColorGRGB” | BiColor_LMNO location | Bi-color pixel Green/Red - Green/Blue  |\n|  “BiColorBGRG” | BiColor_LMNO location | Bi-color pixel Blue/Green - Red/Green  |\n|  “BiColorGBGR” | BiColor_LMNO location | Bi-color pixel Green/Blue - Green/Red  |\n|  “aRGB” | LMNO4444 location | alpha-Red-Green-Blue alpha component content is manufacturer-specific.  |\n|  “YRGB” | LMNO4444 location | Luma-Red-Green-Blue  |\n|  “RGBa” | LMNO4444 location | Red-Green-Blue-alpha alpha component content is manufacturer-specific.  |\n|  “aBGR” | LMNO4444 location | alpha-Blue-Green-Red alpha component content is manufacturer-specific.  |\n|  “BGRa” | LMNO4444 location | Blue-Green-Red-alpha alpha component content is manufacturer-specific.  |\n|  “YUV” “YUV422” “YUV411” | LMN444 location LMN422 location LMN411 location | YUV color space, typically an incorrect usage of the Y’CbCr color space. Legacy from IIDC standard. *Default:* Y is unsigned, U and V are signed (shifted by adding 128 for 8-bit components)  |\n|  “YCbCr” “YCbCr422” “YCbCr411” | LMN444 location LMN422 location LMN411 location | Generic Y’CbCr color space using full range of 256 values for each component. See section 8.2.1 for the color transform equations. Y’, Cb and Cr are in the range [0, 255]. Y is unsigned, Cb and Cr are signed (shifted by adding 128).  |\n|  “YCbCr601” “YCbCr601_422” “YCbCr601_411” | LMN444 location LMN422 location LMN411 location | Y’CbCr color space as specified by ITU-R BT.601 (SDTV). See section 8.2.2 for the color transform equations. Y’ is in the range [16, 235]. Cb and Cr are in the range [16, 240]. Y’ is unsigned, Cb and Cr are signed (shifted by adding 128).  |\n|  “YCbCr709” “YCbCr709_422” “YCbCr709_411” | LMN444 location LMN422 location LMN411 location | Y’CbCr color space as specified by ITU-R BT.709 (HDTV). See section 8.2.3 for the color transform equations. Y’ is in the range [16, 235]. Cb and Cr are in the range [16, 240]. Y’ is unsigned, Cb and Cr are signed (shifted by adding 128).  |\n|  “SCF1WBWG” | SCF1_LMLN location | Sparse Color Filter #1, White-Blue-White-Green pattern  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 954,
+      "bottomRightX": 102,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 954,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 654,
+      "topLeftY": 954,
+      "bottomRightX": 747,
+      "bottomRightY": 972,
+      "content": "Page 26 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "index": 11,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-6.jpeg](img-6.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 156,
+      "bottomRightX": 191,
+      "bottomRightY": 175,
+      "content": "## 2. Definitions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 206,
+      "bottomRightX": 342,
+      "bottomRightY": 226,
+      "content": "### 2.1. Device Description File",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 248,
+      "bottomRightX": 634,
+      "bottomRightY": 280,
+      "content": "Device Description File means a GenICam compliant XML file describing the register space of a device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 309,
+      "bottomRightX": 287,
+      "bottomRightY": 329,
+      "content": "### 2.2. String Encoding",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 351,
+      "bottomRightX": 642,
+      "bottomRightY": 419,
+      "content": "All strings are encoded in ASCII, UTF8 or UTF16 depending on the BRM setting. The endianness of the characters in an encoded string must match the endianness of the containing register map. Strings defined in the bootstrap register map must follow the endianness of the GenCP Protocol. Strings in the device's register map must follow the implementation endianness.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 446,
+      "bottomRightX": 306,
+      "bottomRightY": 467,
+      "content": "### 2.3. Byte and Bit Order",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 487,
+      "bottomRightX": 627,
+      "bottomRightY": 538,
+      "content": "The order and size of fields within packets are not depending on the endianness used. Fields are listed with its byte offset relative to the start of the section within a packet. All fields are byte aligned.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 544,
+      "bottomRightX": 646,
+      "bottomRightY": 579,
+      "content": "The endianness of all fields in GenCP protocol packets is technology specific and it must match the endianness of the bootstrap registers of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 585,
+      "bottomRightX": 649,
+      "bottomRightY": 636,
+      "content": "This document does not define or use explicit bit numbers but identifies bits by its offset to the least significant bit. This notation is endian agnostic even though the offset matches the bit numbers of little-endian notations.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 643,
+      "bottomRightX": 534,
+      "bottomRightY": 660,
+      "content": "The endianness of the non-bootstrap registers is device implementation specific.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 666,
+      "bottomRightX": 468,
+      "bottomRightY": 684,
+      "content": "For reference, the byte order is described in Appendix B of RFC791.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 691,
+      "bottomRightX": 639,
+      "bottomRightY": 724,
+      "content": "Unless explicitly stated for a given technology, the endianness for GenCP-Implementations is big-endian.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 778,
+      "bottomRightX": 277,
+      "bottomRightY": 796,
+      "content": "### 2.4. GenCP Version",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 819,
+      "bottomRightX": 339,
+      "bottomRightY": 835,
+      "content": "The GenCP version this document describes is",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 842,
+      "bottomRightX": 290,
+      "bottomRightY": 858,
+      "content": "Major Version Number 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 866,
+      "bottomRightX": 290,
+      "bottomRightY": 881,
+      "content": "Minor Version Number 3",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 12 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

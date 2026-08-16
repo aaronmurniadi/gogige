@@ -1,0 +1,85 @@
+{
+  "index": 400,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | ![img-133.jpeg](img-133.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 136,
+      "bottomRightX": 736,
+      "bottomRightY": 174,
+      "content": "- DisparityC_Linescan: Disparity 2.5D Depth map with varying B sampling. The distance is inversely proportional to the pixel (disparity) value. The B (Y) axis comes from the encoder chunk value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 203,
+      "bottomRightX": 673,
+      "bottomRightY": 783,
+      "content": "|  Scan3dOutputMode | 3dScanType |   | PixelFormats | Comment  |\n| --- | --- | --- | --- | --- |\n|   |  Line | Area  |   |   |\n|  UncalibratedC | X | X | Coord3D_C |   |\n|  CalibratedABC_Grid | X | X | Coord3D_ABC | Can be sent as 3 planar parts A/B/C.  |\n|  CalibratedABC_PointCloud | X | X | Coord3D_ABC | Can be sent as 3 planar parts A/B/C.  |\n|  CalibratedAC | X |  | Coord3D_AC | The B (scan direction) scaling from scale and offset data.  |\n|  CalibratedAC_Linescan | X |  | Coord3D_AC | The B (scan direction) scaling is in Encoder Chunk data.  |\n|  CalibratedC | X | X | Coord3D_C | Only calibrated range.  |\n|  CalibratedC_Linescan | X |  | Coord3D_C | Only calibrated range. The B (scan direction) scaling is in Encoder Chunk data.  |\n|  RectifiedC | X | X | Coord3D_C | Typically used together with Cartesian coordinate system.  |\n|  RectifiedC_Linescan | X |  | Coord3D_C | The B (scan direction) scaling in Encoder Chunk data. Typically used together with Cartesian coordinate system.  |\n|  DisparityC | X | X | Coord3D_C |   |\n|  DisparityC_Linescan | X |  | Coord3D_C | The B (scan direction) scaling in Encoder Chunk data.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 815,
+      "bottomRightX": 165,
+      "bottomRightY": 832,
+      "content": "#### Linescan modes:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 840,
+      "bottomRightX": 757,
+      "bottomRightY": 912,
+      "content": "There are a number of linescan specific modes, i.e. with the suffix _Linescan. These use embedded chunk encoder information to specify the displacement between the lines in the 3D data stream. These modes are only applicable in situations where the encoder scaling is known and the encoder values transmitted as chunk data for each scan line.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 401 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 615,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

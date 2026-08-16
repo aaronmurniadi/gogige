@@ -1,0 +1,105 @@
+{
+  "index": 28,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 29,
+      "topLeftY": 114,
+      "bottomRightX": 732,
+      "bottomRightY": 273,
+      "content": "|  2 | 50 | PaddingReserved = 0. Reserved for alignment and future use.  |\n| --- | --- | --- |\n|  4 | 52 | InfoReserved = 0 Reserved for future use.  |\n|  8 | 56 | InfoTypeSpecific = 0. Reserved for future use (0).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 195,
+      "topLeftY": 285,
+      "bottomRightX": 541,
+      "bottomRightY": 301,
+      "content": "Table 2-7: Part specific Header fields description for 1D Array or Image",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 312,
+      "bottomRightX": 602,
+      "bottomRightY": 332,
+      "content": "### 2.2.8.3 2D uncompressed, JPEG or JPEG2000 compressed image specific Part type fields",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 32,
+      "topLeftY": 352,
+      "bottomRightX": 742,
+      "bottomRightY": 392,
+      "content": "|  SizeX |   | SizeY  |\n| --- | --- | --- |\n|  PaddingX | PaddingY | InfoReserved  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 404,
+      "bottomRightX": 625,
+      "bottomRightY": 420,
+      "content": "Figure 2-10: Part specific Header fields layout for 2D uncompressed, JPEG or JPEG2000 compressed image",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 30,
+      "topLeftY": 446,
+      "bottomRightX": 732,
+      "bottomRightY": 799,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Description  |\n| --- | --- | --- |\n|  4 | 40 | SizeX X size of the 2D Part (in pixels).  |\n|  4 | 44 | SizeY Y size of the 2D Part (in pixels).  |\n|  2 | 48 | PaddingX Size of the X padding at the end of each line (in bytes).  |\n|  2 | 50 | PaddingY Size of the Y padding at the end of the Part (in bytes). Padding Y can be used to align the following Part to specific hardware constraints, e.g. processor specific alignment constraints  |\n|  4 | 52 | InfoReserved = 0 Reserved for future use.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 103,
+      "topLeftY": 811,
+      "bottomRightX": 632,
+      "bottomRightY": 827,
+      "content": "Table 2-8: Part specific Header fields description for 2D uncompressed, JPEG or JPEG2000 compressed image",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 83,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 29 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

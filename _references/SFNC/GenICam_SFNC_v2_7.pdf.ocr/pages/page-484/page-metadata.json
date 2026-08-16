@@ -1,0 +1,150 @@
+{
+  "index": 483,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 396,
+      "bottomRightY": 279,
+      "content": "|  Unit | -  |\n| --- | --- |\n|  Visibility | Expert  |\n|  Values | Source0 (if 0 based) Source1 Source2 ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 303,
+      "bottomRightX": 435,
+      "bottomRightY": 321,
+      "content": "Returns the Identifier of Source that the image comes from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 329,
+      "bottomRightX": 470,
+      "bottomRightY": 346,
+      "content": "This generally maps to the corresponding SourceSelector feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 354,
+      "bottomRightX": 187,
+      "bottomRightY": 370,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 380,
+      "bottomRightX": 364,
+      "bottomRightY": 477,
+      "content": "- Source0: Image comes from the Source 0.\n- Source1: Image comes from the Source 1.\n- Source2: Image comes from the Source 2.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 493,
+      "bottomRightX": 322,
+      "bottomRightY": 512,
+      "content": "### 24.52 ChunkSourceIDValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 515,
+      "bottomRightX": 504,
+      "bottomRightY": 731,
+      "content": "|  Name | ChunkSourceIDValue[ChunkSourceSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 754,
+      "bottomRightX": 588,
+      "bottomRightY": 772,
+      "content": "Returns the unique integer Identifier value of the Source that the image comes from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 780,
+      "bottomRightX": 473,
+      "bottomRightY": 799,
+      "content": "This generally maps to the corresponding SourceIDValue feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 813,
+      "bottomRightX": 335,
+      "bottomRightY": 833,
+      "content": "### 24.53 ChunkTransferBlockID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 836,
+      "bottomRightX": 396,
+      "bottomRightY": 945,
+      "content": "|  Name | ChunkTransferBlockID  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 484 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

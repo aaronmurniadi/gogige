@@ -1,0 +1,182 @@
+{
+  "index": 160,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 76,
+      "bottomRightX": 106,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 75,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 535,
+      "bottomRightY": 81,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 120,
+      "bottomRightX": 394,
+      "bottomRightY": 141,
+      "content": "## 5.2 Acquisition features usage model",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 167,
+      "bottomRightX": 651,
+      "bottomRightY": 201,
+      "content": "The AcquisitionMode controls the mode of acquisition for the device. This mainly affects the number of frames captured in the Acquisition (SingleFrame, MultiFrame or Continuous).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 207,
+      "bottomRightX": 632,
+      "bottomRightY": 240,
+      "content": "The optional AcquisitionArm command is used to verify and freeze all parameters relevant for the image data capture. It prepares the device for the AcquisitionStart.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 248,
+      "bottomRightX": 428,
+      "bottomRightY": 265,
+      "content": "The AcquisitionStart command is used to start the Acquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 271,
+      "bottomRightX": 628,
+      "bottomRightY": 321,
+      "content": "The AcquisitionStop command will stop the Acquisition at the end of the current Frame. It can be used in any acquisition mode and if the camera is waiting for a trigger, the pending Frame will be cancelled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 328,
+      "bottomRightX": 632,
+      "bottomRightY": 363,
+      "content": "The AcquisitionAbort command can be used to abort an Acquisition at any time. This will end the capture immediately without completing the current Frame.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 369,
+      "bottomRightX": 541,
+      "bottomRightY": 403,
+      "content": "AcquisitionFrameCount controls the number of frames that will be captured when AcquisitionMode is MultiFrame.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 410,
+      "bottomRightX": 543,
+      "bottomRightY": 443,
+      "content": "AcquisitionBurstFrameCount determines the length of each burst to capture if the FrameBurstStart trigger is enabled and the FrameBurstEnd trigger is disabled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 450,
+      "bottomRightX": 624,
+      "bottomRightY": 483,
+      "content": "AcquisitionFrameRate controls the rate at which the Frames are captured when TriggerMode is Off.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 491,
+      "bottomRightX": 587,
+      "bottomRightY": 526,
+      "content": "AcquisitionLineRate controls the rate at which the Lines in each Frame are captured when TriggerMode is Off. This is generally useful for linescan cameras.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 531,
+      "bottomRightX": 648,
+      "bottomRightY": 598,
+      "content": "AcquisitionStatusSelector and AcquisitionStatus can be used to read the status of the internal acquisition signals. The standard acquisition signals Status are: AcquisitionTriggerWait, AcquisitionActive, AcquisitionTransfer, FrameTriggerWait, FrameActive, ExposureActive (See Figure 5-1 and Figure 5-3).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 161 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 950,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

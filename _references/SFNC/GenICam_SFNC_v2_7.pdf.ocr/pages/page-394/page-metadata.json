@@ -1,0 +1,103 @@
+{
+  "index": 393,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 105,
+      "topLeftY": 135,
+      "bottomRightX": 617,
+      "bottomRightY": 159,
+      "content": "### 21.3.1.4 Linescan 3D Range output from 2 sensor regions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 177,
+      "bottomRightX": 751,
+      "bottomRightY": 232,
+      "content": "We will then do 2 simultaneous 3D Range extractions using 2 sensor Regions each sent to a separate Scan 3D Extraction processing module. Note that here, 2 separate laser lines are projected on the the scanned object. See Figure 21-9 for an example of such a setup.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 244,
+      "bottomRightX": 327,
+      "bottomRightY": 264,
+      "content": "Linescan 3D device with dual Range",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 273,
+      "bottomRightX": 736,
+      "bottomRightY": 677,
+      "content": "![img-132.jpeg](img-132.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-132.jpeg"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 687,
+      "bottomRightX": 606,
+      "bottomRightY": 707,
+      "content": "Figure 21-24: Linescan 3D with dual Range components output.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 725,
+      "bottomRightX": 582,
+      "bottomRightY": 944,
+      "content": "// Setup a 2 Regions to output 3D Range.\n// ---\n// Dataflow: Region0 -> Scan3dExtraction0 -> Stream0.\n// Region1 -> Scan3dExtraction1 -> Stream0.\n\n// Set Region0 position and size.\nRegionSelector = Region0; // First Sensor Region.\nOffsetX[Region0] = 80; // Position of Region on sensor.\nOffsetY[Region0] = 80; // Position of Region on sensor.\nWidth[Region0] = 800; // Number of rows of the sensor to read.\nHeight[Region0] = 400; // Number of lines of the sensor to read.\nRegionMode[Region0] = On; // Region 0 features (Width, Height, ...) active.\n\n// Disable Sensor's Region0 Intensity component output.\nComponentSelector = Intensity;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 394 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 615,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

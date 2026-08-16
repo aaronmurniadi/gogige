@@ -1,0 +1,110 @@
+{
+  "index": 273,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 135,
+      "bottomRightX": 187,
+      "bottomRightY": 152,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 162,
+      "bottomRightX": 754,
+      "bottomRightY": 822,
+      "content": "- Off: Disable the Encoder Reset trigger.\n- AcquisitionTrigger: Resets with the reception of the Acquisition Trigger.\n- AcquisitionTriggerMissed: Resets with the reception of a missed Acquisition Trigger.\n- AcquisitionStart: Resets with the reception of the Acquisition Start.\n- AcquisitionEnd: Resets with the reception of the Acquisition End.\n- FrameTrigger: Resets with the reception of the Frame Start Trigger.\n- FrameTriggerMissed: Resets with the reception of a missed Frame Trigger.\n- FrameStart: Resets with the reception of the Frame Start.\n- FrameEnd: Resets with the reception of the Frame End.\n- FrameBurstStart: Resets with the reception of the Frame Burst Start.\n- FrameBurstEnd: Resets with the reception of the Frame Burst End.\n- ExposureStart: Resets with the reception of the Exposure Start.\n- ExposureEnd: Resets with the reception of the Exposure End.\n- Line0 (If 0 based), Line1, Line2, ...: Resets by the chosen I/O Line.\n- UserOutput0, UserOutput1, UserOutput2, ...: Resets by the chosen User Output bit.\n- Counter0Start, Counter1Start, Counter2Start, ...: Resets with the reception of the Counter Start.\n- Counter0End, Counter1End, Counter2End, ...: Resets with the reception of the Counter End.\n- Timer0Start, Timer1Start, Timer2Start, ...: Resets with the reception of the Timer Start.\n- Timer0End, Timer1End, Timer2End, ...: Resets with the reception of the Timer End.\n- LogicBlock0, LogicBlock1, LogicBlock2, ...: Reset by the choosen Logic Block signal.\n- SoftwareSignal0, SoftwareSignal1, SoftwareSignal2, ...: Resets on the reception of the Software Signal.\n- Action0, Action1, Action2, ...: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).\n- LinkTrigger0, LinkTrigger1, LinkTrigger2, ...: Resets on the reception of the chosen Link Trigger (received from the transport layer).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 827,
+      "bottomRightX": 676,
+      "bottomRightY": 863,
+      "content": "Note that the value of the Encoder counter at time of reset is automatically latched and reflected in EncoderValueAtReset.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 274 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

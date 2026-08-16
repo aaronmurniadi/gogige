@@ -1,0 +1,175 @@
+{
+  "index": 113,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 535,
+      "bottomRightY": 79,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 64,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 75,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 75,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 119,
+      "bottomRightX": 646,
+      "bottomRightY": 153,
+      "content": "Typical values listed should be used whenever possible. Arbitrary values can also be used by defining new enumeration entries.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 161,
+      "bottomRightX": 169,
+      "bottomRightY": 176,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 184,
+      "bottomRightX": 378,
+      "bottomRightY": 377,
+      "content": "- Baud9600: Serial port speed of 9600 baud.\n- Baud19200: Serial port speed of 19200 baud.\n- Baud38400: Serial port speed of 38400 baud.\n- Baud57600: Serial port speed of 57600 baud.\n- Baud115200: Serial port speed of 115200 baud.\n- Baud230400: Serial port speed of 230400 baud.\n- Baud460800: Serial port speed of 460800 baud.\n- Baud921600: Serial port speed of 921600 baud.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 391,
+      "bottomRightX": 187,
+      "bottomRightY": 411,
+      "content": "### 3.66 Timestamp",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 413,
+      "bottomRightX": 335,
+      "bottomRightY": 612,
+      "content": "|  Name | Timestamp  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | ns  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 635,
+      "bottomRightX": 394,
+      "bottomRightY": 652,
+      "content": "Reports the current value of the device timestamp counter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 658,
+      "bottomRightX": 511,
+      "bottomRightY": 676,
+      "content": "The same timestamp counter is used for tagging images, chunk and event data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 682,
+      "bottomRightX": 632,
+      "bottomRightY": 716,
+      "content": "Note that the increment of the Timestamp feature must correspond to the resolution of the devices's timestamp in nanoseconds.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 731,
+      "bottomRightX": 234,
+      "bottomRightY": 751,
+      "content": "### 3.67 TimestampReset",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 752,
+      "bottomRightX": 335,
+      "bottomRightY": 927,
+      "content": "|  Name | TimestampReset  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Optional  |\n|  Interface | Command  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 114 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 950,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

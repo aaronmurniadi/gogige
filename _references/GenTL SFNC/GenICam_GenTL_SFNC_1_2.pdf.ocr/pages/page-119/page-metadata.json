@@ -1,0 +1,104 @@
+{
+  "index": 118,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 157,
+      "bottomRightX": 686,
+      "bottomRightY": 481,
+      "content": "- File: The buffer payload contains data of a file. It is used to transfer files, such as JPEG compressed images, which can be stored by the GenTL Producer directly to a hard disk. The user might get a hint how to interpret the buffer by the filename by the \"BufferFileName\" feature.\n- ChunkData: The buffer payload contains chunk data which can be parsed. The chunk data type might be reported through SFNC or deduced from the technology the device is based on. Note that the chunk data can also contain an image. The GenTL Producer should report the presence, position (offset in the buffer) and properties of the image through corresponding BUFFER_INFO_CMD commands.\n- JPEG: The buffer payload is a Jpeg formatted image.\n- JPEG2000: The buffer payload is a JPEG2000 formatted image.\n- H264: The buffer payload is H.264 formatted image data.\n- ChunkOnly: The buffer only contains chunk data.\n- MultiPart: The buffer payload has multiple parts.\n- GenDC: The buffer payload contains a GenDC container.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 489,
+      "bottomRightX": 652,
+      "bottomRightY": 525,
+      "content": "Corresponds to the BUFFER_INFO_PAYLOADTYPE command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 541,
+      "bottomRightX": 298,
+      "bottomRightY": 558,
+      "content": "### 3.5.2.9 BufferNumberOfParts",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 561,
+      "bottomRightX": 420,
+      "bottomRightY": 774,
+      "content": "|  Name | BufferNumberOfParts  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 799,
+      "bottomRightX": 663,
+      "bottomRightY": 836,
+      "content": "The number of parts in the current buffer as delivered by the transport mechanism. For non-multipart this is 0, giving that it is not a multipart buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 850,
+      "bottomRightX": 311,
+      "bottomRightY": 867,
+      "content": "### 3.5.2.10 BufferPartSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 870,
+      "bottomRightX": 420,
+      "bottomRightY": 925,
+      "content": "|  Name | BufferPartSelector  |\n| --- | --- |\n|  Category | BufferDataInformation  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 927,
+      "bottomRightX": 431,
+      "bottomRightY": 944,
+      "content": "Page 119 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "index": 478,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 159,
+      "topLeftY": 55,
+      "bottomRightX": 304,
+      "bottomRightY": 83,
+      "content": "GEN<ICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 55,
+      "bottomRightX": 577,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 87,
+      "bottomRightX": 622,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 99,
+      "bottomRightX": 120,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 99,
+      "bottomRightX": 403,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 141,
+      "bottomRightX": 396,
+      "bottomRightY": 527,
+      "content": "|   | Blue Y U V Tap1, Tap2, ... AnalogAll AnalogRed AnalogGreen AnalogBlue AnalogY AnalogU AnalogV AnalogTap1, AnalogTap2, ... DigitalAll DigitalRed DigitalGreen DigitalBlue DigitalY DigitalU DigitalV DigitalTap1, DigitalTap2, ...  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 553,
+      "bottomRightX": 245,
+      "bottomRightY": 569,
+      "content": "Selects which Gain to return.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 580,
+      "bottomRightX": 186,
+      "bottomRightY": 595,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 605,
+      "bottomRightX": 503,
+      "bottomRightY": 945,
+      "content": "- **All**: Gain will be applied to all channels or taps.\n- **Red**: Gain will be applied to the red channel.\n- **Green**: Gain will be applied to the green channel.\n- **Blue**: Gain will be applied to the blue channel.\n- **Y**: Gain will be applied to Y channel.\n- **U**: Gain will be applied to U channel.\n- **V**: Gain will be applied to V channel.\n- **Tap1**: Gain will be applied to Tap 1.\n- **Tap2**: Gain will be applied to Tap 2.\n- ...\n- **AnalogAll**: Gain will be applied to all analog channels or taps.\n- **AnalogRed**: Gain will be applied to the red analog channel.\n- **AnalogGreen**: Gain will be applied to the green analog channel.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 479 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 623,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

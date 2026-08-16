@@ -1,0 +1,113 @@
+{
+  "index": 63,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 49,
+      "topLeftY": 24,
+      "bottomRightX": 703,
+      "bottomRightY": 99,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 107,
+      "bottomRightX": 927,
+      "bottomRightY": 204,
+      "content": "|  EventTestData | R | ICategory | R | - | E | Category that contains all the data features related to the Event Test generated using the TestEventGenerate command.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  EventTest | R | IInteger | R | - | E | Returns the unique identifier of the Event Test type of event generated using the TestEventGenerate command.  |\n|  EventTestTimestamp | R | IInteger | R | - | E | Returns the Timestamp of the Event Test event.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 234,
+      "bottomRightX": 245,
+      "bottomRightY": 252,
+      "content": "## 2.14 User Set Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 257,
+      "bottomRightX": 902,
+      "bottomRightY": 274,
+      "content": "Contains the features related to the User Set Control to save and load the user device settings (See the User Set Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 370,
+      "topLeftY": 281,
+      "bottomRightX": 603,
+      "bottomRightY": 298,
+      "content": "Table 2-14: User Set Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 303,
+      "bottomRightX": 927,
+      "bottomRightY": 580,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  UserSetControl | R | ICategory | R | - | B | Category that contains the User Set control features.  |\n|  UserSetSelector | R | IEnumeration | R/W | - | B | Selects the feature User Set to load, save or configure.  |\n|  UserSetDescription[UserSetSelector] | O | IString | R/W | - | B | Description of the selected User Set content.  |\n|  UserSetLoad[UserSetSelector] | R | ICommand | (R)/W | - | B | Loads the User Set specified by UserSetSelector to the device and makes it active.  |\n|  UserSetSave[UserSetSelector] | R | ICommand | (R)/W | - | B | Save the User Set specified by UserSetSelector to the non-volatile memory of the device.  |\n|  UserSetDefault | O | IEnumeration | R/W | - | B | Selects the feature User Set to load and make active by default when the device is reset.  |\n|  UserSetDefaultSelector | O | IEnumeration | R/W | - | I | This feature is deprecated (See UserSetDefault).  |\n|  UserSetFeatureSelector | R | IEnumeration | R/W | - | E | Selects which individual UserSet feature to control.  |\n|  UserSetFeatureEnable[UserSetFeatureSelector] | R | IBoolean | R/(W) | - | E | Enables the selected feature and make it active in all the UserSets.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 610,
+      "bottomRightX": 281,
+      "bottomRightY": 630,
+      "content": "## 2.15 Sequencer Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 633,
+      "bottomRightX": 836,
+      "bottomRightY": 650,
+      "content": "Contains the features related to the control of the Sequencer for features change (See the Sequencer Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 652,
+      "bottomRightX": 121,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 652,
+      "bottomRightX": 373,
+      "bottomRightY": 668,
+      "content": "Page 64 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 653,
+      "bottomRightX": 591,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

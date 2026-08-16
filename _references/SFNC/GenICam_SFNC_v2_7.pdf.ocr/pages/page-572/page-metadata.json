@@ -1,0 +1,141 @@
+{
+  "index": 571,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 727,
+      "bottomRightY": 193,
+      "content": "|  Values | CounterActive CounterOverflow  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 217,
+      "bottomRightX": 625,
+      "bottomRightY": 253,
+      "content": "Returns the current status of the selected Cxp Error Counter on the connection selected by CxpConnectionSelector.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 279,
+      "bottomRightX": 187,
+      "bottomRightY": 295,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 304,
+      "bottomRightX": 534,
+      "bottomRightY": 349,
+      "content": "- CounterActive: The counter is actively counting errors.\n- CounterOverflow: The counter exceeded its maximum error count.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 382,
+      "bottomRightX": 290,
+      "bottomRightY": 402,
+      "content": "### 27.7.23 CxpPoCxpAuto",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 402,
+      "bottomRightX": 588,
+      "bottomRightY": 614,
+      "content": "|  Name | CxpPoCxpAuto  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |\n|  Interface | ICommand  |\n|  Access | Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 632,
+      "bottomRightX": 560,
+      "bottomRightY": 649,
+      "content": "Activate automatic control of the Power over CoaXPress (PoCXP) for the Link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 667,
+      "bottomRightX": 613,
+      "bottomRightY": 686,
+      "content": "This feature shall be present only on receiver or transceiver Devices controlling PoCXP.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 699,
+      "bottomRightX": 315,
+      "bottomRightY": 722,
+      "content": "### 27.7.24 CxpPoCxpTurnOff",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 723,
+      "bottomRightX": 588,
+      "bottomRightY": 937,
+      "content": "|  Name | CxpPoCxpTurnOff  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |\n|  Interface | ICommand  |\n|  Access | Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 572 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

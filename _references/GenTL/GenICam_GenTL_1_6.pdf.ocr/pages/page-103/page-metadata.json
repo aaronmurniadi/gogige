@@ -1,0 +1,237 @@
+{
+  "index": 102,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 138,
+      "bottomRightX": 270,
+      "bottomRightY": 157,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 303,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 190,
+      "content": "The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 198,
+      "bottomRightX": 295,
+      "bottomRightY": 216,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 198,
+      "bottomRightX": 635,
+      "bottomRightY": 230,
+      "content": "Parameter phDevice is an invalid pointer (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 262,
+      "bottomRightX": 635,
+      "bottomRightY": 296,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 310,
+      "bottomRightX": 311,
+      "bottomRightY": 326,
+      "content": "##### 6.3.5.15 DSGetNumBufferParts",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 350,
+      "bottomRightX": 600,
+      "bottomRightY": 399,
+      "content": "GC_ERROR DSGetNumBufferParts ( DS_HANDLE hDataStream,\n    BUFFER_HANDLE hBuffer,\n    uint32_t * piNumParts )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 408,
+      "bottomRightX": 637,
+      "bottomRightY": 527,
+      "content": "Inquires the number of independent data parts in the buffer. The GenTL Producer may return 0 in *piNumParts in case the buffer payload is multipart but does not contain any parts. For example in case the individual parts of a multipart buffer can be enabled or disabled in the camera it can happen that a camera sends a multipart payload with no parts enabled and maybe only chunk data is being delivered. As described in this case *piNumParts would report 0. Detailed information about the individual parts can be queried using function DSGetBufferPartInfo.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 533,
+      "bottomRightX": 636,
+      "bottomRightY": 606,
+      "content": "If the buffer content can be fully described using the information available through DSGetBufferInfo queries, it is not split into parts and the buffer payload is not multi-part the GenTL Producer must return the error GC_ERR_NO_DATA. The GenTL Consumer would in this case avoid querying information about buffer parts using DSGetBufferPartInfo.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 611,
+      "bottomRightX": 635,
+      "bottomRightY": 647,
+      "content": "If the reported payload is multi-part the GenTL Producer must use DSGetNumBufferParts and DSGetBufferPartInfo to provide information about the buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 660,
+      "bottomRightX": 166,
+      "bottomRightY": 676,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 680,
+      "bottomRightX": 216,
+      "bottomRightY": 733,
+      "content": "[in] hDataStream\n[in] hBuffer\n[out] piNumParts",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 681,
+      "bottomRightX": 463,
+      "bottomRightY": 696,
+      "content": "Data Stream module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 698,
+      "bottomRightX": 529,
+      "bottomRightY": 713,
+      "content": "Buffer handle to retrieve information about.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 714,
+      "bottomRightX": 630,
+      "bottomRightY": 782,
+      "content": "Number of independent data parts in the buffer. The reported number may be 0 in case the referenced buffer carries a multipart buffer payload but for some reason the number of parts is buffer is 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 795,
+      "bottomRightX": 141,
+      "bottomRightY": 811,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 817,
+      "bottomRightX": 213,
+      "bottomRightY": 835,
+      "content": "GC_ERR_SUCCESS:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 296,
+      "topLeftY": 816,
+      "bottomRightX": 560,
+      "bottomRightY": 835,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 842,
+      "bottomRightX": 283,
+      "bottomRightY": 860,
+      "content": "GC_ERR_NOT_INITIALIZED:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 296,
+      "topLeftY": 842,
+      "bottomRightX": 505,
+      "bottomRightY": 860,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 867,
+      "bottomRightX": 274,
+      "bottomRightY": 886,
+      "content": "GC_ERR_INVALID_HANDLE:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 295,
+      "topLeftY": 866,
+      "bottomRightX": 635,
+      "bottomRightY": 902,
+      "content": "The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 103 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

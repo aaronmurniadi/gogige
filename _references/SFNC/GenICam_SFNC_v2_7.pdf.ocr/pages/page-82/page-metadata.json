@@ -1,0 +1,84 @@
+{
+  "index": 81,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 292,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 77,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 77,
+      "bottomRightX": 387,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 545,
+      "topLeftY": 65,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 920,
+      "bottomRightY": 649,
+      "content": "|  Selector] |  |  |  |  |  |   |\n| --- | --- | --- | --- | --- | --- | --- |\n|  GevFirstURL | O | IString | R | - | I | Indicates the first URL to the GenICam XML device description file.  |\n|  GevSecondURL | O | IString | R | - | I | Indicates the second URL to the GenICam XML device description file.  |\n|  GevNumberOfInterfaces | O | IInteger | R | - | I | This feature is deprecated (See DeviceLinkSelector).  |\n|  GevPersistentIPAddress[GevInterfaceSelector] | O | IInteger | R/W | - | B | Controls the Persistent IP address for this logical link.  |\n|  GevPersistentSubnetMask[GevInterfaceSelector] | O | IInteger | R/W | - | B | Controls the Persistent subnet mask associated with the Persistent IP address on this logical link.  |\n|  GevPersistentDefaultGateway[GevInterfaceSelector] | O | IInteger | R/W | - | B | Controls the persistent default gateway for this logical link.  |\n|  GevMessageChannelCount | O | IInteger | R | - | I | This feature is deprecated (See DeviceEventChannelCount).  |\n|  GevStreamChannelCount | O | IInteger | R | - | I | This feature is deprecated (See DeviceStreamChannelCount).  |\n|  GevHeartbeatTimeout | O | IInteger | R/W | ms | G | This feature is deprecated (See DeviceLinkHeartbeatTimeout).  |\n|  GevTimestampTickFrequency | O | IInteger | R | Hz | I | This feature is deprecated (See the increment of the TimestampLatchValue feature).  |\n|  GevTimestampControlLatch | O | ICommand | W | - | I | This feature is deprecated (See TimestampLatch).  |\n|  GevTimestampControlReset | O | ICommand | W | - | I | This feature is deprecated (See TimestampReset).  |\n|  GevTimestampValue | O | IInteger | R | - | I | This feature is deprecated (See TimestampLatchValue).  |\n|  GevDiscoveryAckDelay | O | IInteger | R/(W) | ms | E | Indicates the maximum randomized delay the device will wait to acknowledge a discovery command.  |\n|  GevIEEE1588 | O | IBoolean | R/W | - | I | This feature is deprecated (See PtpEnable).  |\n|  GevIEEE1588ClockAccuracy | O | IEnumeration | R/(W) | - | I | This feature is deprecated (See PtpClockAccuracy).  |\n|  GevIEEE1588Status | O | IEnumeration | R | - | I | This feature is deprecated (See PtpStatus).  |\n|  GevGVCPExtendedStatusCodesSelector | O | IEnumeration | R/W | - | G | Selects the GigE Vision version to control extended status codes for.  |\n|  GevGVCPExtendedStatusCodes[GevGVCPExtendedStatusCodesSelector] | O | IBoolean | R/W | - | G | Enables the generation of extended status codes.  |\n|  GevGVCPPendingAck | O | IBoolean | R/W | - | G | Enables the generation of PENDING_ACK.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 375,
+      "bottomRightY": 668,
+      "content": "Page 82 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

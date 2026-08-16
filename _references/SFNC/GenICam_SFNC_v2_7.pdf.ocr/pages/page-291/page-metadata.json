@@ -1,0 +1,147 @@
+{
+  "index": 290,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 143,
+      "bottomRightX": 228,
+      "bottomRightY": 166,
+      "content": "## 14 Action Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 196,
+      "bottomRightX": 553,
+      "bottomRightY": 214,
+      "content": "The Action chapter describes all features related to Action Signals in the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 229,
+      "bottomRightX": 265,
+      "bottomRightY": 252,
+      "content": "### 14.1 Action usage model",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 272,
+      "bottomRightX": 736,
+      "bottomRightY": 309,
+      "content": "Action Signals are a method to trigger actions in multiple devices at the same time (depending on the specific transport layer). Action Signals are used in the device in the same way as e.g. digital input lines.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 315,
+      "bottomRightX": 694,
+      "bottomRightY": 334,
+      "content": "One possible use for action signals is to raise a FrameStart trigger in multiple devices at the same time.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 341,
+      "bottomRightX": 745,
+      "bottomRightY": 395,
+      "content": "On most transport layers Action Signals are implemented using broadcast protocol messages. To allow a finegrained control which devices are allowed to react on the broadcasted action protocol message, the features ActionDeviceKey, ActionGroupKey and ActionGroupMask define filter conditions.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 401,
+      "bottomRightX": 743,
+      "bottomRightY": 458,
+      "content": "Each action protocol message contains an action device key, action group key and an action group mask. If the device detects a match between this protocol information and one of the actions selected by ActionSelector it raises the corresponding Action Signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 488,
+      "bottomRightX": 163,
+      "bottomRightY": 507,
+      "content": "Usage Examples:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 514,
+      "bottomRightX": 474,
+      "bottomRightY": 534,
+      "content": "/* Triggered Single Frame acquisition using the Action Signal 1. */",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 552,
+      "bottomRightX": 499,
+      "bottomRightY": 741,
+      "content": "AcquisitionMode = SingleFrame;\nTriggerSelector = FrameStart;\nTriggerMode = On;\nTriggerSource = Action1;\n\nActionDeviceKey = 0x12345678;\nActionSelector = 1;\nActionGroupKey = 0x1;\nActionGroupMask = 0x1;\n\nAcquisitionStart();\n\n// Here the Device is ready to receive the Action Command\n// from an external source.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 787,
+      "bottomRightX": 518,
+      "bottomRightY": 841,
+      "content": "/* Generates a 200us Timer pulse (Strobe) on the physical output Line 2.\nThe Timer pulse is started using a trigger coming from Action Signal 3.\n*/",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 291 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

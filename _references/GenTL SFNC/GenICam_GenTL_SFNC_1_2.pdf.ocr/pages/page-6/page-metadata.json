@@ -1,0 +1,372 @@
+{
+  "index": 5,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 43,
+      "bottomRightX": 681,
+      "bottomRightY": 122,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 131,
+      "bottomRightX": 700,
+      "bottomRightY": 146,
+      "content": "3.3.1.9 DeviceManufacturerInfo 83",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 152,
+      "bottomRightX": 700,
+      "bottomRightY": 167,
+      "content": "3.3.1.10 DeviceType 83",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 174,
+      "bottomRightX": 700,
+      "bottomRightY": 187,
+      "content": "3.3.1.11 DeviceDisplayName 84",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 195,
+      "bottomRightX": 700,
+      "bottomRightY": 210,
+      "content": "3.3.1.12 DeviceTimestampFrequency 84",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 217,
+      "bottomRightX": 700,
+      "bottomRightY": 231,
+      "content": "3.3.1.13 DeviceAccessStatus 85",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 238,
+      "bottomRightX": 700,
+      "bottomRightY": 252,
+      "content": "3.3.1.14 DeviceChunkDataFormat 86",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 258,
+      "bottomRightX": 700,
+      "bottomRightY": 273,
+      "content": "3.3.1.15 DeviceEventDataFormat 87",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 280,
+      "bottomRightX": 700,
+      "bottomRightY": 294,
+      "content": "3.3.1.16 GevDeviceMACAddress 88",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 300,
+      "bottomRightX": 700,
+      "bottomRightY": 314,
+      "content": "3.3.1.17 GevDeviceIPAddress 88",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 321,
+      "bottomRightX": 700,
+      "bottomRightY": 335,
+      "content": "3.3.1.18 GevDeviceSubnetMask 89",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 343,
+      "bottomRightX": 700,
+      "bottomRightY": 358,
+      "content": "3.3.1.19 GevDeviceGateway 89",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 365,
+      "bottomRightX": 700,
+      "bottomRightY": 381,
+      "content": "3.3.2 Device Control 90",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 390,
+      "bottomRightX": 700,
+      "bottomRightY": 404,
+      "content": "3.3.2.1 DeviceControl 90",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 411,
+      "bottomRightX": 700,
+      "bottomRightY": 425,
+      "content": "3.3.2.2 DeviceEndianessMechanism 90",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 431,
+      "bottomRightX": 700,
+      "bottomRightY": 445,
+      "content": "3.3.2.3 LinkCommandTimeout 91",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 452,
+      "bottomRightX": 700,
+      "bottomRightY": 467,
+      "content": "3.3.2.4 LinkCommandRetryCount 91",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 476,
+      "bottomRightX": 700,
+      "bottomRightY": 492,
+      "content": "3.3.3 Stream Enumeration 92",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 499,
+      "bottomRightX": 700,
+      "bottomRightY": 513,
+      "content": "3.3.3.1 StreamEnumeration 92",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 520,
+      "bottomRightX": 700,
+      "bottomRightY": 535,
+      "content": "3.3.3.2 StreamSelector 92",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 541,
+      "bottomRightX": 700,
+      "bottomRightY": 555,
+      "content": "3.3.3.3 StreamID 92",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 563,
+      "bottomRightX": 700,
+      "bottomRightY": 580,
+      "content": "3.3.4 GenICam Control 93",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 588,
+      "bottomRightX": 700,
+      "bottomRightY": 602,
+      "content": "3.3.4.1 Root 93",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 609,
+      "bottomRightX": 700,
+      "bottomRightY": 624,
+      "content": "3.3.4.2 DevicePort 93",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 632,
+      "bottomRightX": 700,
+      "bottomRightY": 648,
+      "content": "3.3.5 Event Control 94",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 656,
+      "bottomRightX": 700,
+      "bottomRightY": 671,
+      "content": "3.3.5.1 EventControl 94",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 677,
+      "bottomRightX": 700,
+      "bottomRightY": 691,
+      "content": "3.3.5.2 EventSelector 94",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 698,
+      "bottomRightX": 700,
+      "bottomRightY": 713,
+      "content": "3.3.5.3 EventNotification 95",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 101,
+      "topLeftY": 721,
+      "bottomRightX": 700,
+      "bottomRightY": 737,
+      "content": "3.4 DATA STREAM MODULE 96",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 747,
+      "bottomRightX": 700,
+      "bottomRightY": 763,
+      "content": "3.4.1 Stream Information 96",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 770,
+      "bottomRightX": 700,
+      "bottomRightY": 784,
+      "content": "3.4.1.1 Stream Information 96",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 792,
+      "bottomRightX": 700,
+      "bottomRightY": 806,
+      "content": "3.4.1.2 StreamID 96",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 813,
+      "bottomRightX": 700,
+      "bottomRightY": 828,
+      "content": "3.4.1.3 StreamType 97",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 836,
+      "bottomRightX": 700,
+      "bottomRightY": 852,
+      "content": "3.4.2 Device Stream Channel Control 98",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 859,
+      "bottomRightX": 700,
+      "bottomRightY": 873,
+      "content": "3.4.2.1 DeviceStreamChannelControl 98",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 881,
+      "bottomRightX": 700,
+      "bottomRightY": 895,
+      "content": "3.4.2.2 DeviceStreamChannelPacketSize 98",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 902,
+      "bottomRightX": 700,
+      "bottomRightY": 917,
+      "content": "3.4.2.3 DeviceStreamChannelPacketSizeMin 99",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 924,
+      "bottomRightX": 700,
+      "bottomRightY": 938,
+      "content": "3.4.2.4 DeviceStreamChannelPacketSizeMax 99",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 952,
+      "bottomRightX": 164,
+      "bottomRightY": 968,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 561,
+      "topLeftY": 952,
+      "bottomRightX": 650,
+      "bottomRightY": 970,
+      "content": "Page 6 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

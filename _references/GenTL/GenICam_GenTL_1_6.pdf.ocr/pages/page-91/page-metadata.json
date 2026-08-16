@@ -1,0 +1,113 @@
+{
+  "index": 90,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-127.jpeg](img-127.jpeg) CAM |   | ![img-128.jpeg](img-128.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 141,
+      "bottomRightY": 153,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 158,
+      "bottomRightX": 637,
+      "bottomRightY": 453,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream.  |\n|  GC_ERR_INVALID_PARAMETER | Parameters pBuffer and/or phBuffer are invalid pointers (NULL or ~0x0).  |\n|  GC_ERR_RESOURCE_IN_USE | The specified pBuffer is already announced to this Data Stream module or, depending on the implementation of the GenTL Producer, it has already been announced to another instance of the Data Stream module (see chapter 3.6).  |\n|  GC_ERR_BUSY | The acquisition has been started and the GenTL Producer does not support announcing buffers while the acquisition is active.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 484,
+      "bottomRightX": 636,
+      "bottomRightY": 520,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 531,
+      "bottomRightX": 347,
+      "bottomRightY": 550,
+      "content": "##### 6.3.5.3 DSAnnounceCompositeBuffer",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 569,
+      "bottomRightX": 641,
+      "bottomRightY": 674,
+      "content": "|  GC_ERROR | DSAnnounceCompositeBuffer ( DS_HANDLE hDataStream, size_t iNumSegments void ** ppSegments, size_t * piSizes, void * pPrivate, BUFFER_HANDLE * phBuffer )  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 681,
+      "bottomRightX": 637,
+      "bottomRightY": 750,
+      "content": "This announces GenTL Consumer allocated memory to the Data Stream associated with the hDataStream handle and returns a buffer handle which references that composite buffer until the buffer is revoked. This will allocate internal resources which will be freed upon a call to DSRevokeBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 756,
+      "bottomRightX": 637,
+      "bottomRightY": 843,
+      "content": "In contrast to DSAnnounceBuffer, this function allows to announce a buffer not referring a single contiguous block of memory, but consisting of multiple segments. This allows routing logically independent portions of the acquired data to separate memory locations, for example when streaming data over multiple flows mechanism. The segments may correspond with different memory areas as well as form a contiguous block, but must not overlap.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 848,
+      "bottomRightX": 636,
+      "bottomRightY": 882,
+      "content": "All the segments of the announced composite buffer are treated as a single entity by all functions operating on a buffer handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 91 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

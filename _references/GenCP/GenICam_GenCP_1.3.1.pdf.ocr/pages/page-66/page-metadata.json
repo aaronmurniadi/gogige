@@ -1,0 +1,67 @@
+{
+  "index": 65,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-70.jpeg](img-70.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 130,
+      "topLeftY": 155,
+      "bottomRightX": 316,
+      "bottomRightY": 174,
+      "content": "5.5.1.1. Manifest Table",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 194,
+      "bottomRightX": 644,
+      "bottomRightY": 428,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Support | Access | Description  |\n| --- | --- | --- | --- | --- |\n|  8 | 0 | M | R | MT Entry CountNumber of entries in the Manifest Table  |\n|  64 | 8 | M | R | Manifest Entry 0First entry in the Manifest Table  |\n|  64 | 8 + 64 | O | R | Manifest Entry 1Second entry in the Manifest Table  |\n|  ... | ... |  |  | ...  |\n|  64 | 8 + n*64 | O | R | Manifest Entry n(N+1)th entry in the Manifest Table  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 275,
+      "topLeftY": 428,
+      "bottomRightX": 443,
+      "bottomRightY": 442,
+      "content": "Table 33 – Manifest Table Layout",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 66 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

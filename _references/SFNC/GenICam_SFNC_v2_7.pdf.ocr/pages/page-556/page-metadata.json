@@ -1,0 +1,94 @@
+{
+  "index": 555,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 571,
+      "bottomRightY": 647,
+      "content": "|   | CXP1_X2 CXP2_X2 CXP3_X2 CXP5_X2 CXP6_X2 CXP10_X2 CXP12_X2 CXP25_X2 CXP1_X4 CXP2_X4 CXP3_X4 CXP5_X4 CXP6_X4 CXP10_X4 CXP12_X4 CXP25_X4 CXP1_X8 CXP2_X8 CXP3_X8 CXP5_X8 CXP6_X8 CXP10_X8 CXP12_X8 CXP25_X8 Device-specific  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 663,
+      "bottomRightX": 584,
+      "bottomRightY": 682,
+      "content": "This feature indicates the current and active Link configuration used by the Device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 688,
+      "bottomRightX": 728,
+      "bottomRightY": 762,
+      "content": "When the Link is active, this feature returns the Link configuration as the combination of the Connection speed and the number of active Connections using the following format \"CXPm_Xn\", where m is the Connection speed and n the number of active Connections. For example \"CXP6_X4\" means 4 connections are operating at CXP-6 speed (6.25 Gbps) so the total speed on the virtual single link is 25 Gbps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 768,
+      "bottomRightX": 188,
+      "bottomRightY": 785,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 794,
+      "bottomRightX": 719,
+      "bottomRightY": 934,
+      "content": "- None: The Link configuration of the Device is unknown. Either the configuration operation has failed or there is nothing connected.\n- Pending: The Device is in the process of configuring the Link. The Link cannot be used yet.\n- CXP1_X1: 1 Connection operating at CXP-1 speed (1.25 Gbps).\n- CXP2_X1: 1 Connection operating at CXP-2 speed (2.50 Gbps).\n- CXP3_X1: 1 Connection operating at CXP-3 speed (3.125 Gbps).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 556 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

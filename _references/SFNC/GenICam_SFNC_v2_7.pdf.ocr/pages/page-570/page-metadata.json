@@ -1,0 +1,104 @@
+{
+  "index": 569,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 628,
+      "bottomRightY": 445,
+      "content": "|  Category | CoaXPress  |\n| --- | --- |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ConnectionLockLoss Encoding StreamDataPacketCrc ControlPacketCrc EventPacketCrc DuplicatedCharactersCorrected DuplicatedCharactersUncorrected  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 469,
+      "bottomRightX": 372,
+      "bottomRightY": 486,
+      "content": "Selects which Cxp Error Counter to read or reset.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 494,
+      "bottomRightX": 188,
+      "bottomRightY": 510,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 520,
+      "bottomRightX": 737,
+      "bottomRightY": 778,
+      "content": "- ConnectionLockLoss: Counts the number of times the lock was lost.\n- Encoding: Counts the number of protocol encoding errors detected.\n- StreamDataPacketCrc: Counts the number of CRC errors detected in a data packet. This counter is only available on the CoaXpress host.\n- ControlPacketCrc: Counts the number of CRC errors detected in a control packet.\n- EventPacketCrc: Counts the number of CRC errors detected in an event packet.\n- DuplicatedCharactersCorrected: Counts the number of corrected errors in the duplicated characters in CXP control words.\n- DuplicatedCharactersUncorrected: Counts the number of uncorrected errors in the duplicated characters in CXP control words.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 824,
+      "bottomRightX": 355,
+      "bottomRightY": 845,
+      "content": "### 27.7.20 CxpErrorCounterReset",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 847,
+      "bottomRightX": 666,
+      "bottomRightY": 934,
+      "content": "|  Name | CxpErrorCounterReset[CxpConnectionSelector][CxpErrorCounterSelector]  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Recommended  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 570 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

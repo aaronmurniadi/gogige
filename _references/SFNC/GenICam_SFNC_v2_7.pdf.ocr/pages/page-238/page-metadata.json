@@ -1,0 +1,103 @@
+{
+  "index": 237,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 736,
+      "bottomRightY": 411,
+      "content": "- Counter0Active, Counter1Active, Counter2Active, ...: The chosen counter is in active state (counting).\n- Timer0Active, Timer1Active, Timer2Active, ...: The chosen Timer is in active state.\n- Encoder0, Encoder1, Encoder2, ...: The chosen Encoder Output state.\n- LogicBlock0, LogicBlock1, LogicBlock2, ...: The choosen Logic Block output state.\n- SoftwareSignal0, SoftwareSignal1, SoftwareSignal2, ...: The choosen Software Signal output state.\n- Stream0TransferActive, Stream1TransferActive, ...: Transfer on the stream is active.\n- Stream0TransferPaused, Stream1TransferPaused, ...: Transfer on the stream is paused.\n- Stream0TransferStopping, Stream1TransferStopping, ...: Transfer on the stream is stopping.\n- Stream0TransferStopped, Stream1TransferStopped, ...: Transfer on the stream is stopped.\n- Stream0TransferOverflow, Stream1TransferOverflow, ...: Transfer on the stream is in overflow.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 427,
+      "bottomRightX": 248,
+      "bottomRightY": 445,
+      "content": "### 9.2.8 LineFormat",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 451,
+      "bottomRightX": 386,
+      "bottomRightY": 770,
+      "content": "|  Name | LineFormat[LineSelector]  |\n| --- | --- |\n|  Category | DigitalIOControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | NoConnect TriState TTL LVDS RS422 OptoCoupled OpenDrain  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 795,
+      "bottomRightX": 569,
+      "bottomRightY": 814,
+      "content": "Controls the current electrical format of the selected physical input or output Line.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 821,
+      "bottomRightX": 177,
+      "bottomRightY": 838,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 848,
+      "bottomRightX": 544,
+      "bottomRightY": 946,
+      "content": "- NoConnect: The Line is not connected.\n- TriState: The Line is currently in Tri-State mode (Not driven).\n- TTL: The Line is currently accepting or sending TTL level signals.\n- LVDS: The Line is currently accepting or sending LVDS level signals.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 238 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

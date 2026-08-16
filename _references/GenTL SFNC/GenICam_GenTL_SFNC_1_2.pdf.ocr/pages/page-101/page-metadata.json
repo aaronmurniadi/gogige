@@ -1,0 +1,141 @@
+{
+  "index": 100,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 314,
+      "bottomRightY": 177,
+      "content": "### 3.4.3 Buffer Handling Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 187,
+      "bottomRightX": 677,
+      "bottomRightY": 222,
+      "content": "Features in this section provide control over the buffers within the acquisition engine of a data stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 238,
+      "bottomRightX": 303,
+      "bottomRightY": 257,
+      "content": "#### 3.4.3.1 BufferHandlingControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 258,
+      "bottomRightX": 421,
+      "bottomRightY": 471,
+      "content": "|  Name | BufferHandlingControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 497,
+      "bottomRightX": 571,
+      "bottomRightY": 513,
+      "content": "Contains all features of the Data Stream module that control the used buffers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 528,
+      "bottomRightX": 361,
+      "bottomRightY": 546,
+      "content": "#### 3.4.3.2 StreamAnnouncedBufferCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 549,
+      "bottomRightX": 421,
+      "bottomRightY": 762,
+      "content": "|  Name | StreamAnnouncedBufferCount  |\n| --- | --- |\n|  Category | BufferHandlingControl  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 787,
+      "bottomRightX": 673,
+      "bottomRightY": 824,
+      "content": "Number of announced (known) buffers on this stream. This value is volatile. It may change if additional buffers are announced and/or buffers are revoked by the GenTL Consumer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 832,
+      "bottomRightX": 673,
+      "bottomRightY": 851,
+      "content": "Corresponds to the STREAM_INFO_NUM_ANNOUNCED command of DSGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 865,
+      "bottomRightX": 340,
+      "bottomRightY": 885,
+      "content": "#### 3.4.3.3 StreamBufferHandlingMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 886,
+      "bottomRightX": 421,
+      "bottomRightY": 914,
+      "content": "|  Name | StreamBufferHandlingMode  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 101 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

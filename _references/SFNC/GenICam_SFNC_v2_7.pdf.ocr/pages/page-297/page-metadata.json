@@ -1,0 +1,273 @@
+{
+  "index": 296,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 153,
+      "bottomRightX": 519,
+      "bottomRightY": 170,
+      "content": "- You should provide, in the EventControl category, an ICategory named:",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 172,
+      "bottomRightX": 542,
+      "bottomRightY": 189,
+      "content": "Event prefix + \"EventName\" + Data postfix (Ex: EventExposureEndData)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 206,
+      "bottomRightX": 741,
+      "bottomRightY": 241,
+      "content": "- You must provide an IInteger Event feature that will be used as a unique identifier of the event to register the callback and that is named:",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 242,
+      "bottomRightX": 410,
+      "bottomRightY": 260,
+      "content": "Event prefix +\"EventName\" (Ex: EventExposureEnd).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 279,
+      "bottomRightX": 580,
+      "bottomRightY": 295,
+      "content": "- You should provide for each optional data member a corresponding feature named:",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 296,
+      "bottomRightX": 599,
+      "bottomRightY": 314,
+      "content": "Event prefix + \"EventName\"+\"DataMember\" (Ex: EventExposureEndTimestamp).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 348,
+      "bottomRightX": 594,
+      "bottomRightY": 368,
+      "content": "For the ExposureEnd event that would be member of EventSelector, this would give:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 387,
+      "bottomRightX": 282,
+      "bottomRightY": 406,
+      "content": "ICategory EventExposureEndData",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 413,
+      "bottomRightX": 285,
+      "bottomRightY": 431,
+      "content": "IInteger EventExposureEnd",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 438,
+      "bottomRightX": 361,
+      "bottomRightY": 458,
+      "content": "IInteger EventExposureEndTimeStamp",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 463,
+      "bottomRightX": 345,
+      "bottomRightY": 481,
+      "content": "IInteger EventExposureEndFrameID",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 100,
+      "topLeftY": 497,
+      "bottomRightX": 116,
+      "bottomRightY": 506,
+      "content": "...",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 532,
+      "bottomRightX": 526,
+      "bottomRightY": 550,
+      "content": "With the above naming convention, for each Event listed in EventSelector:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 559,
+      "bottomRightX": 660,
+      "bottomRightY": 628,
+      "content": "- A user always knows the name of the Feature to use to register a call back on that Event.\n- The user can take the parent of this feature to find the corresponding Event category.\n- In this Event category, the user will find all the features related to this Event.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 660,
+      "bottomRightX": 736,
+      "bottomRightY": 697,
+      "content": "For example, to do a continuous acquisition and be notified at the end of the exposure period of each frame to move the part and also get the timestamp, the following pseudo-code can be used:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 726,
+      "bottomRightX": 627,
+      "bottomRightY": 743,
+      "content": "Register(Camera.EventExposureEnd, CallbackDataObject, CallbackFunctionPtr)",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 756,
+      "bottomRightX": 356,
+      "bottomRightY": 771,
+      "content": "Camera.EventSelector = ExposureEnd;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 772,
+      "bottomRightX": 287,
+      "bottomRightY": 786,
+      "content": "Camera.EventNotification = On;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 794,
+      "bottomRightX": 348,
+      "bottomRightY": 808,
+      "content": "Camera.AcquisitionMode = Continuous;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 809,
+      "bottomRightX": 256,
+      "bottomRightY": 823,
+      "content": "Camera.AcquisitionStart();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 837,
+      "bottomRightX": 63,
+      "bottomRightY": 845,
+      "content": "--",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 853,
+      "bottomRightX": 596,
+      "bottomRightY": 869,
+      "content": "// In the callback of the ExposureEnd event, gets the event timestamp:",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 876,
+      "bottomRightX": 403,
+      "bottomRightY": 891,
+      "content": "Timestamp = Camera.EventExposureEndTimestamp;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 903,
+      "bottomRightX": 63,
+      "bottomRightY": 911,
+      "content": "--",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 921,
+      "bottomRightX": 248,
+      "bottomRightY": 936,
+      "content": "Camera.AcquisitionStop();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 297 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "index": 282,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 102,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 133,
+      "bottomRightX": 438,
+      "bottomRightY": 242,
+      "content": "|  Values | AND OR LUT LatchedLUT ...  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 267,
+      "bottomRightX": 511,
+      "bottomRightY": 285,
+      "content": "Selects the combinational logic Function of the Logic Block to configure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 293,
+      "bottomRightX": 177,
+      "bottomRightY": 308,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 319,
+      "bottomRightX": 652,
+      "bottomRightY": 421,
+      "content": "- AND: Selects a Logic Block that does the logical AND of all the inputs.\n- OR: Selects a Logic Block that does the logical OR of all the inputs.\n- LUT: Selects a Logic Block that does a Look Up Table Transformation on all the inputs.\n- LatchedLUT: Selects a Logic Block with 2 LUTs as inputs to a Flip-Flop.\n- ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 440,
+      "bottomRightX": 358,
+      "bottomRightY": 462,
+      "content": "### 12.2.4 LogicBlockInputNumber",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 464,
+      "bottomRightX": 661,
+      "bottomRightY": 679,
+      "content": "|  Name | LogicBlockInputNumber[LogicBlockSelector]  |\n| --- | --- |\n|  Category | LogicBlockControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ≥2  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 694,
+      "bottomRightX": 451,
+      "bottomRightY": 713,
+      "content": "Specifies the number of active signal inputs of the Logic Block.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 720,
+      "bottomRightX": 645,
+      "bottomRightY": 738,
+      "content": "Note that this feature might be read-only for Logical blocks that have a fixed number of inputs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 753,
+      "bottomRightX": 361,
+      "bottomRightY": 774,
+      "content": "### 12.2.5 LogicBlockInputSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 776,
+      "bottomRightX": 607,
+      "bottomRightY": 937,
+      "content": "|  Name | LogicBlockInputSelector[LogicBlockSelector]  |\n| --- | --- |\n|  Category | LogicBlockControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 283 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "index": 372,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  ![img-113.jpeg](img-113.jpeg)CAN |   | ![img-114.jpeg](img-114.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 134,
+      "bottomRightX": 285,
+      "bottomRightY": 151,
+      "content": "ChunkEnable[ChunkSelector] = True;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 162,
+      "bottomRightX": 538,
+      "bottomRightY": 223,
+      "content": "// Reading chunk data from received buffer\nChunkScan3dCoordinateSelector = CoordinateA; // CoordinateA -> X\nscaleA = ChunkScan3dCoordinateScale[CoordinateA]; // e.g. 0.5\noffsetA = ChunkScan3dCoordinateOffset[CoordinateA]; // e.g. -500",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 233,
+      "bottomRightX": 649,
+      "bottomRightY": 423,
+      "content": "// Coordinate B given by encoder mark in Chunk data, still scaled & offset as normal.\nChunkScan3dCoordinateSelector = CoordinateB;    // CS = CoordinateB -> Y\nscaleB = ChunkScan3dCoordinateScale [CoordinateB]; // Scale of Encoder step.\noffsetB = ChunkScan3dCoordinateOffset[CoordinateB]; // offset for this image along belt.\nfor (row = 0; row < Nrows; row++)\n{\n    ChunkScanLineSelector = row;\n    // Note: Here encoder wrap-around handling is not illustrated.\n    coordB[row] = ChunkEncoderValue[ChunkScanLineSelector] * scaleB + offsetB;\n}\nChunkScan3dCoordinateSelector = CoordinateC;    // CoordinateC -> Z\nscaleC = ChunkScan3dCoordinateScale[CoordinateC];    // e.g. 0.1\noffsetC = ChunkScan3dCoordinateOffset[CoordinateC]; // e.g. 0",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 447,
+      "bottomRightX": 367,
+      "bottomRightY": 466,
+      "content": "The data output could in this case be formatted as:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 488,
+      "bottomRightX": 702,
+      "bottomRightY": 672,
+      "content": "|  Component | Part | Source | Region | data type | data format  |\n| --- | --- | --- | --- | --- | --- |\n|  Range | 0 | 1 | Scan3dExtraction 0 | 3D plane of tri planar image | Coord3D_C16  |\n|  Reflectance | 1 | 1 | Scan3dExtraction 0 | 3D plane of tri planar image | Mono8  |\n|  Scatter | 2 | 1 | Scan3dExtraction 0 | 2D image | Mono16  |\n|  Chunk data | (3) | - | All components chunk data if enabled (not shown). | (Chunk data) | GenICam Chunk  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 373 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

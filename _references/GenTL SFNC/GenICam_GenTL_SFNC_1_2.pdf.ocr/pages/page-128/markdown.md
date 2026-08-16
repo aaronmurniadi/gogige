@@ -1,0 +1,6 @@
+|  GEN<i>CAM |   | ![img-36.jpeg](img-36.jpeg) emva  |
+| --- | --- | --- |
+|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |
+
+|   | RGB8a32RGBa8RGB10RGB10_PlanarRGB10g32RGB10g32msbRGB10p32RGB10p32msbRGB12RGB12_PlanarRGB16RGB16_PlanarRGB565pBGR10BGR12BGR16BGR565pBGR8BGRa8YUV411_8YUV422_8YUV8YCbCr411_8YCbCr422_8YCbCr601_411_8 YCbCr601_422_8YCbCr601_8YCbCr709_411_8 YCbCr709_422_8YCbCr709_8 YCbCr8BayerBG8BayerGB8BayerGR8BayerRG8BayerBG10BayerBG10g12BayerGB10BayerGB10g12BayerGR10BayerGR10g12  |
+| --- | --- |

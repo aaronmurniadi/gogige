@@ -1,0 +1,139 @@
+{
+  "index": 34,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 53,
+      "bottomRightX": 360,
+      "bottomRightY": 83,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 53,
+      "bottomRightX": 633,
+      "bottomRightY": 104,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 97,
+      "bottomRightX": 169,
+      "bottomRightY": 112,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 97,
+      "bottomRightX": 473,
+      "bottomRightY": 112,
+      "content": "GenTL Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 156,
+      "bottomRightX": 1003,
+      "bottomRightY": 333,
+      "content": "|  StreamStartedFrameCount | R | All | Integer | R | - | E | Number of frames started in the acquisition engine.  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  PayloadSize | R | All | Integer | R | Byte | E | Size of the expected data in bytes.  |\n|  StreamIsGrabbing | R | All | Boolean | R |  | E | Flag indicating whether the acquisition engine is started or not.  |\n|  StreamChunkCountMaximum | R | All | Integer | R |  | E | Maximum number of chunks to be expected in a buffer (can be used to allocate the array for the DSGetBufferChunkData function).  |\n|  StreamBufferAlignment | R | All | Integer | R | Byte | E | Alignment size in bytes of the buffers passed to DSAnnounceBuffer.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 375,
+      "bottomRightX": 267,
+      "bottomRightY": 393,
+      "content": "#### 2.4.4 GenICam Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 405,
+      "bottomRightX": 381,
+      "bottomRightY": 423,
+      "content": "Category that contains Event Control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 430,
+      "bottomRightX": 628,
+      "bottomRightY": 447,
+      "content": "Table 2-18: Event Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 454,
+      "bottomRightX": 1003,
+      "bottomRightY": 541,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  Root | M | All | ICategory | R | - | B | Provides the Root of the GenICam features tree.  |\n|  StreamPort | M | All | IPort | R/W | - | I | The GenICam port through which the Data Stream module is accessed.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 580,
+      "bottomRightX": 241,
+      "bottomRightY": 599,
+      "content": "#### 2.4.5 Event Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 612,
+      "bottomRightX": 470,
+      "bottomRightY": 629,
+      "content": "Contains the features related to the Event Buffers Discarded.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 364,
+      "topLeftY": 663,
+      "bottomRightX": 657,
+      "bottomRightY": 680,
+      "content": "Table 2-19: Buffer Discarded Event Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 694,
+      "bottomRightX": 166,
+      "bottomRightY": 710,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 329,
+      "topLeftY": 694,
+      "bottomRightX": 429,
+      "bottomRightY": 711,
+      "content": "Page 35 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

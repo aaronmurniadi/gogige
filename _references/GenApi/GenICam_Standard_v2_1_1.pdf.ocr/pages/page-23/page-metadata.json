@@ -1,0 +1,120 @@
+{
+  "index": 22,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 118,
+      "content": "|  GENICAM |   | ![img-35.jpeg](img-35.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 133,
+      "topLeftY": 151,
+      "bottomRightX": 536,
+      "bottomRightY": 358,
+      "content": "<Node Name=\"Gain\" NameSpace=\"Standard\">\n<Extension>\n    <MyElement>Something vendor specific</MyElement>\n</Extension>\n<toolTip>The amplification of the camera</ToolTip>\n<Description>A more elaborated description</Description>\n<DisplayName>Gain</DisplayName>\n<Visibility>Expert</Visibility>\n<EventID>12fc</EventID>\n<pIsImplemented>SomeNode1</pIsImplemented>\n<pIsAvailable>SomeNode2</pIsAvailable>\n<pIsLocked>SomeNode3</pIsLocked>\n<pError>NodeIndicatingAnError</pError>\n<ImposedAccessMode>RO</ImposedAccessMode>\n<pAlias>SomeNode4</pAlias>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 377,
+      "bottomRightX": 636,
+      "bottomRightY": 444,
+      "content": "Each node has a Name attribute. The Name must be unique within the camera description file. Names can be composed of alphanumeric characters [A-Za-z0-9]. The schema also allows the use of the underscore ‘_’, but not as a leading character. This is because the reference implementation uses a leading underscore for implementation related names.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 451,
+      "bottomRightX": 636,
+      "bottomRightY": 501,
+      "content": "Each Name lives inside a name space which is identified by the NameSpace attribute of the node which can have two possible values: Custom or Standard. If it is Custom, any name can be used as long as it is unique within the camera description file.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 508,
+      "bottomRightX": 636,
+      "bottomRightY": 576,
+      "content": "If it is Standard, it must come from the standard feature name lists (SFNC). The SFNC is mostly interface agnostic and contains only very few interface specific features. In order to advertise which interface is used the floating node DeviceTLType should be implemented (for details see SFNC). Typical entries are",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 582,
+      "bottomRightX": 577,
+      "bottomRightY": 743,
+      "content": "- IIDC : cameras following the 1394 IIDC standard (also called DCAM standard)\n• GEV : cameras following the GigE Vision standard\n- CL : cameras following the Camera Link standard\n• U3V : cameras following the USB3 Vision standard\n• CXP : cameras following the CoaXPRESS standard\n- CLHS : cameras following the Camera Link HS standard\n• None : no standard is used",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 751,
+      "bottomRightX": 636,
+      "bottomRightY": 785,
+      "content": "The StandardNameSpace attribute of the enclosing <RegisterDescription> element (see section 2.7) is deprecated since it does not reflect new interface types like, e.g. CXP.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 791,
+      "bottomRightX": 636,
+      "bottomRightY": 842,
+      "content": "A Node can have a MergePriority attribute which can have the values +1, 0, or -1. It controls the way two XML files A and B are merged to a target file C. A is called the target file and B is called the inject file. Nodes are compared based on their Name attribute only.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 850,
+      "bottomRightX": 634,
+      "bottomRightY": 908,
+      "content": "- If a node is present only in A or B it is copied to C\n- If a non-Category node is present in A and B the following rules apply (note that the MergePriority attribute of the target file A is ignored):",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 146,
+      "topLeftY": 915,
+      "bottomRightX": 616,
+      "bottomRightY": 932,
+      "content": "○ If the node from the injected file B has MergePriority = +1 it is copied to C.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 300,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 23 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

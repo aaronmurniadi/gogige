@@ -1,0 +1,139 @@
+{
+  "index": 421,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 170,
+      "bottomRightX": 708,
+      "bottomRightY": 206,
+      "content": "The Object to Sensor Distance (OSD) specifies the distance from the image sensor surface to the object (OSD=a+a'+HH').",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 213,
+      "bottomRightX": 554,
+      "bottomRightY": 231,
+      "content": "The Object distance (a) is the distance from the principal plane H to the object.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 238,
+      "bottomRightX": 565,
+      "bottomRightY": 258,
+      "content": "The Image distance (a') is the distance from the principal plane H' to the sensor.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 263,
+      "bottomRightX": 726,
+      "bottomRightY": 336,
+      "content": "In combination with the Sensor Size (2y'), the Image distance (a') defines the angular field of view θ of an imaging system. In combination with the Object distance (a), the Field of View (FOV) on the object under inspection with negligence the principal plane distance can be approximated by FOV = 2y' * a / a'. So the shorter the image distance, the larger the field of view.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 343,
+      "bottomRightX": 742,
+      "bottomRightY": 396,
+      "content": "The Depth of Field (DOF) is the maximum object depth that can be maintained entirely in acceptable focus and thus is also the amount of object movement allowable while maintaining focus. The smaller the aperture, the greater the depth of field.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 404,
+      "bottomRightX": 729,
+      "bottomRightY": 476,
+      "content": "The Focal Length (f') of an optical system is the distance from the principal plane H' of a lens to its focal point (the point at which light rays that come from the infinite are bundled in a single point) and a measure of how strongly the system converges or diverges light. A lens with an adjustable focal length (e.g. focal length range from 24 – 105mm) is a Zoom lens.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 507,
+      "bottomRightX": 726,
+      "bottomRightY": 723,
+      "content": "![img-136.jpeg](img-136.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-136.jpeg"
+    },
+    {
+      "topLeftX": 224,
+      "topLeftY": 731,
+      "bottomRightX": 578,
+      "bottomRightY": 751,
+      "content": "Figure 23-2: Imaging Optical System with a liquid lens.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 775,
+      "bottomRightX": 718,
+      "bottomRightY": 828,
+      "content": "A Liquid Lens (LL) is an optical component which varies its Focal Power (P) in response to an electrical signal. Note that the liquid lens can generally be positioned in front or behind as well as inside imaging lenses.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 837,
+      "bottomRightX": 742,
+      "bottomRightY": 926,
+      "content": "The Focal Power (P = 1/fLL) – defined for singlet lenses as the reciprocal of the focal length and measured in diopters (abbr. dpt.) – indicates “how much” a liquid lens focuses. In an imaging system that comprises a liquid lens, the focal power of the liquid lens will determine mainly at what distance the object is in focus. Note that the focal length of the liquid lens itself must not be confused with the focal length of the imaging lens (which defines the field of view).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 951,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 951,
+      "bottomRightX": 396,
+      "bottomRightY": 970,
+      "content": "Page 422 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

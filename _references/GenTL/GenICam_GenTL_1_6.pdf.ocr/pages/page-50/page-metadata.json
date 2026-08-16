@@ -1,0 +1,138 @@
+{
+  "index": 49,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-66.jpeg](img-66.jpeg)CAN |   | ![img-67.jpeg](img-67.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 636,
+      "bottomRightY": 190,
+      "content": "SINGLE CHUNK DATA structures. This information is sufficient to connect the chunk to the remote device's nodemap (for example through the generic chunk adapter of GenApi reference implementation).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 196,
+      "bottomRightX": 637,
+      "bottomRightY": 299,
+      "content": "The acquired buffer might contain only the chunk data or the data might be mixed within the same buffer with an image or other data. To query, if a given buffer contains chunk data, the BUFFER_INFO_CONTAINS_CHUNKDATA command may be used which will return true in case the buffer contains chunk data or the function DSGetBufferChunkData can be queried which, in case the buffer contains accessible chunk data, would return the number of chunks available.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 306,
+      "bottomRightX": 637,
+      "bottomRightY": 410,
+      "content": "There are other chunk data related buffer info commands, such as BUFFER_INFO_IMAGEPRESENT (indicating that the buffer contains also an image) or BUFFER_INFO_CHUNKLAYOUTID (can help to check, if the chunk structure has changed since the last delivered buffer and if it is necessary to parse it again). The STREAM_INFO_NUM_CHUNKS_MAX command reports the maximum number of chunks to be expected in a buffer acquired through a given stream (if that maximum is known a priori).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 416,
+      "bottomRightX": 637,
+      "bottomRightY": 485,
+      "content": "If the GenTL Consumer knows the chunk data structure, such as accessing a device of a known standard technology, it is not necessary to use the DSGetBufferChunkData function to parse the buffer. The GenTL Consumer can use a more direct approach to extract the data (by using a standard chunk adapter in GenApi reference implementation).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 498,
+      "bottomRightX": 357,
+      "bottomRightY": 516,
+      "content": "##### 5.4.1.1 Chunk data in composite buffer",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 520,
+      "bottomRightX": 637,
+      "bottomRightY": 656,
+      "content": "The DSGetBufferChunkData function was introduced in GenTL with traditional contiguous buffers in mind, before introduction of composite buffers (announced using DSAnnounceCompositeBuffer, 5.7.1). Because it treats the buffer as a single entity, it does not report the chunk offsets corresponding to a particular buffer segment, instead it reports linear offsets within the entire payload. The GenTL Consumer has to take this into account. If the format of the chunk data within the composite buffer is well known to the GenTL Consumer, it must parse the chunk data directly without help of DSGetBufferChunkData, the GenTL Producer must return an error from that function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 671,
+      "bottomRightX": 521,
+      "bottomRightY": 688,
+      "content": "##### 5.4.1.2 Chunk data in a generic container (for example GenDC)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 691,
+      "bottomRightX": 636,
+      "bottomRightY": 778,
+      "content": "When the acquired payload contains data in a standard self-described container format (such as for example GenDC), the consumer must parse and interpret the chunk data directly according to the given container type specification, without help of the GenTL interface. GenTL Producer must return error (GC_ERR_NO_DATA) for all chunk data related queries, including DSGetBufferChunkData.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 792,
+      "bottomRightX": 195,
+      "bottomRightY": 810,
+      "content": "#### 5.4.2 Example",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 813,
+      "bottomRightX": 439,
+      "bottomRightY": 829,
+      "content": "This sample shows how to retrieve chunk data from a buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 837,
+      "bottomRightX": 608,
+      "bottomRightY": 906,
+      "content": "{\n    // Check if the buffer contains chunk data\n    DSGetBufferInfo (hStream, hBuffer, BUFFER_INFO_PAYLOADTYPE, Type, PayloadType, SizeOfPayloadType);",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 50 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

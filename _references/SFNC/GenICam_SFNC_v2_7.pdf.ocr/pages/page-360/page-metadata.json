@@ -1,0 +1,138 @@
+{
+  "index": 359,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "<table><tr><td colspan=\"2\">GEN&lt;i&gt;CAM</td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 152,
+      "bottomRightX": 245,
+      "bottomRightY": 172,
+      "content": "## 21 3D Scan Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 712,
+      "bottomRightY": 232,
+      "content": "The 3D scan Control chapter describes the model and features related to the control and acquisition of 3D images.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 241,
+      "bottomRightX": 752,
+      "bottomRightY": 293,
+      "content": "3D cameras measure geometrical information rather than intensity or color. Typically a 3D camera delivers a range (also called depth or distance) image. In the same way as there are Areascan and Linescan 2D cameras we have many instances of Areascan and Linescan 3D devices.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 302,
+      "bottomRightX": 747,
+      "bottomRightY": 355,
+      "content": "In general, 3D data needs more auxiliary information than 2D data to interpret the data. Such information is for instance coordinate system used and its location, units used etc. It is recommended to provide chunk data with this information in the image streams to facilitate the acquisition engine understanding the data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 361,
+      "bottomRightX": 152,
+      "bottomRightY": 379,
+      "content": "### Areascan 3D",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 389,
+      "bottomRightX": 714,
+      "bottomRightY": 421,
+      "content": "Areascan 3D cameras can give a range image of a static scene, typically without any visible motion of the camera.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 431,
+      "bottomRightX": 755,
+      "bottomRightY": 503,
+      "content": "Areascan 3D cameras typically acquire a complete 3D range map or point cloud in a single shot. Examples are stereo cameras, time-of-flight cameras and the fixed-pattern triangulation cameras. Other Areascan 3D cameras use multiple exposures with different illumination or acquisition locations and use reconstruction methods based on e.g. triangulation, depth-from-focus or shape from shading.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 510,
+      "bottomRightX": 732,
+      "bottomRightY": 564,
+      "content": "Typically the output can be viewed as an image where intensity or color represents range. This type of single view-point image is technically called a 2.5D range image. For example, for each sensor (image) coordinate only one Z, or range coordinate, is possible.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 211,
+      "topLeftY": 597,
+      "bottomRightX": 593,
+      "bottomRightY": 885,
+      "content": "![img-101.jpeg](img-101.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-101.jpeg"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 901,
+      "bottomRightX": 513,
+      "bottomRightY": 919,
+      "content": "Figure 21-1: 3D Areascan camera.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 970,
+      "content": "Page 360 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

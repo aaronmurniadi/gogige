@@ -1,0 +1,156 @@
+{
+  "index": 365,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 134,
+      "bottomRightX": 452,
+      "bottomRightY": 148,
+      "content": "// 3D Scan Region 0: 3D Range as point cloud and Intensity.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 151,
+      "bottomRightX": 257,
+      "bottomRightY": 237,
+      "content": "RegionSelector = Region0;\nRegionMode[Region0] = On;\nOffsetX[Region0] = 512;\nOffsetY[Region0] = 512;\nWidth[Region0] = 512;\nHeight[Region0] = 512;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 249,
+      "bottomRightX": 438,
+      "bottomRightY": 263,
+      "content": "// Setup Components acquisition for selected 3D Region 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 264,
+      "bottomRightX": 445,
+      "bottomRightY": 350,
+      "content": "ComponentSelector[Region0] = Range;\nComponentEnable[Region0][Range] = True;\nPixelFormat[Region0][Range] = Coord3D_ABC8_Planar;\nComponentSelector[Region0] = Intensity;\nComponentEnable[Region0][Intensity] = True;\nPixelFormat[Region0][Intensity] = Mono8;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 365,
+      "bottomRightX": 451,
+      "bottomRightY": 380,
+      "content": "// 3D Scan Region 1: 3D Range as point cloud and Intensity.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 380,
+      "bottomRightX": 257,
+      "bottomRightY": 466,
+      "content": "RegionSelector = Region1;\nRegionMode[Region1] = On;\nOffsetX[Region1] = 1024;\nOffsetY[Region1] = 0;\nWidth[Region1] = 400;\nHeight[Region1] = 256;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 479,
+      "bottomRightX": 438,
+      "bottomRightY": 494,
+      "content": "// Setup Components acquisition for selected 3D Region 1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 495,
+      "bottomRightX": 445,
+      "bottomRightY": 581,
+      "content": "ComponentSelector[Region1] = Range;\nComponentEnable[Region1][Range] = True;\nPixelFormat[Region1][Range] = Coord3D_ABC8_Planar;\nComponentSelector[Region0] = Intensity;\nComponentEnable[Region0][Intensity] = True;\nPixelFormat[Region0][Intensity] = Mono8;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 594,
+      "bottomRightX": 546,
+      "bottomRightY": 608,
+      "content": "// Get Scale & offset transforming from transmitted to world coordinates.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 609,
+      "bottomRightX": 688,
+      "bottomRightY": 724,
+      "content": "// Values in the comments are based on the following example FOV & data use:\n// FOV ~25x25x25 inch, X & Y data covers [-12.5,12.5] inch range Z data in [25,50] inch range.\n// Invalid data tagged as 0 in all Z coordinate image.\nScan3dCoordinateSelector = CoordinateA;    // CoordinateA -> X in Cartesian system.\nscaleA = Scan3dCoordinateScale[CoordinateA];    // e.g. 0.1\noffsetA = Scan3dCoordinateOffset[CoordinateA];    // e.g. -12.5\nbboxMinA = Scan3dAxisMin[CoordinateA];    // e.g. 1\nbboxMaxA = Scan3dAxisMax[CoordinateA];    // e.g. 250",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 738,
+      "bottomRightX": 647,
+      "bottomRightY": 811,
+      "content": "Scan3dCoordinateSelector = CoordinateB;    // CoordinateB -> Y in Cartesian system.\nscaleB = Scan3dCoordinateScale[CoordinateB]; // e.g. 0.1\noffsetB = Scan3dCoordinateOffset[CoordinateB]; // e.g. -12.5\nbboxMinB = Scan3dAxisMin[CoordinateB];    // e.g. 1\nbboxMaxB = Scan3dAxisMax[CoordinateB];    // e.g. 250",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 824,
+      "bottomRightX": 681,
+      "bottomRightY": 926,
+      "content": "Scan3dCoordinateSelector = CoordinateC;    // CoordinateC -> Z in Cartesian system.\n// Negative scale & large offset to switch Z.\nscaleC = Scan3dCoordinateScale[CoordinateC];    // e.g. -0.1\noffsetC = Scan3dCoordinateOffset[CoordinateC];    // e.g. 50\nif (Scan3dInvalidDataFlag[CoordinateC] == true)\n    invalidValueC = Scan3dInvalidDataValue[CoordinateC];    // e.g. = 0\nbboxMinC = Scan3dAxisMin[CoordinateC];    // e.g. 1",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 366 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

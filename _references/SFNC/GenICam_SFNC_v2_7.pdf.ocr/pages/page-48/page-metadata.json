@@ -1,0 +1,84 @@
+{
+  "index": 47,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 76,
+      "bottomRightX": 122,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 171,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 921,
+      "bottomRightY": 638,
+      "content": "|  DeviceConnectionStatus [DeviceConnectionSelector] | O | IEnumeration | R | - | E | Indicates the status of the specified Connection.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  DeviceLinkSelector | R | IInteger | R/(W) | - | B | Selects which Link of the device to control.  |\n|  DeviceLinkSpeed [DeviceLinkSelector] | O | IInteger | R | Bps | E | Indicates the speed of transmission negotiated on the specified Link.  |\n|  DeviceLinkThroughputLimitMode [DeviceLinkSelector] | R | IEnumeration | R/W | - | E | Controls if the DeviceLinkThroughputLimit is active.  |\n|  DeviceLinkThroughputLimit [DeviceLinkSelector] | R | IInteger | R/(W) | Bps | E | Limits the maximum bandwidth of the data that will be streamed out by the device on the selected Link.  |\n|  DeviceLinkConnectionCount [DeviceLinkSelector] | O | IInteger | R | - | B | Returns the number of physical connection of the device used by a particular Link.  |\n|  DeviceLinkHeartbeatMode [DeviceLinkSelector] | O | IEnumeration | R/W | - | E | Activate or deactivate the Link's heartbeat.  |\n|  DeviceLinkHeartbeatTimeout [DeviceLinkSelector] | O | IFloat | R/W | us | G | Controls the current heartbeat timeout of the specific Link.  |\n|  DeviceLinkCommandTimeout [DeviceLinkSelector] | O | IFloat | R | us | G | Indicates the command timeout of the specified Link.  |\n|  DeviceStreamChannelCount | O | IInteger | R | - | E | Indicates the number of streaming channels supported by the device.  |\n|  DeviceStreamChannelSelector | O | IInteger | R/W | - | E | Selects the stream channel to control.  |\n|  DeviceStreamChannelType [DeviceStreamChannelSelector] | O | IEnumeration | R | - | G | Reports the type of the stream channel.  |\n|  DeviceStreamChannelLink [DeviceStreamChannelSelector] | O | IInteger | R/(W) | - | G | Index of device's Link to use for streaming the specified stream channel.  |\n|  DeviceStreamChannelEndianness [DeviceStreamChannelSelector] | O | IEnumeration | R/(W) | - | G | Endianness of multi-byte pixel data for this stream.  |\n|  DeviceStreamChannelPacketSize [DeviceStreamChannelSelector] | R | IInteger | R/(W) | B | E | Specifies the stream packet size, in bytes, to send on the selected channel for a Transmitter or specifies the maximum packet size supported by a receiver.  |\n|  DeviceEventChannelCount | O | IInteger | R | - | E | Indicates the number of event channels supported by the device.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 651,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 48 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

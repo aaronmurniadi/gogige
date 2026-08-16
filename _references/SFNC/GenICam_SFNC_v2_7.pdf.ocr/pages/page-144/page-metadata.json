@@ -1,0 +1,57 @@
+{
+  "index": 143,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-40.jpeg](img-40.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 120,
+      "bottomRightX": 558,
+      "bottomRightY": 937,
+      "content": "• BayerBG10: Bayer Blue Green 10 bit.\n• BayerGB10: Bayer Green Blue 10 bit.\n• BayerGR10: Bayer Green Red 10 bit.\n• BayerRG10: Bayer Red Green 10 bit.\n• BayerBG12: Bayer Blue Green 12 bit\n• BayerGB12: Bayer Green Blue 12 bit\n• BayerGR12: Bayer Green Red 12 bit.\n• BayerRG12: Bayer Red Green 12 bit.\n• BayerBG16: Bayer Blue Green 16 bit.\n• BayerGB16: Bayer Green Blue 16 bit.\n• BayerGR16: Bayer Green Red 16 bit.\n• BayerRG16: Bayer Red Green 16 bit.\n• Coord3D_A8: 3D coordinate, first component 8 bit.\n• Coord3D_B8: 3D coordinate, second component 8 bit.\n• Coord3D_C8: 3D coordinate, third component 8 bit.\n• Coord3D_ABC8: 3D coordinates, 3 components 8 bit.\n• Coord3D_ABC8_Planar: 3D coordinates, 3 components 8 bit planar.\n• Coord3D_A16: 3D coordinate, first component 16 bit.\n• Coord3D_B16: 3D coordinate, second component 16 bit.\n• Coord3D_C16: 3D coordinate, third component 16 bit.\n• Coord3D_ABC16: 3D coordinates, 3 components 16 bit.\n• Coord3D_ABC16_Planar: 3D coordinates, 3 components 16 bit planar.\n• Coord3D_A32f: 3D coordinate, first component 32 bit float.\n• Coord3D_B32f: 3D coordinate, second component 32 bit float.\n• Coord3D_C32f: 3D coordinate, third component 32 bit float.\n• Coord3D_ABC32f: 3D coordinates, 3 components 32 bit float.\n• Coord3D_ABC32f_Planar: 3D coordinates, 3 components 32 bit float planar.\n• Confidence1: Confidence data 1 bit.\n• Confidence1p: Confidence data 1 bit packed.\n• Confidence8: Confidence data 8 bit.\n• Confidence16: Confidence data 16 bit.\n• Confidence32f: Confidence data 32 bit float.\n• Data8: Generic non-pixel data 8 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 949,
+      "bottomRightX": 107,
+      "bottomRightY": 964,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 949,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 144 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

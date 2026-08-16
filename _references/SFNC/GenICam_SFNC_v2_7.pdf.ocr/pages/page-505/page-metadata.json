@@ -1,0 +1,104 @@
+{
+  "index": 504,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 416,
+      "bottomRightY": 420,
+      "content": "|  Category | TransportLayerControl  |\n| --- | --- |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | ImageSize PixelFormat PixelSize ExtendedPayload Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 442,
+      "bottomRightX": 542,
+      "bottomRightY": 462,
+      "content": "Selects the type of feature for which the locking behavior will be configured.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 469,
+      "bottomRightX": 187,
+      "bottomRightY": 486,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 495,
+      "bottomRightX": 735,
+      "bottomRightY": 648,
+      "content": "- **ImageSize**: Controls if the images size is locked during the acquisition. ImageSize represents width and height for area-scan cameras; it only represents width for linescan cameras.\n- **PixelFormat**: Controls if the pixel format (**PixelFormat**) is locked during an acquisition.\n- **PixelSize**: Controls if the size of the pixel can change during an acquisition. When locked, the **PixelFormat** is allowed to change as long as **PixelSize** is not affected.\n- **ExtendedPayload**: Controls if a device is allowed to switch between a payload and its extended version during an acquisition.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 688,
+      "bottomRightX": 352,
+      "bottomRightY": 708,
+      "content": "### 27.2.4 TLParamsLockedState",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 710,
+      "bottomRightX": 485,
+      "bottomRightY": 942,
+      "content": "|  Name | TLParamsLockedState[TLParamsLockedSelector]  |\n| --- | --- |\n|  Category | TransportLayerControl  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 505 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

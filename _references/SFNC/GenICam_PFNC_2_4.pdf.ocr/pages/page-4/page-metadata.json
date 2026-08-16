@@ -1,0 +1,92 @@
+{
+  "index": 3,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 250,
+      "topLeftY": 61,
+      "bottomRightX": 397,
+      "bottomRightY": 91,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 613,
+      "topLeftY": 61,
+      "bottomRightX": 709,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 150,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 273,
+      "topLeftY": 105,
+      "bottomRightX": 466,
+      "bottomRightY": 122,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 153,
+      "bottomRightX": 500,
+      "bottomRightY": 185,
+      "content": "## List of Figures",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 193,
+      "bottomRightX": 747,
+      "bottomRightY": 928,
+      "content": "Figure 1-1 : 8-bit pixel data ... 10\nFigure 1-2 : 16-bit pixel data ... 10\nFigure 1-3 : 32-bit pixel data ... 10\nFigure 2-1 : Naming Convention Text Fields ... 12\nFigure 3-1: Mono Pixel Location ... 14\nFigure 3-2: LMN444 Pixel Location ... 15\nFigure 3-3: LMN422 Pixel Location ... 15\nFigure 3-4: LMN411 Pixel Location ... 16\nFigure 3-5: LMNO4444 Pixel Location ... 16\nFigure 3-6 : LM44 Pixel Location ... 17\nFigure 3-7: BayerRG array ... 17\nFigure 3-8: Bayer_LMMN Pixel Location ... 17\nFigure 3-9: BayerBG array ... 18\nFigure 3-10: Bayer_NMML Pixel Location ... 18\nFigure 3-11: BayerGR array ... 18\nFigure 3-12: Bayer_MLNM Pixel Location ... 19\nFigure 3-13: BayerGB array ... 19\nFigure 3-14: Bayer_MNLM Pixel Location ... 19\nFigure 3-15: Bi-color sensor with 2 stages ... 20\nFigure 3-16: Bi-color camera output from 2 stages ... 20\nFigure 3-17: BiColor_LMNO Pixel Location ... 20\nFigure 3-18: SCF1_LMLN Pixel Location ... 21\nFigure 3-19: SCF1_LNLM Pixel Location ... 21\nFigure 3-20: SCF1_LOLN Pixel Location ... 22\nFigure 3-21: SCF1_LNLO Pixel Location ... 22\nFigure 3-22 : Examples of a generic 4x4 CFA ... 23\nFigure 3-23: CFA1by4_GRGB array ... 23\nFigure 3-24 POL22M1 array ... 24\nFigure 3-25: POL44C1 array ... 25",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 954,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 954,
+      "bottomRightX": 463,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 662,
+      "topLeftY": 954,
+      "bottomRightX": 747,
+      "bottomRightY": 972,
+      "content": "Page 4 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

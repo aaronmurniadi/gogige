@@ -1,0 +1,84 @@
+{
+  "index": 3,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 217,
+      "topLeftY": 76,
+      "bottomRightX": 353,
+      "bottomRightY": 103,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 501,
+      "topLeftY": 65,
+      "bottomRightX": 572,
+      "bottomRightY": 133,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 574,
+      "topLeftY": 110,
+      "bottomRightX": 648,
+      "bottomRightY": 132,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 116,
+      "bottomRightX": 141,
+      "bottomRightY": 131,
+      "content": "Version 1.3.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 288,
+      "topLeftY": 115,
+      "bottomRightX": 403,
+      "bottomRightY": 132,
+      "content": "GenCP Standard",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 150,
+      "bottomRightX": 652,
+      "bottomRightY": 805,
+      "content": "|  5.4.10. | Maximum Device Response Time (MDRT) | 54  |\n| --- | --- | --- |\n|  5.4.11. | Manifest Table Address | 56  |\n|  5.4.12. | SBRM Address | 56  |\n|  5.4.13. | Device Configuration | 57  |\n|  5.4.14. | Heartbeat Timeout | 57  |\n|  5.4.15. | Message Channel ID | 58  |\n|  5.4.16. | Timestamp | 60  |\n|  5.4.17. | Timestamp Latch | 61  |\n|  5.4.18. | Timestamp Increment | 62  |\n|  5.4.19. | Access Privilege | 63  |\n|  5.4.20. | Protocol Endianness | 64  |\n|  5.4.21. | Implementation Endianness | 64  |\n|  5.4.22. | Device Software Interface Version | 65  |\n|  5.5. | Generic Tables | 65  |\n|  5.5.1. | Manifest | 65  |\n|  1. | Serial Port Implementations | 69  |\n|  1.1. | Byteorder | 69  |\n|  1.2. | Channel ID | 69  |\n|  1.3. | Packet Size | 69  |\n|  1.4. | Serial Parameters | 69  |\n|  1.4.1. | Default port parameters | 69  |\n|  1.4.2. | Changing port parameters | 69  |\n|  1.5. | Serial Prefix | 71  |\n|  1.6. | Serial Postfix | 71  |\n|  1.7. | Packet failure | 71  |\n|  1.8. | Technology Specific Bootstrap Register Map | 72  |\n|  1.8.1. | Supported Baudrate | 72  |\n|  1.8.2. | Current Baudrate | 74  |\n|  1.9. | Heartbeat | 75  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 929,
+      "bottomRightX": 391,
+      "bottomRightY": 948,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 538,
+      "topLeftY": 929,
+      "bottomRightX": 617,
+      "bottomRightY": 948,
+      "content": "Page 4 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

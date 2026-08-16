@@ -1,0 +1,147 @@
+{
+  "index": 201,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "<table><tr><td colspan=\"2\">GEN&lt;i&gt;CAM</td><td rowspan=\"2\">emva</td></tr><tr><td>Version 2.7.1</td><td>Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 184,
+      "topLeftY": 139,
+      "bottomRightX": 621,
+      "bottomRightY": 375,
+      "content": "![img-76.jpeg](img-76.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-76.jpeg"
+    },
+    {
+      "topLeftX": 288,
+      "topLeftY": 384,
+      "bottomRightX": 553,
+      "bottomRightY": 402,
+      "content": "Figure 5-18: Multi-slope Intensity Limits.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 435,
+      "bottomRightX": 750,
+      "bottomRightY": 472,
+      "content": "The term \"knee-point\" can be found for either diagram and is determined by different parameters. Nevertheless, the sensor configuration for both knee-points is identical.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 504,
+      "bottomRightX": 146,
+      "bottomRightY": 526,
+      "content": "## Triggering",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 531,
+      "bottomRightX": 752,
+      "bottomRightY": 586,
+      "content": "Triggering is limited during multi-slope exposure since most of the functionality is handled in the sensor which must usually be pre-configured. Consequently, using TriggerControlled and TriggerWidth ExposureMode is not possible, and using ...End triggers neither. Using ...Start triggers is mainly possible.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 593,
+      "bottomRightX": 732,
+      "bottomRightY": 647,
+      "content": "Nevertheless, an additional trigger may be provided. A MultiSlopeExposureLimit1 trigger invokes the first change in multi-slope exposure, using all the pre-defined knee-point settings and scaling them to the current length of the first sub-exposure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 680,
+      "bottomRightX": 134,
+      "bottomRightY": 699,
+      "content": "## Features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 709,
+      "bottomRightX": 570,
+      "bottomRightY": 744,
+      "content": "The number of knee-points for multi-slope exposure can be controlled with feature MultiSlopeKneePointCount.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 752,
+      "bottomRightX": 751,
+      "bottomRightY": 790,
+      "content": "Enabling multi-slope exposure is possible by setting feature MultiSlopeMode to either Manual or to one of the presets.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 796,
+      "bottomRightX": 740,
+      "bottomRightY": 867,
+      "content": "For Manual configuration, two parameters are necessary for each knee-point, selected by MultiSlopeKneePointSelector. The most obvious parameters are MultiSlopeExposureLimit for controlling the limits between the sub-exposure times, and MultiSlopeSaturationThreshold for the levels/capacities, if allowed by the sensor.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 875,
+      "bottomRightX": 747,
+      "bottomRightY": 930,
+      "content": "By controlling MultiSlopeExposureLimit in percent of the current ExposureTime, the concrete sub-exposure times adjacent to the selected knee-point are adjusted. Using percentage values allows changes of ExposureTime without changing the proportions of multi-slope exposure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 386,
+      "bottomRightY": 970,
+      "content": "Page 202 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 615,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

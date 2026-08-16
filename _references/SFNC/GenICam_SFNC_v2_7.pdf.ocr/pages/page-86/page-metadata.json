@@ -1,0 +1,84 @@
+{
+  "index": 85,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 76,
+      "bottomRightX": 122,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 171,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 923,
+      "bottomRightY": 633,
+      "content": "|  CxpLinkSharingEnable | O | IBoolean | R/W | - | E | Enable or disable the link sharing functionality of the device.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  CxpLinkSharingSubDeviceSelector | O | IInteger | R/W | - | E | Index of the sub device used in the Link Sharing.  |\n|  CxpLinkSharingStatus[CxpLinkSharingSubDeviceSelector] | O | IEnumeration | R | - | E | This feature provides the data sharing status for the selected sub device.  |\n|  CxpLinkSharingSubDeviceType | O | IEnumeration | R | - | E | This feature provides the type of sub device.  |\n|  CxpLinkSharingHorizontalStripeCount | O | IInteger | R/(W) | - | E | This feature provides the number of horizontal stripes that the device implements.  |\n|  CxpLinkSharingVerticalStripeCount | O | IInteger | R/(W) | - | E | This feature provides the number of vertical stripes that the device implements.  |\n|  CxpLinkSharingHorizontalOverlap | O | IInteger | R/(W) | - | E | This feature provides the number of pixel overlap in the horizontal stripes that the device implements.  |\n|  CxpLinkSharingVerticalOverlap | O | IInteger | R/(W) | - | E | This feature provides the number of pixel overlap in the vertical stripes that the device implements.  |\n|  CxpLinkSharingDuplicateStripe | O | IInteger | R/(W) | - | E | This feature provides the duplicate count in striped system.  |\n|  CxpConnectionSelector | R | IInteger | R/W | - | E | Selects the CoaXPress physical connection to control.  |\n|  CxpConnectionTestMode[CxpConnectionSelector] | R | IEnumeration | R/W | - | E | Enables the test mode for an individual physical connection of the Device.  |\n|  CxpConnectionTestErrorCount[CxpConnectionSelector] | R | IInteger | R/W | - | E | Reports the current connection error count for test packets received by the device on the connection selected by CxpConnectionSelector.  |\n|  CxpSendReceiveSelector | R | IEnumeration | R/W | - | E | Selects which one of the send or receive features to control.  |\n|  CxpConnectionTestPacketCount[CxpConnectionSelector][CxpSendReceiveSelector] | R | IInteger | R/W | - | E | Reports the current count for the test packets on the connection selected by CxpConnectionSelector.  |\n|  CxpErrorCounterSelector | R | IEnumeration | R/W | - | E | Selects which Cxp Error Counter to read or reset.  |\n|  CxpErrorCounterReset[CxpConnectionSelector][CxpErrorCounterSelector] | R | ICommand | (R)/W | - | E | Resets the selected Cxp Error Counter on the connection selected by CxpConnectionSelector.  |\n|  CxpErrorCounterValue[CxpConnectionSelector][CxpErrorCounterSelector] | R | IInteger | R | - | E | Reads the current value of the selected Cxp Error Counter on the connection selected by CxpConnectionSelector.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 375,
+      "bottomRightY": 668,
+      "content": "Page 86 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "index": 46,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 44,
+      "bottomRightX": 753,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | ![img-45.jpeg](img-45.jpeg)  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 242,
+      "topLeftY": 148,
+      "bottomRightX": 566,
+      "bottomRightY": 232,
+      "content": "![img-46.jpeg](img-46.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-46.jpeg"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 242,
+      "bottomRightX": 531,
+      "bottomRightY": 261,
+      "content": "Figure 8-2 : Generic full scale Y'CbCr",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 293,
+      "bottomRightX": 745,
+      "bottomRightY": 329,
+      "content": "From the coefficients in (1), one can determine the possible range of values for the 2 color difference signals shown in (3):",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 336,
+      "bottomRightX": 694,
+      "bottomRightY": 356,
+      "content": "\\[\n\\mathrm{E} ^ {\\prime} \\mathrm{B} - \\mathrm{E} ^ {\\prime} \\mathrm{Y} \\quad \\text { is   in   the   range } [ - 0. 8 8 6, + 0. 8 8 6 ] \\tag {5}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 361,
+      "bottomRightX": 405,
+      "bottomRightY": 381,
+      "content": "\\[\n\\mathrm{E} ^ {\\prime} \\mathrm{R} - \\mathrm{E} ^ {\\prime} \\mathrm{Y} \\quad \\text { is   in   the   range } [ - 0. 7 0 1, + 0. 7 0 1 ]\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 413,
+      "bottomRightX": 664,
+      "bottomRightY": 432,
+      "content": "The next step is to normalize the 2 color difference so they occupy the full scale of  \\( [-0.5, +0.5] \\) .",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 438,
+      "bottomRightX": 694,
+      "bottomRightY": 458,
+      "content": "\\[\n\\mathrm{E} ^ {\\prime} \\mathrm{Cb} = (0. 5 / 0. 8 8 6) (\\mathrm{E} ^ {\\prime} \\mathrm{B} - \\mathrm{E} ^ {\\prime} \\mathrm{Y}) \\tag {6}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 464,
+      "bottomRightX": 361,
+      "bottomRightY": 483,
+      "content": "\\[\n\\mathrm{E} ^ {\\prime} \\mathrm{Cr} = (0. 5 / 0. 7 0 1) (\\mathrm{E} ^ {\\prime} \\mathrm{R} - \\mathrm{E} ^ {\\prime} \\mathrm{Y})\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 489,
+      "bottomRightX": 373,
+      "bottomRightY": 509,
+      "content": "where  \\( E'_{Cb} \\)  and  \\( E'_{Cr} \\)  are in the range [-0.5, +0.5].",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 541,
+      "bottomRightX": 729,
+      "bottomRightY": 579,
+      "content": "In 8 bits, Y', Cb and Cr are derived by normalizing E'Y, E'Cb and E'Cr to [0, 255]. Note that Cb and Cr are signed shifted by 128 since E'Cb and E'Cr are in the range [-0.5, 0.5]. Including (6) leads to:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 584,
+      "bottomRightX": 694,
+      "bottomRightY": 603,
+      "content": "\\[\n\\mathrm{Y} ^ {\\prime} = 2 5 5 \\mathrm{E} _ {\\mathrm{Y}} ^ {\\prime} \\tag {7}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 609,
+      "bottomRightX": 593,
+      "bottomRightY": 629,
+      "content": "\\[\n\\mathrm{Cb} = 2 5 5 \\mathrm{E} _ {\\mathrm{Cb}} ^ {\\prime} + 1 2 8 = 2 5 5 \\times (0. 5 / 0. 8 8 6) (\\mathrm{E} _ {\\mathrm{B}} ^ {\\prime} - \\mathrm{E} _ {\\mathrm{Y}} ^ {\\prime}) + 1 2 8\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 635,
+      "bottomRightX": 593,
+      "bottomRightY": 654,
+      "content": "\\[\n\\mathrm{Cr} = 2 5 5 \\mathrm{E} _ {\\mathrm{Cr}} ^ {\\prime} + 1 2 8 = 2 5 5 \\times (0. 5 / 0. 7 0 1) (\\mathrm{E} _ {\\mathrm{R}} ^ {\\prime} - \\mathrm{E} _ {\\mathrm{Y}} ^ {\\prime}) + 1 2 8\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 687,
+      "bottomRightX": 468,
+      "bottomRightY": 706,
+      "content": "Full scale R', G' and B' in 8 bits offers the following equations:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 713,
+      "bottomRightX": 694,
+      "bottomRightY": 732,
+      "content": "\\[\n\\mathrm{R} ^ {\\prime} = 2 5 5 \\mathrm{E} _ {\\mathrm{R}} ^ {\\prime} \\tag {8}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 737,
+      "bottomRightX": 260,
+      "bottomRightY": 756,
+      "content": "\\[\n\\mathrm{G} ^ {\\prime} = 2 5 5 \\mathrm{E} _ {\\mathrm{G}} ^ {\\prime}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 764,
+      "bottomRightX": 260,
+      "bottomRightY": 780,
+      "content": "\\[\n\\mathrm{B} ^ {\\prime} = 2 5 5 \\mathrm{E} _ {\\mathrm{B}} ^ {\\prime}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 974,
+      "content": "Page 47 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

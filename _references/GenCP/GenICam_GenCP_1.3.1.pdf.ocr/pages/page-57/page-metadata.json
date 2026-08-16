@@ -1,0 +1,123 @@
+{
+  "index": 56,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 140,
+      "content": "|  GEN<i>CAM |   | ![img-61.jpeg](img-61.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 153,
+      "bottomRightX": 644,
+      "bottomRightY": 225,
+      "content": "|  Bit offset (lsb << x) | Width (bits) | Description  |\n| --- | --- | --- |\n|  0 | 64 | SBRM AddressTechnology Specific Bootstrap Register Map Address  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 225,
+      "bottomRightX": 518,
+      "bottomRightY": 240,
+      "content": "Table 24 – Register Technology Specific Bootstrap Register Map",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 267,
+      "bottomRightX": 369,
+      "bottomRightY": 287,
+      "content": "#### 5.4.13. Device Configuration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 308,
+      "bottomRightX": 473,
+      "bottomRightY": 326,
+      "content": "Device Configuration bits describing implementation specific details.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 186,
+      "topLeftY": 354,
+      "bottomRightX": 534,
+      "bottomRightY": 501,
+      "content": "|  Offset | Hex 1E0  |\n| --- | --- |\n|  Length | 8  |\n|  Access Type | RW  |\n|  Support | M  |\n|  Data Type | Bitfield  |\n|  Factory Default | Device specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 522,
+      "bottomRightX": 645,
+      "bottomRightY": 734,
+      "content": "|  Bit offset (lsb << x) | Width (bits) | Description  |\n| --- | --- | --- |\n|  0 | 1 | Heartbeat EnableSet to enable the Heartbeat Timer. The Access Privilege Supported bit in the Device Capability register indicates if this bit is available or not. If it is not available it must be set to 0.  |\n|  1 | 1 | MultiEvent EnableSet to allow multiple events in a single event command packet. This bit is only available if the MultiEvent Supported bit is set in the Device Capability register. Otherwise it must be set to 0.  |\n|  2 | 62 | ReservedSet to 0.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 255,
+      "topLeftY": 734,
+      "bottomRightX": 462,
+      "bottomRightY": 749,
+      "content": "Table 25 – Register Device Configuration",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 776,
+      "bottomRightX": 349,
+      "bottomRightY": 795,
+      "content": "#### 5.4.14. Heartbeat Timeout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 817,
+      "bottomRightX": 632,
+      "bottomRightY": 886,
+      "content": "The register is available if the Access Privilege Supported bit in the Device Capability register is set. If the Heartbeat expires the communication parameters of a device are reset, for example the baud rate of a serial device. It is technology dependent which parameters are affected. After a Heartbeat timeout, a host should be able to communicate with a device using default",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 932,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 932,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 57 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

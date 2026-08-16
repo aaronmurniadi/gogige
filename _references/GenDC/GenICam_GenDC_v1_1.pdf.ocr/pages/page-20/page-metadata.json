@@ -1,0 +1,67 @@
+{
+  "index": 19,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 138,
+      "bottomRightX": 687,
+      "bottomRightY": 253,
+      "content": "Each Part can have multiple 64-bit TypeSpecific fields (shown in blue). For all the Part types defined in this document, these fields are described in the section 2.2.7. In general, if applicable, those TypeSpecific fields should follow a common layout. This common layout illustrated in Figure 2-6, starts with the Parts' dimensions (8 bytes, e.g. for 2D images SizeX and SizeY each 4 bytes), followed by the Parts' padding (4 bytes, e.g. for 2D images PaddingX and PaddingY each 2 bytes) and a reserved field (4 bytes) for future additions. Other optional Part Type specific fields (8 bytes each) can also be present.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 273,
+      "bottomRightX": 712,
+      "bottomRightY": 369,
+      "content": "|  Dimension  |   |\n| --- | --- |\n|  Padding | InfoReserved  |\n|  TypeSpecific 3 (optional)  |   |\n|  ...  |   |\n|  TypeSpecific n (optional)  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 229,
+      "topLeftY": 380,
+      "bottomRightX": 508,
+      "bottomRightY": 395,
+      "content": "Figure 2-6: GenDC Part TypeSpecific fields general layout",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 20 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

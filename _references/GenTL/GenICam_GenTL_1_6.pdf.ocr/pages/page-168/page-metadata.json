@@ -1,0 +1,85 @@
+{
+  "index": 167,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-246.jpeg](img-246.jpeg) CAM |   | ![img-247.jpeg](img-247.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 168,
+      "bottomRightX": 252,
+      "bottomRightY": 186,
+      "content": "##### 6.4.5.2 URL_INFO_CMD",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 209,
+      "bottomRightX": 235,
+      "bottomRightY": 225,
+      "content": "enum URL_INFO_CMD",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 235,
+      "bottomRightX": 635,
+      "bottomRightY": 268,
+      "content": "This enumeration defines commands to retrieve information with the GCGetPortURLInfo function on a module or remote device handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 276,
+      "bottomRightX": 637,
+      "bottomRightY": 360,
+      "content": "The column labeled “Impl” in the following table lists if the implementation of a given command is mandatory (M), optional (O) or conditional mandatory (CM). Mandatory means that a GenTL Producer must implement the listed command even tough it might return NA. Optional means that it is up to the implementor if a given command is implemented or not. Conditional Mandatory means that command is to be implemented if possible.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 364,
+      "bottomRightX": 645,
+      "bottomRightY": 875,
+      "content": "|  Enumerator | Impl | Value | Description  |\n| --- | --- | --- | --- |\n|  URL_INFO_URL | M | 0 | URL as defined in chapter 4.1.2Data type: STRING  |\n|  URL_INFO_SCHEMA_VER_MAJOR | CM | 1 | Major version of the schema this URL refers to.Data type: INT32  |\n|  URL_INFO_SCHEMA_VER_MINOR | CM | 2 | Minor version of the schema this URL refers to.Data type: INT32  |\n|  URL_INFO_FILE_VER_MAJOR | CM | 3 | Major version of the XML-file this URL refers to.Data type: INT32  |\n|  URL_INFO_FILE_VER_MINOR | CM | 4 | Minor version of the XML-file this URL refers to.Data type: INT32  |\n|  URL_INFO_FILE_VER_SUBMINOR | CM | 5 | Subminor version of the XML-file this URL refers to.Data type: INT32  |\n|  URL_INFO_FILE_SHA1_HASH | CM | 6 | SHA1 Hash of the XML-file this URL refers to. The size of the provided buffer is 160Bit according to the SHA1 specification.Data type: BUFFER  |\n|  URL_INFO_FILE_REGISTER_ADDRESS | CM | 7 | Register address of the XML-File in the device's register map. In case the XML is not locally stored in the device's register map the info function should return aGC_ERR_NOT_AVAILABLE.Data type: UINT64  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 168 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

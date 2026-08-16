@@ -1,0 +1,130 @@
+{
+  "index": 29,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<I>CAM |   | ![img-44.jpeg](img-44.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 231,
+      "topLeftY": 163,
+      "bottomRightX": 505,
+      "bottomRightY": 497,
+      "content": "![img-45.jpeg](img-45.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-45.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 515,
+      "bottomRightX": 299,
+      "bottomRightY": 534,
+      "content": "Figure 14 Accessing a LUT array",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 545,
+      "bottomRightX": 636,
+      "bottomRightY": 696,
+      "content": "The fact that the LUTIndex can be used to select a specific LUTEntry is made explicit by the <pSelected> element in the LUTIndex node. Nodes implementing an IInteger or and IEnumeration interface can have any number of pSelected entries to indicate that the selected nodes will show a different value depending on the value of selector node. Information whether a node is a selector and which are the selected nodes can be retrieved using the ISelector interface which has the according methods IsSelector and GetSelectedFeatures. Using this interface a GUI can for example show a list of LUTEntries because it knows that if it runs LUTIndex (selector) from min to max it will retrieve an array of different values from LUTEntry (selected).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 703,
+      "bottomRightX": 635,
+      "bottomRightY": 738,
+      "content": "Note that the selector and the indirect addressing scheme can also be used to access multi-dimensional arrays via multiple indices.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 751,
+      "bottomRightX": 329,
+      "bottomRightY": 770,
+      "content": "#### 2.8.5 Integer, IntReg, MaskedIntReg",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 779,
+      "bottomRightX": 635,
+      "bottomRightY": 814,
+      "content": "The IInteger interface provides access to signed 64 bit integer variables that have a Value restricted by the Minimum, Maximum, and Increment parameters according to the formulas:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 827,
+      "bottomRightX": 270,
+      "bottomRightY": 844,
+      "content": "\\[\n\\text { Value } = \\text { Minimum } + i \\cdot \\text { Increment }\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 339,
+      "topLeftY": 827,
+      "bottomRightX": 370,
+      "bottomRightY": 843,
+      "content": "with",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 426,
+      "topLeftY": 821,
+      "bottomRightX": 574,
+      "bottomRightY": 853,
+      "content": "\\[\n0 \\leq i \\leq \\frac {\\text { Maximum } - \\text { Minimum }}{\\text { Increment }}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 861,
+      "bottomRightX": 635,
+      "bottomRightY": 896,
+      "content": "The IntReg node maps to byte-aligned integer registers. It inherits the elements and attributes from Register nodes. Below is an example mapping to a 2 byte unsigned integer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 30 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

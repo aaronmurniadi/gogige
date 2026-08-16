@@ -1,0 +1,67 @@
+{
+  "index": 169,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 48,
+      "topLeftY": 41,
+      "bottomRightX": 703,
+      "bottomRightY": 117,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 173,
+      "bottomRightX": 889,
+      "bottomRightY": 502,
+      "content": "![img-71.jpeg](img-71.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-71.jpeg"
+    },
+    {
+      "topLeftX": 396,
+      "topLeftY": 546,
+      "bottomRightX": 652,
+      "bottomRightY": 567,
+      "content": "Figure 5-13: Single Frame Acquisition",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 685,
+      "bottomRightX": 120,
+      "bottomRightY": 700,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 279,
+      "topLeftY": 685,
+      "bottomRightX": 377,
+      "bottomRightY": 702,
+      "content": "Page 170 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 423,
+      "topLeftY": 686,
+      "bottomRightX": 591,
+      "bottomRightY": 702,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

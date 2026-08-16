@@ -1,0 +1,147 @@
+{
+  "index": 37,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-53.jpeg](img-53.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 637,
+      "bottomRightY": 219,
+      "content": "set to Yes. In the following example the Action node will be invalidated every 10 ms if Action==Active. If the node's value is read while Action==Active the reading will be performed ignoring the cache. As soon as the reading reveals that Action==Idle the polling will stop and the cache will be active again.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 230,
+      "bottomRightX": 418,
+      "bottomRightY": 382,
+      "content": "<Enumeration Name=\"Action\">\n    <EnumEntry Name=\"Idle\">\n    <Value>0</Value>\n    </EnumEntry>\n    <EnumEntry Name=\"Active\">\n    <Value>1</Value>\n    <IsSelfClearing>Yes</IsSelfClearing>\n    </EnumEntry>\n    <pValue>ActionReg</pValue>\n    <PollingTime>10</PollingTime>\n</Enumeration>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 420,
+      "bottomRightX": 196,
+      "bottomRightY": 438,
+      "content": "#### 2.8.11 StringReg",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 447,
+      "bottomRightX": 637,
+      "bottomRightY": 516,
+      "content": "A string is a (possibly null-terminated) ASCII string placed somewhere in the address space of the camera. A string is exposed via an IString interface. The example below shows how to extract the model name of the camera using a StringReg node. We assume that the ModelName can have a maximum of 128 bytes including the terminating null character.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 116,
+      "topLeftY": 537,
+      "bottomRightX": 335,
+      "bottomRightY": 622,
+      "content": "<StringReg Name=\"ModelName\">\n    <Address>0x1234</Address>\n    <Length>128</Length>\n    <AccessMode>RO</AccessMode>\n    <pPort>Device</pPort>\n</StringReg>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 642,
+      "bottomRightX": 420,
+      "bottomRightY": 659,
+      "content": "You can get and set a string through the IString interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 673,
+      "bottomRightX": 210,
+      "bottomRightY": 691,
+      "content": "#### 2.8.12 String (v1.1)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 701,
+      "bottomRightX": 454,
+      "bottomRightY": 718,
+      "content": "A String node is floating node which can hold any string value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 116,
+      "topLeftY": 730,
+      "bottomRightX": 486,
+      "bottomRightY": 772,
+      "content": "<String Name=\"ModelName\">\n    <Value>This initializes the node's value</Value>\n</String>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 800,
+      "bottomRightX": 486,
+      "bottomRightY": 817,
+      "content": "#### 2.8.13 SwissKnife, IntSwissKnife, Converter, and IntConverter",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 827,
+      "bottomRightX": 637,
+      "bottomRightY": 878,
+      "content": "To do mathematical computations within GenICam, the SwissKnife node dealing with float numbers and the IntSwissKnife node dealing with integers have been introduced. Both have the same syntax.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 885,
+      "bottomRightX": 637,
+      "bottomRightY": 919,
+      "content": "The following example shows how the product of two numbers is computed. The XTimesY node exposes an IInteger interface reading 504 (=12*42):",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 38 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

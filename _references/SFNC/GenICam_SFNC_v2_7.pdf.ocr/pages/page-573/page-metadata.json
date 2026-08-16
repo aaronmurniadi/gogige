@@ -1,0 +1,149 @@
+{
+  "index": 572,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 162,
+      "bottomRightX": 403,
+      "bottomRightY": 181,
+      "content": "Disable Power over CoaXPress (PoCXP) for the Link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 198,
+      "bottomRightX": 613,
+      "bottomRightY": 217,
+      "content": "This feature shall be present only on receiver or transceiver Devices controlling PoCXP.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 248,
+      "bottomRightX": 333,
+      "bottomRightY": 271,
+      "content": "### 27.7.25 CxpPoCxpTripReset",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 272,
+      "bottomRightX": 588,
+      "bottomRightY": 486,
+      "content": "|  Name | CxpPoCxpTripReset  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |\n|  Interface | ICommand  |\n|  Access | Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 502,
+      "bottomRightX": 703,
+      "bottomRightY": 521,
+      "content": "Reset the Power over CoaXPress (PoCXP) Link after an over-current trip on the Device connection(s).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 537,
+      "bottomRightX": 614,
+      "bottomRightY": 556,
+      "content": "This feature shall be present only on receiver or transceiver Devices controlling PoCXP.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 570,
+      "bottomRightX": 304,
+      "bottomRightY": 592,
+      "content": "### 27.7.26 CxpPoCxpStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 593,
+      "bottomRightX": 588,
+      "bottomRightY": 836,
+      "content": "|  Name | CxpPoCxpStatus  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Auto Off Tripped  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 851,
+      "bottomRightX": 475,
+      "bottomRightY": 869,
+      "content": "Returns the Power over CoaXPress (PoCXP) status of the Device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 895,
+      "bottomRightX": 188,
+      "bottomRightY": 912,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 923,
+      "bottomRightX": 385,
+      "bottomRightY": 941,
+      "content": "- Auto: Normal automatic PoCXP operation.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 573 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

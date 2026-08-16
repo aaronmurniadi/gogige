@@ -1,0 +1,92 @@
+{
+  "index": 35,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 131,
+      "topLeftY": 31,
+      "bottomRightX": 280,
+      "bottomRightY": 62,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 523,
+      "topLeftY": 34,
+      "bottomRightX": 616,
+      "bottomRightY": 84,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 6,
+      "topLeftY": 75,
+      "bottomRightX": 77,
+      "bottomRightY": 92,
+      "content": "Version 1.1.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 242,
+      "topLeftY": 72,
+      "bottomRightX": 291,
+      "bottomRightY": 89,
+      "content": "GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 117,
+      "bottomRightX": 712,
+      "bottomRightY": 171,
+      "content": "example putting the data to the memory of a graphics card and keeping the Descriptor in normal Host memory. For this, the internal offsets of the GenDC Data Container do not need to be altered; all is done by changing the Flow base addresses which are not part of the Container.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 169,
+      "bottomRightX": 695,
+      "bottomRightY": 222,
+      "content": "Early processing of Parts transmitted in different Flows can be easily done if the Transport Layer provides an end of Flow notification of some kind. It is highly recommended for each Transport Layer to provide such an end of Flow notification.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 239,
+      "bottomRightX": 661,
+      "bottomRightY": 258,
+      "content": "[ R-003] A GenDC compliant transmitter must provide a Flow mapping table (stored in little-endian ordering).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 986,
+      "bottomRightX": 86,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 543,
+      "topLeftY": 986,
+      "bottomRightX": 632,
+      "bottomRightY": 1007,
+      "content": "Page 36 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

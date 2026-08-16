@@ -1,0 +1,139 @@
+{
+  "index": 60,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-89.jpeg](img-89.jpeg) CAM |   | ![img-90.jpeg](img-90.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 137,
+      "bottomRightX": 637,
+      "bottomRightY": 204,
+      "content": "If a platform supports independent processes the GenTL Producer implementation may establish interprocess communication. Minimal requirement is that other processes are not allowed to use an opened Device module. It is recommended though that a GenTL Producer implementation is multiprocess capable to the point where:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 212,
+      "bottomRightX": 616,
+      "bottomRightY": 378,
+      "content": "- Access rights for the Modules are checked\nAn open Device module should be locked against multiple process write access. In that case an error should be returned. Read access may be granted though.\n• Data/state safety is ensured\nReference counting must be done so that if, e.g., the System module of one process is closed the resources of another process are not automatically freed.\n- Different processes can communicate with different devices\nEach process should be able to communicate with one or multiple devices. Furthermore different processes should be able to communicate with different devices.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 392,
+      "bottomRightX": 240,
+      "bottomRightY": 412,
+      "content": "#### 6.1.5 Error Handling",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 416,
+      "bottomRightX": 637,
+      "bottomRightY": 501,
+      "content": "Every function has as its return value a GC_ERROR. This value indicates the status of the operation. Functions must give strong exception safety. With an exception not a language dependent exception object is meant, but an execution error in the called function with a return code other than GC_ERR_SUCCESS. No exception objects may be thrown of any exported function. Strong exception safety means:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 508,
+      "bottomRightX": 327,
+      "bottomRightY": 542,
+      "content": "• Data validity is preserved\nNo data becomes corrupted or leaked.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 550,
+      "bottomRightX": 218,
+      "bottomRightY": 567,
+      "content": "• State is unchanged",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 102,
+      "topLeftY": 568,
+      "bottomRightX": 635,
+      "bottomRightY": 617,
+      "content": "First the internal state must stay consistent and it must be as if the function encountering the error was never called. Therefore the output values of a function are to be handled as if being invalid if the function returns an error code.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 625,
+      "bottomRightX": 637,
+      "bottomRightY": 675,
+      "content": "This ensures that calling GenTL Consumers always can expect a known state in the GenTL Producer implementation: either it is the desired state when a function call was successful or it is the state the GenTL Producer implementation had before the call.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 682,
+      "bottomRightX": 283,
+      "bottomRightY": 699,
+      "content": "The following values are defined:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 706,
+      "bottomRightX": 459,
+      "bottomRightY": 721,
+      "content": "Table 6-4: C interface error codes",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 728,
+      "bottomRightX": 641,
+      "bottomRightY": 904,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|  GC_ERR_SUCCESS | 0 | Operation was successful; no error occurred.  |\n|  GC_ERR_ERROR | -1001 | Unspecified runtime error.  |\n|  GC_ERR_NOT_INITIALIZED | -1002 | Module or resource not initialized; e.g., GCInitLib was not called .  |\n|  GC_ERR_NOT_IMPLEMENTED | -1003 | Requested operation not implemented; e.g., no Port functions on a Buffer module.  |\n|  GC_ERR_RESOURCE_IN_USE | -1004 | Requested resource is already in use.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 61 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

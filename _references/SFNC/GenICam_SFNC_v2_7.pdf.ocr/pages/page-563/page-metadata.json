@@ -1,0 +1,158 @@
+{
+  "index": 562,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 54,
+      "bottomRightX": 304,
+      "bottomRightY": 83,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 533,
+      "topLeftY": 55,
+      "bottomRightX": 623,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 99,
+      "bottomRightX": 120,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 99,
+      "bottomRightX": 404,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 142,
+      "bottomRightX": 496,
+      "bottomRightY": 302,
+      "content": "|  Interface | IBoolean  |\n| --- | --- |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 318,
+      "bottomRightX": 443,
+      "bottomRightY": 337,
+      "content": "Enable or disable the link sharing functionality of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 353,
+      "bottomRightX": 645,
+      "bottomRightY": 373,
+      "content": "Note: All CxpLinkSharing features support Link Sharing as defined in the CXP specification.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 404,
+      "bottomRightX": 459,
+      "bottomRightY": 426,
+      "content": "### 27.7.6 CxpLinkSharingSubDeviceSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 428,
+      "bottomRightX": 496,
+      "bottomRightY": 651,
+      "content": "|  Name | CxpLinkSharingSubDeviceSelector  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 676,
+      "bottomRightX": 369,
+      "bottomRightY": 694,
+      "content": "Index of the sub device used in the Link Sharing.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 701,
+      "bottomRightX": 501,
+      "bottomRightY": 718,
+      "content": "Index 0 is the master sub device, other index are for slave sub devices.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 96,
+      "topLeftY": 758,
+      "bottomRightX": 350,
+      "bottomRightY": 780,
+      "content": "### 27.7.7 CxpLinkSharingStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 781,
+      "bottomRightX": 557,
+      "bottomRightY": 949,
+      "content": "|  Name | CxpLinkSharingStatus[CxpLinkSharingSubDeviceSelector]  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 563 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 623,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

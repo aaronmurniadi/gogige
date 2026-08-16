@@ -1,0 +1,49 @@
+{
+  "index": 32,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-32.jpeg](img-32.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 153,
+      "bottomRightX": 636,
+      "bottomRightY": 712,
+      "content": "|  Status Code (Hex) | Name | Description  |\n| --- | --- | --- |\n|  0x0000 | GENCP_SUCCESS | Success  |\n|  0x8001 | GENCP_NOT_IMPLEMENTED | Command not implemented in the device. This covers for example- Unknown/Unsupported command_id  |\n|  0x8002 | GENCP_INVALID_PARAMETER | At least one command parameter of CCD or SCD is invalid or out of range. This covers for example:- CCD-Length field which does not fit to the SCD-Part- Invalid content of the reserved field in the SCD- Write with request_id = 0  |\n|  0x8003 | GENCP_INVALID_ADDRESS | Attempt to access a not existing register address.  |\n|  0x8004 | GENCP_WRITE_PROTECT | Attempt to write to a read only register.  |\n|  0x8005 | GENCP_BAD_ALIGNMENT | Attempt to access registers with an address which is not aligned according to the underlying technology.  |\n|  0x8006 | GENCP_ACCESS_DENIED | Attempt to read a non-readable or write a non-writable register address.  |\n|  0x8007 | GENCP_BUSY | The command receiver is currently busy.  |\n|  0x800B | GENCP_MSG_TIMEOUT | Timeout waiting for an acknowledge.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 33 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

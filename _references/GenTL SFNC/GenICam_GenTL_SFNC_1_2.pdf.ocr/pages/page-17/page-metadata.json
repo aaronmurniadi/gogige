@@ -1,0 +1,102 @@
+{
+  "index": 16,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 43,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 132,
+      "bottomRightX": 699,
+      "bottomRightY": 349,
+      "content": "- **B: Beginner** – Features that should be visible for *all* users via the GUI and API. This is the default visibility in the GenICam XML files and will be used if the Visibility element is omitted for a feature. The number of features with \"Beginner\" visibility should be limited to all **basic** features of the GenTL Producer so the GUI display is well-organized and is easy to use.\n- **E: Expert** – Features that require a more in-depth knowledge of the device functionality. This is the preferred visibility level for all advanced features in the devices.\n- **G: Guru** – Advanced features that might bring the devices into a state where it will not work properly anymore if it is set incorrectly for the devices current mode of operation.\n- **I: Invisible** – Features that should be kept hidden for the GUI users but still be available via the API.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 359,
+      "bottomRightX": 609,
+      "bottomRightY": 377,
+      "content": "This document lists for each feature, a recommended Visibility that should be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 385,
+      "bottomRightX": 145,
+      "bottomRightY": 400,
+      "content": "### Selector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 411,
+      "bottomRightX": 686,
+      "bottomRightY": 445,
+      "content": "A selector is used to index which instance of the feature is accessed in situations where multiple instances of a feature exist.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 454,
+      "bottomRightX": 693,
+      "bottomRightY": 507,
+      "content": "A selector is a separate feature that is typically an IEnumeration or an IInteger. Selectors must be used only to select the target features for subsequent changes. It is not allowed to change the behavior of a GenTL Producer in response to a change of a selector value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 515,
+      "bottomRightX": 614,
+      "bottomRightY": 551,
+      "content": "If a selector has only one possible value, the selector relation can be omitted but it is recommended to leave the selector feature as read only for information purpose.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 559,
+      "bottomRightX": 699,
+      "bottomRightY": 630,
+      "content": "In this document, the features which potentially dependent on a selector are expressed using the C language convention for arrays: a pair of brackets follows the feature name, like in SelectedFeature[Selector]. When the Selector is not present, one must deduce the feature is not an array.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 952,
+      "bottomRightX": 164,
+      "bottomRightY": 968,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 553,
+      "topLeftY": 952,
+      "bottomRightX": 650,
+      "bottomRightY": 970,
+      "content": "Page 17 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

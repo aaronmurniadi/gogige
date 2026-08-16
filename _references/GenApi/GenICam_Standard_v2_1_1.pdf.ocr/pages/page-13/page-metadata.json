@@ -1,0 +1,84 @@
+{
+  "index": 12,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-18.jpeg](img-18.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 635,
+      "bottomRightY": 201,
+      "content": "Some nodes have elements to control accessibility, for example, the register node (see section 2.8.3). In addition, GenICam provides three mechanisms to change the accessibility at runtime:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 209,
+      "bottomRightX": 635,
+      "bottomRightY": 374,
+      "content": "- A feature can be temporarily locked depending on the value of another node. While locked, a feature is not writable. In terms of the table above, the writable flag is temporarily forced to 0.\n- A feature can be temporarily not available depending on the value of another node. In terms of the table above, the writable and the readable flags are temporarily forced to 0.\n- A feature can be not implemented at all depending on the value of another node. In terms of the table above, the implemented flag is permanently forced to 0. As oppose to the locked and not available, a feature with not implemented access mode cannot be dynamical changed.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 380,
+      "bottomRightX": 635,
+      "bottomRightY": 465,
+      "content": "The distinction between being available and being implemented has been made because a GUI might want to handle the two cases differently. A feature being not implemented at all will never be shown to the user and a feature being temporarily not available will be grayed out and the value will be replaced, e.g., by “—”. A temporarily locked feature will be grayed out, but the feature’s value may still be displayed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 471,
+      "bottomRightX": 635,
+      "bottomRightY": 556,
+      "content": "A hardware Trigger that can be switched On and Off is a typical example for making a feature temporarily not available. If switched On, an additional feature, the TriggerPolarity, becomes available and denotes whether the hardware signal should be interpreted as an ActiveHigh or an ActiveLow signal. If the Trigger is switched Off, the TriggerPolarity is meaningless and should be grayed out.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 561,
+      "bottomRightX": 635,
+      "bottomRightY": 647,
+      "content": "Figure 5 shows how this information is handled in the camera description file. The Trigger and the TriggerPolarity feature are implemented using nodes of the Enumeration type that map a set of enumeration entries to integer numbers. For example, the entries for the Trigger feature are On=1 and Off=0. The integer numbers are mapped to registers using nodes of the IntReg type.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 957,
+      "bottomRightX": 299,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 13 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

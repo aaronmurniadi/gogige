@@ -1,0 +1,129 @@
+{
+  "index": 27,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-31.jpeg](img-31.jpeg) CAM |   | ![img-32.jpeg](img-32.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 136,
+      "bottomRightX": 569,
+      "bottomRightY": 371,
+      "content": "IF_HANDLE hIface = OpenFirstInterface( hTL );\nDEV_HANDLE hDevice = OpenFirstDevice( hIface );\nDS_HANDLE hStream = OpenFirstDataStream( hDevice );\n\n// At this point we have successfully created a data stream on the first\n// device connected to the first interface. Now we could start to\n// capture data...\nCloseDataStream( hStream );\nCloseDevice( hDevice );\nCloseInterface( hIface );\nCloseTL( hTL );\nCloseLib( );\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 390,
+      "bottomRightX": 177,
+      "bottomRightY": 408,
+      "content": "#### 3.8.2 InitLib",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 414,
+      "bottomRightX": 242,
+      "bottomRightY": 429,
+      "content": "Initialize GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 436,
+      "bottomRightX": 215,
+      "bottomRightY": 504,
+      "content": "void InitLib( void )\n{\n    GCInitLib( );\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 525,
+      "bottomRightX": 189,
+      "bottomRightY": 544,
+      "content": "#### 3.8.3 OpenTL",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 548,
+      "bottomRightX": 205,
+      "bottomRightY": 562,
+      "content": "Retrieve TL Handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 570,
+      "bottomRightX": 241,
+      "bottomRightY": 639,
+      "content": "TL_HANDLE OpenTL( void )\n{\n    TLOpen( hTL );\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 659,
+      "bottomRightX": 270,
+      "bottomRightY": 678,
+      "content": "#### 3.8.4 OpenFirstInterface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 682,
+      "bottomRightX": 266,
+      "bottomRightY": 697,
+      "content": "Retrieve first Interface Handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 704,
+      "bottomRightX": 432,
+      "bottomRightY": 905,
+      "content": "IF_HANDLE OpenFirstInterface( hTL )\n{\n    TLUpdateInterfaceList( hTL );\n    TLGetNumInterfaces( hTL, NumInterfaces );\n    if ( NumInterfaces > 0 )\n    {\n    // First query the buffer size\n    TLGetInterfaceID( hTL, 0, IfaceID, &bufferSize );\n\n    // Open interface with index 0\n    TLOpenInterface( hTL, IfaceID, hNewIface );",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 28 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

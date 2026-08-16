@@ -1,0 +1,141 @@
+{
+  "index": 42,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | ![img-9.jpeg](img-9.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 160,
+      "bottomRightX": 562,
+      "bottomRightY": 179,
+      "content": "Corresponds to the TL_INFO_MODEL command of TLGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 193,
+      "bottomRightX": 219,
+      "bottomRightY": 210,
+      "content": "3.1.1.5 TLVersion",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 213,
+      "bottomRightX": 421,
+      "bottomRightY": 425,
+      "content": "|  Name | TLVersion  |\n| --- | --- |\n|  Category | SystemInformation  |\n|  Level | Mandatory  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 451,
+      "bottomRightX": 431,
+      "bottomRightY": 469,
+      "content": "Vendor specific version string of the GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 477,
+      "bottomRightX": 580,
+      "bottomRightY": 497,
+      "content": "Corresponds to the TL_INFO_VERSION command of TLGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 510,
+      "bottomRightX": 233,
+      "bottomRightY": 527,
+      "content": "3.1.1.6 TLFileName",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 530,
+      "bottomRightX": 421,
+      "bottomRightY": 743,
+      "content": "|  Name | TLFileName  |\n| --- | --- |\n|  Category | SystemInformation  |\n|  Level | Recommended  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 768,
+      "bottomRightX": 427,
+      "bottomRightY": 786,
+      "content": "Filename including extension of the GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 796,
+      "bottomRightX": 552,
+      "bottomRightY": 814,
+      "content": "Corresponds to the TL_INFO_NAME command of TLGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 828,
+      "bottomRightX": 258,
+      "bottomRightY": 847,
+      "content": "3.1.1.7 TLDisplayName",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 849,
+      "bottomRightX": 421,
+      "bottomRightY": 904,
+      "content": "|  Name | TLDisplayName  |\n| --- | --- |\n|  Category | SystemInformation  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 427,
+      "bottomRightY": 945,
+      "content": "Page 43 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

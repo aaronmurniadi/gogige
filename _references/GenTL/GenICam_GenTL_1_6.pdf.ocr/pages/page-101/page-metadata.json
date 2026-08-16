@@ -1,0 +1,264 @@
+{
+  "index": 100,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-141.jpeg](img-141.jpeg) CAM |   | ![img-142.jpeg](img-142.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 270,
+      "bottomRightY": 157,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 190,
+      "content": "The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 199,
+      "bottomRightX": 278,
+      "bottomRightY": 216,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 198,
+      "bottomRightX": 635,
+      "bottomRightY": 232,
+      "content": "One or more flags set in iStopFlags referencing functionality which is not implemented.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 239,
+      "bottomRightX": 278,
+      "bottomRightY": 257,
+      "content": "GC_ERR_RESOURCE_IN_USE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 238,
+      "bottomRightX": 635,
+      "bottomRightY": 273,
+      "content": "The Acquisition has already been terminated or it has not been started.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 305,
+      "bottomRightX": 635,
+      "bottomRightY": 339,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 352,
+      "bottomRightX": 319,
+      "bottomRightY": 369,
+      "content": "##### 6.3.5.13 DSGetBufferChunkData",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 391,
+      "bottomRightX": 631,
+      "bottomRightY": 459,
+      "content": "GC_ERROR DSGetBufferChunkData( DS_HANDLE hDataStream,\nBUFFER_HANDLE hBuffer,\nSINGLE_CHUNK_DATA * pChunkData,\nsize_t * piNumChunks )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 468,
+      "bottomRightX": 635,
+      "bottomRightY": 535,
+      "content": "DSGetBufferChunkData parses the transport layer technology dependent chunk data info in the buffer. The layout of the chunk data present in the buffer is returned in the pChunkData array, one entry per chunk. Every single chunk is described using its ChunkID, offset in the buffer and chunk data size.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 542,
+      "bottomRightX": 635,
+      "bottomRightY": 577,
+      "content": "Note that for composite buffers, the individual chunk offsets reported in pChunkData are linear offsets within entire payload (see also 5.4.1.1).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 582,
+      "bottomRightX": 635,
+      "bottomRightY": 635,
+      "content": "When dealing with buffers containing standard self-described containers (such as GenDC), the GenTL Consumer must parse and interpret the chunk data directly according to the given container type specification without using this function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 647,
+      "bottomRightX": 166,
+      "bottomRightY": 662,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 667,
+      "bottomRightX": 215,
+      "bottomRightY": 684,
+      "content": "[in] hDataStream",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 667,
+      "bottomRightX": 464,
+      "bottomRightY": 684,
+      "content": "Data Stream module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 685,
+      "bottomRightX": 182,
+      "bottomRightY": 701,
+      "content": "[in] hBuffer",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 685,
+      "bottomRightX": 407,
+      "bottomRightY": 701,
+      "content": "Buffer handle to parse.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 701,
+      "bottomRightX": 213,
+      "bottomRightY": 718,
+      "content": "[out] pChunkData",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 701,
+      "bottomRightX": 627,
+      "bottomRightY": 786,
+      "content": "GenTL Consumer allocated array of structures to receive the chunk layout information. If this parameter is NULL, piNumChunks will contain the number of chunks in the buffer, e.g., the minimal number of entries in the pChunkData array.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 787,
+      "bottomRightX": 221,
+      "bottomRightY": 804,
+      "content": "[in,out] piNumChunks",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 787,
+      "bottomRightX": 427,
+      "bottomRightY": 804,
+      "content": "pChunkData equal NULL:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 804,
+      "bottomRightX": 603,
+      "bottomRightY": 838,
+      "content": "out: number of chunks in the buffer (minimal number of entries in the pChunkData array to hold all information).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 839,
+      "bottomRightX": 441,
+      "bottomRightY": 855,
+      "content": "pChunkData unequal NULL:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 855,
+      "bottomRightX": 602,
+      "bottomRightY": 872,
+      "content": "in: number of entries in the provided pChunkData array.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 872,
+      "bottomRightX": 559,
+      "bottomRightY": 906,
+      "content": "out: number of entries successfully written to the pChunkData array.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 101 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

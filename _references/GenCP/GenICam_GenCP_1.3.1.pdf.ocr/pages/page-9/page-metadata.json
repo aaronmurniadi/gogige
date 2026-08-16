@@ -1,0 +1,84 @@
+{
+  "index": 8,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-2.jpeg](img-2.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 179,
+      "bottomRightX": 648,
+      "bottomRightY": 298,
+      "content": "For example, an ASCII based serial link protocol could be used in the generic CLProtocol module to communicate with a manufacturer's device over the Camera Link's serial link. At boot up, the generic CLProtocol module would allow the configuration of the serial link. A “generic” software could download the GenICam file by accessing the camera's registers. The software can then provide native GenICam (like GigE Vision) access to the device without the need for the camera vendor to provide a platform/operating system-specific software running on the host, implementing the translation between GenICam register access and manufacturer proprietary protocols.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 324,
+      "bottomRightX": 226,
+      "bottomRightY": 342,
+      "content": "### 1.3. Abstract",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 365,
+      "bottomRightX": 644,
+      "bottomRightY": 400,
+      "content": "The protocol is packet based. It follows a simple command/acknowledge scheme to provide resend and timeout capabilities, adding minimum overhead.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 408,
+      "bottomRightX": 632,
+      "bottomRightY": 459,
+      "content": "The Bootstrap Register Map (BRM) resides in a 64-bit register space. The 64 Kbytes starting on address zero contain technology agnostic information like manufacturer name, model name, etc., and provide a directory for technology specific settings.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 464,
+      "bottomRightX": 641,
+      "bottomRightY": 515,
+      "content": "In order to locate the GenICam file for a device, software would need to retrieve a list of available GenICam files, called the manifest, from the device's register map. The software would then pick the best fitting GenICam file from the list and access via the device's register map.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 932,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 541,
+      "topLeftY": 932,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 9 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

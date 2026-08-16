@@ -1,0 +1,84 @@
+{
+  "index": 12,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 45,
+      "bottomRightX": 749,
+      "bottomRightY": 124,
+      "content": "|  **GEN<i>CAM** |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 150,
+      "bottomRightX": 716,
+      "bottomRightY": 185,
+      "content": "By concatenating this information, it is possible to create a text string that can uniquely describe a pixel format.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 194,
+      "bottomRightX": 733,
+      "bottomRightY": 230,
+      "content": "**Rule:** If a pixel name requires 2 numbers in its designation as part of consecutive fields, then they must be separated by an underscore (‘_’). Otherwise, no underscore is used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 236,
+      "bottomRightX": 660,
+      "bottomRightY": 255,
+      "content": "Ex: YCbCr709_422_8 for 8-bit per component Y’CbCr 4:2:2 using ITU-R BT.709.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 287,
+      "bottomRightX": 458,
+      "bottomRightY": 306,
+      "content": "The following chapters describe in details each of these fields.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 953,
+      "bottomRightX": 103,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 953,
+      "bottomRightX": 463,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 653,
+      "topLeftY": 953,
+      "bottomRightX": 747,
+      "bottomRightY": 973,
+      "content": "Page 13 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

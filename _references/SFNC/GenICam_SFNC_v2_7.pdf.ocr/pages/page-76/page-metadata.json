@@ -1,0 +1,84 @@
+{
+  "index": 75,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 76,
+      "bottomRightX": 122,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 171,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 920,
+      "bottomRightY": 640,
+      "content": "|  ChunkEncoderSelector | R | IEnumeration | R/W | - | E | Selects which Encoder to retrieve data from.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  ChunkEncoderValue[ChunkEncoderSelector][ChunkScanLineSelector] | R | IInteger | R | - | E | Returns the counter's value of the selected Encoder at the time of the FrameStart in area scan mode or the counter's value at the time of the LineStart selected by ChunkScanLineSelector in Linescan mode.  |\n|  ChunkEncoderStatus[ChunkEncoderSelector][ChunkScanLineSelector] | O | IEnumeration | R | - | E | Returns the motion status of the selected encoder.  |\n|  ChunkExposureTimeSelector | O | IEnumeration | R/W | - | E | Selects which exposure time is read by the ChunkExposureTime feature.  |\n|  ChunkExposureTime[ChunkExposureTimeSelector] | R | IFloat | R | us | E | Returns the exposure time used to capture the image.  |\n|  ChunkGainSelector | R | IEnumeration | R/W | - | E | Selects which Gain to return.  |\n|  ChunkGain[ChunkGainSelector] | R | IFloat | R | - | E | Returns the gain used to capture the image.  |\n|  ChunkBlackLevelSelector | R | IEnumeration | R/W | - | E | Selects which Black Level to return.  |\n|  ChunkBlackLevel[ChunkBlackLevelSelector] | R | IFloat | R | - | E | Returns the black level used to capture the image included in the payload.  |\n|  ChunkLinePitch | R | IInteger | R | B | E | Returns the LinePitch of the image included in the payload.  |\n|  ChunkFrameID | R | IInteger | R | - | E | Returns the unique Identifier of the frame (image or data container) included in the payload.  |\n|  ChunkSourceSelector | O | IEnumeration | R/W | - | E | Selects which Source to retrieve data from.  |\n|  ChunkSourceID | O | IEnumeration | R | - | E | Returns the Identifier of Source that the image comes from.  |\n|  ChunkSourceIDValue[ChunkSourceSelector] | R | IInteger | R | - | E | Returns the unique integer Identifier value of the Source that the image comes from.  |\n|  ChunkTransferBlockID | R | IInteger | R | - | E | Returns the unique identifier of the transfer block used to transport the payload.  |\n|  ChunkTransferStreamID | R | IEnumeration | R | - | E | Returns identifier of the stream that generated this block.  |\n|  ChunkTransferQueueCurrentBlockCount | O | IInteger | R | - | E | Returns the current number of blocks in the transfer queue.  |\n|  ChunkStreamChannelID | R | IInteger | R | - | E | Returns identifier of the stream channel used to carry the block.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 651,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 76 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "index": 424,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 144,
+      "bottomRightX": 439,
+      "bottomRightY": 167,
+      "content": "### 23.3 Status of optic features state machine",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 187,
+      "bottomRightX": 734,
+      "bottomRightY": 223,
+      "content": "The following state machine can be applied to all status features. This includes the global status of the optic controller as well as the status of the single optical axes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 153,
+      "topLeftY": 252,
+      "bottomRightX": 621,
+      "bottomRightY": 908,
+      "content": "![img-138.jpeg](img-138.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-138.jpeg"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 951,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 951,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 425 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

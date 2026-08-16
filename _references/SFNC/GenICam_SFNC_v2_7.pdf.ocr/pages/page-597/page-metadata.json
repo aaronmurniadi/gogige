@@ -1,0 +1,94 @@
+{
+  "index": 596,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  ![img-216.jpeg](img-216.jpeg) |   | ![img-217.jpeg](img-217.jpeg)  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 373,
+      "topLeftY": 145,
+      "bottomRightX": 481,
+      "bottomRightY": 165,
+      "content": "10X (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 357,
+      "topLeftY": 174,
+      "bottomRightX": 448,
+      "bottomRightY": 191,
+      "content": "10 zones in X.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 388,
+      "topLeftY": 205,
+      "bottomRightX": 419,
+      "bottomRightY": 221,
+      "content": "10X",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 222,
+      "bottomRightX": 698,
+      "bottomRightY": 241,
+      "content": "![img-218.jpeg](img-218.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-218.jpeg"
+    },
+    {
+      "topLeftX": 274,
+      "topLeftY": 251,
+      "bottomRightX": 531,
+      "bottomRightY": 269,
+      "content": "Figure 29-43: Geometry 10X (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 597 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

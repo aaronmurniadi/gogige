@@ -1,0 +1,84 @@
+{
+  "index": 50,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-68.jpeg](img-68.jpeg) CAM |   | ![img-69.jpeg](img-69.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 153,
+      "bottomRightX": 569,
+      "bottomRightY": 555,
+      "content": "if ( PayloadType == PAYLOAD_TYPE_CHUNK_DATA )\n{\n    ChunkListSize = 0;\n    DSGetBufferChunkData( hStream, hBuffer, 0, ChunkListSize )\n    {\n    // Alternatively it would be possible to inquire the max number of\n    // chunks per buffer through STREAM_INFO_NUM_CHUNKS_MAX\n\n    DSGetInfo( hStream, STREAM_INFO_NUM_CHUNKS_MAX, Type, ChunkListSize, sizeof(ChunkListSize));\n\n    // In this case the consumer needs error checking in case the\n    // GenTL Producer cannot provide that information\n    }\n\n    // Allocate array of SINGLE_CHUNK_DATA structures\n    DSGetBufferChunkData( hStream, hBuffer, ChunkArray, ChunkListSize )\n\n    // Pass Chunk Array to GenApi Port\n    // Free ChunkArray.\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 584,
+      "bottomRightX": 299,
+      "bottomRightY": 604,
+      "content": "### 5.5 Data Payload Delivery",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 610,
+      "bottomRightX": 636,
+      "bottomRightY": 679,
+      "content": "The GenTL Producer is allowed to modify the image data acquired from the remote device if needed or if it is convenient for the user. An examples of such modifications can be a PixelFormat conversion (e.g., when decoding a Bayer encoded color image) or LinePitch adjustment (elimination of the line padding produced on the remote device).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 685,
+      "bottomRightX": 637,
+      "bottomRightY": 790,
+      "content": "Whenever a modification leads to a change of basic parameters required to interpret the image, the GenTL Producer must inform the GenTL Consumer about the modifications. It is mandatory to report the modified values through the BUFFER_INFO_CMD or BUFFER_PART_INFO_CMD commands of the C interface. The tables listing the values for BUFFER_INFO_CMD and BUFFER_PART_INFO_CMD also list which commands are optional and and which are mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 796,
+      "bottomRightX": 636,
+      "bottomRightY": 883,
+      "content": "If a given BUFFER_INFO_CMD command is not available, the GenTL Consumer assumes, that the GenTL Producer did not modify the corresponding parameter and that it corresponds to the settings on the remote device. For example, if the query for BUFFER_INFO_PIXELFORMAT returns an error, meaning that the BUFFER_INFO_PIXELFORMAT command is not available, the GenTL Consumer should assume that the GenTL Producer did",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 51 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

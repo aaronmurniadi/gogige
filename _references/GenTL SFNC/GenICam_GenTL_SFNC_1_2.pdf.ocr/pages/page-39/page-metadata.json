@@ -1,0 +1,122 @@
+{
+  "index": 38,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 54,
+      "bottomRightX": 359,
+      "bottomRightY": 82,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 54,
+      "bottomRightX": 583,
+      "bottomRightY": 103,
+      "content": "![img-8.jpeg](img-8.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-8.jpeg"
+    },
+    {
+      "topLeftX": 100,
+      "topLeftY": 97,
+      "bottomRightX": 167,
+      "bottomRightY": 111,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 96,
+      "bottomRightX": 471,
+      "bottomRightY": 112,
+      "content": "GenTL Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 584,
+      "topLeftY": 86,
+      "bottomRightX": 631,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 156,
+      "bottomRightX": 1010,
+      "bottomRightY": 528,
+      "content": "|  BufferXOffset[BufferPartSelector] | O | All | IInteger | R | - | E | XOffset of the data in the buffer in number of pixels from the image origin to handle areas of interest.  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  BufferYOffset[BufferPartSelector] | O | All | IInteger | R | - | E | YOffset of the data in the buffer in number of lines from the image origin to handle areas of interest.  |\n|  BufferXPadding[BufferPartSelector] | O | All | IInteger | R | Byte | E | XPadding of the data in the buffer in number of bytes.  |\n|  BufferYPadding | O | All | IInteger | R | Byte | E | YPadding of the data in the buffer in number of bytes.  |\n|  BufferFrameID | R | All | IInteger | R | - | E | A sequentially incremented number of the frame.  |\n|  BufferImagePresent | O | All | IBoolean | R | - | E | Flag to indicate if the current data in the buffer contains image data.  |\n|  BufferImageOffset | O | All | IInteger | R | Byte | E | Offset of the image data from the beginning of the delivered buffer in bytes.  |\n|  BufferPixelFormat[BufferPartSelector] | O | All | IEnumeration | R | - | E | Format of the pixels provided by the buffer.  |\n|  BufferDeliveredImageHeight[BufferPart Selector] | O | All | IInteger | R | - | E | The number of lines in the current buffer part as delivered by the transport mechanism.  |\n|  BufferDeliveredChunkPayloadSize | O | All | IInteger | R | - | E | Size of the valid chunk payload data delivered in the buffer.  |\n|  BufferChunkLayoutID | O | All | IInteger | R | - | E | ID of the chunk data layout delivered in the buffer.  |\n|  BufferFileName | O | All | IString | R | - | E | Filename for the file payload data delivered in the buffer.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 549,
+      "bottomRightX": 266,
+      "bottomRightY": 567,
+      "content": "### 2.5.3 GenICam Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 580,
+      "bottomRightX": 644,
+      "bottomRightY": 598,
+      "content": "Contains the features related to GenICam control and access of a specific Buffer module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 381,
+      "topLeftY": 605,
+      "bottomRightX": 638,
+      "bottomRightY": 623,
+      "content": "Table 2-22: GenICam Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 629,
+      "bottomRightX": 1010,
+      "bottomRightY": 679,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  Root | O | All | ICategory | R | - | B | Provides the Root of the GenICam features tree.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 694,
+      "bottomRightX": 164,
+      "bottomRightY": 710,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 694,
+      "bottomRightX": 428,
+      "bottomRightY": 712,
+      "content": "Page 39 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

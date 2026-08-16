@@ -1,0 +1,218 @@
+{
+  "index": 295,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 143,
+      "bottomRightX": 219,
+      "bottomRightY": 165,
+      "content": "## 15 Event Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 733,
+      "bottomRightY": 232,
+      "content": "This chapter describes how to control the generation of Events to the host application. An Event is a message that is sent to the host application to notify it of the occurrence of an internal event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 241,
+      "bottomRightX": 747,
+      "bottomRightY": 294,
+      "content": "Events are typically used to synchronize the host application with some Events happening in the device. A typical use in machine vision is a host application that waits to be notified of the sensor's exposure end to move the inspected part on a conveyer belt.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 300,
+      "bottomRightX": 747,
+      "bottomRightY": 336,
+      "content": "**EventSelector** selects which particular Event to control. There are many sources of events such as Acquisition, Timer, Counter and I/O lines.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 344,
+      "bottomRightX": 708,
+      "bottomRightY": 416,
+      "content": "The standard Acquisition related Events are: **AcquisitionTrigger**, **AcquisitionStart**, **AcquisitionEnd**, **AcquisitionTransferStart**, **AcquisitionTransferEnd**, **AcquisitionError**, **FrameTrigger**, **FrameStart**, **FrameEnd**, **FrameBurstStart**, **FrameBurstEnd**, **FrameTransferStart**, **FrameTransferEnd**, **ExposureStart**, **ExposureEnd** (Figure 5-1 to Figure 5-15).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 422,
+      "bottomRightX": 696,
+      "bottomRightY": 459,
+      "content": "The standard Counters and Timers related Events are: **Counter0Start**, **Counter0End**, **Counter1Start**, **Counter1End**, ... **Timer0Start**, **Timer0End**, **Timer1Start**, **Timer1End**,...",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 466,
+      "bottomRightX": 755,
+      "bottomRightY": 520,
+      "content": "The standard I/O line Events are: **Line0RisingEdge**, **Line0FallingEdge**, **Line0AnyEdge**, **Line1RisingEdge**, **Line1FallingEdge**, ... Note that the event signal is monitored at the same place as **LineStatus** in the I/O control block (See Figure 9-1). This means that event is checked against the condition after the input inverter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 527,
+      "bottomRightX": 736,
+      "bottomRightY": 564,
+      "content": "**EventNotification** is used to enable or disable the notification of the occurrence of the internal event selected by **EventSelector**. If **EventNotification** is **Off**, no event of the selected type is generated.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 570,
+      "bottomRightX": 740,
+      "bottomRightY": 643,
+      "content": "For each of the events listed in the **EventSelector** enumeration, there must be a corresponding event identifier feature with a standard name (ex: **EventExposureEnd**). The controlling application can rely on this feature to register a callback function to be notified that the event happened. This integer event feature must return the unique identifier value identifying the event on the transport layer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 649,
+      "bottomRightX": 705,
+      "bottomRightY": 687,
+      "content": "Also for each Event, there should be, in the **EventControl** category, a sub category grouping all the data members related to the particular event (Ex: **EventExposureEndData**).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 704,
+      "bottomRightX": 705,
+      "bottomRightY": 740,
+      "content": "The other data members in that category should also follow the naming convention described below (Ex: **EventExposureEndTimestamp**).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 757,
+      "bottomRightX": 343,
+      "bottomRightY": 775,
+      "content": "The recommended optional data members are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 793,
+      "bottomRightX": 595,
+      "bottomRightY": 848,
+      "content": "- Timestamp: Unique timestamp of the Event.\n- FrameID: Unique ID of the Frame (or image) that generated the Event (if applicable).\n- Followed by any other data related to this particular event.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 882,
+      "bottomRightX": 468,
+      "bottomRightY": 900,
+      "content": "Therefore, the naming convention for the Event related features is:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 918,
+      "bottomRightX": 283,
+      "bottomRightY": 936,
+      "content": "For each Event (Ex: **ExposureEnd**):",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 296 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "index": 36,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-52.jpeg](img-52.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 637,
+      "bottomRightY": 202,
+      "content": "The following example sIf a complete MaskedInt entry hows an Enumeration describing the camera's ColorCode. If the ColorCodeReg is set to 1, for example, the camera is configured to Mono16.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 213,
+      "bottomRightX": 371,
+      "bottomRightY": 503,
+      "content": "<Enumeration Name=\"ColorCode\">\n    <EnumEntry Name=\"Mono8\">\n    <Value>0</Value>\n    </EnumEntry>\n    <EnumEntry Name=\"Mono16\">\n    <Value>1</Value>\n    </EnumEntry>\n    <EnumEntry Name=\"YUV422\">\n    <Value>3</Value>\n    </EnumEntry>\n    ColorCodeReg\n\n\n</Enumeration>\n\n<IntReg Name=\"ColorCodeReg\">\n    <Address>0x1234</Address>\n    <Length>1</Length>\n    <AccessMode>RW</AccessMode>\n    Device\n    <Sign>Unsigned</Sign>\n    <Endianess>BigEndian</Endianess>\n</IntReg>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 524,
+      "bottomRightX": 637,
+      "bottomRightY": 590,
+      "content": "Quite often, some of the EnumEntries in the list are temporarily unavailable and thus should not be presented to the user. To describe this with GenICam, you can have  and  elements in the EnumEntry sub-nodes, just as you can have with any other node.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 597,
+      "bottomRightX": 637,
+      "bottomRightY": 699,
+      "content": "Typically, the implementation will pre-process the camera description file and will create a separate node with the Name “EnumerationName_EnumEntryName” for each EnumEntry. Instead of the EnumEntry itself, a  element is placed in the Enumeration node. The original name of the EnumEntry is copied to the  element inside the newly created EnumEntry node. The index value represented by the EnumEntry is copied to the EnumEntry’s  element. Note that  entries must not be set manually.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 704,
+      "bottomRightX": 637,
+      "bottomRightY": 871,
+      "content": "Sometimes it makes sense to map a list of EnumEntries to a list of numbers. For example an Enumeration GainList could have the values {Low, Mean, High} and have a Float alias GainAbs with the values {1.0, 10.0, 100.0}. In order to express this,  elements supports a  entry which holds the float number alias of the respective entry. If the entry is not present the default NumericValue is the integer value of the EnumEntry. An Enumeration can be referenced inside the XML file by a float pointer, e.g. the  pointer of a Float node. On reading the NumericValue of the current EnumEntry is retrieved. On writing the absolute difference between the value written and the NumericValues of all writable EnumEntries are computed and the EnumEntry with the smallest absolute difference is chosen.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 878,
+      "bottomRightX": 634,
+      "bottomRightY": 897,
+      "content": "Enumeration nodes can also have an  element. For a description see section 2.8.4.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 903,
+      "bottomRightX": 637,
+      "bottomRightY": 937,
+      "content": "If an Enumeration nodes has a <PollingTime> entry the polling takes only place while the enumeration's value is set to the value of an EnumEntry which has a <IsSelfClearing> entry</IsSelfClearing></PollingTime>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 636,
+      "bottomRightY": 974,
+      "content": "Page 37 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

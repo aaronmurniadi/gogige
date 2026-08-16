@@ -1,0 +1,113 @@
+{
+  "index": 110,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 504,
+      "bottomRightY": 221,
+      "content": "|   | TransferEnd BufferTooSmall BuffersDiscarded  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 246,
+      "bottomRightX": 419,
+      "bottomRightY": 264,
+      "content": "Selects which Event to signal to the host application.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 272,
+      "bottomRightX": 214,
+      "bottomRightY": 289,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 299,
+      "bottomRightX": 682,
+      "bottomRightY": 466,
+      "content": "- **NewBufferData**: A new buffer is available.\n- **TransferEnd**: The transfer of a data for new buffer finished; this is not directly related with delivering the buffer, the data might be appended to end of Output Buffer Queue, dropped, etc., depending on the buffer handling mode and acquisition engine status.\n- **BufferTooSmall**: The buffer was too small to receive the expected amount of data.\n- **BuffersDiscarded**: Buffers discarded by GenTL or device. This event could optionally carry two numeric child data fields EventBuffersDiscardedDeviceCount and EventBuffersDiscardedProducerCount.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 131,
+      "topLeftY": 467,
+      "bottomRightX": 696,
+      "bottomRightY": 520,
+      "content": "**EventBuffersDiscardedDeviceCount**: Number of buffers discarded by the device since last fired instance of this event (the producer would get to know about this for example by observing a gap in the block_id sequence)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 131,
+      "topLeftY": 521,
+      "bottomRightX": 686,
+      "bottomRightY": 574,
+      "content": "**EventBuffersDiscardedProducerCount**: Number of buffers discarded by the producer since last fired instance of this event (this would happen e.g. if there are no free buffers available or if given buffer handling mode requires discarding old buffers etc.)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 614,
+      "bottomRightX": 264,
+      "bottomRightY": 633,
+      "content": "### 3.4.5.3 EventNotification",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 788,
+      "bottomRightX": 424,
+      "bottomRightY": 923,
+      "content": "|  Name | EventNotification[EventSelector]  |\n| --- | --- |\n|  Category | EventControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 431,
+      "bottomRightY": 944,
+      "content": "Page 111 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

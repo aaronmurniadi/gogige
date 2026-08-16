@@ -1,0 +1,111 @@
+{
+  "index": 40,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 27,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 577,
+      "bottomRightY": 77,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 116,
+      "bottomRightX": 190,
+      "bottomRightY": 138,
+      "content": "### 1.3 Acronyms",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 162,
+      "bottomRightX": 389,
+      "bottomRightY": 180,
+      "content": "The following definitions are used in this document.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 93,
+      "topLeftY": 211,
+      "bottomRightX": 494,
+      "bottomRightY": 718,
+      "content": "|  ADC | Analog to Digital Converter  |\n| --- | --- |\n|  AGC | Automatic Gain Control  |\n|  AIA | Automated Imaging Association  |\n|  CRT | Cathode Ray Tube  |\n|  DC | Direct Current  |\n|  DHCP | Dynamic Host Configuration Protocol  |\n|  EMVA | European Machine Vision Association  |\n|  ID | Identifier  |\n|  I/O | Input/Output  |\n|  IP | Internet Protocol  |\n|  LLA | Link-Local Address  |\n|  LUT | Look-Up Table  |\n|  M | Mandatory  |\n|  O | Optional  |\n|  PTP | Precision Time Protocol  |\n|  R | Recommended or Read (depends on the context)  |\n|  ROI | Region Of Interest  |\n|  URL | Uniform Resource Locator  |\n|  W | Write  |\n|  XML | eXtensible Markup Language  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1005,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 390,
+      "bottomRightY": 1007,
+      "content": "Page 41 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 623,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

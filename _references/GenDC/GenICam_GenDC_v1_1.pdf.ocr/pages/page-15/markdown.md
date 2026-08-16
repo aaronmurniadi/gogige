@@ -1,0 +1,9 @@
+|  2 | 24 | **VariableFields** - Flags specifying which type of data information might vary during the Container reception. These flags indicate fields in the Container containing preliminary information, such as images acquired from variable scan or trigger controlled acquisition, where the final size or some other information is not fully known until the end of the acquisition. In general these flags are used to allow processing before the complete Container has been received. - If any of these flags is set, the Container Descriptor is **preliminary** or **prefetched** and might change. An updated **final** Descriptor must be received before the Descriptor can be fully and definitively interpreted. The preliminary Descriptor can be used to start preprocessing of the Container's data. - In the final Descriptor all the VariableFields flags must be set to 0.  |   |
+| --- | --- | --- | --- |
+|  Width (bits) | Bit offset (lsb << x) | Description  |   |
+|  1 | 0 | **DataSize** If True, the DataSize of the Components' Parts might become smaller. Note that it is not allowed to become larger because the preliminary DataSize gives an upper limit.  |   |
+|  1 | 1 | **SizeX** If True, the SizeX and PaddingX of the Components' Parts might change.  |   |
+|  1 | 2 | **SizeY** If True, the SizeY and PaddingY of the Components' Parts might change.  |   |
+|  1 | 3 | **RegionOffset** If True, the RegionOffsetX and RegionOffsetY of the Components might change.  |   |
+|  1 | 4 | **Format** If True, the Components' Format might change. This bit can only be set in a prefetch Descriptor.  |   |
+|  1 | 5 | **Timestamp** If True, the Timestamp of the Components might change.  |   |

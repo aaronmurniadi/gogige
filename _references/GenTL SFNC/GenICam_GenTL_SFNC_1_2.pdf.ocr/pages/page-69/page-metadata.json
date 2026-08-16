@@ -1,0 +1,114 @@
+{
+  "index": 68,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 530,
+      "bottomRightY": 351,
+      "content": "|  TLType | GigEVision  |\n| --- | --- |\n|  Interface | IEnum  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | DHCP PersistentIP LinkLocal  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 376,
+      "bottomRightX": 673,
+      "bottomRightY": 413,
+      "content": "Device IP configuration of the GVCP interface of the selected remote device. This value only changes on execution of the DeviceUpdateList command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 427,
+      "bottomRightX": 351,
+      "bottomRightY": 445,
+      "content": "### 3.2.2.17 GevDeviceMACAddress",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 447,
+      "bottomRightX": 477,
+      "bottomRightY": 687,
+      "content": "|  Name | GevDeviceMACAddress[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 712,
+      "bottomRightX": 549,
+      "bottomRightY": 729,
+      "content": "48-bit MAC address of the GVCP interface of the selected remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 736,
+      "bottomRightX": 635,
+      "bottomRightY": 791,
+      "content": "Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory, and that the Representation element should be used in the XML to facilitate understanding the data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 806,
+      "bottomRightX": 400,
+      "bottomRightY": 823,
+      "content": "### 3.2.2.18 GevDeviceCurrentControlMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 826,
+      "bottomRightX": 522,
+      "bottomRightY": 907,
+      "content": "|  Name | GevDeviceCurrentControlMode[DeviceSelector]  |\n| --- | --- |\n|  Category | DeviceEnumeration  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 69 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

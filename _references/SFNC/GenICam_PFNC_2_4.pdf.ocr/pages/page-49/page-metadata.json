@@ -1,0 +1,184 @@
+{
+  "index": 48,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 753,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 151,
+      "bottomRightX": 713,
+      "bottomRightY": 169,
+      "content": "Considering (9), we need to normalize (6) into 8-bit components that do not occupy the full 256 values:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 175,
+      "bottomRightX": 702,
+      "bottomRightY": 195,
+      "content": "\\[\n\\mathrm{Y} _ {6 0 1} ^ {\\prime} = 2 1 9 \\mathrm{E} _ {\\mathrm{Y}} ^ {\\prime} + 1 6 \\tag {10}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 201,
+      "bottomRightX": 593,
+      "bottomRightY": 220,
+      "content": "\\[\n\\mathrm{Cb} = 2 2 4 \\mathrm{E} _ {\\mathrm{Cb}} ^ {\\prime} + 1 2 8 = 2 2 4 \\times (0. 5 / 0. 8 8 6) (\\mathrm{E} _ {\\mathrm{B}} ^ {\\prime} - \\mathrm{E} _ {\\mathrm{Y}} ^ {\\prime}) + 1 2 8\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 226,
+      "bottomRightX": 547,
+      "bottomRightY": 246,
+      "content": "\\[\n\\mathrm{Cr} = 2 2 4 \\mathrm{E} _ {\\mathrm{Cr}} ^ {\\prime} + 1 2 8 = 2 2 4 \\times (0. 5 / 0. 7 0 1) (\\mathrm{E} _ {\\mathrm{R}} ^ {\\prime} - \\mathrm{E} _ {\\mathrm{Y}} ^ {\\prime}) + 1 2 8\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 279,
+      "bottomRightX": 744,
+      "bottomRightY": 333,
+      "content": "At this point, two options exist depending on the allowed range for RGB components. This does not create a different pixel format for Y'CbCr601, but mainly determines two set of equations depending on the input range of values used for the RGB component.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 339,
+      "bottomRightX": 171,
+      "bottomRightY": 356,
+      "content": "#### Full scale RGB",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 365,
+      "bottomRightX": 732,
+      "bottomRightY": 400,
+      "content": "Full scale RGB uses (8) to define the relationship between the R', G' and B' components and E'R, E'G and E'B.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 215,
+      "topLeftY": 431,
+      "bottomRightX": 595,
+      "bottomRightY": 516,
+      "content": "![img-47.jpeg](img-47.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-47.jpeg"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 525,
+      "bottomRightX": 532,
+      "bottomRightY": 544,
+      "content": "Figure 8-3 : Full scale RGB for BT.601",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 577,
+      "bottomRightX": 269,
+      "bottomRightY": 595,
+      "content": "Replacing (8) into (10) leads to:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 600,
+      "bottomRightX": 488,
+      "bottomRightY": 699,
+      "content": "\\[\n\\begin{array}{l} \\mathrm{Y} _ {6 0 1} ^ {\\prime} = 0. 2 5 6 7 9 \\mathrm{R} ^ {\\prime} + 0. 5 0 4 1 3 \\mathrm{G} ^ {\\prime} + 0. 0 9 7 9 1 \\mathrm{B} ^ {\\prime} + 1 6 \\\\ \\mathrm{Cb} = - 0. 1 4 8 2 2 \\mathrm{R} ^ {\\prime} - 0. 2 9 0 9 9 \\mathrm{G} ^ {\\prime} + 0. 4 3 9 2 2 \\mathrm{B} ^ {\\prime} + 1 2 8 \\\\ \\mathrm{Cr} = 0. 4 3 9 2 2 \\mathrm{R} ^ {\\prime} - 0. 3 6 7 7 9 \\mathrm{G} ^ {\\prime} - 0. 0 7 1 4 3 \\mathrm{B} ^ {\\prime} + 1 2 8 \\\\ \\text { with   } R ^ {\\prime}, G ^ {\\prime} \\text {   and   } B ^ {\\prime} \\text {   in   the   range   [0,255]. } \\\\ \\end{array}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 706,
+      "bottomRightX": 610,
+      "bottomRightY": 725,
+      "content": "Equation 4 : Full scale R'G'B' to Y'CbCr601 conversion (8 bits)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 757,
+      "bottomRightX": 462,
+      "bottomRightY": 776,
+      "content": "For 8-bit data, the valid range of values for each component is:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 782,
+      "bottomRightX": 673,
+      "bottomRightY": 853,
+      "content": "❖ R', G' and B' in range [0, 255], unsigned (256 levels)\n❖ Y'601 in the range [16, 235], unsigned (220 levels)\n❖ Cb and Cr in range [16, 240], signed shifted by 128, with 128 representing 0 (225 levels)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 860,
+      "bottomRightX": 347,
+      "bottomRightY": 879,
+      "content": "Values must be truncated to fit in that range.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 974,
+      "content": "Page 49 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

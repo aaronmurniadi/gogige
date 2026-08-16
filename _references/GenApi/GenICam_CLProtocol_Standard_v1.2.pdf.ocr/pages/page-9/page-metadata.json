@@ -1,0 +1,246 @@
+{
+  "index": 8,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 111,
+      "content": "|  GEN<i>CAM |   | ![img-11.jpeg](img-11.jpeg) emva  |\n| --- | --- | --- |\n|  V1.2 | CLProtocol Standard Module  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 124,
+      "bottomRightX": 138,
+      "bottomRightY": 139,
+      "content": "#### Summary",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 145,
+      "bottomRightX": 635,
+      "bottomRightY": 174,
+      "content": "The following list summarizes the steps a client program has to take in order to select a CLProtocol driver library and identify a camera connected to a frame grabber port.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 103,
+      "topLeftY": 180,
+      "bottomRightX": 635,
+      "bottomRightY": 334,
+      "content": "1. Retrieve a list of PortIDs\n2. Present the list of PortIDs to the user to select a frame grabber port for configuration\n3. Retrieve a list of DeviceID templates for the selected port\n4. Present the list of DeviceID templates to the user to select the best matching template\n5. Probe the camera using the selected DeviceID template as a hint. If the camera is recognized a DeviceID is returned unambiguously identifying the camera attached to the selected port\n6. Connect to the camera using the DeviceID as identifier.\n7. Store the DeviceID for later re-connection.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 349,
+      "bottomRightX": 402,
+      "bottomRightY": 369,
+      "content": "## 4 Retrieving an XML File for a Camera",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 379,
+      "bottomRightX": 635,
+      "bottomRightY": 408,
+      "content": "Once the CLProtocol driver library is set up and the connection to the camera is established a XML camera description must be retrieved either from the camera or from the file system.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 415,
+      "bottomRightX": 635,
+      "bottomRightY": 457,
+      "content": "Because there could be more than one matching XML description, e.g. referring to different GenApi schema versions, the standard provides a two step approach for retrieving the XML code: First a sorted list of possible XML descriptions is created, with the best matching description coming first.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 464,
+      "bottomRightX": 635,
+      "bottomRightY": 505,
+      "content": "Users relying on the automatic just always take the first description to create the GenApi XML node map and configure the camera. If the user wants more control however he can select another XML description manually thus overriding the automatic.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 519,
+      "bottomRightX": 137,
+      "bottomRightY": 532,
+      "content": "### XML IDs",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 540,
+      "bottomRightX": 478,
+      "bottomRightY": 555,
+      "content": "Each XML description is identified by a XML ID which has the following form:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 564,
+      "bottomRightX": 405,
+      "bottomRightY": 576,
+      "content": "\"SchemaVersion.1.0@<shortDeviceID>@XMLVersion.1.2.3\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 583,
+      "bottomRightX": 436,
+      "bottomRightY": 598,
+      "content": "The XML ID is composed of three tokens delimited by an at (\"@\") sign.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 604,
+      "bottomRightX": 619,
+      "bottomRightY": 620,
+      "content": "The first token describes the version number of the GenApi schema the XML description uses. It has the form",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 628,
+      "bottomRightX": 364,
+      "bottomRightY": 641,
+      "content": "\"SchemaVersion.<versionmajor>.<versionminor>\"</versionminor></versionmajor>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 647,
+      "bottomRightX": 367,
+      "bottomRightY": 662,
+      "content": "where <VersionMajor> and <VersionMinor> are integers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 668,
+      "bottomRightX": 528,
+      "bottomRightY": 684,
+      "content": "The second token is a short DeviceID template. It thus can have one of the following forms",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 694,
+      "bottomRightX": 382,
+      "bottomRightY": 749,
+      "content": "\"Manufacturer\"\n\"Manufacturer#Family\"\n\"Manufacturer#Family#Model\"\n\"Manufacturer#Family#Model#Version\"\n\"Manufacturer#Family#Model#Version#SerialNumber\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 766,
+      "bottomRightX": 618,
+      "bottomRightY": 782,
+      "content": "The third token describes the version number given in the XML description file for the device. It has the form",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 790,
+      "bottomRightX": 451,
+      "bottomRightY": 803,
+      "content": "\"XMLVersion.<versionmajor>.<versionminor>.<versionsubminor>\"</versionsubminor></versionminor></versionminor>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 809,
+      "bottomRightX": 635,
+      "bottomRightY": 867,
+      "content": "where <versionmajor>, <versionminor>, and <versionminor> are integers. Note that the Version from the DeviceID string is an arbitrary CName and not necessarily identical to the version given in the XML. This makes for example sense if a XML file for an existing camera is created stepwise, each step covering more for the camera's functionality while the camera itself is not changing.</versionminor></versionminor>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 872,
+      "bottomRightX": 610,
+      "bottomRightY": 888,
+      "content": "Here is an example for a XML ID denoting a XML description which is valid for a whole family of cameras",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 896,
+      "bottomRightX": 445,
+      "bottomRightY": 909,
+      "content": "\"SchemaVersion.1.1@MyVendor#MyFamily1@XMLVersion.1.2.3.xml\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 915,
+      "bottomRightX": 388,
+      "bottomRightY": 930,
+      "content": "The list of XML IDs is assembled from the following sources:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 960,
+      "bottomRightX": 245,
+      "bottomRightY": 975,
+      "content": "GenICam_CLProtocol_Standard",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 321,
+      "topLeftY": 960,
+      "bottomRightX": 421,
+      "bottomRightY": 974,
+      "content": "September 18, 2018",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 571,
+      "topLeftY": 960,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 9 of 13",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

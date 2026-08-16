@@ -1,0 +1,140 @@
+{
+  "index": 407,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 161,
+      "bottomRightX": 751,
+      "bottomRightY": 215,
+      "content": "Enables the definition of a non-valid flag value in the data stream. Note that the confidence output is an alternate recommended way to identify non-valid pixels. Using a Scan3dInvalidDataValue may give processing penalties due to special handling.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 222,
+      "bottomRightX": 179,
+      "bottomRightY": 239,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 248,
+      "bottomRightX": 568,
+      "bottomRightY": 294,
+      "content": "- False: Default value. No specific value identifies missing or invalid points.\n- True: The Scan3dInvalidDataValue specifies a special non-valid value.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 309,
+      "bottomRightX": 357,
+      "bottomRightY": 329,
+      "content": "### 21.4.13 Scan3dInvalidDataValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 331,
+      "bottomRightX": 661,
+      "bottomRightY": 545,
+      "content": "|  Name | Scan3dInvalidDataValue[Scan3dExtractionSelector][Scan3dCoordinateSelector]  |\n| --- | --- |\n|  Category | Scan3dControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 568,
+      "bottomRightX": 538,
+      "bottomRightY": 587,
+      "content": "Value which identifies a non-valid pixel if Scan3dInvalidDataFlag is enabled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 587,
+      "bottomRightX": 730,
+      "bottomRightY": 605,
+      "content": "Typically the invalid data is flagged in one coordinate (Z/Rho) only, but it can be applied to each coordinate.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 612,
+      "bottomRightX": 747,
+      "bottomRightY": 667,
+      "content": "If the pixel format is integer the value must be mapped to (rounded to) an integer register in the device. Using a floating point NaN during pixel data processing might incur performance penalties, it might be desirable to avoid such values within pixel data whenever possible.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 682,
+      "bottomRightX": 282,
+      "bottomRightY": 701,
+      "content": "### 21.4.14 Scan3dAxisMin",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 704,
+      "bottomRightX": 616,
+      "bottomRightY": 919,
+      "content": "|  Name | Scan3dAxisMin[Scan3dExtractionSelector][Scan3dCoordinateSelector]  |\n| --- | --- |\n|  Category | Scan3dControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 408 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "index": 53,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "GENICAM\nVersion 1.1.0 GenDC emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 117,
+      "bottomRightX": 550,
+      "bottomRightY": 137,
+      "content": "### C.2 GenDC Container typical transmission using in order transfers",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 140,
+      "topLeftY": 196,
+      "bottomRightX": 603,
+      "bottomRightY": 216,
+      "content": "Typical GenDC Data Container layout and transmission order:",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 227,
+      "bottomRightX": 737,
+      "bottomRightY": 841,
+      "content": "![img-22.jpeg](img-22.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-22.jpeg"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 866,
+      "bottomRightX": 540,
+      "bottomRightY": 896,
+      "content": "Figure 5-17: Typical GenDC Container's layout and transmission order (One RGB planar image)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 54 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "index": 561,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 143,
+      "bottomRightX": 696,
+      "bottomRightY": 777,
+      "content": "- CXP25_X1: Force the Link to 1 Connection operating at CXP-25 speed (25.78125 Gbps).\n- CXP1_X2: Force the Link to 2 Connections operating at CXP-1 speed (1.25 Gbps).\n- CXP2_X2: Force the Link to 2 Connections operating at CXP-2 speed (2.50 Gbps).\n- CXP3_X2: Force the Link to 2 Connections operating at CXP-3 speed (3.125 Gbps).\n- CXP5_X2: Force the Link to 2 Connections operating at CXP-5 speed (5.00 Gbps).\n- CXP6_X2: Force the Link to 2 Connections operating at CXP-6 speed (6.25 Gbps).\n- CXP10_X2: Force the Link to 2 Connections operating at CXP-10 speed (10.00 Gbps).\n- CXP12_X2: Force the Link to 2 Connections operating at CXP-12 speed (12.50 Gbps).\n- CXP25_X2: Force the Link to 2 Connections operating at CXP-25 speed (25.78125 Gbps).\n- CXP1_X4: Force the Link to 4 Connections operating at CXP-1 speed (1.25 Gbps).\n- CXP2_X4: Force the Link to 4 Connections operating at CXP-2 speed (2.50 Gbps).\n- CXP3_X4: Force the Link to 4 Connections operating at CXP-3 speed (3.125 Gbps).\n- CXP5_X4: Force the Link to 4 Connections operating at CXP-5 speed (5.00 Gbps).\n- CXP6_X4: Force the Link to 4 Connections operating at CXP-6 speed (6.25 Gbps).\n- CXP10_X4: Force the Link to 4 Connections operating at CXP-10 speed (10.00 Gbps).\n- CXP12_X4: Force the Link to 4 Connections operating at CXP-12 speed (12.50 Gbps).\n- CXP25_X4: Force the Link to 4 Connections operating at CXP-25 speed (25.78125 Gbps).\n- CXP1_X8: Force the Link to 8 Connections operating at CXP-1 speed (1.25 Gbps).\n- CXP2_X8: Force the Link to 8 Connections operating at CXP-2 speed (2.50 Gbps).\n- CXP3_X8: Force the Link to 8 Connections operating at CXP-3 speed (3.125 Gbps).\n- CXP5_X8: Force the Link to 8 Connections operating at CXP-5 speed (5.00 Gbps).\n- CXP6_X8: Force the Link to 8 Connections operating at CXP-6 speed (6.25 Gbps).\n- CXP10_X8: Force the Link to 8 Connections operating at CXP-10 speed (10.00 Gbps).\n- CXP12_X8: Force the Link to 8 Connections operating at CXP-12 speed (12.50 Gbps).\n- CXP25_X8: Force the Link to 8 Connections operating at CXP-25 speed (25.78125 Gbps).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 817,
+      "bottomRightX": 355,
+      "bottomRightY": 839,
+      "content": "### 27.7.5 CxpLinkSharingEnable",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 841,
+      "bottomRightX": 495,
+      "bottomRightY": 926,
+      "content": "|  Name | CxpLinkSharingEnable  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 562 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

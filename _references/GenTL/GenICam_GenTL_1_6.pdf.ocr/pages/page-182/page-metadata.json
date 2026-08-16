@@ -1,0 +1,68 @@
+{
+  "index": 181,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-274.jpeg](img-274.jpeg)CAN |   | ![img-275.jpeg](img-275.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 639,
+      "bottomRightY": 240,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |\n|  InterfaceID | IString | R | GenTL Producer wide unique identifier of the selected interface.  |\n|  InterfaceType | IEnumeration | R | Identifies the transport layer technology of the interface. See chapter 6.6.1 for possible values.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 241,
+      "topLeftY": 263,
+      "bottomRightX": 475,
+      "bottomRightY": 278,
+      "content": "Table 7-8: Device enumeration features",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 284,
+      "bottomRightX": 639,
+      "bottomRightY": 912,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |\n|  DeviceUpdateList | ICommand | (R)/W | Updates the internal device list.This feature should be readable if the execution cannot be performed immediately. The command then returns and the status can be polled. This function interacts with the IFUpdateDeviceList function of the GenTL Producer. It is up to the GenTL Consumer to handle access in case both methods are used.  |\n|  DeviceSelector | IInteger | R/W | Selector for the different devices on this interface.This value only changes on execution of “DeviceUpdateList”.The selector is 0 based in order to match the index of the C interface.  |\n|  DeviceID[DeviceSelector] | IString | R | Interface wide unique identifier of the selected device.This value only changes on execution of “DeviceUpdateList”.  |\n|  DeviceVendorName[DeviceSelector] | IString | R | Name of the device vendor.This value only changes on execution of “DeviceUpdateList”.  |\n|  DeviceModelName[DeviceSelector] | IString | R | Name of the device model.This value only changes on execution of “DeviceUpdateList”.  |\n|  DeviceAccessStatus[DeviceSelector] | IEnumeration | R | Returns the device's access status.Possible values are:“ReadWrite”The device is available to be opened with full access. As soon as the device is open the value should change to “OpenReadWrite” or “OpenRead”Corresponds toDEVICE ACCESS STATUS REA  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 182 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

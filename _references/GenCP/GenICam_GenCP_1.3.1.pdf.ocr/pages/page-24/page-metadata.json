@@ -1,0 +1,67 @@
+{
+  "index": 23,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-22.jpeg](img-22.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 185,
+      "topLeftY": 176,
+      "bottomRightX": 532,
+      "bottomRightY": 709,
+      "content": "![img-23.jpeg](img-23.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-23.jpeg"
+    },
+    {
+      "topLeftX": 307,
+      "topLeftY": 740,
+      "bottomRightX": 412,
+      "bottomRightY": 754,
+      "content": "Fig. 5 – Ack Failure",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 785,
+      "bottomRightX": 631,
+      "bottomRightY": 820,
+      "content": "In case of a corrupt acknowledge packet, the sender may issue the command resend immediately without waiting for the timeout.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 24 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

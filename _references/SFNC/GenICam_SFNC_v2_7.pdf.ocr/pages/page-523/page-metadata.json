@@ -1,0 +1,58 @@
+{
+  "index": 522,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  ![img-158.jpeg](img-158.jpeg) GEN<ì>CAM |   | ![img-159.jpeg](img-159.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 141,
+      "bottomRightX": 561,
+      "bottomRightY": 947,
+      "content": "|  Interface | IEnumeration  |\n| --- | --- |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | SingleLinkMultiLinkStaticLAGDynamicLAGPAUSEFrameReceptionPAUSEFrameGenerationIPConfigurationLLAIPConfigurationDHCPIPConfigurationPersistentIPStreamChannelSourceSocketStandardIDModeMessageChannelSourceSocketCommandsConcatenationWriteMemPacketResendEventEventDataPendingAckIEEE1588 (deprecated)PtpActionUnconditionalActionScheduledActionPrimaryApplicationSwitchoverExtendedStatusCodesExtendedStatusCodesVersion2_0DiscoveryAckDelayDiscoveryAckDelayWritableTestDataManifestTableCCPApplicationSocketLinkSpeedHeartbeatDisableSerialNumberUserDefinedNameStreamChannel0BigAndLittleEndianStreamChannel0IPReassemblyStreamChannel0MultiZoneStreamChannel0PacketResendDestination  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 523 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

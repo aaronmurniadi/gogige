@@ -1,0 +1,132 @@
+{
+  "index": 537,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 170,
+      "bottomRightX": 364,
+      "bottomRightY": 187,
+      "content": "Enables the generation of extended status codes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 203,
+      "bottomRightX": 348,
+      "bottomRightY": 223,
+      "content": "#### 27.4.43 GevGVCPPendingAck",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 226,
+      "bottomRightX": 504,
+      "bottomRightY": 457,
+      "content": "|  Name | GevGVCPPendingAck  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | TrueFalse  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 481,
+      "bottomRightX": 339,
+      "bottomRightY": 500,
+      "content": "Enables the generation of PENDING_ACK.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 515,
+      "bottomRightX": 505,
+      "bottomRightY": 537,
+      "content": "#### 27.4.44 GevGVCPHeartbeatDisable (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 538,
+      "bottomRightX": 504,
+      "bottomRightY": 768,
+      "content": "|  Name | GevGVCPHeartbeatDisable  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | TrueFalse  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 793,
+      "bottomRightX": 709,
+      "bottomRightY": 811,
+      "content": "This feature is deprecated (See DeviceLinkHeartbeatMode). It was used to disable the GVCP heartbeat.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 826,
+      "bottomRightX": 500,
+      "bottomRightY": 848,
+      "content": "#### 27.4.45 GevGVCPPendingTimeout (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 849,
+      "bottomRightX": 396,
+      "bottomRightY": 932,
+      "content": "|  Name | GevGVCPPendingTimeout  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 538 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

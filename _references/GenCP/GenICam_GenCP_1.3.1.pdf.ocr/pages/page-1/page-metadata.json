@@ -1,0 +1,83 @@
+{
+  "index": 0,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 216,
+      "topLeftY": 77,
+      "bottomRightX": 355,
+      "bottomRightY": 107,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 288,
+      "topLeftY": 116,
+      "bottomRightX": 405,
+      "bottomRightY": 136,
+      "content": "GenCP Standard",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 502,
+      "topLeftY": 67,
+      "bottomRightX": 653,
+      "bottomRightY": 137,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 391,
+      "bottomRightX": 429,
+      "bottomRightY": 424,
+      "content": "# GenICam",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 303,
+      "topLeftY": 469,
+      "bottomRightX": 415,
+      "bottomRightY": 501,
+      "content": "# GenCP",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 185,
+      "topLeftY": 545,
+      "bottomRightX": 533,
+      "bottomRightY": 579,
+      "content": "# Generic Control Protocol",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 665,
+      "bottomRightX": 412,
+      "bottomRightY": 688,
+      "content": "Version 1.3.1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 930,
+      "bottomRightX": 393,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

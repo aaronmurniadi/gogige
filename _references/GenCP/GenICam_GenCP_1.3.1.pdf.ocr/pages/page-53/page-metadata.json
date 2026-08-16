@@ -1,0 +1,67 @@
+{
+  "index": 52,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  ![img-56.jpeg](img-56.jpeg)CAM |   | ![img-57.jpeg](img-57.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 156,
+      "bottomRightX": 297,
+      "bottomRightY": 176,
+      "content": "#### 5.4.9. Device Capability",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 196,
+      "bottomRightX": 436,
+      "bottomRightY": 214,
+      "content": "Device capability bits describe implementation specific details.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 186,
+      "topLeftY": 225,
+      "bottomRightX": 533,
+      "bottomRightY": 373,
+      "content": "|  Offset | Hex 1C4  |\n| --- | --- |\n|  Length | 8  |\n|  Access Type | R  |\n|  Support | M  |\n|  Data Type | Bitfield  |\n|  Factory Default | Implementation specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 53 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "index": 27,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 44,
+      "bottomRightX": 751,
+      "bottomRightY": 125,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 151,
+      "bottomRightX": 290,
+      "bottomRightY": 171,
+      "content": "#### 3.2.1 CFA Basic Components",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 176,
+      "bottomRightX": 708,
+      "bottomRightY": 213,
+      "content": "Pixel formats based on a color filter array must explicitly state the basic components used to create the pattern.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 246,
+      "bottomRightX": 520,
+      "bottomRightY": 264,
+      "content": "Table 3-2 : CFA Basic Components",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 269,
+      "bottomRightX": 743,
+      "bottomRightY": 498,
+      "content": "|  Basic Component for CFA | Color | Additional Information  |\n| --- | --- | --- |\n|  “R” | Red | Used in primary color sensor.  |\n|  “G” | Green | Used in primary and complementary color sensor.  |\n|  “B” | Blue | Used in primary color sensor.  |\n|  “W” | White | A pixel with no color filter (panchromatic)  |\n|  “C” | Cyan | Used in complementary color sensor.  |\n|  “M” | Magenta | Used in complementary color sensor.  |\n|  “Ye” | Yellow | Used in complementary color sensor.  |\n|  “Ir” | Infrared | Used for infrared (IR) channel  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 538,
+      "bottomRightX": 333,
+      "bottomRightY": 559,
+      "content": "### 3.3 Generic Data Types Formats",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 565,
+      "bottomRightX": 747,
+      "bottomRightY": 621,
+      "content": "This section provides the format naming to be used for generic non-pixel data. Those generic formats should be used only for non-image data block representation. They can be used for example, to specify the format of a metadata block of information, processing results (such as histogram) ...",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 628,
+      "bottomRightX": 741,
+      "bottomRightY": 664,
+      "content": "Note that although strictly speaking those formats are not representing pixels, they are defined in this PFNC naming convention in order to keep all data formats used by GenICam in one document.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 689,
+      "bottomRightX": 547,
+      "bottomRightY": 708,
+      "content": "Table 3-3 : Generic Data Types Designation",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 713,
+      "bottomRightX": 753,
+      "bottomRightY": 763,
+      "content": "|  Component designation | Positioning | Description  |\n| --- | --- | --- |\n|  “Data” | Same as Mono location | Generic data.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 28 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

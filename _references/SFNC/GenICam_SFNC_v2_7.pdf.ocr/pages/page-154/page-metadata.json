@@ -1,0 +1,140 @@
+{
+  "index": 153,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-47.jpeg](img-47.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 120,
+      "bottomRightX": 624,
+      "bottomRightY": 205,
+      "content": "- Off: The device doesn't perform de-interlacing.\n- LineDuplication: The device performs de-interlacing by outputting each line of each field twice.\n- Weave: The device performs de-interlacing by interleaving the lines of all fields.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 242,
+      "bottomRightX": 259,
+      "bottomRightY": 262,
+      "content": "### 4.47 Image Compression",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 265,
+      "bottomRightX": 434,
+      "bottomRightY": 282,
+      "content": "This section describes the feature related to image compression.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 297,
+      "bottomRightX": 342,
+      "bottomRightY": 317,
+      "content": "#### 4.47.1 ImageCompressionMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 318,
+      "bottomRightX": 409,
+      "bottomRightY": 601,
+      "content": "|  Name | ImageCompressionMode  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Visibility | Beginner  |\n|  Unit | -  |\n|  Values | OffJPEGJPEG2000H264...Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 624,
+      "bottomRightX": 518,
+      "bottomRightY": 641,
+      "content": "Enable a specific image compression mode as the base mode for image transfer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 648,
+      "bottomRightX": 169,
+      "bottomRightY": 663,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 673,
+      "bottomRightX": 620,
+      "bottomRightY": 743,
+      "content": "- Off: Default value. Image compression is disabled. Images are transmitted uncompressed.\n• JPEG: JPEG compression is selected.\n• JPEG2000: JPEG 2000 compression is selected.\n• H264: H.264 compression is selected.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 757,
+      "bottomRightX": 389,
+      "bottomRightY": 778,
+      "content": "#### 4.47.2 ImageCompressionRateOption",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 779,
+      "bottomRightX": 409,
+      "bottomRightY": 929,
+      "content": "|  Name | ImageCompressionRateOption  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 154 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

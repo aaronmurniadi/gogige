@@ -1,0 +1,139 @@
+{
+  "index": 277,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 143,
+      "bottomRightX": 280,
+      "bottomRightY": 167,
+      "content": "## 12 Logic Block Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 736,
+      "bottomRightY": 232,
+      "content": "The Logic Block Control chapter describes the model and features related to the control and the generation of signals by Logic Block elements.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 241,
+      "bottomRightX": 749,
+      "bottomRightY": 329,
+      "content": "A Logic Block is a general combinational logic element that preforms a binary function on its inputs and can be used to condition various signal sources (internal or external). It generates an output signal according to the combinational binary equation selected. This Logic Block generates an output signal which can then be used as input source for other SFNC modules (Trigger, Timer, Counter, ...) using the names LogicBlock0, LogicBlock1, ...",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 338,
+      "bottomRightX": 740,
+      "bottomRightY": 374,
+      "content": "A typical usage scenario could be a user that wants to control when a trigger is considered valid using external input Lines and an internal camera signal (See Example 2 below).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 413,
+      "bottomRightX": 320,
+      "bottomRightY": 435,
+      "content": "### 12.1 Logic Block usage model",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 464,
+      "bottomRightX": 127,
+      "bottomRightY": 481,
+      "content": "#### Example 1",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 499,
+      "bottomRightX": 726,
+      "bottomRightY": 536,
+      "content": "Setting of an AND logical block to start the grab if a trigger pulse is received on Line1 (Trigger) and Line 2 (Trigger Enable) is Low:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 550,
+      "bottomRightX": 499,
+      "bottomRightY": 659,
+      "content": "![img-89.jpeg](img-89.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-89.jpeg"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 676,
+      "bottomRightX": 457,
+      "bottomRightY": 796,
+      "content": "/* Initialize the AND Logic Block input sources. */\nLogicBlockSelector = LogicBlock0;\nLogicBlockFunction[LogicBlock0] = AND;\nLogicBlockInputNumber[LogicBlock0] = 2;\nLogicBlockInputSelector[LogicBlock0] = 0;\nLogicBlockInputSource[LogicBlock0][0] = Line1;\nLogicBlockInputSelector[LogicBlock0] = 1;\nLogicBlockInputSource[LogicBlock0][1] = Line2;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 808,
+      "bottomRightX": 652,
+      "bottomRightY": 928,
+      "content": "/* Set the AND Logic Block output as trigger source and do an acquisition. */\nTriggerSelector = FrameStart;\nTriggerSource = LogicBlock0;\nTriggerActivation = RisingEdge;\nTriggerMode = On;\nAquisitionStart();\n...\nAquisitionEnd();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 278 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

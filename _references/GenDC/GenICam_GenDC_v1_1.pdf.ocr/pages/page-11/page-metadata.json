@@ -1,0 +1,93 @@
+{
+  "index": 10,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "GENICAM\nVersion 1.1.0 GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 116,
+      "bottomRightX": 222,
+      "bottomRightY": 133,
+      "content": "corresponding Part's data section.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 157,
+      "bottomRightX": 694,
+      "bottomRightY": 179,
+      "content": "## Data Container Descriptor Hierarchy (Headers and Data chaining)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 206,
+      "bottomRightX": 688,
+      "bottomRightY": 804,
+      "content": "![img-1.jpeg](img-1.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-1.jpeg"
+    },
+    {
+      "topLeftX": 100,
+      "topLeftY": 807,
+      "bottomRightX": 638,
+      "bottomRightY": 837,
+      "content": "Figure 2-2: GenDC Container Descriptor hierarchy in a multi-Components scenario (headers and data chaining)\n(One Container of three Components with different number of data Parts)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 850,
+      "bottomRightX": 184,
+      "bottomRightY": 869,
+      "content": "## 2.2 GenDC Headers",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 887,
+      "bottomRightX": 716,
+      "bottomRightY": 956,
+      "content": "The following subsections describe the Headers in detail. In the Header layout representations, there are fields that are common to all Containers or Components (grey background), fields that are common to all Parts (white background) and Part specific fields (light blue background). For each type of Header, a general layout is presented first giving an overview of the fields' names and placement (64-bit per line) followed by a detailed description of each Header's fields.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 11 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

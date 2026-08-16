@@ -1,0 +1,157 @@
+{
+  "index": 13,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-8.jpeg](img-8.jpeg) CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 227,
+      "bottomRightY": 159,
+      "content": "## 2 Architecture",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 167,
+      "bottomRightX": 636,
+      "bottomRightY": 200,
+      "content": "This section provides a high level view of the different components of the GenICam GenTL standard.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 222,
+      "bottomRightX": 199,
+      "bottomRightY": 239,
+      "content": "### 2.1 Overview",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 248,
+      "bottomRightX": 636,
+      "bottomRightY": 315,
+      "content": "The goal of GenTL is to provide an agnostic transport layer interface to acquire images or other data and to communicate with a device. It is not its purpose to configure the device except for the transport related features – even if it must be indirectly used in order to communicate configuration information to and from the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 329,
+      "bottomRightX": 253,
+      "bottomRightY": 346,
+      "content": "#### 2.1.1 GenICam GenTL",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 351,
+      "bottomRightX": 636,
+      "bottomRightY": 401,
+      "content": "The standard text's primary concern is the definition of the GenTL Interface and its behavior. However, it is also important to understand the role of the GenTL in the whole GenICam system.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 145,
+      "topLeftY": 414,
+      "bottomRightX": 574,
+      "bottomRightY": 624,
+      "content": "![img-9.jpeg](img-9.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-9.jpeg"
+    },
+    {
+      "topLeftX": 205,
+      "topLeftY": 642,
+      "bottomRightX": 512,
+      "bottomRightY": 659,
+      "content": "Figure 2-1: GenTL Consumer and GenTL Producer",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 690,
+      "bottomRightX": 636,
+      "bottomRightY": 724,
+      "content": "When used alone, GenTL is used to identify two different entities: the GenTL Producer and the GenTL Consumer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 731,
+      "bottomRightX": 636,
+      "bottomRightY": 782,
+      "content": "A GenTL Producer is a software driver implementing the GenTL Interface to enable an application or a software library to access and configure hardware in a generic way and to stream image data from a device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 788,
+      "bottomRightX": 636,
+      "bottomRightY": 823,
+      "content": "A GenTL Consumer is any software that can use one or multiple GenTL Producers via the defined GenTL Interface. This can be for example an application or a software library.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 837,
+      "bottomRightX": 259,
+      "bottomRightY": 856,
+      "content": "#### 2.1.2 GenICam GenApi",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 858,
+      "bottomRightX": 636,
+      "bottomRightY": 908,
+      "content": "It is strongly recommended not to use the GenApi module inside a GenTL Producer implementation. If it is used internally, no access to it may be given through the C interface. Some reasons are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 636,
+      "bottomRightY": 945,
+      "content": "Page 14 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "index": 516,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 311,
+      "bottomRightY": 165,
+      "content": "### 27.3.9 PtpParentClockID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 167,
+      "bottomRightX": 365,
+      "bottomRightY": 318,
+      "content": "|  Name | PtpParentClockID  |\n| --- | --- |\n|  Category | PtpControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 334,
+      "bottomRightX": 715,
+      "bottomRightY": 370,
+      "content": "Returns the latched parent clock ID of the PTP device. The parent clock ID is the clock ID of the current master clock.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 379,
+      "bottomRightX": 489,
+      "bottomRightY": 397,
+      "content": "Note: Byte 0 of the IEEE ClockIdentity field is mapped to the MSB.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 436,
+      "bottomRightX": 365,
+      "bottomRightY": 458,
+      "content": "### 27.3.10 PtpGrandmasterClockID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 461,
+      "bottomRightX": 365,
+      "bottomRightY": 611,
+      "content": "|  Name | PtpGrandmasterClockID  |\n| --- | --- |\n|  Category | PtpControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 628,
+      "bottomRightX": 742,
+      "bottomRightY": 664,
+      "content": "Returns the latched grandmaster clock ID of the PTP device. The grandmaster clock ID is the clock ID of the current grandmaster clock.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 672,
+      "bottomRightX": 489,
+      "bottomRightY": 690,
+      "content": "Note: Byte 0 of the IEEE ClockIdentity field is mapped to the MSB.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 730,
+      "bottomRightX": 386,
+      "bottomRightY": 753,
+      "content": "### 27.3.11 PtpMeanPropagationDelay",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 754,
+      "bottomRightX": 365,
+      "bottomRightY": 926,
+      "content": "|  Name | PtpMeanPropagationDelay  |\n| --- | --- |\n|  Category | PtpControl  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | ns  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 517 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

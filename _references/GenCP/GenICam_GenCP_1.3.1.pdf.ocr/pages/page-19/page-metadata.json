@@ -1,0 +1,85 @@
+{
+  "index": 18,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 140,
+      "content": "|  GEN<i>CAM |   | ![img-15.jpeg](img-15.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 156,
+      "bottomRightX": 299,
+      "bottomRightY": 176,
+      "content": "#### 3.1.3. Message Channel",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 196,
+      "bottomRightX": 630,
+      "bottomRightY": 231,
+      "content": "A Message Channel allows the asynchronous transfer of event commands from the device to the host. For each Message Channel a different channel_id from the default channel must be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 189,
+      "topLeftY": 283,
+      "bottomRightX": 530,
+      "bottomRightY": 646,
+      "content": "![img-16.jpeg](img-16.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-16.jpeg"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 673,
+      "bottomRightX": 412,
+      "bottomRightY": 689,
+      "content": "Fig. 3 – Event Cycle",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 717,
+      "bottomRightX": 649,
+      "bottomRightY": 869,
+      "content": "The channel_id to be used by the Message Channel is set by the host in the according register in the device's BRM. Multiple events can be transmitted in one event command. A single Event is identified by an event_id. An Event may be accompanied by additional event data. Subsequently sent event commands are identified by request_ids. One entity, such as the device, sends an event command with a given request_id to the other entity, such as the host, on a channel. The host acknowledges the event packet by sending an EventAck command back to the device. The event packet and the corresponding acknowledge must have the same request_id. After the completion of a cycle, a different request_id for the next cycle must be used. The request_id follows the schema described in section 3.1.1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 19 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

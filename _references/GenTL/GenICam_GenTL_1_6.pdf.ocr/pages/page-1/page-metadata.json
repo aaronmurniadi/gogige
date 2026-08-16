@@ -1,0 +1,66 @@
+{
+  "index": 0,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 640,
+      "bottomRightY": 113,
+      "content": "|  ![img-0.jpeg](img-0.jpeg)GEN<I>CAM |   | ![img-1.jpeg](img-1.jpeg)  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 292,
+      "bottomRightX": 631,
+      "bottomRightY": 333,
+      "content": "### GenICam GenTL Standard",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 289,
+      "topLeftY": 385,
+      "bottomRightX": 430,
+      "bottomRightY": 413,
+      "content": "Version 1.6",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 118,
+      "topLeftY": 557,
+      "bottomRightX": 594,
+      "bottomRightY": 643,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 418,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 1 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

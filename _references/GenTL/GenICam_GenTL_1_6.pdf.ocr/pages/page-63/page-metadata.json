@@ -1,0 +1,94 @@
+{
+  "index": 62,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-93.jpeg](img-93.jpeg) CAM |   | ![img-94.jpeg](img-94.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 641,
+      "bottomRightY": 628,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|   |  | Producer internal object is out of bounds.  |\n|  GC_ERR_PARSING_CHUNK_DATA | -1018 | An error occurred parsing a buffer containing chunk data.  |\n|  GC_ERR_INVALID_VALUE | -1019 | A register write function was trying to write an invalid value.  |\n|  GC_ERR_RESOURCE_EXHAUSTED | -1020 | A requested resource is exhausted. This is a rather general error which might for example refer to a limited number of available handles being available.  |\n|  GC_ERR_OUT_OF_MEMORY | -1021 | The system and/or other hardware in the system (frame grabber) ran out of memory.  |\n|  GC_ERR_BUSY | -1022 | The required operation cannot be executed because the responsible module/entity is busy executing actions that cannot be performed concurrently with the requested operation.  |\n|  GC_ERR_AMBIGUOUS | -1023 | The required operation cannot be executed unambiguously in given context.  |\n|  GC_ERR_CUSTOM_ID | -10000 | Any error smaller or equal than -10000 is implementation specific. If a GenTL Consumer receives such an error number it should react as if it would be a generic runtime error.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 650,
+      "bottomRightX": 634,
+      "bottomRightY": 668,
+      "content": "To get a detailed descriptive text about the error reason call the GCGetLastError function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 676,
+      "bottomRightX": 634,
+      "bottomRightY": 709,
+      "content": "Some error codes might be returned by any function and are therefore not explicitly listed in the function's error code table. These error codes are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 104,
+      "topLeftY": 716,
+      "bottomRightX": 363,
+      "bottomRightY": 805,
+      "content": "- GC_ERR_ERROR\n- GC_ERR_IO\n- GC_ERR_RESOURCE_EXHAUSTED\n- GC_ERR_OUT_OF_MEMORY",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 819,
+      "bottomRightX": 337,
+      "bottomRightY": 837,
+      "content": "#### 6.1.6 Software Interface Versions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 841,
+      "bottomRightX": 636,
+      "bottomRightY": 908,
+      "content": "The software interface evolves over the individual versions of the GenTL specification. In particular, between two versions of the interface, new functions (and corresponding data structures) and enumerations might be introduced. In rare cases, existing functions or commands might be conversely deprecated. Interface versions are indicated by a major",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 63 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

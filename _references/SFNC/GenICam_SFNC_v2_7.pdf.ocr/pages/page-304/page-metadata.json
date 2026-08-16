@@ -1,0 +1,131 @@
+{
+  "index": 303,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 750,
+      "bottomRightY": 172,
+      "content": "Returns the unique Identifier of the FrameTrigger type of Event. It can be used to register a callback function to be notified of the event occurrence. Its value uniquely identifies the type event received.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 186,
+      "bottomRightX": 410,
+      "bottomRightY": 208,
+      "content": "### 15.4.3 EventFrameTriggerTimestamp",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 47,
+      "topLeftY": 210,
+      "bottomRightX": 412,
+      "bottomRightY": 447,
+      "content": "|  Name | EventFrameTriggerTimestamp  |\n| --- | --- |\n|  Category | EventFrameTriggerData  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 471,
+      "bottomRightX": 704,
+      "bottomRightY": 507,
+      "content": "Returns the Timestamp of the FrameTrigger Event. It can be used to determine precisely when the event occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 522,
+      "bottomRightX": 386,
+      "bottomRightY": 545,
+      "content": "### 15.4.4 EventFrameTriggerFrameID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 47,
+      "topLeftY": 546,
+      "bottomRightX": 385,
+      "bottomRightY": 760,
+      "content": "|  Name | EventFrameTriggerFrameID  |\n| --- | --- |\n|  Category | EventFrameTriggerData  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 783,
+      "bottomRightX": 636,
+      "bottomRightY": 804,
+      "content": "Returns the unique Identifier of the Frame (or image) that generated the FrameTrigger Event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 835,
+      "bottomRightX": 397,
+      "bottomRightY": 858,
+      "content": "### 15.5 Exposure End Event (Example #2)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 878,
+      "bottomRightX": 525,
+      "bottomRightY": 897,
+      "content": "Below are the recommended features for the Exposure End Event handling.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 304 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 615,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

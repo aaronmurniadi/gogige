@@ -1,0 +1,138 @@
+{
+  "index": 9,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<ICAM |   | ![img-14.jpeg](img-14.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 635,
+      "bottomRightY": 184,
+      "content": "“Example01” from vendor “Test” in this case). The other attributes are explained later in section 2.7.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 192,
+      "bottomRightX": 635,
+      "bottomRightY": 243,
+      "content": "Inside the <registerdescription> element, the nodes are lying in a flat order. Each node has a unique Name attribute and can be linked by sub-elements named pRole containing the Name of some other node.</registerdescription>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 249,
+      "bottomRightX": 635,
+      "bottomRightY": 301,
+      "content": "Each node has an optional <tooltip> element that contains a short description. The Gain node has additional elements that depend on its actual IntReg type and tells us, for example, the Address of the register or its Length. The default value is an empty string.</tooltip>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 306,
+      "bottomRightX": 635,
+      "bottomRightY": 391,
+      "content": "Typically, an implementation will create one software object per node and will link these objects together according to the logical links described in the XML file. \\( ^{2} \\)  The nodes can either be retrieved by their (unique) name or can be found by traversing the node graph starting with the root node. Once the user has a pointer to the node, he can access that feature through the node object's programming interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 396,
+      "bottomRightX": 635,
+      "bottomRightY": 464,
+      "content": "The syntax of the XML file is defined in the XML schema given by the schemaLocation-attribute. The schema is part of the standard. This document explains the ideas and overall structure of GenICam. The schema and its embedded reference documentation describe the formal details. In case of doubt, the schema's content overrides the content of this text.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 470,
+      "bottomRightX": 635,
+      "bottomRightY": 505,
+      "content": "The file location http://www.genicam.org/GenApi/GenApiSchema_Version_1_1.xsd is mandatory for the camera configuration file but can be overridden at runtime.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 519,
+      "bottomRightX": 405,
+      "bottomRightY": 537,
+      "content": "### 2.3 Nodes, Interfaces, and Abstract Features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 546,
+      "bottomRightX": 635,
+      "bottomRightY": 613,
+      "content": "Each node in the camera description file describes a single item. Depending on the item's nature, the node is of a specific node type and has a specific interface. The following interfaces are currently available \\( ^{3} \\) (each one is given with the typical widget used to map it on a graphical user interface):",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 621,
+      "bottomRightX": 521,
+      "bottomRightY": 831,
+      "content": "- IInteger – maps to a slider with value, min, max, and increment\n- IFloat – maps to a slider with value, min, and max plus a physical unit.\n- IString – maps to an edit box showing a string\n- IEnumeration – maps to a drop down box\n- ICommand – maps to a command button\n- IBoolean – maps to a check box\n- IRegister – maps to an edit box showing a hex string\n- ICategory – maps to an entry in a tree structuring the camera's features\n- IPort – maps to the camera port and is typically not shown graphically",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 871,
+      "bottomRightX": 579,
+      "bottomRightY": 906,
+      "content": "\\( ^{2} \\)  The actual implementation may split some of the XML nodes into a set of multiple implementation nodes.",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 906,
+      "bottomRightX": 630,
+      "bottomRightY": 940,
+      "content": "\\( ^{3} \\)  This list contains only interfaces representing a specific type. The reference implementation contains more interfaces.",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 10 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

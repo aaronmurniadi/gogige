@@ -1,0 +1,120 @@
+{
+  "index": 41,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 73,
+      "bottomRightX": 120,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 72,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 577,
+      "bottomRightY": 77,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 116,
+      "bottomRightX": 279,
+      "bottomRightY": 136,
+      "content": "### 1.4 Standard Definitions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 167,
+      "bottomRightX": 695,
+      "bottomRightY": 202,
+      "content": "This section defines the terms used in this document. An illustration of their inter-relation is provided in the",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 210,
+      "bottomRightX": 457,
+      "bottomRightY": 228,
+      "content": "Device Communication Model section below (See Figure 1-1).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 251,
+      "bottomRightX": 661,
+      "bottomRightY": 965,
+      "content": "|  Entity | An Entity is an end point located at either side (Host or Device) of a Communication.  |\n| --- | --- |\n|  Host System | The Host System is the Entity which takes control over a Device. A Host System can be the sink or the source for the data being streamed. Under GenICam the Host System must read and use the GenICam compliant XML file of the Device to control it.  |\n|  Device | The Device is an Entity which is controlled by a Host System. A Device can be the source or the sink for streaming data. It can be remote (outside the Host System) or local (in the Host System). Under GenICam the Device must provide a GenICam compliant XML file and a register-based control access.  |\n|  Link | A Link is the virtual binding between a Host System and a Device to establish a Communication. A Link is logical and may use one or more physical Connections.  |\n|  Connection | A Connection is the physical binding between a Host System and a Device.  |\n|  Interface | A virtual end point of the Link between a Device and a Host System.  |\n|  Adapter | A physical entity located in the Host System that has one or many Interfaces.  |\n|  Communication | A Communication is an exchange of information between two Entities using a Link.  |\n|  Channel | A logical point-to-point Communication over a Link. There may be multiple Channels on a single Link.  |\n|  Transport Layer | The layer of Communication responsible to transport information between Entities.  |\n|  Transmitter | An Entity which acts as the source for streaming data. This may apply to a Host System or a Device.  |\n|  Receiver | An Entity which acts as the sink for streaming data. This may apply to a Host System or a Device.  |\n|  Transceiver | An Entity which can receive and transmit streaming data. This may apply to a Host System or a Device.  |\n|  Peripheral | An Entity which neither acts as a source nor as a sink for streaming data but can be controlled.  |\n|  Stream | A flow of data that comes from a source and goes to a sink. A data Stream can be composed of images or chunk of data.  |\n|  Stream Channel | A Communication Channel used to transmit a data Stream from a Transmitter (or Transceiver) to a Receiver (or Transceiver).  |\n|  Event Channel | A Communication Channel used by the Device to notify the Host System asynchronously of Events. The Host System could also use a Event Channel to communicate events to the Device.  |\n|  Control Channel | A Communication Channel used to configure and control a Device. For a Control Channel the Device acts as a server that provides the initial point of Communication for the Host System that acts as a Client. The Communication on a Control Channel  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 391,
+      "bottomRightY": 1008,
+      "content": "Page 42 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 624,
+      "bottomRightY": 1008,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

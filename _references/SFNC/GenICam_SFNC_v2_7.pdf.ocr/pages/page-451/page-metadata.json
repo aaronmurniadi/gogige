@@ -1,0 +1,76 @@
+{
+  "index": 450,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 143,
+      "bottomRightX": 718,
+      "bottomRightY": 182,
+      "content": "Activates the inclusion of the GenICam XML necessary to the chunk parser to decode all the Chunk data included in the transmitted payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 221,
+      "bottomRightX": 240,
+      "bottomRightY": 241,
+      "content": "24.4 ChunkSelector",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 243,
+      "bottomRightX": 495,
+      "bottomRightY": 947,
+      "content": "|  Name | ChunkSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ImageOffsetXOffsetYWidthHeightPixelFormatPixelDynamicRangeMinPixelDynamicRangeMaxBinningHorizontalBinningVerticalDecimationHorizontalDecimationVerticalReverseXReverseYTimestampTimestampLatchValueLineStatusAllCounterValueTimerValueEncoderValueEncoderStatusValueExposureTimeGainBlackLevelLinePitchFrameIDSourceIDSourceIDValueRegionID  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 970,
+      "content": "Page 451 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

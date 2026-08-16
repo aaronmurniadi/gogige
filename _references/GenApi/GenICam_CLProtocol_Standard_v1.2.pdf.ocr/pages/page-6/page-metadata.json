@@ -1,0 +1,264 @@
+{
+  "index": 5,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 111,
+      "content": "|  GEN<i>CAM |   | ![img-7.jpeg](img-7.jpeg) emva  |\n| --- | --- | --- |\n|  V1.2 | CLProtocol Standard Module  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 123,
+      "bottomRightX": 635,
+      "bottomRightY": 152,
+      "content": "For example in order to address all cameras of a certain family the corresponding DeviceID template would looks like this:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 161,
+      "bottomRightX": 463,
+      "bottomRightY": 174,
+      "content": "\"c:\\program files\\MyVendorDir#MyDriver.dll#MyVendor#MyFamily1\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 180,
+      "bottomRightX": 635,
+      "bottomRightY": 210,
+      "content": "A DeviceID template is said to match a DeviceID if the left part of the DeviceID string is identical to the DeviceID template.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 216,
+      "bottomRightX": 461,
+      "bottomRightY": 230,
+      "content": "For example the template given above would match the following DeviceIDs",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 239,
+      "bottomRightX": 631,
+      "bottomRightY": 264,
+      "content": "\"c:\\program files\\MyVendorDir#MyDriver.dll#MyVendor#MyFamily1#MyModelA#Version_2a#SerNo234\"\n\"c:\\program files\\MyVendorDir#MyDriver.dll#MyVendor#MyFamily1#MyModelB#Version_2b#SerNo432\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 270,
+      "bottomRightX": 161,
+      "bottomRightY": 283,
+      "content": "but not this one",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 293,
+      "bottomRightX": 631,
+      "bottomRightY": 307,
+      "content": "\"c:\\program files\\MyVendorDir#MyDriver.dll#MyVendor#MyFamily2#MyModelC#Version_2a#SerNo345\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 313,
+      "bottomRightX": 236,
+      "bottomRightY": 327,
+      "content": "because the family is different.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 341,
+      "bottomRightX": 231,
+      "bottomRightY": 357,
+      "content": "#### Short DeviceID (Templates)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 363,
+      "bottomRightX": 635,
+      "bottomRightY": 391,
+      "content": "A short DeviceID or short DeviceID template is just an original string with the first two items – the DLL directory and file name including the trailing hash sign – missing. For example if a DeviceID template reads",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 400,
+      "bottomRightX": 521,
+      "bottomRightY": 414,
+      "content": "\"c:\\program files\\MyVendorDir\\Win32_i86#MyDriver.dll#MyVendor#MyFamily1\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 419,
+      "bottomRightX": 262,
+      "bottomRightY": 433,
+      "content": "the corresponding short DeviceID is",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 443,
+      "bottomRightX": 219,
+      "bottomRightY": 457,
+      "content": "\"MyVendor#MyFamily1\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 470,
+      "bottomRightX": 175,
+      "bottomRightY": 484,
+      "content": "#### Probing a Device",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 491,
+      "bottomRightX": 635,
+      "bottomRightY": 559,
+      "content": "Ideally a customer being about to setup a frame grabber port is just presented a list of all CLProtocol driver libraries installed in the system, each being represented by the corresponding manufacturer name. However it may not be possible for each driver library to fully automatically identify the camera attached to the selected port. For those cases the CLProtocol driver library provides a list of DeviceID templates for the user to select one.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 568,
+      "bottomRightX": 635,
+      "bottomRightY": 624,
+      "content": "For example the CLProtocol driver library of a VendorA might be able to deal with two camera families Family1 and Family2 but for example might no be able to automatically distinguish between cameras of the two families, because they implement very different protocols. In this case VendorA's CLProtocol driver library would supply the following two DeviceID templates:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 632,
+      "bottomRightX": 445,
+      "bottomRightY": 656,
+      "content": "\"c:\\program files\\MyVendorDir#MyDriver.dll#VendorA#Family1\"\n\"c:\\program files\\MyVendorDir#MyDriver.dll#VendorA#Family2\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 662,
+      "bottomRightX": 635,
+      "bottomRightY": 692,
+      "content": "A VendorB whose CLProtocol driver library can do a fully automated detection of all cameras would only supply a single DeviceID template like this:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 700,
+      "bottomRightX": 399,
+      "bottomRightY": 713,
+      "content": "\"c:\\program files\\MyVendorDir#MyDriver.dll#VendorB\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 719,
+      "bottomRightX": 635,
+      "bottomRightY": 749,
+      "content": "A VendorC however might not bother with automatic identification altogether and just enumerates all camera models the driver library can deal with:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 757,
+      "bottomRightX": 486,
+      "bottomRightY": 792,
+      "content": "\"c:\\program files\\MyVendorDir#MyDriver.dll#VendorC#Family1#ModelX\"\n\"c:\\program files\\MyVendorDir#MyDriver.dll#VendorC#Family1#ModelY\"\n\"c:\\program files\\MyVendorDir#MyDriver.dll#VendorC#Family2#ModelZ\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 799,
+      "bottomRightX": 635,
+      "bottomRightY": 828,
+      "content": "In a system were CLProtocol driver libraries from vendors A, B, and C are installed at the same time the user setting up a frame grabber port would get presented the following list of short DeviceID templates to select one:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 837,
+      "bottomRightX": 243,
+      "bottomRightY": 904,
+      "content": "\"VendorA#Family1\"\n\"VendorA#Family2\"\n\"VendorB\"\n\"VendorC#Family1#ModelX\"\n\"VendorC#Family1#ModelY\"\n\"VendorC#Family2#ModelZ\"",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 911,
+      "bottomRightX": 635,
+      "bottomRightY": 941,
+      "content": "After the user has selected a DeviceID template the CLProtocol driver library should be able to probe and identify the attached camera using the DeviceID template as a hint. If the identification is successful the",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 960,
+      "bottomRightX": 245,
+      "bottomRightY": 975,
+      "content": "GenICam_CLProtocol_Standard",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 321,
+      "topLeftY": 960,
+      "bottomRightX": 421,
+      "bottomRightY": 974,
+      "content": "September 18, 2018",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 571,
+      "topLeftY": 960,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 6 of 13",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

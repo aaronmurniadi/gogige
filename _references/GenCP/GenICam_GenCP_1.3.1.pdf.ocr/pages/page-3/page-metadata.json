@@ -1,0 +1,74 @@
+{
+  "index": 2,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 218,
+      "topLeftY": 77,
+      "bottomRightX": 355,
+      "bottomRightY": 105,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 502,
+      "topLeftY": 67,
+      "bottomRightX": 649,
+      "bottomRightY": 136,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 118,
+      "bottomRightX": 143,
+      "bottomRightY": 133,
+      "content": "Version 1.3.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 289,
+      "topLeftY": 117,
+      "bottomRightX": 404,
+      "bottomRightY": 135,
+      "content": "GenCP Standard",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 153,
+      "bottomRightX": 654,
+      "bottomRightY": 875,
+      "content": "4.2. Prefix ... 29\n4.3. Common Command Data ... 29\n4.3.1. Command Packet Layout ... 30\n4.3.2. Acknowledge Packet Layout ... 31\n4.3.3. Command IDs ... 35\n4.4. Command Specific Data ... 37\n4.4.1. ReadMem Command ... 37\n4.4.2. ReadMem Acknowledge ... 37\n4.4.3. WriteMem Command ... 38\n4.4.4. WriteMem Acknowledge ... 38\n4.4.5. Pending Acknowledge ... 39\n4.4.6. ReadMemStacked Command ... 39\n4.4.7. ReadMemStacked Acknowledge ... 40\n4.4.8. WriteMemStacked Command ... 41\n4.4.9. WriteMemStacked Acknowledge ... 42\n4.4.10. Event Command ... 44\n4.4.11. Event Acknowledge ... 45\n4.5. Postfix ... 45\n5. Bootstrap Register Map ... 46\n5.1. Technology Agnostic Bootstrap Register Map ... 46\n5.2. String Registers ... 46\n5.3. Conditional Mandatory Registers ... 46\n5.4. Register Map ... 47\n5.4.1. GenCP Version ... 49\n5.4.2. Manufacturer Name ... 49\n5.4.3. Model Name ... 50\n5.4.4. Family Name ... 50\n5.4.5. Device Version (Manufacturer specific) ... 51\n5.4.6. Manufacturer Info ... 51\n5.4.7. Serial Number ... 52\n5.4.8. User Defined Name ... 52\n5.4.9. Device Capability ... 53",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 930,
+      "bottomRightX": 393,
+      "bottomRightY": 949,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 539,
+      "topLeftY": 930,
+      "bottomRightX": 618,
+      "bottomRightY": 949,
+      "content": "Page 3 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

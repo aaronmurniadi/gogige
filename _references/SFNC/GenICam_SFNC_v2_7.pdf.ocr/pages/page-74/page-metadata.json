@@ -1,0 +1,94 @@
+{
+  "index": 73,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 77,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 77,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 508,
+      "topLeftY": 36,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "![img-10.jpeg](img-10.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-10.jpeg"
+    },
+    {
+      "topLeftX": 361,
+      "topLeftY": 110,
+      "bottomRightX": 615,
+      "bottomRightY": 126,
+      "content": "Table 2-22: Chunk Data Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 131,
+      "bottomRightX": 923,
+      "bottomRightY": 631,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  ChunkDataControl | R | ICategory | R | - | E | Category that contains the Chunk Data control features.  |\n|  ChunkModeActive | R | IBoolean | R/W | - | E | Activates the inclusion of Chunk data in the transmitted payload.  |\n|  ChunkXMLEnable | R | IBoolean | R/W | - | E | Activates the inclusion of the GenICam XML necessary to the chunk parser to decode all the Chunk data included in the transmitted payload.  |\n|  ChunkSelector | R | IEnumeration | R/W | - | E | Selects which Chunk to enable or control.  |\n|  ChunkEnable[ChunkSelector] | R | IBoolean | R/W | - | E | Enables the inclusion of the selected Chunk data in the payload of the image.  |\n|  ChunkRegionSelector | O | IEnumeration | R/W | - | E | Selects which Region to retrieve data from.  |\n|  ChunkRegionID | O | IEnumeration | R | - | E | Returns the Identifier of Region that the image comes from.  |\n|  ChunkRegionIDValue[ChunkRegionSelector] | R | IInteger | R | - | E | Returns the unique integer Identifier value of the Region that the image comes from.  |\n|  ChunkComponentSelector | O | IEnumeration | R/W | - | E | Selects the Component from which to retrieve data from.  |\n|  ChunkComponentID | O | IEnumeration | R | - | E | Returns the Identifier of the selected Component.  |\n|  ChunkComponentIDValue[ChunkComponentSelector] | O | IInteger | R | - | E | Returns a unique Identifier value that corresponds to the selected chunk Component.  |\n|  ChunkGroupSelector | O | IEnumeration | R/W | - | E | Selects the component Group from which to retrieve data from.  |\n|  ChunkGroupID[ChunkGroupSelector] | O | IEnumeration | R | - | E | Returns a unique Identifier corresponding to the selected Group of components.  |\n|  ChunkGroupIDValue[ChunkGroupSelector] | O | IInteger | R | - | E | Returns a unique Identifier value that corresponds to the Group of Components of the selected chunk Component.  |\n|  ChunkImageComponent | O | IEnumeration | R | - | I | This feature is deprecated (See ChunkComponentID).  |\n|  ChunkPartSelector | O | IInteger | R/W | - | I | This feature is deprecated (See ChunkComponentSelector).  |\n|  ChunkImage | R | IRegister | R | - | G | Returns the entire image data included in the payload.  |\n|  ChunkOffsetX | R | IInteger | R | - | E | Returns the OffsetX of the image included in the payload.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 74 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

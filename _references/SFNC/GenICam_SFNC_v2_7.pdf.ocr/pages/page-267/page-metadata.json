@@ -1,0 +1,156 @@
+{
+  "index": 266,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 135,
+      "bottomRightX": 740,
+      "bottomRightY": 170,
+      "content": "the motion will increment or decrement the position counter. The user can select Up or Down counting for the Position and Direction modes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 189,
+      "bottomRightX": 162,
+      "bottomRightY": 207,
+      "content": "### Encoder Status:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 224,
+      "bottomRightX": 743,
+      "bottomRightY": 278,
+      "content": "The Encoder Status reflects if the encoder is active or not, and can be used for instance to create an event if the encoder stops receiving input pulses for a predefined timeout time, or as \"wakeup\" when it restarts its motion after a timeout.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 296,
+      "bottomRightX": 265,
+      "bottomRightY": 313,
+      "content": "### Encoder real world translation:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 332,
+      "bottomRightX": 752,
+      "bottomRightY": 368,
+      "content": "The encoder information can convey real world distance and displacement if the step size of the encoder is used. For 3D cameras the Scan3dCoordinateScale can be used for this purpose.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 385,
+      "bottomRightX": 261,
+      "bottomRightY": 402,
+      "content": "### Encoder counter wrap around:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 420,
+      "bottomRightX": 755,
+      "bottomRightY": 456,
+      "content": "If the position counter is running continuously it will wrap around between its maximum and minimum values if moving in positive and negative directions.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 473,
+      "bottomRightX": 724,
+      "bottomRightY": 509,
+      "content": "The position for wrap-around should be readable for the application through the Min and Max values of the EncoderValue feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 535,
+      "bottomRightX": 757,
+      "bottomRightY": 641,
+      "content": "This means that the application using the EncoderValue of a scan to track large displacements needs to use the wrap around limits and use corrective calculations when calculating the true displacement. For instance, when a sudden jump from ~encoder max to ~encoder min is observed in the encoder value the receiver can easily correct the true displacement by adding a full position counter (encodermax-encodermin+1) to the result. As long as the range of the position counter is much larger than the delta between individual encoder values for scans this method works well.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 650,
+      "bottomRightX": 236,
+      "bottomRightY": 669,
+      "content": "### Example of Encoder setup:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 96,
+      "topLeftY": 674,
+      "bottomRightX": 419,
+      "bottomRightY": 778,
+      "content": "// Encoder Setup\nEncoderSelector = Encoder0;\nEncoderSourceA[Encoder0] = Line0;\nEncoderSourceB[Encoder0] = Line1;\nEncoderMode[Encoder0] = FourPhase;\nEncoderDivider[Encoder0] = 10;\nEncoderOutputMode[Encoder0] = PositionUp;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 793,
+      "bottomRightX": 712,
+      "bottomRightY": 811,
+      "content": "To set the destination output Line of the Encoder module, see Encoder entries of the LineSource feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 267 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

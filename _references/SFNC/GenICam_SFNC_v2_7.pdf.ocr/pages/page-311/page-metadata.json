@@ -1,0 +1,150 @@
+{
+  "index": 310,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 44,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 136,
+      "bottomRightX": 306,
+      "bottomRightY": 207,
+      "content": "- UserSet0: Selects the user set 0.\n- UserSet1: Selects the user set 1.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 215,
+      "bottomRightX": 740,
+      "bottomRightY": 268,
+      "content": "When Default User Set is selected and loaded using UserSetLoad, the device must be in default factory settings state and must make sure the continuous acquisition use case works directly. Default User Set is read-only and cannot be modified.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 284,
+      "bottomRightX": 261,
+      "bottomRightY": 305,
+      "content": "### 16.3 UserSetDescription",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 307,
+      "bottomRightX": 378,
+      "bottomRightY": 520,
+      "content": "|  Name | UserSetDescription[UserSetSelector]  |\n| --- | --- |\n|  Category | UserSetControl  |\n|  Level | Optional  |\n|  Interface | IString  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 545,
+      "bottomRightX": 333,
+      "bottomRightY": 563,
+      "content": "Description of the selected User Set content.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 570,
+      "bottomRightX": 564,
+      "bottomRightY": 590,
+      "content": "The recommended factory default value for an unused UserSet is an empty string.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 604,
+      "bottomRightX": 205,
+      "bottomRightY": 624,
+      "content": "### 16.4 UserSetLoad",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 626,
+      "bottomRightX": 386,
+      "bottomRightY": 840,
+      "content": "|  Name | UserSetLoad[UserSetSelector]  |\n| --- | --- |\n|  Category | UserSetControl  |\n|  Level | Recommended  |\n|  Interface | ICommand  |\n|  Access | (Read)/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 864,
+      "bottomRightX": 572,
+      "bottomRightY": 884,
+      "content": "Loads the User Set specified by UserSetSelector to the device and makes it active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 898,
+      "bottomRightX": 203,
+      "bottomRightY": 918,
+      "content": "### 16.5 UserSetSave",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 921,
+      "bottomRightX": 386,
+      "bottomRightY": 950,
+      "content": "|  Name | UserSetSave[UserSetSelector]  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 311 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 615,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

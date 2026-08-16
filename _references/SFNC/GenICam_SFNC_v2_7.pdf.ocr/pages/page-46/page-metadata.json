@@ -1,0 +1,112 @@
+{
+  "index": 45,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 49,
+      "topLeftY": 24,
+      "bottomRightX": 703,
+      "bottomRightY": 100,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 125,
+      "bottomRightX": 270,
+      "bottomRightY": 147,
+      "content": "## 2 Features Summary",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 150,
+      "bottomRightX": 870,
+      "bottomRightY": 184,
+      "content": "This chapter provides a comprehensive summary of the standard features covered by this document. The following chapters provide more detailed explanation of each feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 190,
+      "bottomRightX": 507,
+      "bottomRightY": 208,
+      "content": "In case of discrepancy, the sections describing the features in detail prevail.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 238,
+      "bottomRightX": 228,
+      "bottomRightY": 256,
+      "content": "### 2.1 Device Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 261,
+      "bottomRightX": 768,
+      "bottomRightY": 278,
+      "content": "Contains the features related to the control and information of the device (See the Device Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 377,
+      "topLeftY": 285,
+      "bottomRightX": 596,
+      "bottomRightY": 302,
+      "content": "Table 2-1: Device Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 307,
+      "bottomRightX": 929,
+      "bottomRightY": 651,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  DeviceControl | R | ICategory | R | - | B | Category for device information and control.  |\n|  DeviceType | O | IEnumeration | R | - | G | Returns the device type.  |\n|  DeviceScanType | R | IEnumeration | R/(W) | - | E | Scan type of the sensor of the device.  |\n|  DeviceVendorName | R | ISString | R | - | B | Name of the manufacturer of the device.  |\n|  DeviceModelName | R | ISString | R | - | B | Model of the device.  |\n|  DeviceFamilyName | O | ISString | R | - | B | Identifier of the product family of the device.  |\n|  DeviceManufacturerInfo | R | ISString | R | - | B | Manufacturer information about the device.  |\n|  DeviceVersion | R | ISString | R | - | B | Version of the device.  |\n|  DeviceFirmwareVersion | R | ISString | R | - | B | Version of the firmware in the device.  |\n|  DeviceSerialNumber | R | ISString | R | - | E | Device's serial number.  |\n|  DeviceID | R | ISString | R | - | I | This feature is deprecated (See DeviceSerialNumber).  |\n|  DeviceUserID | O | ISString | R/W | - | B | User-programmable device identifier.  |\n|  DeviceSFNCVersionMajor | R | IInteger | R | - | B | Major version of the Standard Features Naming Convention that was used to create the device's GenICam XML.  |\n|  DeviceSFNCVersionMinor | R | IInteger | R | - | B | Minor version of the Standard Features Naming Convention that was  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 652,
+      "bottomRightX": 121,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 652,
+      "bottomRightX": 374,
+      "bottomRightY": 669,
+      "content": "Page 46 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 653,
+      "bottomRightX": 591,
+      "bottomRightY": 669,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

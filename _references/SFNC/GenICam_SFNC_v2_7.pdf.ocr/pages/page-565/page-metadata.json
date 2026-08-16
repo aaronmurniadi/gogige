@@ -1,0 +1,150 @@
+{
+  "index": 564,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 671,
+      "bottomRightY": 310,
+      "content": "|  Level | Optional  |\n| --- | --- |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 326,
+      "bottomRightX": 572,
+      "bottomRightY": 346,
+      "content": "This feature provides the number of horizontal stripes that the device implements.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 352,
+      "bottomRightX": 423,
+      "bottomRightY": 371,
+      "content": "A value of zero means that horizontal striping is not used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 377,
+      "bottomRightX": 692,
+      "bottomRightY": 416,
+      "content": "A value of one means that the horizontal stripe is the full image size, which is a valid value for frame interleaving or image duplication for redundant systems.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 453,
+      "bottomRightX": 510,
+      "bottomRightY": 474,
+      "content": "#### 27.7.10 CxpLinkSharingVerticalStripeCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 476,
+      "bottomRightX": 655,
+      "bottomRightY": 699,
+      "content": "|  Name | CxpLinkSharingVerticalStripeCount  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 715,
+      "bottomRightX": 557,
+      "bottomRightY": 734,
+      "content": "This feature provides the number of vertical stripes that the device implements.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 741,
+      "bottomRightX": 407,
+      "bottomRightY": 760,
+      "content": "A value of zero means that vertical striping is not used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 766,
+      "bottomRightX": 676,
+      "bottomRightY": 804,
+      "content": "A value of one means that the vertical stripe is the full image size, which is a valid value for frame interleaving or image duplication for redundant systems.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 841,
+      "bottomRightX": 497,
+      "bottomRightY": 862,
+      "content": "#### 27.7.11 CxpLinkSharingHorizontalOverlap",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 863,
+      "bottomRightX": 655,
+      "bottomRightY": 949,
+      "content": "|  Name | CxpLinkSharingHorizontalOverlap  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 565 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

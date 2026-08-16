@@ -1,0 +1,131 @@
+{
+  "index": 123,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 696,
+      "bottomRightY": 196,
+      "content": "This information refers for example to the information provided in the GigE Vision image stream data leader. For other technologies this is to be implemented accordingly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 202,
+      "bottomRightX": 673,
+      "bottomRightY": 221,
+      "content": "Corresponds to the BUFFER_INFO_XOFFSET command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 236,
+      "bottomRightX": 278,
+      "bottomRightY": 252,
+      "content": "### 3.5.2.19 BufferYOffset",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 256,
+      "bottomRightX": 433,
+      "bottomRightY": 469,
+      "content": "|  Name | BufferYOffset[BufferPartSelector]  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 494,
+      "bottomRightX": 663,
+      "bottomRightY": 528,
+      "content": "YOffset of the data in the buffer in number of lines from the image origin to handle areas of interest.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 537,
+      "bottomRightX": 696,
+      "bottomRightY": 573,
+      "content": "This information refers for example to the information provided in the GigE Vision image stream data leader. For other technologies, this is to be implemented accordingly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 582,
+      "bottomRightX": 673,
+      "bottomRightY": 601,
+      "content": "Corresponds to the BUFFER_INFO_YOFFSET command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 614,
+      "bottomRightX": 293,
+      "bottomRightY": 633,
+      "content": "### 3.5.2.20 BufferXPadding",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 635,
+      "bottomRightX": 446,
+      "bottomRightY": 849,
+      "content": "|  Name | BufferXPadding[BufferPartSelector]  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | Byte  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 872,
+      "bottomRightX": 427,
+      "bottomRightY": 892,
+      "content": "XPadding of the data in the buffer in number of bytes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 124 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

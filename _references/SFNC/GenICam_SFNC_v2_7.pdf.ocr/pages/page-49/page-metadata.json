@@ -1,0 +1,84 @@
+{
+  "index": 48,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 77,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 77,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 510,
+      "topLeftY": 36,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 921,
+      "bottomRightY": 642,
+      "content": "|  DeviceMessageChannelCount | O | IInteger | R | - | I | This feature is deprecated (See DeviceEventChannelCount).  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  DeviceCharacterSet | O | IEnumeration | R | - | G | Character set used by the strings of the device.  |\n|  DeviceReset | R | ICommand | W | - | G | Resets the device to its power up state.  |\n|  DeviceIndicatorMode | O | IEnumeration | R/W | - | E | Controls the behavior of the indicators (such as LEDs) showing the status of the Device.  |\n|  DeviceFeaturePersistenceStart | O | ICommand | (R)/W | - | G | Indicate to the device and GenICam XML to get ready for persisting of all streamable features.  |\n|  DeviceFeaturePersistenceEnd | O | ICommand | (R)/W | - | G | Indicate to the device the end of feature persistence.  |\n|  DeviceRegistersStreamingStart | R | ICommand | (R)/W | - | G | Prepare the device for registers streaming without checking for consistency.  |\n|  DeviceRegistersStreamingEnd | R | ICommand | (R)/W | - | G | Announce the end of registers streaming.  |\n|  DeviceRegistersCheck | R | ICommand | (R)/W | - | E | Perform the validation of the current register set for consistency.  |\n|  DeviceRegistersValid | R | IBoolean | R | - | E | Returns if the current register set is valid and consistent.  |\n|  DeviceRegistersEndianness | O | IEnumeration | R/(W) | - | G | Endianness of the registers of the device.  |\n|  DeviceTemperatureSelector | O | IEnumeration | R/W | - | E | Selects the location within the device, where the temperature will be measured.  |\n|  DeviceTemperature [DeviceTemperatureSelector] | O | IFloat | R | C | E | Device temperature in degrees Celsius (C).  |\n|  DeviceClockSelector | O | IEnumeration | R/(W) | - | E | Selects the clock frequency to access from the device.  |\n|  DeviceClockFrequency [DeviceClockSelector] | O | IFloat | R/(W) | Hz | E | Returns the frequency of the selected Clock.  |\n|  DeviceSerialPortSelector | R | IEnumeration | R/(W) | - | E | Selects which serial port of the device to control.  |\n|  DeviceSerialPortBaudRate [DeviceSerialPortSelector] | R | IEnumeration | R/(W) | - | E | This feature controls the baud rate used by the selected serial port.  |\n|  Timestamp | R | IInteger | R | ns | E | Reports the current value of the device timestamp counter.  |\n|  TimestampReset | O | ICommand | (R)/W | - | E | Resets the current value of the device timestamp counter.  |\n|  TimestampLatch | O | ICommand | (R)/W | - | E | Latches the current timestamp counter into TimestampLatchValue.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 49 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

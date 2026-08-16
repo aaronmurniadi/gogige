@@ -1,0 +1,105 @@
+{
+  "index": 183,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-276.jpeg](img-276.jpeg)CAN |   | ![img-277.jpeg](img-277.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 639,
+      "bottomRightY": 275,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |\n|  DeviceID | IString | R | Interface wide unique identifier of this device.  |\n|  DeviceVendorName | IString | R | Name of the device vendor.  |\n|  DeviceModelName | IString | R | Name of the device model.  |\n|  DeviceType | IEnumeration | R | Identifies the transport layer technology of the device. See chapter 6.6.1 for possible values.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 237,
+      "topLeftY": 298,
+      "bottomRightX": 479,
+      "bottomRightY": 313,
+      "content": "Table 7-10: Stream enumeration features",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 319,
+      "bottomRightX": 639,
+      "bottomRightY": 442,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |\n|  StreamSelector | IInteger | R/W | Selector for the different stream channels.The selector is 0 based in order to match the index of the C interface.  |\n|  StreamID [StreamSelector] | IString | R | Device unique ID for the stream, e.g., a GUID.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 472,
+      "bottomRightX": 281,
+      "bottomRightY": 489,
+      "content": "#### 7.1.4 Data Stream Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 494,
+      "bottomRightX": 635,
+      "bottomRightY": 529,
+      "content": "This section lists all features which must be available in the stream module: Port functions use the DS_HANDLE to access the features. The Port access for this module is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 224,
+      "topLeftY": 536,
+      "bottomRightX": 493,
+      "bottomRightY": 551,
+      "content": "Table 7-11: Data Stream information features",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 557,
+      "bottomRightX": 639,
+      "bottomRightY": 899,
+      "content": "|  Name | Interface | Access | Description  |\n| --- | --- | --- | --- |\n|  StreamID | IString | R | Device unique ID for the data stream, e.g., a GUID.  |\n|  StreamAnnouncedBufferCount | IInteger | R | Number of announced (known) buffers on this stream. This value is volatile. It may change if additional buffers are announced and/or buffers are revoked by the GenTL Consumer.  |\n|  StreamAcquisitionModeSelector | IEnumeration | R/W | Available buffer handling modes of this Stream. Deprecated. Use “StreamBufferHandlingMode” instead. Value: “Default” (see chapter 5 Acquisition Engine page 42ff)  |\n|  StreamBufferHandlingMode | IEnumeration | R/W | Available buffer handling modes of this Stream. Value: “Default” (see chapter 5 Acquisition Engine page 42ff)  |\n|  StreamAnnounceBufferMinimum | IInteger | R | Minimal number of buffers to announce to enable selected buffer handling mode.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 184 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

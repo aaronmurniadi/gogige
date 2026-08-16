@@ -1,0 +1,138 @@
+{
+  "index": 385,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 133,
+      "bottomRightX": 462,
+      "bottomRightY": 367,
+      "content": "X = (col-Scan3dPrincipalPointU)*Scan3dBaseline/D;\nY = (row-Scan3dPrincipalPointV)*Scan3dBaseline/D;\nZ = Scan3dFocalLength*Scan3dBaseline/D;\n// do something with the reconstructed point X, Y, Z\n}\nelse\n{\n    // point is reconstructed at infinity\n}\n}\nelse\n{\n    // value is marked as invalid\n}\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 401,
+      "bottomRightX": 633,
+      "bottomRightY": 425,
+      "content": "### 21.2.4 Mapping Disparity and Intensity of Different Resolutions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 453,
+      "bottomRightX": 747,
+      "bottomRightY": 525,
+      "content": "For stereo cameras it is common to provide the disparity image in a lower resolution than the camera intensity image. In that case, the width and height of the components will differ, even if they come from the same source and region. The difference in resolution in that case will be given by the ratio of binning and / or decimation factors between those components.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 531,
+      "bottomRightX": 748,
+      "bottomRightY": 603,
+      "content": "If the 3D reconstruction includes texturing, it becomes necessary to adapt the intensity images resolution to the disparity. It is also important to note that if the components provide images in different resolutions, then all parameters that refer to pixel positions depend on the component selector including the location of the principle point and focal length.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 611,
+      "bottomRightX": 640,
+      "bottomRightY": 629,
+      "content": "The following code snippet demonstrates the main calculations that are necessary in that case:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 635,
+      "bottomRightX": 677,
+      "bottomRightY": 666,
+      "content": "// Mapping intensity and disparity images coming from same source and region but that differ\n// in scale as expressed by binning and/or decimation features.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 679,
+      "bottomRightX": 95,
+      "bottomRightY": 694,
+      "content": "// ...",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 708,
+      "bottomRightX": 614,
+      "bottomRightY": 796,
+      "content": "// Read Disparity scale.\nComponentSelector = Disparity;\nDisparityScaleHorizontal = BinningHorizontal[Source0][Region0][Disparity];\nDisparityScaleHorizontal *= DecimationHorizontal[Source0][Region0][Disparity];\nDisparityScaleVertical = BinningDecimationVertical[Source0][Region0][Disparity];\nDisparityScaleVertical *= DecimationVertical[Source0][Region0][Disparity];",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 808,
+      "bottomRightX": 580,
+      "bottomRightY": 897,
+      "content": "// Read Intensity scale.\nComponentSelector = Intensity;\nIntensityScaleHorizontal = BinningHorizontal[Source0][Region0][Intensity];\nIntensityScaleHorizontal *= DecimationHorizontal[Source0][Region0][Intensity];\nIntensityScaleVertical = BinningVertical[Source0][Region0][Intensity];\nIntensityScaleVertical *= DecimationVertical[Source0][Region0][Intensity];",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 923,
+      "bottomRightX": 411,
+      "bottomRightY": 939,
+      "content": "// Calculates the Intensity to Disparity scale ratio.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 386 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

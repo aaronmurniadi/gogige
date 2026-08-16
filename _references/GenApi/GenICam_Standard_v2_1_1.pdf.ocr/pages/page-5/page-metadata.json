@@ -1,0 +1,103 @@
+{
+  "index": 4,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<i>CAM |   | ![img-6.jpeg](img-6.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 167,
+      "bottomRightX": 188,
+      "bottomRightY": 184,
+      "content": "## 1 Overview",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 196,
+      "bottomRightX": 636,
+      "bottomRightY": 279,
+      "content": "Today's digital cameras are packed with much more functionality than just delivering an image. Processing the image and appending the results to the image data stream, controlling external hardware, and doing the real-time part of the application have become common tasks for machine vision cameras. As a result, the programming interface for cameras has become more and more complex.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 287,
+      "bottomRightX": 637,
+      "bottomRightY": 355,
+      "content": "The goal of GenICam is to provide a generic programming interface for all kinds of cameras. No matter what interface technology the cameras are using or what features they are implementing, the application programming interface (API) should be always the same (see Figure 1).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 128,
+      "topLeftY": 371,
+      "bottomRightX": 594,
+      "bottomRightY": 703,
+      "content": "![img-7.jpeg](img-7.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-7.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 748,
+      "bottomRightX": 286,
+      "bottomRightY": 765,
+      "content": "Figure 1 The GenICam vision",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 803,
+      "bottomRightX": 636,
+      "bottomRightY": 837,
+      "content": "The GenICam standard consists of multiple modules according to the main tasks to be solved:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 844,
+      "bottomRightX": 558,
+      "bottomRightY": 933,
+      "content": "- GenApi : Application programming interface (API) for configuring a camera\n- GenTL : API for transport layer (TL) that allows grabbing images\n• SFNC : Standard Feature Naming Convention\n- CLProtocol : API for interfacing Camera Link camera to GenAPI.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 957,
+      "bottomRightX": 636,
+      "bottomRightY": 974,
+      "content": "Page 5 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

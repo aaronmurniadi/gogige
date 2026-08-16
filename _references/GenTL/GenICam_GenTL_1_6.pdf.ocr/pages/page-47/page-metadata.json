@@ -1,0 +1,147 @@
+{
+  "index": 46,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 277,
+      "bottomRightY": 157,
+      "content": "#### 5.2.6 Acquire Image Data",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 159,
+      "bottomRightX": 344,
+      "bottomRightY": 175,
+      "content": "The following action is performed in a loop:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 183,
+      "bottomRightX": 554,
+      "bottomRightY": 251,
+      "content": "- Wait for the “New Buffer” event to be signaled (see 4.2 Signaling page 35ff)\n- Process image data\n- Requeue buffer in the Input Buffer Pool",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 257,
+      "bottomRightX": 635,
+      "bottomRightY": 308,
+      "content": "With the event data from the signaled event the newly filled buffer can be obtained and then processed. As stated before no assumptions on the order of the buffers are made except if the buffer handling mode defines it.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 316,
+      "bottomRightX": 635,
+      "bottomRightY": 367,
+      "content": "Requeuing the buffers can be done in any order using the DSQueueBuffer function. As long as the buffer is not in the Input Buffer Pool or in the Output Buffer Queue the acquisition engine will not write into the buffer. This mechanism locks the buffer effectively.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 379,
+      "bottomRightX": 256,
+      "bottomRightY": 398,
+      "content": "#### 5.2.7 Stop Acquisition",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 401,
+      "bottomRightX": 636,
+      "bottomRightY": 591,
+      "content": "When finished acquiring image data the acquisition on the remote device is to be stopped if necessary. This can be done by setting the “AcquisitionStop” standard feature on the remote device. If it is present the command should be executed. Afterwards the DSStopAcquisition function is called to stop the acquisition on the host. By doing that the status of the buffers does not change. That implies that a buffer that is in the Input Buffer Pool remains there. The same is true for buffers in the Output Buffer Queue. This has the advantage that buffers which were filled during the acquisition stop process still can be retrieved and processed. If ACQ STOP FLAGS KILL is specified in the call to DSStopAcquisition a partially filled buffer is by default moved to the output buffer queue for processing. DSGetBufferInfo with BUFFER INFO IS INCOMPLETE would indicate that the buffer is not complete.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 597,
+      "bottomRightX": 635,
+      "bottomRightY": 633,
+      "content": "If a device implements the SFNC Transfer Control features, the GenTL Consumer may need to stop the transfer on the remote device, depending on the operating mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 645,
+      "bottomRightX": 364,
+      "bottomRightY": 662,
+      "content": "#### 5.2.8 Flush Buffer Pools and Queues",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 667,
+      "bottomRightX": 635,
+      "bottomRightY": 791,
+      "content": "In order to clear the state of the buffers to allow revoking them, the buffers have to be flushed either with the DSFlushQueue function or with the EventFlush function. With the DSFlushQueue function buffers from the Input Buffer Pool can either be flushed to the Output Buffer Queue or discarded. Buffers from the Output Buffer Queue also must either be processed or flushed. Flushing the Output Buffer Queue is done by calling EventFlush function. Using the EventFlush function on the \"New Buffer\" event discards the buffers from the Output Buffer Queue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 803,
+      "bottomRightX": 245,
+      "bottomRightY": 821,
+      "content": "#### 5.2.9 Revoke Buffers",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 824,
+      "bottomRightX": 635,
+      "bottomRightY": 911,
+      "content": "To enable the acquisition engine to free all resources needed for acquiring image data, revoke the announced buffers. Buffers that are referenced in either the Input Buffer Pool or the Output Buffer Queue cannot be revoked. After revoking a buffer with the DSRevokeBuffer function it is not known to the acquisition engine and thus can neither be queued nor receive any image data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 47 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

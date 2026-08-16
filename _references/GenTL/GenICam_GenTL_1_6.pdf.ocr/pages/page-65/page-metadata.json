@@ -1,0 +1,201 @@
+{
+  "index": 64,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GEN<I>CAM |   | ![img-96.jpeg](img-96.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 137,
+      "bottomRightX": 635,
+      "bottomRightY": 171,
+      "content": "expected to have 8 bits. On platforms/compilers where this is not the case a byte like primitive data type must be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 178,
+      "bottomRightX": 637,
+      "bottomRightY": 247,
+      "content": "String encoding is by default ASCII (characters with numerical values up to and including 127) unless stated different through the TL_INFO_CHAR_ENCODING command. A string as an input value without a size parameter must be 0-terminated. Strings with a size parameter must include the terminating 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 259,
+      "bottomRightX": 281,
+      "bottomRightY": 277,
+      "content": "##### 6.2.1.5 Primitive Data Types",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 280,
+      "bottomRightX": 636,
+      "bottomRightY": 316,
+      "content": "The size_t type indicates that a buffer size is represented. This is a platform dependent unsigned integer (e.g., 32 bit on 32 bit platforms).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 321,
+      "bottomRightX": 636,
+      "bottomRightY": 374,
+      "content": "The ptrdiff_t is a signed type which indicates that its value relates to an arithmetic operation with a memory pointer, usually a buffer. Its size is platform dependent (e.g., 32 bit on 32 bit platforms and 64Bit on 64Bit platforms).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 379,
+      "bottomRightX": 636,
+      "bottomRightY": 416,
+      "content": "The other functions use a notation defining its base type and size. uint8_t stands for an unsigned integer with the size of 8 bits. int32_t is a signed integer with 32 bits size.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 437,
+      "bottomRightX": 301,
+      "bottomRightY": 456,
+      "content": "### 6.3 Function Declarations",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 471,
+      "bottomRightX": 263,
+      "bottomRightY": 490,
+      "content": "#### 6.3.1 Library Functions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 502,
+      "bottomRightX": 223,
+      "bottomRightY": 520,
+      "content": "##### 6.3.1.1 GCCloseLib",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 542,
+      "bottomRightX": 411,
+      "bottomRightY": 560,
+      "content": "GC_ERROR GCCloseLib (void)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 569,
+      "bottomRightX": 636,
+      "bottomRightY": 624,
+      "content": "This function must be called after no function of the GenTL library is needed anymore to clean up the resources from the GCInitLib function call. Each call to GCCloseLib has to be accompanied by a preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 630,
+      "bottomRightX": 492,
+      "bottomRightY": 647,
+      "content": "GCGetLastError must not be called after the call of this function!",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 661,
+      "bottomRightX": 141,
+      "bottomRightY": 677,
+      "content": "#### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 683,
+      "bottomRightX": 208,
+      "bottomRightY": 700,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 683,
+      "bottomRightX": 569,
+      "bottomRightY": 700,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 708,
+      "bottomRightX": 278,
+      "bottomRightY": 727,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 707,
+      "bottomRightX": 635,
+      "bottomRightY": 744,
+      "content": "No preceding call to GCInitLib or library has already been closed through a call to GCCLoseLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 773,
+      "bottomRightX": 636,
+      "bottomRightY": 810,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 65 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

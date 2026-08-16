@@ -1,0 +1,84 @@
+{
+  "index": 76,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 77,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 77,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 508,
+      "topLeftY": 36,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 923,
+      "bottomRightY": 639,
+      "content": "|  ChunkSequencerSetActive | R | IInteger | R | - | E | Return the index of the active set of the running sequencer included in the payload.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  ChunkScan3dDistanceUnit | O | IEnumeration | R | - | E | Returns the Distance Unit of the payload image.  |\n|  ChunkScan3dOutputMode | O | IEnumeration | R | - | E | Returns the Calibrated Mode of the payload image.  |\n|  ChunkScan3dCoordinateSystem | O | IEnumeration | R | - | E | Returns the Coordinate System of the image included in the payload.  |\n|  ChunkScan3dCoordinateSystemReference | O | IEnumeration | R | - | E | Returns the Coordinate System Position of the image included in the payload.  |\n|  ChunkScan3dCoordinateSelector | O | IEnumeration | R/W | - | E | Selects which Coordinate to retrieve data from.  |\n|  ChunkScan3dCoordinateScale[ChunkScan3dCoordinateSelector] | O | IFloat | R | - | E | Returns the Scale for the selected coordinate axis of the image included in the payload.  |\n|  ChunkScan3dCoordinateOffset[ChunkScan3dCoordinateSelector] | O | IFloat | R | - | E | Returns the Offset for the selected coordinate axis of the image included in the payload.  |\n|  ChunkScan3dInvalidDataFlag[ChunkScan3dCoordinateSelector] | O | IBoolean | R | - | E | Returns if a specific non-valid data flag is used in the data stream.  |\n|  ChunkScan3dInvalidDataValue[ChunkScan3dCoordinateSelector] | O | IFloat | R | - | E | Returns the Invalid Data Value used for the image included in the payload.  |\n|  ChunkScan3dAxisMin[ChunkScan3dCoordinateSelector] | O | IFloat | R | - | E | Returns the Minimum Axis value for the selected coordinate axis of the image included in the payload.  |\n|  ChunkScan3dAxisMax[ChunkScan3dCoordinateSelector] | O | IFloat | R | - | E | Returns the Maximum Axis value for the selected coordinate axis of the image included in the payload.  |\n|  ChunkScan3dCoordinateTransformSelector | O | IEnumeration | R/W | - | E | Selector for transform values.  |\n|  ChunkScan3dTransformValue[ChunkScan3dCoordinateTransformSelector] | O | IFloat | R | - | E | Returns the transform value.  |\n|  ChunkScan3dCoordinateReferenceSelector | O | IEnumeration | R/W | - | E | Selector to read a coordinate system reference value defining the transform of a point from one system to the other.  |\n|  ChunkScan3dCoordinateReferenceValue[ChunkScan3dCoordinateReferenceSelector] | O | IFloat | R | - | E | Returns the value of a position or pose coordinate for the anchor or transformed coordinate systems relative to the reference point.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 77 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 652,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

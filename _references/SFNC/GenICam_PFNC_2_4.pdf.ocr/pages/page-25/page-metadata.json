@@ -1,0 +1,149 @@
+{
+  "index": 24,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 752,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 150,
+      "bottomRightX": 200,
+      "bottomRightY": 167,
+      "content": "#### POL44C1 Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 175,
+      "bottomRightX": 524,
+      "bottomRightY": 196,
+      "content": "POL44C1 defines a 4 by 4 filter array with following color filter applied.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 276,
+      "topLeftY": 242,
+      "bottomRightX": 537,
+      "bottomRightY": 358,
+      "content": "![img-29.jpeg](img-29.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-29.jpeg"
+    },
+    {
+      "topLeftX": 310,
+      "topLeftY": 366,
+      "bottomRightX": 501,
+      "bottomRightY": 384,
+      "content": "Figure 3-25: POL44C1 array",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 417,
+      "bottomRightX": 387,
+      "bottomRightY": 436,
+      "content": "Example of a complete code with 12 bits per pixel:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 442,
+      "bottomRightX": 333,
+      "bottomRightY": 462,
+      "content": "POL44C1_12: As defined in above figure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 468,
+      "bottomRightX": 266,
+      "bottomRightY": 486,
+      "content": "POL44C1X_12: Reversed by x",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 527,
+      "bottomRightX": 207,
+      "bottomRightY": 550,
+      "content": "### 3.2 Components",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 556,
+      "bottomRightX": 740,
+      "bottomRightY": 645,
+      "content": "The components provide the primary information of the pixel. Basic component designation might be extended by an indicator providing additional information about pixel positioning in the image (pixel sequence for Bayer, sub-sampling for Y'CbCr, ...). When needed, an additional identifier might be inserted to differentiate between 2 very similar formats (such as ITU-R BT.601 and ITU-R BT.709 color space for Y'CbCr).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 705,
+      "bottomRightX": 520,
+      "bottomRightY": 723,
+      "content": "Table 3-1 : Component Designation",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 727,
+      "bottomRightX": 753,
+      "bottomRightY": 942,
+      "content": "|  Component designation | Positioning in Image | Description  |\n| --- | --- | --- |\n|  “Raw” | Mono location | Raw sensor data with no reference to any color space  |\n|  “Mono” | Mono location | Monochrome (luma only)  |\n|  “R” | Mono location | Red only  |\n|  “G” | Mono location | Green only  |\n|  “B” | Mono location | Blue only  |\n|  “RGB” | LMN444 location | Red-Green-Blue  |\n|  “BGR” | LMN444 location | Blue-Green-Red  |\n|  “BayerGR” | Bayer_MLNM location | Bayer filter Green-Red-Blue-Green  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 974,
+      "content": "Page 25 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

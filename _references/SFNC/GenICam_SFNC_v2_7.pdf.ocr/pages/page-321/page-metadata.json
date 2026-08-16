@@ -1,0 +1,176 @@
+{
+  "index": 320,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 53,
+      "bottomRightX": 294,
+      "bottomRightY": 83,
+      "content": "GEN<|i>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 56,
+      "bottomRightX": 613,
+      "bottomRightY": 104,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 112,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 397,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 132,
+      "bottomRightX": 511,
+      "bottomRightY": 336,
+      "content": "|  **Category** | SequencerControl  |\n| --- | --- |\n|  **Level** | Recommended  |\n|  **Interface** | IEnumeration  |\n|  **Access** | Read/Write  |\n|  **Unit** | -  |\n|  **Visibility** | Expert  |\n|  **Values** | On Off  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 361,
+      "bottomRightX": 397,
+      "bottomRightY": 380,
+      "content": "Controls if the sequencer configuration mode is active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 387,
+      "bottomRightX": 180,
+      "bottomRightY": 404,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 414,
+      "bottomRightX": 407,
+      "bottomRightY": 452,
+      "content": "- **Off:** Disables the sequencer configuration mode.\n- **On:** Enables the sequencer configuration mode.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 466,
+      "bottomRightX": 324,
+      "bottomRightY": 488,
+      "content": "## 17.7 SequencerFeatureSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 489,
+      "bottomRightX": 511,
+      "bottomRightY": 701,
+      "content": "|  **Name** | SequencerFeatureSelector  |\n| --- | --- |\n|  **Category** | SequencerControl  |\n|  **Level** | Recommended  |\n|  **Interface** | IEnumeration  |\n|  **Access** | Read/Write  |\n|  **Unit** | -  |\n|  **Visibility** | Expert  |\n|  **Values** | Device-Specific-Feature-List  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 727,
+      "bottomRightX": 329,
+      "bottomRightY": 745,
+      "content": "Selects which sequencer features to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 753,
+      "bottomRightX": 740,
+      "bottomRightY": 788,
+      "content": "The feature lists all the features that can be part of a device sequencer set. All the device's sequencer sets have the same features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 796,
+      "bottomRightX": 616,
+      "bottomRightY": 814,
+      "content": "Note that the name used in the enumeration must match exactly the device's feature name.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 828,
+      "bottomRightX": 312,
+      "bottomRightY": 851,
+      "content": "## 17.8 SequencerFeatureEnable",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 852,
+      "bottomRightX": 511,
+      "bottomRightY": 933,
+      "content": "|  **Name** | SequencerFeatureEnable[SequencerFeatureSelector]  |\n| --- | --- |\n|  **Category** | SequencerControl  |\n|  **Level** | Recommended  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 951,
+      "bottomRightX": 113,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 387,
+      "bottomRightY": 970,
+      "content": "Page 321 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 951,
+      "bottomRightX": 616,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

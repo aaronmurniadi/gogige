@@ -1,0 +1,93 @@
+{
+  "index": 10,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-15.jpeg](img-15.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 637,
+      "bottomRightY": 219,
+      "content": "The signature of the interfaces is given in more detail in section 2.9. The available node types are described in section 2.8. There might be multiple node types implementing the same interface type. The IInteger interface, for example, is (among others) implemented by the following node types:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 225,
+      "bottomRightX": 636,
+      "bottomRightY": 306,
+      "content": "- IntReg – extracts an integer lying byte-bounded in a register\n- MaskedIntReg – extracts an integer packed into a register, e.g., from bit 8 to bit 12\n- Integer – merges the integer's value, min, max, and increment properties from different nodes",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 313,
+      "bottomRightX": 636,
+      "bottomRightY": 364,
+      "content": "Each node type extracts an integer from different sources in a different way. The output of all of these nodes, however, can be used as type-safe input for all links where an integer is required.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 370,
+      "bottomRightX": 637,
+      "bottomRightY": 453,
+      "content": "Abstract features are always described in terms of an interface type, a name, and a meaning. For example, the Gain (name) of a camera might be defined as an Integer (interface type) and might describe the amplification inside a camera (meaning). Note that other possible definitions exist, e.g., the Gain could be defined as an IEnumeration or as an IFloat.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 468,
+      "bottomRightX": 307,
+      "bottomRightY": 486,
+      "content": "### 2.4 Getting and Setting Values",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 496,
+      "bottomRightX": 637,
+      "bottomRightY": 647,
+      "content": "When the user reads or writes the value of a node, this node will trigger a cascade of read and write operations within the node graph. To illustrate this, Figure 4 shows a more elaborate example for the Gain feature. The Gain feature is exposed via an Integer interface that lets the user get and set the feature's Value and lets her read (among other things) the feature's Min and Max value. The example in Figure 4 assumes that the camera has three registers, one for the Gain Value itself, one for its Min value, and one for its Max value. From each of these registers, the corresponding value is extracted using an IntReg node. The Integer node with the name Gain then collects the data and merges them, exposing the results with an Integer interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 636,
+      "bottomRightY": 974,
+      "content": "Page 11 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

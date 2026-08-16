@@ -1,0 +1,184 @@
+{
+  "index": 52,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 751,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 150,
+      "bottomRightX": 181,
+      "bottomRightY": 169,
+      "content": "#### Scaled down rgb",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 175,
+      "bottomRightX": 745,
+      "bottomRightY": 212,
+      "content": "BT.709 indicates that the RGB components can use a reduced range of values of [16, 235]. This corresponds to the equations (11).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 239,
+      "bottomRightX": 650,
+      "bottomRightY": 285,
+      "content": "Note: The Pixel Format Naming Convention does not define any RGB pixel format using that range of values. But the color conversion equations are provided for completeness since they are referenced by BT.709.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 210,
+      "topLeftY": 319,
+      "bottomRightX": 591,
+      "bottomRightY": 403,
+      "content": "![img-50.jpeg](img-50.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-50.jpeg"
+    },
+    {
+      "topLeftX": 275,
+      "topLeftY": 413,
+      "bottomRightX": 536,
+      "bottomRightY": 431,
+      "content": "Figure 8-6 : Scaled down rgb for BT.709",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 464,
+      "bottomRightX": 265,
+      "bottomRightY": 482,
+      "content": "Replacing (11) in (14) leads to:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 488,
+      "bottomRightX": 489,
+      "bottomRightY": 586,
+      "content": "\\[\n\\begin{array}{l} \\mathrm{Y} _ {7 0 9} ^ {\\prime} = 0. 2 1 2 6 \\mathrm{r} ^ {\\prime} + 0. 7 1 5 2 \\mathrm{g} ^ {\\prime} + 0. 0 7 2 2 \\mathrm{b} ^ {\\prime} \\\\ \\mathrm{Cb} = - 0. 1 1 7 1 9 \\mathrm{r} ^ {\\prime} - 0. 3 9 4 2 3 \\mathrm{g} ^ {\\prime} + 0. 5 1 1 4 2 \\mathrm{b} ^ {\\prime} + 1 2 8 \\\\ \\mathrm{Cr} = 0. 5 1 1 4 2 \\mathrm{r} ^ {\\prime} - 0. 4 6 4 5 2 \\mathrm{g} ^ {\\prime} - 0. 0 4 6 8 9 \\mathrm{b} ^ {\\prime} + 1 2 8 \\\\ \\text { with } r ^ {\\prime}, g ^ {\\prime} \\text { and } b ^ {\\prime} \\text { in   the   range } [ 1 6, 2 3 5 ]. \\\\ \\end{array}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 192,
+      "topLeftY": 594,
+      "bottomRightX": 618,
+      "bottomRightY": 612,
+      "content": "Equation 10 : Scaled down r'g'b' to Y'CbCr709 conversion (8 bits)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 645,
+      "bottomRightX": 426,
+      "bottomRightY": 663,
+      "content": "For 8-bit data, the range of values for each component is:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 669,
+      "bottomRightX": 673,
+      "bottomRightY": 715,
+      "content": "❖ Y'709, r', g' and b' in range [16, 235], unsigned (220 levels)\n❖ Cb and Cr in range [16, 240], signed shifted by 128, with 128 representing 0 (225 levels)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 722,
+      "bottomRightX": 346,
+      "bottomRightY": 740,
+      "content": "Values must be truncated to fit in that range.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 773,
+      "bottomRightX": 291,
+      "bottomRightY": 791,
+      "content": "The reverse equations are given by:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 797,
+      "bottomRightX": 490,
+      "bottomRightY": 867,
+      "content": "\\[\n\\begin{array}{l} \\mathrm{r} ^ {\\prime} = \\quad \\mathrm{Y} _ {7 0 9} ^ {\\prime} + 1. 5 3 9 6 5 (\\mathrm{Cr} - 1 2 8) \\\\ \\mathrm{g} ^ {\\prime} = \\quad \\mathrm{Y} _ {7 0 9} ^ {\\prime} - 0. 1 8 3 1 4 (\\mathrm{Cb} - 1 2 8) - 0. 4 5 7 6 8 (\\mathrm{Cr} - 1 2 8) \\\\ \\mathrm{b} ^ {\\prime} = \\quad \\mathrm{Y} _ {7 0 9} ^ {\\prime} + 1. 8 1 4 1 8 (\\mathrm{Cb} - 1 2 8) \\\\ \\end{array}\n\\]",
+      "confidenceScores": null,
+      "type": "equation"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 876,
+      "bottomRightX": 565,
+      "bottomRightY": 894,
+      "content": "with Y'709 in the range [16, 235] and, Cb and Cr in the range [16, 240].",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 229,
+      "topLeftY": 902,
+      "bottomRightX": 581,
+      "bottomRightY": 920,
+      "content": "Equation 11 : Y'CbCr709 to R'G'B' conversion (8 bits)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 53 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

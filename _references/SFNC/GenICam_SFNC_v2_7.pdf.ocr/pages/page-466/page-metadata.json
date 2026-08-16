@@ -1,0 +1,318 @@
+{
+  "index": 465,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 295,
+      "bottomRightY": 164,
+      "content": "- Mono4p: Mono 4 bit packed.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 172,
+      "bottomRightX": 287,
+      "bottomRightY": 190,
+      "content": "- Mono8: Mono 8 bit packed.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 198,
+      "bottomRightX": 290,
+      "bottomRightY": 218,
+      "content": "- Mono8s: Mono 1 bit signed.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 226,
+      "bottomRightX": 254,
+      "bottomRightY": 243,
+      "content": "- Mono10: Mono 10 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 252,
+      "bottomRightX": 311,
+      "bottomRightY": 271,
+      "content": "- Mono10p: Mono 10 bit packed.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 279,
+      "bottomRightX": 254,
+      "bottomRightY": 295,
+      "content": "- Mono12: Mono 12 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 304,
+      "bottomRightX": 311,
+      "bottomRightY": 324,
+      "content": "- Mono12p: Mono 12 bit packed.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 331,
+      "bottomRightX": 254,
+      "bottomRightY": 349,
+      "content": "- Mono14: Mono 14 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 358,
+      "bottomRightX": 254,
+      "bottomRightY": 375,
+      "content": "- Mono16: Mono 16 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 385,
+      "bottomRightX": 200,
+      "bottomRightY": 402,
+      "content": "- R8: Red 8 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 411,
+      "bottomRightX": 214,
+      "bottomRightY": 430,
+      "content": "- G8: Green 8 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 438,
+      "bottomRightX": 203,
+      "bottomRightY": 456,
+      "content": "- B8: Blue 8 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 466,
+      "bottomRightX": 302,
+      "bottomRightY": 482,
+      "content": "- RGB8: Red, Green, Blue 8 bit",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 492,
+      "bottomRightX": 400,
+      "bottomRightY": 510,
+      "content": "- RGB8_Planar: Red, Green, Blue 8 bit planar.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 518,
+      "bottomRightX": 411,
+      "bottomRightY": 537,
+      "content": "- RGBa8: Red, Green, Blue 8 bit aligned on 8 bit",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 545,
+      "bottomRightX": 321,
+      "bottomRightY": 562,
+      "content": "- RGB10: Red, Green, Blue 10 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 571,
+      "bottomRightX": 416,
+      "bottomRightY": 591,
+      "content": "- RGB10_Planar: Red, Green, Blue 10 bit planar.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 598,
+      "bottomRightX": 483,
+      "bottomRightY": 617,
+      "content": "- RGB10p32: Red, Green, Blue 10 bit packed in 32 bit pixel.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 625,
+      "bottomRightX": 321,
+      "bottomRightY": 643,
+      "content": "- RGB12: Red, Green, Blue 12 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 651,
+      "bottomRightX": 416,
+      "bottomRightY": 671,
+      "content": "- RGB12_Planar: Red, Green, Blue 12 bit planar.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 678,
+      "bottomRightX": 321,
+      "bottomRightY": 696,
+      "content": "- RGB16: Red, Green, Blue 16 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 706,
+      "bottomRightX": 416,
+      "bottomRightY": 725,
+      "content": "- RGB16_Planar: Red, Green, Blue 16 bit planar.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 732,
+      "bottomRightX": 466,
+      "bottomRightY": 752,
+      "content": "- RGB565p: Red, Green, Blue 16 bit packet in 5, 6, 5 bits.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 759,
+      "bottomRightX": 325,
+      "bottomRightY": 776,
+      "content": "- BGR10: Blue, Green, Red, 10 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 785,
+      "bottomRightX": 325,
+      "bottomRightY": 804,
+      "content": "- BGR12: Blue, Green, Red, 12 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 812,
+      "bottomRightX": 325,
+      "bottomRightY": 830,
+      "content": "- BGR16: Blue, Green, Red, 16 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 839,
+      "bottomRightX": 470,
+      "bottomRightY": 858,
+      "content": "- BGR565p: Blue, Green, Red, 16 bit packet in 5, 6, 5 bits.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 865,
+      "bottomRightX": 309,
+      "bottomRightY": 884,
+      "content": "- BGR8: Blue, Green, Red, 8 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 893,
+      "bottomRightX": 359,
+      "bottomRightY": 911,
+      "content": "- BGRa8: Blue, Green, Red, Alpha 8 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 919,
+      "bottomRightX": 290,
+      "bottomRightY": 937,
+      "content": "- YUV422_8: YUV 422 8 bit.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 466 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

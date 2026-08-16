@@ -1,0 +1,140 @@
+{
+  "index": 506,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 396,
+      "bottomRightY": 339,
+      "content": "|  Level | Recommended  |\n| --- | --- |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | Off On Automatic  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 364,
+      "bottomRightX": 311,
+      "bottomRightY": 381,
+      "content": "Controls the device's streaming format.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 390,
+      "bottomRightX": 188,
+      "bottomRightY": 406,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 416,
+      "bottomRightX": 640,
+      "bottomRightY": 486,
+      "content": "- Off: The device will only stream data in its native format.\n- On: The device will stream all its data in the generic GenDC format.\n- Automatic: The device will automatically choose in which format it streams its data.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 495,
+      "bottomRightX": 603,
+      "bottomRightY": 512,
+      "content": "Note: This feature is meant to globally control the data streaming format of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 512,
+      "bottomRightX": 737,
+      "bottomRightY": 548,
+      "content": "As such, it has priority over other features (except TestPayloadFormatMode) that might influence the output payload format or content.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 589,
+      "bottomRightX": 362,
+      "bottomRightY": 610,
+      "content": "### 27.2.7 GenDCStreamingStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 611,
+      "bottomRightX": 396,
+      "bottomRightY": 848,
+      "content": "|  Name | GenDCStreamingStatus  |\n| --- | --- |\n|  Category | TransportLayerControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |\n|  Values | Off On  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 864,
+      "bottomRightX": 694,
+      "bottomRightY": 901,
+      "content": "Returns whether the current device data streaming format is GenDC. This value is conditioned by the GenDCStreamingMode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 907,
+      "bottomRightX": 729,
+      "bottomRightY": 944,
+      "content": "This feature can be used to determine if the device will stream in its native or in the generic GenDC format and if GenDC related features like GenDCDescriptor and GenDCFlowmappingTable can be used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 507 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

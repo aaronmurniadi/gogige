@@ -1,0 +1,131 @@
+{
+  "index": 378,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 135,
+      "bottomRightX": 321,
+      "bottomRightY": 157,
+      "content": "### 21.2.1 Coordinate systems",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 160,
+      "bottomRightX": 740,
+      "bottomRightY": 249,
+      "content": "The defined coordinate systems are right-hand oriented Cartesian (X,Y,Z), Spherical (Theta, Phi, Rho) and Cylindrical (Theta, Y,Rho). Rho is used throughout as coordinate and pixel plane for spherical and cylindrical \"Radius\" coordinate. The spherical coordinate system with Phi as azimuth, angle from X axis, and Theta as polar angle from Z axis, is used in SFNC. This is referred to as the physics system. The nominal \"distance\" coordinate is always the 3rd coordinate, Z or Rho.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 257,
+      "bottomRightX": 741,
+      "bottomRightY": 309,
+      "content": "To avoid naming conflicts the 3 coordinates are named A, B and C when representing a generic 3D coordinate system, with C as the “distance” coordinate. In some cases, like coordinate system transformation, only use of Cartesian coordinates is defined, and then X, Y, Z are used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 299,
+      "topLeftY": 321,
+      "bottomRightX": 510,
+      "bottomRightY": 526,
+      "content": "![img-116.jpeg](img-116.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-116.jpeg"
+    },
+    {
+      "topLeftX": 150,
+      "topLeftY": 542,
+      "bottomRightX": 655,
+      "bottomRightY": 562,
+      "content": "Figure 21-10: Relationship between Cartesian and Spherical coordinate systems.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 574,
+      "bottomRightX": 504,
+      "bottomRightY": 777,
+      "content": "![img-117.jpeg](img-117.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-117.jpeg"
+    },
+    {
+      "topLeftX": 144,
+      "topLeftY": 794,
+      "bottomRightX": 660,
+      "bottomRightY": 813,
+      "content": "Figure 21-11: Relationship between Cartesian and Cylindrical coordinate systems.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 845,
+      "bottomRightX": 144,
+      "bottomRightY": 862,
+      "content": "### Linescan 3D:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 870,
+      "bottomRightX": 752,
+      "bottomRightY": 924,
+      "content": "For Linescan 3D cameras data for each measurement is typically in the (X, Z) plane, and the motion direction is Y. This can then be transmitted as 2-component images (Coordinates A and C) with the 3rd coordinate (B) given by a common motion related coordinate which can be embedded as counter or encoder chunk information.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 386,
+      "bottomRightY": 970,
+      "content": "Page 379 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 615,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

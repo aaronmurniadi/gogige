@@ -1,0 +1,168 @@
+{
+  "index": 109,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 278,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 493,
+      "topLeftY": 35,
+      "bottomRightX": 577,
+      "bottomRightY": 81,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 75,
+      "bottomRightX": 107,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 75,
+      "bottomRightX": 373,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 117,
+      "bottomRightX": 330,
+      "bottomRightY": 168,
+      "content": "|  **Visibility** | Guru  |\n| --- | --- |\n|  **Values** | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 193,
+      "bottomRightX": 623,
+      "bottomRightY": 227,
+      "content": "Announce the end of registers streaming. This will do a register set validation for consistency and activate it. This will also update the **DeviceRegistersValid** flag.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 239,
+      "bottomRightX": 283,
+      "bottomRightY": 261,
+      "content": "### 3.57 DeviceRegistersCheck",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 262,
+      "bottomRightX": 330,
+      "bottomRightY": 460,
+      "content": "|  **Name** | DeviceRegistersCheck  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Recommended  |\n|  **Interface** | ICommand  |\n|  **Access** | (Read)/Write  |\n|  **Unit** | -  |\n|  **Visibility** | Expert  |\n|  **Values** | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 484,
+      "bottomRightX": 551,
+      "bottomRightY": 519,
+      "content": "Perform the validation of the current register set for consistency. This will update the **DeviceRegistersValid** flag.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 532,
+      "bottomRightX": 271,
+      "bottomRightY": 553,
+      "content": "### 3.58 DeviceRegistersValid",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 554,
+      "bottomRightX": 330,
+      "bottomRightY": 769,
+      "content": "|  **Name** | DeviceRegistersValid  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Recommended  |\n|  **Interface** | IBoolean  |\n|  **Access** | Read  |\n|  **Unit** | -  |\n|  **Visibility** | Expert  |\n|  **Values** | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 793,
+      "bottomRightX": 383,
+      "bottomRightY": 811,
+      "content": "Returns if the current register set is valid and consistent.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 824,
+      "bottomRightX": 326,
+      "bottomRightY": 846,
+      "content": "### 3.59 DeviceRegistersEndianness",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 846,
+      "bottomRightX": 330,
+      "bottomRightY": 945,
+      "content": "|  **Name** | DeviceRegistersEndianness  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Optional  |\n|  **Interface** | IEnumeration  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 949,
+      "bottomRightX": 108,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 949,
+      "bottomRightX": 365,
+      "bottomRightY": 966,
+      "content": "Page 110 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 408,
+      "topLeftY": 949,
+      "bottomRightX": 579,
+      "bottomRightY": 966,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

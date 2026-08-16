@@ -1,0 +1,120 @@
+{
+  "index": 247,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 570,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 745,
+      "bottomRightY": 840,
+      "content": "- AcquisitionEnd: Resets with the reception of the Acquisition End.\n- FrameTrigger: Resets with the reception of the Frame Start Trigger.\n- FrameTriggerMissed: Resets with the reception of the missed Frame start trigger.\n- FrameStart: Resets with the reception of the Frame Start.\n- FrameEnd: Resets with the reception of the Frame End.\n- FrameBurstStart: Resets with the reception of the Frame Burst Start.\n- FrameBurstEnd: Resets with the reception of the Frame Burst End.\n- LineTrigger: Resets with the reception of the Line Start Trigger.\n- LineTriggerMissed: Resets with the reception of the missed Line start trigger.\n- LineStart: Resets with the reception of the Line Start.\n- LineEnd: Resets with the reception of the Line End.\n- ExposureStart: Resets with the reception of the Exposure Start.\n- ExposureEnd: Resets with the reception of the Exposure End.\n- Line0 (If 0 based), Line1, Line2, ...: Resets by the chosen I/O Line.\n- UserOutput0, UserOutput1, UserOutput2, ...: Resets by the chosen User Output bit.\n- Counter0Start, Counter1Start, Counter2Start, ...: Resets with the reception of the Counter Start.\n- Counter0End, Counter1End, Counter2End, ...: Resets with the reception of the Counter End.\n- Timer0Start, Timer1Start, Timer2Start, ...: Resets with the reception of the Timer Start.\n- Timer0End, Timer1End, Timer2End, ...: Resets with the reception of the Timer End.\n- Encoder0, Encoder1, Encoder2, ...: Resets with the reception of the Encoder output signal.\n- LogicBlock0, LogicBlock1, LogicBlock2, ...: Resets with the reception of the LogicBlock output signal.\n- SoftwareSignal0, SoftwareSignal1, SoftwareSignal2, ...: Resets on the reception of the Software Signal.\n- Action0, Action1, Action2, ...: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).\n- LinkTrigger0, LinkTrigger1, LinkTrigger2, ...: Resets on the reception of the chosen Link Trigger (received from the transport layer).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 847,
+      "bottomRightX": 615,
+      "bottomRightY": 883,
+      "content": "Note that the value of the Counter at time of reset is automatically latched and reflected in CounterValueAtReset.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 898,
+      "bottomRightX": 353,
+      "bottomRightY": 918,
+      "content": "### 10.3.5 CounterResetActivation",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 921,
+      "bottomRightX": 459,
+      "bottomRightY": 950,
+      "content": "|  Name | CounterResetActivation[CounterSelector]  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 248 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

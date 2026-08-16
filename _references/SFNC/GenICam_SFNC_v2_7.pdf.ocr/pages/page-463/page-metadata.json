@@ -1,0 +1,58 @@
+{
+  "index": 462,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | ![img-149.jpeg](img-149.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 473,
+      "bottomRightY": 943,
+      "content": "|   | RGB10p32RGB12RGB12_PlanarRGB16RGB16_PlanarRGB565p  |\n| --- | --- |\n|   |  BGR10BGR12BGR16BGR565pBGR8BGRa8YUV422_8YCbCr411_8YCbCr422_8YCbCr601_422_8YCbCr709_422_8YCbCr8  |\n|   | BayerBG8BayerGB8BayerGR8BayerRG8BayerBG10BayerGB10BayerGR10BayerRG10BayerRG12BayerGB12BayerGR12BayerRG12BayerRG16BayerGB16BayerGR16BayerRG16  |\n|   | Coord3D_A8Coord3D_B8Coord3D_C8Coord3D_ABC8  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 463 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

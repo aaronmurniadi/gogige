@@ -1,0 +1,76 @@
+{
+  "index": 53,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 138,
+      "content": "|  GEN<i>CAM |   | ![img-58.jpeg](img-58.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 153,
+      "bottomRightX": 644,
+      "bottomRightY": 761,
+      "content": "|  Bit offset (lsb << x) | Width (bits) | Description  |\n| --- | --- | --- |\n|  0 | 1 | User Defined Name SupportedSet if the device supports the User Defined Name register.  |\n|  1 | 1 | Access Privilege SupportedSet if Heartbeat/Access Privilege is supported.  |\n|  2 | 1 | Message Channel SupportedSet if the device supports a Message Channel.  |\n|  3 | 1 | Timestamp SupportedSet if the device supports a timestamp register.  |\n|  4 | 4 | String EncodingString Encoding of the BRM- 0x0 -> ASCII- 0x1 -> UTF8- 0x2 -> UTF16- 0x3-0xF -> Reserved  |\n|  8 | 1 | FamilyName SupportedSet if the device supports the Family Name register.  |\n|  9 | 1 | SBRM SupportedSet if the device supports a SBRM.  |\n|  10 | 1 | Endianness Register SupportedSet if the device supports the Implementation Endianness register.  |\n|  11 | 1 | Written Length Field SupportedSet to 1 if the device sends the length_written field in the SCD section of the WriteMemAck command.  |\n|  12 | 1 | MultiEvent SupportedSet to 1 if the device supports multiple events in a single event command packet.  |\n|  13 | 1 | Stacked Commands SupportedSet to 1 if the device supports ReadMemStacked and WriteMemStacked commands.  |\n|  14 | 1 | Device Software Interface Version SupportedSet to 1 if the Device Software Interface Version register is supported.  |\n|  15 | 49 | ReservedSet to 0.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 260,
+      "topLeftY": 761,
+      "bottomRightX": 456,
+      "bottomRightY": 776,
+      "content": "Table 21 – Register Device Capabilities",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 827,
+      "bottomRightX": 529,
+      "bottomRightY": 848,
+      "content": "#### 5.4.10. Maximum Device Response Time (MDRT)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 869,
+      "bottomRightX": 630,
+      "bottomRightY": 887,
+      "content": "Integer value containing the maximum time in milliseconds until a device reacts upon a received",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 54 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

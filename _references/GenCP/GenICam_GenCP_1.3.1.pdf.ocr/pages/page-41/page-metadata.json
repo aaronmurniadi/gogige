@@ -1,0 +1,95 @@
+{
+  "index": 40,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 140,
+      "content": "|  GEN<i>CAM |   | ![img-39.jpeg](img-39.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 153,
+      "bottomRightX": 644,
+      "bottomRightY": 305,
+      "content": "|  \\( Len_1 \\) | \\( Len_0 \\) | dataData read from the remote device's register map.  |\n| --- | --- | --- |\n|  ...  |   |   |\n|  \\( Len_{n-1} \\) | ![img-40.jpeg](img-40.jpeg) | dataData read from the remote device's register map.  |\n|  Postfix  |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 244,
+      "topLeftY": 305,
+      "bottomRightX": 474,
+      "bottomRightY": 318,
+      "content": "Table 14 – ReadMemStacked Ack SCD-Fields",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 325,
+      "bottomRightX": 648,
+      "bottomRightY": 401,
+      "content": "If the number of bytes read is different than specified in the relating READMEM_STACKED_CMD, the status of the READMEM_STACKED_ACK must indicate the reason. In that case subsequent read requests from the according READMEM_STACKED_CMD are not executed by the receiver. The acknowledge only returns the data read correctly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 431,
+      "bottomRightX": 389,
+      "bottomRightY": 449,
+      "content": "#### 4.4.8. WriteMemStacked Command",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 472,
+      "bottomRightX": 641,
+      "bottomRightY": 556,
+      "content": "The WriteMemStacked command allows sending multiple write requests in one packet. Any write access start address and length is byte aligned unless the underlying technology states different rules. The number of bytes to write is deduced from the length field of the CCD header. The count of writes n within the packet has to be deduced by the receiver by parsing the packet up to the packet size sent by the transmitter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 578,
+      "bottomRightX": 644,
+      "bottomRightY": 880,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Description  |\n| --- | --- | --- |\n|  Prefix  |   |   |\n|  CCD (command_id = WRITEMEM_STACKED_CMD)  |   |   |\n|  8 | 0 | register address 064 bit register address of the first data block to write  |\n|  2 | 8 | reservedReserved, set to 0  |\n|  2 | 10 | length data block 0 (\\( Len_0 \\))Length of the first data block to write in bytes  |\n|  \\( Len_0 \\) | 12 | dataFirst data block  |\n|  8 | 12+\\( Len_0 \\) | register address 164 bit register address of the second data block to write  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 41 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

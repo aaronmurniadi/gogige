@@ -1,0 +1,95 @@
+{
+  "index": 451,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 495,
+      "bottomRightY": 527,
+      "content": "|   | RegionIDValue ComponentID ComponentIDValue GroupIDValue TransferBlockID TransferStreamID TransferQueueCurrentBlockCount StreamChannelID SequencerSetActive Scan3dDistanceUnit Scan3dOutputMode Scan3dCoordinateSystem Scan3dCoordinateSystemReference Scan3dCoordinateScale Scan3dCoordinateOffset Scan3dInvalidDataFlag Scan3dInvalidDataValue Scan3dAxisMin Scan3dAxisMax Scan3dCoordinateTransformValue Scan3dCoordinateReferenceValue  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 552,
+      "bottomRightX": 325,
+      "bottomRightY": 570,
+      "content": "Selects which Chunk to enable or control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 586,
+      "bottomRightX": 226,
+      "bottomRightY": 605,
+      "content": "### 24.5 ChunkEnable",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 609,
+      "bottomRightX": 394,
+      "bottomRightY": 840,
+      "content": "|  Name | ChunkEnable[ChunkSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 864,
+      "bottomRightX": 543,
+      "bottomRightY": 885,
+      "content": "Enables the inclusion of the selected Chunk data in the payload of the image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 452 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

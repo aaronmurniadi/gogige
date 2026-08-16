@@ -1,0 +1,128 @@
+{
+  "index": 338,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<ixCAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 110,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 55,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 135,
+      "bottomRightX": 494,
+      "bottomRightY": 259,
+      "content": "RegionMode[SourceSelector][RegionSelector] = On\nRegionDestination[SourceSelector][RegionSelector] = Stream1\nWidth[SourceSelector][RegionSelector] = 220\nHeight[SourceSelector][RegionSelector] = 140\nTransferSelector = Stream1\nTransferControlMode[TransferSelector] = UserControlled\nTransferStreamChannel[TransferSelector] = 0",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 268,
+      "bottomRightX": 174,
+      "bottomRightY": 285,
+      "content": "Source 2 Region 2:",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 293,
+      "bottomRightX": 496,
+      "bottomRightY": 454,
+      "content": "SourceSelector = Source2\nRegionSelector[SourceSelector] = Region2\nRegionMode[SourceSelector][RegionSelector] = On\nRegionDestination[SourceSelector][RegionSelector] = Stream2\nWidth[SourceSelector][RegionSelector] = 220\nHeight[SourceSelector][RegionSelector] = 330\nTransferSelector = Stream2\nTransferControlMode[TransferSelector] = UserControlled\nTransferStreamChannel[TransferSelector] = 0",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 471,
+      "bottomRightX": 428,
+      "bottomRightY": 489,
+      "content": "Source 1, Region 1 and 2, Transfer and Acquisition control:",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 497,
+      "bottomRightX": 309,
+      "bottomRightY": 711,
+      "content": "TransferSelector = Stream1\nTransferStart[TransferSelector]\nTransferSelector = Stream2\nTransferStart[TransferSelector]\nSourceSelector = Source2\nAcquisitionStart[SourceSelector]\n...\nAcquisitionStop[SourceSelector]\nTransferSelector = Stream1\nTransferStop[TransferSelector]\nTransferSelector = Stream2\nTransferStop[TransferSelector]",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 339 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

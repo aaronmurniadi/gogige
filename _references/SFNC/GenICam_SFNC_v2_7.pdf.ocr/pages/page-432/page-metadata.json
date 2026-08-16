@@ -1,0 +1,132 @@
+{
+  "index": 431,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 143,
+      "bottomRightX": 497,
+      "bottomRightY": 172,
+      "content": "|  Values | -  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 197,
+      "bottomRightX": 742,
+      "bottomRightY": 251,
+      "content": "Initializes the aperture and makes it ready for use. The aperture position after initialization is implementation dependent. This feature is only implemented if an additional initialization is required after OpticControllerInitialize.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 266,
+      "bottomRightX": 287,
+      "bottomRightY": 287,
+      "content": "### 23.4.15 ApertureStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 289,
+      "bottomRightX": 553,
+      "bottomRightY": 627,
+      "content": "|  Name | ApertureStatus[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | NotConnected NotInitialized NotSupported Busy Ready Error Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 651,
+      "bottomRightX": 264,
+      "bottomRightY": 669,
+      "content": "Reads the status of the aperture.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 677,
+      "bottomRightX": 188,
+      "bottomRightY": 694,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 702,
+      "bottomRightX": 622,
+      "bottomRightY": 830,
+      "content": "- NotConnected: The aperture controller is physically not connected.\n- NotInitialized: The aperture controller is not initialized.\n- NotSupported: The aperture controller is physically connected but not supported.\n- Busy: The aperture controller executes a feature access/command.\n- Ready: The aperture controller is ready to use.\n- Error: The aperture controller encountered an error.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 848,
+      "bottomRightX": 232,
+      "bottomRightY": 868,
+      "content": "### 23.4.16 Aperture",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 870,
+      "bottomRightX": 497,
+      "bottomRightY": 926,
+      "content": "|  Name | Aperture[OpticControllerSelector]  |\n| --- | --- |\n|  Category | OpticControl  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 432 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

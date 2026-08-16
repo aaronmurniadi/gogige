@@ -1,0 +1,6 @@
+|   |  |  | GenICam standard. Specified that features with big value such as GevMACAddress, GEVTimestampTickFrequency and GEVTimestampValue must be returned as a single 64 bit values.  |
+| --- | --- | --- | --- |
+|  Release 1.00.00 | 20.06.2007 | Stephane Maurice, Matrox | Final release Version 1.00 Note: This release includes all the features as they were defined in the draft 1.00.02 referenced in the final GigE Vision specification version 1.00.  |
+|  Draft 1.01.01 | 04.07.2007 | Vincent Rowley, Pleora Technologies Inc. | Added SensorTaps, SensorDigitizationTaps, GevCurrentIPConfigurationLLA, GevCurrentIPConfigurationDHCP, GevCurrentIPConfigurationPersistentIP and GevIPConfigurationStatus features. Deprecated GevCurrentIPConfiguration. Added OpenAccess to the list of valid values for the GevCCP feature.  |
+|  Draft 1.01.02 | 24.07.2007 | Stephane Maurice Matrox | Added the PixelFormat description chapter and note about zero based user bits.  |
+|  Release 1.1 | 2.10.2007 | Stephane Maurice, Matrox | Final release Version 1.1  |

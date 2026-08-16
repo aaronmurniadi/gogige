@@ -1,0 +1,142 @@
+{
+  "index": 97,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 24,
+      "bottomRightX": 690,
+      "bottomRightY": 100,
+      "content": "|  GEN<i>CAM |   | ![img-13.jpeg](img-13.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 117,
+      "bottomRightX": 412,
+      "bottomRightY": 195,
+      "content": "|  Unit | -  |\n| --- | --- |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 218,
+      "bottomRightX": 354,
+      "bottomRightY": 235,
+      "content": "Minor version of the Transport Layer of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 272,
+      "bottomRightX": 314,
+      "bottomRightY": 290,
+      "content": "3.27 DeviceTLVersionSubMinor",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 293,
+      "bottomRightX": 412,
+      "bottomRightY": 493,
+      "content": "|  Name | DeviceTLVersionSubMinor  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 516,
+      "bottomRightX": 378,
+      "bottomRightY": 533,
+      "content": "Sub minor version of the Transport Layer of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 547,
+      "bottomRightX": 316,
+      "bottomRightY": 567,
+      "content": "3.28 DeviceGenCPVersionMajor",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 569,
+      "bottomRightX": 326,
+      "bottomRightY": 768,
+      "content": "|  Name | DeviceGenCPVersionMajor  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 792,
+      "bottomRightX": 417,
+      "bottomRightY": 810,
+      "content": "Major version of the GenCP protocol supported by the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 822,
+      "bottomRightX": 318,
+      "bottomRightY": 841,
+      "content": "3.29 DeviceGenCPVersionMinor",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 844,
+      "bottomRightX": 326,
+      "bottomRightY": 946,
+      "content": "|  Name | DeviceGenCPVersionMinor  |\n| --- | --- |\n|  Category | DeviceControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 951,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 951,
+      "bottomRightX": 360,
+      "bottomRightY": 967,
+      "content": "Page 98 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "index": 23,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 753,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | ![img-28.jpeg](img-28.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 184,
+      "bottomRightX": 253,
+      "bottomRightY": 202,
+      "content": "#### 3.1.12 Polarized Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 210,
+      "bottomRightX": 739,
+      "bottomRightY": 279,
+      "content": "Filters array variants are explicitly listed in this specification to reduce the number of possible pixel formats and thus overall complexity. If new sensors with a different filter array structure are released this filter array definition must be added to this specification. Every new filter array will result in a new subsection in this document.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 295,
+      "bottomRightX": 203,
+      "bottomRightY": 312,
+      "content": "##### Naming the formats",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 315,
+      "bottomRightX": 731,
+      "bottomRightY": 369,
+      "content": "Naming is prefixed by POL (for Polarized) followed by the filter kernel size (x and y) followed by the type (M for monochrome or C for color) and a number if there are several different variations possible. The format's name will be listed in the FPNC-Specification within the following chapters.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 369,
+      "bottomRightX": 736,
+      "bottomRightY": 402,
+      "content": "In order to allow for a X and/or Y mirroring of the components there can be an added X for flip at X axis and/or a Y for flip at Y axis.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 410,
+      "bottomRightX": 534,
+      "bottomRightY": 428,
+      "content": "POL22M1: Polarized filter array 2x2 pixels according to POL22M1 below",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 435,
+      "bottomRightX": 413,
+      "bottomRightY": 454,
+      "content": "POL22M1X: As above but filter array is reversed by x.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 461,
+      "bottomRightX": 413,
+      "bottomRightY": 479,
+      "content": "POL22M1Y: As above but filter array is reversed by y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 486,
+      "bottomRightX": 462,
+      "bottomRightY": 506,
+      "content": "POL22M1XY: As above but filter array is reversed by x and y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 519,
+      "bottomRightX": 203,
+      "bottomRightY": 537,
+      "content": "##### POL22M1 Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 546,
+      "bottomRightX": 482,
+      "bottomRightY": 564,
+      "content": "POL22M1 defines a 2 by 2 filter array with no color filter applied.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 338,
+      "topLeftY": 587,
+      "bottomRightX": 475,
+      "bottomRightY": 649,
+      "content": "|  90 | 45  |\n| --- | --- |\n|  135 | 0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 312,
+      "topLeftY": 657,
+      "bottomRightX": 500,
+      "bottomRightY": 676,
+      "content": "Figure 3-24 POL22M1 array",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 708,
+      "bottomRightX": 380,
+      "bottomRightY": 728,
+      "content": "Example of a complete code with 8 bits per pixel:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 733,
+      "bottomRightX": 330,
+      "bottomRightY": 752,
+      "content": "POL22M1_8: As defined in above figure.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 759,
+      "bottomRightX": 310,
+      "bottomRightY": 778,
+      "content": "POL22M1XY_8: Reversed by x and y",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 24 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

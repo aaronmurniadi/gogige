@@ -1,0 +1,112 @@
+{
+  "index": 455,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 144,
+      "bottomRightX": 677,
+      "bottomRightY": 325,
+      "content": "- Ultraviolet: The image data is the ultraviolet component.\n- Range: The image data is the range component (distance or depth).\n- Reflectance: The image data is the reflected intensity component (acquired with the Range).\n- Disparity: The image data is the disparity component.\n- Confidence: The image data is the confidence map component.\n- Scatter: The image data is the scatter component.\n- Multispectral: The image data is the multispectral component.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 365,
+      "bottomRightX": 301,
+      "bottomRightY": 386,
+      "content": "### 24.10 ChunkComponentID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 387,
+      "bottomRightX": 396,
+      "bottomRightY": 778,
+      "content": "|  Name | ChunkComponentID  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Intensity Infrared Ultraviolet Range Reflectance Disparity Confidence Scatter Multispectral Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 803,
+      "bottomRightX": 742,
+      "bottomRightY": 841,
+      "content": "Returns the Identifier of the selected Component. This can be used to identify the image component type of a multi-component payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 847,
+      "bottomRightX": 718,
+      "bottomRightY": 884,
+      "content": "For example, the Intensity and Scatter Components of a multi-component data buffer may be of the same pixel format and impossible to distinguish without this information.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 890,
+      "bottomRightX": 499,
+      "bottomRightY": 909,
+      "content": "This generally maps to the corresponding ComponentSelector feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 917,
+      "bottomRightX": 187,
+      "bottomRightY": 933,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 970,
+      "content": "Page 456 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

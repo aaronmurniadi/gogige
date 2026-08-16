@@ -1,0 +1,175 @@
+{
+  "index": 405,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GEN<icCAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 568,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 120,
+      "topLeftY": 136,
+      "bottomRightX": 438,
+      "bottomRightY": 180,
+      "content": "- CoordinateB: The second (Y or Phi) coordinate\n- CoordinateC: The third (Z or Rho) coordinate.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 189,
+      "bottomRightX": 622,
+      "bottomRightY": 207,
+      "content": "An example using this to setup scaling and offset of a Cartesian data stream is given below.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 213,
+      "bottomRightX": 496,
+      "bottomRightY": 329,
+      "content": "// Get Scale & offset, for all 3 coordinates\nScan3dCoordinateSelector = CoordinateA;    // CoordinateA - X\nscaleA = Scan3dCoordinateScale[CoordinateA];    // e.g. 0.5\noffsetA = Scan3dCoordinateOffset[CoordinateA]; // e.g. -500\n\nScan3dCoordinateSelector = CoordinateB;    // CoordinateB - Y\nscaleB = Scan3dCoordinateScale[CoordinateB];    // e.g. 0.5\noffsetB = Scan3dCoordinateOffset[CoordinateB]; // e.g.-500",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 343,
+      "bottomRightX": 495,
+      "bottomRightY": 400,
+      "content": "// Negative scale & large offset to switch Z direction.\nScan3dCoordinateSelector = CoordinateC;    // CoordinateC - Z\nscaleC = Scan3dCoordinateScale[CoordinateA];    // e.g. -0.12\noffsetC = Scan3dCoordinateOffset[CoordinateA];    // e.g. 5000",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 435,
+      "bottomRightX": 355,
+      "bottomRightY": 453,
+      "content": "### 21.4.10 Scan3dCoordinateScale",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 456,
+      "bottomRightX": 661,
+      "bottomRightY": 670,
+      "content": "|  Name | Scan3dCoordinateScale[Scan3dExtractionSelector][Scan3dCoordinateSelector]  |\n| --- | --- |\n|  Category | Scan3dControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 694,
+      "bottomRightX": 591,
+      "bottomRightY": 711,
+      "content": "Scale factor when transforming a pixel from relative coordinates to world coordinates.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 713,
+      "bottomRightX": 726,
+      "bottomRightY": 748,
+      "content": "A negative scale mirrors the axis. For rectified image axes it is the distance between samples in the rectified image along this axis. See example below.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 763,
+      "bottomRightX": 360,
+      "bottomRightY": 782,
+      "content": "### 21.4.11 Scan3dCoordinateOffset",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 785,
+      "bottomRightX": 671,
+      "bottomRightY": 947,
+      "content": "|  Name | Scan3dCoordinateOffset[Scan3dExtractionSelector][Scan3dCoordinateSelector]  |\n| --- | --- |\n|  Category | Scan3dControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/(Write)  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 406 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "index": 590,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | ![img-197.jpeg](img-197.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 145,
+      "bottomRightX": 261,
+      "bottomRightY": 164,
+      "content": "2X2M-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 213,
+      "topLeftY": 174,
+      "bottomRightX": 591,
+      "bottomRightY": 193,
+      "content": "2 zones in X with 2 taps and middle extraction, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 205,
+      "bottomRightX": 493,
+      "bottomRightY": 344,
+      "content": "![img-198.jpeg](img-198.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-198.jpeg"
+    },
+    {
+      "topLeftX": 253,
+      "topLeftY": 349,
+      "bottomRightX": 551,
+      "bottomRightY": 370,
+      "content": "Figure 29-25: Geometry 2X2M-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 401,
+      "bottomRightX": 230,
+      "bottomRightY": 421,
+      "content": "2X2M (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 253,
+      "topLeftY": 430,
+      "bottomRightX": 551,
+      "bottomRightY": 449,
+      "content": "2 zones in X with 2 taps and middle extraction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 461,
+      "bottomRightX": 493,
+      "bottomRightY": 498,
+      "content": "![img-199.jpeg](img-199.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-199.jpeg"
+    },
+    {
+      "topLeftX": 266,
+      "topLeftY": 509,
+      "bottomRightX": 538,
+      "bottomRightY": 527,
+      "content": "Figure 29-26: Geometry 2X2M (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 535,
+      "bottomRightX": 258,
+      "bottomRightY": 554,
+      "content": "1X2-2YE (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 222,
+      "topLeftY": 563,
+      "bottomRightX": 583,
+      "bottomRightY": 583,
+      "content": "1 zone in X with 2 taps, 2 zones in Y with end extraction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 594,
+      "bottomRightX": 493,
+      "bottomRightY": 733,
+      "content": "![img-200.jpeg](img-200.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-200.jpeg"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 740,
+      "bottomRightX": 549,
+      "bottomRightY": 760,
+      "content": "Figure 29-27: Geometry 1X2-2YE (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 591 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "index": 128,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-175.jpeg](img-175.jpeg) CAM |   | ![img-176.jpeg](img-176.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 278,
+      "bottomRightY": 157,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 192,
+      "content": "The event has not previously been registered through GCRegisterEvent or no preceding call to GCInitLib has been made.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 199,
+      "bottomRightX": 270,
+      "bottomRightY": 218,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 199,
+      "bottomRightX": 635,
+      "bottomRightY": 233,
+      "content": "The handle hModule is invalid (NULL) or does not reference a previously instantiated module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 240,
+      "bottomRightX": 278,
+      "bottomRightY": 260,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 240,
+      "bottomRightX": 635,
+      "bottomRightY": 275,
+      "content": "The specified event type is not implemented in the provided module of the GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 306,
+      "bottomRightX": 635,
+      "bottomRightY": 340,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 361,
+      "bottomRightX": 236,
+      "bottomRightY": 379,
+      "content": "### 6.4 Enumerations",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 388,
+      "bottomRightX": 355,
+      "bottomRightY": 406,
+      "content": "Enumeration values are signed 32 bit integers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 418,
+      "bottomRightX": 385,
+      "bottomRightY": 438,
+      "content": "#### 6.4.1 Library and System Enumerations",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 450,
+      "bottomRightX": 259,
+      "bottomRightY": 469,
+      "content": "##### 6.4.1.1 INFO_DATATYPE",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 491,
+      "bottomRightX": 244,
+      "bottomRightY": 507,
+      "content": "enum INFO_DATATYPE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 516,
+      "bottomRightX": 635,
+      "bottomRightY": 567,
+      "content": "Defines the data type possible for the various Info functions. The data type itself may define its size. For buffer or string types the piSize parameter must be used to query the actual amount of data being written.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 572,
+      "bottomRightX": 641,
+      "bottomRightY": 905,
+      "content": "|  Enumerator | Value | Description  |\n| --- | --- | --- |\n|  INFO_DATATYPE_UNKNOWN | 0 | Unknown data type. This value is never returned from a function but can be used to initialize the variable to inquire the type.  |\n|  INFO_DATATYPE_STRING | 1 | 0-terminated C string (encoding according to the TL_INFO_CHAR_ENCODING info command).  |\n|  INFO_DATATYPE_STRINGLIST | 2 | Concatenated INFO_DATATYPE_STRING list. End of list is signaled with an additional 0.  |\n|  INFO_DATATYPE_INT16 | 3 | Signed 16 bit integer.  |\n|  INFO_DATATYPE_UINT16 | 4 | Unsigned 16 bit integer.  |\n|  INFO_DATATYPE_INT32 | 5 | Signed 32 bit integer.  |\n|  INFO_DATATYPE_UINT32 | 6 | Unsigned 32 bit integer.  |\n|  INFO_DATATYPE_INT64 | 7 | Signed 64 bit integer.  |\n|  INFO_DATATYPE_UINT64 | 8 | Unsigned 64 bit integer.  |\n|  INFO_DATATYPE_FLOAT64 | 9 | Signed 64 bit floating point number.  |\n|  INFO_DATATYPE_PTR | 10 | Pointer type (void*). Size is platform dependent (32 bit on 32 bit platforms)  |\n|  INFO_DATATYPE_BOOL8 | 11 | Boolean value occupying 8 bit. 0 for false  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 129 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

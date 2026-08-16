@@ -1,0 +1,121 @@
+{
+  "index": 48,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-64.jpeg](img-64.jpeg)CAN |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 157,
+      "bottomRightX": 634,
+      "bottomRightY": 346,
+      "content": "![img-65.jpeg](img-65.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-65.jpeg"
+    },
+    {
+      "topLeftX": 144,
+      "topLeftY": 366,
+      "bottomRightX": 572,
+      "bottomRightY": 383,
+      "content": "Figure 5-6: Default acquisition from the GenTL Consumer's perspective",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 389,
+      "bottomRightX": 636,
+      "bottomRightY": 457,
+      "content": "The buffer acquired first (the oldest) is always delivered to the GenTL Consumer. No buffer is discarded or overwritten in the Output Buffer Queue. By successive calls to retrieve the event data (and thus the buffers) all filled buffers are delivered in the order they were acquired. This is done regardless of the time the buffer was filled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 464,
+      "bottomRightX": 636,
+      "bottomRightY": 531,
+      "content": "It is not defined which buffer is taken from the Input Buffer Pool if new image data is received. If no buffer is in the Input Buffer Pool (e.g., the requeuing rate falls behind the transfer rate over a sufficient amount of time), an incoming image will be lost. The acquisition engine will be stalled until a buffer is requeued.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 537,
+      "bottomRightX": 146,
+      "bottomRightY": 554,
+      "content": "#### Wrap-Up:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 104,
+      "topLeftY": 562,
+      "bottomRightX": 636,
+      "bottomRightY": 647,
+      "content": "- There is no defined order in which the buffers are taken from the Input Buffer Pool.\n- As soon as it is filled a buffer is placed at the end of the Output Buffer Queue.\n- The acquisition engine stalls if the Input Buffer Pool becomes empty and as long as a buffer is queued.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 668,
+      "bottomRightX": 294,
+      "bottomRightY": 688,
+      "content": "### 5.4 Chunk Data Handling",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 702,
+      "bottomRightX": 200,
+      "bottomRightY": 719,
+      "content": "#### 5.4.1 Overview",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 724,
+      "bottomRightX": 636,
+      "bottomRightY": 909,
+      "content": "The GenICam GenApi standard contains a notion of \"chunk data\". These are chunks of data present in a single buffer acquired from the device together with or without other payload type data. Each chunk is identified unequivocally by its ChunkID (up to 64Bit unsigned integer) which maps it to the corresponding port node in the remote device's XML description file. The information carried by individual chunks is described in the XML file. To address the data in the chunk the GenApi implementation must know the position (offset) of the chunk in the buffer and its size. The structure of the chunk data in the buffer is technology specific and it is therefore the responsibility of the GenTL Producer to parse the chunk data in the buffer (if there are any). To parse a buffer containing chunk data, the GenTL Consumer uses the function DSGetBufferChunkData which reports the number of chunks in the buffer and for each chunk its ChunkID, offset and size as an array of",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 49 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

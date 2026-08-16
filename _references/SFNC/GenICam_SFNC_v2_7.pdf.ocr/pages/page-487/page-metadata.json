@@ -1,0 +1,167 @@
+{
+  "index": 486,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 159,
+      "topLeftY": 54,
+      "bottomRightX": 304,
+      "bottomRightY": 83,
+      "content": "GEN<i>CAM</i></td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 99,
+      "bottomRightX": 119,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 99,
+      "bottomRightX": 403,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 54,
+      "bottomRightX": 577,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 87,
+      "bottomRightX": 622,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 141,
+      "bottomRightX": 432,
+      "bottomRightY": 213,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 230,
+      "bottomRightX": 580,
+      "bottomRightY": 248,
+      "content": "Return the index of the active set of the running sequencer included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 263,
+      "bottomRightX": 352,
+      "bottomRightY": 283,
+      "content": "### 24.58 ChunkScan3dDistanceUnit",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 285,
+      "bottomRightX": 524,
+      "bottomRightY": 570,
+      "content": "|  Name | ChunkScan3dDistanceUnit  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Millimeter Inch Pixel Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 595,
+      "bottomRightX": 363,
+      "bottomRightY": 613,
+      "content": "Returns the Distance Unit of the payload image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 622,
+      "bottomRightX": 187,
+      "bottomRightY": 637,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 129,
+      "topLeftY": 648,
+      "bottomRightX": 564,
+      "bottomRightY": 720,
+      "content": "- Millimeter: Default value. Distance values are in millimeter units.\n- Inch: Distance values are in inch units.\n- Pixel: Distance values are given as a multiple of the size of a pixel.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 760,
+      "bottomRightX": 347,
+      "bottomRightY": 781,
+      "content": "### 24.59 ChunkScan3dOutputMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 782,
+      "bottomRightX": 524,
+      "bottomRightY": 944,
+      "content": "|  Name | ChunkScan3dOutputMode  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 487 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 623,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

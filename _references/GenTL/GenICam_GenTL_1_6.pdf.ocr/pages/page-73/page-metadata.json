@@ -1,0 +1,264 @@
+{
+  "index": 72,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-103.jpeg](img-103.jpeg)CAN |   | ![img-104.jpeg](img-104.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 137,
+      "bottomRightX": 194,
+      "bottomRightY": 156,
+      "content": "##### 6.3.2.6 TLOpen",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 176,
+      "bottomRightX": 224,
+      "bottomRightY": 194,
+      "content": "GC ERROR TLOpen",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 176,
+      "bottomRightX": 549,
+      "bottomRightY": 194,
+      "content": "( TL_HANDLE * phSystem )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 203,
+      "bottomRightX": 635,
+      "bottomRightY": 255,
+      "content": "Opens the System module and puts the instance in the phSystem handle. This allocates all system wide resources. Call the GCInitLib function before this function. A System module can only be opened once.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 269,
+      "bottomRightX": 166,
+      "bottomRightY": 283,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 288,
+      "bottomRightX": 194,
+      "bottomRightY": 307,
+      "content": "[out] phSystem",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 288,
+      "bottomRightX": 604,
+      "bottomRightY": 357,
+      "content": "System module handle of the newly opened system. It is recommended to initialize *phSystem to GENTL_INVALID_HANDLE before calling TLOpen to indicate an invalid handle.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 371,
+      "bottomRightX": 141,
+      "bottomRightY": 386,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 391,
+      "bottomRightX": 208,
+      "bottomRightY": 410,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 391,
+      "bottomRightX": 569,
+      "bottomRightY": 410,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 418,
+      "bottomRightX": 278,
+      "bottomRightY": 435,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 418,
+      "bottomRightX": 510,
+      "bottomRightY": 435,
+      "content": "No preceding call to GCInitLib",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 443,
+      "bottomRightX": 278,
+      "bottomRightY": 461,
+      "content": "GC_ERR_RESOURCE_IN_USE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 443,
+      "bottomRightX": 635,
+      "bottomRightY": 479,
+      "content": "The TL module has already been instantiated through a previous call to TLOpen.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 486,
+      "bottomRightX": 295,
+      "bottomRightY": 503,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 485,
+      "bottomRightX": 635,
+      "bottomRightY": 519,
+      "content": "Parameter phSystem is an invalid pointer (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 528,
+      "bottomRightX": 260,
+      "bottomRightY": 545,
+      "content": "GC_ERR_ACCESS_DENIED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 527,
+      "bottomRightX": 635,
+      "bottomRightY": 578,
+      "content": "The access to the requested System module is denied. This may be because it is already opened by another process but it might have other reasons as well.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 608,
+      "bottomRightX": 635,
+      "bottomRightY": 643,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 655,
+      "bottomRightX": 254,
+      "bottomRightY": 675,
+      "content": "##### 6.3.2.7 TLOpenInterface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 697,
+      "bottomRightX": 303,
+      "bottomRightY": 713,
+      "content": "GC ERROR TLOpenInterface",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 697,
+      "bottomRightX": 573,
+      "bottomRightY": 747,
+      "content": "( TL_HANDLE hSystem,\nconst char * sIfaceID,\nIF_HANDLE * phIface )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 756,
+      "bottomRightX": 364,
+      "bottomRightY": 773,
+      "content": "Opens the given sIfaceID on the given hSystem.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 780,
+      "bottomRightX": 635,
+      "bottomRightY": 816,
+      "content": "Any subsequent call to TLOpenInterface with an sIfaceID which has already been opened will return the error GC_ERR_RESOURCE_IN_USE.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 822,
+      "bottomRightX": 635,
+      "bottomRightY": 892,
+      "content": "The interface ID need not match the one returned from TLGetInterfaceID. As long as the GenTL Producer knows how to interpret that ID it will return a valid handle. For example, if in a specific implementation the interface has a user-defined name, this function will return a valid handle as long as the provided name refers to an internally known interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 73 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

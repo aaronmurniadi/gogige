@@ -1,0 +1,149 @@
+{
+  "index": 398,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 735,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 135,
+      "bottomRightX": 709,
+      "bottomRightY": 172,
+      "content": "Note: Pixel unit can be used if the distance data is given as a disparity image (e.g. output of stereo matching), since disparity is a displacement in the image plane, which is measured in pixel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 728,
+      "bottomRightY": 215,
+      "content": "Device specific values can be used to indicate other meaning to distance data. The angle unit used is degrees.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 229,
+      "bottomRightX": 363,
+      "bottomRightY": 251,
+      "content": "### 21.4.6 Scan3dCoordinateSystem",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 253,
+      "bottomRightX": 515,
+      "bottomRightY": 538,
+      "content": "|  Name | Scan3dCoordinateSystem[Scan3dExtractionSelector]  |\n| --- | --- |\n|  Category | Scan3dControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Cartesian Spherical Cylindrical Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 562,
+      "bottomRightX": 389,
+      "bottomRightY": 581,
+      "content": "Specifies the Coordinate system to use for the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 587,
+      "bottomRightX": 750,
+      "bottomRightY": 622,
+      "content": "Note that the third coordinate, C, is the \"distance\" (Z or Rho) coordinates independent of the coordinate system used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 631,
+      "bottomRightX": 178,
+      "bottomRightY": 647,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 657,
+      "bottomRightX": 496,
+      "bottomRightY": 729,
+      "content": "- Cartesian: Default value. 3-axis orthogonal, right-hand X-Y-Z.\n- Spherical: A Theta-Phi-Rho coordinate system.\n- Cylindrical: A Theta-Y-Rho coordinate system.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 736,
+      "bottomRightX": 704,
+      "bottomRightY": 773,
+      "content": "In addition to the previous standard values, a device might also provide device-specific values (e.g. non-orthogonal coordinate system).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 787,
+      "bottomRightX": 310,
+      "bottomRightY": 808,
+      "content": "### 21.4.7 Scan3dOutputMode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 810,
+      "bottomRightX": 515,
+      "bottomRightY": 945,
+      "content": "|  Name | Scan3dOutputMode[Scan3dExtractionSelector]  |\n| --- | --- |\n|  Category | Scan3dControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/(Write)  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 399 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

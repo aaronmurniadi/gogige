@@ -1,0 +1,129 @@
+{
+  "index": 374,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 134,
+      "bottomRightX": 466,
+      "bottomRightY": 166,
+      "content": "Scan3dCoordinateOffset[Scan3dExtraction0] = 125;\nScan3dCoordinateScale[Scan3dExtraction0][CoordinateC] = 0.14;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 177,
+      "bottomRightX": 541,
+      "bottomRightY": 295,
+      "content": "// 1.c. Setup 3D Processing output Region and Components.\nRegionSelector = Scan3dExtraction0;\nRegionMode[Scan3dExtraction0] = On; // Transmit 3D Scan Extraction.\nWidth[Scan3dExtraction0] = 100; // Number of columns outbut buffer.\nHeight[Scan3dExtraction0] = 500; // Scans/Rows per output buffer.\nComponentSelector[Scan3dExtraction0] = Range;\nComponentEnable[Scan3dExtraction0][Range] = True;\nPixelFormat[Scan3dExtraction0][Range] = Coord3D_ABC32f;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 308,
+      "bottomRightX": 428,
+      "bottomRightY": 336,
+      "content": "// 2. Dataflow: Region1 -> Scan3dExtraction1 -> Stream0\n// ---",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 350,
+      "bottomRightX": 445,
+      "bottomRightY": 452,
+      "content": "// 2.a. Setup Sensor Region output.\nRegionSelector = Region1;\nRegionMode[Region1] = On; // Transmit Sensor Region.\nHeight[Region1] = 256; // Number of rows on sensor.\nWidth[Region1] = 100; // Number of columns on sensor.\nOffsetX[Region1] = 512; // Position on sensor.\nOffsetY[Region1] = 25; // Position on sensor.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 466,
+      "bottomRightX": 472,
+      "bottomRightY": 568,
+      "content": "// 2.b. Setup 3D Processing Module source and parameters.\nScan3dExtractionSelector = Scan3dExtraction1;\nScan3dOutputMode[Scan3dExtraction1] = CalibratedC;\nScan3dExtractionSource[Scan3dExtraction1] = Region1;\nScan3dExtractionMethod[Scan3dExtraction1] = Default;\nScan3dCoordinateOffset[Scan3dExtraction1] = 125;\nScan3dCoordinateScale[Scan3dExtraction1][CoordinateC] = 0.14;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 581,
+      "bottomRightX": 541,
+      "bottomRightY": 698,
+      "content": "// 2.c. Setup Processing Region functionality\nRegionSelector = Scan3dExtraction1;\nRegionMode[Scan3dExtraction1] = On; // Transmit 3D Scan Extraction.\nWidth[Scan3dExtraction1] = 100; // Number of columns outbut buffer.\nHeight[Scan3dExtraction1] = 500; // Scans per buffer.\nComponentSelector[Scan3dExtraction1] = Range;\nComponentEnable[Scan3dExtraction1][Range] = True;\nPixelFormat[Scan3dExtraction1][Range] = Coord3D_ABC32f;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 711,
+      "bottomRightX": 428,
+      "bottomRightY": 739,
+      "content": "// 3. Dataflow: Region2 -> Scan3dExtraction2 -> Stream0\n// ---",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 754,
+      "bottomRightX": 445,
+      "bottomRightY": 855,
+      "content": "// 3.a. Setup Sensor Region output.\nRegionSelector = Region2;\nRegionMode[Region2] = On; // Transmit Sensor Region.\nHeight[Region2] = 256; // Number of rows on sensor.\nWidth[Region2] = 200; // Number of columns on sensor.\nOffsetX[Region2] = 50; // position on sensor.\nOffsetY[Region2] = 400; // position on sensor.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 869,
+      "bottomRightX": 472,
+      "bottomRightY": 942,
+      "content": "// 3.b. Setup 3D Processing Module source and parameters.\nScan3dExtractionSelector = Scan3dExtraction2;\nScan3dOutputMode[Scan3dExtraction2] = CalibratedC;\nScan3dExtractionSource[Scan3dExtraction2] = Region2;\nScan3dExtractionMethod[Scan3dExtraction2] = Default;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 384,
+      "bottomRightY": 970,
+      "content": "Page 375 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

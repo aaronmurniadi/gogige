@@ -1,0 +1,131 @@
+{
+  "index": 52,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 97,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 118,
+      "bottomRightX": 483,
+      "bottomRightY": 138,
+      "content": "## Appendix C GenDC Container typical transmission scenarios",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 157,
+      "bottomRightX": 706,
+      "bottomRightY": 226,
+      "content": "This appendix presents some possible scenarios on how GenDC Container could be transmitted on various TLs (for illustration purpose only). Those scenarios are not part of the GenDC Container format definition itself since this specification only target to describe what the Container content is and to be Transport Layer agnostic on the way how it is transported.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 239,
+      "bottomRightX": 625,
+      "bottomRightY": 259,
+      "content": "### C.1 GenDC Container typical streaming using single and multiple data Flows",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 139,
+      "topLeftY": 298,
+      "bottomRightX": 565,
+      "bottomRightY": 318,
+      "content": "#### Typical GenDC Data Container Transmission using Flows:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 128,
+      "topLeftY": 331,
+      "bottomRightX": 578,
+      "bottomRightY": 349,
+      "content": "(Linear or parallel transmission of one Container including multiple Components)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 26,
+      "topLeftY": 380,
+      "bottomRightX": 360,
+      "bottomRightY": 400,
+      "content": "#### GenDC Container and single Flow transport:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 26,
+      "topLeftY": 418,
+      "bottomRightX": 740,
+      "bottomRightY": 507,
+      "content": "![img-20.jpeg](img-20.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-20.jpeg"
+    },
+    {
+      "topLeftX": 28,
+      "topLeftY": 514,
+      "bottomRightX": 445,
+      "bottomRightY": 535,
+      "content": "#### Typical GenDC Container and multiple Flows Transport:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 26,
+      "topLeftY": 548,
+      "bottomRightX": 740,
+      "bottomRightY": 821,
+      "content": "![img-21.jpeg](img-21.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-21.jpeg"
+    },
+    {
+      "topLeftX": 192,
+      "topLeftY": 847,
+      "bottomRightX": 544,
+      "bottomRightY": 876,
+      "content": "Figure 5-16: Typical GenDC Container's transmission using TL data Flows (One Container including multiple Components)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 82,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 53 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

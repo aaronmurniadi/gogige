@@ -1,0 +1,122 @@
+{
+  "index": 125,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 696,
+      "bottomRightY": 213,
+      "content": "This information refers for example to the information provided in the GigE Vision image stream block id. For other technologies, this is to be implemented accordingly. The wrap around of this number is transportation technology dependent",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 220,
+      "bottomRightX": 673,
+      "bottomRightY": 239,
+      "content": "Corresponds to the BUFFER_INFO_FRAMEID command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 253,
+      "bottomRightX": 325,
+      "bottomRightY": 272,
+      "content": "### 3.5.2.23 BufferImagePresent",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 273,
+      "bottomRightX": 421,
+      "bottomRightY": 504,
+      "content": "|  Name | BufferImagePresent  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 529,
+      "bottomRightX": 512,
+      "bottomRightY": 548,
+      "content": "Flag to indicate if the current data in the buffer contains image data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 554,
+      "bottomRightX": 696,
+      "bottomRightY": 592,
+      "content": "This information refers for example to the information provided in the GigE Vision image stream data leader. For other technologies, this is to be implemented accordingly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 599,
+      "bottomRightX": 652,
+      "bottomRightY": 635,
+      "content": "Corresponds to the BUFFER_INFO_IMAGEPRESET command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 649,
+      "bottomRightX": 311,
+      "bottomRightY": 669,
+      "content": "### 3.5.2.24 BufferImageOffset",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 671,
+      "bottomRightX": 421,
+      "bottomRightY": 884,
+      "content": "|  Name | BufferImageOffset  |\n| --- | --- |\n|  Category | BufferDataInformation  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | Byte  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 126 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

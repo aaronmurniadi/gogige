@@ -1,0 +1,114 @@
+{
+  "index": 49,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 264,
+      "content": "|  Access | Read/Write  |\n| --- | --- |\n|  Unit | ms  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 289,
+      "bottomRightX": 444,
+      "bottomRightY": 307,
+      "content": "Specifies timeout for the InterfaceUpdateList Command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 323,
+      "bottomRightX": 268,
+      "bottomRightY": 339,
+      "content": "### 3.1.2.4 InterfaceSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 343,
+      "bottomRightX": 421,
+      "bottomRightY": 555,
+      "content": "|  Name | InterfaceSelector  |\n| --- | --- |\n|  Category | InterfaceEnumeration  |\n|  Level | Mandatory  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 580,
+      "bottomRightX": 686,
+      "bottomRightY": 632,
+      "content": "Selector for the different GenTL Producer interfaces. This interface list only changes on execution of \"InterfaceUpdateList\". The selector is 0-based in order to match the index of the C interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 649,
+      "bottomRightX": 225,
+      "bottomRightY": 666,
+      "content": "### 3.1.2.5 InterfaceID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 670,
+      "bottomRightX": 421,
+      "bottomRightY": 883,
+      "content": "|  Name | InterfaceID[InterfaceSelector]  |\n| --- | --- |\n|  Category | InterfaceEnumeration  |\n|  Level | Mandatory  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 907,
+      "bottomRightX": 491,
+      "bottomRightY": 925,
+      "content": "GenTL Producer wide unique identifier of the selected interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 927,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 427,
+      "bottomRightY": 944,
+      "content": "Page 50 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

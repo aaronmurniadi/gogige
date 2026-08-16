@@ -1,0 +1,102 @@
+{
+  "index": 34,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-41.jpeg](img-41.jpeg) CAM |   | ![img-42.jpeg](img-42.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 138,
+      "bottomRightX": 373,
+      "bottomRightY": 180,
+      "content": "• xml for uncompressed XML description files\n• zip for zip-compressed XML description files",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 195,
+      "bottomRightX": 195,
+      "bottomRightY": 213,
+      "content": "#### 4.1.3 Example",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 215,
+      "bottomRightX": 420,
+      "bottomRightY": 233,
+      "content": "This sampel shows how to retrieve the Port module xmls.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 238,
+      "bottomRightX": 565,
+      "bottomRightY": 661,
+      "content": "{\n    // Retrieve the number of available URLs\n    GCGetNumPortURLs( hModule, NumURLs );\n    for( i=0; i<NumURLs; i++ )\n    {\n    URLSize = 0;\n    GCGetPortURLInfo( hModule, i, URL_INFO_URL, 0, 0, &URLSize );\n\n    // Retrieve an string buffer to store the URL\n    GCGetPortURLInfo( hModule, i, URL_INFO_URL, 0, pURL, &URLSize );\n\n    if ( ParseURLLocation( pURL ) == local )\n    {\n    // Retrieve the address within the module register map from the URL\n    Addr = ParseURLLocalAddress( pURL );\n    Length = ParseURLLocalLength( pURL );\n    // Retrieve an XMLBuffer to store the XML with the size Length\n    ...\n    // Load xml from local register map into memory\n    GCReadPort( hModule, Addr, XMLBuffer, Length );\n    }\n    }\n}",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 686,
+      "bottomRightX": 199,
+      "bottomRightY": 707,
+      "content": "### 4.2 Signaling",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 713,
+      "bottomRightX": 636,
+      "bottomRightY": 798,
+      "content": "The Signaling is used to notify the GenTL Consumer on asynchronous events. Usually all the communication is initiated by the GenTL Consumer. With an event the GenTL Consumer can get notified on specific GenTL Producer operations. This mechanism is an implementation of the observer pattern where the calling GenTL Consumer is the observer and the GenTL Producer is being observed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 804,
+      "bottomRightX": 637,
+      "bottomRightY": 891,
+      "content": "The reason why an event object approach was chosen rather than callback functions is mainly thread priority problems. A callback function to signal the arrival of a new buffer is normally executed in the thread context of the acquisition engine. Thus all processing in this callback function is done also with its priority. If no additional precautions are taken the acquisition engine is blocked as long the callback function does processing.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 944,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 35 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

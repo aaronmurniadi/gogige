@@ -1,0 +1,93 @@
+{
+  "index": 86,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 291,
+      "bottomRightY": 60,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 548,
+      "bottomRightY": 80,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 549,
+      "topLeftY": 65,
+      "bottomRightX": 590,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 76,
+      "bottomRightX": 119,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 173,
+      "topLeftY": 76,
+      "bottomRightX": 385,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 107,
+      "bottomRightX": 927,
+      "bottomRightY": 297,
+      "content": "|  CxpErrorCounterStatus[CxpConnection Selector][CxpErrorCounterSelector] | R | IEnumeration | R | - | E | Returns the current status of the selected Cxp Error Counter on the connection selected by CxpConnectionSelector.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  CxpPoCxpAuto | O | ICommand | W | - | E | Activate automatic control of the Power over CoaXPress (PoCXP) for the Link.  |\n|  CxpPoCxpTurnOff | O | ICommand | W | - | E | Disable Power over CoaXPress (PoCXP) for the Link.  |\n|  CxpPoCxpTripReset | O | ICommand | W | - | E | Reset the Power over CoaXPress (PoCXP) Link after an over-current trip on the Device connection(s).  |\n|  CxpPoCxpStatus | O | IEnumeration | R | - | E | Returns the Power over CoaXPress (PoCXP) status of the Device.  |\n|  CxpFirstLineTriggerWithFrameStart | O | IBoolean | R/(W) | - | E | Specifies if a FrameStart trigger also triggers the first LineStart at the same time.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 652,
+      "bottomRightX": 120,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 283,
+      "topLeftY": 652,
+      "bottomRightX": 373,
+      "bottomRightY": 668,
+      "content": "Page 87 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 423,
+      "topLeftY": 654,
+      "bottomRightX": 591,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

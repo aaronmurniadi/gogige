@@ -1,0 +1,150 @@
+{
+  "index": 563,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 558,
+      "bottomRightY": 239,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | Ready NotReady NotUsed  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 263,
+      "bottomRightX": 509,
+      "bottomRightY": 282,
+      "content": "This feature provides the data sharing status for the selected sub device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 289,
+      "bottomRightX": 187,
+      "bottomRightY": 305,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 314,
+      "bottomRightX": 413,
+      "bottomRightY": 382,
+      "content": "- Ready: The sub device selected is ready.\n- NotReady: The sub device selected is not ready.\n- NotUsed: The sub device selected is not used.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 423,
+      "bottomRightX": 430,
+      "bottomRightY": 445,
+      "content": "### 27.7.8 CxpLinkSharingSubDeviceType",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 446,
+      "bottomRightX": 635,
+      "bottomRightY": 688,
+      "content": "|  Name | CxpLinkSharingSubDeviceType  |\n| --- | --- |\n|  Category | CoaXPress  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Master Slave  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 712,
+      "bottomRightX": 340,
+      "bottomRightY": 730,
+      "content": "This feature provides the type of sub device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 738,
+      "bottomRightX": 187,
+      "bottomRightY": 754,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 764,
+      "bottomRightX": 345,
+      "bottomRightY": 805,
+      "content": "- Master: The sub device is the master.\n- Slave: The sub device is a slave.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 846,
+      "bottomRightX": 487,
+      "bottomRightY": 867,
+      "content": "### 27.7.9 CxpLinkSharingHorizontalStripeCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 869,
+      "bottomRightX": 670,
+      "bottomRightY": 927,
+      "content": "|  Name | CxpLinkSharingHorizontalStripeCount  |\n| --- | --- |\n|  Category | CoaXPress  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 564 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

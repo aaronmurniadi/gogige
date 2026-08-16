@@ -1,0 +1,7 @@
+|  ![img-4.jpeg](img-4.jpeg) CAM |   | ![img-5.jpeg](img-5.jpeg) emva  |
+| --- | --- | --- |
+|  Version 1.6 | GenTL Standard  |   |
+
+|   |  |  | multiprocess access, default buffer handling modeAdded Chunk Data handling in text and function interfaceAdjusted Data Stream features to SFNCAdded “Software Interface Version” chapterAdded ptrdiff_t typeNew error codeGC_ERR_INVALID_ADDRESSDeprecation of StreamAcquisitionModeSelector, introducing StreamBufferHandlingMode instead.Clarified buffer alignment  |
+| --- | --- | --- | --- |
+|  1.4 | March 2013 | GenTL Subcommittee | Changes for V. 1.4New PAYLOADTYPE_IDs including the ones necessary to reflect GEV2.0 types. Adjusted Chunk-Payloadtypes.TyposClarificationsRemoved technology specific names from chapter 7 and referred to GenTL SFNCRenamed of TLTYPE USB3 to U3VAdded functions to retrieve the parent modulesAdded DEVICE_INFO_commandsAdded PORT_INFO_commandAdded Pixel EndiannessAdded numeric constants for infinite timeouts and invalid handles.Added clarification that SchemaVersion as part of the URL is only to be used with legacyGCGetPortURL functionAdded BUFFER_INFO_DATA_SIZE and explanationAdded ZIP clarificationAdded BUFFER_INFO_TIMESTAMP_NS and DEVICE_INFO_TIMESTAMP_FREQUENCYChanged ‘revision’ to ‘version’Clarification ofSTREAM_INFO_NUM_DELIVEREDAdded reference to SFNC Transfer Control features.Clarification on Module enumeration issuesAdded reference to GenTL SFNCAdded PFNC to PixelFormat NamespacesExtended return code information for GenTL functionsAdded UTF8 encoding  |

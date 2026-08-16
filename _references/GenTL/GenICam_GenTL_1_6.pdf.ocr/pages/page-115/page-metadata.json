@@ -1,0 +1,381 @@
+{
+  "index": 114,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-156.jpeg](img-156.jpeg) CAM |   | ![img-157.jpeg](img-157.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 137,
+      "bottomRightX": 173,
+      "bottomRightY": 155,
+      "content": "[in,out] sURL",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 137,
+      "bottomRightX": 623,
+      "bottomRightY": 222,
+      "content": "Pointer to a user allocated string buffer to receive the list of URLs If this parameter is NULL, piSize will contain the needed size of sURL in bytes. Each entry in the list is 0 terminated. After the last entry there is an additional 0. The size includes the terminating 0 characters.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 223,
+      "bottomRightX": 173,
+      "bottomRightY": 242,
+      "content": "[in,out] piSize",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 223,
+      "bottomRightX": 615,
+      "bottomRightY": 309,
+      "content": "sURL equal NULL:\nout: minimal size of sURL in bytes to hold all information.\nsURL unequal NULL:\nin: size of the provided sURL in bytes.\nout: number of bytes filled by the function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 321,
+      "bottomRightX": 141,
+      "bottomRightY": 337,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 342,
+      "bottomRightX": 208,
+      "bottomRightY": 361,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 342,
+      "bottomRightX": 569,
+      "bottomRightY": 361,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 368,
+      "bottomRightX": 278,
+      "bottomRightY": 386,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 368,
+      "bottomRightX": 513,
+      "bottomRightY": 386,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 393,
+      "bottomRightX": 270,
+      "bottomRightY": 412,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 393,
+      "bottomRightX": 635,
+      "bottomRightY": 428,
+      "content": "The handle hPort is invalid (NULL) or does not reference an open module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 435,
+      "bottomRightX": 287,
+      "bottomRightY": 453,
+      "content": "GC_ERR_BUFFER_TOO_SMALL",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 435,
+      "bottomRightX": 635,
+      "bottomRightY": 470,
+      "content": "sURL is not NULL and the value of *piSize is too small to receive the expected amount of data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 477,
+      "bottomRightX": 295,
+      "bottomRightY": 495,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 477,
+      "bottomRightX": 627,
+      "bottomRightY": 495,
+      "content": "Parameter piSize is an invalid pointer (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 502,
+      "bottomRightX": 278,
+      "bottomRightY": 521,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 501,
+      "bottomRightX": 635,
+      "bottomRightY": 536,
+      "content": "The provided module handle does not have a Port module implemented.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 544,
+      "bottomRightX": 165,
+      "bottomRightY": 562,
+      "content": "GC_ERR_IO",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 543,
+      "bottomRightX": 546,
+      "bottomRightY": 560,
+      "content": "Communication error or connection lost.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 591,
+      "bottomRightX": 635,
+      "bottomRightY": 627,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 639,
+      "bottomRightX": 284,
+      "bottomRightY": 657,
+      "content": "##### 6.3.6.3 GCGetNumPortURLs",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 680,
+      "bottomRightX": 156,
+      "bottomRightY": 697,
+      "content": "GC ERROR",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 169,
+      "topLeftY": 681,
+      "bottomRightX": 311,
+      "bottomRightY": 696,
+      "content": "GCGetNumPortURLs",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 681,
+      "bottomRightX": 456,
+      "bottomRightY": 696,
+      "content": "( PORT_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 681,
+      "bottomRightX": 547,
+      "bottomRightY": 696,
+      "content": "hPort,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 357,
+      "topLeftY": 697,
+      "bottomRightX": 447,
+      "bottomRightY": 712,
+      "content": "uint32_t *",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 697,
+      "bottomRightX": 590,
+      "bottomRightY": 712,
+      "content": "piNumURLs )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 721,
+      "bottomRightX": 388,
+      "bottomRightY": 740,
+      "content": "Inquires the number of available URLs for this port.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 753,
+      "bottomRightX": 166,
+      "bottomRightY": 769,
+      "content": "# Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 773,
+      "bottomRightX": 173,
+      "bottomRightY": 790,
+      "content": "[in] hPort",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 773,
+      "bottomRightX": 608,
+      "bottomRightY": 791,
+      "content": "Module or remote device port handle to access Port from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 791,
+      "bottomRightX": 210,
+      "bottomRightY": 808,
+      "content": "[out] piNumURLs",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 791,
+      "bottomRightX": 473,
+      "bottomRightY": 807,
+      "content": "Number of available URL entries.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 821,
+      "bottomRightX": 141,
+      "bottomRightY": 838,
+      "content": "# Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 843,
+      "bottomRightX": 208,
+      "bottomRightY": 861,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 843,
+      "bottomRightX": 569,
+      "bottomRightY": 861,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 868,
+      "bottomRightX": 278,
+      "bottomRightY": 887,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 868,
+      "bottomRightX": 513,
+      "bottomRightY": 887,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 115 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

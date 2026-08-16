@@ -1,0 +1,148 @@
+{
+  "index": 11,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 138,
+      "bottomRightX": 226,
+      "bottomRightY": 158,
+      "content": "## 1 Introduction",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 181,
+      "bottomRightX": 191,
+      "bottomRightY": 201,
+      "content": "### 1.1 Purpose",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 207,
+      "bottomRightX": 636,
+      "bottomRightY": 292,
+      "content": "The goal of the GenICam GenTL standard is to provide a generic way to enumerate devices known to a system, communicate with one or more devices and, if possible, stream data from the device to the host independent from the underlying transport technology. This allows a third party software to use different technologies to control cameras and to acquire data in a transport layer agnostic way.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 298,
+      "bottomRightX": 637,
+      "bottomRightY": 382,
+      "content": "The core of the GenICam GenTL standard is the definition of a generic Transport Layer Interface (TLI). This software interface between the transport technology and a third party software is defined by a C interface together with a defined behavior and a set of standardized feature names and their meaning. To access these features the GenICam GenApi module is used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 388,
+      "bottomRightX": 636,
+      "bottomRightY": 438,
+      "content": "The GenICam GenApi module defines an XML description file format to describe how to access and control device features. The Standard Features Naming Convention defines the behavior of these features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 445,
+      "bottomRightX": 636,
+      "bottomRightY": 497,
+      "content": "The GenTL software interface does not cover any device-specific functionality of the remote device except the one to establish communication. The GenTL provides a port to allow access to the remote device features via the GenApi module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 503,
+      "bottomRightX": 636,
+      "bottomRightY": 554,
+      "content": "This makes the GenTL the generic software interface to communicate with devices and stream data from them. The combination of GenApi and GenTL provides a complete software architecture to access devices, for example cameras.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 599,
+      "bottomRightX": 298,
+      "bottomRightY": 619,
+      "content": "### 1.2 GenTL Subcommittee",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 626,
+      "bottomRightX": 606,
+      "bottomRightY": 643,
+      "content": "The GenTL Subcommittee is part of the GenICam Standard Group hosted by the EMVA.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 664,
+      "bottomRightX": 333,
+      "bottomRightY": 685,
+      "content": "### 1.3 Acronyms and Definitions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 698,
+      "bottomRightX": 208,
+      "bottomRightY": 716,
+      "content": "1.3.1 Acronyms",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 718,
+      "bottomRightX": 639,
+      "bottomRightY": 911,
+      "content": "|  Term | Description  |\n| --- | --- |\n|  CL | Camera Link  |\n|  CTI | Common Transport Interface  |\n|  GenApi | GenICam Module  |\n|  GenICam | Generic Interface to Cameras  |\n|  GenTL | Generic Transport Layer  |\n|  GenTL SFNC | GenICam Module: GenTL Standard Features Naming Convention  |\n|  SFNC | GenICam Module: Standard Features Naming Convention  |\n|  PFNC | GenICam Module: Pixel Format Naming Convention  |\n|  GenDC | GenICam Module: Generic Data Container  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 418,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 12 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

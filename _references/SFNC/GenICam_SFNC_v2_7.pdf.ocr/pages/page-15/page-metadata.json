@@ -1,0 +1,146 @@
+{
+  "index": 14,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 577,
+      "bottomRightY": 76,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 579,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 117,
+      "bottomRightX": 661,
+      "bottomRightY": 526,
+      "content": "24.54 CHUNK TRANSFERSTREAMID 485\n24.55 CHUNK TRANSFERQUEUECURRENTBLOCKCOUNT 485\n24.56 CHUNKSTREAMCHANNELID 486\n24.57 CHUNKSEQUENCERSETACTIVE 486\n24.58 CHUNKSCAN3DDISTANCEUNIT 487\n24.59 CHUNKSCAN3DOUTPUTMODE 487\n24.60 CHUNKSCAN3DCOORDINATESYSTEM 489\n24.61 CHUNKSCAN3DCOORDINATESYSTEMREFERENCE 489\n24.62 CHUNKSCAN3DCOORDINATES ELECTOR 490\n24.63 CHUNKSCAN3DCOORDINATESCALE 490\n24.64 CHUNKSCAN3DCOORDINATEOFFSET 491\n24.65 CHUNKSCAN3DINVALIDDATAFLAG 491\n24.66 CHUNKSCAN3DINVALIDDATAVALUE 492\n24.67 CHUNKSCAN3DAXISMIN 492\n24.68 CHUNKSCAN3DAXISMAX 492\n24.69 CHUNKSCAN3DCOORDINATETRANSFORMSELECTOR 493\n24.70 CHUNKSCAN3DTRANSFORMVALUE 493\n24.71 CHUNKSCAN3DCOORDINATEREFERENCESELECTOR 494\n24.72 CHUNKSCAN3DCOORDINATEREFERENCEVALUE 495\n24.73 CHUNKSCAN3DFOCALLENGTH 495\n24.74 CHUNKSCAN3DBASELINE 496\n24.75 CHUNKSCAN3DPRINCIPALPOINTU 496\n24.76 CHUNKSCAN3DPRINCIPALPOINTV 497",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 541,
+      "bottomRightX": 661,
+      "bottomRightY": 558,
+      "content": "# 25 TEST CONTROL...498",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 574,
+      "bottomRightX": 661,
+      "bottomRightY": 645,
+      "content": "25.1 TESTCONTROL...498\n25.2 TESTPENDINGACK...498\n25.3 TESTEVENTGENERATE 499\n25.4 TESTPAYLOADFORMATMODE 499",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 662,
+      "bottomRightX": 661,
+      "bottomRightY": 678,
+      "content": "# 26 GENICAM CONTROL ...501",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 694,
+      "bottomRightX": 661,
+      "bottomRightY": 766,
+      "content": "26.1 GENICAM FEATURE TREE ACCESS...501\n26.1.1 ROOT 501\n26.1.2 DEVICE 501\n26.1.1 VALUEARRAYCANDIDATES...502",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 782,
+      "bottomRightX": 661,
+      "bottomRightY": 800,
+      "content": "# 27 TRANSPORT LAYER CONTROL ...503",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 815,
+      "bottomRightX": 661,
+      "bottomRightY": 975,
+      "content": "27.1 TLPARAMSLOCKED USAGE...503\n27.2 TRANSPORT LAYER FEATURES...503\n27.2.1 TRANSPORTLAYERCONTROL...504\n27.2.2 TLPARAMSLOCKED...504\n27.2.3 TLPARAMSLOCKEDSELECTOR 504\n27.2.4 TLPARAMSLOCKEDSTATE 505\n27.2.5 PAYLOADSIZE...506\n27.2.6 GENDCSTREAMINGMODE...506\n27.2.7 GENDCSTREAMINGSTATUS 507",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1005,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 390,
+      "bottomRightY": 1007,
+      "content": "Page 15 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 623,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

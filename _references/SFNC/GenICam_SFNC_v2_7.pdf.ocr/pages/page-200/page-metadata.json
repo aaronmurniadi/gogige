@@ -1,0 +1,120 @@
+{
+  "index": 199,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 135,
+      "bottomRightX": 740,
+      "bottomRightY": 171,
+      "content": "The multi-slope exposure control section describes all features related to controlling the multiple phases of the exposure of the photosensitive cells during image acquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 179,
+      "bottomRightX": 724,
+      "bottomRightY": 214,
+      "content": "To define a generic interface to an HDR feature also known as multi-slope or multi-knee-point or piecewise linear response, two slightly different models are considered:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 223,
+      "bottomRightX": 604,
+      "bottomRightY": 261,
+      "content": "- The pixels are reset to a specific level at a certain point in time.\n- The pixel capacity is controlled and can be changed at a certain point in time.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 276,
+      "bottomRightX": 622,
+      "bottomRightY": 295,
+      "content": "Additionally, in both implementations, partial exposure times may be controlled separately.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 301,
+      "bottomRightX": 721,
+      "bottomRightY": 338,
+      "content": "Both models result in one image with a non-linear exposure characteristic composed of multiple, piecewise linear slopes. The points in graphs where the linear segments meet are generally named \"knee-points\".",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 345,
+      "bottomRightX": 569,
+      "bottomRightY": 364,
+      "content": "To convert the parameters of the sensors to features, the following was considered:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 373,
+      "bottomRightX": 743,
+      "bottomRightY": 557,
+      "content": "- The number of knee-points differs from sensor to sensor.\n- The number of used knee-points may be configured.\n- All sensors allow adjusting the partial exposure times, but not necessarily the levels/capacities.\n- Multi-slope exposure for HDR-like images requires different times for each part of the whole exposure.\n- As a generalization, the threshold for a knee-point is determined in \"percent\" (of the currently available pixel capacity or of the currently available reset voltage - The currently available values might be influenced by the camera gain settings).\n- As a further generalization, the unit for the sub-exposures is also \"percent\" (of the current exposure time).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 574,
+      "bottomRightX": 682,
+      "bottomRightY": 593,
+      "content": "For an explanation of the parameters involved in multi-slope exposure, two knee-points are assumed:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 200 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

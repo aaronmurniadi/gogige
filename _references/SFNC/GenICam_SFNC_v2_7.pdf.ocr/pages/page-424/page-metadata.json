@@ -1,0 +1,111 @@
+{
+  "index": 423,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 144,
+      "bottomRightX": 702,
+      "bottomRightY": 181,
+      "content": "The Optic features intend to support different use cases. Some values might seem to be duplicates (e.g. Aperture and ApertureStepper) but in reality, are different.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 187,
+      "bottomRightX": 742,
+      "bottomRightY": 278,
+      "content": "The optical feature might be implemented using a stepper motor or a digital-to-analog converter, which has a defined start, stop and number of steps. These steps might have a linear, logarithmic or even more complex impact on the optical value. It is common that several controls are implemented in one device and that changing one influences the optical interpretation of the other. All stepper values are defined as being in the native resolution of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 284,
+      "bottomRightX": 736,
+      "bottomRightY": 339,
+      "content": "For example, if a device has two steppers, one for Focal length and one for Aperture. If the Focal length is modified, the stepper value of the aperture will stay the same while the optical interpretation of the Aperture might change.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 345,
+      "bottomRightX": 724,
+      "bottomRightY": 400,
+      "content": "The Stepper value registers will control these steps, and every change in a register will lead to a change in the mechanical position or digital-to-analog converter input. Rational for including real-world (human-interpretable) values:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 407,
+      "bottomRightX": 729,
+      "bottomRightY": 521,
+      "content": "1. A user setting up the device profits from directly interpretable values, e.g. object-sensor-distance in millimeters, the aperture in f/#. Using these settings, the result will stay the same when changing lenses.\n2. The optical interpretation enables calculation of optical features, e.g. to keep the brightness of an image identical when changing the exposure time, the f/# value of aperture can be used.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 532,
+      "bottomRightX": 325,
+      "bottomRightY": 551,
+      "content": "Rational for including the Stepper values:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 557,
+      "bottomRightX": 729,
+      "bottomRightY": 654,
+      "content": "1. A closed control loop on a real world value might change another real-world-value as well.\n2. A change of Focal length might change the interpretation of the Aperture, but not the stepper value. Two control loops on the real-world value would constantly work against each other, while two control loops on the stepper value will not change the other stepper value",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 970,
+      "content": "Page 424 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

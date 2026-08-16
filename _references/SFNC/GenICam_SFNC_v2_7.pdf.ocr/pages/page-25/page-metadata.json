@@ -1,0 +1,84 @@
+{
+  "index": 24,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 305,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 624,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 121,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 113,
+      "bottomRightX": 676,
+      "bottomRightY": 794,
+      "content": "|  Version | Date | Changed by | Change  |\n| --- | --- | --- | --- |\n|  Draft 1.1.01 | 10.09.2007 | Thies Möller, Basler | Created chapter for File Access.  |\n|  Draft 1.1.02 | 12.01.2008 | Stephane Maurice, Matrox Vincent Rowley , Pleora | Review and modification to the File Access features proposal.  |\n|  Release 1.2 | 29.04.2008 | Stephane Maurice, Matrox | SFNC 1.2 including the File Access features and corrections. Also removed the PixelFormat description chapter and GEV event numbers.  |\n|  Draft 1.2.01 | 17.07.2008 | Karsten Ingeman Christensen, JAI | Merged with recommended visibility proposal from JAI and commented by Vincent Rowley, Pleora  |\n|  Release 1.2.1 | 19.08.2008 | Stephane Maurice, Matrox | SFNC 1.2.1 including the recommended visibility.  |\n|  Draft 1.2.12 | 28.10.2008 | Stephane Maurice, Matrox Thies Möller, Basler | Matrox: Created draft for 1.3 including: minors corrections, deprecated Raw and Abs feature and deprecated GigEVision Event, Changed chapters names and created according category features, added Root, Device, TLParamsLocked, PixelClock, Temperature features and made ICommand optionally readable, ... Basler: Action command was added.  |\n|  Draft 1.2.13 | 05.05.2009 | Stephane Maurice, Matrox | Deprecated all the GEVSupported... features to regroup them in a selector. Added Color Transformation features. Action command reworked and moved in a separate chapter. Added Event data delivery features.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 988,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 988,
+      "bottomRightX": 393,
+      "bottomRightY": 1007,
+      "content": "Page 25 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 625,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

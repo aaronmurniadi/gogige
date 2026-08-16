@@ -1,0 +1,177 @@
+{
+  "index": 16,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 752,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | ![img-5.jpeg](img-5.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 151,
+      "bottomRightX": 230,
+      "bottomRightY": 170,
+      "content": "#### 3.1.6 LM44 Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 176,
+      "bottomRightX": 705,
+      "bottomRightY": 231,
+      "content": "This format is typically used for any 2-component pixels, such as Coord3D_AC, used by line scan 3D devices (where B coordinate is implicit or e.g. defined by an encoder position). No sub-sampling is performed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 112,
+      "topLeftY": 238,
+      "bottomRightX": 267,
+      "bottomRightY": 257,
+      "content": "Ex: Coord3D_AC16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 263,
+      "bottomRightX": 552,
+      "bottomRightY": 416,
+      "content": "![img-6.jpeg](img-6.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-6.jpeg"
+    },
+    {
+      "topLeftX": 297,
+      "topLeftY": 422,
+      "bottomRightX": 515,
+      "bottomRightY": 440,
+      "content": "Figure 3-6 : LM44 Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 480,
+      "bottomRightX": 230,
+      "bottomRightY": 500,
+      "content": "#### 3.1.7 Bayer Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 508,
+      "bottomRightX": 490,
+      "bottomRightY": 526,
+      "content": "For Bayer patterns in this section, red = L, green = M and blue = N.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 541,
+      "bottomRightX": 234,
+      "bottomRightY": 560,
+      "content": "##### Bayer_LMMN Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 566,
+      "bottomRightX": 679,
+      "bottomRightY": 603,
+      "content": "This is the format where the green component occupies the  \\( 2^{nd} \\)  and  \\( 3^{rd} \\)  cell within the tile. The red component occupies the first cell while the blue component fills the  \\( 4^{th} \\)  cell.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 112,
+      "topLeftY": 610,
+      "bottomRightX": 230,
+      "bottomRightY": 628,
+      "content": "Ex: BayerRG8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 375,
+      "topLeftY": 650,
+      "bottomRightX": 437,
+      "bottomRightY": 708,
+      "content": "![img-7.jpeg](img-7.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-7.jpeg"
+    },
+    {
+      "topLeftX": 318,
+      "topLeftY": 714,
+      "bottomRightX": 495,
+      "bottomRightY": 733,
+      "content": "Figure 3-7: BayerRG array",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 764,
+      "bottomRightX": 550,
+      "bottomRightY": 917,
+      "content": "![img-8.jpeg](img-8.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-8.jpeg"
+    },
+    {
+      "topLeftX": 273,
+      "topLeftY": 924,
+      "bottomRightX": 538,
+      "bottomRightY": 942,
+      "content": "Figure 3-8: Bayer_LMMN Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 974,
+      "content": "Page 17 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

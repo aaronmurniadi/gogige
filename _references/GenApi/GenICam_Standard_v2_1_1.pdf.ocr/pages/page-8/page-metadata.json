@@ -1,0 +1,130 @@
+{
+  "index": 7,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-11.jpeg](img-11.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 634,
+      "bottomRightY": 185,
+      "content": "Finally, the transport layer will deliver the calls to the camera interface. GenApi currently assumes that the camera is configured using a flat register space.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 192,
+      "bottomRightX": 634,
+      "bottomRightY": 243,
+      "content": "The GenICam standard defines the syntax of the camera description file plus the semantics of the transport layer API. In addition, the GenICam standard recommends – but does not enforce – the usage of certain names and types for common features such as Gain or Shutter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 248,
+      "bottomRightX": 634,
+      "bottomRightY": 316,
+      "content": "The standard does not contain the actual code for reading the description file and translating features to registers, nor does it contain the transport layer code. Everyone is free to do their own implementation. There is, however, a reference implementation available that can be freely used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 322,
+      "bottomRightX": 634,
+      "bottomRightY": 407,
+      "content": "Note that the GenApi section in this document deals with the camera description file only. It is intended to help the GenICam user to understand the key ideas behind the GenApi module and to enable people to write their own camera description files. The GenApi reference implementation comes with a reference manual showing how an end user can use the GenApi module even without a deeper understanding of the concepts laid out in this section.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 421,
+      "bottomRightX": 443,
+      "bottomRightY": 438,
+      "content": "### 2.2 Basic Structure of the Camera Description File",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 448,
+      "bottomRightX": 634,
+      "bottomRightY": 531,
+      "content": "The camera is described by means on an XML file containing a set of nodes with each node having a type and a unique name. Nodes can link to each other and each connection plays a certain role. Figure 3 shows a very simple example in graphical notation. The nodes are shown as bubbles labeled \"type::name,\" and the links are shown as arrows labeled with the role name.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 539,
+      "bottomRightX": 634,
+      "bottomRightY": 574,
+      "content": "There are two special nodes: the Root node from which one can start walking the node graph and the Device node that provides the connection to the transport layer. \\( ^{1} \\)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 598,
+      "bottomRightX": 424,
+      "bottomRightY": 837,
+      "content": "![img-12.jpeg](img-12.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-12.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 854,
+      "bottomRightX": 542,
+      "bottomRightY": 873,
+      "content": "Figure 3 Topology of a graph constructed from a simple configuration file",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 922,
+      "bottomRightX": 624,
+      "bottomRightY": 942,
+      "content": "\\( ^{1} \\)  Note that GenApi can be used to access other register based devices in addition to cameras.",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 299,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 558,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 8 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

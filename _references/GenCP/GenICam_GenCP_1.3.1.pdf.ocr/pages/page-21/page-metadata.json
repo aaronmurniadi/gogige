@@ -1,0 +1,138 @@
+{
+  "index": 20,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-18.jpeg](img-18.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 155,
+      "bottomRightX": 653,
+      "bottomRightY": 206,
+      "content": "CRC of the packet to be wrong or the sender sent the wrong CRC) or if it is too short to carry a correct CCD plus Prefix. In this case the received data is discarded and no answer is sent back to the sender.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 212,
+      "bottomRightX": 630,
+      "bottomRightY": 247,
+      "content": "The receive buffer should be flushed until no data is received within a maximum packet transfer time or longer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 85,
+      "topLeftY": 253,
+      "bottomRightX": 653,
+      "bottomRightY": 414,
+      "content": "- The sender must wait after a communication error until all corrupt data is removed and then it sends its command again.\n- The receiver discards all corrupt data after a communication error and waits for the sender to resend its command.\n- If the underlying technology controls packet handling, it is not necessary to wait for a packet transfer time on failure.\n- There is no acknowledge carrying a failure status code in order to prevent the link being flooded with garbage acknowledges.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 443,
+      "bottomRightX": 613,
+      "bottomRightY": 477,
+      "content": "In case the received Prefix and CCD is correct, the receiver must answer as requested with an appropriate status code and the originator can resend the command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 484,
+      "bottomRightX": 616,
+      "bottomRightY": 518,
+      "content": "When there are errors on either side, the original command packet is resent from the sender as described in chapter 3.1.4.3.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 525,
+      "bottomRightX": 481,
+      "bottomRightY": 541,
+      "content": "In case of failure the sender should retry 3 times to transmit the packet.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 130,
+      "topLeftY": 594,
+      "bottomRightX": 266,
+      "bottomRightY": 612,
+      "content": "##### 3.1.4.2. Timeout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 636,
+      "bottomRightX": 644,
+      "bottomRightY": 685,
+      "content": "A packet is considered “too short” if the data for a packet has not completely been received within the Packet Transfer Time (PTT) after the first byte of the packet has arrived. The PTT is depending on",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 85,
+      "topLeftY": 693,
+      "bottomRightX": 471,
+      "bottomRightY": 758,
+      "content": "- the link speed\n- the maximum packet size allowed on the link\n- the timeout for the transfer of two consecutive bytes on a link",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 789,
+      "bottomRightX": 649,
+      "bottomRightY": 822,
+      "content": "If an error occurs on either side, the original command packet is resent from the sender as described in chapter 3.1.4.3.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 829,
+      "bottomRightX": 484,
+      "bottomRightY": 847,
+      "content": "In case of failure, the sender should retry 3 times to transmit the packet.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 21 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

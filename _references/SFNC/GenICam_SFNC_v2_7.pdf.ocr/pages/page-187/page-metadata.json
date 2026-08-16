@@ -1,0 +1,174 @@
+{
+  "index": 186,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 143,
+      "bottomRightX": 301,
+      "bottomRightY": 165,
+      "content": "## 5.6 Trigger Control features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 193,
+      "bottomRightX": 642,
+      "bottomRightY": 212,
+      "content": "The Trigger Control section describes all features related to image acquisition using trigger(s).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 218,
+      "bottomRightX": 743,
+      "bottomRightY": 273,
+      "content": "One or many Trigger(s) can be used to control the start of an Acquisition (Figure 5-1), of a Burst of Frames (Figure 5-2), of individual Frames (Figure 5-3) or of each Line of a Frame for a device (Figure 5-4). Triggers can also be used to control the exposure duration at the beginning of a frame.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 280,
+      "bottomRightX": 740,
+      "bottomRightY": 351,
+      "content": "TriggerSelector is used to select which type of trigger to configure. The standard trigger types are: AcquisitionStart, AcquisitionEnd, AcquisitionActive, FrameBurstStart, FrameBurstEnd, FrameBurstActive, FrameStart, FrameEnd, FrameActive, LineStart, ExposureStart, ExposureEnd and ExposureActive.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 359,
+      "bottomRightX": 504,
+      "bottomRightY": 377,
+      "content": "TriggerMode activate/deactivate trigger operation. It can be On or Off.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 385,
+      "bottomRightX": 751,
+      "bottomRightY": 458,
+      "content": "TriggerSource specifies the physical input Line or internal signal to use for the selected trigger. Standard trigger sources are: Software, Line0, Line1, ..., UserOutput0, UserOutput1, ..., Counter0Start, Counter0End, ..., Timer0Start, Timer0End, ..., Encoder0, Encoder1, ..., LogicBlock0, LogicBlock1, ..., Action0, Action1, ..., LinkTrigger0, LinkTrigger1, ...",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 463,
+      "bottomRightX": 734,
+      "bottomRightY": 500,
+      "content": "With a Software trigger source, the TriggerSoftware command can be used by an application to generate an internal trigger signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 507,
+      "bottomRightX": 754,
+      "bottomRightY": 544,
+      "content": "With the hardware trigger sources, TriggerActivation specifies the activation mode of the trigger. This can be a RisingEdge, FallingEdge, AnyEdge, LevelHigh or LevelLow.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 550,
+      "bottomRightX": 754,
+      "bottomRightY": 658,
+      "content": "TriggerOverlap specifies the type of trigger overlap permitted with the previous frame/ line. This defines when a valid trigger will be accepted (or latched) for a new frame/line. This can be Off for no overlap, ReadOut to accept a trigger immediately after the exposure period or PreviousFrame/PreviousLine to accept (latch) a trigger that happened at any time after the start of the previous frame/Line. If a trigger is discarded based on the trigger overlap control and the current sensor state, it becomes a missed trigger. This represents an over-triggering situation and is typically considered as an error which can be connected to an Event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 665,
+      "bottomRightX": 716,
+      "bottomRightY": 684,
+      "content": "TriggerDelay specifies the delay to apply after the trigger signal reception before effectively activating it.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 690,
+      "bottomRightX": 660,
+      "bottomRightY": 710,
+      "content": "TriggerDivider and TriggerMultiplier are used to control the ratio of triggers that are accepted.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 716,
+      "bottomRightX": 546,
+      "bottomRightY": 734,
+      "content": "Note that, a trigger is considered valid after the Dividers, Multipliers, Delay, ...",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 741,
+      "bottomRightX": 752,
+      "bottomRightY": 779,
+      "content": "For example to setup a hardware triggered acquisition that will start the capture of each frame on the rising edge of the signal coming from the physical input Line 1, the following pseudo-code can be used:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 800,
+      "bottomRightX": 365,
+      "bottomRightY": 884,
+      "content": "Camera.TriggerSelector = FrameStart;\nCamera.TriggerMode = On;\nCamera.TriggerActivation = RisingEdge;\nCamera.TriggerSource = Line1;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 187 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

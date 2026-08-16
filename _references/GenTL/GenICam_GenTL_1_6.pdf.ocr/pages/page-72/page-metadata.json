@@ -1,0 +1,273 @@
+{
+  "index": 71,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-101.jpeg](img-101.jpeg) CAM |   | ![img-102.jpeg](img-102.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 138,
+      "bottomRightX": 286,
+      "bottomRightY": 157,
+      "content": "GC_ERR_BUFFER_TOO_SMALL",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 138,
+      "bottomRightX": 635,
+      "bottomRightY": 172,
+      "content": "pBuffer is not NULL and the value of *piSize is too small to receive the expected amount of data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 180,
+      "bottomRightX": 235,
+      "bottomRightY": 199,
+      "content": "GC_ERR_INVALID_ID",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 179,
+      "bottomRightX": 635,
+      "bottomRightY": 231,
+      "content": "The GenTL Producer is unable to interpret the provided ID string sIfaceID or is not able to match it to an existing Interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 238,
+      "bottomRightX": 260,
+      "bottomRightY": 257,
+      "content": "GC_ERR_NOT_AVAILABLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 238,
+      "bottomRightX": 635,
+      "bottomRightY": 273,
+      "content": "The request is implemented but the requested information is currently not available for any reason.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 302,
+      "bottomRightX": 635,
+      "bottomRightY": 337,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 350,
+      "bottomRightX": 282,
+      "bottomRightY": 367,
+      "content": "##### 6.3.2.5 TLGetNumInterfaces",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 390,
+      "bottomRightX": 608,
+      "bottomRightY": 424,
+      "content": "GC_ERROR TLGetNumInterfaces ( TL_HANDLE hSystem, uint32_t * piNumIfaces )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 432,
+      "bottomRightX": 635,
+      "bottomRightY": 484,
+      "content": "Queries the number of available interfaces on this System module. Prior to this call the TLUpdateInterfaceList function must be called. The list content will not change until the next call of the update function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 491,
+      "bottomRightX": 468,
+      "bottomRightY": 507,
+      "content": "This function is not thread safe since it relies on an internal cache.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 522,
+      "bottomRightX": 166,
+      "bottomRightY": 538,
+      "content": "##### Parameters",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 542,
+      "bottomRightX": 185,
+      "bottomRightY": 559,
+      "content": "[in] hSystem",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 542,
+      "bottomRightX": 435,
+      "bottomRightY": 559,
+      "content": "System module to work on.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 560,
+      "bottomRightX": 211,
+      "bottomRightY": 577,
+      "content": "[out] piNumIfaces",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 560,
+      "bottomRightX": 537,
+      "bottomRightY": 577,
+      "content": "Number of interfaces on this System module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 590,
+      "bottomRightX": 141,
+      "bottomRightY": 605,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 612,
+      "bottomRightX": 208,
+      "bottomRightY": 630,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 611,
+      "bottomRightX": 568,
+      "bottomRightY": 629,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 637,
+      "bottomRightX": 278,
+      "bottomRightY": 655,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 637,
+      "bottomRightX": 512,
+      "bottomRightY": 654,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 662,
+      "bottomRightX": 269,
+      "bottomRightY": 680,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 304,
+      "topLeftY": 661,
+      "bottomRightX": 635,
+      "bottomRightY": 715,
+      "content": "Either the handle hSystem has an invalid value or the handle does not belong to a previously opened TL module through a call to TLOpen.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 722,
+      "bottomRightX": 295,
+      "bottomRightY": 740,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 721,
+      "bottomRightX": 635,
+      "bottomRightY": 755,
+      "content": "Parameter piNumIfaces is an invalid pointer (NULL or ~0x0).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 787,
+      "bottomRightX": 635,
+      "bottomRightY": 821,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 72 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

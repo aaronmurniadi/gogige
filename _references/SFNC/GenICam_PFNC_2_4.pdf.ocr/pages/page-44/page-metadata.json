@@ -1,0 +1,102 @@
+{
+  "index": 43,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 45,
+      "bottomRightX": 749,
+      "bottomRightY": 124,
+      "content": "|  **GEN<i>CAM** |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 150,
+      "bottomRightX": 721,
+      "bottomRightY": 186,
+      "content": "Ex: YCbCr420_8_YY_CbCr_Semiplanar . Here we have a plane/component sequence YY_CbCr with 2 planes separated by ‘_’, one YY plane and one CbCr plane.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 202,
+      "bottomRightX": 300,
+      "bottomRightY": 223,
+      "content": "### 7.3 Components Sequencing",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 229,
+      "bottomRightX": 747,
+      "bottomRightY": 284,
+      "content": "If the component sequence is not identical to the one specified in the “Components and Location” field, then the actual sequence should be provided by listing as many components as necessary to correctly determine the correct sequence in image memory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 290,
+      "bottomRightX": 743,
+      "bottomRightY": 363,
+      "content": "For instance, there are various sequences of components for Y’CbCr, some sending Y’, followed by Cb and Cr. But there are others where Cr is put first. This is further complicated by sub-sampling of the chroma components. In these cases, it might be necessary to unequivocally list the order that the components are transmitted.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 369,
+      "bottomRightX": 721,
+      "bottomRightY": 406,
+      "content": "In this case, a underscore (‘_’) is put before listing the sequence of component to clearly separate the list from the rest of the pixel name.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 413,
+      "bottomRightX": 313,
+      "bottomRightY": 431,
+      "content": "Ex: YUV411_8_UYYVYY",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 954,
+      "bottomRightX": 103,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 954,
+      "bottomRightX": 463,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 654,
+      "topLeftY": 954,
+      "bottomRightX": 747,
+      "bottomRightY": 973,
+      "content": "Page 44 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

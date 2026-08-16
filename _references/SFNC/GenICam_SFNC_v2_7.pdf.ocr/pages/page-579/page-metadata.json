@@ -1,0 +1,102 @@
+{
+  "index": 578,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 54,
+      "bottomRightX": 304,
+      "bottomRightY": 83,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 99,
+      "bottomRightX": 120,
+      "bottomRightY": 114,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 99,
+      "bottomRightX": 405,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 54,
+      "bottomRightX": 577,
+      "bottomRightY": 103,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 578,
+      "topLeftY": 87,
+      "bottomRightX": 623,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 257,
+      "topLeftY": 144,
+      "bottomRightX": 574,
+      "bottomRightY": 162,
+      "content": "Table 29-2 Tap geometrical properties – Four taps",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 169,
+      "bottomRightX": 673,
+      "bottomRightY": 947,
+      "content": "|  Geometry name |   | Tap | Tap geometrical properties  |   |   |   |   |   |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  Area-scan | Line-scan |   | X Start | X End | Step X | Y Start | Y End | Step Y  |\n|  1X4-1Y | 1X4 | Tap1 | 1 | W-3 | 4 | 1 | H | 1  |\n|   |   |  Tap2 | 2 | W-2 | 4 | 1 | H | 1  |\n|   |   |  Tap3 | 3 | W-1 | 4 | 1 | H | 1  |\n|   |   |  Tap4 | 4 | W | 4 | 1 | H | 1  |\n|  4X-1Y | 4X | Tap1 | 1 | W/4 | 1 | 1 | H | 1  |\n|   |   |  Tap2 | W/4+1 | W/2 | 1 | 1 | H | 1  |\n|   |   |  Tap3 | W/2+1 | 3W/4 | 1 | 1 | H | 1  |\n|   |   |  Tap4 | 3W/4+1 | W | 1 | 1 | H | 1  |\n|  2X2-1Y | 2X2 | Tap1 | 1 | W/2-1 | 2 | 1 | H | 1  |\n|   |   |  Tap2 | 2 | W/2 | 2 | 1 | H | 1  |\n|   |   |  Tap3 | W/2+1 | W-1 | 2 | 1 | H | 1  |\n|   |   |  Tap4 | W/2+2 | W | 2 | 1 | H | 1  |\n|  2X2E-1Y | 2X2E | Tap1 | 1 | W/2-1 | 2 | 1 | H | 1  |\n|   |   |  Tap2 | 2 | W/2 | 2 | 1 | H | 1  |\n|   |   |  Tap3 | W-1 | W/2+1 | -2 | 1 | H | 1  |\n|   |   |  Tap4 | W | W/2+2 | -2 | 1 | H | 1  |\n|  2X2M-1Y | 2X2M | Tap1 | W/2-1 | 1 | -2 | 1 | H | 1  |\n|   |   |  Tap2 | W/2 | 2 | -2 | 1 | H | 1  |\n|   |   |  Tap3 | W/2+1 | W-1 | 2 | 1 | H | 1  |\n|   |   |  Tap4 | W/2+2 | W | 2 | 1 | H | 1  |\n|  1X2-2YE |  | Tap1 | 1 | W-1 | 2 | 1 | H/2 | 1  |\n|   |   |  Tap2 | 2 | W | 2 | 1 | H/2 | 1  |\n|   |   |  Tap3 | 1 | W-1 | 2 | H | H/2+1 | -1  |\n|   |   |  Tap4 | 2 | W | 2 | H | H/2+1 | -1  |\n|  1X2-1Y2 |  | Tap1 | 1 | W-1 | 2 | 1 | H-1 | 2  |\n|   |   |  Tap2 | 2 | W | 2 | 1 | H-1 | 2  |\n|   |   |  Tap3 | 1 | W-1 | 2 | 2 | H | 2  |\n|   |   |  Tap4 | 2 | W | 2 | 2 | H | 2  |\n|  2X-2YE |  | Tap1 | 1 | W/2 | 1 | 1 | H/2 | 1  |\n|   |   |  Tap2 | W/2+1 | W | 1 | 1 | H/2 | 1  |\n|   |   |  Tap3 | 1 | W/2 | 1 | H | H/2+1 | -1  |\n|   |   |  Tap4 | W/2+1 | W | 1 | H | H/2+1 | -1  |\n|  2X-1Y2 |  | Tap1 | 1 | W/2 | 1 | 1 | H-1 | 2  |\n|   |   |  Tap2 | W/2+1 | W | 1 | 1 | H-1 | 2  |\n|   |   |  Tap3 | 1 | W/2 | 1 | 2 | H | 2  |\n|   |   |  Tap4 | W/2+1 | W | 1 | 2 | H | 2  |\n|  2XE-2YE |  | Tap1 | 1 | W/2 | 1 | 1 | H/2 | 1  |\n|   |   |  Tap2 | W | W/2+1 | -1 | 1 | H/2 | 1  |\n|   |   |  Tap3 | 1 | W/2 | 1 | H | H/2+1 | -1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 579 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

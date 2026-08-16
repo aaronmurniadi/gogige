@@ -1,0 +1,166 @@
+{
+  "index": 26,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 116,
+      "bottomRightX": 363,
+      "bottomRightY": 133,
+      "content": "chunk consists of the chunk data followed by a trailing tag.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 152,
+      "bottomRightX": 122,
+      "bottomRightY": 167,
+      "content": "The tag contains:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 168,
+      "bottomRightX": 702,
+      "bottomRightY": 244,
+      "content": "- A unique chunk identifier (4 bytes, little-endian), which identifies the structure of the chunk data and the chunk features associated with this chunk.\n- The chunk data length (4 bytes, little-endian). Length is specified in bytes (excluding the tag itself) and must be a multiple of 4.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 252,
+      "bottomRightX": 687,
+      "bottomRightY": 287,
+      "content": "The chunk tags (chunk identifier and length fields) are headers embedded in the Part's data of the chunk block and their byte order is little-endian.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 304,
+      "bottomRightX": 283,
+      "bottomRightY": 322,
+      "content": "Example of GenICam Chunk Part data layout:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 338,
+      "bottomRightX": 680,
+      "bottomRightY": 455,
+      "content": "![img-2.jpeg](img-2.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-2.jpeg"
+    },
+    {
+      "topLeftX": 261,
+      "topLeftY": 456,
+      "bottomRightX": 474,
+      "bottomRightY": 470,
+      "content": "Figure 2-8: GenICam Chunk Part data layout",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 501,
+      "bottomRightX": 371,
+      "bottomRightY": 517,
+      "content": "### GenDC Metadata Part Chunk Layout Id for GenICam Chunk",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 536,
+      "bottomRightX": 703,
+      "bottomRightY": 623,
+      "content": "When the chunk layout (availability or position of individual chunks) changes in the chunk data Part, the Chunk \"LayoutId\" contained in the InfoTypeSpecific field of the GenICam Metadata Part header must change too. As long as the chunk layout remains the same, the Chunk LayoutId should stay identical. When switching back to a layout which was already used before, the same Chunk LayoutId that was used before or a new one can be used. A Chunk LayoutId value of 0 is reserved for Parts not supporting the layout Id functionality.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 640,
+      "bottomRightX": 668,
+      "bottomRightY": 674,
+      "content": "Note: The GDC_METADATA_GENICAM_CHUNK Part data can be decoded using the GenICam chunk parser class CChunkAdapterGenDC of the GenICam reference implementation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 709,
+      "bottomRightX": 434,
+      "bottomRightY": 726,
+      "content": "### Container with Metadata Component including GenICam Chunk data.",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 743,
+      "bottomRightX": 709,
+      "bottomRightY": 813,
+      "content": "In general, it is recommended that a Container contains only one common Metadata Component including one Part of type GDC_METADATA_GENICAM_CHUNK (and optionally its corresponding GDC_METADATA_GENICAM_XML Part to decode it). The Metadata Component and its Parts Format must be set to PFNC_Data8. If all the Container's Components have the same GroupId (the most common case), the Metadata Component must use this GroupId too.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 830,
+      "bottomRightX": 703,
+      "bottomRightY": 900,
+      "content": "If a Container contains many Component groups but the chunk data information about all those groups is located in a single common Metadata Component containing all the GenICam chunk data, then its GroupId must be set to 0xFFFF (which represent \"pertains to all GroupId\"). In that case, after chunk parsing using GenICam, the XML feature ChunkGroupSelector is typically used to target the information related to each particular group of Components.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 917,
+      "bottomRightX": 700,
+      "bottomRightY": 934,
+      "content": "GenDC also supports having many Metadata Components in the same Container each containing the GenICam chunk",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 82,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 27 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

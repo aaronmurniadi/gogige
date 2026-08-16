@@ -1,0 +1,113 @@
+{
+  "index": 112,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 159,
+      "bottomRightX": 573,
+      "bottomRightY": 193,
+      "content": "Note that this category depends whether a Port access is provided through the \"BufferPort\" feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 210,
+      "bottomRightX": 256,
+      "bottomRightY": 226,
+      "content": "### 3.5.1.2 BufferUserData",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 228,
+      "bottomRightX": 561,
+      "bottomRightY": 442,
+      "content": "|  Name | BufferUserData  |\n| --- | --- |\n|  Category | BufferInformation  |\n|  Level | Optional (but mandatory if Port access provided)  |\n|  Interface | Integer  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 467,
+      "bottomRightX": 692,
+      "bottomRightY": 520,
+      "content": "Pointer to user data casted to an integer number referencing GenTL Consumer specific data. It is reflecting the pointer provided by the user data pointer at buffer announcement. This allows the GenTL Consumer to attach information to a buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 527,
+      "bottomRightX": 695,
+      "bottomRightY": 564,
+      "content": "Note that according to the GenICam GenTL standard, this feature is mandatory if a Port access is provided through the “BufferPort” feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 571,
+      "bottomRightX": 684,
+      "bottomRightY": 592,
+      "content": "Corresponds to the BUFFER_INFO_USER_PTR command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 605,
+      "bottomRightX": 225,
+      "bottomRightY": 624,
+      "content": "### 3.5.1.3 BufferType",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 626,
+      "bottomRightX": 421,
+      "bottomRightY": 911,
+      "content": "|  Name | BufferType  |\n| --- | --- |\n|  Category | BufferInformation  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | GigEVision CameraLink CameraLinkHS CoaXPress USB3Vision  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 113 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

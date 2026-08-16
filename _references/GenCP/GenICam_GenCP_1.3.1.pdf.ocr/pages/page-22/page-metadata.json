@@ -1,0 +1,85 @@
+{
+  "index": 21,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 140,
+      "content": "|  GEN<i>CAM |   | ![img-19.jpeg](img-19.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 130,
+      "topLeftY": 156,
+      "bottomRightX": 402,
+      "bottomRightY": 174,
+      "content": "##### 3.1.4.3. Command Packet Failure",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 196,
+      "bottomRightX": 613,
+      "bottomRightY": 231,
+      "content": "If the command packet is lost on the link or if the command packet is received as corrupt, the following actions are supposed to happen:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 189,
+      "topLeftY": 292,
+      "bottomRightX": 530,
+      "bottomRightY": 779,
+      "content": "![img-20.jpeg](img-20.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-20.jpeg"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 800,
+      "bottomRightX": 427,
+      "bottomRightY": 815,
+      "content": "Fig. 4 – Command Failure",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 854,
+      "bottomRightX": 608,
+      "bottomRightY": 889,
+      "content": "The command is resent after the timeout period with the CommandResend bit being set. The request_id is the same as with the original command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 22 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

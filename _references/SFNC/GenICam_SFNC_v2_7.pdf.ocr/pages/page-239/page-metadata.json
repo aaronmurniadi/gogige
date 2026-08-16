@@ -1,0 +1,122 @@
+{
+  "index": 238,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 546,
+      "bottomRightY": 208,
+      "content": "- RS422: The Line is currently accepting or sending RS422 level signals.\n- OptoCoupled: The Line is opto-coupled.\n- OpenDrain: The Line is Open Drain (or Open Collector).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 223,
+      "bottomRightX": 319,
+      "bottomRightY": 244,
+      "content": "### 9.2.9 UserOutputSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 47,
+      "topLeftY": 246,
+      "bottomRightX": 385,
+      "bottomRightY": 476,
+      "content": "|  Name | UserOutputSelector  |\n| --- | --- |\n|  Category | DigitalIOControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | UserOutput0, UserOutput1, UserOutput2, ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 502,
+      "bottomRightX": 543,
+      "bottomRightY": 520,
+      "content": "Selects which bit of the User Output register will be set by UserOutputValue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 526,
+      "bottomRightX": 177,
+      "bottomRightY": 543,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 553,
+      "bottomRightX": 470,
+      "bottomRightY": 650,
+      "content": "- UserOutput0: Selects the bit 0 of the User Output register.\n- UserOutput1: Selects the bit 1 of the User Output register.\n- UserOutput2: Selects the bit 2 of the User Output register.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 667,
+      "bottomRightX": 295,
+      "bottomRightY": 688,
+      "content": "### 9.2.10 UserOutputValue",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 47,
+      "topLeftY": 690,
+      "bottomRightX": 432,
+      "bottomRightY": 921,
+      "content": "|  Name | UserOutputValue[UserOutputSelector]  |\n| --- | --- |\n|  Category | DigitalIOControl  |\n|  Level | Recommended  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 239 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

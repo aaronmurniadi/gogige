@@ -1,0 +1,84 @@
+{
+  "index": 13,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 623,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 87,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 116,
+      "bottomRightX": 662,
+      "bottomRightY": 971,
+      "content": "|  24.6 | CHUNKREGIONSELECTOR | 453  |\n| --- | --- | --- |\n|  24.7 | CHUNKREGIONID | 454  |\n|  24.8 | CHUNKREGIONIDVALUE | 454  |\n|  24.9 | CHUNKCOMPONENTSELECTOR | 455  |\n|  24.10 | CHUNKCOMPONENTID | 456  |\n|  24.11 | CHUNKCOMPONENTIDVALUE | 457  |\n|  24.12 | CHUNKGROUPSELECTOR | 457  |\n|  24.13 | CHUNKGROUPID | 458  |\n|  24.14 | CHUNKGROUPIDVALUE | 458  |\n|  24.15 | CHUNKIMAGECOMPONENT (DEPRECATED) | 459  |\n|  24.16 | CHUNKPARTSELECTOR (DEPRECATED) | 460  |\n|  24.17 | CHUNKIMAGE | 460  |\n|  24.18 | CHUNKOFFSETX | 460  |\n|  24.19 | CHUNKOFFSETY | 461  |\n|  24.20 | CHUNKWIDTH | 461  |\n|  24.21 | CHUNKHEIGHT | 461  |\n|  24.22 | CHUNKPIXELFORMAT | 462  |\n|  24.23 | CHUNKPIXELDYNAMICRANGEMIN | 469  |\n|  24.24 | CHUNKPIXELDYNAMICRANGEMAX | 469  |\n|  24.25 | CHUNKBINNINGHORIZONTAL | 470  |\n|  24.26 | CHUNKBINNINGVERTICAL | 470  |\n|  24.27 | CHUNKDECIMATIONHORIZONTAL | 470  |\n|  24.28 | CHUNKDECIMATIONVERTICAL | 471  |\n|  24.29 | CHUNKREVERSEX | 471  |\n|  24.30 | CHUNKREVERSEY | 471  |\n|  24.31 | CHUNKTIMESTAMP | 472  |\n|  24.32 | CHUNKTIMESTAMPLATCHVALUE | 472  |\n|  24.33 | CHUNKLINESTATUSALL | 473  |\n|  24.34 | CHUNKCOUNTERSELECTOR | 473  |\n|  24.35 | CHUNKCOUNTERVALUE | 474  |\n|  24.36 | CHUNKTIMERSELECTOR | 474  |\n|  24.37 | CHUNKTIMERVALUE | 475  |\n|  24.38 | CHUNKSCANLINESELECTOR | 475  |\n|  24.39 | CHUNKENCODERSELECTOR | 475  |\n|  24.40 | CHUNKENCODERVALUE | 476  |\n|  24.41 | CHUNKENCODERSTATUS | 476  |\n|  24.42 | CHUNKEXPOSURETIMESELECTOR | 477  |\n|  24.43 | CHUNKEXPOSURETIME | 478  |\n|  24.44 | CHUNKGAINSELECTOR | 478  |\n|  24.45 | CHUNKGAIN | 480  |\n|  24.46 | CHUNKBLACKLEVELSELECTOR | 481  |\n|  24.47 | CHUNKBLACKLEVEL | 481  |\n|  24.48 | CHUNKLINEPITCH | 482  |\n|  24.49 | CHUNKFRAMEID | 482  |\n|  24.50 | CHUNKSOURCESELECTOR | 483  |\n|  24.51 | CHUNKSOURCEID | 483  |\n|  24.52 | CHUNKSOURCEIDVALUE | 484  |\n|  24.53 | CHUNKTRANSFERBLOCKID | 484  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 989,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 392,
+      "bottomRightY": 1007,
+      "content": "Page 14 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 989,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

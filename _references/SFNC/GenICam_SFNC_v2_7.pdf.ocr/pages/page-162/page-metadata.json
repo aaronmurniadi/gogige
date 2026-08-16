@@ -1,0 +1,85 @@
+{
+  "index": 161,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 49,
+      "topLeftY": 42,
+      "bottomRightX": 704,
+      "bottomRightY": 118,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 162,
+      "bottomRightX": 367,
+      "bottomRightY": 183,
+      "content": "### 5.3 Acquisition timing diagrams",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 205,
+      "bottomRightX": 699,
+      "bottomRightY": 222,
+      "content": "This section gives the timing diagrams and features setting order for the most common acquisition scenarios.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 260,
+      "bottomRightX": 811,
+      "bottomRightY": 560,
+      "content": "![img-56.jpeg](img-56.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-56.jpeg"
+    },
+    {
+      "topLeftX": 388,
+      "topLeftY": 570,
+      "bottomRightX": 625,
+      "bottomRightY": 589,
+      "content": "Figure 5-5: Continuous Acquisition",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 685,
+      "bottomRightX": 121,
+      "bottomRightY": 700,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 279,
+      "topLeftY": 685,
+      "bottomRightX": 377,
+      "bottomRightY": 701,
+      "content": "Page 162 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 423,
+      "topLeftY": 686,
+      "bottomRightX": 591,
+      "bottomRightY": 701,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

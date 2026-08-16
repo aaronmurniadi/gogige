@@ -1,0 +1,165 @@
+{
+  "index": 314,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 143,
+      "bottomRightX": 269,
+      "bottomRightY": 167,
+      "content": "# 17 Sequencer Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 197,
+      "bottomRightX": 752,
+      "bottomRightY": 232,
+      "content": "The Sequencer Control chapter describes the model and features related to the control of the sequencers that can be used to change some features of the device automatically based on different events and signals.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 248,
+      "bottomRightX": 310,
+      "bottomRightY": 268,
+      "content": "## 17.1 Sequencer control model",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 290,
+      "bottomRightX": 750,
+      "bottomRightY": 343,
+      "content": "The Sequencer Control Model section describes the usage of the features related to the sequencing of automatic changes to features by the device. It describes the basic Sequencer model and the typical behavior of the device when a sequencer is used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 371,
+      "bottomRightX": 210,
+      "bottomRightY": 390,
+      "content": "### Sequencer overview",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 396,
+      "bottomRightX": 701,
+      "bottomRightY": 452,
+      "content": "The purpose of a sequencer is to allow the user of a camera to define a series of feature sets for image acquisition which can consecutively be activated during the acquisition by the camera. Accordingly, the proposed sequence is configured by a list of parameter sets.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 459,
+      "bottomRightX": 754,
+      "bottomRightY": 529,
+      "content": "Each of these sequencer sets contains the settings for a number of camera features. Similar to user sets, the actual settings of the camera are overwritten when one of these sequencer sets is loaded. The order in which the features are applied to the camera depends on the design of the vendor. It is recommended to apply all the image related settings to the camera, before the first frame of this sequence is captured.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 538,
+      "bottomRightX": 741,
+      "bottomRightY": 574,
+      "content": "The sequencer sets can be loaded and saved by selecting them using SequencerSetSelector. The Execution of the sequencer is completely controlled by the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 600,
+      "bottomRightX": 306,
+      "bottomRightY": 621,
+      "content": "### Configuration of a sequencer set",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 627,
+      "bottomRightX": 713,
+      "bottomRightY": 663,
+      "content": "The index of the adjustable sequencer set is given by the SequencerSetSelector. The number of available sequencer sets is directly given by the range of this feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 671,
+      "bottomRightX": 743,
+      "bottomRightY": 725,
+      "content": "The features which are actually part of a sequencer set are defined by the camera manufacturer. These features can be read by SequencerFeatureSelector and activated by SequencerFeatureEnable[SequencerFeatureSelector]. This configuration is the same for all Sequencer Sets.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 732,
+      "bottomRightX": 747,
+      "bottomRightY": 821,
+      "content": "To configure a sequencer set the camera has to be switched into configuration mode by SequencerConfigurationMode. Then the user has to select the desired sequencer set he wants to modify with the SequencerSetSelector. After the user has changed all the needed camera settings it is possible to store all these settings within a selected sequencer set by SequencerSetSave[SequencerSetSelector]. The user can also read back this settings by SequencerSetLoad[SequencerSetSelector].",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 828,
+      "bottomRightX": 754,
+      "bottomRightY": 918,
+      "content": "To permit a flexible usage, more than one possibility to go from one sequencer set to another can exist. Such a path is selected by SequencerPathSelector[SequencerSetSelector]. Each path and therefore the transition between different sequencer sets is based on a defined trigger and an aimed next sequencer set which is selectable by SequencerSetNext[SequencerSetSelector][SequencerPathSelector]. After the trigger occurs the settings of the next set are active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 315 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

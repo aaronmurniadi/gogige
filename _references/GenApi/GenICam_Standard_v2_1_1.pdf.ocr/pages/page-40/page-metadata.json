@@ -1,0 +1,147 @@
+{
+  "index": 39,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<i>CAM |   | ![img-55.jpeg](img-55.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 637,
+      "bottomRightY": 202,
+      "content": "When embedding formulas in XML files the problem arises that the characters <, >, and & cannot be used directly because they are part of the XML syntax. There are two possible solutions for that problem.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 209,
+      "bottomRightX": 345,
+      "bottomRightY": 226,
+      "content": "First you can escape these letters as follows:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 232,
+      "bottomRightX": 405,
+      "bottomRightY": 299,
+      "content": "< becomes &lt; (lt = thess than)\n> becomes &gt; (gt = greater than)\n& becomes &amp; (amp = ampersand)",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 306,
+      "bottomRightX": 387,
+      "bottomRightY": 321,
+      "content": "As a result the formula  \\( (x>0) \\)  &&  \\( (x<10) \\)  becomes",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 327,
+      "bottomRightX": 507,
+      "bottomRightY": 342,
+      "content": "<formula>(x &gt; 0) &amp;&amp; (x &lt; 10)</formula>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 350,
+      "bottomRightX": 636,
+      "bottomRightY": 383,
+      "content": "Alternatively you can declare the whole formula as non-XML-text by bracketing it with <![CDATA[ and ]]>. The formula then becomes:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 389,
+      "bottomRightX": 475,
+      "bottomRightY": 405,
+      "content": "<formula><![CDATA[ (x>0) && (x<10) ]]>/formula>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 436,
+      "bottomRightX": 636,
+      "bottomRightY": 486,
+      "content": "The SwissKnife syntax has some extensions: You can use named constants using the Constant entry and named sub expressions using the Expression entry as shown in the following example. The sub expressions may not refer to other sub expressions.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 498,
+      "bottomRightX": 426,
+      "bottomRightY": 594,
+      "content": "<SwissKnife Name=\"Result\">\n    ValueX\n    ValueY\n    2.0\n    Expression Name=\"TwoX\">2.0*X\n    <Formula> TwoX * Y + Two </Formula>\n</SwissKnife>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 615,
+      "bottomRightX": 636,
+      "bottomRightY": 699,
+      "content": "In Addition you can access the minimum, maximum, and increment of a node by using the variable name extensions .Min, .Max, .Inc, and – for completeness – also .Value. In addition .Entry.Name is allowed which accesses the integer value of an EnumEntry described by Name. As an example the SwissKnife to find the middle of the [min, max] range would look like this:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 722,
+      "bottomRightX": 454,
+      "bottomRightY": 791,
+      "content": "<SwissKnife Name=\"MidRange\">\n    Gain\n    Gain\n    Gain\n    (Gain.Max - Gain.Min) / 2 </Formula>\n</SwissKnife>",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 813,
+      "bottomRightX": 637,
+      "bottomRightY": 930,
+      "content": "In contrast to the SwissKnife the Converter works bi-directionally. It implements an IFloat interface, looks a bit like the SwissKnife but contains an additional  element which can point to an IInteger or IFloat interface. It has two formulas: the <FormulaFrom> describes how to convert a value from the <pValue> node to the use domain and the <FormulaTo> describes how to convert a user value to the <pValue> domain. The <Slope> entry indicates if the formula is monotonously Increasing or Decreasing, if it is Varying (in this case the full number range is used), or if the slope is determined in an Automatic way by</Slope></pValue></pValue></pValue></pValue></pValue>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 40 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

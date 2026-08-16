@@ -1,0 +1,57 @@
+{
+  "index": 27,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-28.jpeg](img-28.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 106,
+      "topLeftY": 155,
+      "bottomRightX": 651,
+      "bottomRightY": 223,
+      "content": "If compared to UDP/IP, a prefix would be omitted since everything is covered by the underlying protocol. For a serial connection, we would not need to cover addressing because it is not part of the technology. We need to identify a communication channel (by channel_id) and we need a CRC and we need a preamble to identify the protocol.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 229,
+      "bottomRightX": 651,
+      "bottomRightY": 380,
+      "content": "- The Common Command Data section contains data which describes the command. For example, this section contains the actual command identifier and the request_id.\n- The Command Specific Data section is technology agnostic. It carries data which is specific for a given command. For example, for a read command it would contain the address to read from and the number of bytes to read.\n- The Postfix section is technology specific. It carries for example a CRC checksum in case it is needed for a given technology. This section is only mandatory if defined for a given technology.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 932,
+      "bottomRightX": 391,
+      "bottomRightY": 949,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 932,
+      "bottomRightX": 618,
+      "bottomRightY": 949,
+      "content": "Page 28 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

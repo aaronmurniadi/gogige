@@ -1,0 +1,113 @@
+{
+  "index": 71,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 657,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-77.jpeg](img-77.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 155,
+      "bottomRightX": 639,
+      "bottomRightY": 206,
+      "content": "can not be sure that the Acknowledge-Request bit is set in the command. Therefore, the received command has to be discarded. The sender will run into a timeout and the normal resend procedure has to be applied.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 212,
+      "bottomRightX": 628,
+      "bottomRightY": 247,
+      "content": "For other errors like unsupported command_ids the failure procedure as described in the GenCP document is to be applied.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 298,
+      "bottomRightX": 515,
+      "bottomRightY": 319,
+      "content": "### 1.8. Technology Specific Bootstrap Register Map",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 337,
+      "bottomRightX": 644,
+      "bottomRightY": 431,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Support | Access | Description  |\n| --- | --- | --- | --- | --- |\n|  4 | 0 | M | R | Supported Baudrates  |\n|  4 | 4 | M | (R)W | Current Baudrate  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 431,
+      "bottomRightX": 416,
+      "bottomRightY": 443,
+      "content": "Table 36 – Serial BRM",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 474,
+      "bottomRightX": 318,
+      "bottomRightY": 494,
+      "content": "#### 1.8.1. Supported Baudrate",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 515,
+      "bottomRightX": 323,
+      "bottomRightY": 533,
+      "content": "Bitfield indicating the supported baud rates.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 186,
+      "topLeftY": 560,
+      "bottomRightX": 533,
+      "bottomRightY": 708,
+      "content": "|  Offset | Hex 000  |\n| --- | --- |\n|  Length | 4  |\n|  Access Type | R  |\n|  Support | M  |\n|  Data Type | Bitfield  |\n|  Factory Default | Device specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 72 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

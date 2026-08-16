@@ -1,0 +1,49 @@
+{
+  "index": 10,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 640,
+      "bottomRightY": 113,
+      "content": "|  ![img-6.jpeg](img-6.jpeg)CAM |   | ![img-7.jpeg](img-7.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 136,
+      "bottomRightX": 644,
+      "bottomRightY": 476,
+      "content": "|   |  |  | Added support for GenDC payload type (PAYLOAD_TYPE_GENDC,STREAM_INFO_FLOW_TABLE,STREAM_INFO_GENDC_PREFETCH_DESCRIPTOR)Extensions to GenTL multi-part definition to fully cover multi-part in GigE Vision 2.1 (BUFFER_PART_INFO_REGION_ID,BUFFER_PART_INFO_DATA_PURPOSE_ID,PART_DATATYPE_JPEG,PART_DATATYPE_JPEG2000)Clarified relationships betweenBUFFER_INFO_SIZE_FILLED andBUFFER_INFO_DATA_SIZEClarified several error return conditionsClarified interpretation of partial port reads/writes as failureFurther clarified use ofBUFFER_INFO_NEW_DATA andSTREAM_INFO_BUF_ALIGNMENTAdded support for „stacked“ buffer info querying,DSGetBufferInfoStacked and DSGetBufferPartInfoStacked  |\n| --- | --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 545,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 11 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

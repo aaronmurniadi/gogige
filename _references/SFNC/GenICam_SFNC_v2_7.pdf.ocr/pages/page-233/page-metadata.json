@@ -1,0 +1,167 @@
+{
+  "index": 232,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 734,
+      "bottomRightY": 172,
+      "content": "Using LineSource, each of the bits of the User Output register can be directed to a physical output Line after going trough the I/O control block (See Figure 9-1: I/O Control).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 179,
+      "bottomRightX": 716,
+      "bottomRightY": 197,
+      "content": "UserOutputSelector and UserOutputValue are used to set any individual bit of the User Output register.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 749,
+      "bottomRightY": 231,
+      "content": "UserOutputValueAll and UserOutputValueAllMask can be used to set all or many of the User Output bits in one access.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 241,
+      "bottomRightX": 116,
+      "bottomRightY": 258,
+      "content": "Example:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 264,
+      "bottomRightX": 442,
+      "bottomRightY": 284,
+      "content": "/* User Output of a positive TTL signal on physical Line 2. */",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 304,
+      "bottomRightX": 311,
+      "bottomRightY": 410,
+      "content": "LineSelector = Line2;\nLineMode = Output;\nLineFormat = TTL;\nLineSource = UserOutput2;\n\nUserOutputSelector = UserOutput2;\nUserOutputValue = True;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 42,
+      "topLeftY": 462,
+      "bottomRightX": 322,
+      "bottomRightY": 483,
+      "content": "## 9.2 Digital I/O Control features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 512,
+      "bottomRightX": 355,
+      "bottomRightY": 530,
+      "content": "This section lists the digital I/O control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 546,
+      "bottomRightX": 286,
+      "bottomRightY": 567,
+      "content": "### 9.2.1 DigitalIOControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 569,
+      "bottomRightX": 385,
+      "bottomRightY": 781,
+      "content": "|  Name | DigitalIOControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 807,
+      "bottomRightX": 470,
+      "bottomRightY": 825,
+      "content": "Category that contains the digital input and output control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 841,
+      "bottomRightX": 257,
+      "bottomRightY": 859,
+      "content": "### 9.2.2 LineSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 863,
+      "bottomRightX": 422,
+      "bottomRightY": 944,
+      "content": "|  Name | LineSelector  |\n| --- | --- |\n|  Category | DigitalIOControl  |\n|  Level | Recommended  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 233 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

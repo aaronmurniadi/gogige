@@ -1,0 +1,8 @@
+|  GENICAM |   | emva  |
+| --- | --- | --- |
+|  Version 1.6 | GenTL Standard  |   |
+
+|   |  |  | Added return code descriptionsRenamed EVENT_FEATURE_DEVEVENT to EVENT_REMOTE_DEVICEAdded EVENT_MODULEAdded GC_ERR_INVALID_VALUEDeprecated PAYLOAD_TYPE_EXTENDED_CHUNK and changed comment on PAYLOAD_TYPE_CHUNK_DATAAdded GC_ERR_RESOURCE_EXHAUSTED and GC_ERR_OUT_OF_MEMORYAdded error codes to function descriptionsClarified number of images to acquire in DSStartAcquisitionAdded clarification to EventKill functionClarified handling of too small buffersClarified the retrieval of the payload size from the GenTL ProducerClearified the behavior of EventKill/EventGetData  |
+| --- | --- | --- | --- |
+|  1.5 | September 2014 | GenTL Subcommittee | Changes for V. 1.5Changed Standard Feature Naming Convention to Standard Features Naming ConventionAdded URL_INFO commands for register address and files sizeAdded methods and enumerations to handle multi-part buffer sAdded URL_INFO commands to retrieve scheme and filenameAdded error code GC_ERR_BUSYAdded access status for already open devicesIntroduced Mandatory and Optional for Info Commands  |
+|  1.6 | October 2019 | GenTL Subcommittee | Changes for V. 1.6Added functions and enumerations to handle data stream flows and composite buffers as their destinations; new API functions:DSAnnounceCompositeBuffer (plus related command BUFFER_INFO_IS_COMPOSITE), DSGetNumFlows, DSGetFlowInfo, DSGetNumBufferSegments, DSGetBufferSegmentInfoAdded support for composite buffers in acquisition engine and existing buffer related content  |

@@ -1,0 +1,157 @@
+{
+  "index": 127,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 535,
+      "bottomRightY": 81,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 66,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 127,
+      "bottomRightX": 630,
+      "bottomRightY": 370,
+      "content": "![img-29.jpeg](img-29.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-29.jpeg"
+    },
+    {
+      "topLeftX": 178,
+      "topLeftY": 380,
+      "bottomRightX": 547,
+      "bottomRightY": 398,
+      "content": "Figure 4-3: Multiple Image components from a full size image",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 421,
+      "bottomRightX": 647,
+      "bottomRightY": 504,
+      "content": "Note that if multiple Components are supported by the device, the **ComponentSelector** can be added to various features such as PixelFormat,.. to specify the characteristics of the selected Component. In order to simplify the standard text and feature descriptions (see above example), the optional **ComponentSelector** is not explicitly propagated to all the features of the SFNC that it can potentially select.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 543,
+      "bottomRightX": 248,
+      "bottomRightY": 562,
+      "content": "### 4.12 ComponentEnable",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 565,
+      "bottomRightX": 587,
+      "bottomRightY": 782,
+      "content": "|  Name | ComponentEnable[RegionSelector][ComponentSelector]  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Optional  |\n|  Interface | IBoolean  |\n|  Access | Read/(Write)  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | True False  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 804,
+      "bottomRightX": 373,
+      "bottomRightY": 821,
+      "content": "Controls if the selected component streaming is active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 837,
+      "bottomRightX": 169,
+      "bottomRightY": 852,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 862,
+      "bottomRightX": 345,
+      "bottomRightY": 904,
+      "content": "- **True**: Acquisition of component enabled.\n- **False**: Acquisition of component disabled.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 364,
+      "bottomRightY": 967,
+      "content": "Page 128 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "index": 15,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 139,
+      "content": "|  GEN<i>CAM |   | ![img-11.jpeg](img-11.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 155,
+      "bottomRightX": 651,
+      "bottomRightY": 221,
+      "content": "This is to prevent that with the start of a communication an application uses request_id = 0 and sends just 1 command. Then a second application would also start a new communication and would again use request_id = 0. In this case it needs to be ensured that the second communication does not get an “old” ack.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 229,
+      "bottomRightX": 475,
+      "bottomRightY": 247,
+      "content": "The round trip time for a command and the according acknowledge is",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 252,
+      "bottomRightX": 547,
+      "bottomRightY": 271,
+      "content": "Command Transfer Time + Processing Time + Acknowledge Transfer time",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 277,
+      "bottomRightX": 594,
+      "bottomRightY": 293,
+      "content": "When calculating the timeout time for the command cycle, a host must therefore consider:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 85,
+      "topLeftY": 302,
+      "bottomRightX": 580,
+      "bottomRightY": 367,
+      "content": "- the transfer time of the maximum packet size on a given link speed\n- the Maximum Device Response Time, which is provided via a bootstrap register\n- some margin for technology-dependent delays, which may occur on the link",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 373,
+      "bottomRightX": 648,
+      "bottomRightY": 439,
+      "content": "Reading the Maximum Device Response Time (MDRT) register should not exceed 50 ms in order to guarantee a responsive device. The maximum device response time for any other read or write operation should not exceed 300 ms. This plus the maximum packet transfer time allows the host to calculate a timeout value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 932,
+      "bottomRightX": 391,
+      "bottomRightY": 950,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 932,
+      "bottomRightX": 618,
+      "bottomRightY": 950,
+      "content": "Page 16 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "index": 177,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-266.jpeg](img-266.jpeg)CAN |   | ![img-267.jpeg](img-267.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 138,
+      "bottomRightX": 245,
+      "bottomRightY": 155,
+      "content": "#### 6.5.3 Port Structures",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 168,
+      "bottomRightX": 377,
+      "bottomRightY": 187,
+      "content": "##### 6.5.3.1 PORT_REGISTER_STACK_ENTRY",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 209,
+      "bottomRightX": 365,
+      "bottomRightY": 226,
+      "content": "struct PORT_REGISTER_STACK_ENTRY",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 235,
+      "bottomRightX": 635,
+      "bottomRightY": 271,
+      "content": "Layout of the array elements being used in the function GCWritePortStacked and GCReadPortStacked to accomplish a stacked register read/write operations.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 276,
+      "bottomRightX": 640,
+      "bottomRightY": 382,
+      "content": "|  Member | Type | Description  |\n| --- | --- | --- |\n|  Address | uint64_t | Register address  |\n|  Buffer | void * | Pointer to the buffer receiving the data being read/containing the data to write.  |\n|  Size | size_t | Number of bytes to read / write. The provided Buffer must be at least that size.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 403,
+      "bottomRightX": 259,
+      "bottomRightY": 423,
+      "content": "### 6.6 String Constants",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 438,
+      "bottomRightX": 299,
+      "bottomRightY": 457,
+      "content": "#### 6.6.1 Transport Layer Types",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 475,
+      "bottomRightX": 634,
+      "bottomRightY": 512,
+      "content": "String constants for transport layer technologies that are supported.to be used with the module info commands xxx_INFO_TLTYPE (for example TL_INFO_TLTYPE) inquiry commands.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 532,
+      "bottomRightX": 645,
+      "bottomRightY": 907,
+      "content": "|  Transport Technology Standard | String Constant  |\n| --- | --- |\n|  GigE Vision | “GEV”  |\n|  Camera Link | “CL”  |\n|  IIDC 1394 | “IIDC  |\n|  USB video class | “UVC”  |\n|  CoaXPress | “CXP”  |\n|  Camera Link HS | “CLHS”  |\n|  USB3 Vision Standard | “U3V”  |\n|  Generic Ethernet | “Ethernet”  |\n|  PCI / PCIe | “PCI”  |\n|  Mixed | “Mixed”This type is only valid for the System module in case the different Interface modules with a single system are of different types. All other modules must be of a defined type.  |\n|  Non standard transport technology, not covered by other constants. | “Custom“  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 635,
+      "bottomRightY": 945,
+      "content": "Page 178 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

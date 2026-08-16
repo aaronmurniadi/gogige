@@ -1,0 +1,131 @@
+{
+  "index": 59,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 291,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 56,
+      "topLeftY": 76,
+      "bottomRightX": 120,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 76,
+      "bottomRightX": 385,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 548,
+      "bottomRightY": 80,
+      "content": "![img-6.jpeg](img-6.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-6.jpeg"
+    },
+    {
+      "topLeftX": 548,
+      "topLeftY": 65,
+      "bottomRightX": 590,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 107,
+      "bottomRightX": 927,
+      "bottomRightY": 448,
+      "content": "|  EncoderMode[EncoderSelector] | O | IEnumeration | R/W | - | E | Selects if the count of encoder uses FourPhase mode with jitter filtering or the HighResolution mode without jitter filtering.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  EncoderDivider[EncoderSelector] | O | IInteger | R/W | - | E | Sets how many Encoder increments/decrements are needed to generate an Encoder output pulse signal.  |\n|  EncoderOutputMode[EncoderSelector] | O | IEnumeration | R/W | - | E | Selects the conditions for the Encoder interface to generate a valid Encoder output signal.  |\n|  EncoderStatus[EncoderSelector] | O | IEnumeration | R | - | E | Returns the motion status of the encoder.  |\n|  EncoderTimeout[EncoderSelector] | O | IFloat | R/W | us | E | Sets the maximum time interval between encoder counter increments before the status turns to static.  |\n|  EncoderResetSource[EncoderSelector] | R | IEnumeration | R/W | - | E | Selects the signals that will be the source to reset the Encoder.  |\n|  EncoderResetActivation[EncoderSelector] | R | IEnumeration | R/W | - | E | Selects the Activation mode of the Encoder Reset Source signal.  |\n|  EncoderReset[EncoderSelector] | R | ICommand | (R)/W | - | E | Does a software reset of the selected Encoder and starts it.  |\n|  EncoderValue[EncoderSelector] | R | IInteger | R/W | - | E | Reads or writes the current value of the position counter of the selected Encoder.  |\n|  EncoderValueAtReset[EncoderSelector] | R | IInteger | R | - | E | Reads the value of the of the position counter of the selected Encoder when it was reset by a signal or by an explicit EncoderReset command.  |\n|  EncoderResolution[EncoderSelector] | O | IFloat | R/W | mm | E | Defines the resolution of one encoder step.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 478,
+      "bottomRightX": 273,
+      "bottomRightY": 498,
+      "content": "## 2.10 Logic Block Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 501,
+      "bottomRightX": 730,
+      "bottomRightY": 518,
+      "content": "Contains the features related to the usage of the logic block (See the Logic Block Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 358,
+      "topLeftY": 525,
+      "bottomRightX": 614,
+      "bottomRightY": 542,
+      "content": "Table 2-10: Logic Block Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 547,
+      "bottomRightX": 927,
+      "bottomRightY": 651,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  LogicBlockControl | O | ICategory | R | - | G | Category that contains the Logic Block control features.  |\n|  LogicBlockSelector | O | IEnumeration | R/W | - | G | Specifies the Logic Block to configure.  |\n|  LogicBlockFunction[LogicBlockSelector] | O | IEnumeration | R/W | - | G | Selects the combinational logic Function of the Logic Block to configure.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 652,
+      "bottomRightX": 120,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 652,
+      "bottomRightX": 373,
+      "bottomRightY": 669,
+      "content": "Page 60 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 653,
+      "bottomRightX": 591,
+      "bottomRightY": 669,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

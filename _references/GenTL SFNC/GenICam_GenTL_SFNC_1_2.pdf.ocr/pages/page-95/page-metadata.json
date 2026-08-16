@@ -1,0 +1,122 @@
+{
+  "index": 94,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 504,
+      "bottomRightY": 290,
+      "content": "|  Interface | IEnumeration  |\n| --- | --- |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | DeviceLost  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 314,
+      "bottomRightX": 418,
+      "bottomRightY": 333,
+      "content": "Selects which Event to signal to the host application.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 341,
+      "bottomRightX": 214,
+      "bottomRightY": 358,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 369,
+      "bottomRightX": 652,
+      "bottomRightY": 400,
+      "content": "- DeviceLost: Raised when the local host looses connection to the physical (remote) device.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 443,
+      "bottomRightX": 264,
+      "bottomRightY": 461,
+      "content": "### 3.3.5.3 EventNotification",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 464,
+      "bottomRightX": 425,
+      "bottomRightY": 713,
+      "content": "|  Name | EventNotification[EventSelector]  |\n| --- | --- |\n|  Category | EventControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Off On Once  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 738,
+      "bottomRightX": 672,
+      "bottomRightY": 772,
+      "content": "Activate or deactivate the notification to the host application of the occurrence of the selected Event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 781,
+      "bottomRightX": 214,
+      "bottomRightY": 798,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 808,
+      "bottomRightX": 673,
+      "bottomRightY": 878,
+      "content": "- Off: The selected Event notification is disabled.\n- On: The selected Event notification is enabled.\n- Once: The selected Event notification is enabled for one event then return to Off state.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 428,
+      "bottomRightY": 944,
+      "content": "Page 95 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

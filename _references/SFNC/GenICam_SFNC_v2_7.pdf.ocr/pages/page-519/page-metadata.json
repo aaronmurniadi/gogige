@@ -1,0 +1,150 @@
+{
+  "index": 518,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 144,
+      "bottomRightX": 274,
+      "bottomRightY": 166,
+      "content": "### 27.4 GigE Vision Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 169,
+      "bottomRightX": 557,
+      "bottomRightY": 187,
+      "content": "This section describes the GigE Vision specific transport layer control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 203,
+      "bottomRightX": 253,
+      "bottomRightY": 223,
+      "content": "#### 27.4.1 GigEVision",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 225,
+      "bottomRightX": 408,
+      "bottomRightY": 437,
+      "content": "|  Name | GigEVision  |\n| --- | --- |\n|  Category | TransportLayerControl  |\n|  Level | Optional  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 463,
+      "bottomRightX": 649,
+      "bottomRightY": 481,
+      "content": "Category that contains the features pertaining to the GigE Vision transport layer of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 497,
+      "bottomRightX": 427,
+      "bottomRightY": 517,
+      "content": "#### 27.4.2 GevVersionMajor (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 518,
+      "bottomRightX": 396,
+      "bottomRightY": 732,
+      "content": "|  Name | GevVersionMajor  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 757,
+      "bottomRightX": 694,
+      "bottomRightY": 793,
+      "content": "This feature is deprecated (See DeviceTLVersionMajor). It was representing the major version of the specification.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 800,
+      "bottomRightX": 541,
+      "bottomRightY": 818,
+      "content": "For instance, GigE Vision version 1.0 would have the major version set to 1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 834,
+      "bottomRightX": 422,
+      "bottomRightY": 855,
+      "content": "#### 27.4.3 GevVersionMinor (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 856,
+      "bottomRightX": 396,
+      "bottomRightY": 939,
+      "content": "|  Name | GevVersionMinor  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Recommended  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 519 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

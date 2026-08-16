@@ -1,0 +1,129 @@
+{
+  "index": 24,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GEN<ICAM |   | ![img-37.jpeg](img-37.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 152,
+      "bottomRightX": 635,
+      "bottomRightY": 184,
+      "content": "points to another node which describes the same feature in a way that the original node and the cast alias node can be casted into each other.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 191,
+      "bottomRightX": 635,
+      "bottomRightY": 226,
+      "content": "<isdeprecated> denotes that the corresponding feature is deprecated and should not be used for new designs anymore.</isdeprecated>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 232,
+      "bottomRightX": 635,
+      "bottomRightY": 298,
+      "content": "<streamable> denotes that the corresponding feature is prepared to be stored to and loaded from a file via the GenApi node tree. The idea is to persist the state of a camera by storing the features marked as Streamable and restore the state by writing those features back to the node tree.</streamable>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 306,
+      "bottomRightX": 635,
+      "bottomRightY": 373,
+      "content": "<pError> points to an enumeration which is checked after setting the value of a node. The enumeration must have one entry with IntValue 0 which indicates no error. If another value is set an exception is thrown with the DisplayName and the ToolTip of the EnumEntry as error message.</pError>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 380,
+      "bottomRightX": 635,
+      "bottomRightY": 431,
+      "content": "<DocuURL> Provides a http URL pointing to a location were documentation for the node can be found. The notation can contain Variables in the form $(NAME) were NAME is either a Node name or one of the following special names:</DocuURL>",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 438,
+      "bottomRightX": 635,
+      "bottomRightY": 730,
+      "content": "- Sys::NodeName : Name of the current node\n- Sys::ModelName: content of the XML file's ModelName attribute\n- Sys::VendorName: content of the XML file's VendorName attribute\n- Sys::StandardNamespace: content of the XML file's StandardNamespace attribute\n- Sys::GenApiVersion : version of the GenApi software (<major>.<minor>.<subminor>)\n- Sys::DeviceVersion : version of the device (<major>.<minor>.<subminor>)\n- Sys::SchemaVersion : version of the schema (<major>.<minor>.<subminor>)\n- Sys::Application: Name of the executable file\n- Sys::OperatingSystem: Name of the operating system. Format \"Windows5.1_SP3.0\"\n- Sys::Language: Name of the operating system's locale ID. Format \"German\"",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 744,
+      "bottomRightX": 191,
+      "bottomRightY": 762,
+      "content": "#### 2.8.2 Category",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 771,
+      "bottomRightX": 635,
+      "bottomRightY": 840,
+      "content": "The Category node is used to group features that should be presented to the user. It implements the ICategory interface and inherits all Node elements. It also contains a list of  elements that point to the features contained in the category. Categories can contain other categories, thus forming a tree of arbitrary depth.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 845,
+      "bottomRightX": 635,
+      "bottomRightY": 898,
+      "content": "There is one special Category node with the standard name  \\( Root^{6} \\)  that is the basis of the category tree. Users may want to start browsing the features of a camera from here. The following example creates the node graph shown in Figure 12:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 922,
+      "bottomRightX": 486,
+      "bottomRightY": 942,
+      "content": "\\( ^{6} \\)  The feature ICategory::Root is defined in all standard name spaces.",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 25 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

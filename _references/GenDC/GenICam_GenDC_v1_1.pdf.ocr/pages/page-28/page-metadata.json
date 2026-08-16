@@ -1,0 +1,149 @@
+{
+  "index": 27,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 115,
+      "bottomRightX": 715,
+      "bottomRightY": 168,
+      "content": "data of an individual Components group. In that case, the information in each Metadata Component applies only to the other Components sharing the same GroupId and the GenICam chunk parser must be called for each of them to retrieve the information about a particular group.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 203,
+      "bottomRightX": 302,
+      "bottomRightY": 219,
+      "content": "#### GenDC Metadata Part layout for GenICam XML",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 237,
+      "bottomRightX": 672,
+      "bottomRightY": 271,
+      "content": "A GenDC Metadata Part of type GDC_METADATA_GENICAM_XML is formatted block of XML data respecting the GenICam XML format and its schema.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 289,
+      "bottomRightX": 692,
+      "bottomRightY": 341,
+      "content": "For those GenICam XML Parts, the Part's header Flags field must be used to identify the format and content of XML data of the Part. This can be used for example to specify if the XML is zipped (compressed) or if it is suitable for GenICam Chunk data decoding (see 2.2.4.1 GenDC Part Header Common Fields Description).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 359,
+      "bottomRightX": 709,
+      "bottomRightY": 411,
+      "content": "Each of the Metadata Components of a Container that has a GDC_METADATA_GENICAM_CHUNK Part can also include a GDC_METADATA_GENICAM_XML Part corresponding to the chunk data of that Component. Or, if suitable to avoid duplication, a common and unique Metadata Component including a single Part of type",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 412,
+      "bottomRightX": 705,
+      "bottomRightY": 480,
+      "content": "GDC_METADATA_GENICAM_XML can be provided for all the Components of a Container containing a GenICam chunk metadata Part. This XML can then be used to decode any of the Container's chunk Metadata Parts. In that case, the Component containing the common GenICam XML must have the GroupId 0xFFFF (which represents \"pertains to all GroupIds\").",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 498,
+      "bottomRightX": 700,
+      "bottomRightY": 551,
+      "content": "When the content (availability or characteristics of individual XML features) changes in the XML data Part, the XML \"LayoutId\" contained in the InfoTypeSpecific field of the GenICam Metadata Part header must change too. As long as the XML layout remains the same, the XML LayoutId should stay identical.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 567,
+      "bottomRightX": 689,
+      "bottomRightY": 603,
+      "content": "Note: It is recommended that the sources that support sending GDC_METADATA_GENICAM_XML Parts in a GenDC Container have this functionality configurable and disabled by default (i.e. SFNC feature ChunkXMLEnable = False).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 623,
+      "bottomRightX": 295,
+      "bottomRightY": 640,
+      "content": "##### 2.2.8.2 1D Array specific Part type fields",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 659,
+      "bottomRightX": 721,
+      "bottomRightY": 718,
+      "content": "|  Size  |   |   |\n| --- | --- | --- |\n|  Padding | PaddingReserved | InfoReserved  |\n|  InfoTypeSpecific (Reserved)  |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 228,
+      "topLeftY": 731,
+      "bottomRightX": 508,
+      "bottomRightY": 747,
+      "content": "Figure 2-9: Part specific Header fields layout for 1D Array",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 30,
+      "topLeftY": 773,
+      "bottomRightX": 731,
+      "bottomRightY": 949,
+      "content": "|  1D Array (ex: Point Cloud) Part Type specific Header fields  |   |   |\n| --- | --- | --- |\n|  Width (Bytes) | Offset (Bytes) | Description  |\n|  8 | 40 | SizeSize of the 1D Part (in number of elements according to Part Format).  |\n|  2 | 48 | PaddingSize of the padding at the end of the Part (in bytes).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 28 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

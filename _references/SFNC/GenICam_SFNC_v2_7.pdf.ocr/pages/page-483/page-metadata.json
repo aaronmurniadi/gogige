@@ -1,0 +1,140 @@
+{
+  "index": 482,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 143,
+      "bottomRightX": 730,
+      "bottomRightY": 198,
+      "content": "Recommended behavior of the identifier: It should start at a certain minimum value and keep incrementing by one for each frame up to a maximum, then it wraps to the minimum again. Each streaming channel should maintain the Frame ID separately.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 205,
+      "bottomRightX": 738,
+      "bottomRightY": 241,
+      "content": "Note: For GigE Vision, this chunk is not necessarily the block_id field included in the GVSP headers but can be equal to it.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 263,
+      "bottomRightX": 327,
+      "bottomRightY": 283,
+      "content": "### 24.50 ChunkSourceSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 286,
+      "bottomRightX": 396,
+      "bottomRightY": 555,
+      "content": "|  Name | ChunkSourceSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Source0 (if 0 based) Source1 Source2 ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 580,
+      "bottomRightX": 333,
+      "bottomRightY": 597,
+      "content": "Selects which Source to retrieve data from.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 606,
+      "bottomRightX": 470,
+      "bottomRightY": 625,
+      "content": "This generally maps to the corresponding SourceSelector feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 633,
+      "bottomRightX": 187,
+      "bottomRightY": 648,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 657,
+      "bottomRightX": 364,
+      "bottomRightY": 755,
+      "content": "- Source0: Image comes from the Source 0.\n- Source1: Image comes from the Source 1.\n- Source2: Image comes from the Source 2.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 779,
+      "bottomRightX": 274,
+      "bottomRightY": 798,
+      "content": "### 24.51 ChunkSourceID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 801,
+      "bottomRightX": 396,
+      "bottomRightY": 939,
+      "content": "|  Name | ChunkSourceID  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 483 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

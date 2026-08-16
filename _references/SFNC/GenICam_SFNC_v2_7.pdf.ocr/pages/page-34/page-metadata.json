@@ -1,0 +1,84 @@
+{
+  "index": 33,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 624,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 87,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 113,
+      "bottomRightX": 675,
+      "bottomRightY": 961,
+      "content": "|   |  |  | - - Added Logic Block Features. - - Added LinePitchEnable, AcquisitionFrameRate, AcquisitionLineRate features - - Added the new CXP 10 and 12 Gbs modes in the CXP specific features. - - Minor corrections to the text. - - Updated the VB features extractor macro.  |\n| --- | --- | --- | --- |\n|  Release 2.4 | 26.6.2018 | Stephane Maurice, Matrox | - - Added Lighting Control Chapter. - - Added TimerTriggerArmDelay feature. - - Added some missing ChunkSelector enumerations. - - Changed all deprecated features visibility to Invisible. - - Clarified DeviceLinkCommandTimeout behavior vs Pending Ack. - - Corrected SensorShutterMode category. - - Added a RegionSelector example for simultaneous streaming of compressed and uncompressed data. - - Added TestPayloadFormatMode. - - Moved TLParamsLocked form GenICam Control chapter to the Transport Layer Chapter and changed its category from “None” to TransportLayerControl. - - Added TLParamsLockedSelector and TLParamsLockedState to the TransportLayerControl category. - - Added SensorPixelWidth, SensorPixelHeight, SensorName. - - Added new Precision Time Protocol (PTP) features set and deprecated the Gev1588 equivalent ones. - - Added new Focal Length features for 3D reconstruction from Disparity images. - - Minor corrections to the text.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 988,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 988,
+      "bottomRightX": 392,
+      "bottomRightY": 1007,
+      "content": "Page 34 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 625,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

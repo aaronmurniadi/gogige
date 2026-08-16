@@ -1,0 +1,140 @@
+{
+  "index": 113,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 203,
+      "content": "|   | Custom  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 228,
+      "bottomRightX": 303,
+      "bottomRightY": 247,
+      "content": "Transport layer type of the buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 253,
+      "bottomRightX": 695,
+      "bottomRightY": 309,
+      "content": "Note that these values already follow the updated value list of the \"DeviceTLType\" feature from GenICam SFNC 2.3. Depending on this value, the transport layer specific features for the chosen transport layer standard have to be considered.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 315,
+      "bottomRightX": 411,
+      "bottomRightY": 468,
+      "content": "- CameraLink: Camera Link\n- CameraLinkHS: Camera Link High Speed\n- CoaXPress: CoaXPress\n- GigEVision: GigE Vision\n- USB3Vision: USB3 Vision\n- Custom: Custom transport layer",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 476,
+      "bottomRightX": 638,
+      "bottomRightY": 495,
+      "content": "Corresponds to the BUF_INFO_TLTYPE command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 509,
+      "bottomRightX": 221,
+      "bottomRightY": 526,
+      "content": "### 3.5.1.4 BufferSize",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 529,
+      "bottomRightX": 421,
+      "bottomRightY": 742,
+      "content": "|  Name | BufferSize  |\n| --- | --- |\n|  Category | BufferInformation  |\n|  Level | Optional  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | Byte  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 768,
+      "bottomRightX": 256,
+      "bottomRightY": 786,
+      "content": "Size of the buffer in bytes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 794,
+      "bottomRightX": 618,
+      "bottomRightY": 813,
+      "content": "Corresponds to the BUF_INFO_SIZE command of DSGetBufferInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 836,
+      "bottomRightX": 312,
+      "bottomRightY": 854,
+      "content": "### 3.5.2 Buffer Data Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 865,
+      "bottomRightX": 697,
+      "bottomRightY": 919,
+      "content": "Features in this section provide information about the currently filled data in the buffers. Note that for multipart buffers the BufferPartSelector is used to extract information for each part of the buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 945,
+      "content": "Page 114 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

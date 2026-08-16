@@ -1,0 +1,84 @@
+{
+  "index": 2,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 622,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 87,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 116,
+      "bottomRightX": 662,
+      "bottomRightY": 971,
+      "content": "|  3.2 | DEVICETYPE | 88  |\n| --- | --- | --- |\n|  3.3 | DEVICESCANTYPE | 89  |\n|  3.4 | DEVICEVENDORNAME | 89  |\n|  3.5 | DEVICEMODELNAME | 90  |\n|  3.6 | DEVICEFAMILYNAME | 90  |\n|  3.7 | DEVICEMANUFACTURERINFO | 90  |\n|  3.8 | DEVICEVERSION | 91  |\n|  3.9 | DEVICEFIRMWAREVERSION | 91  |\n|  3.10 | DEVICESERIALNUMBER | 91  |\n|  3.11 | DEVICEID (DEPRECATED) | 92  |\n|  3.12 | DEVICEUSERID | 92  |\n|  3.13 | DEVICESFNCVERSIONMAJOR | 92  |\n|  3.14 | DEVICESFNCVERSIONMINOR | 93  |\n|  3.15 | DEVICESFNCVERSIONSUBMINOR | 93  |\n|  3.16 | DEVICEMANIFESTENTRYSELECTOR | 93  |\n|  3.17 | DEVICEMANIFESTXMLMAJORVERSION | 94  |\n|  3.18 | DEVICEMANIFESTXMLMINORVERSION | 94  |\n|  3.19 | DEVICEMANIFESTXMLSUBMINORVERSION | 95  |\n|  3.20 | DEVICEMANIFESTSCHEMAMAJORVERSION | 95  |\n|  3.21 | DEVICEMANIFESTSCHEMAMINORVERSION | 95  |\n|  3.22 | DEVICEMANIFESTPRIMARYURL | 96  |\n|  3.23 | DEVICEMANIFESTSECONDARYURL | 96  |\n|  3.24 | DEVICETLTYPE | 96  |\n|  3.25 | DEVICETLVERSIONMAJOR | 97  |\n|  3.26 | DEVICETLVERSIONMINOR | 97  |\n|  3.27 | DEVICETLVERSIONSUBMINOR | 98  |\n|  3.28 | DEVICEGENCPVERSIONMAJOR | 98  |\n|  3.29 | DEVICEGENCPVERSIONMINOR | 98  |\n|  3.30 | DEVICEMAXTHROUGHPUT | 99  |\n|  3.31 | DEVICECONNECTIONSELECTOR | 99  |\n|  3.32 | DEVICECONNECTIONSPEED | 99  |\n|  3.33 | DEVICECONNECTIONSTATUS | 100  |\n|  3.34 | DEVICELINKSELECTOR | 100  |\n|  3.35 | DEVICELINKSPEED | 101  |\n|  3.36 | DEVICELINKTHROUGHPUTLIMITMODE | 101  |\n|  3.37 | DEVICELINKTHROUGHPUTLIMIT | 102  |\n|  3.38 | DEVICELINKCONNECTIONCOUNT | 102  |\n|  3.39 | DEVICELINKHEARTBEATMODE | 102  |\n|  3.40 | DEVICELINKHEARTBEATTIMEOUT | 103  |\n|  3.41 | DEVICELINKCOMMANDTIMEOUT | 103  |\n|  3.42 | DEVICESTREAMCHANNELCOUNT | 104  |\n|  3.43 | DEVICESTREAMCHANNELSELECTOR | 104  |\n|  3.44 | DEVICESTREAMCHANNELTYPE | 104  |\n|  3.45 | DEVICESTREAMCHANNELLINK | 105  |\n|  3.46 | DEVICESTREAMCHANNELENDIANNESS | 105  |\n|  3.47 | DEVICESTREAMCHANNELPACKETSIZE | 106  |\n|  3.48 | DEVICEEVENTCHANNELCOUNT | 106  |\n|  3.49 | DEVICEMESSAGECHANNELCOUNT (DEPRECATED) | 106  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 988,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 988,
+      "bottomRightX": 388,
+      "bottomRightY": 1007,
+      "content": "Page 3 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 988,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

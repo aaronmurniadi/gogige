@@ -1,0 +1,147 @@
+{
+  "index": 12,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 43,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "<table><tr><td colspan=\"2\">GEN&lt;I&gt;CAM</td><td rowspan=\"2\">emva</td></tr><tr><td>Version 1.2.0</td><td>GenTL Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 140,
+      "bottomRightX": 242,
+      "bottomRightY": 162,
+      "content": "# 1 Introduction",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 167,
+      "bottomRightX": 700,
+      "bottomRightY": 258,
+      "content": "The GenICam standards (see http://www.emva.org/standards-technology/genicam) define a generic standard software interface for industrial cameras. The GenICam standards are hosted by the EMVA. Part of the GenICam standards is GenTL, a generic Transport Layer interface on the host system, e.g. a PC. This document defines the Standard Features Naming Convention (SFNC) for the GenTL interface.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 264,
+      "bottomRightX": 692,
+      "bottomRightY": 338,
+      "content": "The GenICam GenTL standard provides a generic way to enumerate devices known to a system, communicate with one or more devices and, if possible, stream data from the device to the host independent from the underlying transport technology. This allows a third party software to use different technologies to control cameras and to acquire data in a transport layer agnostic way.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 344,
+      "bottomRightX": 676,
+      "bottomRightY": 399,
+      "content": "Besides the definition of a C interface with a defined behavior, the GenICam GenTL standard also defines a set of feature names and their meanings. To access these features the GenICam GenApi module is used.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 406,
+      "bottomRightX": 692,
+      "bottomRightY": 514,
+      "content": "The goal of the GenICam GenTL “Standard Features Naming Convention (GenTL SFNC)” is to standardize the features used in different GenTL Producer implementations. Thus, the GenICam GenTL standard should be decoupled as far as possible from the definition of specific feature names and their meaning. Note that the GenTL SFNC does not substitute or hide the features defined in the regular GenICam SFNC that defines the features for remote devices, but complement it by covering explicitly only the features of the GenTL Producer itself.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 519,
+      "bottomRightX": 692,
+      "bottomRightY": 611,
+      "content": "The GenTL Standard Features Naming Convention of GenICam is targeting maximum usability by existing and future transport layer technologies. It provides the definitions of a standard behavioral model and of standard features. The goal is to cover and to standardize the naming convention used in all the basic use cases where the implementation by different vendors would be very similar anyway.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 625,
+      "bottomRightX": 413,
+      "bottomRightY": 644,
+      "content": "## 1.1 GenICam Reference documents",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 649,
+      "bottomRightX": 659,
+      "bottomRightY": 702,
+      "content": "It is recommended to study the GenICam Standard, the device-oriented GenICam Standard Feature Naming Convention (SFNC) and the GenICam GenTL Standard to understand this document.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 710,
+      "bottomRightX": 348,
+      "bottomRightY": 728,
+      "content": "The revisions relevant for this release are",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 735,
+      "bottomRightX": 623,
+      "bottomRightY": 833,
+      "content": "|  Standard | Version | Date  |\n| --- | --- | --- |\n|  GenICam Standard | 2.1.1 | 2016-01-18  |\n|  GenICam GenTL Standard | 1.6 | 2019-11-04  |\n|  GenICam Standard Feature Naming Convention (SFNC) | 2.5 | 2019-05-07  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 846,
+      "bottomRightX": 310,
+      "bottomRightY": 867,
+      "content": "## 1.2 TL specific features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 871,
+      "bottomRightX": 682,
+      "bottomRightY": 907,
+      "content": "All Transport Layer Specific features have a prefix. Currently only GigE Vision features are in this document and they all have the prefix “Gev”. The GigE Vision standard is hosted by AIA.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 952,
+      "bottomRightX": 165,
+      "bottomRightY": 969,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 553,
+      "topLeftY": 952,
+      "bottomRightX": 652,
+      "bottomRightY": 971,
+      "content": "Page 13 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

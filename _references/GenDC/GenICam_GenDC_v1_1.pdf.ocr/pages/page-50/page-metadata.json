@@ -1,0 +1,85 @@
+{
+  "index": 49,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 97,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 144,
+      "bottomRightX": 325,
+      "bottomRightY": 164,
+      "content": "### B.10 2D Image with multiple regions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 41,
+      "topLeftY": 198,
+      "bottomRightX": 709,
+      "bottomRightY": 232,
+      "content": "2D image Container including 3 regions of Intensity Component. The Components have one region each located at a different X-Y offset and are of different sizes but have all the same source and Timestamp.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 192,
+      "topLeftY": 239,
+      "bottomRightX": 378,
+      "bottomRightY": 259,
+      "content": "2D Images with Regions",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 275,
+      "bottomRightX": 778,
+      "bottomRightY": 586,
+      "content": "![img-17.jpeg](img-17.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-17.jpeg"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 588,
+      "bottomRightX": 482,
+      "bottomRightY": 603,
+      "content": "Figure 5-13: 2D Image with Regions (Intensity)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 50 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "index": 99,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 142,
+      "topLeftY": 34,
+      "bottomRightX": 278,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 492,
+      "topLeftY": 35,
+      "bottomRightX": 577,
+      "bottomRightY": 81,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 75,
+      "bottomRightX": 107,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 75,
+      "bottomRightX": 374,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 117,
+      "bottomRightX": 336,
+      "bottomRightY": 267,
+      "content": "|  **Level** | Optional  |\n| --- | --- |\n|  **Interface** | Integer  |\n|  **Access** | Read  |\n|  **Unit** | Bps  |\n|  **Visibility** | Expert  |\n|  **Values** | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 290,
+      "bottomRightX": 424,
+      "bottomRightY": 309,
+      "content": "Indicates the speed of transmission of the specified Connection",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 320,
+      "bottomRightX": 298,
+      "bottomRightY": 340,
+      "content": "### 3.33 DeviceConnectionStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 342,
+      "bottomRightX": 336,
+      "bottomRightY": 574,
+      "content": "|  **Name** | DeviceConnectionStatus [DeviceConnectionSelector]  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Optional  |\n|  **Interface** | Enumeration  |\n|  **Access** | Read  |\n|  **Unit** | -  |\n|  **Visibility** | Expert  |\n|  **Values** | Active Inactive  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 599,
+      "bottomRightX": 334,
+      "bottomRightY": 617,
+      "content": "Indicates the status of the specified Connection.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 622,
+      "bottomRightX": 171,
+      "bottomRightY": 639,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 648,
+      "bottomRightX": 322,
+      "bottomRightY": 690,
+      "content": "- **Active**: Connection is in use.\n- **Inactive**: Connection is not in use.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 703,
+      "bottomRightX": 256,
+      "bottomRightY": 724,
+      "content": "### 3.34 DeviceLinkSelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 726,
+      "bottomRightX": 380,
+      "bottomRightY": 922,
+      "content": "|  **Name** | DeviceLinkSelector  |\n| --- | --- |\n|  **Category** | DeviceControl  |\n|  **Level** | Recommended  |\n|  **Interface** | Integer  |\n|  **Access** | Read/(Write)  |\n|  **Unit** | -  |\n|  **Visibility** | Beginner  |\n|  **Values** | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 949,
+      "bottomRightX": 109,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 949,
+      "bottomRightX": 365,
+      "bottomRightY": 966,
+      "content": "Page 100 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 407,
+      "topLeftY": 949,
+      "bottomRightX": 579,
+      "bottomRightY": 966,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

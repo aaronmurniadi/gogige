@@ -1,0 +1,858 @@
+{
+  "index": 54,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 637,
+      "bottomRightY": 117,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 165,
+      "bottomRightX": 156,
+      "bottomRightY": 183,
+      "content": "## 6 Index",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 189,
+      "bottomRightX": 126,
+      "bottomRightY": 203,
+      "content": "### —A—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 206,
+      "bottomRightX": 181,
+      "bottomRightY": 220,
+      "content": "access mode 12",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 223,
+      "bottomRightX": 160,
+      "bottomRightY": 237,
+      "content": "locked 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 238,
+      "bottomRightX": 196,
+      "bottomRightY": 254,
+      "content": "not available 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 256,
+      "bottomRightX": 219,
+      "bottomRightY": 272,
+      "content": "not implemented 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 273,
+      "bottomRightX": 110,
+      "bottomRightY": 286,
+      "content": "API",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 289,
+      "bottomRightX": 156,
+      "bottomRightY": 304,
+      "content": "camera 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 306,
+      "bottomRightX": 199,
+      "bottomRightY": 322,
+      "content": "transport layer 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 325,
+      "bottomRightX": 121,
+      "bottomRightY": 339,
+      "content": "arrays",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 340,
+      "bottomRightX": 177,
+      "bottomRightY": 355,
+      "content": "accessing 29",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 356,
+      "bottomRightX": 228,
+      "bottomRightY": 371,
+      "content": "multi-dimensional 30",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 373,
+      "bottomRightX": 126,
+      "bottomRightY": 386,
+      "content": "### —B—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 389,
+      "bottomRightX": 156,
+      "bottomRightY": 404,
+      "content": "Boolean 34",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 406,
+      "bottomRightX": 177,
+      "bottomRightY": 421,
+      "content": "OffValue 34",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 423,
+      "bottomRightX": 174,
+      "bottomRightY": 437,
+      "content": "OnValue 34",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 439,
+      "bottomRightX": 164,
+      "bottomRightY": 454,
+      "content": "pValue 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 456,
+      "bottomRightX": 156,
+      "bottomRightY": 470,
+      "content": "Value 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 473,
+      "bottomRightX": 126,
+      "bottomRightY": 486,
+      "content": "### —C—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 489,
+      "bottomRightX": 233,
+      "bottomRightY": 504,
+      "content": "camera description file 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 506,
+      "bottomRightX": 160,
+      "bottomRightY": 522,
+      "content": "Category 25",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 524,
+      "bottomRightX": 172,
+      "bottomRightY": 538,
+      "content": "pFeature 25",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 539,
+      "bottomRightX": 168,
+      "bottomRightY": 553,
+      "content": "Command 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 555,
+      "bottomRightX": 216,
+      "bottomRightY": 571,
+      "content": "CommandValue 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 573,
+      "bottomRightX": 223,
+      "bottomRightY": 588,
+      "content": "pCommandValue 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 589,
+      "bottomRightX": 194,
+      "bottomRightY": 604,
+      "content": "PollingTime 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 606,
+      "bottomRightX": 164,
+      "bottomRightY": 622,
+      "content": "pValue 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 623,
+      "bottomRightX": 156,
+      "bottomRightY": 637,
+      "content": "Value 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 639,
+      "bottomRightX": 168,
+      "bottomRightY": 653,
+      "content": "ConfROM 41",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 656,
+      "bottomRightX": 176,
+      "bottomRightY": 671,
+      "content": "TextDesc 41",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 673,
+      "bottomRightX": 146,
+      "bottomRightY": 687,
+      "content": "Unit 41",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 689,
+      "bottomRightX": 208,
+      "bottomRightY": 705,
+      "content": "ConfROMIntKey 41",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 706,
+      "bottomRightX": 166,
+      "bottomRightY": 720,
+      "content": "Converter 40",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 724,
+      "bottomRightX": 203,
+      "bottomRightY": 738,
+      "content": "FormulaFrom 40",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 740,
+      "bottomRightX": 187,
+      "bottomRightY": 753,
+      "content": "FormulaTo 40",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 756,
+      "bottomRightX": 169,
+      "bottomRightY": 770,
+      "content": "IsLinear 41",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 773,
+      "bottomRightX": 164,
+      "bottomRightY": 789,
+      "content": "pValue 40",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 790,
+      "bottomRightX": 156,
+      "bottomRightY": 806,
+      "content": "Slope 40",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 807,
+      "bottomRightX": 126,
+      "bottomRightY": 820,
+      "content": "### —D—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 823,
+      "bottomRightX": 172,
+      "bottomRightY": 838,
+      "content": "DcamLock 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 840,
+      "bottomRightX": 180,
+      "bottomRightY": 854,
+      "content": "FeatureID 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 856,
+      "bottomRightX": 171,
+      "bottomRightY": 870,
+      "content": "Timeout 42",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 873,
+      "bottomRightX": 126,
+      "bottomRightY": 887,
+      "content": "### —E—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 891,
+      "bottomRightX": 174,
+      "bottomRightY": 906,
+      "content": "EnumEntry 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 907,
+      "bottomRightX": 205,
+      "bottomRightY": 922,
+      "content": "IsSelfClearing 37",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 923,
+      "bottomRightX": 207,
+      "bottomRightY": 937,
+      "content": "NumericValue 37",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 189,
+      "bottomRightX": 473,
+      "bottomRightY": 204,
+      "content": "Symbolic 37",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 206,
+      "bottomRightX": 452,
+      "bottomRightY": 220,
+      "content": "Value 37",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 223,
+      "bottomRightX": 479,
+      "bottomRightY": 237,
+      "content": "Enumeration 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 238,
+      "bottomRightX": 484,
+      "bottomRightY": 255,
+      "content": "EnumEntry 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 256,
+      "bottomRightX": 489,
+      "bottomRightY": 271,
+      "content": "PollingTime 37",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 273,
+      "bottomRightX": 474,
+      "bottomRightY": 288,
+      "content": "pSelected 37",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 289,
+      "bottomRightX": 460,
+      "bottomRightY": 305,
+      "content": "pValue 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 306,
+      "bottomRightX": 452,
+      "bottomRightY": 320,
+      "content": "Value 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 324,
+      "bottomRightX": 430,
+      "bottomRightY": 339,
+      "content": "example",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 340,
+      "bottomRightX": 482,
+      "bottomRightY": 354,
+      "content": "area of interest",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 356,
+      "bottomRightX": 618,
+      "bottomRightY": 372,
+      "content": "computing the maximum values 18",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 373,
+      "bottomRightX": 558,
+      "bottomRightY": 389,
+      "content": "coupled with Binning 19",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 390,
+      "bottomRightX": 471,
+      "bottomRightY": 405,
+      "content": "simple 17",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 407,
+      "bottomRightX": 618,
+      "bottomRightY": 422,
+      "content": "basic structure of a camera description",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 423,
+      "bottomRightX": 444,
+      "bottomRightY": 437,
+      "content": "file 8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 439,
+      "bottomRightX": 492,
+      "bottomRightY": 454,
+      "content": "category tree 25",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 457,
+      "bottomRightX": 616,
+      "bottomRightY": 472,
+      "content": "Gamma feature being implemented or",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 474,
+      "bottomRightX": 450,
+      "bottomRightY": 487,
+      "content": "not 16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 489,
+      "bottomRightX": 535,
+      "bottomRightY": 504,
+      "content": "look-up table (LUT) 29",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 506,
+      "bottomRightX": 575,
+      "bottomRightY": 522,
+      "content": "reading and writing a value 11",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 524,
+      "bottomRightX": 450,
+      "bottomRightY": 537,
+      "content": "struct 28",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 539,
+      "bottomRightX": 605,
+      "bottomRightY": 555,
+      "content": "trigger polarity being temporary not",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 556,
+      "bottomRightX": 484,
+      "bottomRightY": 570,
+      "content": "available 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 573,
+      "bottomRightX": 420,
+      "bottomRightY": 586,
+      "content": "### —F—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 589,
+      "bottomRightX": 475,
+      "bottomRightY": 603,
+      "content": "feature node 26",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 606,
+      "bottomRightX": 432,
+      "bottomRightY": 620,
+      "content": "Float 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 623,
+      "bottomRightX": 513,
+      "bottomRightY": 639,
+      "content": "DisplayNotation 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 640,
+      "bottomRightX": 517,
+      "bottomRightY": 655,
+      "content": "DisplayPrecision 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 656,
+      "bottomRightX": 444,
+      "bottomRightY": 669,
+      "content": "Max 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 673,
+      "bottomRightX": 442,
+      "bottomRightY": 687,
+      "content": "Min 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 689,
+      "bottomRightX": 458,
+      "bottomRightY": 705,
+      "content": "pIndex 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 706,
+      "bottomRightX": 450,
+      "bottomRightY": 721,
+      "content": "pMax 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 724,
+      "bottomRightX": 449,
+      "bottomRightY": 739,
+      "content": "pMin 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 740,
+      "bottomRightX": 459,
+      "bottomRightY": 755,
+      "content": "pValue 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 756,
+      "bottomRightX": 503,
+      "bottomRightY": 771,
+      "content": "pValueDefault 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 773,
+      "bottomRightX": 506,
+      "bottomRightY": 789,
+      "content": "pValueIndexed 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 790,
+      "bottomRightX": 504,
+      "bottomRightY": 805,
+      "content": "Representation 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 806,
+      "bottomRightX": 443,
+      "bottomRightY": 820,
+      "content": "Unit 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 823,
+      "bottomRightX": 452,
+      "bottomRightY": 838,
+      "content": "Value 35",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 840,
+      "bottomRightX": 496,
+      "bottomRightY": 854,
+      "content": "ValueDefault 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 856,
+      "bottomRightX": 499,
+      "bottomRightY": 870,
+      "content": "ValueIndexed 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 873,
+      "bottomRightX": 456,
+      "bottomRightY": 889,
+      "content": "FloatReg 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 394,
+      "topLeftY": 891,
+      "bottomRightX": 476,
+      "bottomRightY": 904,
+      "content": "Endianess 36",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 907,
+      "bottomRightX": 422,
+      "bottomRightY": 921,
+      "content": "### —G—",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 923,
+      "bottomRightX": 489,
+      "bottomRightY": 940,
+      "content": "GenApi module 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 299,
+      "bottomRightY": 974,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 634,
+      "bottomRightY": 974,
+      "content": "Page 55 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "index": 105,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 315,
+      "content": "|  Level | Optional  |\n| --- | --- |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 341,
+      "bottomRightX": 609,
+      "bottomRightY": 360,
+      "content": "Number of buffers in the input buffer pool plus the buffers(s) currently being filled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 369,
+      "bottomRightX": 645,
+      "bottomRightY": 387,
+      "content": "Corresponds to the STREAM_INFO_NUM_QUEUED command of DSGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 400,
+      "bottomRightX": 329,
+      "bottomRightY": 420,
+      "content": "##### 3.4.3.8 StreamOutputBufferCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 421,
+      "bottomRightX": 421,
+      "bottomRightY": 635,
+      "content": "|  Name | StreamOutputBufferCount  |\n| --- | --- |\n|  Category | BufferHandlingControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 659,
+      "bottomRightX": 375,
+      "bottomRightY": 678,
+      "content": "Number of buffers in the output buffer queue.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 686,
+      "bottomRightX": 661,
+      "bottomRightY": 722,
+      "content": "Corresponds to the STREAM_INFO_NUM_AWAIT_DELIVERY command of DSGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 737,
+      "bottomRightX": 335,
+      "bottomRightY": 755,
+      "content": "##### 3.4.3.9 StreamStartedFrameCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 757,
+      "bottomRightX": 421,
+      "bottomRightY": 918,
+      "content": "|  Name | StreamStartedFrameCount  |\n| --- | --- |\n|  Category | BufferHandlingControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 431,
+      "bottomRightY": 944,
+      "content": "Page 106 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "index": 12,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 532,
+      "topLeftY": 29,
+      "bottomRightX": 623,
+      "bottomRightY": 77,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 405,
+      "bottomRightY": 87,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 116,
+      "bottomRightX": 662,
+      "bottomRightY": 968,
+      "content": "|  23.4.3 | OPTICCONTROLLERINITIALIZE | 427  |\n| --- | --- | --- |\n|  23.4.4 | OPTICCONTROLLERDISCONNECT | 427  |\n|  23.4.5 | OPTICCONTROLLERABORT | 428  |\n|  23.4.6 | OPTICCONTROLLERSTATUS | 428  |\n|  23.4.7 | OPTICCONTROLLERVENDORNAME | 429  |\n|  23.4.8 | OPTICCONTROLLERFAMILYNAME | 429  |\n|  23.4.9 | OPTICCONTROLLERMODELNAME | 429  |\n|  23.4.10 | OPTICCONTROLLERSERIALNUMBER | 430  |\n|  23.4.11 | OPTICCONTROLLERVERSION | 430  |\n|  23.4.12 | OPTICCONTROLLERFIRMWAREVERSION | 431  |\n|  23.4.13 | OPTICCONTROLLERTEMPERATURE | 431  |\n|  23.4.14 | APERTUREINITIALIZE | 431  |\n|  23.4.15 | APERTURESTATUS | 432  |\n|  23.4.16 | APERTURE | 432  |\n|  23.4.17 | APERTURESTEPPER | 433  |\n|  23.4.18 | NUMERICALAPERTURE | 433  |\n|  23.4.19 | FOCUSINITIALIZE | 434  |\n|  23.4.20 | FOCUSSTATUS | 434  |\n|  23.4.21 | FOCUSSTEPPER | 435  |\n|  23.4.22 | FOCUSAUTOMODE | 435  |\n|  23.4.23 | FOCUSAUTO | 436  |\n|  23.4.24 | FOCALPOWER | 437  |\n|  23.4.25 | OBJECTSENSORDISTANCE | 437  |\n|  23.4.26 | FOCALLENGTHINITIALIZE | 437  |\n|  23.4.27 | FOCALLENGTHSTATUS | 438  |\n|  23.4.28 | FOCALLENGTH | 439  |\n|  23.4.29 | FOCALLENGTHSTEPPER | 439  |\n|  23.4.30 | SHUTTERINITIALIZE | 439  |\n|  23.4.31 | SHUTTERSTATUS | 440  |\n|  23.4.32 | SHUTTER | 441  |\n|  23.4.33 | FILTERINITIALIZE | 441  |\n|  23.4.34 | FILTERSTATUS | 441  |\n|  23.4.35 | FILTER | 442  |\n|  23.4.36 | STABILIZATIONINITIALIZE | 443  |\n|  23.4.37 | STABILIZATIONSTATUS | 443  |\n|  23.4.38 | STABILIZATION | 444  |\n|  23.4.39 | MAGNIFICATIONINITIALIZE | 444  |\n|  23.4.40 | MAGNIFICATIONSTATUS | 445  |\n|  23.4.41 | MAGNIFICATION | 445  |\n|  23.4.42 | MAGNIFICATIONSTEPPER | 446  |\n|  **24** | **CHUNK DATA CONTROL** | **447**  |\n|  24.1 | CHUNKDATACONTROL | 449  |\n|  24.2 | CHUNKMODEACTIVE | 450  |\n|  24.3 | CHUNKXMLENABLE | 450  |\n|  24.4 | CHUNKSELECTOR | 451  |\n|  24.5 | CHUNKENABLE | 452  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 989,
+      "bottomRightX": 122,
+      "bottomRightY": 1006,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 392,
+      "bottomRightY": 1007,
+      "content": "Page 13 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 989,
+      "bottomRightX": 624,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

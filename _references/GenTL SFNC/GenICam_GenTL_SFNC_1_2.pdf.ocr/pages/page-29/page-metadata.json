@@ -1,0 +1,84 @@
+{
+  "index": 28,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 54,
+      "bottomRightX": 359,
+      "bottomRightY": 83,
+      "content": "GEN<|>CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 538,
+      "topLeftY": 54,
+      "bottomRightX": 583,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 584,
+      "topLeftY": 86,
+      "bottomRightX": 631,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 100,
+      "topLeftY": 97,
+      "bottomRightX": 167,
+      "bottomRightY": 111,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 201,
+      "topLeftY": 97,
+      "bottomRightX": 471,
+      "bottomRightY": 113,
+      "content": "GenTL Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 155,
+      "bottomRightX": 1010,
+      "bottomRightY": 674,
+      "content": "|  DeviceInformation | R | All | ICategory | R | - | B | Category that contains all Device Information features of the Device module.  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  DeviceID | M | All | IString | R | - | E | Interface-wide unique identifier of this device.  |\n|  DeviceSerialNumber | R | All | IString | R | - | E | Serial number of the remote device.  |\n|  DeviceUserID | O | All | IString | R/W | - | E | User-programmable device identifier of the remote device.  |\n|  DeviceVendorName | M | All | IString | R | - | B | Name of the remote device vendor.  |\n|  DeviceModelName | M | All | IString | R | - | B | Name of the remote device model.  |\n|  DeviceFamilyName | R | All | IString | R | - | B | Name of the product family of the remote device model.  |\n|  DeviceVersion | R | All | IString | R | - | B | The version of the remote device model.  |\n|  DeviceManufacturerInfo | R | All | IString | R | - | B | Manufacturer information about the remote device.  |\n|  DeviceType | M | All | IEnumeration | R | - | E | Transport layer type of the device.  |\n|  DeviceDisplayName | R | All | IString | R | - | E | User readable name of the device.  |\n|  DeviceTimestampFrequency | R | All | IInteger | R | - | B | The tick-frequency of the time stamp clock.  |\n|  DeviceAccessStatus | M | All | IEnumeration | R | - | E | Gives the device's access status at the moment of the last execution of the DeviceUpdateList command.  |\n|  DeviceChunkDataFormat | R | All | IEnumeration | R | - | E | Chunk data format used by the device.  |\n|  DeviceEventDataFormat | R | All | IEnumeration | R | - | E | Enumeration, informing about the event data format used by the device (meaning the \"device events\", see event type EVENT_REMOTE_DEVICE (named EVENT_FEATURE_DEVEVENT in GenTL up to version 1.  |\n|  GevDeviceMACAddress | M | GEV | IInteger | R | - | E | 48-bit MAC address of the GVCP interface of the remote device.  |\n|  GevDeviceIPAddress | M | GEV | IInteger | R | - | E | Current IP address of the GVCP interface of the remote device.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 694,
+      "bottomRightX": 164,
+      "bottomRightY": 709,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 331,
+      "topLeftY": 694,
+      "bottomRightX": 428,
+      "bottomRightY": 712,
+      "content": "Page 29 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

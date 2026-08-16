@@ -1,0 +1,175 @@
+{
+  "index": 13,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 751,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 152,
+      "bottomRightX": 333,
+      "bottomRightY": 174,
+      "content": "## 3 Components and Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 182,
+      "bottomRightX": 740,
+      "bottomRightY": 238,
+      "content": "The Components field provide the list of component constituents available in the pixel format. Location offers additional information regarding the positioning of the components in the image. The combination of the two gives a good idea of the pixel format as seen by the user.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 251,
+      "bottomRightX": 292,
+      "bottomRightY": 272,
+      "content": "### 3.1 Pixel Location in Image",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 279,
+      "bottomRightX": 721,
+      "bottomRightY": 333,
+      "content": "This section lists the various components positioning within the image. It is especially helpful when sub-sampling of certain components is used. This information is required to determine the “Components and Location” field of the pixel name.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 340,
+      "bottomRightX": 716,
+      "bottomRightY": 377,
+      "content": "In the following diagrams, for a given pixel, the first index represents the row number; the second index represents the column number.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 384,
+      "bottomRightX": 734,
+      "bottomRightY": 456,
+      "content": "The figures of this section uses generic pixel component format where 'L' represents the first component, 'M' the second, 'N' the third and 'O' the fourth (if necessary). To help clarify some of them, you can think about LMN = RGB (where R = L, G = M and B = N) or LMN = Y'CbCr (where Y' = L, Cb = M and Cr = N). Same hold true for Bayer patterns (where R = L, G = M and B = N).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 471,
+      "bottomRightX": 226,
+      "bottomRightY": 488,
+      "content": "#### 3.1.1 Mono Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 498,
+      "bottomRightX": 742,
+      "bottomRightY": 535,
+      "content": "This format is used for single component images where typically L is the luma (Y'). This could also be used for planar transfer where each component of the pixel is separated onto a different stream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 112,
+      "topLeftY": 541,
+      "bottomRightX": 209,
+      "bottomRightY": 557,
+      "content": "Ex: Mono8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 592,
+      "bottomRightX": 550,
+      "bottomRightY": 743,
+      "content": "|   | 1 | 2 | 3 | 4 | ...  |\n| --- | --- | --- | --- | --- | --- |\n|  1 | \\( L_{11} \\) | \\( L_{12} \\) | \\( L_{13} \\) | \\( L_{14} \\) | ...  |\n|  2 | \\( L_{21} \\) | \\( L_{22} \\) | \\( L_{23} \\) | \\( L_{24} \\) | ...  |\n|  3 | \\( L_{31} \\) | \\( L_{32} \\) | \\( L_{33} \\) | \\( L_{34} \\) | ...  |\n|  4 | \\( L_{41} \\) | \\( L_{42} \\) | \\( L_{43} \\) | \\( L_{44} \\) | ...  |\n|  ... | ... | ... | ... | ... | ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 299,
+      "topLeftY": 751,
+      "bottomRightX": 511,
+      "bottomRightY": 768,
+      "content": "Figure 3-1: Mono Pixel Location",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 809,
+      "bottomRightX": 249,
+      "bottomRightY": 827,
+      "content": "#### 3.1.2 LMN444 Location",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 836,
+      "bottomRightX": 738,
+      "bottomRightY": 872,
+      "content": "This format is typically used for any 3 component color space, such as RGB and Y'CbCr. No sub-sampling is performed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 112,
+      "topLeftY": 879,
+      "bottomRightX": 203,
+      "bottomRightY": 895,
+      "content": "Ex: RGB8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 14 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

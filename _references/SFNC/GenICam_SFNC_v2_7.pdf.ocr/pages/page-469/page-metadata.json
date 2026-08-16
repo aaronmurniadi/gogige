@@ -1,0 +1,131 @@
+{
+  "index": 468,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 144,
+      "bottomRightX": 546,
+      "bottomRightY": 268,
+      "content": "- BayerGB12Packed: Bayer GB 12 bit packed (GigE Vision Specific).\n- BayerBG12Packed: Bayer BG 12 bit packed (GigE Vision Specific).\n- RGB10V1Packed: RGB 10 bit packed (GigE Vision Specific).\n- RGB12V1Packed: RGB 12 bit packed (GigE Vision Specific).\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 279,
+      "bottomRightX": 473,
+      "bottomRightY": 297,
+      "content": "Note that only a subset of the possible pixel formats is listed here.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 303,
+      "bottomRightX": 348,
+      "bottomRightY": 319,
+      "content": "See the PixelFormat feature for more details.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 354,
+      "bottomRightX": 398,
+      "bottomRightY": 376,
+      "content": "24.23 ChunkPixelDynamicRangeMin",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 377,
+      "bottomRightX": 396,
+      "bottomRightY": 591,
+      "content": "|  Name | ChunkPixelDynamicRangeMin  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 614,
+      "bottomRightX": 584,
+      "bottomRightY": 634,
+      "content": "Returns the minimum value of dynamic range of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 648,
+      "bottomRightX": 403,
+      "bottomRightY": 670,
+      "content": "24.24 ChunkPixelDynamicRangeMax",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 672,
+      "bottomRightX": 396,
+      "bottomRightY": 885,
+      "content": "|  Name | ChunkPixelDynamicRangeMax  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 908,
+      "bottomRightX": 586,
+      "bottomRightY": 928,
+      "content": "Returns the maximum value of dynamic range of the image included in the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 469 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

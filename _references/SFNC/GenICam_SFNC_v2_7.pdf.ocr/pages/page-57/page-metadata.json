@@ -1,0 +1,121 @@
+{
+  "index": 56,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 293,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 76,
+      "bottomRightX": 122,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 171,
+      "topLeftY": 76,
+      "bottomRightX": 388,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 107,
+      "bottomRightX": 920,
+      "bottomRightY": 287,
+      "content": "|  ColorTransformationControl | R | ICategory | R | - | E | Category that contains the Color Transformation control features.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  ColorTransformationSelector | O | IEnumeration | R/W | - | E | Selects which Color Transformation module is controlled by the various Color Transformation features.  |\n|  ColorTransformationEnable[ColorTransformationSelector] | O | IBoolean | R/W | - | E | Activates the selected Color Transformation module.  |\n|  ColorTransformationValueSelector[ColorTransformationSelector] | O | IEnumeration | R/W | - | E | Selects the Gain factor or Offset of the Transformation matrix to access in the selected Color Transformation module.  |\n|  ColorTransformationValue[ColorTransformationSelector][ColorTransformationValueSelector] | O | IFloat | R/W | - | E | Represents the value of the selected Gain factor or Offset inside the Transformation matrix.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 318,
+      "bottomRightX": 250,
+      "bottomRightY": 339,
+      "content": "## 2.7 Digital I/O Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 342,
+      "bottomRightX": 867,
+      "bottomRightY": 359,
+      "content": "Contains the features related to the control of the input and output pins of the device (See the Digital I/O Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 367,
+      "topLeftY": 366,
+      "bottomRightX": 608,
+      "bottomRightY": 383,
+      "content": "Table 2-7: Digital I/O Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 388,
+      "bottomRightX": 920,
+      "bottomRightY": 642,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  DigitalIOControl | R | ICategory | R | - | E | Category that contains the digital input and output control features.  |\n|  LineSelector | R | IEnumeration | R/W | - | E | Selects the physical line (or pin) of the external device connector or the virtual line of the Transport Layer to configure.  |\n|  LineMode[LineSelector] | O | IEnumeration | R/W | - | E | Controls if the physical Line is used to Input or Output a signal.  |\n|  LineInverter[LineSelector] | R | IBoolean | R/W | - | E | Controls the inversion of the signal of the selected input or output Line.  |\n|  LineStatus[LineSelector] | R | IBoolean | R | - | E | Returns the current status of the selected input or output Line.  |\n|  LineStatusAll | O | IInteger | R | - | E | Returns the current status of all available Line signals at time of polling in a single bitfield.  |\n|  LineSource[LineSelector] | R | IEnumeration | R/W | - | E | Selects which internal acquisition or I/O source signal to output on the selected Line.  |\n|  LineFormat[LineSelector] | O | IEnumeration | R/W | - | E | Controls the current electrical format of the selected physical input or output Line.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 651,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 57 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

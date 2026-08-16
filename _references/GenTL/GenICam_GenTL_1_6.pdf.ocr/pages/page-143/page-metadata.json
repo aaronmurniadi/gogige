@@ -1,0 +1,84 @@
+{
+  "index": 142,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 200,
+      "topLeftY": 48,
+      "bottomRightX": 334,
+      "bottomRightY": 75,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 492,
+      "topLeftY": 41,
+      "bottomRightX": 541,
+      "bottomRightY": 84,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 543,
+      "topLeftY": 68,
+      "bottomRightX": 595,
+      "bottomRightY": 84,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 90,
+      "bottomRightX": 143,
+      "bottomRightY": 103,
+      "content": "Version 1.6",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 90,
+      "bottomRightX": 377,
+      "bottomRightY": 104,
+      "content": "GenTL Standard",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 136,
+      "bottomRightX": 644,
+      "bottomRightY": 810,
+      "content": "|  Enumerator | Global -Part /Impl | Value | Description  |\n| --- | --- | --- | --- |\n|  BUFFER_INFO_YOFFSET | P/CM | 13 | YOffset of the data in the buffer in number of lines from the image origin to handle areas of interest. This information refers for example to the information provided in the GigE Vision image stream data leader. For other technologies this is to be implemented accordingly.Data type: SIZET  |\n|  BUFFER_INFO_XPADDING | P/CM | 14 | XPadding of the data in the buffer in number of bytes. This information refers for example to the information provided in the GigE Vision image stream data leader. For other technologies this is may be implemented accordingly.Data type: SIZET  |\n|  BUFFER_INFO_YPADDING | G/O | 15 | YPadding of the data in the buffer in number of bytes. This information refers for example to the information provided in the GigE Vision image stream data leader. For other thechnologies this may be implemented accordingly.Data type: SIZET  |\n|  BUFFER_INFO_FRAMEID | G/M | 16 | A sequentially incremented number of the frame. This information refers for example to the information provided in the GigE Vision image stream block id. For other technologies this is to be implemented accordingly.The wrap around of this number is transportation technology dependent. For GigE Vision it is (so far) 16bit wrapping to 1. Other technologies may implement a larger bit depth.Data type: UINT64  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 945,
+      "content": "Page 143 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

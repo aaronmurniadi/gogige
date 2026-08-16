@@ -1,0 +1,139 @@
+{
+  "index": 363,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 757,
+      "bottomRightY": 170,
+      "content": "stereo camera, or when different regions on a physical sensor have different 3D coordinate systems as illustrated in some of the use cases below.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 212,
+      "bottomRightX": 552,
+      "bottomRightY": 236,
+      "content": "### 21.1.1 3D acquisition devices configuration examples",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 266,
+      "bottomRightX": 240,
+      "bottomRightY": 284,
+      "content": "# **Basic Areascan 3D camera:**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 309,
+      "bottomRightX": 757,
+      "bottomRightY": 346,
+      "content": "This example shows the setup for a basic 3D camera acquiring uncalibrated range maps from a sensor, and reading the min/max range of the resulting data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 227,
+      "topLeftY": 361,
+      "bottomRightX": 580,
+      "bottomRightY": 629,
+      "content": "![img-105.jpeg](img-105.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-105.jpeg"
+    },
+    {
+      "topLeftX": 235,
+      "topLeftY": 638,
+      "bottomRightX": 571,
+      "bottomRightY": 657,
+      "content": "Figure 21-5: 3D Areascan camera Range acquisition.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 689,
+      "bottomRightX": 245,
+      "bottomRightY": 718,
+      "content": "// Basic Areascan 3D camera.\n// ***",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 732,
+      "bottomRightX": 411,
+      "bottomRightY": 820,
+      "content": "// 3D output as range map (16 bit integers),\n// Setup acquisition position and size (full sensor).\nOffsetX = 0;\nOffsetY = 0;\nWidth = 2048;\nHeight = 2048;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 833,
+      "bottomRightX": 385,
+      "bottomRightY": 893,
+      "content": "// Setup output Image Component and Pixel Format.\nComponentSelector = Range;\nComponentEnable[Range] = True;\nPixelFormat[Range] = Coord3D_C16;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 904,
+      "bottomRightX": 647,
+      "bottomRightY": 935,
+      "content": "// Scan3D setup of coordinate system information (Uncalibrated Range Map (2.5D) output).\nScan3dOutputMode = UncalibratedC;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 364 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 616,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

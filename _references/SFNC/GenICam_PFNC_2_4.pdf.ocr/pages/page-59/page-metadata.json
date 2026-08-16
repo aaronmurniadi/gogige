@@ -1,0 +1,84 @@
+{
+  "index": 58,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 250,
+      "topLeftY": 61,
+      "bottomRightX": 397,
+      "bottomRightY": 90,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 610,
+      "topLeftY": 62,
+      "bottomRightX": 708,
+      "bottomRightY": 113,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 106,
+      "bottomRightX": 150,
+      "bottomRightY": 121,
+      "content": "Version 2.4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 272,
+      "topLeftY": 105,
+      "bottomRightX": 466,
+      "bottomRightY": 122,
+      "content": "Pixel Format Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 147,
+      "bottomRightX": 740,
+      "bottomRightY": 910,
+      "content": "|  1.1.00 | 2013-02-01 | Eric Carey, Teledyne DALSA | Official release of Pixel Format Naming Convention version 1.1 - Remove draft tag. - Page formatting and table of content generation.  |\n| --- | --- | --- | --- |\n|  1.1.01 | 2014-02-20 | Eric Carey, Teledyne DALSA | - Change header to GenICam to match SFNC. Move document from AIA (GigE Vision) to EMVA (GenICam). No technical change.  |\n|  2.0 draft A | 2014-10-05 | Eric Carey, Teledyne DALSA | - Improve readability of packing styles by showing direction of reading. - Add Sparse Color Filter pixel formats (pattern #1). - Clarification about optional padding bits for packed style. - Add support for 3D pixel formats. Generalization of many PFNC concept to accommodate 3D. Based on the proposal from Jan Becvar. - Introduce LM44 location. - Generalization of “color components” to “components” to allow for 3D data. - Generalization of “monochrome” to “single-component/monochrome” and “color” to “multi-components/color”. - Introduce Coord3D component designation. Add corresponding pixel format in appendix C. - Introduce floating point support based on IEC 60559. - Add clarification about dealing with line or image boundary for 3D data. - Add clarification to Raw format. - Add reference to GenICam SFNC. - Include acronyms for the A, B and C components of 3D data. - For planar mode, introduce the “plane” terminology to be equivalent to “stream”. - Move content of appendix C about Pixel Format Reference Value outside of this document. A reference is now provided in appendix C. - Introduction of bi-color format to support some 2-stage linescan color sensors. - Remove reference to GigE Vision and USB3 Vision to avoid circular dependencies.  |\n|  2.0 | 2014-12-10 | Eric Carey, Teledyne DALSA | Official release of Pixel Format Naming Convention version 2.0. - Update references to most recent version of GenICam and SFNC. - Remove draft marking. - Page formatting.  |\n|  2.1 draft A | 2016-01-04 | Eric Carey, Teledyne DALSA | - In Packing Style section, established a default lsb ordering rule for PFNC-compliant image buffers. Camera standard using PFNC must thus define if they use lsb ordering or msb ordering by default (i.e. when lsb/msb is not explicitly spelled-out in the pixel format name). - Add a note in the Introduction section to explain how PFNC can be supplemented by camera interface standards to define bit-level encoding. This allow these standards to use PFNC naming, but with a different bit-level encoding. But when the pixel data exits the boundary of that standard, it must respect the PFNC bit-level encoding. - Revise hyperlinks. Removed reference to specific camera interface standards.  |\n|  2.1 | 2016-02-03 | Eric Carey, Teledyne DALSA | Official release of Pixel Format Naming Convention version 2.1. - Remove draft marking.  |\n|  2.2 draft A | 2018-08-09 | Uwe Hagmaier Matrix Vision GmbH | - Added Chapter 7.2: Semiplanar Mode  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 953,
+      "bottomRightX": 102,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 953,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 652,
+      "topLeftY": 953,
+      "bottomRightX": 747,
+      "bottomRightY": 972,
+      "content": "Page 59 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

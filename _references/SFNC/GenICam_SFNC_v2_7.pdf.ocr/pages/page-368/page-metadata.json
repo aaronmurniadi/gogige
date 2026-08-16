@@ -1,0 +1,148 @@
+{
+  "index": 367,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 43,
+      "bottomRightX": 737,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 134,
+      "bottomRightX": 391,
+      "bottomRightY": 148,
+      "content": "Scan3dCoordinateTransformSelector = TranslationZ;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 150,
+      "bottomRightX": 331,
+      "bottomRightY": 165,
+      "content": "Scan3dTransformValue[TranslationZ] = 403;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 177,
+      "bottomRightX": 588,
+      "bottomRightY": 193,
+      "content": "// Read the resulting transformed origin & pose relative to Reference position.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 193,
+      "bottomRightX": 425,
+      "bottomRightY": 366,
+      "content": "Scan3dCoordinateReferenceSelector = TranslationX;\noriginX = Scan3dCoordinateReferenceValue[TranslationX];\nScan3dCoordinateReferenceSelector = TranslationY;\noriginY = Scan3dCoordinateReferenceValue[TranslationY];\nScan3dCoordinateReferenceSelector = TranslationZ;\noriginZ = Scan3dCoordinateReferenceValue[TranslationZ];\nScan3dCoordinateReferenceSelector = RotationX;\nposeX = Scan3dCoordinateReferenceValue[RotationX];\nScan3dCoordinateReferenceSelector = RotationY;\nposeY = Scan3dCoordinateReferenceValue[RotationY];\nScan3dCoordinateReferenceSelector = RotationZ;\nposeZ = Scan3dCoordinateReferenceValue[RotationZ];",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 396,
+      "bottomRightX": 357,
+      "bottomRightY": 416,
+      "content": "### Stereo 3D Camera with Regions and Sources:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 421,
+      "bottomRightX": 757,
+      "bottomRightY": 493,
+      "content": "In a stereo system there are (at least) two image sensors. Typically one of them is the \"master\" and the disparity (lateral matching pixel position difference, which is approximately inversely proportional to range) between this and the other is measured and output. It is also possible to be able to switch which sensor is master, or even create a virtual centered 3rd sensor view.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 500,
+      "bottomRightX": 755,
+      "bottomRightY": 538,
+      "content": "Here it is natural to view the system as having multiple sources, where each source potentially has its own 3D setup.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 174,
+      "topLeftY": 560,
+      "bottomRightX": 637,
+      "bottomRightY": 834,
+      "content": "![img-107.jpeg](img-107.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-107.jpeg"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 852,
+      "bottomRightX": 694,
+      "bottomRightY": 872,
+      "content": "Figure 21-7: Stereo cameras generating individual 3D and intensity images for each sensors.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 903,
+      "bottomRightX": 261,
+      "bottomRightY": 923,
+      "content": "The main part of the 3D setup is:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 929,
+      "bottomRightX": 257,
+      "bottomRightY": 944,
+      "content": "// 3D scan with Stereo Camera.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 951,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 951,
+      "bottomRightX": 386,
+      "bottomRightY": 971,
+      "content": "Page 368 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 952,
+      "bottomRightX": 616,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

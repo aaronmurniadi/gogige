@@ -1,0 +1,142 @@
+{
+  "index": 418,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 141,
+      "bottomRightX": 523,
+      "bottomRightY": 198,
+      "content": "|  Visibility | Beginner  |\n| --- | --- |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 222,
+      "bottomRightX": 335,
+      "bottomRightY": 241,
+      "content": "Set the voltage rating of the lighting output.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 256,
+      "bottomRightX": 296,
+      "bottomRightY": 276,
+      "content": "### 22.3.6 LightBrightness",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 279,
+      "bottomRightX": 523,
+      "bottomRightY": 492,
+      "content": "|  Name | LightBrightness[LightControllerSelector]  |\n| --- | --- |\n|  Category | LightControl  |\n|  Level | Optional  |\n|  Interface | IFloat  |\n|  Access | Read/Write  |\n|  Unit | %  |\n|  Visibility | Beginner  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 515,
+      "bottomRightX": 712,
+      "bottomRightY": 535,
+      "content": "Set the brightness of the lighting output in percent. Can be greater than 100% for short overdrive period.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 549,
+      "bottomRightX": 356,
+      "bottomRightY": 569,
+      "content": "### 22.3.7 LightConnectionStatus",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 571,
+      "bottomRightX": 523,
+      "bottomRightY": 840,
+      "content": "|  Name | LightConnectionStatus[LightControllerSelector]  |\n| --- | --- |\n|  Category | LightControl  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | Sensing Ready NoConnect Error  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 864,
+      "bottomRightX": 422,
+      "bottomRightY": 883,
+      "content": "Status of a light connected to the controller's output Line.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 897,
+      "bottomRightX": 351,
+      "bottomRightY": 919,
+      "content": "### 22.3.8 LightCurrentMeasured",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 921,
+      "bottomRightX": 523,
+      "bottomRightY": 949,
+      "content": "|  Name | LightCurrentMeasured[LightControllerSelector]  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 419 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 623,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

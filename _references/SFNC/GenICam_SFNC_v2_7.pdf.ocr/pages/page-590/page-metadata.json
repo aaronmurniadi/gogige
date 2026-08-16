@@ -1,0 +1,196 @@
+{
+  "index": 589,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 745,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 144,
+      "bottomRightX": 248,
+      "bottomRightY": 164,
+      "content": "2X2-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 174,
+      "bottomRightX": 520,
+      "bottomRightY": 193,
+      "content": "2 zones in X with 2 taps, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 203,
+      "bottomRightX": 493,
+      "bottomRightY": 344,
+      "content": "![img-193.jpeg](img-193.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-193.jpeg"
+    },
+    {
+      "topLeftX": 260,
+      "topLeftY": 349,
+      "bottomRightX": 543,
+      "bottomRightY": 370,
+      "content": "Figure 29-21: Geometry 2X2-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 401,
+      "bottomRightX": 217,
+      "bottomRightY": 421,
+      "content": "2X2 (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 322,
+      "topLeftY": 430,
+      "bottomRightX": 481,
+      "bottomRightY": 451,
+      "content": "2 zones in X with 2 taps.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 461,
+      "bottomRightX": 493,
+      "bottomRightY": 498,
+      "content": "![img-194.jpeg](img-194.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-194.jpeg"
+    },
+    {
+      "topLeftX": 274,
+      "topLeftY": 509,
+      "bottomRightX": 530,
+      "bottomRightY": 527,
+      "content": "Figure 29-22: Geometry 2X2 (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 535,
+      "bottomRightX": 258,
+      "bottomRightY": 554,
+      "content": "2X2E-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 224,
+      "topLeftY": 563,
+      "bottomRightX": 580,
+      "bottomRightY": 583,
+      "content": "2 zones in X with 2 taps and end extraction, 1 zone in Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 594,
+      "bottomRightX": 493,
+      "bottomRightY": 733,
+      "content": "![img-195.jpeg](img-195.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-195.jpeg"
+    },
+    {
+      "topLeftX": 256,
+      "topLeftY": 739,
+      "bottomRightX": 549,
+      "bottomRightY": 760,
+      "content": "Figure 29-23: Geometry 2X2E-1Y (area-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 793,
+      "bottomRightX": 229,
+      "bottomRightY": 812,
+      "content": "2X2E (line-scan)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 262,
+      "topLeftY": 821,
+      "bottomRightX": 539,
+      "bottomRightY": 840,
+      "content": "2 zones in X with 2 taps and end extraction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 313,
+      "topLeftY": 851,
+      "bottomRightX": 493,
+      "bottomRightY": 889,
+      "content": "![img-196.jpeg](img-196.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-196.jpeg"
+    },
+    {
+      "topLeftX": 269,
+      "topLeftY": 899,
+      "bottomRightX": 534,
+      "bottomRightY": 919,
+      "content": "Figure 29-24: Geometry 2X2E (line-scan)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 590 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "index": 414,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 153,
+      "bottomRightX": 710,
+      "bottomRightY": 189,
+      "content": "The current rating is generally more useful as it allows safe overdriving. Effectively these values give the maximum DC values for the light.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 206,
+      "bottomRightX": 662,
+      "bottomRightY": 225,
+      "content": "Once the rating is known, the light can be driven at any brightness from 0% to 100% of its rating.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 242,
+      "bottomRightX": 756,
+      "bottomRightY": 315,
+      "content": "Sometime, lights can also be overdriven. In this case, these rating values can be exceeded when the light is pulsed for a short time at more than its 100% value. This has huge benefits in machine vision as it can give more than 10 times brightness from the light in some cases. When overdriving, setting a proper minimal delay between 2 consecutive pulses is very important to prevent the light being damaged.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 331,
+      "bottomRightX": 747,
+      "bottomRightY": 386,
+      "content": "Most lighting controllers drive the light with a DC constant current. Some other controller type use use Pulse Width Modulation (PWM) to control the brightness of the light. When PWM is used, this is generally managed internally within the controller and is not a parameter that the user needs to control.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 402,
+      "bottomRightX": 234,
+      "bottomRightY": 421,
+      "content": "### Lighting control scenarios:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 428,
+      "bottomRightX": 468,
+      "bottomRightY": 445,
+      "content": "A light can be controlled in a number of ways. Common ways are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 464,
+      "bottomRightX": 176,
+      "bottomRightY": 481,
+      "content": "#### Static state",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 488,
+      "bottomRightX": 726,
+      "bottomRightY": 525,
+      "content": "The light is On or Off and controlled statically. The main control parameter is the lighting controller brightness.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 543,
+      "bottomRightX": 337,
+      "bottomRightY": 560,
+      "content": "// Continuous current sent to the light.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 560,
+      "bottomRightX": 747,
+      "bottomRightY": 704,
+      "content": "LineSelector = Line1; // Select the external output Line 1.\nLineSource[Line1] = LightController0; // Put the static UserOutput1 bit as its source.\nLightControllerSelector = LightController0; // Select the Light Controller.\nLightVoltageRating[LightController0] = 24.0; // Max Voltage the light supports.\nLightBrightness[LightController0] = 100; // Normal 100 % brightness.\nLightControllerSource[LightController0] = UserOutput1; // Put the static UserOutput1 bit as its source.\nUserOutputSelector = UserOutput1; // Select a static User output bit.\nUserOutputValue = True; // Put it On (or Off).",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 748,
+      "bottomRightX": 200,
+      "bottomRightY": 764,
+      "content": "#### External Pulse",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 765,
+      "bottomRightX": 754,
+      "bottomRightY": 801,
+      "content": "The light is controlled by the signal coming from an external digital input signal. The main configuration parameter is the brightness.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 818,
+      "bottomRightX": 648,
+      "bottomRightY": 836,
+      "content": "// A pulse received on an input pin is sent to the light (keeping the same pulse duration).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 836,
+      "bottomRightX": 718,
+      "bottomRightY": 943,
+      "content": "LightControllerSelector = LightController0; // Select the Light Controller.\nLightControllerSource[LightController0] = Line8; // Put the input Line8 as source.\nLightVoltageRating[LightController0] = 24.0; // Max Voltage the light supports in continuous.\nLightBrightness[LightController0] = 100; // Normal 100 % Light brightness.\nLineSelector = Line1; // Select the external output Line 1.\nLineSource[Line1] = LightController0; // Put the Light controller 1 as its source.",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 415 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 953,
+      "bottomRightX": 615,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

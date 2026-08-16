@@ -1,0 +1,10 @@
+|  1 | 58 | **H264Flags** Flags specifying the characteristics and format of the H.264 Part.  |   |   |
+| --- | --- | --- | --- | --- |
+|   |   |  Width (bits) | Bit offset (lsb << x) | Description  |
+|   |   |  4 | 0 | **CS** Constraint set0_flag, set1_flag, set2_flag, set3_flag sequence parameter set data attribute as defined by H.264.  |
+|   |   |  2 | 4 | **PM** (Packetization Mode) This parameter signals the packetization properties of the H.264 Part. When the value of packetization-mode is equal to zero, the single NAL mode, as defined in section 6.2 of RFC3984, is used. When the value of packetization-mode is equal to one, the non-interleaved mode, as defined in section 6.3 of RFC3984, is used. When the value of packetization-mode is equal to two, the interleaved mode, as defined in section 6.4 of RFC3984, is used. Other values are reserved.  |
+|   |   |  2 | 6 | **RF** (Reserved Flags. Set to 0).  |
+|  1 | 59 | **LevelIDC** level_idc sequence parameter set data as defined by H.264.  |   |   |
+|  2 | 60 | **SpropInterleavingDepth** This parameter may be used to signal the properties of a NAL unit stream. This parameter is not applicable if the value of the packetization mode is equal to zero or one. Otherwise, it specifies the maximum number of VCL NAL units that precede any VCL NAL unit in the NAL unit stream in transmission order and follow the VCL NAL unit in decoding order as per RFC3984.  |   |   |
+|  2 | 62 | **SpropMaxDonDiff** This parameter may be used to signal the properties of a NAL unit stream. This parameter is not applicable if the value of the packetization mode is equal to zero or one. Otherwise, SpropMaxDonDiff is an integer in the range of 0 to 32767 and it is used in the NAL unit de-interleaving process as per RFC3984.  |   |   |
+|  4 | 64 | **SpropDeintBufReq** This parameter may be used to signal the properties of a NAL unit stream. This parameter is not applicable if the value of the packetization mode is equal to zero or one. Otherwise, SpropDeintBufReq signals the required size of the de-interleaving buffer for the NAL unit stream as per RFC3984.  |   |   |

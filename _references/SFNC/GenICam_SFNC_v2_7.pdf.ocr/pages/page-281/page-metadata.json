@@ -1,0 +1,129 @@
+{
+  "index": 280,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 150,
+      "topLeftY": 54,
+      "bottomRightX": 293,
+      "bottomRightY": 83,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 54,
+      "bottomRightX": 570,
+      "bottomRightY": 103,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 569,
+      "topLeftY": 87,
+      "bottomRightX": 614,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 44,
+      "topLeftY": 99,
+      "bottomRightX": 111,
+      "bottomRightY": 113,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 166,
+      "topLeftY": 99,
+      "bottomRightX": 394,
+      "bottomRightY": 116,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 133,
+      "bottomRightX": 591,
+      "bottomRightY": 604,
+      "content": "/* Select the Latch dual LUTs Logic Block. */\nLogicBlockSelector = LogicBlock0;\nLogicBlockFunction[LogicBlock0] = LatchedLUT;\n\n/* Initialize the Value LUT of the Logic Block. */\nLogicBlockLUTSelector = Value;\nLogicBlockInputNumber[LogicBlock0][value] = 3;\nLogicBlockInputSelector[LogicBlock0][Value] = 0;\nLogicBlockInputSource[LogicBlock0][Value][0] = FrameTriggerWait;\nLogicBlockInputSelector[LogicBlock0][Value] = 1;\nLogicBlockInputSource[LogicBlock0][Value][1] = FrameTrigger;\nLogicBlockInputSelector[LogicBlock0][Value] = 2;\nLogicBlockInputSource[LogicBlock0][Value][2] = False;\nLogicBlockLUTValueAll[LogicBlock0][Value][2] = 0x08;\n\n/* Initialize the Enable LUT of the Logic Block (output always 1). */\nLogicBlockLUTSelector[LogicBlock0] = Enable;\nLogicBlockInputNumber[LogicBlock0][Enable] = 3;\nLogicBlockInputSelector[LogicBlock0][Enable] = 0;\nLogicBlockInputSource[LogicBlock0][Enable][2] = True;\nLogicBlockInputSelector[LogicBlock0][Enable] = 1;\nLogicBlockInputSource[LogicBlock0][Enable][2] = True;\nLogicBlockInputSelector[LogicBlock0][Enable] = 2;\nLogicBlockInputSource[LogicBlock0][Enable][2] = True;\nLogicBlockLUTValueAll[LogicBlock0][Enable] = 0xFF;\n\n/* Set LatchedLUTs Logic Block as source to a Counter. */\nCounterSelector = Counter0;\nCounterEventSource[Counter0] = LogicBlock0;\nCounterEventActivation[Counter0] = RisingEdge;\nCounterResetSource[Counter0] = AcquisitionStart;\nCounterResetActivation[Counter0] = RisingEdge;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 651,
+      "bottomRightX": 340,
+      "bottomRightY": 672,
+      "content": "## 12.2 Logic Block Control features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 676,
+      "bottomRightX": 450,
+      "bottomRightY": 694,
+      "content": "This section describes the features that control the Logic Block.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 727,
+      "bottomRightX": 311,
+      "bottomRightY": 748,
+      "content": "### 12.2.1 LogicBlockControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 750,
+      "bottomRightX": 386,
+      "bottomRightY": 937,
+      "content": "|  Name | LogicBlockControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Optional  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Guru  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 281 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

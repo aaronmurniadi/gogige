@@ -1,0 +1,123 @@
+{
+  "index": 106,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<I>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 212,
+      "content": "|  Visibility | Expert  |\n| --- | --- |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 238,
+      "bottomRightX": 687,
+      "bottomRightY": 309,
+      "content": "Number of frames started in the acquisition engine. This number is incremented every time in case of a new buffer is started and then to be filled (data written to) regardless even if the buffer is later delivered to the user or discarded for any reason. This number is initialized with 0 at the time the stream is opened. It is not reset until the stream is closed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 317,
+      "bottomRightX": 655,
+      "bottomRightY": 336,
+      "content": "Corresponds to the STREAM_INFO_NUM_STARTED command of DSGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 349,
+      "bottomRightX": 270,
+      "bottomRightY": 369,
+      "content": "### 3.4.3.10 PayloadSize",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 370,
+      "bottomRightX": 421,
+      "bottomRightY": 584,
+      "content": "|  Name | PayloadSize  |\n| --- | --- |\n|  Category | BufferHandlingControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | Byte  |\n|  Visibility | Expert  |\n|  Values | >0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 607,
+      "bottomRightX": 663,
+      "bottomRightY": 662,
+      "content": "Size of the expected data in bytes. Note that this feature \"overwrites\" the PayloadSize of the remote device, see also sections \"Data Payload Delivery\" and \"Allocate Memory\" of the GenICam GenTL standard.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 670,
+      "bottomRightX": 664,
+      "bottomRightY": 689,
+      "content": "Corresponds to the STREAM_INFO_PAYLOAD_SIZE command of DSGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 702,
+      "bottomRightX": 311,
+      "bottomRightY": 722,
+      "content": "### 3.4.3.11 StreamIsGrabbing",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 724,
+      "bottomRightX": 421,
+      "bottomRightY": 911,
+      "content": "|  Name | StreamIsGrabbing  |\n| --- | --- |\n|  Category | BufferHandlingControl  |\n|  Level | Recommended  |\n|  Interface | IBoolean  |\n|  Access | Read  |\n|  Unit |   |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 107 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

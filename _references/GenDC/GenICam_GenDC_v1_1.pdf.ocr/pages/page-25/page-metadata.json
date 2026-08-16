@@ -1,0 +1,58 @@
+{
+  "index": 24,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 15,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 29,
+      "topLeftY": 114,
+      "bottomRightX": 731,
+      "bottomRightY": 263,
+      "content": "|  GDC_2D_H264 | 0x4203 | H.264 compressed Image.  |\n| --- | --- | --- |\n|  GDC_2D_CUSTOM(x) | 0x42Fx | The 2D Part data is custom and does not correspond to a known Type. It is uniquely identified by the lower 4 bits of this field.  |\n|  ... | ... | ...  |\n|  GDC_CUSTOM(xx) | 0x4Fxx | The Part data is custom and does not correspond to a known category. It is uniquely identified by the lower 8 bits of this field.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 276,
+      "bottomRightX": 439,
+      "bottomRightY": 290,
+      "content": "Table 2-5: GenDC Part Types",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 83,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 25 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

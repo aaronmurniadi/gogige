@@ -1,0 +1,131 @@
+{
+  "index": 49,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 291,
+      "bottomRightY": 61,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 549,
+      "bottomRightY": 81,
+      "content": "![img-4.jpeg](img-4.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-4.jpeg"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 76,
+      "bottomRightX": 119,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 173,
+      "topLeftY": 76,
+      "bottomRightX": 385,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 548,
+      "topLeftY": 65,
+      "bottomRightX": 590,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 107,
+      "bottomRightX": 927,
+      "bottomRightY": 132,
+      "content": "|  TimestampLatchValue | O | Integer | R | ns | E | Returns the latched value of the timestamp counter.  |\n| --- | --- | --- | --- | --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 163,
+      "bottomRightX": 280,
+      "bottomRightY": 183,
+      "content": "## 2.2 Image Format Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 186,
+      "bottomRightX": 785,
+      "bottomRightY": 203,
+      "content": "Contains the features related to the format of the transmitted image (See the Image Format Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 357,
+      "topLeftY": 210,
+      "bottomRightX": 615,
+      "bottomRightY": 227,
+      "content": "Table 2-2: Image Format Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 232,
+      "bottomRightX": 927,
+      "bottomRightY": 633,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  ImageFormatControl | R | ICategory | R | - | B | Category for Image Format Control features.  |\n|  SensorWidth | R | IInteger | R | - | E | Effective width of the sensor in pixels.  |\n|  SensorHeight | R | IInteger | R | - | E | Effective height of the sensor in pixels.  |\n|  SensorPixelWidth | O | IFloat | R | um | G | Physical size (pitch) in the x direction of a photo sensitive pixel unit.  |\n|  SensorPixelHeight | O | IFloat | R | um | G | Physical size (pitch) in the y direction of a photo sensitive pixel unit.  |\n|  SensorName | O | IString | R | - | G | Product name of the imaging Sensor.  |\n|  SensorShutterMode | O | IEnumeration | R/(W) | - | G | Specifies the shutter mode of the device.  |\n|  SensorTaps | O | IEnumeration | R/(W) | - | E | Number of taps of the camera sensor.  |\n|  SensorDigitizationTaps | O | IEnumeration | R/(W) | - | E | Number of digitized samples outputted simultaneously by the camera A/D conversion stage.  |\n|  WidthMax | R | IInteger | R | - | E | Maximum width of the image (in pixels).  |\n|  HeightMax | R | IInteger | R | - | E | Maximum height of the image (in pixels).  |\n|  RegionSelector | O | IEnumeration | R/(W) | - | B | Selects the Region of interest to control.  |\n|  RegionMode[RegionSelector] | O | IEnumeration | R/W | - | B | Controls if the selected Region of interest is active and streaming.  |\n|  RegionDestination[RegionSelector] | O | IEnumeration | R/(W) | - | E | Control the destination of the selected region.  |\n|  RegionIDValue[RegionSelector] | O | IInteger | R | - | E | Returns a unique Identifier value that corresponds to the selected Region.  |\n|  ComponentSelector | O | IEnumeration | R/W | - | B | Selects a component to activate/deactivate its data streaming.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 652,
+      "bottomRightX": 120,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 652,
+      "bottomRightX": 373,
+      "bottomRightY": 669,
+      "content": "Page 50 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 653,
+      "bottomRightX": 591,
+      "bottomRightY": 669,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

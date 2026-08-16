@@ -1,0 +1,76 @@
+{
+  "index": 40,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 44,
+      "bottomRightX": 751,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 151,
+      "bottomRightX": 294,
+      "bottomRightY": 172,
+      "content": "### 6.6 Packing Style Summary",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 179,
+      "bottomRightX": 518,
+      "bottomRightY": 198,
+      "content": "Table 6-1 : Packing Style Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 203,
+      "bottomRightX": 746,
+      "bottomRightY": 925,
+      "content": "|  Unpacked | Most significant bits of each component are padded with zeros to be 8-bit aligned.  |\n| --- | --- |\n|  Unpacked msb | Least significant bits of each component are padded with zeros to be 8-bit aligned.  |\n|  “c” | Cluster of ‘x’ single-component/monochrome pixels to be regrouped and consider as one multi-component pixel. This marker must appear before the other tags. Used in conjunction with another packing style (packed, grouped or aligned).  |\n|  “p” | lsb packing on ‘x’ bits. Components are packed with no bit spacing, lsb’s in the first byte. Byte 0’s lsb contains the lsb of the first component. Next component is appended going from lsb to msb. Padding bits, if any, occupies the msb’s. If packing style does not explicitly include lsb or msb, then lsb is assumed. ‘x’ indicates the number of bits consumed by the pixel, including the padding 0. ‘x’ is not necessary when there is no padding bit in the resulting pixel data word.  |\n|  “pmsb” | msb packing on ‘x’ bits Components are packed with no bit spacing, msb’s in the first byte. Byte 0’s msb contains the msb of the first component. Next component is appended going from msb to lsb. Padding bits, if any, occupies the lsb’s. ‘x’ indicates the number of bits consumed by the pixel, including the padding 0. ‘x’ is not necessary when there is no padding bit in the resulting pixel data word.  |\n|  “g” | lsb grouping style on ‘x’ bits Least significant bits of the components are grouped together in a separate byte(s). If packing style does not explicitly include lsb or msb, then lsb is assumed. Byte 0 contains the first component. ‘x’ indicates the number of bits consumed by the pixel, including the padding 0. ‘x’ is not necessary when there is no padding bit in the resulting pixel data word.  |\n|  “gmsb” | msb grouping style on ‘x’ bits Most significant bits of the components are grouped together in a separate byte(s). Byte 0 contains the first component. ‘x’ indicates the number of bits consumed by the pixel, including the padding 0. ‘x’ is not necessary when there is no padding bit in the resulting pixel data word.  |\n|  “a” | The pixel (or group of pixels) is aligned to the given bit-boundary. This can be used to complement unpacked, packed or grouped packing style. This tag must appear after any other packing style tags. ‘x’ indicates the total number of bits to use for this grouping. Unused bit are set to 0. For multiple single-component/monochrome pixels that must be aligned together, it is mandatory to use the cluster marker (‘c’).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 101,
+      "bottomRightY": 971,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 972,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 745,
+      "bottomRightY": 973,
+      "content": "Page 41 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

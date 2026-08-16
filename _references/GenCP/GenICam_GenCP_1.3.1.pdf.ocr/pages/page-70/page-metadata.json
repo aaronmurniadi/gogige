@@ -1,0 +1,85 @@
+{
+  "index": 69,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 140,
+      "content": "|  GEN<i>CAM |   | ![img-74.jpeg](img-74.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 162,
+      "topLeftY": 177,
+      "bottomRightX": 554,
+      "bottomRightY": 603,
+      "content": "![img-75.jpeg](img-75.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-75.jpeg"
+    },
+    {
+      "topLeftX": 275,
+      "topLeftY": 656,
+      "bottomRightX": 443,
+      "bottomRightY": 673,
+      "content": "Fig. 7 – Serial Parameter Change",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 726,
+      "bottomRightX": 572,
+      "bottomRightY": 744,
+      "content": "The confirmation command rewrites the register which was written in the change step.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 749,
+      "bottomRightX": 642,
+      "bottomRightY": 784,
+      "content": "In case the device does not receive the confirming write command with the new parameters within 250 ms after sending the acknowledge, it falls back to the original parameter set.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 790,
+      "bottomRightX": 613,
+      "bottomRightY": 824,
+      "content": "In case the write confirm fails, the host must wait for 500 ms and then retry using the original parameter set.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 70 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

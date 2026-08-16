@@ -1,0 +1,120 @@
+{
+  "index": 26,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 53,
+      "bottomRightX": 360,
+      "bottomRightY": 83,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 536,
+      "topLeftY": 53,
+      "bottomRightX": 633,
+      "bottomRightY": 104,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 97,
+      "bottomRightX": 171,
+      "bottomRightY": 112,
+      "content": "Version 1.2.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 97,
+      "bottomRightX": 474,
+      "bottomRightY": 112,
+      "content": "GenTL Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 173,
+      "bottomRightX": 248,
+      "bottomRightY": 190,
+      "content": "### 2.2.3 Action Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 203,
+      "bottomRightX": 387,
+      "bottomRightY": 221,
+      "content": "Category that contains Action Control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 395,
+      "topLeftY": 229,
+      "bottomRightX": 627,
+      "bottomRightY": 247,
+      "content": "Table 2-7: Action Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 251,
+      "bottomRightX": 1003,
+      "bottomRightY": 568,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  ActionControl | R | GEV | ICategory | R | - | E | Category that contains all Action Control features of the Interface module.  |\n|  ActionCommand | R | GEV | ICommand | (R)/W | - | E | Send ActionCommand to device(s).  |\n|  ActionDeviceKey | R | GEV | IInteger | R/W | - | E | The Action Command Device Key to use in the Action Command.  |\n|  ActionGroupKey | R | GEV | IInteger | R/W | - | E | The Action Command Group Key to use in the Action Command.  |\n|  ActionGroupMask | R | GEV | IInteger | R/W | - | E | The Action Command Group Mask to use in the Action Command.  |\n|  ActionScheduledTimeEnable | R | GEV | IBoolean | R/W | - | E | Specifies if a time enabled Action Command should be given.  |\n|  ActionScheduledTime | R | GEV | IInteger | R/W | - | E | Specifies the time a time enabled Action Command is scheduled.  |\n|  GevActionDestinationIPAddress | R | GEV | IInteger | R/W | - | E | Specifies destination the IP address for the Action Command.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 591,
+      "bottomRightX": 268,
+      "bottomRightY": 608,
+      "content": "### 2.2.4 GenICam Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 621,
+      "bottomRightX": 662,
+      "bottomRightY": 639,
+      "content": "Contains the features related to GenICam control and access of a specific Interface module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 694,
+      "bottomRightX": 167,
+      "bottomRightY": 711,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 329,
+      "topLeftY": 694,
+      "bottomRightX": 430,
+      "bottomRightY": 712,
+      "content": "Page 27 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

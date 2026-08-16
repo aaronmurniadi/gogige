@@ -1,0 +1,104 @@
+{
+  "index": 477,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 746,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | ![img-155.jpeg](img-155.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 145,
+      "bottomRightX": 414,
+      "bottomRightY": 371,
+      "content": "• Common: Selects the common ExposureTime.\n• Red: Selects the red common ExposureTime.\n• Green: Selects the green ExposureTime.\n• Blue: Selects the blue ExposureTime.\n• Cyan: Selects the cyan common ExposureTime..\n• Magenta: Selects the magenta ExposureTime..\n- Yellow: Selects the yellow ExposureTime..\n- Infrared: Selects the infrared ExposureTime.\n- Ultraviolet: Selects the ultraviolet ExposureTime.\n• Stage1: Selects the first stage ExposureTime.\n• Stage2: Selects the second stage ExposureTime.\n• ...",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 387,
+      "bottomRightX": 319,
+      "bottomRightY": 408,
+      "content": "24.43 ChunkExposureTime",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 411,
+      "bottomRightX": 524,
+      "bottomRightY": 624,
+      "content": "|  Name | ChunkExposureTime[ChunkExposureTimeSelector]  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IFloat  |\n|  Access | Read  |\n|  Unit | us  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 648,
+      "bottomRightX": 393,
+      "bottomRightY": 667,
+      "content": "Returns the exposure time used to capture the image.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 681,
+      "bottomRightX": 306,
+      "bottomRightY": 700,
+      "content": "24.44 ChunkGainSelector",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 704,
+      "bottomRightX": 396,
+      "bottomRightY": 945,
+      "content": "|  Name | ChunkGainSelector  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | AllRedGreen  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 478 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

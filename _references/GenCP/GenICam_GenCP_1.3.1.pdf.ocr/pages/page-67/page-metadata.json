@@ -1,0 +1,67 @@
+{
+  "index": 66,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 66,
+      "bottomRightX": 659,
+      "bottomRightY": 140,
+      "content": "|  GEN<i>CAM |   | ![img-71.jpeg](img-71.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.3.1 | GenCP Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 130,
+      "topLeftY": 156,
+      "bottomRightX": 316,
+      "bottomRightY": 176,
+      "content": "##### 5.5.1.2. Manifest Entry",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 196,
+      "bottomRightX": 420,
+      "bottomRightY": 214,
+      "content": "Each Manifest Entry describes the properties of a single file.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 242,
+      "bottomRightX": 644,
+      "bottomRightY": 872,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Description  |   |   |\n| --- | --- | --- | --- | --- |\n|  4 | 0 | GenICam File Version  |   |   |\n|   |   |  Bit offset (lsb << x) | Width (bits) | Description  |\n|   |   |  0 | 16 | File-Subminor VersionSubminor version of the GenICam file referenced in this entry.  |\n|   |   |  16 | 8 | File-Minor VersionMinor version of the GenICam file referenced in this entry.  |\n|   |   |  24 | 8 | File-Major VersionMajor version of the GenICam file referenced in this entry.  |\n|  4 | 4 | Schema / Filetype / Fileformat  |   |   |\n|   |   |  Bit offset (lsb << x) | Width (bits) | Description  |\n|   |   |  0 | 3 | File TypeFile type of the file this manifest entry points to.0 = Device XMLThis is the “normal” GenICam device xml containing all device features. This is the one file provided in GenCP until version 1.1.1 = Buffer XMLThis optional XML-file contains only the chunkdata related nodes. This allows the consumer to instantiate one nodemap per buffer in case the buffers containing chunk data and so work on multiple buffers in parallel.2-7 = reserved  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 292,
+      "topLeftY": 933,
+      "bottomRightX": 391,
+      "bottomRightY": 951,
+      "content": "07 January 2025",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 933,
+      "bottomRightX": 618,
+      "bottomRightY": 951,
+      "content": "Page 67 of 75",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

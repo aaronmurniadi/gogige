@@ -1,0 +1,184 @@
+{
+  "index": 240,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 35,
+      "topLeftY": 43,
+      "bottomRightX": 735,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 143,
+      "bottomRightX": 348,
+      "bottomRightY": 166,
+      "content": "# 10 Counter and Timer Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 197,
+      "bottomRightX": 622,
+      "bottomRightY": 214,
+      "content": "This chapter lists all features that relates to control and monitoring of Counters and Timers.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 222,
+      "bottomRightX": 752,
+      "bottomRightY": 258,
+      "content": "Note that Counters and Timers can also be used to generate an Event when a predetermined maximum count (or duration) is reached. See the EventSelector feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 25,
+      "topLeftY": 273,
+      "bottomRightX": 335,
+      "bottomRightY": 296,
+      "content": "## 10.1 Counter and Timer category",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 315,
+      "bottomRightX": 532,
+      "bottomRightY": 333,
+      "content": "This section define the category that includes Counter's and Timer's features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 349,
+      "bottomRightX": 366,
+      "bottomRightY": 369,
+      "content": "### 10.1.1 CounterAndTimerControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 372,
+      "bottomRightX": 386,
+      "bottomRightY": 585,
+      "content": "|  Name | CounterAndTimerControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 609,
+      "bottomRightX": 444,
+      "bottomRightY": 627,
+      "content": "Category that contains the Counter and Timer control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 25,
+      "topLeftY": 668,
+      "bottomRightX": 277,
+      "bottomRightY": 689,
+      "content": "## 10.2 Counter usage model",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 711,
+      "bottomRightX": 361,
+      "bottomRightY": 729,
+      "content": "This section describes the Counters usage model.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 736,
+      "bottomRightX": 740,
+      "bottomRightY": 790,
+      "content": "A Counter is used to count internal events (FrameStart, Timer1End, ...), I/O external events (Input Line rising edge, ...) and even clock ticks. It can be reset, read or written at anytime. Counters can also be cascaded to increase their range if necessary.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 798,
+      "bottomRightX": 716,
+      "bottomRightY": 833,
+      "content": "To set the destination output Line of a Counter, see for example Counter1Active entry of the LineSource feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 841,
+      "bottomRightX": 752,
+      "bottomRightY": 876,
+      "content": "Note that Counters can also be used to generate an Event when a predetermined maximum count (or duration) is reached. See the EventSelector feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 878,
+      "bottomRightX": 665,
+      "bottomRightY": 895,
+      "content": "Below we show examples of typical use cases of counter's control features in C/C++ pseudo-code.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 902,
+      "bottomRightX": 713,
+      "bottomRightY": 937,
+      "content": "For simplicity, the object name is omitted (e.g. CounterValue instead of Camera.CounterValue) and the default state of the device is assumed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 952,
+      "bottomRightX": 112,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 241 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 953,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "index": 83,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 157,
+      "bottomRightX": 694,
+      "bottomRightY": 212,
+      "content": "Note that these values already follow the updated value list of the \"DeviceTLType\" feature from GenICam SFNC 2.3. Depending on this value, the transport layer specific features for the chosen transport layer standard have to be considered.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 220,
+      "bottomRightX": 411,
+      "bottomRightY": 372,
+      "content": "- CameraLink: Camera Link\n- CameraLinkHS: Camera Link High Speed\n- CoaXPress: CoaXPress\n- GigEVision: GigE Vision\n- USB3Vision: USB3 Vision\n- Custom: Custom transport layer",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 380,
+      "bottomRightX": 618,
+      "bottomRightY": 399,
+      "content": "Corresponds to the DEVICE_INFO_TLTYPE command of DevGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 413,
+      "bottomRightX": 325,
+      "bottomRightY": 432,
+      "content": "##### 3.3.1.11 DeviceDisplayName",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 433,
+      "bottomRightX": 420,
+      "bottomRightY": 646,
+      "content": "|  Name | DeviceDisplayName  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Recommended  |\n|  Interface | IString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Any NULL-terminated string  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 672,
+      "bottomRightX": 679,
+      "bottomRightY": 708,
+      "content": "User readable name of the device. If this is not defined in the device this should be \"VENDOR MODEL (ID)\".",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 716,
+      "bottomRightX": 664,
+      "bottomRightY": 735,
+      "content": "Corresponds to the DEVICE_INFO_DISPLAYNAME command of DevGetInfo function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 750,
+      "bottomRightX": 382,
+      "bottomRightY": 768,
+      "content": "##### 3.3.1.12 DeviceTimestampFrequency",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 769,
+      "bottomRightX": 420,
+      "bottomRightY": 903,
+      "content": "|  Name | DeviceTimestampFrequency  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 427,
+      "bottomRightY": 944,
+      "content": "Page 84 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

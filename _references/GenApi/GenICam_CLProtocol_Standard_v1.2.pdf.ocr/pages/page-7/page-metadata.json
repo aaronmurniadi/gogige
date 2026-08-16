@@ -1,0 +1,175 @@
+{
+  "index": 6,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 42,
+      "bottomRightX": 639,
+      "bottomRightY": 111,
+      "content": "|  GEN<i>CAM |   | ![img-8.jpeg](img-8.jpeg) emva  |\n| --- | --- | --- |\n|  V1.2 | CLProtocol Standard Module  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 123,
+      "bottomRightX": 635,
+      "bottomRightY": 154,
+      "content": "CLProtocol driver library returns a full DeviceID string unambiguously identifying the camera found connected to the port.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 159,
+      "bottomRightX": 635,
+      "bottomRightY": 202,
+      "content": "The connection for probing is normally performed at 9600 baud which is by definition of the Camera Link standard the wake up baud rate of cameras. A CLProtocol driver library can optionally implement baud rate auto detection.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 208,
+      "bottomRightX": 635,
+      "bottomRightY": 278,
+      "content": "Note that any automatic detection of the baud rate typically takes place in the probe step only. When a camera is later re-connected the baud rate is the same are detected in the probe step. The idea is that all time consuming procedures are performed in the probing step and the connection step is made as fast as possible. In order for this to work the CLProtocol driver library must remember the baud rate settings. It can do so because there is a Cookie which is handed out by the probing function and needs to be given to the connect function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 285,
+      "bottomRightX": 635,
+      "bottomRightY": 327,
+      "content": "For circumstances where the time consuming probe step needs too much time, e.g. closing the application while probing is active, the CLProtocol driver library may implement the stop probing flag. This flag is called from another thread to immediately abort the current probe procedure (see section 6.2).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 341,
+      "bottomRightX": 128,
+      "bottomRightY": 354,
+      "content": "#### PortIDs",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 362,
+      "bottomRightX": 635,
+      "bottomRightY": 405,
+      "content": "Before the probing can take place the user has to select a frame grabber port. The ports are enumerated using the CLAllSerial module and the result is presented in form of a list of PortID strings unambiguously identifying a port in the system.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 410,
+      "bottomRightX": 635,
+      "bottomRightY": 467,
+      "content": "The CLAllSerial module first enumerates all CLSerXXX modules found installed in the system, then it enumerates all frame grabber boards per module and finally all port per frame grabber board (see Figure 3). The PortID system however hides this enumeration hierarchy and presents the result of the enumeration process as a flat list of PortIDs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 270,
+      "topLeftY": 479,
+      "bottomRightX": 450,
+      "bottomRightY": 703,
+      "content": "![img-9.jpeg](img-9.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-9.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 709,
+      "bottomRightX": 463,
+      "bottomRightY": 726,
+      "content": "Figure 3 How the CLAllSerial module enumerates frame grabber ports",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 731,
+      "bottomRightX": 634,
+      "bottomRightY": 759,
+      "content": "The enumeration process differs depending on the operating system used. The following search patterns are used when looking for CLSerXXX modules:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 104,
+      "topLeftY": 767,
+      "bottomRightX": 375,
+      "bottomRightY": 823,
+      "content": "• Windows Release Version: clser??? .dll\n• Windows Debug Version: clser???d.dll\n• Linux Release Version: clser??? .so\n• Linux Debug Version: clser???d.so",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 840,
+      "bottomRightX": 624,
+      "bottomRightY": 869,
+      "content": "When CLAllSerial module loads under Windows, it will search for the CLSerXXX modules in the directory of the CLALLSerial module itself and in the following described directory:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 874,
+      "bottomRightX": 630,
+      "bottomRightY": 904,
+      "content": "For 32-bit and 64-bit Windows the appropriate version of CLSerXXX module should be in the directory defined in the registry key:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 909,
+      "bottomRightX": 350,
+      "bottomRightY": 922,
+      "content": "HKEY_LOCAL_MACHINE\\software\\cameralink",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 960,
+      "bottomRightX": 245,
+      "bottomRightY": 975,
+      "content": "GenICam_CLProtocol_Standard",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 321,
+      "topLeftY": 960,
+      "bottomRightX": 421,
+      "bottomRightY": 974,
+      "content": "September 18, 2018",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 571,
+      "topLeftY": 960,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 7 of 13",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "index": 14,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 82,
+      "topLeftY": 43,
+      "bottomRightX": 681,
+      "bottomRightY": 122,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 131,
+      "bottomRightX": 686,
+      "bottomRightY": 263,
+      "content": "|   | communicate events to the Device.  |\n| --- | --- |\n|  Control Channel | A Communication Channel used to configure and control a Device. For a Control Channel the Device acts as a server that provides the initial point of Communication for the Host System that acts as a Client. The Communication on a Control Channel is bidirectional and initiated by the Host System.  |\n|  Event | An asynchronous notification of the occurrence of a fact. Events are transmitted on an Event Channel.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 302,
+      "bottomRightX": 261,
+      "bottomRightY": 318,
+      "content": "### 1.3.1 Events in GenTL",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 333,
+      "bottomRightX": 700,
+      "bottomRightY": 386,
+      "content": "Events in GenICam are used for asynchronous signaling between entities, such as the device signaling to the host application. This is described and exemplified in the GenICam and SFNC documents.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 394,
+      "bottomRightX": 700,
+      "bottomRightY": 447,
+      "content": "In GenTL each module in the producer has the ability to implement events to the application (consumer). Therefore the feature lists in this document includes description of the event mechanism for each module, even if for some modules no predefined events are included.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 455,
+      "bottomRightX": 700,
+      "bottomRightY": 509,
+      "content": "Typical events from producer to consumer in GenTL give information about the device(s), e.g. new devices are available or a connected device becomes unavailable, or data stream information such as the arrival of a new buffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 530,
+      "bottomRightX": 358,
+      "bottomRightY": 549,
+      "content": "### 1.3.2 Feature Persistence in GenTL",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 561,
+      "bottomRightX": 702,
+      "bottomRightY": 650,
+      "content": "GenICam Feature Persistence is handled outside of the module whos features to persist. In devices this use the defined standard feature DeviceFeaturePersistenceStart to announce that features are to be read from the device, and the feature DeviceFeaturePersistenceEnd to announce that reading of features for persistence has ended. Between these, the persistence algorithm should read all streamable features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 657,
+      "bottomRightX": 702,
+      "bottomRightY": 730,
+      "content": "Likewise, DeviceRegistersStreamingStart is used to announce writing of streamed features without validation, and DeviceRegistersStreamingEnd to end this mode, validate the current feature set and update DeviceRegistersValid. The current persistence algorithm in the GenAPI reference implementation uses these standard features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 736,
+      "bottomRightX": 702,
+      "bottomRightY": 791,
+      "content": "These features can be used inside GenTL modules to facilitate persistence even though the GenTL modules are not devices.. The persistence features are not included in the features listed in this specification.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 952,
+      "bottomRightX": 165,
+      "bottomRightY": 968,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 553,
+      "topLeftY": 952,
+      "bottomRightX": 650,
+      "bottomRightY": 970,
+      "content": "Page 15 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

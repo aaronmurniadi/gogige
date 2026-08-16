@@ -1,0 +1,149 @@
+{
+  "index": 88,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  GENICAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 301,
+      "bottomRightY": 155,
+      "content": "#### 6.3.5 Data Stream Functions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 169,
+      "bottomRightX": 337,
+      "bottomRightY": 185,
+      "content": "##### 6.3.5.1 DSAllocAndAnnounceBuffer",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 208,
+      "bottomRightX": 602,
+      "bottomRightY": 276,
+      "content": "GC_ERROR DSAllocAndAnnounceBuffer ( DS_HANDLE hDataStream, size_t iBufferSize, void * pPrivate, BUFFER_HANDLE * phBuffer )",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 284,
+      "bottomRightX": 635,
+      "bottomRightY": 354,
+      "content": "This function allocates the memory for a single buffer and announces this buffer to the Data Stream associated with the hDataStream handle and returns a buffer handle which references that single buffer until the buffer is revoked. This will allocate internal resources which will be freed upon a call to DSRevokeBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 360,
+      "bottomRightX": 635,
+      "bottomRightY": 394,
+      "content": "Announcing a buffer to a data stream does not mean that this buffer will be automatically queued for acquisition. This is done through a separate call to DSQueueBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 401,
+      "bottomRightX": 635,
+      "bottomRightY": 436,
+      "content": "The memory referenced in this buffer must stay valid until a buffer is revoked with DSRevokeBuffer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 443,
+      "bottomRightX": 635,
+      "bottomRightY": 478,
+      "content": "Every call of this function should be matched with a call of DSRevokeBuffer even though the resources are also freed when the module is closed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 484,
+      "bottomRightX": 458,
+      "bottomRightY": 501,
+      "content": "Refer to chapter 5.2.1 in order to determine the right buffer size.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 516,
+      "bottomRightX": 166,
+      "bottomRightY": 532,
+      "content": "Parameters",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 536,
+      "bottomRightX": 626,
+      "bottomRightY": 707,
+      "content": "|  [in] | hDataStream | Data Stream module to work on.  |\n| --- | --- | --- |\n|  [in] | iBufferSize | Size of the buffer in bytes.  |\n|  [in] | pPrivate | Pointer to private data which will be passed to the GenTL Consumer on New Buffer events. This parameter may be NULL.  |\n|  [out] | phBuffer | Buffer module handle of the newly announced buffer. It is recommended to initialize *phBuffer to GENTL_INVALID_HANDLE before calling DSAllocAndAnnounceBuffer to indicate an invalid handle.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 722,
+      "bottomRightX": 141,
+      "bottomRightY": 738,
+      "content": "Returns",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 744,
+      "bottomRightX": 635,
+      "bottomRightY": 889,
+      "content": "|  GC_ERR_SUCCESS | Operation was successful; no error occurred.  |\n| --- | --- |\n|  GC_ERR_NOT_INITIALIZED | No preceding call to GCInitLib.  |\n|  GC_ERR_INVALID_HANDLE | The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream.  |\n|  GC_ERR_INVALID_PARAMETER | Parameter phBuffer is an invalid pointer (NULL or ~0x0).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 635,
+      "bottomRightY": 944,
+      "content": "Page 89 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

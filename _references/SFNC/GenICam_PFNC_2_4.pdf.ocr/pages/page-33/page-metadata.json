@@ -1,0 +1,166 @@
+{
+  "index": 32,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 44,
+      "bottomRightX": 752,
+      "bottomRightY": 125,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.4 | Pixel Format Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 159,
+      "bottomRightX": 435,
+      "bottomRightY": 177,
+      "content": "#### Pixel construction rules for the “msb Unpacked” style",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 183,
+      "bottomRightX": 263,
+      "bottomRightY": 202,
+      "content": "To construct the pixel stream:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 203,
+      "bottomRightX": 466,
+      "bottomRightY": 257,
+      "content": "1) Put the component in the most significant bits.\n2) Pad the least significant bits to the nearest 8-bit boundary.\n3) Start with the next component on the next 8-bit boundary.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 290,
+      "bottomRightX": 228,
+      "bottomRightY": 309,
+      "content": "### 6.2 Cluster marker",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 317,
+      "bottomRightX": 716,
+      "bottomRightY": 390,
+      "content": "The cluster marker (“c”) is only allowed for single-component/monochrome pixel formats. It is used to regroup a given number of single-component/monochrome pixels into one multi-component pixel. This facilitates the re-use of some multi-component/color pixel packing style concepts for single-component/monochrome pixels.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 396,
+      "bottomRightX": 628,
+      "bottomRightY": 433,
+      "content": "The cluster marker is immediately followed by a number indicating the number of single-component/monochrome pixels that are grouped into the cluster.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 440,
+      "bottomRightX": 531,
+      "bottomRightY": 460,
+      "content": "Ex: c2 = 2 single-component/monochrome pixels in the cluster",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 157,
+      "topLeftY": 466,
+      "bottomRightX": 689,
+      "bottomRightY": 502,
+      "content": "c3 = 3 single-component/monochrome pixels in the cluster (which makes the cluster similar to RGB format)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 535,
+      "bottomRightX": 732,
+      "bottomRightY": 607,
+      "content": "A cluster marker is only required to remove a possible ambiguity with the pixel format name, typically when the number of bits (including padding) is not a multiple of the number of single-component/monochrome pixels in the cluster. In general, the cluster marker should be avoided as it clouds the pixel name and makes it less friendly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 613,
+      "bottomRightX": 703,
+      "bottomRightY": 670,
+      "content": "When the cluster marker is used, then the packed or grouped style must consider the cluster of single-component/monochrome pixels as one multi-component pixel. This directly impacts the number immediately following those 2 tags which must now represent the number of bits for the cluster.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 676,
+      "bottomRightX": 742,
+      "bottomRightY": 714,
+      "content": "The following figure illustrates a scenario where 3 monochrome pixels are regrouped into one 3-component pixel. This 3-component pixel is then lsb packed to 32 bits, leaving 2 padding bits in the msb's position.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 141,
+      "topLeftY": 794,
+      "bottomRightX": 672,
+      "bottomRightY": 884,
+      "content": "|   | byte 3 | byte 2 | byte 1 | byte 0  |\n| --- | --- | --- | --- | --- |\n|  ... | p p 9 . . . . 4L3 | 3 . . 0 9 . . 6L3 L2 | 5 . . . . 0 9 8L2 L1 | 7 . . . . . . 0L1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 161,
+      "topLeftY": 891,
+      "bottomRightX": 650,
+      "bottomRightY": 910,
+      "content": "Figure 6-6 : 10-bit monochrome pixel lsb packed into 32 bits (Mono10c3p32)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 955,
+      "bottomRightX": 102,
+      "bottomRightY": 972,
+      "content": "V2.4",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 372,
+      "topLeftY": 955,
+      "bottomRightX": 462,
+      "bottomRightY": 973,
+      "content": "June 16, 2021",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 656,
+      "topLeftY": 955,
+      "bottomRightX": 746,
+      "bottomRightY": 974,
+      "content": "Page 33 of 60",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

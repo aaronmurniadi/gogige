@@ -1,0 +1,139 @@
+{
+  "index": 360,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 134,
+      "bottomRightX": 152,
+      "bottomRightY": 152,
+      "content": "## Point Clouds",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 161,
+      "bottomRightX": 747,
+      "bottomRightY": 249,
+      "content": "Through calibration procedures one or more 2.5D range images can be converted to a 3D point cloud. In a 3D point cloud multiple Z values are possible for each X and Y coordinate. Typically such a point cloud is organized, i.e. it can be represented as 3 separate images, and neighbouring pixels typically are neighbours also in 3D space. However, even in an organized point cloud it is not guaranteed that neighbouring pixel positions represents neighbouring points in the 3D world.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 258,
+      "bottomRightX": 741,
+      "bottomRightY": 293,
+      "content": "In general we do not distinguish between cameras delivering a 2.5D range map and 3D point cloud data in this document.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 266,
+      "topLeftY": 299,
+      "bottomRightX": 542,
+      "bottomRightY": 578,
+      "content": "![img-102.jpeg](img-102.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-102.jpeg"
+    },
+    {
+      "topLeftX": 213,
+      "topLeftY": 586,
+      "bottomRightX": 591,
+      "bottomRightY": 604,
+      "content": "Figure 21-2: 3D point cloud data set representing a cylinder.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 636,
+      "bottomRightX": 147,
+      "bottomRightY": 653,
+      "content": "## Linescan 3D",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 673,
+      "bottomRightX": 751,
+      "bottomRightY": 744,
+      "content": "Linescan 3D devices acquire a contour of the target in each acquisition and typically use linear object or camera motion to image complete 3D objects. The final result is typically 3D images of objects in the same sense as for Areascan 3D cameras, but the Y (scan) direction size may be variable and the coordinate values increase/decrease continuously with the motion.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 762,
+      "bottomRightX": 747,
+      "bottomRightY": 798,
+      "content": "Linescan 3D devices include laser plane triangulation (sheet-of-light) and time-of-flight laser scanners with 1D scanning. There are also stereo linescan cameras.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 806,
+      "bottomRightX": 754,
+      "bottomRightY": 859,
+      "content": "For the typical Linescan 3D camera the distance between scans is fixed, with the camera triggered from a motion sensing device such as an encoder. In this case the scale information for this coordinate can be expressed via the Scan3dCoordinateScale feature which is part of the Scan3dControl category.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 867,
+      "bottomRightX": 741,
+      "bottomRightY": 921,
+      "content": "It is also common with fixed acquisition time to use an encoder value to indicate the sampling position. Chunk data can then be used to mark each scan line with the encoder counter, and together with a scale factor for the counter, it is possible to reconstruct the position for the data along the motion direction.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 361 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

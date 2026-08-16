@@ -1,0 +1,75 @@
+{
+  "index": 13,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 132,
+      "topLeftY": 30,
+      "bottomRightX": 278,
+      "bottomRightY": 59,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 527,
+      "topLeftY": 31,
+      "bottomRightX": 616,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 8,
+      "topLeftY": 74,
+      "bottomRightX": 74,
+      "bottomRightY": 88,
+      "content": "Version 1.1.0",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 244,
+      "topLeftY": 70,
+      "bottomRightX": 291,
+      "bottomRightY": 85,
+      "content": "GenDC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 113,
+      "bottomRightX": 726,
+      "bottomRightY": 694,
+      "content": "|  2 | 10 | **Flags** Flags specifying the characteristics and format of the Container. See section 4 for more information.  |   |   |\n| --- | --- | --- | --- | --- |\n|   |   |  Width (bits) | Bit offset (lsb << x) | Description  |\n|   |   |  1 | 0 | **TimestampPTP** If true, the timestamps of the Components are relative to the epoch January 1, 1970 00:00:00 (TAI) like in the PTP IEEE-1588 format.  |\n|   |   |  1 | 1 | **ComponentInvalid** If True, Components in the Container might be invalid. The **Invalid** flag of each Component must be checked before using it. An example use case is a device with a static ComponentCount but leaving out Components on-the-fly if they cannot be generated.  |\n|   |   |  14 | 2 | **Reserved** (set to 0)  |\n|   |   |  |   |   |\n|  4 | 12 | **HeaderSize** = Size of the Container Header. Size of the Container Header in bytes including the variable sized ComponentOffset array.  |   |   |\n|  8 | 16 | **Id** Container identifier. Strictly monotonically incrementing by 1 with each transmitted Container. Note: Start value and reset condition can be specified by the Transport Layer Protocols.  |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 989,
+      "bottomRightX": 83,
+      "bottomRightY": 1004,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 546,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1005,
+      "content": "Page 14 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

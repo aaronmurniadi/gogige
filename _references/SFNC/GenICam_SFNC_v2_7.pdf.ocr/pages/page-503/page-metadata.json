@@ -1,0 +1,183 @@
+{
+  "index": 502,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 152,
+      "bottomRightX": 329,
+      "bottomRightY": 176,
+      "content": "## 27 Transport Layer Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 182,
+      "bottomRightX": 431,
+      "bottomRightY": 202,
+      "content": "This chapter provides the Transport Layer control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 208,
+      "bottomRightX": 743,
+      "bottomRightY": 246,
+      "content": "In general the generic features are directly under the TransportLayerControl category and the other Transport Layer specific features are under their respective sub category.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 259,
+      "bottomRightX": 321,
+      "bottomRightY": 282,
+      "content": "### 27.1 TLParamsLocked Usage",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 309,
+      "bottomRightX": 667,
+      "bottomRightY": 329,
+      "content": "TLParamsLocked related features are used to lock the state of certain features during acquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 335,
+      "bottomRightX": 736,
+      "bottomRightY": 425,
+      "content": "By default (for example after a new Device connection), TLParamsLocked should be zero or unlocked in order to allow full device configuration. When the transmitter is configured properly, the receiver sets the TLParamsLocked feature of the transmitter to one which locks its transport layer related features. This allows starting the acquisition. The TLParamsLocked feature must be keep locked as long as the acquisition and transfer are active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 432,
+      "bottomRightX": 740,
+      "bottomRightY": 521,
+      "content": "There are different group of features that can be locked. Those groups are selected using the TLParamsLockedSelector. A feature must follow the rules of the group in which it falls. Features that affect other features must follow the rules of the more restrictive group of feature it is affecting. For example binning features also affect image size features. When a feature does not affect any predefined group, the device is free to decide if the feature is locked by TLParamsLocked.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 529,
+      "bottomRightX": 249,
+      "bottomRightY": 548,
+      "content": "#### Streaming Channel Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 554,
+      "bottomRightX": 694,
+      "bottomRightY": 609,
+      "content": "Features that are related to the configuration of the streaming channel must be locked by the TLParamsLocked feature. Streaming channel configuration features are used to change the streaming channel behavior, packet formatting or usage of the physical link.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 616,
+      "bottomRightX": 189,
+      "bottomRightY": 634,
+      "content": "#### Data Flow Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 641,
+      "bottomRightX": 729,
+      "bottomRightY": 678,
+      "content": "When the transport layer features are unlocked, both the AcquisitionStart and TransferStart features should be locked to prevent a user from starting an acquisition in an invalid state.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 686,
+      "bottomRightX": 171,
+      "bottomRightY": 702,
+      "content": "#### Stream Content",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 711,
+      "bottomRightX": 726,
+      "bottomRightY": 783,
+      "content": "Not all transmitters and receivers have the same capability when it comes to dynamic change in the stream content. By default, all features that can modify the image size or pixel format should be locked by the TLParamsLocked feature. A device can implement the TLParamsLockedSelector and TLParamsLockedState feature to change to allow more precise control on the features locking.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 849,
+      "bottomRightX": 315,
+      "bottomRightY": 870,
+      "content": "### 27.2 Transport Layer features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 875,
+      "bottomRightX": 423,
+      "bottomRightY": 892,
+      "content": "This section describes the general transport layer features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 970,
+      "content": "Page 503 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 623,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

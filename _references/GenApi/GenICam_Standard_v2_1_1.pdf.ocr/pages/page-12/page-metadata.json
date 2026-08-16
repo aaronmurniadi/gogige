@@ -1,0 +1,122 @@
+{
+  "index": 11,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 79,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 119,
+      "content": "|  GENICAM |   | ![img-16.jpeg](img-16.jpeg)emva  |\n| --- | --- | --- |\n|  Version 2.1.1 | Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 193,
+      "topLeftY": 159,
+      "bottomRightX": 526,
+      "bottomRightY": 412,
+      "content": "![img-17.jpeg](img-17.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-17.jpeg"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 426,
+      "bottomRightX": 523,
+      "bottomRightY": 445,
+      "content": "Figure 4 Example of the control flow when getting and setting features",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 458,
+      "bottomRightX": 635,
+      "bottomRightY": 492,
+      "content": "If the user reads the value of the Gain node, the call will be dispatched to the GainValue node, which will in turn use the IPort interface from the Device node to ask for the right register.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 498,
+      "bottomRightX": 636,
+      "bottomRightY": 598,
+      "content": "If the user attempts to set the value of the Gain node, the implementation might decide to check the range first by reading the Min and Max values from the corresponding GainMin and GainMax nodes. If the value is inside the allowed range, the Gain node then will write it via the GainValue node and the Device node to the camera. Note that the implementation might cache the Min and Max values depending on the Cacheable attribute of the corresponding IntReg nodes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 612,
+      "bottomRightX": 215,
+      "bottomRightY": 630,
+      "content": "### 2.5 Access Mode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 640,
+      "bottomRightX": 507,
+      "bottomRightY": 658,
+      "content": "Each node has an access mode defined according to the following table:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 680,
+      "bottomRightX": 642,
+      "bottomRightY": 831,
+      "content": "|  Readable | Writable | Implemented | Access Mode  |\n| --- | --- | --- | --- |\n|  * | * | 0 | NI – not implemented  |\n|  0 | 0 | 1 | NA – not available  |\n|  0 | 1 | 1 | WO – write only  |\n|  1 | 0 | 1 | RO – read only  |\n|  1 | 1 | 1 | RW – readable and writable  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 837,
+      "bottomRightX": 262,
+      "bottomRightY": 854,
+      "content": "1 = yes, 0 = no, * = don't care",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 883,
+      "bottomRightX": 635,
+      "bottomRightY": 919,
+      "content": "A feature may be implemented in a camera, but be temporarily not available. If it is available, then it is, by definition, also implemented and may be readable and/or writable.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 957,
+      "bottomRightX": 301,
+      "bottomRightY": 975,
+      "content": "GenICam_Standard_v2_1_1.pdf.doc",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 551,
+      "topLeftY": 957,
+      "bottomRightX": 635,
+      "bottomRightY": 974,
+      "content": "Page 12 of 57",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

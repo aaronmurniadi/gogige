@@ -1,0 +1,149 @@
+{
+  "index": 234,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | ![img-84.jpeg](img-84.jpeg) emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 552,
+      "bottomRightY": 182,
+      "content": "- Input: The selected physical line is used to Input an electrical signal.\n- Output: The selected physical line is used to Output an electrical signal.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 197,
+      "bottomRightX": 253,
+      "bottomRightY": 216,
+      "content": "9.2.4 LineInverter",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 220,
+      "bottomRightX": 386,
+      "bottomRightY": 451,
+      "content": "|  Name | LineInverter[LineSelector]  |\n| --- | --- |\n|  Category | DigitalIOControl  |\n|  Level | Recommended  |\n|  Interface | IBoolean  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | FalseTrue  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 474,
+      "bottomRightX": 499,
+      "bottomRightY": 494,
+      "content": "Controls the inversion of the signal of the selected input or output Line.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 500,
+      "bottomRightX": 177,
+      "bottomRightY": 516,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 526,
+      "bottomRightX": 337,
+      "bottomRightY": 572,
+      "content": "- False: The Line signal is not inverted.\n- True: The Line signal is inverted.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 587,
+      "bottomRightX": 241,
+      "bottomRightY": 605,
+      "content": "9.2.5 LineStatus",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 609,
+      "bottomRightX": 386,
+      "bottomRightY": 842,
+      "content": "|  Name | LineStatus[LineSelector]  |\n| --- | --- |\n|  Category | DigitalIOControl  |\n|  Level | Recommended  |\n|  Interface | IBoolean  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | FalseTrue  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 866,
+      "bottomRightX": 439,
+      "bottomRightY": 885,
+      "content": "Returns the current status of the selected input or output Line.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 891,
+      "bottomRightX": 580,
+      "bottomRightY": 909,
+      "content": "The status of the signal is taken after the input Line inverter of the I/O control block.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 918,
+      "bottomRightX": 177,
+      "bottomRightY": 934,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 235 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

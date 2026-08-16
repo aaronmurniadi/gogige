@@ -1,0 +1,318 @@
+{
+  "index": 96,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-137.jpeg](img-137.jpeg) CAM |   | ![img-138.jpeg](img-138.jpeg) emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 137,
+      "bottomRightX": 182,
+      "bottomRightY": 155,
+      "content": "[in,out] pBuffer",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 137,
+      "bottomRightX": 634,
+      "bottomRightY": 204,
+      "content": "Pointer to a user allocated buffer to receive the requested information. If this parameter is NULL, piSize will contain the minimal size of pBuffer in bytes. If the piType is a string the size includes the terminating 0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 206,
+      "bottomRightX": 173,
+      "bottomRightY": 224,
+      "content": "[in,out] piSize",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 271,
+      "topLeftY": 206,
+      "bottomRightX": 626,
+      "bottomRightY": 291,
+      "content": "pBuffer equal NULL:\nout: minimal size of pBuffer in bytes to hold all information.\npBuffer unequal NULL:\nin: size of the provided pBuffer in bytes.\nout: number of bytes filled by the function.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 306,
+      "bottomRightX": 141,
+      "bottomRightY": 320,
+      "content": "##### Returns",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 326,
+      "bottomRightX": 208,
+      "bottomRightY": 343,
+      "content": "GC_ERR_SUCCESS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 326,
+      "bottomRightX": 568,
+      "bottomRightY": 342,
+      "content": "Operation was successful; no error occurred.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 352,
+      "bottomRightX": 278,
+      "bottomRightY": 370,
+      "content": "GC_ERR_NOT_INITIALIZED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 352,
+      "bottomRightX": 512,
+      "bottomRightY": 370,
+      "content": "No preceding call to GCInitLib.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 377,
+      "bottomRightX": 269,
+      "bottomRightY": 395,
+      "content": "GC_ERR_INVALID_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 376,
+      "bottomRightX": 635,
+      "bottomRightY": 429,
+      "content": "The handle hDataStream is invalid (NULL) or does not reference an open Data Stream module retrieved through a call to DevOpenDataStream.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 437,
+      "bottomRightX": 278,
+      "bottomRightY": 454,
+      "content": "GC_ERR_NOT_IMPLEMENTED",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 436,
+      "bottomRightX": 541,
+      "bottomRightY": 454,
+      "content": "Specified iInfoCmd is not implemented.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 462,
+      "bottomRightX": 295,
+      "bottomRightY": 480,
+      "content": "GC_ERR_INVALID_PARAMETER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 462,
+      "bottomRightX": 634,
+      "bottomRightY": 495,
+      "content": "Parameters piSize and/or piType are invalid pointers (NULL or ~0x0)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 504,
+      "bottomRightX": 286,
+      "bottomRightY": 523,
+      "content": "GC_ERR_BUFFER_TOO_SMALL",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 504,
+      "bottomRightX": 634,
+      "bottomRightY": 539,
+      "content": "pBuffer is not NULL and the value of *piSize is too small to receive the expected amount of data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 546,
+      "bottomRightX": 260,
+      "bottomRightY": 564,
+      "content": "GC_ERR_NOT_AVAILABLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 545,
+      "bottomRightX": 634,
+      "bottomRightY": 581,
+      "content": "The request is implemented but the requested information is currently not available for any reason.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 588,
+      "bottomRightX": 208,
+      "bottomRightY": 606,
+      "content": "GC_ERR_NO_DATA",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 588,
+      "bottomRightX": 634,
+      "bottomRightY": 639,
+      "content": "The request is implemented but the requested query is not applicable in current configuration (refer to guidelines provided with individual info commands).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 669,
+      "bottomRightX": 635,
+      "bottomRightY": 704,
+      "content": "Error cases not covered in the list above may return error codes according to chapter 6.1.5 Error Handling on page 61.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 716,
+      "bottomRightX": 246,
+      "bottomRightY": 734,
+      "content": "#### 6.3.5.9 DSQueueBuffer",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 757,
+      "bottomRightX": 156,
+      "bottomRightY": 774,
+      "content": "GC_ERROR",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 170,
+      "topLeftY": 758,
+      "bottomRightX": 285,
+      "bottomRightY": 773,
+      "content": "DSQueueBuffer",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 758,
+      "bottomRightX": 439,
+      "bottomRightY": 773,
+      "content": "( DS_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 758,
+      "bottomRightX": 599,
+      "bottomRightY": 773,
+      "content": "hDataStream,",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 358,
+      "topLeftY": 775,
+      "bottomRightX": 474,
+      "bottomRightY": 790,
+      "content": "BUFFER_HANDLE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 495,
+      "topLeftY": 775,
+      "bottomRightX": 573,
+      "bottomRightY": 790,
+      "content": "hBuffer )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 800,
+      "bottomRightX": 635,
+      "bottomRightY": 867,
+      "content": "This function queues a particular buffer for acquisition. A buffer can be queued for acquisition any time after the buffer was announced (before or after the acquisition has been started) if it is not currently queued. Furthermore, a buffer which is already waiting to be delivered cannot be queued for acquisition. A queued buffer cannot be revoked.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 873,
+      "bottomRightX": 634,
+      "bottomRightY": 909,
+      "content": "The order of the delivered buffers is not necessarily the same as the order in which they have been queued.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 926,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 926,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 97 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "index": 16,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 97,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 116,
+      "bottomRightX": 293,
+      "bottomRightY": 133,
+      "content": "### 2.2.3 GenDC Component Header Layout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 151,
+      "bottomRightX": 712,
+      "bottomRightY": 280,
+      "content": "|  HeaderType | Flags | HeaderSize  |   |\n| --- | --- | --- | --- |\n|  Reserved | GroupId | SourceId | RegionId  |\n|  RegionOffsetX |   | RegionOffsetY  |   |\n|  Timestamp  |   |   |   |\n|  TypeId  |   |   |   |\n|  Format |   | Reserved2 | PartCount  |\n|  PartOffset[PartCount]  |   |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 274,
+      "topLeftY": 293,
+      "bottomRightX": 462,
+      "bottomRightY": 308,
+      "content": "Figure 2-4: GenDC Component Layout",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 348,
+      "bottomRightX": 325,
+      "bottomRightY": 365,
+      "content": "### 2.2.4 GenDC Component Header Description",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 389,
+      "bottomRightX": 437,
+      "bottomRightY": 406,
+      "content": "#### 2.2.4.1 GenDC Component Header Common Fields Description",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 30,
+      "topLeftY": 423,
+      "bottomRightX": 732,
+      "bottomRightY": 904,
+      "content": "|  Width (Bytes) | Offset (Bytes) | Description  |   |   |\n| --- | --- | --- | --- | --- |\n|  2 | 0 | **HeaderType** = Unique Header format identifier (Component Header) (GDC_COMPONENT_HEADER = 0x2000). A GenDC Container must always contain at least one Component Header.  |   |   |\n|  2 | 2 | **Flags** Flags specifying the characteristics and format of the Component.  |   |   |\n|   |   |  Width (bits) | Bit offset (lsb << x) | Description  |\n|   |   |  1 | 0 | **Invalid** The Component is invalid and must not be used. If this flag is set the **ComponentInvalid** flag of the Container Header must be also set.  |\n|   |   |  15 | 1 | Reserved (set to 0)  |\n|  4 | 4 | **HeaderSize** = Size of the Component Header Size of the Component Header in bytes including the variable sized PartOffset array. Note the Component's Part Headers are **not** included.  |   |   |\n|  2 | 8 | **Reserved** = Reserved for future use (set to 0).  |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 84,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 17 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

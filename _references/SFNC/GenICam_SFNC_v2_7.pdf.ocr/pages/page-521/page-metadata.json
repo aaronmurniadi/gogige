@@ -1,0 +1,132 @@
+{
+  "index": 520,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 43,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 141,
+      "bottomRightX": 394,
+      "bottomRightY": 207,
+      "content": "|   | Receiver Transceiver Peripheral  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 231,
+      "bottomRightX": 611,
+      "bottomRightY": 251,
+      "content": "This feature is deprecated (See DeviceType). It was representing the class of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 258,
+      "bottomRightX": 496,
+      "bottomRightY": 274,
+      "content": "Note: The GevDeviceClass feature returns Transmitter for cameras.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 290,
+      "bottomRightX": 526,
+      "bottomRightY": 313,
+      "content": "### 27.4.6 GevDeviceModeCharacterSet (Deprecated)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 314,
+      "bottomRightX": 394,
+      "bottomRightY": 526,
+      "content": "|  Name | GevDeviceModeCharacterSet  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | UTF8  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 551,
+      "bottomRightX": 714,
+      "bottomRightY": 588,
+      "content": "This feature is deprecated (See DeviceCharacterSet). It was representing the character set used by all the strings of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 602,
+      "bottomRightX": 421,
+      "bottomRightY": 625,
+      "content": "### 27.4.7 GevPhysicalLinkConfiguration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 626,
+      "bottomRightX": 422,
+      "bottomRightY": 892,
+      "content": "|  Name | GevPhysicalLinkConfiguration  |\n| --- | --- |\n|  Category | GigEVision  |\n|  Level | Optional  |\n|  Interface | IEnumeration  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | SingleLink MultiLink StaticLAG DynamicLAG  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 917,
+      "bottomRightX": 656,
+      "bottomRightY": 936,
+      "content": "Controls the principal physical link configuration to use on next restart/power-up of the device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 951,
+      "bottomRightX": 121,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 951,
+      "bottomRightX": 396,
+      "bottomRightY": 971,
+      "content": "Page 521 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 952,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

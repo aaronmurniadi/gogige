@@ -1,0 +1,150 @@
+{
+  "index": 484,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 44,
+      "topLeftY": 44,
+      "bottomRightX": 744,
+      "bottomRightY": 126,
+      "content": "|  GEN<ì>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 141,
+      "bottomRightX": 396,
+      "bottomRightY": 251,
+      "content": "|  Access | Read  |\n| --- | --- |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 274,
+      "bottomRightX": 558,
+      "bottomRightY": 294,
+      "content": "Returns the unique identifier of the transfer block used to transport the payload.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 300,
+      "bottomRightX": 667,
+      "bottomRightY": 319,
+      "content": "The block ID is usually defined by the transport layer and repeated in the chunk for convenience.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 334,
+      "bottomRightX": 347,
+      "bottomRightY": 354,
+      "content": "### 24.54 ChunkTransferStreamID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 54,
+      "topLeftY": 356,
+      "bottomRightX": 396,
+      "bottomRightY": 658,
+      "content": "|  Name | ChunkTransferStreamID  |\n| --- | --- |\n|  Category | ChunkDataControl  |\n|  Level | Recommended  |\n|  Interface | IEnumeration  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Stream0 (if 0 based) Stream1 Stream2 Stream3 ...  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 684,
+      "bottomRightX": 418,
+      "bottomRightY": 702,
+      "content": "Returns identifier of the stream that generated this block.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 710,
+      "bottomRightX": 187,
+      "bottomRightY": 725,
+      "content": "Possible values are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 736,
+      "bottomRightX": 333,
+      "bottomRightY": 833,
+      "content": "- Stream0: Data comes from Stream0.\n- Stream1: Data comes from Stream1.\n- Stream2: Data comes from Stream2.\n- Stream3: Data comes from Stream3.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 843,
+      "bottomRightX": 550,
+      "bottomRightY": 860,
+      "content": "Note that the Stream used can be changed using the RegionDestination feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 884,
+      "bottomRightX": 490,
+      "bottomRightY": 903,
+      "content": "### 24.55 ChunkTransferQueueCurrentBlockCount",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 55,
+      "topLeftY": 905,
+      "bottomRightX": 513,
+      "bottomRightY": 937,
+      "content": "|  Name | ChunkTransferQueueCurrentBlockCount  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 62,
+      "topLeftY": 952,
+      "bottomRightX": 120,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 952,
+      "bottomRightX": 394,
+      "bottomRightY": 971,
+      "content": "Page 485 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 953,
+      "bottomRightX": 624,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

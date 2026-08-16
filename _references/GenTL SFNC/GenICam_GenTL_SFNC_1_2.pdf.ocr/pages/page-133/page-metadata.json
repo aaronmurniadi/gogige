@@ -1,0 +1,76 @@
+{
+  "index": 132,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 421,
+      "bottomRightY": 343,
+      "content": "|  Category | None  |\n| --- | --- |\n|  Level | Optional  |\n|  Interface | IPort  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Invisible  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 380,
+      "bottomRightX": 496,
+      "bottomRightY": 397,
+      "content": "The GenICam port through which the Buffer module is accessed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 406,
+      "bottomRightX": 686,
+      "bottomRightY": 440,
+      "content": "Note that BufferPort is a port node (not a feature node) and is generally not accessed by the end user directly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 449,
+      "bottomRightX": 691,
+      "bottomRightY": 486,
+      "content": "Note that according to the GenICam GenTL standard, this feature is not mandatory. However, if this feature is provided, also the features “BufferData” and “BufferUserData” are mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 926,
+      "bottomRightX": 165,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 327,
+      "topLeftY": 926,
+      "bottomRightX": 432,
+      "bottomRightY": 944,
+      "content": "Page 133 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

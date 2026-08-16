@@ -1,0 +1,157 @@
+{
+  "index": 116,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 143,
+      "topLeftY": 34,
+      "bottomRightX": 277,
+      "bottomRightY": 61,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 494,
+      "topLeftY": 34,
+      "bottomRightX": 535,
+      "bottomRightY": 81,
+      "content": "[LOGO]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 535,
+      "topLeftY": 66,
+      "bottomRightX": 576,
+      "bottomRightY": 79,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 76,
+      "bottomRightX": 105,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 76,
+      "bottomRightX": 372,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 120,
+      "bottomRightX": 627,
+      "bottomRightY": 219,
+      "content": "Each pixel in the image has a format defined by the PixelFormat feature. Only a subset of the possible pixel formats is presented in this document. The complete list of possible standard pixel formats and their layout can be found in the separate \"GenICam Pixel Format Naming Convention (PFNC)\" specification (See the GenICam download page on the EMVA web site). This web page also gives the list of the currently standardized Pixel Formats and their unique Identifier value (See the \"GenICam Pixel Format Values\" and \"Reference header file for PFNC\" documents).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 227,
+      "bottomRightX": 646,
+      "bottomRightY": 312,
+      "content": "Because the PixelFormat feature contains a mix of informations specified by the user and informations provided by the device, it is suitable for describing the whole pixel settings but might be less practical when individual setting must be set or inquired. Therefore a second set of features exists composed of the individual components of PixelFormat. Those features are PixelSize, PixelColorFilter, PixelDynamicRangeMin and PixelDynamicRangeMax.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 318,
+      "bottomRightX": 652,
+      "bottomRightY": 425,
+      "content": "Even if the PixelFormat might allow for, e.g. 16 bits per pixel, the real image data might provide only a certain range of value (e.g. 12 bits per pixel because the camera is equipped with a 12 bit analog to digital converter only). In that case, PixelDynamicRangeMin and PixelDynamicRangeMax specify the lower and upper limits of the pixel values in the image. In general, PixelDynamicRangeMin should be zero and PixelDynamicRangeMax should be a power of two ($$[0, 2^{DataDepth} - 1]$$). There should be no missing codes in the range.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 464,
+      "bottomRightX": 256,
+      "bottomRightY": 482,
+      "content": "### 4.1 ImageFormatControl",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 484,
+      "bottomRightX": 363,
+      "bottomRightY": 683,
+      "content": "|  Name | ImageFormatControl  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 706,
+      "bottomRightX": 314,
+      "bottomRightY": 724,
+      "content": "Category for Image Format Control features.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 59,
+      "topLeftY": 738,
+      "bottomRightX": 193,
+      "bottomRightY": 756,
+      "content": "### 4.2 SensorWidth",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 45,
+      "topLeftY": 759,
+      "bottomRightX": 363,
+      "bottomRightY": 934,
+      "content": "|  Name | SensorWidth  |\n| --- | --- |\n|  Category | ImageFormatControl  |\n|  Level | Recommended  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 950,
+      "bottomRightX": 107,
+      "bottomRightY": 965,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 265,
+      "topLeftY": 950,
+      "bottomRightX": 363,
+      "bottomRightY": 967,
+      "content": "Page 117 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 951,
+      "bottomRightX": 577,
+      "bottomRightY": 967,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

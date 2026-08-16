@@ -1,0 +1,111 @@
+{
+  "index": 19,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 54,
+      "bottomRightX": 358,
+      "bottomRightY": 82,
+      "content": "GEN<i>CAM</i></td></tr><tr><td>Version 1.2.0</td><td>GenTL Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 52,
+      "bottomRightX": 632,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 166,
+      "bottomRightX": 307,
+      "bottomRightY": 190,
+      "content": "## 2 Features Summary",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 85,
+      "topLeftY": 219,
+      "bottomRightX": 905,
+      "bottomRightY": 254,
+      "content": "This section provides a comprehensive list of the standard features covered by this document. The following sections provide more detailed explanation of each feature.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 270,
+      "bottomRightX": 271,
+      "bottomRightY": 291,
+      "content": "### 2.1 System Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 313,
+      "bottomRightX": 283,
+      "bottomRightY": 333,
+      "content": "#### 2.1.1 System Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 344,
+      "bottomRightX": 584,
+      "bottomRightY": 362,
+      "content": "Contains the features related to general information about the GenTL Producer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 379,
+      "topLeftY": 369,
+      "bottomRightX": 640,
+      "bottomRightY": 387,
+      "content": "Table 2-1: System Information Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 392,
+      "bottomRightX": 1010,
+      "bottomRightY": 690,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  SystemInformation | R | All | ICategory | R | - | B | Category that contains all System Information features of the System module.  |\n|  TLID | M | All | IString | R | - | E | Unique identifier of the GenTL Producer like a GUID.  |\n|  TLVendorName | M | All | IString | R | - | B | Name of the GenTL Producer vendor.  |\n|  TLModelName | M | All | IString | R | - | B | Name of the GenTL Producer to distinguish different kinds of GenTL Producer implementations from one vendor.  |\n|  TLVersion | M | All | IString | R | - | B | Vendor specific version string of the GenTL Producer.  |\n|  TLFileName | R | All | IString | R | - | E | Filename including extension of the GenTL Producer.  |\n|  TLDisplayName | R | All | IString | R/(W) | - | B | User readable name of the GenTL Producer.  |\n|  TLPath | M | All | IString | R | - | E | Full path to the GenTL Producer including filename and extension.  |\n|  TLType | M | All | IEnumeration | R | - | E | Transport layer type of the GenTL Producer implementation.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 694,
+      "bottomRightX": 164,
+      "bottomRightY": 710,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 694,
+      "bottomRightX": 428,
+      "bottomRightY": 712,
+      "content": "Page 20 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

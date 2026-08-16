@@ -1,0 +1,131 @@
+{
+  "index": 78,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 159,
+      "bottomRightX": 673,
+      "bottomRightY": 176,
+      "content": "- Once: The selected Event notification is enabled for one event then return to Off state",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 217,
+      "bottomRightX": 266,
+      "bottomRightY": 238,
+      "content": "### 3.3 Device Module",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 243,
+      "bottomRightX": 675,
+      "bottomRightY": 295,
+      "content": "Contains all features of the Device module that are independent from the underlying transport technology. Do not mistake the features of the Device module with the features of the remote device.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 318,
+      "bottomRightX": 280,
+      "bottomRightY": 336,
+      "content": "### 3.3.1 Device Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 349,
+      "bottomRightX": 694,
+      "bottomRightY": 386,
+      "content": "Features in this section provide basic information about the Device module and its identity. Note that all features in this section are defined read-only.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 425,
+      "bottomRightX": 280,
+      "bottomRightY": 442,
+      "content": "#### 3.3.1.1 Device Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 445,
+      "bottomRightX": 421,
+      "bottomRightY": 657,
+      "content": "|  Name | DeviceInformation  |\n| --- | --- |\n|  Category | Root  |\n|  Level | Recommended  |\n|  Interface | ICategory  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Beginner  |\n|  Values | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 683,
+      "bottomRightX": 572,
+      "bottomRightY": 702,
+      "content": "Category that contains all Device Information features of the Device module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 716,
+      "bottomRightX": 213,
+      "bottomRightY": 734,
+      "content": "#### 3.3.1.2 DeviceID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 736,
+      "bottomRightX": 421,
+      "bottomRightY": 923,
+      "content": "|  Name | DeviceID  |\n| --- | --- |\n|  Category | DeviceInformation  |\n|  Level | Mandatory  |\n|  Interface | ISString  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 927,
+      "bottomRightX": 165,
+      "bottomRightY": 943,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 927,
+      "bottomRightX": 428,
+      "bottomRightY": 945,
+      "content": "Page 79 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

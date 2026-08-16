@@ -1,0 +1,130 @@
+{
+  "index": 9,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 16,
+      "bottomRightX": 737,
+      "bottomRightY": 96,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.1.0 | GenDC  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 117,
+      "bottomRightX": 196,
+      "bottomRightY": 137,
+      "content": "## 2 GenDC Container",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 157,
+      "bottomRightX": 251,
+      "bottomRightY": 176,
+      "content": "### 2.1 GenDC Container Layout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 194,
+      "bottomRightX": 285,
+      "bottomRightY": 212,
+      "content": "#### 2.1.1 GenDC Container General Layout",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 230,
+      "bottomRightX": 712,
+      "bottomRightY": 315,
+      "content": "A GenDC Container is a self-described object that holds simple or complex arbitrary data buffers. The basic elements of a Container are the Descriptor and the data section (see Figure 2-1: GenDC Container Descriptor and Data). The Descriptor groups all the Headers describing the Container and the Components (including its Part(s)). In detail, the Descriptor has a Container Header followed by one or more Component Headers where each Component contains a single or multiple Part Headers. The data section consists of all the Part's data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 316,
+      "bottomRightX": 579,
+      "bottomRightY": 330,
+      "content": "* N = Number of Components in the Container, P = Number of Parts in the Component 1, Z = Number of Parts in the Component N.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 33,
+      "topLeftY": 355,
+      "bottomRightX": 732,
+      "bottomRightY": 620,
+      "content": "![img-0.jpeg](img-0.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-0.jpeg"
+    },
+    {
+      "topLeftX": 261,
+      "topLeftY": 627,
+      "bottomRightX": 504,
+      "bottomRightY": 641,
+      "content": "Figure 2-1: GenDC Container Descriptor and Data",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 654,
+      "bottomRightX": 713,
+      "bottomRightY": 863,
+      "content": "A Container always starts with a unique, single Descriptor located first in the Container. However, to describe various Container transmission scenarios and allow preprocessing, this specification defines three kinds of Descriptors that the Transport Layers can use. All of them share the same layout but are typically sent at different points in time. The prefetch Descriptor is available before the streaming starts either from the XML or from the bootstrap registers of the transmitting device and describes all possible Components and Parts that can be received in the following acquisition phase. A Descriptor has to be sent as early as feasible during the acquisition in order to allow preprocessing of the data during the reception of the data. If the Container cannot vary during transmission, this Descriptor is called the final Descriptor giving complete and definitive information on the upcoming data. If the Container can vary during transmission a preliminary Descriptor should be sent first at the start of the transmission to allow preprocessing and must indicate which fields of the Component and Part Headers might change during transmission. In that case, a final Descriptor is sent at the end of the transmission and contains the final description of the Container's data. It shares the offset with the preliminary Descriptor and is therefore suitable to overwrite it.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 876,
+      "bottomRightX": 310,
+      "bottomRightY": 893,
+      "content": "#### 2.1.2 GenDC Container Headers Hierarchy",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 912,
+      "bottomRightX": 686,
+      "bottomRightY": 947,
+      "content": "The Container Descriptor includes a Container Header that points to one or more Component Headers where each Component Header points to its constituting Part Header(s). Each of those Part Headers then points to their",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 989,
+      "bottomRightX": 83,
+      "bottomRightY": 1005,
+      "content": "2020-6-25",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 547,
+      "topLeftY": 989,
+      "bottomRightX": 629,
+      "bottomRightY": 1006,
+      "content": "Page 10 of 55",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "index": 24,
+  "dimensions": {
+    "dpi": 93,
+    "height": 791,
+    "width": 1023
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 213,
+      "topLeftY": 54,
+      "bottomRightX": 358,
+      "bottomRightY": 82,
+      "content": "GEN<i>CAM</i></td></tr><tr><td>Version 1.2.0</td><td>GenTL Standard Features Naming Convention</td></tr></table>",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 537,
+      "topLeftY": 53,
+      "bottomRightX": 583,
+      "bottomRightY": 103,
+      "content": "![img-6.jpeg](img-6.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-6.jpeg"
+    },
+    {
+      "topLeftX": 584,
+      "topLeftY": 86,
+      "bottomRightX": 631,
+      "bottomRightY": 103,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 157,
+      "bottomRightX": 1010,
+      "bottomRightY": 182,
+      "content": "|  ubnetSelector] |  |  |  |  |  |  |   |\n| --- | --- | --- | --- | --- | --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 222,
+      "bottomRightX": 287,
+      "bottomRightY": 239,
+      "content": "### 2.2.2 Device Enumeration",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 252,
+      "bottomRightX": 787,
+      "bottomRightY": 269,
+      "content": "Contains the features related to the enumeration of available Device modules within a specific Interface module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 377,
+      "topLeftY": 278,
+      "bottomRightX": 643,
+      "bottomRightY": 295,
+      "content": "Table 2-6: Device Enumeration Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 301,
+      "bottomRightX": 1010,
+      "bottomRightY": 690,
+      "content": "|  Name | Level | TLType | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  DeviceEnumeration | R | All | ICategory | R | - | E | Category that contains all Device Enumeration features of the Interface module.  |\n|  DeviceUpdateList | M | All | ICommand | (R)/W | - | E | Updates the internal device list.  |\n|  DeviceUpdateTimeout | R | All | IInteger | R/W | ms | E | Specifies timeout for the DeviceUpdateList Command.  |\n|  DeviceSelector | M | All | IInteger | R/W | - | E | Selector for the different devices on this interface.  |\n|  DeviceID[DeviceSelector] | M | All | IString | R | - | E | Interface wide unique identifier of the selected device.  |\n|  DeviceVendorName[DeviceSelector] | M | All | IString | R | - | E | Name of the device vendor.  |\n|  DeviceModelName[DeviceSelector] | M | All | IString | R | - | E | Name of the device model.  |\n|  DeviceAccessStatus[DeviceSelector] | M | All | IEnumeration | R | - | E | Gives the device's access status at the moment of the last execution of the DeviceUpdateList command.  |\n|  DeviceSerialNumber[DeviceSelector] | R | All | IString | R | - | E | Serial number of the remote device.  |\n|  DeviceUserID[DeviceSelector] | O | All | IString | R | - | E | User-programmable device identifier of the remote device.  |\n|  DeviceTLVersionMajor[DeviceSelector] | M | All | IInteger | R | - | E | Major version number of the transport layer specification the remote device complies with.  |\n|  DeviceTLVersionMinor[DeviceSelector] | M | All | IInteger | R | - | E | Minor version number of the transport layer specification the remote device complies with.  |\n|  GevDeviceIPAddress[DeviceSelector] | M | GEV | IInteger | R | - | E | Current IP address of the GVCP interface of the selected  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 694,
+      "bottomRightX": 164,
+      "bottomRightY": 710,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 694,
+      "bottomRightX": 428,
+      "bottomRightY": 712,
+      "content": "Page 25 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "index": 58,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 84,
+      "topLeftY": 44,
+      "bottomRightX": 681,
+      "bottomRightY": 123,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 1.2.0 | GenTL Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 191,
+      "bottomRightX": 356,
+      "bottomRightY": 210,
+      "content": "### 3.2.1.7 GevInterfaceGatewaySelector",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 212,
+      "bottomRightX": 421,
+      "bottomRightY": 451,
+      "content": "|  Name | GevInterfaceGatewaySelector  |\n| --- | --- |\n|  Category | InterfaceInformation  |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | ≥0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 474,
+      "bottomRightX": 700,
+      "bottomRightY": 512,
+      "content": "Selector for the different gateway entries for this interface. The selector is 0-based. Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 525,
+      "bottomRightX": 299,
+      "bottomRightY": 545,
+      "content": "### 3.2.1.8 GevInterfaceGateway",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 547,
+      "bottomRightX": 550,
+      "bottomRightY": 785,
+      "content": "|  Name | GevInterfaceGateway[GevInterfaceGatewaySelector]  |\n| --- | --- |\n|  Category | InterfaceInformation  |\n|  Level | Mandatory  |\n|  TLType | GigEVision  |\n|  Interface | IInteger  |\n|  Access | Read  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 811,
+      "bottomRightX": 649,
+      "bottomRightY": 849,
+      "content": "IP address of the selected gateway entry of this interface. Note that for a GenTL Producer implementation supporting GigE Vision this feature is mandatory.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 861,
+      "bottomRightX": 329,
+      "bottomRightY": 879,
+      "content": "### 3.2.1.9 GevInterfaceMACAddress",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 882,
+      "bottomRightX": 421,
+      "bottomRightY": 911,
+      "content": "|  Name | GevInterfaceMACAddress  |\n| --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 926,
+      "bottomRightX": 164,
+      "bottomRightY": 942,
+      "content": "2020-07-08",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 330,
+      "topLeftY": 926,
+      "bottomRightX": 427,
+      "bottomRightY": 944,
+      "content": "Page 59 of 134",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

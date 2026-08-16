@@ -1,0 +1,158 @@
+{
+  "index": 55,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 292,
+      "bottomRightY": 61,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 81,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 76,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 76,
+      "bottomRightX": 387,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 920,
+      "bottomRightY": 224,
+      "content": "|  BalanceRatioSelector | O | IEnumeration | R/W | - | E | Selects which Balance ratio to control.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  BalanceRatio[BalanceRatioSelector] | O | IFloat | R/W | - | E | Controls ratio of the selected color component to a reference color component.  |\n|  BalanceWhiteAuto | O | IEnumeration | R/W | - | E | Controls the mode for automatic white balancing between the color channels.  |\n|  Gamma | O | IFloat | R/W | - | B | Controls the gamma correction of pixel intensity.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 256,
+      "bottomRightX": 204,
+      "bottomRightY": 275,
+      "content": "## 2.5 LUT Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 279,
+      "bottomRightX": 713,
+      "bottomRightY": 296,
+      "content": "Contains the features related to the look-up table (LUT) control (See the LUT Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 389,
+      "topLeftY": 303,
+      "bottomRightX": 587,
+      "bottomRightY": 319,
+      "content": "Table 2-5: Lut Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 325,
+      "bottomRightX": 920,
+      "bottomRightY": 521,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  LUTControl | O | ICategory | R | - | E | Category that includes the LUT control features.  |\n|  LUTSelector | O | IEnumeration | R/W | - | E | Selects which LUT to control.  |\n|  LUTEnable[LUTSelector] | O | IBoolean | R/W | - | E | Activates the selected LUT.  |\n|  LUTIndex[LUTSelector] | O | IInteger | R/W | - | G | Control the index (offset) of the coefficient to access in the selected LUT.  |\n|  LUTValue[LUTSelector][LUTIndex] | O | IInteger | R/W | - | G | Returns the Value at entry LUTIndex of the LUT selected by LUTSelector.  |\n|  LUTValueAll[LUTSelector] | O | IRegister | R/W | - | G | Accesses all the LUT coefficients in a single access without using individual LUTIndex.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 552,
+      "bottomRightX": 344,
+      "bottomRightY": 571,
+      "content": "## 2.6 Color Transformation Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 576,
+      "bottomRightX": 849,
+      "bottomRightY": 593,
+      "content": "Contains the features related to the control of the color transformation (See the Color Transformation Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 361,
+      "topLeftY": 600,
+      "bottomRightX": 614,
+      "bottomRightY": 616,
+      "content": "Table 2-6: Color Transformation summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 622,
+      "bottomRightX": 920,
+      "bottomRightY": 645,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 652,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 652,
+      "bottomRightX": 376,
+      "bottomRightY": 668,
+      "content": "Page 56 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 652,
+      "bottomRightX": 594,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

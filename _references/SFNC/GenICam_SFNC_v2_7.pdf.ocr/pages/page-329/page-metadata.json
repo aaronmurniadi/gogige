@@ -1,0 +1,93 @@
+{
+  "index": 328,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 44,
+      "bottomRightX": 736,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 754,
+      "bottomRightY": 172,
+      "content": "To provide a generic API on top of the File Access Controls, a FileAccessAdapter is defined in the GenApi. The Adapter provides two iostream interfaces to the device files:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 180,
+      "bottomRightX": 344,
+      "bottomRightY": 223,
+      "content": "- IDevFileStream Read from the device\n- ODevFileStream Write to the device",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 232,
+      "bottomRightX": 736,
+      "bottomRightY": 268,
+      "content": "The File Protocol Adapter is responsible for the mapping of the (I/O) DevFileStreamBuf actions Open, Close, UnderFlow, Overflow on File Access Controls",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 51,
+      "topLeftY": 303,
+      "bottomRightX": 356,
+      "bottomRightY": 323,
+      "content": "### Example Code for the streaminterface:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 355,
+      "bottomRightX": 380,
+      "bottomRightY": 665,
+      "content": "//GenApi::INodeMap * pInterface\nODevFileStream usersetWrite;\nusersetWrite.open(pInterface, \"UserSet1\");\nif( ! usersetWrite.fail() ) {\n    usersetWrite << \"Hello World\\n\";\n}\nusersetWrite.close();\n\nIDevFileStream usersetRead;\nusersetRead.open(pInterface, \"UserSet1\");\nif( ! usersetRead.fail() ) {\n    cout << usersetRead.rdbuf();\n}\nusersetRead.close();",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 971,
+      "content": "Page 329 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 971,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

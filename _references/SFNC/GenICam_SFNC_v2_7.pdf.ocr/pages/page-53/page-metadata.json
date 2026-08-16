@@ -1,0 +1,130 @@
+{
+  "index": 52,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 290,
+      "bottomRightY": 60,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 548,
+      "bottomRightY": 80,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 76,
+      "bottomRightX": 119,
+      "bottomRightY": 89,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 173,
+      "topLeftY": 76,
+      "bottomRightX": 385,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 548,
+      "topLeftY": 65,
+      "bottomRightX": 590,
+      "bottomRightY": 80,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 107,
+      "bottomRightX": 927,
+      "bottomRightY": 160,
+      "content": "|  ImageCompressionJPEGFormatOption | O | IEnumeration | R/W | - | E | When JPEG is selected as the compression format, a device might optionally offer better control over JPEG-specific options through this feature.  |\n| --- | --- | --- | --- | --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 191,
+      "bottomRightX": 260,
+      "bottomRightY": 211,
+      "content": "### 2.3 Acquisition Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 214,
+      "bottomRightX": 897,
+      "bottomRightY": 231,
+      "content": "Contains the features related to image acquisition, including trigger and exposure control (See the Acquisition Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 364,
+      "topLeftY": 238,
+      "bottomRightX": 608,
+      "bottomRightY": 255,
+      "content": "Table 2-3: Acquisition Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 58,
+      "topLeftY": 259,
+      "bottomRightX": 927,
+      "bottomRightY": 645,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  AcquisitionControl | R | ICategory | R | - | B | Category for the acquisition and trigger control features.  |\n|  AcquisitionMode | R | IEnumeration | R/(W) | - | B | Sets the acquisition mode of the device.  |\n|  AcquisitionStart | R | ICommand | (R)/W | - | B | Starts the Acquisition of the device.  |\n|  AcquisitionStop | R | ICommand | (R)/W | - | B | Stops the Acquisition of the device at the end of the current Frame.  |\n|  AcquisitionStopMode | O | IEnum | R/W | - | E | Controls how the AcquisitionStop command and the acquisition stopped using a trigger (e.  |\n|  AcquisitionAbort | R | ICommand | (R)/W | - | E | Aborts the Acquisition immediately.  |\n|  AcquisitionArm | O | ICommand | (R)/W | - | E | Arms the device before an AcquisitionStart command.  |\n|  AcquisitionFrameCount | R | IInteger | R/W | - | B | Number of frames to acquire in MultiFrame Acquisition mode.  |\n|  AcquisitionBurstFrameCount | O | IInteger | R/W | - | B | Number of frames to acquire for each FrameBurstStart trigger.  |\n|  AcquisitionFrameRate | R | IFloat | R/W | Hz | B | Controls the acquisition rate (in Hertz) at which the frames are captured.  |\n|  AcquisitionFrameRateEnable | R | IBoolean | R/W | - | E | Controls if the AcquisitionFrameRate feature is writable and used to control the acquisition rate.  |\n|  AcquisitionLineRate | R | IFloat | R/W | Hz | B | Controls the rate (in Hertz) at which the Lines in a Frame are captured.  |\n|  AcquisitionLineRateEnable | R | IBoolean | R/W | - | E | Controls if the AcquisitionLineRate feature is writable and used to control the acquisition rate.  |\n|  AcquisitionStatusSelector | R | IEnumeration | R/W | - | E | Selects the internal acquisition signal to read using AcquisitionStatus.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 652,
+      "bottomRightX": 120,
+      "bottomRightY": 667,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 282,
+      "topLeftY": 652,
+      "bottomRightX": 373,
+      "bottomRightY": 669,
+      "content": "Page 53 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 422,
+      "topLeftY": 653,
+      "bottomRightX": 591,
+      "bottomRightY": 669,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

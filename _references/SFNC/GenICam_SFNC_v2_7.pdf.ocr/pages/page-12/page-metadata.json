@@ -1,0 +1,128 @@
+{
+  "index": 11,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 304,
+      "bottomRightY": 56,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 53,
+      "topLeftY": 72,
+      "bottomRightX": 120,
+      "bottomRightY": 86,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 71,
+      "bottomRightX": 404,
+      "bottomRightY": 88,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 534,
+      "topLeftY": 28,
+      "bottomRightX": 578,
+      "bottomRightY": 77,
+      "content": "[Non-Text]",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 579,
+      "topLeftY": 59,
+      "bottomRightX": 623,
+      "bottomRightY": 76,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 117,
+      "bottomRightX": 661,
+      "bottomRightY": 543,
+      "content": "21.4 SCAN 3D FEATURES...396\n21.4.1 SCAN3DCONTROL...396\n21.4.2 SCAN3DEXTRACTIONSELECTOR 396\n21.4.3 SCAN3DEXTRACTIONSOURCE...397\n21.4.4 SCAN3DEXTRACTIONMETHOD 397\n21.4.5 SCAN3DDISTANCEUNIT 398\n21.4.6 SCAN3DCOORDINATESYSTEM 399\n21.4.7 SCAN3DOUTPUTMODE 399\n21.4.8 SCAN3DCOORDINATESYSTEMREFERENCE 404\n21.4.9 SCAN3DCOORDINATESELECTOR...405\n21.4.10 SCAN3DCOORDINATESCALE...406\n21.4.11 SCAN3DCOORDINATEOFFSET 406\n21.4.12 SCAN3DINVALIDDATAFLAG...407\n21.4.13 SCAN3DINVALIDDATAVALUE 408\n21.4.14 SCAN3DAXISMIN 408\n21.4.15 SCAN3DAXISMAX 409\n21.4.16 SCAN3DCOORDINATETRANSFORMSELECTOR...409\n21.4.17 SCAN3DTRANSFORMVALUE 410\n21.4.18 SCAN3DCOORDINATEREFERENCESELECTOR 410\n21.4.19 SCAN3DCOORDINATEREFERENCEVALUE 411\n21.4.20 SCAN3DFOCALLENGTH 411\n21.4.21 SCAN3DBASELINE 412\n21.4.22 SCAN3DPRINCIPALPOINTU...412\n21.4.23 SCAN3DPRINCIPALPOINTV...413",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 559,
+      "bottomRightX": 661,
+      "bottomRightY": 578,
+      "content": "# 22 LIGHT CONTROL...414",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 592,
+      "bottomRightX": 661,
+      "bottomRightY": 806,
+      "content": "22.1 EXISTING TIMER FEATURES FOR LIGHT CONTROL 414\n22.2 LIGHT CONTROL FEATURES USAGE 414\n22.3 LIGHT CONTROL FEATURES...417\n22.3.1 LIGHTCONTROL 417\n22.3.2 LIGHTCONTROLLERSELECTOR 417\n22.3.3 LIGHTCONTROLLERSOURCE...417\n22.3.4 LIGHTCURRENTRATING...418\n22.3.5 LIGHTVOLTAGERATING 418\n22.3.6 LIGHTBRIGHTNESS 419\n22.3.7 LIGHTCONNECTIONSTATUS...419\n22.3.8 LIGHTCURRENTMEASURED...419\n22.3.9 LIGHTVOLTAGEMEASURED...420",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 822,
+      "bottomRightX": 661,
+      "bottomRightY": 840,
+      "content": "# 23 OPTIC CONTROL 421",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 855,
+      "bottomRightX": 661,
+      "bottomRightY": 962,
+      "content": "23.1 BASIC PARAMETERS OF AN IMAGING OPTICAL SYSTEM 421\n23.2 OPTIC CONTROL FEATURES USAGE MODEL 423\n23.3 STATUS OF OPTIC FEATURES STATE MACHINE 425\n23.4 OPTIC CONTROL FEATURES...426\n23.4.1 OPTICCONTROL 426\n23.4.2 OPTICCONTROLLERSELECTOR...426",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 989,
+      "bottomRightX": 120,
+      "bottomRightY": 1005,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 989,
+      "bottomRightX": 390,
+      "bottomRightY": 1007,
+      "content": "Page 12 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 443,
+      "topLeftY": 990,
+      "bottomRightX": 623,
+      "bottomRightY": 1007,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

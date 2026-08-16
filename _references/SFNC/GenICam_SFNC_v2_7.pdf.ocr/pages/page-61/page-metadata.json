@@ -1,0 +1,121 @@
+{
+  "index": 60,
+  "dimensions": {
+    "dpi": 87,
+    "height": 720,
+    "width": 1018
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 156,
+      "topLeftY": 34,
+      "bottomRightX": 292,
+      "bottomRightY": 61,
+      "content": "GEN CAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 507,
+      "topLeftY": 34,
+      "bottomRightX": 591,
+      "bottomRightY": 81,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 76,
+      "bottomRightX": 121,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 76,
+      "bottomRightX": 387,
+      "bottomRightY": 91,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 107,
+      "bottomRightX": 919,
+      "bottomRightY": 395,
+      "content": "|  LogicBlockInputNumber[LogicBlockSelector] | O | IInteger | R/(W) | - | G | Specifies the number of active signal inputs of the Logic Block.  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  LogicBlockInputSelector[LogicBlockSelector] | O | IInteger | R/W | - | G | Selects the Logic Block's input to configure.  |\n|  LogicBlockInputSource[LogicBlockSelector][LogicBlockInputSelector] | O | IEnumeration | R/W | - | G | Selects the source signal for the input into the Logic Block.  |\n|  LogicBlockInputInverter[LogicBlockSelector][LogicBlockInputSelector] | O | IBoolean | R/W | - | G | Selects if the selected Logic Block Input source signal is inverted.  |\n|  LogicBlockLUTIndex[LogicBlockSelector] | O | IInteger | R/W | - | G | Controls the index of the truth table to access in the selected LUT.  |\n|  LogicBlockLUTValue[LogicBlockSelector][LogicBlockLUTIndex] | O | IBoolean | R/W | - | G | Read or Write the Value associated with the entry at index LogicBlockLUTIndex of the selected LUT.  |\n|  LogicBlockLUTValueAll[LogicBlockSelector] | O | IInteger | R/W | - | G | Sets the values of all the output bits of the selected LUT in one access ignoring LogicBlockLUTIndex.  |\n|  LogicBlockLUTSelector[LogicBlockSelector] | O | IEnumeration | R/W | - | G | Selects which of the two LUTs to configure when the selected Logic Block is a Latched dual LUTs (i.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 426,
+      "bottomRightX": 306,
+      "bottomRightY": 446,
+      "content": "## 2.11 Software Signal Control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 449,
+      "bottomRightX": 789,
+      "bottomRightY": 467,
+      "content": "Contains the features related to the control of the Software Signal (See the Software Signal Control chapter for details).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 349,
+      "topLeftY": 474,
+      "bottomRightX": 626,
+      "bottomRightY": 491,
+      "content": "Table 2-11: Software Signal Control Summary",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 495,
+      "bottomRightX": 919,
+      "bottomRightY": 598,
+      "content": "|  Name | Level | Interface | Access | Unit | Visibility | Description  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  SoftwareSignalControl | O | ICategory | R | - | B | Category that contains the Software Signal Control features.  |\n|  SoftwareSignalSelector | O | IEnumeration | R/W | - | B | Selects which Software Signal features to control.  |\n|  SoftwareSignalPulse[SoftwareSignalSelector] | O | ICommand | (R)/W | - | B | Generates a pulse signal that can be used as a software trigger.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 651,
+      "bottomRightX": 123,
+      "bottomRightY": 668,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 651,
+      "bottomRightX": 375,
+      "bottomRightY": 668,
+      "content": "Page 61 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 421,
+      "topLeftY": 651,
+      "bottomRightX": 593,
+      "bottomRightY": 668,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

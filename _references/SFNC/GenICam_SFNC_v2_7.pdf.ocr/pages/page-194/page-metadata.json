@@ -1,0 +1,149 @@
+{
+  "index": 193,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 126,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 135,
+      "bottomRightX": 646,
+      "bottomRightY": 154,
+      "content": "Specifies the delay in microseconds (us) to apply after the trigger reception before activating it.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 167,
+      "bottomRightX": 272,
+      "bottomRightY": 190,
+      "content": "### 5.6.8 TriggerDivider",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 191,
+      "bottomRightX": 404,
+      "bottomRightY": 404,
+      "content": "|  Name | TriggerDivider[TriggerSelector]  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 428,
+      "bottomRightX": 415,
+      "bottomRightY": 447,
+      "content": "Specifies a division factor for the incoming trigger pulses.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 462,
+      "bottomRightX": 291,
+      "bottomRightY": 483,
+      "content": "### 5.6.9 TriggerMultiplier",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 46,
+      "topLeftY": 484,
+      "bottomRightX": 404,
+      "bottomRightY": 698,
+      "content": "|  Name | TriggerMultiplier[TriggerSelector]  |\n| --- | --- |\n|  Category | AcquisitionControl  |\n|  Level | Recommended  |\n|  Interface | Integer  |\n|  Access | Read/Write  |\n|  Unit | -  |\n|  Visibility | Expert  |\n|  Values | Device-specific  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 723,
+      "bottomRightX": 700,
+      "bottomRightY": 760,
+      "content": "Specifies a multiplication factor for the incoming trigger pulses. It is generally used in conjunction with TriggerDivider to control the ratio of triggers that are accepted.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 800,
+      "bottomRightX": 329,
+      "bottomRightY": 821,
+      "content": "### 5.7 Exposure Control features",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 850,
+      "bottomRightX": 736,
+      "bottomRightY": 887,
+      "content": "The Exposure Control section describes all features related to the exposure of the photosensitive cells (shutter control) during image acquisition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 50,
+      "topLeftY": 894,
+      "bottomRightX": 697,
+      "bottomRightY": 912,
+      "content": "The Exposure of the photosensitive cells during Frame or Line acquisition can be in 3 different modes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 920,
+      "bottomRightX": 504,
+      "bottomRightY": 939,
+      "content": "- ExposureMode can be Off to disable the Shutter and let it open.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 969,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 194 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

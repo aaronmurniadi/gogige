@@ -1,0 +1,84 @@
+{
+  "index": 35,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 158,
+      "topLeftY": 28,
+      "bottomRightX": 305,
+      "bottomRightY": 59,
+      "content": "GENICAM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 531,
+      "topLeftY": 31,
+      "bottomRightX": 624,
+      "bottomRightY": 81,
+      "content": "emva",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 73,
+      "bottomRightX": 123,
+      "bottomRightY": 90,
+      "content": "Version 2.7.1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 174,
+      "topLeftY": 72,
+      "bottomRightX": 405,
+      "bottomRightY": 92,
+      "content": "Standard Features Naming Convention",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 57,
+      "topLeftY": 116,
+      "bottomRightX": 675,
+      "bottomRightY": 243,
+      "content": "|   |  |  | - Minor corrections/precisions in the text. - Updated the VB macro to the new 2.0 SFNC.TXT format.  |\n| --- | --- | --- | --- |\n|  2.7.1 | 3.5.2022 |  | - Added Copyright by EMVA 2007-2022  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 60,
+      "topLeftY": 986,
+      "bottomRightX": 124,
+      "bottomRightY": 1007,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 291,
+      "topLeftY": 986,
+      "bottomRightX": 393,
+      "bottomRightY": 1008,
+      "content": "Page 36 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 440,
+      "topLeftY": 986,
+      "bottomRightX": 626,
+      "bottomRightY": 1008,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

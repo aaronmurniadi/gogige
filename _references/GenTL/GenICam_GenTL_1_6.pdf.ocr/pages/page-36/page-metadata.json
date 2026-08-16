@@ -1,0 +1,121 @@
+{
+  "index": 35,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 78,
+      "topLeftY": 41,
+      "bottomRightX": 639,
+      "bottomRightY": 113,
+      "content": "|  ![img-43.jpeg](img-43.jpeg)CAN |   | ![img-44.jpeg](img-44.jpeg)emva  |\n| --- | --- | --- |\n|  Version 1.6 | GenTL Standard  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 137,
+      "bottomRightX": 637,
+      "bottomRightY": 221,
+      "content": "By using an event-object-based approach the acquisition engine for example only prepares the necessary data and then signals its availability to the GenTL Consumer through the previously registered event objects. The GenTL Consumer can decide in which thread context and with which priority the data processing is done. Thus processing of the event and the signal's generation are decoupled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 235,
+      "bottomRightX": 236,
+      "bottomRightY": 254,
+      "content": "#### 4.2.1 Event Objects",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 256,
+      "bottomRightX": 533,
+      "bottomRightY": 274,
+      "content": "Event objects allow asynchronous signaling to the calling GenTL Consumer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 281,
+      "bottomRightX": 637,
+      "bottomRightY": 367,
+      "content": "Event objects have two states: signaled or not signaled. An EventGetData function blocks the calling thread until either a user defined timeout occurs, the event object is signaled or the wait is terminated by the GenTL Consumer. If the event object is signaled prior to the call of the EventGetData functions, the function returns immediately delivering the data associated with the event signaled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 373,
+      "bottomRightX": 636,
+      "bottomRightY": 425,
+      "content": "Not every event type can be registered with every module and not every module needs to implement every possible event type. If a module is not listed for an event (in the table below), it does not support that event type.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 430,
+      "bottomRightX": 636,
+      "bottomRightY": 483,
+      "content": "The maximum size of the data delivered by an event is defined in the event description and can be retrieved through the EventGetInfo function. The actual size is returned by the EventGetData function, which retrieves the data associated with the event.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 490,
+      "bottomRightX": 636,
+      "bottomRightY": 559,
+      "content": "There are no mandatory event types. If an event type is not implemented in a GenTL Producer the GCRegisterEvent should return GC ERR NOT IMPLEMENTED. If an event type is implemented by a GenTL Producer module it is recommended to register an event object for that event type. The event types are described in the following table.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 256,
+      "topLeftY": 566,
+      "bottomRightX": 462,
+      "bottomRightY": 583,
+      "content": "Table 4-2: Event types per module",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 587,
+      "bottomRightX": 639,
+      "bottomRightY": 914,
+      "content": "|  Event Type | Modules | Description  |\n| --- | --- | --- |\n|  Error | All | A GenTL Consumer can get notified on asynchronous errors in a module. These are not errors due to function calls in the C interface or in the GenApi Feature access. These have their own error reporting. For example this event applies to an error while data is acquired in the acquisition engine of a Data Stream module.  |\n|  New Buffer | Data Stream | New data is present in a buffer in the acquisition engine. In case the New Buffer event is implemented it must be registered on a Data Stream module. After registration the calling GenTL Consumer is informed about every new buffer in that stream. If the EventFlush function is called all buffers in the output buffer queue are discarded. If a DSFlushQueue is called all events from the event queue are removed as well. Please use the BUFFER_INFO_IS_QUEUED info command in order to inquire the queue state of a buffer.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 301,
+      "topLeftY": 927,
+      "bottomRightX": 417,
+      "bottomRightY": 943,
+      "content": "04 November 2019",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 544,
+      "topLeftY": 927,
+      "bottomRightX": 634,
+      "bottomRightY": 944,
+      "content": "Page 36 of 185",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

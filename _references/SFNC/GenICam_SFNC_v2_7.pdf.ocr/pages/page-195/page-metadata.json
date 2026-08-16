@@ -1,0 +1,102 @@
+{
+  "index": 194,
+  "dimensions": {
+    "dpi": 93,
+    "height": 1023,
+    "width": 791
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 36,
+      "topLeftY": 44,
+      "bottomRightX": 735,
+      "bottomRightY": 124,
+      "content": "|  GEN<i>CAM |   | emva  |\n| --- | --- | --- |\n|  Version 2.7.1 | Standard Features Naming Convention  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 136,
+      "bottomRightX": 743,
+      "bottomRightY": 172,
+      "content": "- **ExposureMode** can be **Timed** to have a timed exposure and allow programming the duration using the **ExposureTime** or **ExposureAuto** features.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 180,
+      "bottomRightX": 671,
+      "bottomRightY": 200,
+      "content": "For example to have a fixed exposure time of 1 millisecond, use the following pseudo code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 220,
+      "bottomRightX": 299,
+      "bottomRightY": 258,
+      "content": "Camera.ExposureMode = Timed;\nCamera.ExposureTime = 1000;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 299,
+      "bottomRightX": 751,
+      "bottomRightY": 396,
+      "content": "- **ExposureMode** can be **TriggerWidth** to use the width of the current Frame or Line trigger signal(s) to control exposure duration.\n- **ExposureMode** can be **TriggerControlled** to use one or more trigger signal(s) to control the exposure duration independently from the current Frame or Line triggers (See **ExposureStart**, **ExposureEnd** and **ExposureActive** of the **TriggerSelector** feature).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 406,
+      "bottomRightX": 703,
+      "bottomRightY": 441,
+      "content": "For example: To use 2 hardware triggers respectively starting and stopping the Exposure, use the following pseudo code:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 78,
+      "topLeftY": 479,
+      "bottomRightX": 415,
+      "bottomRightY": 631,
+      "content": "Camera.ExposureMode = TriggerControlled;\nCamera.TriggerSelector = ExposureStart;\nCamera.TriggerMode = On;\nCamera.TriggerSource = Line1;\nCamera.TriggerSelector = ExposureEnd;\nCamera.TriggerMode = On;\nCamera.TriggerSource = Line2;",
+      "confidenceScores": null,
+      "type": "code"
+    },
+    {
+      "topLeftX": 52,
+      "topLeftY": 952,
+      "bottomRightX": 111,
+      "bottomRightY": 968,
+      "content": "2022-2-1",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 952,
+      "bottomRightX": 385,
+      "bottomRightY": 970,
+      "content": "Page 195 of 597",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 434,
+      "topLeftY": 952,
+      "bottomRightX": 614,
+      "bottomRightY": 970,
+      "content": "Copyright by EMVA 2007-2022",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}
