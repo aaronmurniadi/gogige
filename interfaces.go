@@ -39,14 +39,22 @@ type Grabber interface {
 
 // FrameSink receives JPEG frames from Live for preview (WebSocket, MJPEG, etc.).
 // Implement this in application code — the library does not ship a WebSocket server.
+// Flow control is optional: implement Throttler separately if the sink supports it.
 type FrameSink interface {
 	SendJPEG(jpeg []byte)
-	Freeze()
-	Resume()
 }
 
-// JPEGFunc adapts a callback into a FrameSink (Freeze/Resume are no-ops).
-// Handy for wiring live to an existing broadcast function:
+// Throttler is optional flow control for a FrameSink. Live asserts this and calls
+// Throttle/Unthrottle only when the sink opts in, so simple stateless sinks (e.g.
+// JPEGFunc) need no stub methods. Unlike Grabber.Pause/Resume (which throttle camera
+// acquisition), this throttles delivery to the consumer.
+type Throttler interface {
+	Throttle()
+	Unthrottle()
+}
+
+// JPEGFunc adapts a callback into a FrameSink. It is stateless and therefore does not
+// implement Throttler. Handy for wiring live to an existing broadcast function:
 //
 //	l := live.NewLive(dev, live.WithSink(JPEGFunc(hub.Broadcast)))
 type JPEGFunc func([]byte)
@@ -56,8 +64,6 @@ func (f JPEGFunc) SendJPEG(jpeg []byte) {
 		f(jpeg)
 	}
 }
-func (JPEGFunc) Freeze() {}
-func (JPEGFunc) Resume() {}
 
 type hasLogger interface {
 	Logger() Logger

@@ -170,8 +170,8 @@ func (l *Live) Pause() {
 		return
 	}
 	l.paused.Store(true)
-	if l.sink != nil {
-		l.sink.Freeze()
+	if th, ok := l.sink.(gogige.Throttler); ok {
+		th.Throttle()
 	}
 }
 
@@ -181,8 +181,8 @@ func (l *Live) Resume() {
 		return
 	}
 	l.paused.Store(false)
-	if l.sink != nil {
-		l.sink.Resume()
+	if th, ok := l.sink.(gogige.Throttler); ok {
+		th.Unthrottle()
 	}
 }
 

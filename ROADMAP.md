@@ -73,7 +73,7 @@ Authoritative machine-readable headers for implementers: `GenDC/GenDC.h`, `GenTL
 | `grab/grab.go`                 | [x]    | One-shot `GrabJPEG` convenience + `FromCamera` for an open `Camera`      |
 | `live/live.go`                 | [x]    | Continuous preview loop (`NewLive` / `WithSink` / `Start` / `Stop`)      |
 | `log.go`                       | [x]    | `Logger` interface + `NopLogger` + `Slog` adapter                        |
-| `interfaces.go`                | [x]    | Core interfaces: `Device`, `Features` (get+set), `Grabber`, `FrameSink`, `JPEGFunc` |
+| `interfaces.go`                | [x]    | Core interfaces: `Device`, `Features` (get+set), `Grabber`, `FrameSink`, `Throttler`, `JPEGFunc` |
 | `device.go`                    | [x]    | `device` struct, `Open`, `OpenDevice`, `connectCamera`                   |
 | `alias.go`                     | [x]    | Type aliases + re-exports for ergonomic `gogige.Sample` etc.             |
 | `doc.go`                       | [x]    | Package documentation                                                    |

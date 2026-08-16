@@ -102,13 +102,13 @@ func (h *hub) SendJPEG(jpeg []byte) {
 	}
 }
 
-func (h *hub) Freeze() {
+func (h *hub) Throttle() {
 	h.mu.Lock()
 	h.frozen = true
 	h.mu.Unlock()
 }
 
-func (h *hub) Resume() {
+func (h *hub) Unthrottle() {
 	h.mu.Lock()
 	h.frozen = false
 	h.mu.Unlock()
@@ -142,9 +142,9 @@ func (h *hub) serveWS(w http.ResponseWriter, r *http.Request) {
 		if mt == websocket.TextMessage {
 			switch string(data) {
 			case `{"type":"freeze"}`, "freeze":
-				h.Freeze()
+				h.Throttle()
 			case `{"type":"resume"}`, "resume":
-				h.Resume()
+				h.Unthrottle()
 			}
 		}
 	}
@@ -156,3 +156,4 @@ func (h *hub) serveWS(w http.ResponseWriter, r *http.Request) {
 }
 
 var _ gogige.FrameSink = (*hub)(nil)
+var _ gogige.Throttler = (*hub)(nil)

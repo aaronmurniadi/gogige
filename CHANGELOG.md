@@ -13,6 +13,11 @@
 
 - `Camera` feature control unified onto the short Phase-4 names: `SetInteger`, `SetEnum`, `SetBoolean`, `SetFloat`, `SetString` are now primary; the previous `Set*Feature` forms remain as aliases so existing code keeps compiling. `SetInteger`/`SetEnum`/`Camera.Features` share one consistent vocabulary with `Device.Features`.
 - `gvsp.PackDet` measurement fields renamed for consistency with `Sample`: `Length` → `LengthMm`, `Width` → `WidthMm`, `Height` → `HeightMm` (breaking). `gvsp.Sample` already used `*Mm`.
+- Sink flow control decoupled from frame delivery (breaking): `FrameSink` now only requires `SendJPEG`; it no longer declares `Freeze`/`Resume`. Flow control moved to a new optional `Throttler` interface (`Throttle`/`Unthrottle`). `Live` type-asserts the sink to `Throttler`, so stateless sinks like `JPEGFunc` no longer carry no-op stubs. `hub` in `examples/websocket-stream` implements `Throttler` directly, and the client "freeze"/"resume" wire messages now call `Throttle`/`Unthrottle`.
+
+### Tests
+
+- Existing suite still passes; no new tests (interface contract refactor exercised by `go build ./...` and `go test ./...`).
 
 ## [1.3.1] - 2026-08-13
 
