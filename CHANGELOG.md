@@ -5,10 +5,14 @@
 ### Added
 
 - `calib.CamCalib` pinhole projection: `ProjectPoint3D` / `DeprojectPixel` convert between camera-frame millimetres and pixels, rescaling from calibration resolution by width ratio only — mirroring the vendor SDK's `stereoConvetPoint3dToDepth` / `stereoConvetDepthToPoint3d`.
+- `calib.LoadVendorFile` + `VendorCalibJSON.Color`/`Left`/`RectifiedLeft` load intrinsics from the vendor calibration export ("IPC4.94 Camera Calibration.json" format); `RectifiedLeft` exposes the rectified-left projection `P`.
+- `calib.ReadStereoCalib` downloads the stereo/color calibration from camera memory bank `0x20001` over GVCP, replicating the vendor `readData` protocol (bank select `0xE0000000`, size/CRC `0xE0000004`/`0xE0000008`, chunked data window `0xE0000100`, ack `0xE000000C`, IEEE CRC32 verify). Any `*gvcp.GVCP` satisfies the new `calib.RegisterPort`. Returns a parsed `StereoCalib` (full `MvSstereoCalibrateResult` layout: left/right/color intrinsics + distortion, extrinsics, rectify rotations, `P`s, disparity-to-depth `Q`, valid ROIs, RMS errors) with `Color`/`Left`/`RectifiedLeft` accessors.
+- `calib.ReadCalibTypes` probes bank `0x20000` for the semicolon-separated calibration type names (e.g. `calibration_pd`).
 
 ### Tests
 
 - `TestProjectPoint3DHandComputed`, `TestProjectRescalesToOutputResolution`, `TestDeprojectIsInverseOfProject`, `TestInvalidInputsYieldNaN`, `TestDS5131SampleProjection` (pins a live-measured BSCF pack centre against the exported color intrinsics).
+- `TestLoadVendorFileAndAccessors`, `TestLoadVendorFileErrors` (vendor JSON path), `TestReadStereoCalib` (fake register port serving a 1600-byte blob built from real DS5131MG30CE export values; asserts protocol register writes and parsed fields), `TestReadStereoCalibErrors` (empty bank acks then `ErrNoCalib`; CRC mismatch; short blob), `TestReadCalibTypes`.
 
 ## [1.4.0] - 2026-08-13
 
