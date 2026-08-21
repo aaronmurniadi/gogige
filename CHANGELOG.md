@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.5.0] - 2026-08-21
+
+### Added
+
+- `calib.CamCalib` pinhole projection: `ProjectPoint3D` / `DeprojectPixel` convert between camera-frame millimetres and pixels, rescaling from calibration resolution by width ratio only — mirroring the vendor SDK's `stereoConvetPoint3dToDepth` / `stereoConvetDepthToPoint3d`.
+
+### Tests
+
+- `TestProjectPoint3DHandComputed`, `TestProjectRescalesToOutputResolution`, `TestDeprojectIsInverseOfProject`, `TestInvalidInputsYieldNaN`, `TestDS5131SampleProjection` (pins a live-measured BSCF pack centre against the exported color intrinsics).
+
 ## [1.4.0] - 2026-08-13
 
 ### Added
