@@ -39,6 +39,8 @@ type nodeFields struct {
 	Min            int64
 	Max            int64
 	Inc            int64
+	Features       []string
+	Visibility     string
 }
 
 // parseNodeFields parses the inner XML of a GenICam node element
@@ -155,6 +157,12 @@ func parseNodeFields(inner []byte) nodeFields {
 			f.Endianess = text
 		case "ImposedAccessMode":
 			f.ImposedAccess = text
+		case "Visibility":
+			f.Visibility = text
+		case "pFeature":
+			if text != "" {
+				f.Features = append(f.Features, text)
+			}
 		}
 	}
 	if f.LSB >= 0 && f.MSB >= 0 {
@@ -274,12 +282,94 @@ func parseNodeXML(kind string, name string, inner []byte) *gcNode {
 		Min:            fields.Min,
 		Max:            fields.Max,
 		Inc:            fields.Inc,
+		Features:       fields.Features,
+		Visibility:     fields.Visibility,
 	}
 	// For Enumeration nodes, extract enum entries.
 	if kind == "Enumeration" {
 		gn.Entries = parseEnumEntries(inner)
 	}
 	return gn
+}
+
+// structRegEntry is one expanded MaskedInt node produced from a <StructEntry>
+// child of a <StructReg> node (GenApi 2.1.1 §2.8.6).
+type structRegEntry struct {
+	name  string
+	inner []byte
+}
+
+// expandStructReg implements the §2.8.6 preprocessor rule: a StructReg node is
+// replaced by one MaskedIntReg node per <StructEntry>. Each entry gets the
+// StructReg's shared elements (Address, pAddress, Length, AccessMode, ...
+// inheritance) unless the entry defines its own, in which case the entry wins.
+func expandStructReg(inner []byte) []structRegEntry {
+	type child struct {
+		name    string
+		elInner []byte
+	}
+	var shared []child
+	var entries []struct{ name, elInner string }
+
+	dec := xml.NewDecoder(bytes.NewReader(inner))
+	for {
+		tok, err := dec.Token()
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			return nil
+		}
+		se, ok := tok.(xml.StartElement)
+		if !ok {
+			continue
+		}
+		var holder struct {
+			Inner []byte `xml:",innerxml"`
+		}
+		if err := dec.DecodeElement(&holder, &se); err != nil {
+			continue
+		}
+		if se.Name.Local == "StructEntry" {
+			entries = append(entries, struct{ name, elInner string }{
+				name: attrLocal(se, "Name"), elInner: string(holder.Inner),
+			})
+			continue
+		}
+		shared = append(shared, child{name: se.Name.Local, elInner: []byte("<" + se.Name.Local + ">" + string(holder.Inner) + "</" + se.Name.Local + ">")})
+	}
+
+	out := make([]structRegEntry, 0, len(entries))
+	for _, e := range entries {
+		if e.name == "" {
+			continue
+		}
+		own := map[string]bool{}
+		dec := xml.NewDecoder(bytes.NewReader([]byte(e.elInner)))
+		for {
+			tok, err := dec.Token()
+			if err == io.EOF {
+				break
+			}
+			if err != nil {
+				break
+			}
+			if se, ok := tok.(xml.StartElement); ok {
+				own[se.Name.Local] = true
+				_ = dec.Skip()
+			}
+		}
+		var b strings.Builder
+		for _, s := range shared {
+			if !own[s.name] {
+				b.Write(s.elInner)
+				b.WriteByte('\n')
+			}
+		}
+		b.WriteString(e.elInner)
+		out = append(out, structRegEntry{name: e.name, inner: []byte(b.String())})
+	}
+	return out
 }
 
 // parseNodeMapXML is the low-level XML stream parser that yields GenICam node elements.
@@ -312,7 +402,8 @@ func parseNodeMapXML(xmlData []byte, onNode func(kind, name string, inner []byte
 		switch kind {
 		case "Integer", "Boolean", "Float", "String", "Enumeration", "Command",
 			"IntReg", "FloatReg", "StringReg", "MaskedIntReg",
-			"IntSwissKnife", "SwissKnife", "IntConverter", "Converter":
+			"IntSwissKnife", "SwissKnife", "IntConverter", "Converter",
+			"Category":
 			name := attrLocal(se, "Name")
 			var holder struct {
 				Inner []byte `xml:",innerxml"`
@@ -321,7 +412,19 @@ func parseNodeMapXML(xmlData []byte, onNode func(kind, name string, inner []byte
 				return err
 			}
 			onNode(kind, name, holder.Inner)
-		case "RegisterDescription", "Group", "Category", "StructReg",
+		case "StructReg":
+			// §2.8.6: expand each <StructEntry> into a MaskedIntReg that
+			// inherits the StructReg's shared elements.
+			var holder struct {
+				Inner []byte `xml:",innerxml"`
+			}
+			if err := dec.DecodeElement(&holder, &se); err != nil {
+				return err
+			}
+			for _, e := range expandStructReg(holder.Inner) {
+				onNode("MaskedIntReg", e.name, e.inner)
+			}
+		case "RegisterDescription", "Group",
 			"Port", "Node", "XMLDescription":
 			// Structural containers; skip their content.
 			continue

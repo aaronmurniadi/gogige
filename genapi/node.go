@@ -126,6 +126,15 @@ type gcNode struct {
 	Min int64
 	Max int64
 	Inc int64
+
+	// Features lists the <pFeature> children of a Category node in document
+	// order (GenApi 2.1.1 §2.8.2). Empty for non-Category nodes.
+	Features []string
+
+	// Visibility is the node's <Visibility> element ("Beginner", ..., or
+	// "Invisible"). Informational only; §2.8.2 Category inherits the Node
+	// elements.
+	Visibility string
 }
 
 // GetName implements Node.

@@ -99,6 +99,30 @@ func (c *Camera) Logger() Logger {
 // NodeMap returns the loaded GenICam map.
 func (c *Camera) NodeMap() *genapi.NodeMap { return c.nodes }
 
+// Categories returns the ordered names of all GenApi <Category> nodes.
+func (c *Camera) Categories() []string {
+	if c == nil || c.nodes == nil {
+		return nil
+	}
+	return c.nodes.Categories()
+}
+
+// RootCategories returns the ordered top-level feature categories under Root.
+func (c *Camera) RootCategories() []string {
+	if c == nil || c.nodes == nil {
+		return nil
+	}
+	return c.nodes.RootCategories()
+}
+
+// CategoryTree returns the nested GenApi §2.8.2 category tree rooted at Root.
+func (c *Camera) CategoryTree() (*genapi.CategoryNode, error) {
+	if c == nil || c.nodes == nil {
+		return nil, errors.New("gige: no nodemap")
+	}
+	return c.nodes.CategoryTree("")
+}
+
 // Has reports whether a GenICam feature exists (gvcp.Commander).
 func (c *Camera) Has(name string) bool {
 	return c != nil && c.nodes != nil && c.nodes.Has(name)

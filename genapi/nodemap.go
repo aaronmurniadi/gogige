@@ -438,6 +438,96 @@ func (nm *NodeMap) Kind(name string) string {
 	return n.Kind
 }
 
+// CategoryNode is a node in the GenApi 2.1.1 §2.8.2 feature category tree.
+// Categories nest other categories and reference leaf features via <pFeature>.
+type CategoryNode struct {
+	// Name is the Category node name.
+	Name string
+	// Features holds the non-Category <pFeature> children in document order.
+	Features []string
+	// Categories holds the nested child categories in document order.
+	Categories []*CategoryNode
+}
+
+// Category returns the ordered <pFeature> names of a Category node
+// (GenApi 2.1.1 §2.8.2). References to other categories are included verbatim.
+func (nm *NodeMap) Category(name string) ([]string, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return nil, err
+	}
+	if n.Kind != "Category" {
+		return nil, fmt.Errorf("gige: feature %s is %s, not Category", name, n.Kind)
+	}
+	return n.Features, nil
+}
+
+// Categories returns the ordered names of all Category nodes in the map.
+func (nm *NodeMap) Categories() []string {
+	var out []string
+	for name, n := range nm.nodes {
+		if n.Kind == "Category" {
+			out = append(out, name)
+		}
+	}
+	sort.Strings(out)
+	return out
+}
+
+// RootCategories returns the ordered top-level category names: the <pFeature>
+// children of the special "Root" category, or every Category in the map (sorted)
+// when this camera description has no Root node.
+func (nm *NodeMap) RootCategories() []string {
+	if root, err := nm.lookup("Root"); err == nil && root.Kind == "Category" {
+		return append([]string(nil), root.Features...)
+	}
+	return nm.Categories()
+}
+
+// CategoryTree builds the nested category tree (§2.8.2) rooted at the category
+// named name (use "" for the standard "Root"). Leaf <pFeature> references are
+// listed in document order; dangling references to unknown features are
+// skipped. Cycles in the category graph return an error.
+func (nm *NodeMap) CategoryTree(name string) (*CategoryNode, error) {
+	if name == "" {
+		name = "Root"
+	}
+	return nm.buildCategoryTree(name, map[string]bool{})
+}
+
+func (nm *NodeMap) buildCategoryTree(name string, active map[string]bool) (*CategoryNode, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return nil, err
+	}
+	if n.Kind != "Category" {
+		return nil, fmt.Errorf("gige: feature %s is %s, not Category", name, n.Kind)
+	}
+	if active[name] {
+		return nil, fmt.Errorf("gige: category cycle at %q", name)
+	}
+	active[name] = true
+	defer delete(active, name)
+
+	cn := &CategoryNode{Name: name}
+	for _, f := range n.Features {
+		child, err := nm.lookup(f)
+		if err != nil {
+			continue
+		}
+		if child.Kind == "Category" {
+			sub, err := nm.buildCategoryTree(f, active)
+			if err != nil {
+				return nil, err
+			}
+			cn.Categories = append(cn.Categories, sub)
+		} else {
+			cn.Features = append(cn.Features, f)
+		}
+	}
+	return cn, nil
+}
+
 // EnumEntries returns the sorted EnumEntry names of an Enumeration feature.
 // It is useful for probing available values (e.g. PixelFormat, PayloadType).
 func (nm *NodeMap) EnumEntries(name string) ([]string, error) {
