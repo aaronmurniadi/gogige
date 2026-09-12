@@ -134,15 +134,15 @@ func DebayerGRBG8(raw []byte, w, h int) *image.RGBA {
 }
 
 func debayerRGGBPixel(raw []byte, w, h, x, y, o int) (uint8, uint8, uint8) {
-	r := getPixel2D(raw, w, h, x, y)
 	g := getGreenRGGB(raw, w, h, x, y)
+	r := getRedRGGB(raw, w, h, x, y)
 	b := getBlueRGGB(raw, w, h, x, y)
 	return clamp8(r), clamp8(g), clamp8(b)
 }
 
 func debayerBGGRPixel(raw []byte, w, h, x, y, o int) (uint8, uint8, uint8) {
-	b := getPixel2D(raw, w, h, x, y)
 	g := getGreenBGGR(raw, w, h, x, y)
+	b := getBlueBGGR(raw, w, h, x, y)
 	r := getRedBGGR(raw, w, h, x, y)
 	return clamp8(r), clamp8(g), clamp8(b)
 }
@@ -171,6 +171,10 @@ func getPixel2D(raw []byte, w, h, x, y int) int {
 func getGreenRGGB(raw []byte, w, h, x, y int) int {
 	// RGGB: R G R G ...
 	//       B G B G ...
+	// Green sites are where (x+y) is odd: (odd x, even y) and (even x, odd y).
+	if (x+y)%2 == 1 {
+		return getPixel2D(raw, w, h, x, y)
+	}
 	// G neighbors: (x-1,y), (x+1,y), (x,y-1), (x,y+1)
 	g := 0
 	count := 0
@@ -196,9 +200,34 @@ func getGreenRGGB(raw []byte, w, h, x, y int) int {
 	return 0
 }
 
-func getBlueRGGB(raw []byte, w, h, x, y int) int {
-	// Blue is at (even x, even y) in RGGB
+func getRedRGGB(raw []byte, w, h, x, y int) int {
+	// Red is at (even x, even y) in RGGB
 	if x%2 == 0 && y%2 == 0 {
+		return getPixel2D(raw, w, h, x, y)
+	}
+	r := 0
+	count := 0
+	for dy := -1; dy <= 1; dy++ {
+		for dx := -1; dx <= 1; dx++ {
+			if dx == 0 && dy == 0 {
+				continue
+			}
+			nx, ny := x+dx, y+dy
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 0 && ny%2 == 0 {
+				r += getPixel2D(raw, w, h, nx, ny)
+				count++
+			}
+		}
+	}
+	if count > 0 {
+		return r / count
+	}
+	return 0
+}
+
+func getBlueRGGB(raw []byte, w, h, x, y int) int {
+	// Blue is at (odd x, odd y) in RGGB
+	if x%2 == 1 && y%2 == 1 {
 		return getPixel2D(raw, w, h, x, y)
 	}
 	// Neighbors
@@ -210,7 +239,7 @@ func getBlueRGGB(raw []byte, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 0 && ny%2 == 0 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 1 && ny%2 == 1 {
 				b += getPixel2D(raw, w, h, nx, ny)
 				count++
 			}
@@ -225,7 +254,10 @@ func getBlueRGGB(raw []byte, w, h, x, y int) int {
 func getGreenBGGR(raw []byte, w, h, x, y int) int {
 	// BGGR: B G B G ...
 	//       G R G R ...
-	// Green at (odd x, even y) and (even x, odd y)
+	// Green sites are where (x+y) is odd: (odd x, even y) and (even x, odd y).
+	if (x+y)%2 == 1 {
+		return getPixel2D(raw, w, h, x, y)
+	}
 	g := 0
 	count := 0
 	if x > 0 {
@@ -250,6 +282,31 @@ func getGreenBGGR(raw []byte, w, h, x, y int) int {
 	return 0
 }
 
+func getBlueBGGR(raw []byte, w, h, x, y int) int {
+	// Blue is at (even x, even y) in BGGR
+	if x%2 == 0 && y%2 == 0 {
+		return getPixel2D(raw, w, h, x, y)
+	}
+	b := 0
+	count := 0
+	for dy := -1; dy <= 1; dy++ {
+		for dx := -1; dx <= 1; dx++ {
+			if dx == 0 && dy == 0 {
+				continue
+			}
+			nx, ny := x+dx, y+dy
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 0 && ny%2 == 0 {
+				b += getPixel2D(raw, w, h, nx, ny)
+				count++
+			}
+		}
+	}
+	if count > 0 {
+		return b / count
+	}
+	return 0
+}
+
 func getRedBGGR(raw []byte, w, h, x, y int) int {
 	// Red is at (odd x, odd y) in BGGR
 	if x%2 == 1 && y%2 == 1 {
@@ -263,7 +320,7 @@ func getRedBGGR(raw []byte, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 1 && ny%2 == 1 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 1 && ny%2 == 1 {
 				r += getPixel2D(raw, w, h, nx, ny)
 				count++
 			}
@@ -278,7 +335,10 @@ func getRedBGGR(raw []byte, w, h, x, y int) int {
 func getGreenGBRG(raw []byte, w, h, x, y int) int {
 	// GBRG: G B G B ...
 	//       R G R G ...
-	// Green at (odd x, even y) and (even x, odd y)
+	// Green sites are where (x+y) is even: (even x, even y) and (odd x, odd y).
+	if (x+y)%2 == 0 {
+		return getPixel2D(raw, w, h, x, y)
+	}
 	g := 0
 	count := 0
 	if x > 0 {
@@ -304,8 +364,8 @@ func getGreenGBRG(raw []byte, w, h, x, y int) int {
 }
 
 func getRedGBRG(raw []byte, w, h, x, y int) int {
-	// Red is at (odd x, odd y) in GBRG
-	if x%2 == 1 && y%2 == 1 {
+	// Red is at (even x, odd y) in GBRG
+	if x%2 == 0 && y%2 == 1 {
 		return getPixel2D(raw, w, h, x, y)
 	}
 	r := 0
@@ -316,7 +376,7 @@ func getRedGBRG(raw []byte, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 1 && ny%2 == 1 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 0 && ny%2 == 1 {
 				r += getPixel2D(raw, w, h, nx, ny)
 				count++
 			}
@@ -329,8 +389,8 @@ func getRedGBRG(raw []byte, w, h, x, y int) int {
 }
 
 func getBlueGBRG(raw []byte, w, h, x, y int) int {
-	// Blue is at (even x, odd y) in GBRG
-	if x%2 == 0 && y%2 == 1 {
+	// Blue is at (odd x, even y) in GBRG
+	if x%2 == 1 && y%2 == 0 {
 		return getPixel2D(raw, w, h, x, y)
 	}
 	b := 0
@@ -341,7 +401,7 @@ func getBlueGBRG(raw []byte, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 0 && ny%2 == 1 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 1 && ny%2 == 0 {
 				b += getPixel2D(raw, w, h, nx, ny)
 				count++
 			}
@@ -356,7 +416,10 @@ func getBlueGBRG(raw []byte, w, h, x, y int) int {
 func getGreenGRBG(raw []byte, w, h, x, y int) int {
 	// GRBG: G R G R ...
 	//       B G B G ...
-	// Green at (odd x, even y) and (even x, odd y)
+	// Green sites are where (x+y) is even: (even x, even y) and (odd x, odd y).
+	if (x+y)%2 == 0 {
+		return getPixel2D(raw, w, h, x, y)
+	}
 	g := 0
 	count := 0
 	if x > 0 {
@@ -394,7 +457,7 @@ func getBlueGRBG(raw []byte, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 0 && ny%2 == 1 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 0 && ny%2 == 1 {
 				b += getPixel2D(raw, w, h, nx, ny)
 				count++
 			}
@@ -419,7 +482,7 @@ func getRedGRBG(raw []byte, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 1 && ny%2 == 0 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 1 && ny%2 == 0 {
 				r += getPixel2D(raw, w, h, nx, ny)
 				count++
 			}

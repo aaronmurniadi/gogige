@@ -212,15 +212,15 @@ func Debayer16GRBG(raw []uint16, w, h int) *image.RGBA {
 }
 
 func debayer16RGGBPixel(raw []uint16, w, h, x, y, o int) (int, int, int) {
-	r := getPixel16(raw, w, h, x, y)
 	g := getGreen16RGGB(raw, w, h, x, y)
+	r := getRed16RGGB(raw, w, h, x, y)
 	b := getBlue16RGGB(raw, w, h, x, y)
 	return r, g, b
 }
 
 func debayer16BGGRPixel(raw []uint16, w, h, x, y, o int) (int, int, int) {
-	b := getPixel16(raw, w, h, x, y)
 	g := getGreen16BGGR(raw, w, h, x, y)
+	b := getBlue16BGGR(raw, w, h, x, y)
 	r := getRed16BGGR(raw, w, h, x, y)
 	return r, g, b
 }
@@ -247,6 +247,10 @@ func getPixel16(raw []uint16, w, h, x, y int) int {
 }
 
 func getGreen16RGGB(raw []uint16, w, h, x, y int) int {
+	// Green sites are where (x+y) is odd.
+	if (x+y)%2 == 1 {
+		return getPixel16(raw, w, h, x, y)
+	}
 	g := 0
 	count := 0
 	if x > 0 {
@@ -271,7 +275,36 @@ func getGreen16RGGB(raw []uint16, w, h, x, y int) int {
 	return 0
 }
 
+func getRed16RGGB(raw []uint16, w, h, x, y int) int {
+	// Red is at (even x, even y) in RGGB.
+	if x%2 == 0 && y%2 == 0 {
+		return getPixel16(raw, w, h, x, y)
+	}
+	r := 0
+	count := 0
+	for dy := -1; dy <= 1; dy++ {
+		for dx := -1; dx <= 1; dx++ {
+			if dx == 0 && dy == 0 {
+				continue
+			}
+			nx, ny := x+dx, y+dy
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 0 && ny%2 == 0 {
+				r += getPixel16(raw, w, h, nx, ny)
+				count++
+			}
+		}
+	}
+	if count > 0 {
+		return r / count
+	}
+	return 0
+}
+
 func getBlue16RGGB(raw []uint16, w, h, x, y int) int {
+	// Blue is at (odd x, odd y) in RGGB.
+	if x%2 == 1 && y%2 == 1 {
+		return getPixel16(raw, w, h, x, y)
+	}
 	b := 0
 	count := 0
 	for dy := -1; dy <= 1; dy++ {
@@ -280,7 +313,7 @@ func getBlue16RGGB(raw []uint16, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 0 && ny%2 == 0 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 1 && ny%2 == 1 {
 				b += getPixel16(raw, w, h, nx, ny)
 				count++
 			}
@@ -293,6 +326,10 @@ func getBlue16RGGB(raw []uint16, w, h, x, y int) int {
 }
 
 func getGreen16BGGR(raw []uint16, w, h, x, y int) int {
+	// Green sites are where (x+y) is odd.
+	if (x+y)%2 == 1 {
+		return getPixel16(raw, w, h, x, y)
+	}
 	g := 0
 	count := 0
 	if x > 0 {
@@ -317,7 +354,36 @@ func getGreen16BGGR(raw []uint16, w, h, x, y int) int {
 	return 0
 }
 
+func getBlue16BGGR(raw []uint16, w, h, x, y int) int {
+	// Blue is at (even x, even y) in BGGR.
+	if x%2 == 0 && y%2 == 0 {
+		return getPixel16(raw, w, h, x, y)
+	}
+	b := 0
+	count := 0
+	for dy := -1; dy <= 1; dy++ {
+		for dx := -1; dx <= 1; dx++ {
+			if dx == 0 && dy == 0 {
+				continue
+			}
+			nx, ny := x+dx, y+dy
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 0 && ny%2 == 0 {
+				b += getPixel16(raw, w, h, nx, ny)
+				count++
+			}
+		}
+	}
+	if count > 0 {
+		return b / count
+	}
+	return 0
+}
+
 func getRed16BGGR(raw []uint16, w, h, x, y int) int {
+	// Red is at (odd x, odd y) in BGGR.
+	if x%2 == 1 && y%2 == 1 {
+		return getPixel16(raw, w, h, x, y)
+	}
 	r := 0
 	count := 0
 	for dy := -1; dy <= 1; dy++ {
@@ -326,7 +392,7 @@ func getRed16BGGR(raw []uint16, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 1 && ny%2 == 1 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 1 && ny%2 == 1 {
 				r += getPixel16(raw, w, h, nx, ny)
 				count++
 			}
@@ -339,6 +405,10 @@ func getRed16BGGR(raw []uint16, w, h, x, y int) int {
 }
 
 func getGreen16GBRG(raw []uint16, w, h, x, y int) int {
+	// Green sites are where (x+y) is even.
+	if (x+y)%2 == 0 {
+		return getPixel16(raw, w, h, x, y)
+	}
 	g := 0
 	count := 0
 	if x > 0 {
@@ -364,6 +434,10 @@ func getGreen16GBRG(raw []uint16, w, h, x, y int) int {
 }
 
 func getRed16GBRG(raw []uint16, w, h, x, y int) int {
+	// Red is at (even x, odd y) in GBRG.
+	if x%2 == 0 && y%2 == 1 {
+		return getPixel16(raw, w, h, x, y)
+	}
 	r := 0
 	count := 0
 	for dy := -1; dy <= 1; dy++ {
@@ -372,7 +446,7 @@ func getRed16GBRG(raw []uint16, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 1 && ny%2 == 1 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 0 && ny%2 == 1 {
 				r += getPixel16(raw, w, h, nx, ny)
 				count++
 			}
@@ -385,6 +459,10 @@ func getRed16GBRG(raw []uint16, w, h, x, y int) int {
 }
 
 func getBlue16GBRG(raw []uint16, w, h, x, y int) int {
+	// Blue is at (odd x, even y) in GBRG.
+	if x%2 == 1 && y%2 == 0 {
+		return getPixel16(raw, w, h, x, y)
+	}
 	b := 0
 	count := 0
 	for dy := -1; dy <= 1; dy++ {
@@ -393,7 +471,7 @@ func getBlue16GBRG(raw []uint16, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 0 && ny%2 == 1 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 1 && ny%2 == 0 {
 				b += getPixel16(raw, w, h, nx, ny)
 				count++
 			}
@@ -406,6 +484,10 @@ func getBlue16GBRG(raw []uint16, w, h, x, y int) int {
 }
 
 func getGreen16GRBG(raw []uint16, w, h, x, y int) int {
+	// Green sites are where (x+y) is even.
+	if (x+y)%2 == 0 {
+		return getPixel16(raw, w, h, x, y)
+	}
 	g := 0
 	count := 0
 	if x > 0 {
@@ -431,6 +513,10 @@ func getGreen16GRBG(raw []uint16, w, h, x, y int) int {
 }
 
 func getBlue16GRBG(raw []uint16, w, h, x, y int) int {
+	// Blue is at (even x, odd y) in GRBG.
+	if x%2 == 0 && y%2 == 1 {
+		return getPixel16(raw, w, h, x, y)
+	}
 	b := 0
 	count := 0
 	for dy := -1; dy <= 1; dy++ {
@@ -439,7 +525,7 @@ func getBlue16GRBG(raw []uint16, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 0 && ny%2 == 1 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 0 && ny%2 == 1 {
 				b += getPixel16(raw, w, h, nx, ny)
 				count++
 			}
@@ -452,6 +538,10 @@ func getBlue16GRBG(raw []uint16, w, h, x, y int) int {
 }
 
 func getRed16GRBG(raw []uint16, w, h, x, y int) int {
+	// Red is at (odd x, even y) in GRBG.
+	if x%2 == 1 && y%2 == 0 {
+		return getPixel16(raw, w, h, x, y)
+	}
 	r := 0
 	count := 0
 	for dy := -1; dy <= 1; dy++ {
@@ -460,7 +550,7 @@ func getRed16GRBG(raw []uint16, w, h, x, y int) int {
 				continue
 			}
 			nx, ny := x+dx, y+dy
-			if nx%2 == 1 && ny%2 == 0 {
+			if nx >= 0 && nx < w && ny >= 0 && ny < h && nx%2 == 1 && ny%2 == 0 {
 				r += getPixel16(raw, w, h, nx, ny)
 				count++
 			}
@@ -553,7 +643,21 @@ func DecodeHighDepth(raw []byte, w, h int, pf uint32) (*image.RGBA, bool) {
 		if len(raw) < w*h*2 {
 			return nil, false
 		}
-		return mono16Preview(raw, w, h), true
+		bits := 16
+		switch pf {
+		case PixelFormatMono10:
+			bits = 10
+		case PixelFormatMono12:
+			bits = 12
+		case PixelFormatMono14:
+			bits = 14
+		}
+		dst := make([]uint16, w*h)
+		for i := 0; i < w*h; i++ {
+			dst[i] = binary.LittleEndian.Uint16(raw[i*2:])
+		}
+		shiftTo16(dst, bits)
+		return mono16Preview16(dst, w, h), true
 	case PixelFormatMono10p, PixelFormatMono12p, PixelFormatMono14p:
 		bits := 10
 		switch pf {

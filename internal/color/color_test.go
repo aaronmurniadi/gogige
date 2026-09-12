@@ -96,15 +96,73 @@ func TestDecodeHighDepth_MonoPacked(t *testing.T) {
 
 func TestDecodeHighDepth_MonoUnpacked(t *testing.T) {
 	w, h := 2, 2
-	raw := []byte{0x22, 0x11, 0x22, 0x11, 0x22, 0x11, 0x22, 0x11}
+	// Mono10 sample 0x0123 as LE uint16, left-aligned (<<6): high byte 0x48.
+	sample := []byte{0x23, 0x01}
+	raw := make([]byte, 0, w*h*2)
+	for i := 0; i < w*h; i++ {
+		raw = append(raw, sample...)
+	}
 	rgba, ok := DecodeHighDepth(raw, w, h, PixelFormatMono10)
 	require.True(t, ok)
-	if rgba.Pix[0] != 0x11 { // LE 0x1122 → high byte preview
-		t.Fatalf("preview 0x%02x want 0x22", rgba.Pix[0])
+	if rgba.Pix[0] != 0x48 {
+		t.Fatalf("preview 0x%02x want 0x48", rgba.Pix[0])
 	}
 	_, ok = DecodeHighDepth(raw, w, h, PixelFormatRGB8)
 	if ok {
 		t.Fatal("RGB8 must not be handled by DecodeHighDepth")
+	}
+}
+
+// TestBayerFidelityUniform guards against the RGGB/GBRG R/B swap and green-site
+// mishandling: a Bayer tile of constant R/G/B must demosaic to that exact color
+// at every pixel, for all four patterns, in both 8- and 16-bit paths.
+func TestBayerFidelityUniform(t *testing.T) {
+	const w, h = 4, 4
+	r, g, b := byte(100), byte(10), byte(50)
+	raw := make([]byte, w*h)
+	u16 := make([]uint16, w*h)
+	fill := func(rowA, rowB [4]byte) {
+		rows := [4][4]byte{rowA, rowB, rowA, rowB}
+		for y := 0; y < h; y++ {
+			for x := 0; x < w; x++ {
+				raw[y*w+x] = rows[y][x]
+				u16[y*w+x] = uint16(rows[y][x])
+			}
+		}
+	}
+
+	cases := []struct {
+		name    string
+		pattern byte
+		rowA    [4]byte // even rows
+		rowB    [4]byte // odd rows
+	}{
+		{"RGGB", BayerPatternRGGB, [4]byte{r, g, r, g}, [4]byte{g, b, g, b}},
+		{"BGGR", BayerPatternBGGR, [4]byte{b, g, b, g}, [4]byte{g, r, g, r}},
+		{"GBRG", BayerPatternGBRG, [4]byte{g, b, g, b}, [4]byte{r, g, r, g}},
+		{"GRBG", BayerPatternGRBG, [4]byte{g, r, g, r}, [4]byte{b, g, b, g}},
+	}
+
+	for _, tc := range cases {
+		fill(tc.rowA, tc.rowB)
+
+		img, err := DebayerToRGBA(raw, w, h, tc.pattern)
+		require.NoError(t, err)
+		for i := 0; i < w*h; i++ {
+			if img.Pix[i*4] != r || img.Pix[i*4+1] != g || img.Pix[i*4+2] != b {
+				t.Fatalf("%s 8-bit pixel %d = (%d,%d,%d) want (%d,%d,%d)",
+					tc.name, i, img.Pix[i*4], img.Pix[i*4+1], img.Pix[i*4+2], r, g, b)
+			}
+		}
+
+		img16, err := Debayer16(u16, w, h, tc.pattern)
+		require.NoError(t, err)
+		for i := 0; i < w*h; i++ {
+			if img16.Pix[i*4] != r || img16.Pix[i*4+1] != g || img16.Pix[i*4+2] != b {
+				t.Fatalf("%s 16-bit pixel %d = (%d,%d,%d) want (%d,%d,%d)",
+					tc.name, i, img16.Pix[i*4], img16.Pix[i*4+1], img16.Pix[i*4+2], r, g, b)
+			}
+		}
 	}
 }
 
