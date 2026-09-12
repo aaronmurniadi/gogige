@@ -44,7 +44,8 @@ func ParseNodeMap(xmlData []byte, port gvcp.Port) (*NodeMap, error) {
 	return nm, nil
 }
 
-// SetBoolean sets a Boolean feature.
+// SetBoolean sets a Boolean feature. Honors <OnValue>/<OffValue> when the
+// camera overrides the §2.8.7 default of 1/0.
 func (nm *NodeMap) SetBoolean(name string, v bool) error {
 	n, err := nm.lookup(name)
 	if err != nil {
@@ -54,10 +55,20 @@ func (nm *NodeMap) SetBoolean(name string, v bool) error {
 	if v {
 		iv = 1
 	}
+	if txt := n.OnValue; v {
+		if p, perr := strconv.ParseInt(txt, 0, 64); perr == nil {
+			iv = p
+		}
+	} else if txt := n.OffValue; txt != "" {
+		if p, perr := strconv.ParseInt(txt, 0, 64); perr == nil {
+			iv = p
+		}
+	}
 	return nm.writeIntegerish(n, iv)
 }
 
-// ReadBoolean returns the current value of a Boolean feature.
+// ReadBoolean returns the current value of a Boolean feature. Per §2.8.7 a
+// Boolean is true iff its register value equals <OnValue> (default 1).
 func (nm *NodeMap) ReadBoolean(name string) (bool, error) {
 	n, err := nm.lookup(name)
 	if err != nil {
@@ -73,7 +84,13 @@ func (nm *NodeMap) ReadBoolean(name string) (bool, error) {
 	if err != nil {
 		return false, err
 	}
-	return v != 0, nil
+	on := int64(1)
+	if txt := n.OnValue; txt != "" {
+		if p, perr := strconv.ParseInt(txt, 0, 64); perr == nil {
+			on = p
+		}
+	}
+	return v == uint64(on), nil
 }
 
 // SetInteger sets an Integer feature.
@@ -97,6 +114,9 @@ func (nm *NodeMap) SetFloat(name string, v float64) error {
 			return err
 		}
 		return nm.pa.writeFloatReg(reg, v, nm)
+	}
+	if n.Kind == "Converter" || n.Kind == "IntConverter" {
+		return nm.writeIntegerish(n, int64(v))
 	}
 	return nm.pa.writeFloatReg(n, v, nm)
 }
@@ -159,11 +179,61 @@ func (nm *NodeMap) lookup(name string) (*gcNode, error) {
 }
 
 func (nm *NodeMap) writeIntegerish(n *gcNode, v int64) error {
+	if n.Kind == "Converter" || n.Kind == "IntConverter" {
+		regVal, target, err := nm.convertUserToRegister(n, v)
+		if err != nil {
+			return err
+		}
+		return nm.pa.writeIntReg(target, regVal, nm)
+	}
 	target, err := nm.pa.resolveIntegerTarget(n, nm)
 	if err != nil {
 		return err
 	}
 	return nm.pa.writeIntReg(target, v, nm)
+}
+
+// convertUserToRegister converts a user-domain value into the register domain
+// for a Converter/IntConverter node using FormulaTo (GenApi 2.1.1 §2.8.10),
+// then resolves the register node to write to. A formula variable bound to the
+// <pValue> register carries the incoming user value; a single-variable formula
+// always binds the user value.
+func (nm *NodeMap) convertUserToRegister(n *gcNode, v int64) (int64, *gcNode, error) {
+	formula := converterFormula(n, false)
+	if formula == "" {
+		return 0, nil, fmt.Errorf("gige: converter %s has no FormulaTo", n.Name)
+	}
+	// FormulaTo exposes the incoming user value as the reserved variable FROM
+	// (GenApi 2.1.1 §2.8.13); the pVariables then carry their current values,
+	// giving the read-modify-write semantics bitfield converters rely on,
+	// e.g. "(VAR_CFG & 0xFFF7FFFF) | (FROM << 19)". The legacy single-variable
+	// convention (FormulaTo written purely in terms of the one pVariable)
+	// instead binds that variable to the user value.
+	modern := formulaUses(formula, "FROM")
+	vars := make(map[string]int64, len(n.Variables)+1)
+	for varName, feat := range n.Variables {
+		if !modern && (feat == n.PValue || len(n.Variables) == 1) {
+			vars[varName] = v
+			continue
+		}
+		fv, err := nm.evalIntegerValue(feat, 0)
+		if err != nil {
+			return 0, nil, fmt.Errorf("gige: converter %s var %s: %w", n.Name, varName, err)
+		}
+		vars[varName] = int64(fv)
+	}
+	if modern {
+		vars["FROM"] = v
+	}
+	regVal, err := evalFormula(formula, vars)
+	if err != nil {
+		return 0, nil, fmt.Errorf("gige: converter %s FormulaTo: %w", n.Name, err)
+	}
+	target, err := nm.pa.resolveIntegerTarget(n, nm)
+	if err != nil {
+		return 0, nil, err
+	}
+	return regVal, target, nil
 }
 
 // evalIntegerValue returns a GenICam Integer-like node's numeric value (for pAddress).
@@ -287,6 +357,13 @@ func (nm *NodeMap) ReadFloat(name string) (float64, error) {
 	n, err := nm.lookup(name)
 	if err != nil {
 		return 0, err
+	}
+	if n.Kind == "Converter" || n.Kind == "IntConverter" {
+		v, err := nm.ReadInteger(name)
+		if err != nil {
+			return 0, err
+		}
+		return float64(v), nil
 	}
 	target := n
 	if n.PValue != "" {

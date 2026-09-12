@@ -109,6 +109,205 @@ func TestMaskedIntRegRMW(t *testing.T) {
 	}
 }
 
+func TestMaskedIntRegRead(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <MaskedIntReg Name="OffsetReg">
+    <Address>0x2000</Address><Length>4</Length><AccessMode>RW</AccessMode>
+    <LSB>8</LSB><MSB>15</MSB><Sign>Signed</Sign>
+  </MaskedIntReg>
+  <Integer Name="Offset"><pValue>OffsetReg</pValue></Integer>
+</RegisterDescription>`
+	port := &memPort{regs: map[uint32]uint32{0x2000: 0x8000FA80}} // bits 8..15 = 0xFA
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+	v, err := nm.ReadInteger("Offset")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != -6 {
+		t.Fatalf("Offset=%d, want -6", v)
+	}
+}
+
+func TestMaskedIntRegReadUnsigned(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <MaskedIntReg Name="WidthReg">
+    <Address>0x2000</Address><Length>4</Length><AccessMode>RW</AccessMode>
+    <LSB>8</LSB><MSB>15</MSB><Sign>Unsigned</Sign>
+  </MaskedIntReg>
+  <Integer Name="Width"><pValue>WidthReg</pValue></Integer>
+</RegisterDescription>`
+	port := &memPort{regs: map[uint32]uint32{0x2000: 0x0000FA00}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+	v, err := nm.ReadInteger("Width")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 250 {
+		t.Fatalf("Width=%d, want 250", v)
+	}
+}
+
+func TestIntRegLittleEndian(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <IntReg Name="DataReg">
+    <Address>0x3000</Address><Length>4</Length><AccessMode>RW</AccessMode>
+    <Endianess>LittleEndian</Endianess>
+  </IntReg>
+  <Integer Name="Data"><pValue>DataReg</pValue></Integer>
+</RegisterDescription>`
+	port := &memPort{mem: map[uint32]byte{0x3000: 4, 0x3001: 3, 0x3002: 2, 0x3003: 1}} // LE 0x01020304
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+	v, err := nm.ReadInteger("Data")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 0x01020304 {
+		t.Fatalf("Data=%x, want 0x01020304", v)
+	}
+	if err := nm.SetInteger("Data", 0x05060708); err != nil {
+		t.Fatal(err)
+	}
+	if port.mem[0x3000] != 8 || port.mem[0x3001] != 7 || port.mem[0x3002] != 6 || port.mem[0x3003] != 5 {
+		t.Fatalf("LE bytes = %02x %02x %02x %02x", port.mem[0x3000], port.mem[0x3001], port.mem[0x3002], port.mem[0x3003])
+	}
+}
+
+func TestConverterFormulaDirections(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <IntReg Name="RawReg"><Address>0x1000</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+  <IntConverter Name="Gain">
+    <pValue>RawReg</pValue>
+    <pVariable Name="X">RawReg</pVariable>
+    <FormulaFrom>X * 10</FormulaFrom>
+    <FormulaTo>X / 10</FormulaTo>
+  </IntConverter>
+</RegisterDescription>`
+	port := &memPort{regs: map[uint32]uint32{0x1000: 5}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+	// Read: FormulaFrom(raw) = 5*10.
+	v, err := nm.ReadInteger("Gain")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 50 {
+		t.Fatalf("Gain=%d, want 50", v)
+	}
+	// Write: register = FormulaTo(user) = 7/10 = 0.
+	if err := nm.SetInteger("Gain", 7); err != nil {
+		t.Fatal(err)
+	}
+	if port.regs[0x1000] != 0 {
+		t.Fatalf("RawReg=%d, want 0", port.regs[0x1000])
+	}
+	// Write: 150/10 = 15.
+	if err := nm.SetInteger("Gain", 150); err != nil {
+		t.Fatal(err)
+	}
+	if port.regs[0x1000] != 15 {
+		t.Fatalf("RawReg=%d, want 15", port.regs[0x1000])
+	}
+}
+
+// TestConverterReservedFromTo covers the GenApi reserved converter variables:
+// FormulaFrom exposes the register value as TO, FormulaTo exposes the user
+// value as FROM while pVariables keep their current values (read-modify-write).
+func TestConverterReservedFromTo(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <IntReg Name="ConfigReg"><Address>0x1000</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+  <IntConverter Name="IEEE1588Value">
+    <pValue>ConfigReg</pValue>
+    <pVariable Name="VAR_CFG">ConfigReg</pVariable>
+    <FormulaFrom>(TO &amp; 0x00080000) &gt;&gt; 19</FormulaFrom>
+    <FormulaTo>(VAR_CFG &amp; 0xFFF7FFFF) | (FROM &lt;&lt; 19)</FormulaTo>
+  </IntConverter>
+</RegisterDescription>`
+	port := &memPort{regs: map[uint32]uint32{0x1000: 0x40}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+	// Read: (0x40 & 0x00080000) >> 19 = 0.
+	v, err := nm.ReadInteger("IEEE1588Value")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 0 {
+		t.Fatalf("read = %d, want 0", v)
+	}
+	// Write 1: (0x40 & 0xFFF7FFFF) | (1 << 19) = 0x80040 (bit 19 set, others kept).
+	if err := nm.SetInteger("IEEE1588Value", 1); err != nil {
+		t.Fatal(err)
+	}
+	if port.regs[0x1000] != 0x80040 {
+		t.Fatalf("config = %#x, want 0x80040", port.regs[0x1000])
+	}
+	// Read back: bit 19 set -> 1.
+	v, err = nm.ReadInteger("IEEE1588Value")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 1 {
+		t.Fatalf("read back = %d, want 1", v)
+	}
+}
+
+func TestBooleanOnOffValue(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <IntReg Name="ModeReg"><Address>0x1000</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+  <Boolean Name="Enabled"><pValue>ModeReg</pValue><OnValue>0xFF</OnValue><OffValue>0x00</OffValue><AccessMode>RW</AccessMode></Boolean>
+</RegisterDescription>`
+	port := &memPort{regs: map[uint32]uint32{0x1000: 0xFF}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+	on, err := nm.ReadBoolean("Enabled")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !on {
+		t.Fatal("Enabled should be true when register == OnValue(0xFF)")
+	}
+	port.regs[0x1000] = 0x01 // a floating value: neither OnValue nor OffValue
+	on, err = nm.ReadBoolean("Enabled")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if on {
+		t.Fatal("Enabled should be false when register != OnValue")
+	}
+	if err := nm.SetBoolean("Enabled", true); err != nil {
+		t.Fatal(err)
+	}
+	if port.regs[0x1000] != 0xFF {
+		t.Fatalf("reg after set true=%#x, want 0xFF", port.regs[0x1000])
+	}
+	if err := nm.SetBoolean("Enabled", false); err != nil {
+		t.Fatal(err)
+	}
+	if port.regs[0x1000] != 0 {
+		t.Fatalf("reg after set false=%#x, want 0", port.regs[0x1000])
+	}
+}
+
 func TestRejectZeroAddress(t *testing.T) {
 	const xml = `<?xml version="1.0"?>
 <RegisterDescription>

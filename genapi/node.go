@@ -55,6 +55,11 @@ type gcNode struct {
 	// Value is a constant <Value> for this node (used by Integer, Enumeration entries).
 	Value string
 
+	// OnValue/OffValue define the wire values for Boolean true/false, when the
+	// camera overrides the §2.8.7 default of 1/0.
+	OnValue  string
+	OffValue string
+
 	// Entries maps enum entry names to their integer values (for Enumeration nodes).
 	Entries map[string]int64
 
@@ -65,6 +70,15 @@ type gcNode struct {
 	// Formula is the SwissKnife expression for this node
 	// (used by SwissKnife, IntSwissKnife, Converter, IntConverter nodes).
 	Formula string
+
+	// FormulaFrom converts the <pValue> register node's value into the user
+	// domain (read direction) for Converter/IntConverter nodes (GenApi 2.1.1
+	// §2.8.10).
+	FormulaFrom string
+
+	// FormulaTo converts a user-domain value into the <pValue> register domain
+	// (write direction) for Converter/IntConverter nodes (GenApi 2.1.1 §2.8.10).
+	FormulaTo string
 
 	// LSB and MSB define the bit range for MaskedIntReg nodes.
 	// LSB=MSB when <Bit> is used; both set when <LSB>+<MSB> are present.
@@ -91,6 +105,16 @@ type gcNode struct {
 	// PInvalidator is a feature name that, when changed, invalidates this node.
 	// The node must be re-read after the invalidator changes.
 	PInvalidator string
+
+	// Sign is the integer sign representation ("Signed"/"Unsigned") declared by
+	// the <Sign> element of IntReg/MaskedIntReg nodes (GenApi 2.1.1 §2.8.5).
+	// Controls sign-bit extension when converting the register to an int64.
+	Sign string
+
+	// Endianess is the register byte order ("BigEndian"/"LittleEndian") declared
+	// by the <Endianess> element (GenApi 2.1.1 §2.8.5). Empty means use the
+	// device byte order (ImplementationEndianness).
+	Endianess string
 
 	// Static constraint values for Integer and Float nodes.
 	// Used when Min/Max/Inc are constant rather than computed via pointers.

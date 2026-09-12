@@ -18,8 +18,11 @@ type nodeFields struct {
 	PValue         string
 	PAddresses     []string
 	Value          string
+	OnValue        string
+	OffValue       string
 	Variables      map[string]string
 	Formula        string
+	FormulaFrom    string
 	FormulaTo      string
 	LSB, MSB       int
 	HasMask        bool
@@ -30,6 +33,8 @@ type nodeFields struct {
 	PIsAvailable   string
 	PIsLocked      string
 	PInvalidator   string
+	Sign           string
+	Endianess      string
 	Min            int64
 	Max            int64
 	Inc            int64
@@ -93,8 +98,14 @@ func parseNodeFields(inner []byte) nodeFields {
 			if f.Value == "" {
 				f.Value = text
 			}
+		case "OnValue":
+			f.OnValue = text
+		case "OffValue":
+			f.OffValue = text
 		case "Formula":
 			f.Formula = text
+		case "FormulaFrom":
+			f.FormulaFrom = text
 		case "FormulaTo":
 			f.FormulaTo = text
 		case "Bit":
@@ -137,6 +148,10 @@ func parseNodeFields(inner []byte) nodeFields {
 			if n, err := strconv.ParseInt(text, 0, 64); err == nil {
 				f.Inc = n
 			}
+		case "Sign":
+			f.Sign = text
+		case "Endianess":
+			f.Endianess = text
 		}
 	}
 	if f.LSB >= 0 && f.MSB >= 0 {
@@ -231,6 +246,8 @@ func parseNodeXML(kind string, name string, inner []byte) *gcNode {
 		PValue:         fields.PValue,
 		PAddresses:     fields.PAddresses,
 		Value:          fields.Value,
+		OnValue:        fields.OnValue,
+		OffValue:       fields.OffValue,
 		Address:        fields.AddressSum,
 		Addresses:      fields.Addresses,
 		Length:         fields.Length,
@@ -239,6 +256,8 @@ func parseNodeXML(kind string, name string, inner []byte) *gcNode {
 		HasMask:        fields.HasMask,
 		Variables:      fields.Variables,
 		Formula:        fields.Formula,
+		FormulaFrom:    fields.FormulaFrom,
+		FormulaTo:      fields.FormulaTo,
 		PMin:           fields.PMin,
 		PMax:           fields.PMax,
 		PInc:           fields.PInc,
@@ -246,13 +265,11 @@ func parseNodeXML(kind string, name string, inner []byte) *gcNode {
 		PIsAvailable:   fields.PIsAvailable,
 		PIsLocked:      fields.PIsLocked,
 		PInvalidator:   fields.PInvalidator,
+		Sign:           fields.Sign,
+		Endianess:      fields.Endianess,
 		Min:            fields.Min,
 		Max:            fields.Max,
 		Inc:            fields.Inc,
-	}
-	// IntConverter uses FormulaTo for forward mapping when reading value.
-	if gn.Formula == "" && fields.FormulaTo != "" {
-		gn.Formula = fields.FormulaTo
 	}
 	// For Enumeration nodes, extract enum entries.
 	if kind == "Enumeration" {

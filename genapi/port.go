@@ -49,26 +49,111 @@ func (pa *portAdapter) readIntReg(n *gcNode, nm *NodeMap) (uint64, error) {
 	if err != nil {
 		return 0, err
 	}
+	raw, err := pa.readRawValue(n, addr, length)
+	if err != nil {
+		return 0, err
+	}
+	// MaskedIntReg: extract the LSB..MSB bit slice (GenApi 2.1.1 §2.8.5).
+	if n.Kind == "MaskedIntReg" && n.HasMask {
+		mask, shift := maskFromBits(n.LSB, n.MSB)
+		raw = (raw & uint64(mask)) >> shift
+	}
+	// Sign-bit extension for <Sign>Signed</Sign> nodes narrower than 64 bits.
+	if n.Sign == "Signed" {
+		if bits := intBitWidth(n); bits > 0 && bits < 64 {
+			if raw&(uint64(1)<<uint(bits-1)) != 0 {
+				raw |= ^uint64(0) << uint(bits)
+			}
+		}
+	}
+	return raw, nil
+}
+
+// readRawValue reads the raw register value, honoring an explicit per-register
+// <Endianess> element (a LittleEndian 4-byte register is byte-swapped).
+func (pa *portAdapter) readRawValue(n *gcNode, addr uint32, length int) (uint64, error) {
+	if n.Endianess != "" {
+		data, err := pa.port.ReadMem(addr, length)
+		if err != nil {
+			return 0, err
+		}
+		return decodeRegUint(pa.registerByteOrder(n), data, length), nil
+	}
 	if length == 4 {
 		v, err := pa.port.ReadReg(addr)
-		return uint64(v), err
+		if err != nil {
+			return 0, err
+		}
+		return uint64(v), nil
 	}
-	// For non-4-byte reads, use ReadMem.
 	data, err := pa.port.ReadMem(addr, length)
 	if err != nil {
 		return 0, err
 	}
-	order := pa.deviceByteOrder()
+	return decodeRegUint(pa.deviceByteOrder(), data, length), nil
+}
+
+// registerByteOrder returns the byte order declared by an explicit <Endianess>
+// element on a register node, falling back to the device byte order.
+func (pa *portAdapter) registerByteOrder(n *gcNode) binary.ByteOrder {
+	switch n.Endianess {
+	case "LittleEndian":
+		return binary.LittleEndian
+	case "BigEndian":
+		return binary.BigEndian
+	}
+	return pa.deviceByteOrder()
+}
+
+// intBitWidth returns the number of meaningful bits of an integer-like register
+// node, used for sign extension. MaskedIntReg spans LSB..MSB.
+func intBitWidth(n *gcNode) int {
+	if n.Kind == "MaskedIntReg" && n.HasMask {
+		if w := n.MSB - n.LSB + 1; w > 0 {
+			return w
+		}
+	}
+	switch n.Length {
+	case 1:
+		return 8
+	case 2:
+		return 16
+	case 4:
+		return 32
+	case 8:
+		return 64
+	}
+	return 32
+}
+
+// decodeRegUint decodes a register value read as raw bytes.
+func decodeRegUint(order binary.ByteOrder, data []byte, length int) uint64 {
 	switch length {
 	case 1:
-		return uint64(data[0]), nil
+		return uint64(data[0])
 	case 2:
-		return uint64(order.Uint16(data)), nil
+		return uint64(order.Uint16(data))
 	case 8:
-		return order.Uint64(data), nil
+		return order.Uint64(data)
 	default:
-		return uint64(order.Uint32(data[:4])), nil
+		return uint64(order.Uint32(data[:4]))
 	}
+}
+
+// encodeRegUint encodes a register value into length bytes in the given order.
+func encodeRegUint(order binary.ByteOrder, v uint64, length int) []byte {
+	buf := make([]byte, length)
+	switch length {
+	case 1:
+		buf[0] = byte(v)
+	case 2:
+		order.PutUint16(buf, uint16(v))
+	case 8:
+		order.PutUint64(buf, v)
+	default:
+		order.PutUint32(buf[:4], uint32(v))
+	}
+	return buf
 }
 
 // writeIntReg writes an integer-like register to device memory.
@@ -78,17 +163,17 @@ func (pa *portAdapter) writeIntReg(n *gcNode, v int64, nm *NodeMap) error {
 	if err != nil {
 		return err
 	}
-	if n.Kind == "MaskedIntReg" && n.HasMask && length == 4 {
-		cur, err := pa.port.ReadReg(addr)
+	if n.Kind == "MaskedIntReg" && n.HasMask && length <= 4 {
+		cur, err := pa.readRawValue(n, addr, length)
 		if err != nil {
 			return fmt.Errorf("gige: read %s @0x%x for mask: %w", n.Name, addr, err)
 		}
 		mask, shift := maskFromBits(n.LSB, n.MSB)
-		nv := (cur &^ mask) | ((uint32(v) << shift) & mask)
-		if err := pa.port.WriteReg(addr, nv); err != nil {
-			return fmt.Errorf("gige: write MaskedIntReg %s @0x%x (val=%d mask=0x%x): %w", n.Name, addr, v, mask, err)
-		}
-		return nil
+		v = int64((cur &^ uint64(mask)) | ((uint64(uint32(v)) << shift) & uint64(mask)))
+	}
+	if n.Endianess != "" {
+		order := pa.registerByteOrder(n)
+		return pa.port.WriteMem(addr, encodeRegUint(order, uint64(v), length))
 	}
 	switch length {
 	case 4:
@@ -120,7 +205,7 @@ func (pa *portAdapter) writeFloatReg(n *gcNode, v float64, nm *NodeMap) error {
 	if err != nil {
 		return err
 	}
-	order := pa.deviceByteOrder()
+	order := pa.registerByteOrder(n)
 	if length >= 8 {
 		var b [8]byte
 		order.PutUint64(b[:], math.Float64bits(v))
@@ -137,13 +222,16 @@ func (pa *portAdapter) readFloatReg(n *gcNode, nm *NodeMap) (float64, error) {
 	if err != nil {
 		return 0, err
 	}
-	order := pa.deviceByteOrder()
-	if length >= 8 {
-		data, err := pa.port.ReadMem(addr, 8)
+	order := pa.registerByteOrder(n)
+	if n.Endianess != "" || length >= 8 {
+		data, err := pa.port.ReadMem(addr, length)
 		if err != nil {
 			return 0, err
 		}
-		return math.Float64frombits(order.Uint64(data)), nil
+		if length >= 8 {
+			return math.Float64frombits(order.Uint64(data)), nil
+		}
+		return float64(math.Float32frombits(order.Uint32(data[:4]))), nil
 	}
 	v, err := pa.port.ReadReg(addr)
 	if err != nil {
@@ -239,6 +327,31 @@ func (pa *portAdapter) evaluateIntegerFormula(formula string, vars map[string]in
 	return uint64(v), err
 }
 
+// converterFormula returns the SwissKnife formula to apply in the given
+// direction for Converter/IntConverter nodes (GenApi 2.1.1 §2.8.10):
+//   - forward (register -> user, read): FormulaFrom, else legacy Formula,
+//     else FormulaTo.
+//   - backward (user -> register, write): FormulaTo, else legacy Formula,
+//     else FormulaFrom.
+func converterFormula(n *gcNode, forward bool) string {
+	if forward {
+		if n.FormulaFrom != "" {
+			return n.FormulaFrom
+		}
+		if n.Formula != "" {
+			return n.Formula
+		}
+		return n.FormulaTo
+	}
+	if n.FormulaTo != "" {
+		return n.FormulaTo
+	}
+	if n.Formula != "" {
+		return n.Formula
+	}
+	return n.FormulaFrom
+}
+
 // resolveIntegerReference follows pValue and formula chains to compute an integer value
 // for nodes that represent integers indirectly (Integer, Enumeration, SwissKnife, etc.).
 func (pa *portAdapter) resolveIntegerReference(n *gcNode, nm *NodeMap, depth int) (uint64, error) {
@@ -260,7 +373,7 @@ func (pa *portAdapter) resolveIntegerReference(n *gcNode, nm *NodeMap, depth int
 		if n.Address != 0 {
 			return n.Address, nil
 		}
-	case "IntSwissKnife", "SwissKnife", "IntConverter", "Converter":
+	case "IntSwissKnife", "SwissKnife":
 		vars, err := pa.evaluateFormulaVariables(n.Variables, nm)
 		if err != nil {
 			return 0, fmt.Errorf("gige: %s vars: %w", n.Name, err)
@@ -269,6 +382,29 @@ func (pa *portAdapter) resolveIntegerReference(n *gcNode, nm *NodeMap, depth int
 			return 0, fmt.Errorf("gige: %s has empty Formula", n.Name)
 		}
 		return pa.evaluateIntegerFormula(n.Formula, vars)
+	case "IntConverter", "Converter":
+		formula := converterFormula(n, true)
+		if formula == "" {
+			return 0, fmt.Errorf("gige: %s has no FormulaFrom", n.Name)
+		}
+		vars, err := pa.evaluateFormulaVariables(n.Variables, nm)
+		if err != nil {
+			return 0, fmt.Errorf("gige: %s vars: %w", n.Name, err)
+		}
+		if formulaUses(formula, "TO") {
+			// FormulaFrom exposes the current register value as the reserved
+			// variable TO (GenApi 2.1.1 §2.8.13), e.g. "(TO & 0x00080000) >> 19".
+			reg, err := nm.lookup(n.PValue)
+			if err != nil {
+				return 0, fmt.Errorf("gige: %s FormulaFrom uses TO but pValue %q: %w", n.Name, n.PValue, err)
+			}
+			rv, err := pa.resolveIntegerReference(reg, nm, depth+1)
+			if err != nil {
+				return 0, fmt.Errorf("gige: %s FormulaFrom TO: %w", n.Name, err)
+			}
+			vars["TO"] = int64(rv)
+		}
+		return pa.evaluateIntegerFormula(formula, vars)
 	case "IntReg", "MaskedIntReg":
 		return pa.readIntReg(n, nm)
 	case "Enumeration":
