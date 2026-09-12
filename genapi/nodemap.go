@@ -511,6 +511,12 @@ func (nm *NodeMap) ReadFloat(name string) (float64, error) {
 		}
 		return float64(v), nil
 	}
+	if n.Kind == "SwissKnife" {
+		if n.Formula == "" {
+			return 0, fmt.Errorf("gige: %s has empty Formula", name)
+		}
+		return nm.pa.evaluateSwissKnifeFloat(n.Formula, n.Variables, nm, nil)
+	}
 	target := n
 	if n.PValue != "" {
 		target, err = nm.lookup(n.PValue)

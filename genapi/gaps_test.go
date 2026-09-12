@@ -258,3 +258,52 @@ func TestSwissKnifeSuffixes(t *testing.T) {
 		t.Fatalf("unknown suffix: want error, got %v", err)
 	}
 }
+
+// TestSwissKnifeFloatDomain mirrors the real Huaray camera XML: a Float
+// feature read from a FloatReg, referenced by float-domain SwissKnife nodes
+// used as <pMax>. Arithmetic must stay in the float domain, and integer
+// reads of the SwissKnife must truncate rather than error.
+func TestSwissKnifeFloatDomain(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <FloatReg Name="GainMaxReg"><Address>0x4E05D720</Address><Length>4</Length><AccessMode>RW</AccessMode></FloatReg>
+  <IntReg Name="GainReg"><Address>0x1000</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
+  <Float Name="GainMax"><AccessMode>RW</AccessMode><pValue>GainMaxReg</pValue><Min>1</Min><Max>23</Max></Float>
+  <SwissKnife Name="GainRangeExpr">
+    <pVariable Name="VAR_GAINMAX">GainMax</pVariable>
+    <Formula>VAR_GAINMAX.Max / 2.0</Formula>
+  </SwissKnife>
+  <SwissKnife Name="GainIdentityExpr">
+    <pVariable Name="VAR_GAINMAX">GainMax</pVariable>
+    <Formula>VAR_GAINMAX</Formula>
+  </SwissKnife>
+  <Integer Name="GainRangeMax"><AccessMode>RW</AccessMode><pValue>GainReg</pValue><pMax>GainRangeExpr</pMax></Integer>
+</RegisterDescription>`
+	port := &memPort{regs: map[uint32]uint32{}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+	// .Max suffix resolves in float domain: 23 / 2.0 = 11.5, no truncation.
+	if v, err := nm.ReadFloat("GainRangeExpr"); err != nil || v != 11.5 {
+		t.Fatalf("float suffix eval got %v (%v), want 11.5", v, err)
+	}
+	// Integer read of the float SwissKnife truncates instead of erroring.
+	if v, err := nm.ReadInteger("GainRangeExpr"); err != nil || v != 11 {
+		t.Fatalf("truncated integer eval got %d (%v), want 11", v, err)
+	}
+	// A Float feature bound by pMax -> SwissKnife inherits the truncated max.
+	if v, has, err := nm.GetMax("GainRangeMax"); err != nil || !has || v != 11 {
+		t.Fatalf("GetMax via SwissKnife got %d has=%v (%v), want 11", v, has, err)
+	}
+	// Identity formula carries the live Float register value in float domain.
+	if err := nm.SetFloat("GainMax", 4); err != nil {
+		t.Fatal(err)
+	}
+	if v, err := nm.ReadFloat("GainIdentityExpr"); err != nil || v != 4 {
+		t.Fatalf("identity float eval got %v (%v), want 4", v, err)
+	}
+	if v, err := nm.ReadInteger("GainIdentityExpr"); err != nil || v != 4 {
+		t.Fatalf("identity integer eval got %d (%v), want 4", v, err)
+	}
+}

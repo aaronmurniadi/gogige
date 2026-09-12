@@ -404,6 +404,97 @@ func (pa *portAdapter) evaluateSwissKnife(formula string, variables map[string]s
 	return uint64(v), err
 }
 
+// readFormulaVariableFloat reads a SwissKnife variable that may reference a
+// Float-typed feature, falling back to the integer domain otherwise.
+func readFormulaVariableFloat(varName, featName string, nm *NodeMap, depth int) (float64, error) {
+	n, err := nm.lookup(featName)
+	if err != nil {
+		return 0, err
+	}
+	switch n.Kind {
+	case "Float", "FloatReg", "SwissKnife":
+		v, err := nm.ReadFloat(featName)
+		if err != nil {
+			return 0, fmt.Errorf("gige: var %s→%s: %w", varName, featName, err)
+		}
+		return v, nil
+	}
+	v, err := nm.evalIntegerValue(featName, depth)
+	if err != nil {
+		return 0, fmt.Errorf("gige: var %s→%s: %w", varName, featName, err)
+	}
+	return float64(int64(v)), nil
+}
+
+// formulaContextFloat is the float-domain counterpart of formulaContext: it
+// binds pVariables to float values (Float features read via readFloatReg,
+// integers widened) and resolves "Var.Min/.Max/.Inc/.Value/.Entry" in the
+// float domain so bounds and divisions do not truncate.
+func (pa *portAdapter) formulaContextFloat(variables map[string]string, nm *NodeMap, extra map[string]float64) (map[string]float64, floatSuffixResolver, error) {
+	vars := make(map[string]float64, len(variables))
+	for varName, feat := range variables {
+		if v, bound := extra[varName]; bound {
+			vars[varName] = v
+			continue
+		}
+		v, err := readFormulaVariableFloat(varName, feat, nm, 0)
+		if err != nil {
+			return nil, nil, err
+		}
+		vars[varName] = v
+	}
+	for k, v := range extra {
+		if _, isVar := variables[k]; !isVar {
+			vars[k] = v
+		}
+	}
+	resolve := func(name, suffix string) (float64, bool, error) {
+		feat, ok := variables[name]
+		if !ok {
+			return 0, false, nil
+		}
+		if _, err := nm.lookup(feat); err != nil {
+			return 0, false, fmt.Errorf("gige: var %s suffix %s: %w", name, suffix, err)
+		}
+		switch suffix {
+		case "Value", "Entry":
+			v, err := readFormulaVariableFloat(name, feat, nm, 0)
+			return v, true, err
+		case "Min", "Max", "Inc":
+			var v int64
+			var has bool
+			var err error
+			switch suffix {
+			case "Min":
+				v, has, err = nm.GetMin(feat)
+			case "Max":
+				v, has, err = nm.GetMax(feat)
+			case "Inc":
+				v, has, err = nm.GetInc(feat)
+			}
+			if err != nil {
+				return 0, true, fmt.Errorf("gige: var %s.%s: %w", name, suffix, err)
+			}
+			if !has {
+				return 0, true, fmt.Errorf("gige: var %s: feature %q has no %s constraint", name, feat, suffix)
+			}
+			return float64(v), true, nil
+		}
+		return 0, true, fmt.Errorf("gige: var %s has no such suffix %q", name, suffix)
+	}
+	return vars, resolve, nil
+}
+
+// evaluateSwissKnifeFloat evaluates a float-domain SwissKnife formula with
+// float variables and float suffix resolution (GenApi 2.1.1 §2.8.13).
+func (pa *portAdapter) evaluateSwissKnifeFloat(formula string, variables map[string]string, nm *NodeMap, extra map[string]float64) (float64, error) {
+	vars, resolve, err := pa.formulaContextFloat(variables, nm, extra)
+	if err != nil {
+		return 0, err
+	}
+	return evalFormulaFloat(formula, vars, resolve)
+}
+
 // converterFormula returns the SwissKnife formula to apply in the given
 // direction for Converter/IntConverter nodes (GenApi 2.1.1 §2.8.10):
 //   - forward (register -> user, read): FormulaFrom, else legacy Formula,
@@ -450,11 +541,25 @@ func (pa *portAdapter) resolveIntegerReference(n *gcNode, nm *NodeMap, depth int
 		if n.Address != 0 {
 			return n.Address, nil
 		}
-	case "IntSwissKnife", "SwissKnife":
+	case "IntSwissKnife":
 		if n.Formula == "" {
 			return 0, fmt.Errorf("gige: %s has empty Formula", n.Name)
 		}
 		return pa.evaluateSwissKnife(n.Formula, n.Variables, nm, nil)
+	case "SwissKnife":
+		// Float-domain SwissKnife: evaluate in float, then truncate for the
+		// integer read path (bounds such as <pMax>GainRawMaxExpr</pMax>).
+		if n.Formula == "" {
+			return 0, fmt.Errorf("gige: %s has empty Formula", n.Name)
+		}
+		v, err := pa.evaluateSwissKnifeFloat(n.Formula, n.Variables, nm, nil)
+		if err != nil {
+			return 0, err
+		}
+		if v < 0 {
+			return 0, fmt.Errorf("gige: %s evaluates to negative %v in integer context", n.Name, v)
+		}
+		return uint64(v), nil
 	case "IntConverter", "Converter":
 		formula := converterFormula(n, true)
 		if formula == "" {

@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.6.2] - 2026-09-12
+
+### Added
+
+- `genapi` float-domain SwissKnife evaluation: a float alternative `evalFormulaFloat`/`floatParser` to the §2.8.13 integer evaluator keeps arithmetic in the float domain (no `.Max` bound truncation, non-integer division), adds the float functions `ATAN2`/`MIN`/`MAX`/`POW`/`LOG` and the `E`/`PI` constants, and float-literal/scientific/hex number parsing.
+
+### Fixed
+
+- `genapi` evaluated every SwissKnife formula in the `int64` domain: float `SwissKnife` nodes and `pVariable` targets (a `Float`/`FloatReg` feature, e.g. `GainRawMaxExpr` = `VAR_GAINMAX` → `GainMax`) failed with `cannot evaluate integer (kind=Float)` — 9 errors on the offline Huaray replay. `ReadFloat` now evaluates `SwissKnife` via the float path, `formulaContextFloat`/`readFormulaVariableFloat` resolve float variables and `.Min/.Max/.Inc/.Value/.Entry` suffixes, and the integer path truncates the float result (with a negative-value guard) instead of erroring.
+
+### Changed
+
+- `genapi` SwissKnife §2.8.13 variable suffixes `.Min/.Max/.Inc/.Value/.Entry` and float-domain formulas are now fully resolved (previously int-domain only, a documented GAP in `FINDINGS.md`).
+
+### Tests
+
+- `genapi/evaluator_test.go`: `TestEvalFormulaFloat`, `TestEvalFormulaFloatSuffix`.
+- `genapi/gaps_test.go`: `TestSwissKnifeFloatDomain` (mirrors the real Huaray XML layout: `FloatReg`→`Float`→`SwissKnife`→`<pMax>`; asserts float division stays `11.5`, integer reads truncate, and identity formulas carry the live float register value).
+- Offline replay of the Huaray `DS5131MG30CE` XML: the 9 float-SwissKnife errors cleared (`333 → 324`; all remaining are guard-correct NI/NA/WO), 0 regressions.
+
 ## [1.6.1] - 2026-09-12
 
 ### Fixed

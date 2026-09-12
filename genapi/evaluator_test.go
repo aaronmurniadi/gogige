@@ -1,6 +1,10 @@
 package genapi
 
-import "testing"
+import (
+	"fmt"
+	"math"
+	"testing"
+)
 
 func TestEvalFormula(t *testing.T) {
 	v, err := evalFormula("BASE + 0x20", map[string]int64{"BASE": 0x10000})
@@ -229,5 +233,71 @@ func TestEvalFormulaTernaryRegression(t *testing.T) {
 	}
 	if v != 1 {
 		t.Fatalf("ternary = %d, want 1", v)
+	}
+}
+
+// TestEvalFormulaFloat verifies the float-domain SwissKnife evaluator
+// (GenApi 2.1.1 §2.8.13): arithmetic stays float (no truncation), functions
+// and E/PI constants resolve, and comparisons yield 1/0.
+func TestEvalFormulaFloat(t *testing.T) {
+	cases := []struct {
+		expr string
+		vars map[string]float64
+		want float64
+	}{
+		{"VAR_X / 2.0", map[string]float64{"VAR_X": 23}, 11.5},
+		{"1.0 + 2.5", nil, 3.5},
+		{"-2.5 * 4", nil, -10},
+		{"2.0 ** 3", nil, 8},
+		{"ROUND(3.14159, 2)", nil, 3.14},
+		{"FLOOR(2.9)", nil, 2},
+		{"CEIL(2.1)", nil, 3},
+		{"TRUNC(-2.9)", nil, -2},
+		{"ABS(-3.5)", nil, 3.5},
+		{"SQRT(144.0)", nil, 12},
+		{"LG(1000)", nil, 3},
+		{"LN(E)", nil, 1},
+		{"MIN(3.0, 7.5)", nil, 3},
+		{"MAX(3.0, 7.5)", nil, 7.5},
+		{"POW(2.0, 10)", nil, 1024},
+		{"ATAN2(0.0, 1.0)", nil, 0},
+		{"PI > 3.0", nil, 1},
+		{"PI < 3.0", nil, 0},
+		{"(VAR_X > 10) ? VAR_X : 0.5", map[string]float64{"VAR_X": 23}, 23},
+		{"(VAR_X > 10) ? VAR_X : 0.5", map[string]float64{"VAR_X": 5}, 0.5},
+		{"VAR_X % 2.0", map[string]float64{"VAR_X": 7}, 1},
+		{"0x10 * 1.5", nil, 24},
+		{"1e3", nil, 1000},
+	}
+	for _, tc := range cases {
+		v, err := evalFormulaFloat(tc.expr, tc.vars, nil)
+		if err != nil {
+			t.Fatalf("%q: %v", tc.expr, err)
+		}
+		if math.Abs(v-tc.want) > 1e-9 {
+			t.Fatalf("%q = %v, want %v", tc.expr, v, tc.want)
+		}
+	}
+	if _, err := evalFormulaFloat("1/0", nil, nil); err == nil {
+		t.Fatal("division by zero should error")
+	}
+}
+
+// TestEvalFormulaFloatSuffix verifies float-domain suffix resolution
+// (".Value", ".Min", ".Max") returns the right domain value.
+func TestEvalFormulaFloatSuffix(t *testing.T) {
+	resolve := func(name, suffix string) (float64, bool, error) {
+		switch name + "." + suffix {
+		case "GAIN.Max", "GAIN.X":
+			return 23, true, nil
+		}
+		return 0, true, fmt.Errorf("no such suffix %s.%s", name, suffix)
+	}
+	v, err := evalFormulaFloat("(GAIN.Max - GAIN.X) / 2.0", nil, resolve)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 0 {
+		t.Fatalf("suffix formula = %v, want 0", v)
 	}
 }
