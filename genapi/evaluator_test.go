@@ -117,4 +117,117 @@ func TestEvalFormulaFunctions(t *testing.T) {
 	if v != 3 {
 		t.Fatalf("SQRT(ABS(-9))=%d", v)
 	}
+	v, err = evalFormula("(SEL == 0)", map[string]int64{"SEL": 0})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 1 {
+		t.Fatalf("== yielded %d", v)
+	}
+	v, err = evalFormula("2 ** 10", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 1024 {
+		t.Fatalf("2**10=%d", v)
+	}
+	v, err = evalFormula("2 ** 3 ** 2", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 512 {
+		t.Fatalf("2**3**2=%d", v)
+	}
+	v, err = evalFormula("-2 ** 2", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != -4 {
+		t.Fatalf("-2**2=%d", v)
+	}
+	v, err = evalFormula("SQRT(144)", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 12 {
+		t.Fatalf("SQRT(144)=%d", v)
+	}
+	v, err = evalFormula("LG(1000)", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 3 {
+		t.Fatalf("LG(1000)=%d", v)
+	}
+	v, err = evalFormula("ROUND(250, -1)", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 250 {
+		t.Fatalf("ROUND(250,-1)=%d", v)
+	}
+	v, err = evalFormula("SGN(SEL)", map[string]int64{"SEL": -8})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != -1 {
+		t.Fatalf("SGN(-8)=%d", v)
+	}
+	v, err = evalFormula("PI + 1", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 4 {
+		t.Fatalf("PI+1=%d", v)
+	}
+}
+
+// TestEvalFormulaNotEqual verifies the "<>" not-equal operator, which real
+// GenICam XML uses for != (e.g. Huaray "VAR_LASERSELECTOR <> 0"). Previously
+// parseRel swallowed the "<" as a less-than and the ">" was a bad token.
+func TestEvalFormulaNotEqual(t *testing.T) {
+	cases := []struct {
+		expr string
+		vars map[string]int64
+		want int64
+	}{
+		{"SELECTOR <> 0", map[string]int64{"SELECTOR": 3}, 1},
+		{"SELECTOR <> 3", map[string]int64{"SELECTOR": 3}, 0},
+		{"SELECTOR < > 0", map[string]int64{"SELECTOR": 5}, 1},
+		{"(SELECTOR = 0) || (SELECTOR <> 0)", map[string]int64{"SELECTOR": 0}, 1},
+		{"(SELECTOR <> 2) && (SELECTOR <> 4)", map[string]int64{"SELECTOR": 2}, 0},
+		{"(SELECTOR <> 2) && (SELECTOR <> 4)", map[string]int64{"SELECTOR": 3}, 1},
+		// Relational operators must be unaffected.
+		{"SELECTOR < 4", map[string]int64{"SELECTOR": 3}, 1},
+		{"SELECTOR <= 4", map[string]int64{"SELECTOR": 4}, 1},
+		{"SELECTOR >= 4", map[string]int64{"SELECTOR": 4}, 1},
+		{"SELECTOR > 4", map[string]int64{"SELECTOR": 3}, 0},
+	}
+	for _, tc := range cases {
+		v, err := evalFormula(tc.expr, tc.vars)
+		if err != nil {
+			t.Fatalf("%q: %v", tc.expr, err)
+		}
+		if v != tc.want {
+			t.Fatalf("%q = %d, want %d", tc.expr, v, tc.want)
+		}
+	}
+}
+
+// TestEvalFormulaTernaryRegression locks the GevTimestampControlResetAvailExpr
+// style formula, which nests a converter read ("unknown var TO" regression)
+// behind a ternary that keeps working through the <>/&& expression chain.
+func TestEvalFormulaTernaryRegression(t *testing.T) {
+	const expr = "(VAR_GEVSUPPORTEDOPTIONALCOMMANDSIEEE1588SUPPORT) ? (VAR_GEVIEEE1588 = 0) : (1)"
+	vars := map[string]int64{
+		"VAR_GEVSUPPORTEDOPTIONALCOMMANDSIEEE1588SUPPORT": 1,
+		"VAR_GEVIEEE1588": 0,
+	}
+	v, err := evalFormula(expr, vars)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 1 {
+		t.Fatalf("ternary = %d, want 1", v)
+	}
 }
