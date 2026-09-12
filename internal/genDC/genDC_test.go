@@ -22,17 +22,17 @@ func buildContainer(w, h int, pixels []byte, withFlow bool) []byte {
 	binary.LittleEndian.PutUint64(hdr[56:], 64) // component offset
 	buf.Write(hdr)
 
-	// Component header + one part offset at abs 72.
+	// Component header + one part offset at abs 120.
 	comp := make([]byte, 56)
+	partAbs := 64 + 56
 	binary.LittleEndian.PutUint16(comp[0:], HeaderComponent)
 	binary.LittleEndian.PutUint32(comp[4:], 56) // header size incl. offset
 	binary.LittleEndian.PutUint64(comp[32:], ComponentIntensity)
 	binary.LittleEndian.PutUint32(comp[40:], PixelFormatMono8)
-	binary.LittleEndian.PutUint16(comp[46:], 1)  // part count
-	binary.LittleEndian.PutUint64(comp[48:], 56) // part header offset (rel. to component)
+	binary.LittleEndian.PutUint16(comp[46:], 1)                  // part count
+	binary.LittleEndian.PutUint64(comp[48:], uint64(partAbs))    // part header offset, container-relative per GenDC §2.2.4
 	buf.Write(comp)
 
-	partAbs := 64 + 56
 	dataAbs := partAbs + 56
 
 	part := make([]byte, 56)

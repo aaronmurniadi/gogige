@@ -28,7 +28,9 @@ type MultiPartPart struct {
 	Data        []byte
 }
 
-// Multi-part part type constants (GenTL v1.5)
+// Multi-part part type codes carried in the GVSP multi-part leader's 32-byte
+// part header PartType field (GigE Vision 2.0 multi-part payloads). These are
+// GVSP part-type codes, NOT GenTL's PART_DATATYPE_* buffer-info datatypes.
 const (
 	MultiPartPartTypeImage         = 0x00000000
 	MultiPartPartTypeChunk         = 0x00000001
@@ -95,5 +97,5 @@ func (m *MultiPartPayload) GetPartByType(partType uint32) (*MultiPartPart, bool)
 
 // MultiPartPayloadType returns the multi-part payload type constant
 func MultiPartPayloadType() uint32 {
-	return 0x80000007 // PAYLOAD_TYPE_MULTI_PART per GenTL
+	return PayloadTypeMultiPart // 0x0000000A per GenTL 1.5
 }

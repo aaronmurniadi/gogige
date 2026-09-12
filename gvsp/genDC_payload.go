@@ -94,5 +94,5 @@ func ParseGenDCPayloadAsImage(data []byte) ([]byte, uint32, int, int, error) {
 
 // GenDCPayloadType returns the GenDC payload type constant
 func GenDCPayloadType() uint32 {
-	return 0x80000008 // PAYLOAD_TYPE_GENDC per GenTL
+	return PayloadTypeGenDC // 0x0000000B per GenTL 1.6 / GenDC 1.1
 }

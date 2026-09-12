@@ -12,24 +12,24 @@ type ChunkPayload struct {
 	Chunks    []Chunk
 }
 
-// ChunkHeader is the payload type specific header for chunk data
+// ChunkHeader is the payload type specific header for chunk data. There is no
+// wire header in the GenDC trailing-tag format; PayloadSize and ChunkCount are
+// computed while parsing.
 type ChunkHeader struct {
 	PayloadSize uint64
 	ChunkCount  uint32
-	Reserved    uint32
 }
 
 // Chunk represents one chunk entry
 type Chunk struct {
-	ChunkID  uint32
-	Offset   uint32
-	Size     uint32
-	Version  uint16
-	Reserved uint16
-	Data     []byte
+	ChunkID uint32
+	Size    uint32
+	Data    []byte
 }
 
-// Chunk ID constants (GenTL v1.2/v1.4)
+// Chunk ID constants (GenTL v1.2/v1.4). ChunkIDUnknown doubles as the empty
+// padding/sentinel marker of the GenDC trailing-tag chunk format (GenDC 1.1
+// §2.2.8.1): a tag carrying this ID wraps alignment padding, not a real chunk.
 const (
 	ChunkIDUnknown         = 0xFFFFFFFF
 	ChunkIDTimestamp       = 0x00000001
@@ -65,51 +65,53 @@ const (
 	ChunkIDLineValue       = 0x0000001F
 )
 
-// ParseChunkPayload parses a chunk data payload
+// ParseChunkPayload parses a GenICam-chunk data blob in the GenDC trailing-tag
+// format (GenDC 1.1 §2.2.8.1). A chunk blob is a sequence of tagged blocks:
+//
+//	[chunkData_1][tag_1] [chunkData_2][tag_2] ... [chunkData_n][tag_n]
+//
+// Each trailing tag is 8 bytes, little-endian: { ChunkID u32, Length u32 },
+// where Length counts the bytes of the preceding chunk data only (excluding the
+// tag itself) and is a multiple of 4. Tags with ChunkID 0xFFFFFFFF (ChunkIDUnknown)
+// wrap empty alignment padding and carry no chunk data.
+//
+// Because each tag trails its own data, parsing walks backwards from the end of
+// the blob; gaps are detected when a Length would reach before the previous tag.
 func ParseChunkPayload(data []byte) (*ChunkPayload, error) {
-	if len(data) < 16 {
-		return nil, fmt.Errorf("gige: chunk payload too short")
-	}
-
-	header := ChunkHeader{
-		PayloadSize: binary.BigEndian.Uint64(data[0:]),
-		ChunkCount:  binary.BigEndian.Uint32(data[8:]),
-		Reserved:    binary.BigEndian.Uint32(data[12:]),
-	}
-
-	if header.ChunkCount == 0 {
-		return nil, fmt.Errorf("gige: chunk payload has no chunks")
-	}
-
-	// Each chunk entry is 16 bytes
-	entriesSize := 16 + header.ChunkCount*16
-	if int(entriesSize) > len(data) {
-		return nil, fmt.Errorf("gige: chunk header truncated")
-	}
-
-	chunks := make([]Chunk, 0, header.ChunkCount)
-	for i := uint32(0); i < header.ChunkCount; i++ {
-		off := 16 + int(i*16)
-		chunk := Chunk{
-			ChunkID:  binary.BigEndian.Uint32(data[off:]),
-			Offset:   binary.BigEndian.Uint32(data[off+4:]),
-			Size:     binary.BigEndian.Uint32(data[off+8:]),
-			Version:  binary.BigEndian.Uint16(data[off+12:]),
-			Reserved: binary.BigEndian.Uint16(data[off+14:]),
+	chunks := make([]Chunk, 0, 4)
+	pos := len(data)
+	for pos >= 8 {
+		tag := pos - 8
+		id := binary.LittleEndian.Uint32(data[tag:])
+		size := binary.LittleEndian.Uint32(data[tag+4:])
+		if int(size) > tag {
+			return nil, fmt.Errorf("gige: chunk %#x length %d overruns preceding data", id, size)
 		}
-
-		// Extract data if offset and size are valid
-		if chunk.Offset > 0 && chunk.Size > 0 && int(chunk.Offset+chunk.Size) <= len(data) {
-			chunk.Data = make([]byte, chunk.Size)
-			copy(chunk.Data, data[chunk.Offset:chunk.Offset+chunk.Size])
+		start := tag - int(size)
+		if id == ChunkIDUnknown {
+			pos = start // empty alignment/padding tag, no chunk
+			continue
 		}
+		c := make([]byte, size)
+		copy(c, data[start:tag])
+		chunks = append(chunks, Chunk{ChunkID: id, Size: size, Data: c})
+		pos = start
+	}
+	if pos != 0 {
+		return nil, fmt.Errorf("gige: chunk payload has %d trailing bytes without a tag", pos)
+	}
 
-		chunks = append(chunks, chunk)
+	// The backward walk produces the chunks in reverse stream order.
+	for i, j := 0, len(chunks)-1; i < j; i, j = i+1, j-1 {
+		chunks[i], chunks[j] = chunks[j], chunks[i]
 	}
 
 	return &ChunkPayload{
-		Header:    header,
-		ChunkData: data[16:],
+		Header: ChunkHeader{
+			PayloadSize: uint64(len(data)),
+			ChunkCount:  uint32(len(chunks)),
+		},
+		ChunkData: data,
 		Chunks:    chunks,
 	}, nil
 }
@@ -126,25 +128,21 @@ func (c *ChunkPayload) GetChunkByID(id uint32) (*Chunk, bool) {
 
 // ChunkPayloadType returns the chunk data payload type constant
 func ChunkPayloadType() uint32 {
-	return 0x80000009 // PAYLOAD_TYPE_CHUNK_DATA per GenTL
+	return PayloadTypeChunkData // 0x00000004 per GenTL 1.4
 }
 
-// IsChunkData reports whether the payload is chunk-only data
+// IsChunkData reports whether the data looks like a GenICam-chunk blob in the
+// GenDC trailing-tag format: a chain of little-endian tags that parses cleanly
+// back to the start of the buffer.
 func IsChunkData(data []byte) bool {
-	// Chunk-only data has no image data, just chunk headers
-	// Check for chunk header format
-	if len(data) < 16 {
-		return false
-	}
-	// Look for chunk entry markers
-	payloadSize := binary.BigEndian.Uint64(data[0:])
-	chunkCount := binary.BigEndian.Uint32(data[8:])
-	if chunkCount > 0 && payloadSize > 16 {
-		// Check if chunk entries exist
-		entriesStart := 16
-		if entriesStart+16*int(chunkCount) <= len(data) {
-			return true
+	pos := len(data)
+	for pos >= 8 {
+		tag := pos - 8
+		size := int(binary.LittleEndian.Uint32(data[tag+4:]))
+		if size > tag {
+			return false
 		}
+		pos = tag - size
 	}
-	return false
+	return pos == 0
 }

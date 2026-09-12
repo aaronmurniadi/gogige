@@ -369,7 +369,7 @@ func ParseGenDCContainer(buf []byte) (*GenDCFrame, error) {
 		if int(off) < 0 || int(off) >= len(buf) {
 			continue
 		}
-		comp, err := parseComponent(buf[int(off):], int64(len(buf)-int(off)))
+		comp, err := parseComponent(buf, int64(off), int64(len(buf)))
 		if err != nil {
 			continue
 		}
@@ -426,10 +426,15 @@ func parseContainerHeader(buf []byte) (*ContainerHeader, []int64, error) {
 	return ch, offsets, nil
 }
 
-func parseComponent(buf []byte, maxLen int64) (Component, error) {
-	if len(buf) < ComponentHeaderBaseSize {
+// parseComponent parses a component header located at compOff within the full
+// container buffer. Per GenDC §2.2.4, the PartOffset[] entries are offsets
+// relative to the start of the Container's Header (the container buffer), so
+// Part headers must be sliced from the container, not from the component.
+func parseComponent(container []byte, compOff, maxLen int64) (Component, error) {
+	if compOff < 0 || compOff+ComponentHeaderBaseSize > maxLen || maxLen > int64(len(container)) {
 		return Component{}, fmt.Errorf("genDC: component header too short")
 	}
+	buf := container[compOff:]
 
 	header := &ComponentHeader{
 		HeaderType:    binary.LittleEndian.Uint16(buf[0:]),
@@ -467,10 +472,10 @@ func parseComponent(buf []byte, maxLen int64) (Component, error) {
 	parts := make([]Part, 0, numParts)
 	for i := uint16(0); i < numParts; i++ {
 		pOff := int(header.PartOffsets[i])
-		if pOff < 0 || pOff >= len(buf) {
+		if pOff < 0 || int64(pOff+PartHeaderBaseSize) > maxLen {
 			continue
 		}
-		p, err := parsePart(buf[pOff:])
+		p, err := parsePart(container[pOff:])
 		if err != nil {
 			continue
 		}

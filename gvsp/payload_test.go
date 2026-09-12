@@ -287,22 +287,22 @@ func TestMultiPartPayload(t *testing.T) {
 }
 
 func TestChunkPayload(t *testing.T) {
-	hdr := make([]byte, 16)
-	binary.BigEndian.PutUint64(hdr[0:], 100)
-	binary.BigEndian.PutUint32(hdr[8:], 1)
-	binary.BigEndian.PutUint32(hdr[12:], 0)
-
-	chunk := make([]byte, 16)
-	binary.BigEndian.PutUint32(chunk[0:], 0x00000001)
-	binary.BigEndian.PutUint32(chunk[4:], 16)
-	binary.BigEndian.PutUint32(chunk[8:], 8)
-	binary.BigEndian.PutUint16(chunk[12:], 1)
-	binary.BigEndian.PutUint16(chunk[14:], 0)
-
+	// GenDC trailing-tag format (GenDC 1.1 §2.2.8.1): each chunk's data is
+	// followed by an 8-byte little-endian tag { ChunkID u32, Length u32 }.
+	buf := make([]byte, 0, 32)
 	chunkData := make([]byte, 8)
-	binary.BigEndian.PutUint64(chunkData, 1234567890)
+	binary.LittleEndian.PutUint64(chunkData, 1234567890)
+	buf = append(buf, chunkData...) // chunk 1 data (8 B)
 
-	buf := append(append(hdr, chunk...), chunkData...)
+	tag := make([]byte, 8)
+	binary.LittleEndian.PutUint32(tag[0:], 0x00000001) // ChunkID: Timestamp
+	binary.LittleEndian.PutUint32(tag[4:], 8)          // Length excludes the tag
+	buf = append(buf, tag...)
+
+	// Trailing empty alignment/sentinel tag (ChunkIDUnknown).
+	empty := make([]byte, 8)
+	binary.LittleEndian.PutUint32(empty[0:], ChunkIDUnknown)
+	buf = append(buf, empty...)
 
 	payload, err := ParseChunkPayload(buf)
 	if err != nil {
@@ -310,6 +310,9 @@ func TestChunkPayload(t *testing.T) {
 	}
 	if payload.Header.ChunkCount != 1 {
 		t.Fatalf("chunkCount=%d", payload.Header.ChunkCount)
+	}
+	if payload.Header.PayloadSize != uint64(len(buf)) {
+		t.Fatalf("payloadSize=%d want %d", payload.Header.PayloadSize, len(buf))
 	}
 	if len(payload.Chunks) != 1 {
 		t.Fatalf("chunks len=%d", len(payload.Chunks))
@@ -320,8 +323,8 @@ func TestChunkPayload(t *testing.T) {
 	if payload.Chunks[0].Size != 8 {
 		t.Fatalf("chunkSize=%d", payload.Chunks[0].Size)
 	}
-	if len(payload.Chunks[0].Data) != 8 {
-		t.Fatalf("chunkData len=%d", len(payload.Chunks[0].Data))
+	if !bytes.Equal(payload.Chunks[0].Data, chunkData) {
+		t.Fatalf("chunkData=%x want %x", payload.Chunks[0].Data, chunkData)
 	}
 
 	chunkTs, ok := payload.GetChunkByID(0x00000001)
@@ -330,6 +333,25 @@ func TestChunkPayload(t *testing.T) {
 	}
 	if chunkTs.ChunkID != 0x00000001 {
 		t.Fatalf("chunkID=0x%x", chunkTs.ChunkID)
+	}
+	if !IsChunkData(buf) {
+		t.Fatal("IsChunkData rejected valid trailing-tag blob")
+	}
+}
+
+func TestChunkPayloadTruncated(t *testing.T) {
+	// A Length reaching before the previous tag must be rejected.
+	buf := make([]byte, 8)
+	binary.LittleEndian.PutUint32(buf[0:], 0x00000001)
+	binary.LittleEndian.PutUint32(buf[4:], 32) // length 32 > 8 bytes of data
+	if _, err := ParseChunkPayload(buf); err == nil {
+		t.Fatal("expected overrun error")
+	}
+	if IsChunkData(buf) {
+		t.Fatal("IsChunkData accepted overrun blob")
+	}
+	if IsChunkData(make([]byte, 4)) {
+		t.Fatal("IsChunkData accepted short blob")
 	}
 }
 
@@ -352,10 +374,11 @@ func buildGenDCContainer(w, h int, pixels []byte) []byte {
 	binary.LittleEndian.PutUint64(comp[32:], 1) // intensity
 	binary.LittleEndian.PutUint32(comp[40:], color.PixelFormatMono8)
 	binary.LittleEndian.PutUint16(comp[46:], 1)
-	binary.LittleEndian.PutUint64(comp[48:], 56)
+	partAbs := 64 + 56                     // part header sits right after the component
+	dataAbs := partAbs + 56                // part data follows the part header
+	binary.LittleEndian.PutUint64(comp[48:], uint64(partAbs)) // PartOffset: container-absolute
 	buf.Write(comp)
 
-	dataAbs := 64 + 56 + 56
 	part := make([]byte, 56)
 	binary.LittleEndian.PutUint16(part[0:], 0x4200)
 	binary.LittleEndian.PutUint32(part[4:], 56)

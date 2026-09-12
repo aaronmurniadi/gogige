@@ -30,7 +30,7 @@ type Component uint32
 const (
 	ComponentUnknown Component = 0
 	ComponentMono    Component = 1 // gray / mono sensor
-	ComponentDepth   Component = 5 // GenDC Range
+	ComponentDepth   Component = 5 // Huaray BSCF wire value (Frame.h iota); GenDC Range is 0x04
 	ComponentColor   Component = 6
 )
 

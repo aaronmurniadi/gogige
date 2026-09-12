@@ -18,11 +18,12 @@ const (
 	PayloadTypeMultiPart      = 0x0000000A // multi-part (GenTL v1.5)
 	PayloadTypeGenDC          = 0x0000000B // GenDC container (GenTL v1.6 / GenDC 1.1)
 
-	// Some vendors extend the payload type field with the high bit set while
-	// still using the lower byte as the GenTL id. Accepted aliases below.
-	payloadTypeAliasGenDC     = 0x80000008 // vendor encoding observed in the wild
-	payloadTypeAliasMultiPart = 0x80000007
-	payloadTypeAliasChunk     = 0x80000009
+	// Some vendors encode the payload type with the GenTL high bit (0x80000000)
+	// set. Accepted aliases below cover that vendor encoding using the real
+	// GenTL ids (high-bit form of PayloadType*).
+	payloadTypeAliasGenDC     = 0x8000000B // 0x80000000 | PAYLOAD_TYPE_GENDC
+	payloadTypeAliasMultiPart = 0x8000000A // 0x80000000 | PAYLOAD_TYPE_MULTI_PART
+	payloadTypeAliasChunk     = 0x80000004 // 0x80000000 | PAYLOAD_TYPE_CHUNK_DATA
 )
 
 // IsPayloadTypeImage reports whether a payload type denotes a plain image.
