@@ -1,5 +1,35 @@
 # Changelog
 
+## [1.6.0] - 2026-09-12
+
+### Added
+
+- `genapi` formula evaluator now implements the full SwissKnife §2.8.13 grammar: exponent `**`, equality `==`/`!=` (incl. the `<>` alias), and the complete math function table `SGN NEG ABS FLOOR CEIL TRUNC ROUND SQRT EXP LN LG LOG SIN COS TAN ASIN ACOS ATAN ATAN2 MIN MAX POW` plus the `E`/`PI` constants. Parse errors report the offending token.
+- `genapi` `Converter`/`IntConverter` nodes implement the GenApi §2.8.10 reserved variables: read maps the register value to `TO` (`FormulaFrom`, e.g. `(TO & 0x00080000) >> 19`); write maps the user value to `FROM` with `pVariables` evaluated as the current register domain for read-modify-write. Legacy single-variable converters keep the old `X`-binds-user-value binding.
+- `genapi` `Boolean` nodes honor `<OnValue>`/`<OffValue>` when a camera overrides the §2.8.7 default of `1`/`0` (`SetBoolean`/`ReadBoolean`).
+- `genapi` `IntReg`/`MaskedIntReg` apply per-node `<Sign>` sign-extension and `<Endianess>` byte order (defaulting to device order), and the read path applies the LSB/MSB mask.
+- `gvcp.ReadManifestTable` parses the conformant GenCP 1.3.1 Manifest Table (u64 count + 64-byte entries carrying FileVersion/Schema/FileSize/SHA1) in addition to the vendor Huaray "MTAB" layout; `ManifestEntry.GenCP` reports which layout produced the entry. `ManifestTableURL` serves both.
+- `gentl` adds the GenTL 1.6 `*_CustomID = 1000` constants: `InfoDataTypeCustomID`, `TLInfoCustomID`, `InterfaceInfoCustomID`, `DeviceAccessCustomID`, `DeviceAccessStatusCustomID`, `DeviceInfoCustomID`, `AcqStopFlagsCustomID`, `AcqStartFlagsCustomID`, `AcqQueueCustomID`, `StreamInfoCustomID`.
+
+### Fixed
+
+- `genapi` formula evaluator parsed `<>` as `<` then `>` ("bad token at `> 0`") on camera formulas like `GevTimestampControlResetAvailExpr`; `<>` is now a single spacing-tolerant token at the equality tier.
+- `internal/color` Bayer demosaic mixed up the R/B channels on `RGGB` and `GBRG` patterns and mishandled green-site sampling; the kernels now bounds-check at image edges. Regression-tested by a uniform-tile fidelity test for all four patterns in the 8- and 16-bit paths.
+- `internal/color` `DecodeHighDepth` for unpacked `Mono10`/`Mono12`/`Mono14` (LE `uint16`) now left-aligns samples to 16 bits (`<< (16-bits)`) instead of surfacing the raw low byte.
+- `gvsp.ParseChunkPayload` now parses the GenDC 1.1 §2.2.8.1 trailing-tag chunk format (the actual wire format) instead of a 16-byte-header layout that matched no device; `IsChunkData` validates the tag chain back to byte zero.
+- `internal/genDC` treats `PartOffset[]` as container-relative per GenDC §2.2.4 (was sliced relative to the component, misparsing any component whose part data did not immediately follow).
+
+### Changed
+
+- `gvsp` payload-type helpers now use real GenTL ids (`PayloadTypeChunkData = 0x00000004`, `PayloadTypeGenDC = 0x0000000B`, `PayloadTypeMultiPart = 0x0000000A`); the vendor high-bit aliases encode the same ids (`0x80000000 | id`). `ComponentDepth` comment notes the Huaray BSCF wire value vs. GenDC `Range` (`0x04`).
+
+### Tests
+
+- `genapi`: `TestEvalFormulaNotEqual`, `TestEvalFormulaTernaryRegression`, `TestConverterReservedFromTo`.
+- `gvcp`: `TestReadManifestTableGenCP`.
+- `gvsp`: `TestChunkPayload` rewritten for the trailing-tag format; `TestChunkPayloadTruncated`.
+- `internal/color`: `TestBayerFidelityUniform` (four patterns, 8- and 16-bit); `TestDecodeHighDepth_MonoPacked` updated.
+
 ## [1.5.0] - 2026-08-21
 
 ### Added

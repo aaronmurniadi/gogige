@@ -11,7 +11,7 @@ Hand-complete rows still open against the reference specs; this is the canonical
 | Area | Item | Status |
 | ---- | ---- | ------ |
 | GenApi 2.1.1 | `Category` / `StructReg` as first-class node types (parsed/skipped today) | [ ] |
-| GenApi 2.1.1 | SwissKnife ops: `**` exponent not yet in `evaluator.go` (rest of § formula grammar done) | [~] |
+| GenApi 2.1.1 | SwissKnife `**` exponent (rest of § formula grammar done) | [x] |
 | GenApi + SFNC 2.7 | Formal `Gev*` / `Device*` streaming-feature coverage | [~] |
 | GenTL 1.6 | `.cti` loader (`gentl/cti.go`, `dlopen` / CGO, off by default) | [ ] |
 | GenTL 1.6 | Module ladder: `TLOpen`→`DSStartAcquisition`+`EVENT_NEW_BUFFER` | [ ] |
@@ -176,7 +176,7 @@ Refs: `_references/GenApi/GenICam_Standard_v2_1_1.pdf`, `_references/SFNC/GenICa
 | Pointers: `pAddress`, `pMin`/`pMax`/`pInc`, `pValue`             | [x]        | `pAddress`/`pValue` + `pMin`/`pMax`/`pInc` implemented; min/max/inc static values |
 | `pIsImplemented` / `pIsAvailable` / `pIsLocked` / `pInvalidator` | [x]        | `IsImplemented`/`IsAvailable`/`IsLocked` + `GetInvalidator`                 |
 | ManifestTable (`0x01D0`) path                                    | [x]        | `ReadManifestTable` + `ManifestTableURL` preferred over FirstURL             |
-| SwissKnife ops                                          | [~]        | `+ - * / % & \| ^ << >> ~ ( ) = == != < > <= >= && || ?:` in `evaluator.go`; `**` (exponent) not yet supported |
+| SwissKnife ops                                          | [x]        | `+ - * / % & \| ^ << >> ~ ( ) = == != < > <= >= && \|\| ?: **` in `evaluator.go` (full § grammar, `<>` alias, `E`/`PI`, 24 math funcs) |
 | SwissKnife funcs (`SQRT`, `FLOOR`, `CEIL`, `ABS`)                | [x]        | `ABS`, `FLOOR`, `CEIL`, `SQRT` in `evaluator.go`                             |
 | Dedicated `port.go` binding + endianness                         | [x]        | Port node → `gvcp.Port` Read/Write; complete with byte order awareness       |
 | SFNC-required features for streaming                             | [~]        | `AcquisitionStart/Stop`, `AcquisitionMode`, `AcquisitionFrameRate` wired; formal `Gev*` (SCPS, heartbeat interval) + `Device*` coverage TBD per `GenICam_SFNC_v2_7.pdf` |
