@@ -274,21 +274,37 @@ func (g *GVCP) LeaveControl() error {
 	return g.WriteReg(gvbsCCP, 0)
 }
 
-// ManifestEntry describes a single entry in the device ManifestTable.
+// ManifestEntry describes a single entry in the device ManifestTable. Two
+// on-wire layouts exist:
+//
+//   - GenCP-conformant (GenCP 1.3.1 Table 33/34): an 8-byte entry count
+//     followed by 64-byte entries { FileVersion u32, Schema/filetype/fileformat
+//     bitfield u32, Register Address u64, File Size u64, SHA1 [20], Reserved }.
+//   - Vendor "MTAB" table (Huaray BSCF quirk, not GenCP): a "MTAB" magic + u32
+//     count followed by 12-byte entries { Address u32, Length u32, Type u32 }.
+//
+// Fields that the layout that produced the entry does not carry are zero;
+// GenCP reports whether the entry came from a conformant table.
 type ManifestEntry struct {
-	Address uint32
-	Length  uint32
-	Type    uint32
+	FileVersion uint32   // forward: sub-minor|<<8 minor|... major (GenCP)
+	Schema      uint32   // schema/filetype/fileformat bitfield (GenCP)
+	Address     uint64   // register address of the file (both layouts; u32 in MTAB)
+	Length      uint32   // vendor MTAB: file length in bytes
+	Type        uint32   // vendor MTAB: file type; ManifestEntryTypeXML is the only defined value
+	FileSize    uint64   // GenCP: file size in bytes
+	SHA1        [20]byte // GenCP: SHA1 hash, zero when not available
+	GenCP       bool     // parsed from a GenCP-conformant table
 }
 
 const ManifestEntryTypeXML = 0x00000001
 
-// ReadManifestTable reads the GenCP ManifestTable pointed to by the
+// ReadManifestTable reads the device ManifestTable pointed to by the
 // AbrmManifestTableAddress bootstrap register (0x01D0).
-// Returns nil, nil if the register is zero or the table is not present.
-// Devices without GenCP ManifestTable support (many GigE Vision cameras) reject
-// the bootstrap read with INVALID_ACCESS; that is treated as "no table" so
-// callers fall back to the classic FirstURL.
+// Returns nil, nil if the register is zero, the table is not present, or the
+// address points at neither a conformant GenCP table nor a vendor "MTAB"
+// table. Devices without GenCP ManifestTable support (many GigE Vision
+// cameras) reject the bootstrap read with INVALID_ACCESS; that is treated as
+// "no table" so callers fall back to the classic FirstURL.
 func ReadManifestTable(p Port) ([]ManifestEntry, error) {
 	addrBytes, err := p.ReadMem(AbrmManifestTableAddress, 8)
 	if err != nil {
@@ -301,22 +317,28 @@ func ReadManifestTable(p Port) ([]ManifestEntry, error) {
 	if tableAddr == 0 {
 		return nil, nil
 	}
-	header, err := p.ReadMem(uint32(tableAddr), 12)
+	head, err := p.ReadMem(uint32(tableAddr), 12)
 	if err != nil {
 		return nil, err
 	}
-	if string(header[0:4]) != "MTAB" {
-		return nil, nil
+	if string(head[0:4]) == "MTAB" {
+		return readVendorMTAB(p, uint32(tableAddr), head)
 	}
-	count := binary.BigEndian.Uint32(header[8:12])
+	return readGenCPManifestTable(p, uint32(tableAddr), head)
+}
+
+// readVendorMTAB parses the Huaray-specific "MTAB" manifest layout (magic +
+// u32 count + 12-byte {Address, Length, Type} entries). This is NOT the GenCP
+// 1.3.1 Manifest Table (Table 33/34), but the tested Huaray BSCF devices
+// expose it, so it is kept as a documented vendor quirk, detected by its magic.
+func readVendorMTAB(p Port, tableAddr uint32, head []byte) ([]ManifestEntry, error) {
+	count := binary.BigEndian.Uint32(head[8:12])
 	if count == 0 || count > 1024 {
 		return nil, nil
 	}
 	entries := make([]ManifestEntry, 0, count)
-	tableOff := uint32(tableAddr) + 12
 	entrySize := 12
-	total := int(count) * entrySize
-	raw, err := p.ReadMem(tableOff, total)
+	raw, err := p.ReadMem(tableAddr+12, int(count)*entrySize)
 	if err != nil {
 		return nil, err
 	}
@@ -326,9 +348,41 @@ func ReadManifestTable(p Port) ([]ManifestEntry, error) {
 			break
 		}
 		entries = append(entries, ManifestEntry{
-			Address: binary.BigEndian.Uint32(raw[off : off+4]),
+			Address: uint64(binary.BigEndian.Uint32(raw[off : off+4])),
 			Length:  binary.BigEndian.Uint32(raw[off+4 : off+8]),
 			Type:    binary.BigEndian.Uint32(raw[off+8 : off+12]),
+		})
+	}
+	return entries, nil
+}
+
+// readGenCPManifestTable parses a conformant GenCP 1.3.1 Manifest Table
+// (Table 33/34): an 8-byte big-endian entry count followed by 64-byte entries.
+func readGenCPManifestTable(p Port, tableAddr uint32, head []byte) ([]ManifestEntry, error) {
+	count := binary.BigEndian.Uint64(head[0:8])
+	if count == 0 || count > 1024 {
+		return nil, nil
+	}
+	const entrySize = 64
+	raw, err := p.ReadMem(tableAddr+8, int(count)*entrySize)
+	if err != nil {
+		return nil, err
+	}
+	entries := make([]ManifestEntry, 0, count)
+	for i := uint64(0); i < count; i++ {
+		off := int(i * entrySize)
+		if off+entrySize > len(raw) {
+			break
+		}
+		var sha1 [20]byte
+		copy(sha1[:], raw[off+24:off+44])
+		entries = append(entries, ManifestEntry{
+			FileVersion: binary.BigEndian.Uint32(raw[off+0 : off+4]),
+			Schema:      binary.BigEndian.Uint32(raw[off+4 : off+8]),
+			Address:     binary.BigEndian.Uint64(raw[off+8 : off+16]),
+			FileSize:    binary.BigEndian.Uint64(raw[off+16 : off+24]),
+			SHA1:        sha1,
+			GenCP:       true,
 		})
 	}
 	return entries, nil
@@ -342,17 +396,27 @@ func ManifestTableURL(p Port) (string, error) {
 		return "", err
 	}
 	for _, e := range entries {
-		if e.Type == ManifestEntryTypeXML && e.Length > 0 {
-			data, err := p.ReadMem(e.Address, int(e.Length))
-			if err != nil {
+		length := uint64(e.Length)
+		if e.GenCP {
+			if e.FileSize == 0 {
 				continue
 			}
-			trimmed := bytes.TrimRight(data, "\x00")
-			s := string(trimmed)
-			if strings.HasPrefix(s, "<?xml") || strings.HasPrefix(s, "local:") ||
-				strings.HasPrefix(s, "http://") || strings.HasPrefix(s, "https://") {
-				return s, nil
-			}
+			length = e.FileSize
+		} else if e.Type != ManifestEntryTypeXML || e.Length == 0 {
+			continue
+		}
+		if e.Address > uint64(^uint32(0)) || length > 1<<20 {
+			continue
+		}
+		data, err := p.ReadMem(uint32(e.Address), int(length))
+		if err != nil {
+			continue
+		}
+		trimmed := bytes.TrimRight(data, "\x00")
+		s := string(trimmed)
+		if strings.HasPrefix(s, "<?xml") || strings.HasPrefix(s, "local:") ||
+			strings.HasPrefix(s, "http://") || strings.HasPrefix(s, "https://") {
+			return s, nil
 		}
 	}
 	return "", nil

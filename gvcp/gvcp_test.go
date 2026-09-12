@@ -238,6 +238,47 @@ func TestReadManifestTable(t *testing.T) {
 	}
 }
 
+func TestReadManifestTableGenCP(t *testing.T) {
+	tableAddr := uint32(0x1000)
+	m := &memPort{mem: map[uint32]byte{}}
+	addrBytes := make([]byte, 8)
+	binary.BigEndian.PutUint64(addrBytes, uint64(tableAddr))
+	for i, b := range addrBytes {
+		m.mem[AbrmManifestTableAddress+uint32(i)] = b
+	}
+	// Conformant GenCP table (no magic): u64 count + 64-byte entries.
+	countBytes := make([]byte, 8)
+	binary.BigEndian.PutUint64(countBytes, 1)
+	m.WriteMem(tableAddr, countBytes)
+	entry := make([]byte, 64)
+	binary.BigEndian.PutUint32(entry[0:], 0x010A0000) // file version 1.10.0
+	binary.BigEndian.PutUint32(entry[4:], 0x00000000) // filetype=0 Device XML, fileformat=0 uncompressed
+	binary.BigEndian.PutUint64(entry[8:], 0x2000)     // register address
+	binary.BigEndian.PutUint64(entry[16:], 5)         // file size
+	entry[24] = 0x11                                  // sha1 fingerprint
+	m.WriteMem(tableAddr+8, entry)
+	m.WriteMem(0x2000, []byte("<?xml"))
+
+	entries, err := ReadManifestTable(m)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(entries) != 1 {
+		t.Fatalf("entries=%d", len(entries))
+	}
+	if e := entries[0]; !e.GenCP || e.FileSize != 5 || e.Address != 0x2000 ||
+		e.FileVersion != 0x010A0000 || e.SHA1[0] != 0x11 {
+		t.Fatalf("entry=%+v", e)
+	}
+	url, err := ManifestTableURL(m)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if url != "<?xml" {
+		t.Fatalf("url=%q", url)
+	}
+}
+
 func TestReadManifestTableZeroAddr(t *testing.T) {
 	m := &memPort{mem: map[uint32]byte{}}
 	// Zero address in 0x01D0
