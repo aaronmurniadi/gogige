@@ -174,9 +174,11 @@ Refs: `_references/GenApi/GenICam_Standard_v2_1_1.pdf`, `_references/SFNC/GenICa
 | Core node kinds + set/get                                        | [x]        | Integer, Boolean, Float, String, Enum, Command, \*Reg, SwissKnife, Converter |
 | `Category` / `StructReg` as first-class types                    | [ ]        | Parsed + skipped today ([GenApi §.2.x Category / §.3.4 StructReg]); need node kinds + traversal for layout/category enum |
 | Pointers: `pAddress`, `pMin`/`pMax`/`pInc`, `pValue`             | [x]        | `pAddress`/`pValue` + `pMin`/`pMax`/`pInc` implemented; min/max/inc static values |
-| `pIsImplemented` / `pIsAvailable` / `pIsLocked` / `pInvalidator` | [x]        | `IsImplemented`/`IsAvailable`/`IsLocked` + `GetInvalidator`                 |
+| `pIsImplemented` / `pIsAvailable` / `pIsLocked` / `pInvalidator` | [x]        | `IsImplemented`/`IsAvailable`/`IsLocked` + `GetInvalidator`; runtime access derived per §2.5 (NI→NA→RW/RO/WO narrowed by `ImposedAccessMode`, locked RW→RO / WO→NA) and enforced at Set*/Read*/CurrentEnum |
+| Constant `Float`/`String`/`Integer` nodes                       | [x]        | `<Value>` with no address reads its constant (floating nodes; `readFloatReg`/`readStringReg`); `resolveAddr` accepts address 0 (ABRM) and errors on >32-bit sums |
 | ManifestTable (`0x01D0`) path                                    | [x]        | `ReadManifestTable` + `ManifestTableURL` preferred over FirstURL             |
 | SwissKnife ops                                          | [x]        | `+ - * / % & \| ^ << >> ~ ( ) = == != < > <= >= && \|\| ?: **` in `evaluator.go` (full § grammar, `<>` alias, `E`/`PI`, 24 math funcs) |
+| SwissKnife variable suffixes (`.Min/.Max/.Inc/.Value/.Entry`) | [x]        | `formulaContext` + `suffixResolver` in `port.go`; int-domain variables only (float-domain `pVariable`s still a GAP in `FINDINGS.md`) |
 | SwissKnife funcs (`SQRT`, `FLOOR`, `CEIL`, `ABS`)                | [x]        | `ABS`, `FLOOR`, `CEIL`, `SQRT` in `evaluator.go`                             |
 | Dedicated `port.go` binding + endianness                         | [x]        | Port node → `gvcp.Port` Read/Write; complete with byte order awareness       |
 | SFNC-required features for streaming                             | [~]        | `AcquisitionStart/Stop`, `AcquisitionMode`, `AcquisitionFrameRate` wired; formal `Gev*` (SCPS, heartbeat interval) + `Device*` coverage TBD per `GenICam_SFNC_v2_7.pdf` |
@@ -209,6 +211,8 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 ---
 
 ## Migration log
+
+- **2026-09-12** — GenApi core gaps closed (FINDINGS §3 items 1-4): `resolveAddr` accepts ABRM address 0 and rejects >32-bit sums; constant `Float`/`String`/`Integer` nodes read via `<Value>`; runtime access mode derived per §2.5 (NI/NA, `ImposedAccessMode`, locked RW→RO and WO→NA) and enforced at Set*/Read*/CurrentEnum incl. target-register writes; SwissKnife variable suffixes `.Min/.Max/.Inc/.Value/.Entry` resolved. Offline replay of the Huaray `DS5131MG30CE` XML shows 0 regressions (remaining errors are guard-correct NI/NA/WO or pre-existing float-domain SwissKnife gaps). Locked by `genapi/gaps_test.go`.
 
 - **2026-08-09** — Fixed streaming OOM: OOO ring slots were preallocated at 8 MiB each (256 × 8 MiB ≈ 2 GiB per `frameBuild`), so the websocket/live examples ballooned to >10 GiB RSS and got SIGKILL'd. Slots now capped at 16 KiB (a single GVSP transport packet); `gvsp.Stream` additionally bounds concurrent in-flight frames (`maxInFlightFrames=64`) and evicts the oldest incomplete build when full.
 

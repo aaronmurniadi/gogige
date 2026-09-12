@@ -68,7 +68,19 @@ func floatToInt(f float64) int64 { return int64(f) }
 // Supports functions: SGN NEG ABS FLOOR CEIL TRUNC ROUND SQRT EXP LN LG
 // SIN COS TAN ATAN ASIN ACOS and constants E, PI.
 func evalFormula(expr string, vars map[string]int64) (int64, error) {
-	p := &formParser{s: strings.TrimSpace(expr), vars: vars}
+	return evalFormulaRefs(expr, vars, nil)
+}
+
+// suffixResolver resolves a SwissKnife variable qualified with a GenApi
+// feature-access suffix (".Min", ".Max", ".Inc", ".Value", ".Entry"; §2.8.13).
+// The second return value reports whether name is a known variable; a known
+// variable with an unknown suffix yields an error.
+type suffixResolver func(name, suffix string) (int64, bool, error)
+
+// evalFormulaRefs is evalFormula with optional variable-suffix resolution for
+// SwissKnife formulas that reference feature constraints.
+func evalFormulaRefs(expr string, vars map[string]int64, resolve suffixResolver) (int64, error) {
+	p := &formParser{s: strings.TrimSpace(expr), vars: vars, resolve: resolve}
 	v, err := p.parseExpr()
 	if err != nil {
 		return 0, err
@@ -80,9 +92,10 @@ func evalFormula(expr string, vars map[string]int64) (int64, error) {
 }
 
 type formParser struct {
-	s    string
-	i    int
-	vars map[string]int64
+	s       string
+	i       int
+	vars    map[string]int64
+	resolve suffixResolver
 }
 
 func (p *formParser) peek() byte {
@@ -563,6 +576,27 @@ func (p *formParser) parsePrimary() (int64, error) {
 			p.i++
 		}
 		name := p.s[start:p.i]
+		// Variable suffix: "Gain.Max", "LUT.Entry" (GenApi 2.1.1 §2.8.13).
+		// Only variables carry suffixes, never functions or constants.
+		if p.i < len(p.s) && p.s[p.i] == '.' {
+			p.i++
+			sstart := p.i
+			for p.i < len(p.s) && unicode.IsLetter(rune(p.s[p.i])) {
+				p.i++
+			}
+			if sstart == p.i {
+				return 0, fmt.Errorf("gige: formula trailing . at %q", p.s[p.i:])
+			}
+			suffix := p.s[sstart:p.i]
+			if p.resolve != nil {
+				if v, ok, err := p.resolve(name, suffix); err != nil {
+					return 0, err
+				} else if ok {
+					return v, nil
+				}
+			}
+			return 0, fmt.Errorf("gige: formula unknown var %q", name+"."+suffix)
+		}
 		if fn, ok := formulaFuncs[name]; ok {
 			if !p.accept("(") {
 				return 0, fmt.Errorf("gige: formula missing ( after %s", name)

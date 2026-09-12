@@ -5,6 +5,7 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math"
+	"strconv"
 
 	"github.com/aaronmurniadi/gogige/gvcp"
 )
@@ -17,6 +18,13 @@ type portAdapter struct {
 // newPortAdapter creates a portAdapter for a given gvcp.Port.
 func newPortAdapter(port gvcp.Port) *portAdapter {
 	return &portAdapter{port: port}
+}
+
+// addressable reports whether a node declares a register address of its own,
+// i.e. at least one <Address> or <pAddress> element. A node without any is a
+// Constant (see §2.8.13) and must not be read as a register.
+func addressable(n *gcNode) bool {
+	return len(n.Addresses) > 0 || len(n.PAddresses) > 0
 }
 
 // resolveAddr computes the effective device address for a node by summing
@@ -36,9 +44,16 @@ func (pa *portAdapter) resolveAddr(n *gcNode, nm *NodeMap) (uint32, int, error) 
 	if length <= 0 {
 		length = 4
 	}
-	if addr == 0 {
+	// An address of 0 is legitimate (e.g. GevVersionReg at ABRM 0x0000); only
+	// reject nodes that declare no address at all (Constants), and never
+	// silently truncate 64-bit pAddress sums (GVCP registers are 32-bit).
+	if !addressable(n) {
 		return 0, 0, fmt.Errorf("gige: feature %q has no register address (kind=%s addresses=%v pAddress=%v pValue=%s)",
 			n.Name, n.Kind, n.Addresses, n.PAddresses, n.PValue)
+	}
+	if addr > math.MaxUint32 {
+		return 0, 0, fmt.Errorf("gige: feature %q address 0x%x exceeds 32-bit register space",
+			n.Name, addr)
 	}
 	return uint32(addr), length, nil
 }
@@ -216,8 +231,17 @@ func (pa *portAdapter) writeFloatReg(n *gcNode, v float64, nm *NodeMap) error {
 	return pa.port.WriteMem(addr, b[:])
 }
 
-// readFloatReg reads a floating-point register from device memory.
+// readFloatReg reads a floating-point register from device memory. A constant
+// Float node (a <Value> with no regsiter address, §2.8.13) yields its parsed
+// constant instead of a register access.
 func (pa *portAdapter) readFloatReg(n *gcNode, nm *NodeMap) (float64, error) {
+	if !addressable(n) && n.Value != "" {
+		f, err := strconv.ParseFloat(n.Value, 64)
+		if err != nil {
+			return 0, fmt.Errorf("gige: feature %q constant Value %q: %w", n.Name, n.Value, err)
+		}
+		return f, nil
+	}
 	addr, length, err := pa.resolveAddr(n, nm)
 	if err != nil {
 		return 0, err
@@ -240,8 +264,12 @@ func (pa *portAdapter) readFloatReg(n *gcNode, nm *NodeMap) (float64, error) {
 	return float64(math.Float32frombits(v)), nil
 }
 
-// readStringReg reads a string register from device memory.
+// readStringReg reads a string register from device memory. A constant String
+// node (a <Value> with no register address) yields its constant.
 func (pa *portAdapter) readStringReg(n *gcNode, nm *NodeMap) (string, error) {
+	if !addressable(n) && n.Value != "" {
+		return n.Value, nil
+	}
 	addr, length, err := pa.resolveAddr(n, nm)
 	if err != nil {
 		return "", err
@@ -306,24 +334,73 @@ func (pa *portAdapter) readFormulaVariable(varName, featName string, nm *NodeMap
 	return int64(v), nil
 }
 
-// evaluateFormulaVariables builds a map of variable names to their computed integer values
-// for SwissKnife expression evaluation.
-func (pa *portAdapter) evaluateFormulaVariables(variables map[string]string, nm *NodeMap) (map[string]int64, error) {
+// formulaContext builds the eager variable values plus a suffix resolver that
+// maps "Var.Min/.Max/.Inc/.Value/.Entry" (GenApi 2.1.1 §2.8.13) onto the
+// referenced feature's constraints. Variables already bound in extra take the
+// caller-provided value without being evaluated from the feature map.
+func (pa *portAdapter) formulaContext(variables map[string]string, nm *NodeMap, extra map[string]int64) (map[string]int64, suffixResolver, error) {
 	vars := make(map[string]int64, len(variables))
 	for varName, feat := range variables {
+		if _, bound := extra[varName]; bound {
+			vars[varName] = extra[varName]
+			continue
+		}
 		v, err := pa.readFormulaVariable(varName, feat, nm, 0)
 		if err != nil {
-			return nil, err
+			return nil, nil, err
 		}
 		vars[varName] = v
 	}
-	return vars, nil
+	for k, v := range extra {
+		if _, isVar := variables[k]; !isVar {
+			vars[k] = v
+		}
+	}
+	resolve := func(name, suffix string) (int64, bool, error) {
+		feat, ok := variables[name]
+		if !ok {
+			return 0, false, nil
+		}
+		if _, err := nm.lookup(feat); err != nil {
+			return 0, false, fmt.Errorf("gige: var %s suffix %s: %w", name, suffix, err)
+		}
+		switch suffix {
+		case "Value", "Entry":
+			v, err := nm.evalIntegerValue(feat, 0)
+			return int64(v), true, err
+		case "Min", "Max", "Inc":
+			var v int64
+			var has bool
+			var err error
+			switch suffix {
+			case "Min":
+				v, has, err = nm.GetMin(feat)
+			case "Max":
+				v, has, err = nm.GetMax(feat)
+			case "Inc":
+				v, has, err = nm.GetInc(feat)
+			}
+			if err != nil {
+				return 0, true, fmt.Errorf("gige: var %s.%s: %w", name, suffix, err)
+			}
+			if !has {
+				return 0, true, fmt.Errorf("gige: var %s: feature %q has no %s constraint", name, feat, suffix)
+			}
+			return v, true, nil
+		}
+		return 0, true, fmt.Errorf("gige: var %s has no such suffix %q", name, suffix)
+	}
+	return vars, resolve, nil
 }
 
-// evaluateIntegerFormula computes a SwissKnife formula's value given a variable map.
-// This is a wrapper around the evaluator that returns uint64 for address/value computation.
-func (pa *portAdapter) evaluateIntegerFormula(formula string, vars map[string]int64) (uint64, error) {
-	v, err := evalFormula(formula, vars)
+// evaluateSwissKnife computes a SwissKnife formula where pVariables may use
+// .Value/.Min/.Max/.Inc/.Entry suffixes (GenApi 2.1.1 §2.8.13).
+func (pa *portAdapter) evaluateSwissKnife(formula string, variables map[string]string, nm *NodeMap, extra map[string]int64) (uint64, error) {
+	vars, resolve, err := pa.formulaContext(variables, nm, extra)
+	if err != nil {
+		return 0, err
+	}
+	v, err := evalFormulaRefs(formula, vars, resolve)
 	return uint64(v), err
 }
 
@@ -374,22 +451,14 @@ func (pa *portAdapter) resolveIntegerReference(n *gcNode, nm *NodeMap, depth int
 			return n.Address, nil
 		}
 	case "IntSwissKnife", "SwissKnife":
-		vars, err := pa.evaluateFormulaVariables(n.Variables, nm)
-		if err != nil {
-			return 0, fmt.Errorf("gige: %s vars: %w", n.Name, err)
-		}
 		if n.Formula == "" {
 			return 0, fmt.Errorf("gige: %s has empty Formula", n.Name)
 		}
-		return pa.evaluateIntegerFormula(n.Formula, vars)
+		return pa.evaluateSwissKnife(n.Formula, n.Variables, nm, nil)
 	case "IntConverter", "Converter":
 		formula := converterFormula(n, true)
 		if formula == "" {
 			return 0, fmt.Errorf("gige: %s has no FormulaFrom", n.Name)
-		}
-		vars, err := pa.evaluateFormulaVariables(n.Variables, nm)
-		if err != nil {
-			return 0, fmt.Errorf("gige: %s vars: %w", n.Name, err)
 		}
 		if formulaUses(formula, "TO") {
 			// FormulaFrom exposes the current register value as the reserved
@@ -402,9 +471,9 @@ func (pa *portAdapter) resolveIntegerReference(n *gcNode, nm *NodeMap, depth int
 			if err != nil {
 				return 0, fmt.Errorf("gige: %s FormulaFrom TO: %w", n.Name, err)
 			}
-			vars["TO"] = int64(rv)
+			return pa.evaluateSwissKnife(formula, n.Variables, nm, map[string]int64{"TO": int64(rv)})
 		}
-		return pa.evaluateIntegerFormula(formula, vars)
+		return pa.evaluateSwissKnife(formula, n.Variables, nm, nil)
 	case "IntReg", "MaskedIntReg":
 		return pa.readIntReg(n, nm)
 	case "Enumeration":

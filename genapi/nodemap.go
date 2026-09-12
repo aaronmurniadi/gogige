@@ -77,6 +77,9 @@ func (nm *NodeMap) ReadBoolean(name string) (bool, error) {
 	if n.Kind != "Boolean" {
 		return false, fmt.Errorf("gige: feature %s is %s, not Boolean", name, n.Kind)
 	}
+	if err := nm.checkReadAccess(n); err != nil {
+		return false, err
+	}
 	if n.PValue == "" {
 		return false, fmt.Errorf("gige: feature %s has no pValue", name)
 	}
@@ -108,9 +111,15 @@ func (nm *NodeMap) SetFloat(name string, v float64) error {
 	if err != nil {
 		return err
 	}
+	if err := nm.checkWriteAccess(n); err != nil {
+		return err
+	}
 	if n.Kind == "Float" && n.PValue != "" {
 		reg, err := nm.lookup(n.PValue)
 		if err != nil {
+			return err
+		}
+		if err := nm.checkWriteAccess(reg); err != nil {
 			return err
 		}
 		return nm.pa.writeFloatReg(reg, v, nm)
@@ -127,6 +136,9 @@ func (nm *NodeMap) SetString(name, val string) error {
 	if err != nil {
 		return err
 	}
+	if err := nm.checkWriteAccess(n); err != nil {
+		return err
+	}
 	if n.Kind == "Enumeration" {
 		ev, ok := n.Entries[val]
 		if !ok {
@@ -135,6 +147,15 @@ func (nm *NodeMap) SetString(name, val string) error {
 		return nm.writeIntegerish(n, ev)
 	}
 	if n.Kind == "String" || n.Kind == "StringReg" {
+		if n.PValue != "" {
+			reg, err := nm.lookup(n.PValue)
+			if err != nil {
+				return err
+			}
+			if err := nm.checkWriteAccess(reg); err != nil {
+				return err
+			}
+		}
 		return nm.pa.writeStringReg(n, val, nm)
 	}
 	if n.PValue != "" {
@@ -143,6 +164,9 @@ func (nm *NodeMap) SetString(name, val string) error {
 			return err
 		}
 		if reg.Kind == "StringReg" {
+			if err := nm.checkWriteAccess(reg); err != nil {
+				return err
+			}
 			return nm.pa.writeStringReg(reg, val, nm)
 		}
 	}
@@ -178,16 +202,127 @@ func (nm *NodeMap) lookup(name string) (*gcNode, error) {
 	return n, nil
 }
 
+// accessRank ranks GenApi access modes: higher is more restrictive.
+func accessRank(mode string) int {
+	switch mode {
+	case "RW":
+		return 0
+	case "RO", "WO":
+		return 1
+	default:
+		return 2 // NI, NA, anything unrecognized
+	}
+}
+
+// normalizeAccess canonicalizes an AccessMode string. Empty is the GenApi
+// 2.1.1 §2.8.1 default RW; the §2.8.13 NI/NA meta-modes are surfaced as-is.
+func normalizeAccess(mode string) string {
+	switch mode {
+	case "WO", "RO", "NI", "NA":
+		return mode
+	default:
+		return "RW"
+	}
+}
+
+// effectiveAccess computes the runtime access mode of a feature per GenApi
+// 2.1.1 §2.8.1/§2.8.12: the declared AccessMode narrowed by any
+// ImposedAccessMode, then downgraded by not-implemented/not-available/locked
+// conditions. Returns one of "NI", "NA", "WO", "RO", "RW".
+func (nm *NodeMap) effectiveAccess(n *gcNode) (string, error) {
+	impl, err := nm.IsImplemented(n.Name)
+	if err != nil {
+		return "", fmt.Errorf("gige: access %s: %w", n.Name, err)
+	}
+	if !impl {
+		return "NI", nil
+	}
+	avail, err := nm.IsAvailable(n.Name)
+	if err != nil {
+		return "", fmt.Errorf("gige: access %s: %w", n.Name, err)
+	}
+	if !avail {
+		return "NA", nil
+	}
+	mode := normalizeAccess(n.Access)
+	if im := normalizeAccess(n.ImposedAccess); accessRank(im) > accessRank(mode) {
+		mode = im
+	}
+	locked, err := nm.IsLocked(n.Name)
+	if err != nil {
+		return "", fmt.Errorf("gige: access %s: %w", n.Name, err)
+	}
+	if locked {
+		switch mode {
+		case "RW":
+			return "RO", nil
+		case "WO":
+			// Locked write-only: neither readable (WO) nor writable (locked).
+			return "NA", nil
+		}
+	}
+	return mode, nil
+}
+
+// checkWriteAccess rejects writes to features whose effective access mode is
+// not RW/WO (GenApi 2.1.1 §2.8.1).
+func (nm *NodeMap) checkWriteAccess(n *gcNode) error {
+	mode, err := nm.effectiveAccess(n)
+	if err != nil {
+		return err
+	}
+	switch mode {
+	case "RW", "WO":
+		return nil
+	case "RO":
+		return fmt.Errorf("gige: feature %q is read-only; requires RW or WO to write", n.Name)
+	case "NA":
+		return fmt.Errorf("gige: feature %q is not available", n.Name)
+	case "NI":
+		return fmt.Errorf("gige: feature %q is not implemented", n.Name)
+	}
+	return fmt.Errorf("gige: feature %q has invalid access mode %q", n.Name, mode)
+}
+
+// checkReadAccess rejects reads of features whose effective access mode is not
+// RW/RO (GenApi 2.1.1 §2.8.1).
+func (nm *NodeMap) checkReadAccess(n *gcNode) error {
+	mode, err := nm.effectiveAccess(n)
+	if err != nil {
+		return err
+	}
+	switch mode {
+	case "RW", "RO":
+		return nil
+	case "WO":
+		return fmt.Errorf("gige: feature %q is write-only", n.Name)
+	case "NA":
+		return fmt.Errorf("gige: feature %q is not available", n.Name)
+	case "NI":
+		return fmt.Errorf("gige: feature %q is not implemented", n.Name)
+	}
+	return fmt.Errorf("gige: feature %q has invalid access mode %q", n.Name, mode)
+}
+
 func (nm *NodeMap) writeIntegerish(n *gcNode, v int64) error {
+	if err := nm.checkWriteAccess(n); err != nil {
+		return err
+	}
 	if n.Kind == "Converter" || n.Kind == "IntConverter" {
 		regVal, target, err := nm.convertUserToRegister(n, v)
 		if err != nil {
+			return err
+		}
+		if err := nm.checkWriteAccess(target); err != nil {
 			return err
 		}
 		return nm.pa.writeIntReg(target, regVal, nm)
 	}
 	target, err := nm.pa.resolveIntegerTarget(n, nm)
 	if err != nil {
+		return err
+	}
+	if err := nm.checkWriteAccess(target); err != nil {
 		return err
 	}
 	return nm.pa.writeIntReg(target, v, nm)
@@ -210,25 +345,23 @@ func (nm *NodeMap) convertUserToRegister(n *gcNode, v int64) (int64, *gcNode, er
 	// convention (FormulaTo written purely in terms of the one pVariable)
 	// instead binds that variable to the user value.
 	modern := formulaUses(formula, "FROM")
-	vars := make(map[string]int64, len(n.Variables)+1)
-	for varName, feat := range n.Variables {
-		if !modern && (feat == n.PValue || len(n.Variables) == 1) {
-			vars[varName] = v
-			continue
-		}
-		fv, err := nm.evalIntegerValue(feat, 0)
-		if err != nil {
-			return 0, nil, fmt.Errorf("gige: converter %s var %s: %w", n.Name, varName, err)
-		}
-		vars[varName] = int64(fv)
-	}
+	extra := map[string]int64{}
 	if modern {
-		vars["FROM"] = v
+		extra["FROM"] = v
+	} else {
+		// Legacy: bind the user value onto the variable referencing the
+		// <pValue> register (or the only variable when there is exactly one).
+		for varName, feat := range n.Variables {
+			if feat == n.PValue || len(n.Variables) == 1 {
+				extra[varName] = v
+			}
+		}
 	}
-	regVal, err := evalFormula(formula, vars)
+	rawVal, err := nm.pa.evaluateSwissKnife(formula, n.Variables, nm, extra)
 	if err != nil {
 		return 0, nil, fmt.Errorf("gige: converter %s FormulaTo: %w", n.Name, err)
 	}
+	regVal := int64(rawVal)
 	target, err := nm.pa.resolveIntegerTarget(n, nm)
 	if err != nil {
 		return 0, nil, err
@@ -333,6 +466,9 @@ func (nm *NodeMap) CurrentEnum(name string) (string, error) {
 	if n.Kind != "Enumeration" {
 		return "", fmt.Errorf("gige: feature %s is %s, not Enumeration", name, n.Kind)
 	}
+	if err := nm.checkReadAccess(n); err != nil {
+		return "", err
+	}
 	v, err := nm.evalIntegerValue(name, 0)
 	if err != nil {
 		return "", err
@@ -348,6 +484,13 @@ func (nm *NodeMap) CurrentEnum(name string) (string, error) {
 // ReadInteger returns the current value of an Integer-like feature
 // (Integer, IntReg, MaskedIntReg, SwissKnife/Converter or Enumeration).
 func (nm *NodeMap) ReadInteger(name string) (int64, error) {
+	n, err := nm.lookup(name)
+	if err != nil {
+		return 0, err
+	}
+	if err := nm.checkReadAccess(n); err != nil {
+		return 0, err
+	}
 	v, err := nm.evalIntegerValue(name, 0)
 	return int64(v), err
 }
@@ -356,6 +499,9 @@ func (nm *NodeMap) ReadInteger(name string) (int64, error) {
 func (nm *NodeMap) ReadFloat(name string) (float64, error) {
 	n, err := nm.lookup(name)
 	if err != nil {
+		return 0, err
+	}
+	if err := nm.checkReadAccess(n); err != nil {
 		return 0, err
 	}
 	if n.Kind == "Converter" || n.Kind == "IntConverter" {
@@ -379,6 +525,9 @@ func (nm *NodeMap) ReadFloat(name string) (float64, error) {
 func (nm *NodeMap) ReadString(name string) (string, error) {
 	n, err := nm.lookup(name)
 	if err != nil {
+		return "", err
+	}
+	if err := nm.checkReadAccess(n); err != nil {
 		return "", err
 	}
 	target := n

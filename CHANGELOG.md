@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.6.1] - 2026-09-12
+
+### Fixed
+
+- `genapi` `resolveAddr` rejected the legitimate ABRM address `0x0` (e.g. `GevVersionReg`) and silently truncated `pAddress` sums over 32 bits; address 0 is now addressable and sums exceeding `math.MaxUint32` return an error instead of wrapping.
+- `genapi` constant `Float`/`String` nodes (a declarative `<Value>` with no register address) read as their constant via `readFloatReg`/`readStringReg`; they previously failed with "no register address".
+- `genapi` never derived or enforced runtime access modes per §2.5: RO writes / WO reads were unguarded and `ImposedAccessMode` was unparsed. `effectiveAccess` now reduces NI → NA → `AccessMode` ∩ `ImposedAccessMode` → locked (RW→RO, WO→NA), and `Set*`/`Read*`/`CurrentEnum` reject disallowed access — including on the resolved target register, not just the user feature.
+
+### Changed
+
+- `genapi` SwissKnife formulas resolve the §2.8.13 variable suffixes `.Min/.Max/.Inc/.Value/.Entry` (int-domain variables; float-domain `pVariable` targets remain a documented GAP).
+
+### Tests
+
+- `genapi/gaps_test.go`: `TestZeroAddressPermitted`, `TestAddressOverflowRejected`, `TestConstantFloatRead`, `TestConstantStringRead`, `TestReadOnlyWriteRejected`, `TestWriteOnlyRejected`, `TestNotImplemented`, `TestNotAvailable`, `TestLockedDowngrade`, `TestImposedAccessMode`, `TestSwissKnifeSuffixes`.
+
 ## [1.6.0] - 2026-09-12
 
 ### Added

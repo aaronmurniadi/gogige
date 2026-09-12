@@ -116,6 +116,11 @@ type gcNode struct {
 	// device byte order (ImplementationEndianness).
 	Endianess string
 
+	// ImposedAccess narrows the effective access mode below what AccessMode
+	// declares (GenApi 2.1.1 §2.8.1). When set, the effective mode is the most
+	// restrictive of Access and ImposedAccess.
+	ImposedAccess string
+
 	// Static constraint values for Integer and Float nodes.
 	// Used when Min/Max/Inc are constant rather than computed via pointers.
 	Min int64

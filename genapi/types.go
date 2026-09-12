@@ -35,6 +35,7 @@ type nodeFields struct {
 	PInvalidator   string
 	Sign           string
 	Endianess      string
+	ImposedAccess  string
 	Min            int64
 	Max            int64
 	Inc            int64
@@ -152,6 +153,8 @@ func parseNodeFields(inner []byte) nodeFields {
 			f.Sign = text
 		case "Endianess":
 			f.Endianess = text
+		case "ImposedAccessMode":
+			f.ImposedAccess = text
 		}
 	}
 	if f.LSB >= 0 && f.MSB >= 0 {
@@ -267,6 +270,7 @@ func parseNodeXML(kind string, name string, inner []byte) *gcNode {
 		PInvalidator:   fields.PInvalidator,
 		Sign:           fields.Sign,
 		Endianess:      fields.Endianess,
+		ImposedAccess:  fields.ImposedAccess,
 		Min:            fields.Min,
 		Max:            fields.Max,
 		Inc:            fields.Inc,
