@@ -82,6 +82,7 @@ const (
 	InfoDataTypeSizeT      = 12
 	InfoDataTypeBuffer     = 13
 	InfoDataTypePtrDiff    = 14
+	InfoDataTypeCustomID   = 1000 // INFO_DATATYPE_CUSTOM_ID: starting value for custom IDs
 )
 
 // Character encodings (TL_CHAR_ENCODING_LIST)
@@ -103,6 +104,7 @@ const (
 	TLInfoCharEncoding  = 8
 	TLInfoGenTLVerMajor = 9
 	TLInfoGenTLVerMinor = 10
+	TLInfoCustomID      = 1000 // TL_INFO_CUSTOM_ID: starting value for custom IDs
 )
 
 // Interface info commands (INTERFACE_INFO_CMD_LIST)
@@ -110,6 +112,7 @@ const (
 	InterfaceInfoID          = 0
 	InterfaceInfoDisplayName = 1
 	InterfaceInfoTLType      = 2
+	InterfaceInfoCustomID    = 1000 // INTERFACE_INFO_CUSTOM_ID: starting value for GenTL Producer custom IDs
 )
 
 // Device access flags (DEVICE_ACCESS_FLAGS_LIST)
@@ -119,6 +122,7 @@ const (
 	DeviceAccessReadOnly  = 2
 	DeviceAccessControl   = 3
 	DeviceAccessExclusive = 4
+	DeviceAccessCustomID  = 1000 // DEVICE_ACCESS_CUSTOM_ID: starting value for GenTL Producer custom IDs
 )
 
 // Device access status (DEVICE_ACCESS_STATUS_LIST)
@@ -127,9 +131,10 @@ const (
 	DeviceAccessStatusReadWrite     = 1
 	DeviceAccessStatusReadOnly      = 2
 	DeviceAccessStatusNoAccess      = 3
-	DeviceAccessStatusBusy          = 4 // GenTL v1.5
-	DeviceAccessStatusOpenReadWrite = 5 // GenTL v1.5
-	DeviceAccessStatusOpenReadOnly  = 6 // GenTL v1.5
+	DeviceAccessStatusBusy          = 4    // GenTL v1.5
+	DeviceAccessStatusOpenReadWrite = 5    // GenTL v1.5
+	DeviceAccessStatusOpenReadOnly  = 6    // GenTL v1.5
+	DeviceAccessStatusCustomID      = 1000 // DEVICE_ACCESS_STATUS_CUSTOM_ID
 )
 
 // Device info commands (DEVICE_INFO_CMD_LIST)
@@ -140,21 +145,24 @@ const (
 	DeviceInfoTLType             = 3
 	DeviceInfoDisplayName        = 4
 	DeviceInfoAccessStatus       = 5
-	DeviceInfoUserDefinedName    = 6 // GenTL v1.4
-	DeviceInfoSerialNumber       = 7 // GenTL v1.4
-	DeviceInfoVersion            = 8 // GenTL v1.4
-	DeviceInfoTimestampFrequency = 9 // GenTL v1.4
+	DeviceInfoUserDefinedName    = 6    // GenTL v1.4
+	DeviceInfoSerialNumber       = 7    // GenTL v1.4
+	DeviceInfoVersion            = 8    // GenTL v1.4
+	DeviceInfoTimestampFrequency = 9    // GenTL v1.4
+	DeviceInfoCustomID           = 1000 // DEVICE_INFO_CUSTOM_ID
 )
 
 // Acquisition stop flags (ACQ_STOP_FLAGS_LIST)
 const (
-	AcqStopFlagsDefault = 0
-	AcqStopFlagsKill    = 1
+	AcqStopFlagsDefault  = 0
+	AcqStopFlagsKill     = 1
+	AcqStopFlagsCustomID = 1000 // ACQ_STOP_FLAGS_CUSTOM_ID
 )
 
 // Acquisition start flags (ACQ_START_FLAGS_LIST)
 const (
-	AcqStartFlagsDefault = 0
+	AcqStartFlagsDefault  = 0
+	AcqStartFlagsCustomID = 1000 // ACQ_START_FLAGS_CUSTOM_ID
 )
 
 // Acquisition queue types (ACQ_QUEUE_TYPE_LIST)
@@ -164,6 +172,7 @@ const (
 	AcqQueueAllToInput      = 2
 	AcqQueueUnqueuedToInput = 3
 	AcqQueueAllDiscard      = 4
+	AcqQueueCustomID        = 1000 // ACQ_QUEUE_CUSTOM_ID
 )
 
 // Stream info commands (STREAM_INFO_CMD_LIST)
@@ -179,11 +188,12 @@ const (
 	StreamInfoIsGrabbing              = 8
 	StreamInfoDefinesPayloadSize      = 9
 	StreamInfoTLType                  = 10
-	StreamInfoNumChunksMax            = 11 // GenTL v1.3
-	StreamInfoBufAnnounceMin          = 12 // GenTL v1.3
-	StreamInfoBufAlignment            = 13 // GenTL v1.3
-	StreamInfoFlowTable               = 14 // GenTL v1.6
-	StreamInfoGenDCPrefetchDescriptor = 15 // GenTL v1.6
+	StreamInfoNumChunksMax            = 11   // GenTL v1.3
+	StreamInfoBufAnnounceMin          = 12   // GenTL v1.3
+	StreamInfoBufAlignment            = 13   // GenTL v1.3
+	StreamInfoFlowTable               = 14   // GenTL v1.6
+	StreamInfoGenDCPrefetchDescriptor = 15   // GenTL v1.6
+	StreamInfoCustomID                = 1000 // STREAM_INFO_CUSTOM_ID
 )
 
 // Buffer info commands (BUFFER_INFO_CMD_LIST)
@@ -198,28 +208,29 @@ const (
 	BufferInfoIsIncomplete              = 7
 	BufferInfoTLType                    = 8
 	BufferInfoSizeFilled                = 9
-	BufferInfoWidth                     = 10 // GenTL v1.2
-	BufferInfoHeight                    = 11 // GenTL v1.2
-	BufferInfoXOffset                   = 12 // GenTL v1.2
-	BufferInfoYOffset                   = 13 // GenTL v1.2
-	BufferInfoXPadding                  = 14 // GenTL v1.2
-	BufferInfoYPadding                  = 15 // GenTL v1.2
-	BufferInfoFrameID                   = 16 // GenTL v1.2
-	BufferInfoImagePresent              = 17 // GenTL v1.2
-	BufferInfoImageOffset               = 18 // GenTL v1.2
-	BufferInfoPayloadType               = 19 // GenTL v1.2
-	BufferInfoPixelFormat               = 20 // GenTL v1.2
-	BufferInfoPixelFormatNamespace      = 21 // GenTL v1.2
-	BufferInfoDeliveredImageHeight      = 22 // GenTL v1.2
-	BufferInfoDeliveredChunkPayloadSize = 23 // GenTL v1.2
-	BufferInfoChunkLayoutID             = 24 // GenTL v1.2
-	BufferInfoFilename                  = 25 // GenTL v1.2
-	BufferInfoPixelEndianness           = 26 // GenTL v1.4
-	BufferInfoDataSize                  = 27 // GenTL v1.4
-	BufferInfoTimestampNS               = 28 // GenTL v1.4
-	BufferInfoDataLargerThanBuffer      = 29 // GenTL v1.4
-	BufferInfoContainsChunkData         = 30 // GenTL v1.4
-	BufferInfoIsComposite               = 31 // GenTL v1.6
+	BufferInfoWidth                     = 10   // GenTL v1.2
+	BufferInfoHeight                    = 11   // GenTL v1.2
+	BufferInfoXOffset                   = 12   // GenTL v1.2
+	BufferInfoYOffset                   = 13   // GenTL v1.2
+	BufferInfoXPadding                  = 14   // GenTL v1.2
+	BufferInfoYPadding                  = 15   // GenTL v1.2
+	BufferInfoFrameID                   = 16   // GenTL v1.2
+	BufferInfoImagePresent              = 17   // GenTL v1.2
+	BufferInfoImageOffset               = 18   // GenTL v1.2
+	BufferInfoPayloadType               = 19   // GenTL v1.2
+	BufferInfoPixelFormat               = 20   // GenTL v1.2
+	BufferInfoPixelFormatNamespace      = 21   // GenTL v1.2
+	BufferInfoDeliveredImageHeight      = 22   // GenTL v1.2
+	BufferInfoDeliveredChunkPayloadSize = 23   // GenTL v1.2
+	BufferInfoChunkLayoutID             = 24   // GenTL v1.2
+	BufferInfoFilename                  = 25   // GenTL v1.2
+	BufferInfoPixelEndianness           = 26   // GenTL v1.4
+	BufferInfoDataSize                  = 27   // GenTL v1.4
+	BufferInfoTimestampNS               = 28   // GenTL v1.4
+	BufferInfoDataLargerThanBuffer      = 29   // GenTL v1.4
+	BufferInfoContainsChunkData         = 30   // GenTL v1.4
+	BufferInfoIsComposite               = 31   // GenTL v1.6
+	BufferInfoCustomID                  = 1000 // BUFFER_INFO_CUSTOM_ID
 )
 
 // Buffer part info commands (BUFFER_PART_INFO_CMD_LIST)
@@ -236,8 +247,9 @@ const (
 	BufferPartInfoXPadding             = 9
 	BufferPartInfoSourceID             = 10
 	BufferPartInfoDeliveredImageHeight = 11
-	BufferPartInfoRegionID             = 12 // GenTL v1.6
-	BufferPartInfoDataPurposeID        = 13 // GenTL v1.6
+	BufferPartInfoRegionID             = 12   // GenTL v1.6
+	BufferPartInfoDataPurposeID        = 13   // GenTL v1.6
+	BufferPartInfoCustomID             = 1000 // BUFFER_PART_INFO_CUSTOM_ID
 )
 
 // Payload type IDs (PAYLOADTYPE_INFO_IDS)
@@ -252,8 +264,9 @@ const (
 	PayloadTypeH264           = 7
 	PayloadTypeChunkOnly      = 8
 	PayloadTypeDeviceSpecific = 9
-	PayloadTypeMultiPart      = 10 // GenTL v1.5
-	PayloadTypeGenDC          = 11 // GenTL v1.6
+	PayloadTypeMultiPart      = 10   // GenTL v1.5
+	PayloadTypeGenDC          = 11   // GenTL v1.6
+	PayloadTypeCustomID       = 1000 // PAYLOAD_TYPE_CUSTOM_ID
 )
 
 // Pixel format namespace IDs (PIXELFORMAT_NAMESPACE_IDS)
@@ -263,6 +276,7 @@ const (
 	PixelFormatNamespaceIIDC      = 2
 	PixelFormatNamespacePFNC16Bit = 3
 	PixelFormatNamespacePFNC32Bit = 4
+	PixelFormatNamespaceCustomID  = 1000 // PIXELFORMAT_NAMESPACE_CUSTOM_ID
 )
 
 // Pixel endianness (PIXELENDIANNESS_IDS)
@@ -286,6 +300,7 @@ const (
 	PartDataTypeConfidenceMap     = 9
 	PartDataTypeJPEG              = 10
 	PartDataTypeJPEG2000          = 11
+	PartDataTypeCustomID          = 1000 // PART_DATATYPE_CUSTOM_ID
 )
 
 // Port info commands (PORT_INFO_CMD_LIST)
@@ -303,13 +318,15 @@ const (
 	PortInfoAccessNI     = 10
 	PortInfoVersion      = 11
 	PortInfoPortName     = 12
+	PortInfoCustomID     = 1000 // PORT_INFO_CUSTOM_ID
 )
 
 // URL scheme IDs (URL_SCHEME_IDS)
 const (
-	URLSchemeLocal = 0
-	URLSchemeHTTP  = 1
-	URLSchemeFile  = 2
+	URLSchemeLocal    = 0
+	URLSchemeHTTP     = 1
+	URLSchemeFile     = 2
+	URLSchemeCustomID = 1000 // URL_SCHEME_CUSTOM_ID
 )
 
 // URL info commands (URL_INFO_CMD_LIST)
@@ -325,6 +342,7 @@ const (
 	URLInfoFileSize            = 8
 	URLInfoScheme              = 9
 	URLInfoFilename            = 10
+	URLInfoCustomID            = 1000 // URL_INFO_CUSTOM_ID
 )
 
 // Event types (EVENT_TYPE_LIST)
@@ -334,7 +352,8 @@ const (
 	EventTypeFeatureInvalidate = 2
 	EventTypeFeatureChange     = 3
 	EventTypeRemoteDevice      = 4
-	EventTypeModule            = 5 // GenTL v1.4
+	EventTypeModule            = 5    // GenTL v1.4
+	EventTypeCustomID          = 1000 // EVENT_CUSTOM_ID
 )
 
 // Event info commands (EVENT_INFO_CMD_LIST)
@@ -344,18 +363,21 @@ const (
 	EventInfoNumFired    = 2
 	EventInfoSizeMax     = 3
 	EventInfoDataSizeMax = 4
+	EventInfoCustomID    = 1000 // EVENT_INFO_CUSTOM_ID
 )
 
 // Event data info commands (EVENT_DATA_INFO_CMD_LIST)
 const (
-	EventDataInfoID    = 0
-	EventDataInfoValue = 1
-	EventDataInfoNumID = 2
+	EventDataInfoID       = 0
+	EventDataInfoValue    = 1
+	EventDataInfoNumID    = 2
+	EventDataInfoCustomID = 1000 // EVENT_DATA_CUSTOM_ID
 )
 
 // Flow info commands (FLOW_INFO_CMD_LIST)
 const (
-	FlowInfoSize = 0
+	FlowInfoSize     = 0
+	FlowInfoCustomID = 1000 // FLOW_INFO_CUSTOM_ID
 )
 
 // Segment info commands (SEGMENT_INFO_CMD_LIST)
@@ -365,6 +387,7 @@ const (
 	SegmentInfoIsIncomplete = 2
 	SegmentInfoSizeFilled   = 3
 	SegmentInfoDataSize     = 4
+	SegmentInfoCustomID     = 1000 // SEGMENT_INFO_CUSTOM_ID
 )
 
 // Handles are opaque references to GenTL producer objects (void* in GenTL.h).
