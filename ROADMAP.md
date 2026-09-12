@@ -10,7 +10,7 @@ Hand-complete rows still open against the reference specs; this is the canonical
 
 | Area | Item | Status |
 | ---- | ---- | ------ |
-| GenApi 2.1.1 | `Category` / `StructReg` as first-class node types (parsed/skipped today) | [ ] |
+| GenApi 2.1.1 | `Category` / `StructReg` as first-class node types (parsed/skipped today) | [x] |
 | GenApi 2.1.1 | SwissKnife `**` exponent (rest of § formula grammar done) | [x] |
 | GenApi + SFNC 2.7 | Formal `Gev*` / `Device*` streaming-feature coverage | [~] |
 | GenTL 1.6 | `.cti` loader (`gentl/cti.go`, `dlopen` / CGO, off by default) | [ ] |
@@ -172,7 +172,7 @@ Refs: `_references/GenApi/GenICam_Standard_v2_1_1.pdf`, `_references/SFNC/GenICa
 | ---------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------- |
 | Local:/HTTP XML fetch + unzip                                    | [x]        | FirstURL / device memory                                                     |
 | Core node kinds + set/get                                        | [x]        | Integer, Boolean, Float, String, Enum, Command, \*Reg, SwissKnife, Converter |
-| `Category` / `StructReg` as first-class types                    | [ ]        | Parsed + skipped today ([GenApi §.2.x Category / §.3.4 StructReg]); need node kinds + traversal for layout/category enum |
+| `Category` / `StructReg` as first-class types                    | [x]        | `Category` node kind + `Features` list + `NodeMap.Category`/`CategoryTree`/`RootCategories` (§2.8.2); `StructReg` → MaskedIntReg expansion (§2.8.6) |
 | Pointers: `pAddress`, `pMin`/`pMax`/`pInc`, `pValue`             | [x]        | `pAddress`/`pValue` + `pMin`/`pMax`/`pInc` implemented; min/max/inc static values |
 | `pIsImplemented` / `pIsAvailable` / `pIsLocked` / `pInvalidator` | [x]        | `IsImplemented`/`IsAvailable`/`IsLocked` + `GetInvalidator`; runtime access derived per §2.5 (NI→NA→RW/RO/WO narrowed by `ImposedAccessMode`, locked RW→RO / WO→NA) and enforced at Set*/Read*/CurrentEnum |
 | Constant `Float`/`String`/`Integer` nodes                       | [x]        | `<Value>` with no address reads its constant (floating nodes; `readFloatReg`/`readStringReg`); `resolveAddr` accepts address 0 (ABRM) and errors on >32-bit sums |
@@ -214,13 +214,9 @@ Produce or consume via `.cti` — pure-Go path can stay primary; GenTL is option
 
 - **2026-09-12** — Float-domain SwissKnife support: float alternative to the § formula evaluator (`evalFormulaFloat`, `floatParser`, `ATAN2`/`MIN`/`MAX`/`POW`/`LOG` funcs, `E`/`PI`), float variable context + suffix resolver (`formulaContextFloat`, `readFormulaVariableFloat`), `ReadFloat` SwissKnike case, integer-read truncation of float results with negative-guard in `resolveIntegerReference`. Offline replay of the Huaray `DS5131MG30CE` XML: the 9 float-SwissKnife errors cleared (333→324; remaining all guard-correct NI/NA/WO), 0 regressions. Locked by `TestEvalFormulaFloat`, `TestEvalFormulaFloatSuffix`, `TestSwissKnifeFloatDomain`.
 - **2026-09-12** — GenApi core gaps closed (FINDINGS §3 items 1-4): `resolveAddr` accepts ABRM address 0 and rejects >32-bit sums; constant `Float`/`String`/`Integer` nodes read via `<Value>`; runtime access mode derived per §2.5 (NI/NA, `ImposedAccessMode`, locked RW→RO and WO→NA) and enforced at Set*/Read*/CurrentEnum incl. target-register writes; SwissKnife variable suffixes `.Min/.Max/.Inc/.Value/.Entry` resolved. Offline replay of the Huaray `DS5131MG30CE` XML shows 0 regressions (remaining errors are guard-correct NI/NA/WO or pre-existing float-domain SwissKnife gaps). Locked by `genapi/gaps_test.go`.
-
 - **2026-08-09** — Fixed streaming OOM: OOO ring slots were preallocated at 8 MiB each (256 × 8 MiB ≈ 2 GiB per `frameBuild`), so the websocket/live examples ballooned to >10 GiB RSS and got SIGKILL'd. Slots now capped at 16 KiB (a single GVSP transport packet); `gvsp.Stream` additionally bounds concurrent in-flight frames (`maxInFlightFrames=64`) and evicts the oldest incomplete build when full.
-
 - **2026-08-09** — Phase 2 payload typing complete: GVSP payload-type constants + `Frame.PayloadType` from leader (`gvsp/payloadtype.go`); `ParsePayloadByType` dispatches GenDC/Multi-Part/Chunk/Image. GenDC flow table parsing (`internal/genDC`) + 2D part SizeX/SizeY + absolute DataOffset fix. PFNC decode matrix finished in `internal/color` (`DecodeHighDepth` for Bayer/packed Mono+Bayer).
-
 - **2026-08-09** — GVSP OOO zero-alloc: replaced `map[uint32][]byte` in `frameBuild` with pre-allocated `OOOPacketRing` (`gvsp/frame.go`), ring spills to a lazily-created overflow map only past `MaxOOOPackets` (256). `receiver.go` appendPayload uses ring `Put`/`Get`/`Delete`; `resend.go` adds `MissingPayloadRangesRing`. Fixed middle-delete ring compaction dropping the head packet; added `TestOOOPacketRing*` + `TestGVSPOutOfOrder`. Duplicate `frame_assemble.go` removed.
-
 - **2026-08-13** — API ergonomics (1.4.0): `Camera` is now the unified handle — one-shot grabs (`GrabSample`/`GrabAllSamples`/`GrabComponents`/`GrabJPEG`), `Features()`, and consistent short get/set feature names (`SetInteger`/`SetEnum`/… plus `Integer`/`Enum`/`Float`/`String`/`Boolean` getters); added `NodeMap.ReadFloat`/`ReadString`; `Features` gained getters; `grab.FromCamera`; `PackDet` renamed `Length`/`Width`/`Height` → `LengthMm`/`WidthMm`/`HeightMm`.
 - **2026-08-08** — Phase 3: Constraint pointers (pMin, pMax, pInc) complete. Added Node.GetConstraints(), NodeMap.GetMin/Max/Inc() methods. Parser now extracts Min/Max/Inc static values + pMin/pMax/pInc feature references. Enables parameter bounds validation. Test: TestConstraintPointers.
 - **2026-08-08** — GenApi refactoring complete: `node.go` (Node interface + gcNode), `types.go` (node parsing: nodeFields, parseNodeXML, parseNodeMapXML), `port.go` (portAdapter binding → gvcp.Port); `nodemap.go` now clean orchestration layer; zero-alloc architecture with explicit separation of concerns per AGENTS.md.

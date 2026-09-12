@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.7.0] - 2026-09-13
+
+### Added
+
+- `genapi` `Category` nodes (GenApi 2.1.1 §2.8.2) are now first-class: parsed into a `gcNode` with kind `Category` and an ordered `Features` (`<pFeature>`) list plus a `Visibility` element. New `NodeMap` traversal API exposes the grouping tree: `Category(name)`, `Categories()`, `RootCategories()`, and `CategoryTree(name)` (with a `CategoryNode{Name, Features, Categories}` type). The tree nests categories to arbitrary depth, skips dangling `pFeature` references, and guards against category cycles. `Camera.Categories()`, `Camera.RootCategories()`, and `Camera.CategoryTree()` surface it through the root facade; `CategoryNode` is re-exported from the root package.
+- `genapi` `StructReg` nodes (GenApi 2.1.1 §2.8.6) are now expanded at parse time: each `<StructEntry>` becomes a `MaskedIntReg` node inheriting the `StructReg`'s shared elements (`Address`, `pAddress`, `Length`, `AccessMode`, `Endianess`, …) unless the entry defines its own, in which case the entry wins.
+
+### Tests
+
+- `genapi/category_test.go`: `TestCategoryTree` (spec §2.8.2 Root → nested tree, order, `RootCategories`, raw `Category` list, dangling-ref skip), `TestCategoryCycle`, `TestCategoryNoRoot`.
+- `genapi/structreg_test.go`: `TestStructRegExpansion` (spec Format-7 example: inherited `Address 0x14`/`pAddress`/`Length 4`/`RO`/`BigEndian`/bit mask + functional big-endian register read), `TestStructRegEntryOverride` (entry-defined `Address`/`LSB`/`MSB` override inherited elements).
+- Offline replay of the Huaray `DS5131MG30CE` XML: `nodes 1777 → 1821` (44 `Category` nodes now parsed), `readOK=1438` unchanged, error profile identical to the 1.6.2 baseline (`229` NI + `90` NA + `5` WO, `0` unexpected) — 0 regressions. `CategoryTree(Root)` resolves and `RootCategories()` returns the 23 top-level categories.
+
 ## [1.6.2] - 2026-09-12
 
 ### Added
