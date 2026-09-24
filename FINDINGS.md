@@ -3,15 +3,15 @@
 Standards-compliance audit of the Go implementation against the reference documents under `_references/`.
 Audit date: 2026-09-12.
 
-**Coverage.** The GigE Vision spec itself (GVCP command set / GVSP streaming / packet formats) is **NOT** present in `_references/`. GVCP was therefore audited against the GenCP 1.3.1 spec (whose register map and packet *framing* apply), and GVSP reassembly was audited against GenDC v1.1 + GenTL 1.6 only. Anything GVSP-specific is flagged `UNVERIFIABLE`.
+**Coverage.** The GigE Vision spec itself (GVCP command set / GVSP streaming / packet formats) is **NOT** present in `_references/`. GVCP was therefore audited against the GenCP 1.3.1 spec (whose register map and packet _framing_ apply), and GVSP reassembly was audited against GenDC v1.1 + GenTL 1.6 only. Anything GVSP-specific is flagged `UNVERIFIABLE`.
 
-| Module | Reference used | Verdict |
-| ------ | -------------- | ------- |
-| `gvcp/` | `_references/GenCP/GenICam_GenCP_1.3.1.pdf.ocr/markdown.md` | Framing + ABRM correct; protocol is GVCP-on-GenCP-framing; several gaps (see §1) |
+| Module                      | Reference used                                                         | Verdict                                                                                                                |
+| --------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `gvcp/`                     | `_references/GenCP/GenICam_GenCP_1.3.1.pdf.ocr/markdown.md`            | Framing + ABRM correct; protocol is GVCP-on-GenCP-framing; several gaps (see §1)                                       |
 | `gvsp/` + `internal/genDC/` | `_references/GenDC/GenDC.h` + `GenICam_GenDC_v1_1.pdf.ocr/markdown.md` | GenDC header/part parsing exact; PartOffset base wrong; chunk parser non-standard; GenDC payload-type alias wrong (§2) |
-| `genapi/` | `_references/GenApi/GenICam_Standard_v2_1_1.pdf.ocr/markdown.md` | Solid skeleton, read-side fragment; MaskedIntReg reads, Converter, Endianess, floating nodes missing (§3) |
-| `internal/color/` | `_references/SFNC/PFNC.h` + `GenICam_PFNC_2_4.pdf.ocr/markdown.md` | Constants exact; **RGGB & GBRG demosaic R/B-swapped**; Mono10/12/14 unpacked near-black (§4) |
-| `gentl/` | `_references/GenTL/GenTL.h` + `GenICam_GenTL_1_6.pdf.ocr/markdown.md` | Every constant numerically exact; only gap is missing `_CUSTOM_ID = 1000` sentinels (§5) |
+| `genapi/`                   | `_references/GenApi/GenICam_Standard_v2_1_1.pdf.ocr/markdown.md`       | Solid skeleton, read-side fragment; MaskedIntReg reads, Converter, Endianess, floating nodes missing (§3)              |
+| `internal/color/`           | `_references/SFNC/PFNC.h` + `GenICam_PFNC_2_4.pdf.ocr/markdown.md`     | Constants exact; **RGGB & GBRG demosaic R/B-swapped**; Mono10/12/14 unpacked near-black (§4)                           |
+| `gentl/`                    | `_references/GenTL/GenTL.h` + `GenICam_GenTL_1_6.pdf.ocr/markdown.md`  | Every constant numerically exact; only gap is missing `_CUSTOM_ID = 1000` sentinels (§5)                               |
 
 ---
 
@@ -31,7 +31,7 @@ Implementation files: `client.go`, `discovery.go`, `heartbeat.go`, `packet.go`, 
 
 ### MISMATCHES / BUGS
 
-- **Protocol is GigE Vision GVCP, not GenCP.** Command IDs are the GVCP set — `0x0080/0x0081` READREG, `0x0082/0x0083` WRITEREG, `0x0084/0x0085` READMEM, `0x0086/0x0087` WRITEMEM, `0x0089` PENDING_ACK, `0x0004` BYE, `0x0040` PACKETRESEND, `0x0002/0x0003` DISCOVERY (`gvcp/packet.go:29-45`). GenCP defines *different* command IDs (`0x0800` READMEM, `0x0802` WRITEMEM, `0x0805` PENDING_ACK, `0x0806/0x0808` READMEM/WRITEMEM_STACKED, `0x0C00` EVENT). AGENTS.md claims "gvcp → GenCP (control channel over GigE UDP) 1.3.1" — the layer is GVCP whose GenCP framing improved; only GenCP's ABRM/register semantics are re-used. Not necessarily a defect, but the documentation should say "GVCP 2.x with GenCP-derived register map".
+- **Protocol is GigE Vision GVCP, not GenCP.** Command IDs are the GVCP set — `0x0080/0x0081` READREG, `0x0082/0x0083` WRITEREG, `0x0084/0x0085` READMEM, `0x0086/0x0087` WRITEMEM, `0x0089` PENDING_ACK, `0x0004` BYE, `0x0040` PACKETRESEND, `0x0002/0x0003` DISCOVERY (`gvcp/packet.go:29-45`). GenCP defines _different_ command IDs (`0x0800` READMEM, `0x0802` WRITEMEM, `0x0805` PENDING_ACK, `0x0806/0x0808` READMEM/WRITEMEM_STACKED, `0x0C00` EVENT). AGENTS.md claims "gvcp → GenCP (control channel over GigE UDP) 1.3.1" — the layer is GVCP whose GenCP framing improved; only GenCP's ABRM/register semantics are re-used. Not necessarily a defect, but the documentation should say "GVCP 2.x with GenCP-derived register map".
 - **ACK status is the GVCP single byte at offset 1** (packet type at `buf[0]`, status/error code at `buf[1]`, `gvcp/client.go:96-112`; codes 0x01..0x07, e.g. `StatusError=0x03`, `StatusNoPermission=0x07`). GenCP ACKs use a **16-bit status word at offset 0** with code/namespace/severity bits and values `0x8001..0x800F`. Statuscode values do not coincide (GVCP `0x03`=ERROR, GenCP `0x8003`=WRITE_PROTECT has different meaning). `isAddressInaccessible` (`gvcp/client.go:262-269`) treats `StatusError`/`StatusWriteProtect` as "address inaccessible" — a GenCP-style semantic grafted onto GVCP codes. Consistent enough for the wire format in use, but any attempt to talk pure GenCP with this client would misparse ACKs.
 - **Heartbeat register is GigE, not GenCP.** Heartbeat sends on `gvbsHeartbeatTO` (0x0938, `gvcp/heartbeat.go:41`); GenCP §3.2 uses ABRM `Heartbeat Interval` 0x01E8 (default 3000 ms) plus the heartbeat-enable bit in `DeviceConfiguration` (0x01E0). The GenCP `AbrmHeartbeatTimeout` constant is defined (`register_map.go:44`) but never used.
 - **MDRT never consulted.** `AbrmMaximumDeviceResponseTime` (0x01CC) constant exists but timeouts are hardcoded ~2 s defaults; GenCP requires response timeout = MDRT + transfer-time basis. `pendingAckTimeout` is the only spec-sourced timeout.
@@ -49,7 +49,7 @@ Implementation files: `client.go`, `discovery.go`, `heartbeat.go`, `packet.go`, 
 
 ### UNVERIFIABLE / DEVIATION FROM GENCP
 
-- **`ReadManifestTable` expects a non-GenCP layout** (`gvcp/client.go:283-308`): 12-byte header with `"MTAB"` magic at `[0:4]`, count at `[8:12]`, then 12-byte entries `{address, length, type}`. GenCP's Manifest Table (§ Table 33/34) has **no magic, no `MTAB`**, an 8-byte entry count, and 64-byte entries. The `"MTAB"` + 12-byte-entry scheme is vendor-proprietary (Huaray?). Also `ManifestEntryTypeXML = 0x00000001` — in GenCP the schema/file-type field is a *bitfield* (bitwise: 0=Device XML, 1=Buffer XML — `0x00000001` would be "Buffer XML"), not a scalar "the XML type". This path only matches Huaray devices.
+- **`ReadManifestTable` expects a non-GenCP layout** (`gvcp/client.go:283-308`): 12-byte header with `"MTAB"` magic at `[0:4]`, count at `[8:12]`, then 12-byte entries `{address, length, type}`. GenCP's Manifest Table (§ Table 33/34) has **no magic, no `MTAB`**, an 8-byte entry count, and 64-byte entries. The `"MTAB"` + 12-byte-entry scheme is vendor-proprietary (Huaray?). Also `ManifestEntryTypeXML = 0x00000001` — in GenCP the schema/file-type field is a _bitfield_ (bitwise: 0=Device XML, 1=Buffer XML — `0x00000001` would be "Buffer XML"), not a scalar "the XML type". This path only matches Huaray devices.
 - Discovery (0x0002/0x0003) and PACKETRESEND (0x0040, extended with 20-byte data + 0x10 flag) are HTTP-free GVCP-only commands — not defined by GenCP. `parseDiscoveryAck` reads GigE ABRM offsets (`gvcp/discovery.go:45-96`, `discoveryAckMinSize=0x00F8`). Cannot be checked against references (no GigE Vision spec). Flagged `UNVERIFIABLE` but functionally correct for GigE.
 - PACKETRESEND data/statuses, `gvspPacketIDMask=0x00ffffff` extended framing — GVSP-side, unverifiable.
 
@@ -73,12 +73,12 @@ Audited everything in `gvsp/` and `internal/genDC/`. References: `_references/Ge
 
 ### MISMATCHES / BUGS
 
-- **[FIXED]** **`PartOffset[]` applied component-relative, but the spec says container-relative.** OCR §2.2.4 Table 2-2: PartOffset[] is *relative to the start of the Container's Header* (same basis as ComponentOffset[], DataOffset). `parseComponent` calls `parsePart(buf[pOff:])` (`genDC.go:469-473`) but `buf` is already the component-sliced buffer (`genDC.go:372`), so conformant data is read from `componentOffset+partOffset` instead of `partOffset` — garbage parts. **The test fixture masks it**: `genDC_test.go:32` itself writes a component-relative offset (56), i.e. the fixture is non-conformant.
+- **[FIXED]** **`PartOffset[]` applied component-relative, but the spec says container-relative.** OCR §2.2.4 Table 2-2: PartOffset[] is _relative to the start of the Container's Header_ (same basis as ComponentOffset[], DataOffset). `parseComponent` calls `parsePart(buf[pOff:])` (`genDC.go:469-473`) but `buf` is already the component-sliced buffer (`genDC.go:372`), so conformant data is read from `componentOffset+partOffset` instead of `partOffset` — garbage parts. **The test fixture masks it**: `genDC_test.go:32` itself writes a component-relative offset (56), i.e. the fixture is non-conformant.
 - **[FIXED]** **`ParseChunkPayload` is not the GenDC/GenICam chunk format.** `gvsp/chunk_data.go:74-114` expects a big-endian 16-byte header (u64 PayloadSize + u32 ChunkCount + u32 Reserved) + 16-byte entries {ChunkID, Offset, Size, Version u16, Reserved u16}. GenDC metadata chunks are little-endian **trailing tags** (4-byte ChunkID + 4-byte length appended after each chunk, 0xFF.. sentinel, with empty-alignment chunks) per OCR §2.2.8.1 (GenDC metadata part layout for GenICam chunk) — inverted endianness AND wrong layout.
 - **[FIXED]** **Payload-type helper constants contradict GenTL and this package.** `GenDCPayloadType()=0x80000008`, `MultiPartPayloadType()=0x80000007`, `ChunkPayloadType()=0x80000009` (`gvsp/genDC_payload.go:97`, `multi_part.go:98`, `chunk_data.go:129`, all commented "per GenTL"). GenTL.h has GENDC=0x0B, MULTI_PART=0x0A, CHUNK_DATA=0x04, CHUNK_ONLY=0x08. The vendor-alias low-byte heuristic is self-defeating: `payloadTypeAliasGenDC=0x80000008` has low byte 8 = CHUNK_ONLY, **not** GENDC(11); a genuine vendor-encoded GenDC would be `0x8000000B`, which `IsPayloadTypeGenDC` (`payloadtype.go:32`) rejects → `receiver.go:150-153` zeroes the payload type.
 - **Multi-part part-type constants don't match GenTL.** `MultiPartPartTypeImage=0, Chunk=1, ExtendedChunk=2` (`multi_part.go:33-35`, "GenTL v1.5") — GenTL.h:508-521 `PART_DATATYPE_*` are 0=UNKNOWN, 1=2D_IMAGE, 2=2D_PLANE_BIPLANAR…; GenTL has no chunk/extended-chunk part datatype. `[FIXED]` — comment corrected (`multi_part.go:31-33`): these are GVSP part-type codes (0=image,1=chunk,2=extended chunk), not GenTL `PART_DATATYPE`.
 - **`ComponentDepth=5` labeled "GenDC Range".** `gvsp/payload.go:33` — GenDC.h:67 `GDC_RANGE=0x04`(4); the repo's own `internal/genDC/genDC.go:34` `ComponentRange=0x04`. Wire value 5 is a Huaray BSCF vendor value, wrongly attributed to GenDC. `[FIXED]` — comment corrected (`payload.go:31-35`): 5 is the Huaray BSCF wire value (`Frame.h` iota), GenDC Range is `0x04`.
-- **Flow-table search mechanism is non-spec.** `FlowTableFromContainer` (`genDC.go:311-322`) scans inside container data for 4-byte-aligned LE 0x7000. GenDC §3.2.1 says the flow table is delivered *in a Transport Layer-specific way* (device XML / bootstrap registers), **not** inside the container's descriptor+data (R-006) — false-positive-prone.
+- **Flow-table search mechanism is non-spec.** `FlowTableFromContainer` (`genDC.go:311-322`) scans inside container data for 4-byte-aligned LE 0x7000. GenDC §3.2.1 says the flow table is delivered _in a Transport Layer-specific way_ (device XML / bootstrap registers), **not** inside the container's descriptor+data (R-006) — false-positive-prone.
 
 ### GAPS / UNIMPLEMENTED
 
@@ -165,8 +165,8 @@ References: `_references/SFNC/PFNC.h`, `GenICamPixelFormatValues.md`, `GenICam_P
 - **RGGB debayer is R/B-swapped** (8-bit `bayer.go:136-141,199-223`, 16-bit `packed.go:214-219,274-293`). PFNC §3.1.7 RGGB tile = `[R G; G B]` → R at (even,even), B at (odd,odd). Code samples B from (even,even) and takes R from the current pixel with no R interpolation. Simulated RGGB (R=100,G=10,G=20,B=50): p(0,0)→(100,15,**100**) [want (100,15,50)]; p(1,1)→(50,15,25) [want (100,15,50)].
 - **GBRG debayer is R/B-swapped** (8-bit `bayer.go:150-155,306-354`, 16-bit `packed.go:228-233,366-406`). PFNC GBRG = `[G B; R G]` → R at (even,odd), B at (odd,even). Code samples R from (odd,odd) and B from (even,odd): p(0,0)→(5,75,50) [want (100,10,50)].
 - **BGGR and GRBG debayers are correct** (site parities verified — `bayer.go:253-276,384-432`, `packed.go:320-339,433-473`).
-- **Unpacked Mono10/12/14 preview near-black.** `DecodeHighDepth` → `mono16Preview` (`packed.go:552-556`) takes the high byte of an LSB-aligned 16-bit word *without* `shiftTo16`; packed mono shifts (`packed.go:577`), Bayer paths shift (`packed.go:601,610`). Data lives in the low 2-6 bits.
-- **Misleading test**: `TestDecodeHighDepth_MonoUnpacked` uses out-of-spec 0x1122 for Mono10 (max 0x3FF) and its error text says `want 0x22` while asserting 0x11 (`color_test.go:103`). No test asserts color *fidelity* — all sample tests only check encode-success/non-black.
+- **Unpacked Mono10/12/14 preview near-black.** `DecodeHighDepth` → `mono16Preview` (`packed.go:552-556`) takes the high byte of an LSB-aligned 16-bit word _without_ `shiftTo16`; packed mono shifts (`packed.go:577`), Bayer paths shift (`packed.go:601,610`). Data lives in the low 2-6 bits.
+- **Misleading test**: `TestDecodeHighDepth_MonoUnpacked` uses out-of-spec 0x1122 for Mono10 (max 0x3FF) and its error text says `want 0x22` while asserting 0x11 (`color_test.go:103`). No test asserts color _fidelity_ — all sample tests only check encode-success/non-black.
 
 ### MATCHES
 
@@ -198,22 +198,22 @@ References: `_references/SFNC/PFNC.h`, `GenICamPixelFormatValues.md`, `GenICam_P
 
 **Every exported constant verified numerically against GenTL.h — zero mismatches.**
 
-| Family | Verdict |
-|---|---|
-| GC_ERROR (25, err 0..-1023, CustomID -10000) | match (`types.go:8-34` vs GenTL.h:156-184) |
-| GenTL 1/6/0 version | match |
-| TLType names (11) / Module names (6) | match |
-| INFO_DATATYPE 0-14 | match |
-| TL_CHAR_ENCODING, TL_INFO_CMD 0-10 | match |
-| INTERFACE_INFO, DEVICE_ACCESS_FLAGS/STATUS, DEVICE_INFO | match |
-| ACQ_STOP/START, ACQ_QUEUE 0-4 | match |
-| STREAM_INFO 0-15 (FLOW_TABLE=14, GENDC_PREFETCH=15) | match |
-| BUFFER_INFO 0-31 (DATA_SIZE=27, IS_COMPOSITE=31), BUFFER_PART_INFO 0-13 | match |
-| PAYLOADTYPE_INFO 0-11 (MULTI_PART=10, GENDC=11) | match |
-| PIXELFORMAT_NAMESPACE 0-4, PIXELENDIANNESS 0-2, PARTDATATYPE 0-11 | match |
-| PORT_INFO, URL_SCHEME, URL_INFO, EVENT_TYPE 0-5, EVENT_INFO/EVENT_DATA_INFO | match |
-| FLOW_INFO, SEGMENT_INFO 0-4 (v1.6) | match |
-| InvalidHandle=0, Infinite=0xFFFFFFFFFFFFFFFF, handle=uintptr | match |
+| Family                                                                      | Verdict                                    |
+| --------------------------------------------------------------------------- | ------------------------------------------ |
+| GC_ERROR (25, err 0..-1023, CustomID -10000)                                | match (`types.go:8-34` vs GenTL.h:156-184) |
+| GenTL 1/6/0 version                                                         | match                                      |
+| TLType names (11) / Module names (6)                                        | match                                      |
+| INFO_DATATYPE 0-14                                                          | match                                      |
+| TL_CHAR_ENCODING, TL_INFO_CMD 0-10                                          | match                                      |
+| INTERFACE_INFO, DEVICE_ACCESS_FLAGS/STATUS, DEVICE_INFO                     | match                                      |
+| ACQ_STOP/START, ACQ_QUEUE 0-4                                               | match                                      |
+| STREAM_INFO 0-15 (FLOW_TABLE=14, GENDC_PREFETCH=15)                         | match                                      |
+| BUFFER_INFO 0-31 (DATA_SIZE=27, IS_COMPOSITE=31), BUFFER_PART_INFO 0-13     | match                                      |
+| PAYLOADTYPE_INFO 0-11 (MULTI_PART=10, GENDC=11)                             | match                                      |
+| PIXELFORMAT_NAMESPACE 0-4, PIXELENDIANNESS 0-2, PARTDATATYPE 0-11           | match                                      |
+| PORT_INFO, URL_SCHEME, URL_INFO, EVENT_TYPE 0-5, EVENT_INFO/EVENT_DATA_INFO | match                                      |
+| FLOW_INFO, SEGMENT_INFO 0-4 (v1.6)                                          | match                                      |
+| InvalidHandle=0, Infinite=0xFFFFFFFFFFFFFFFF, handle=uintptr                | match                                      |
 
 ### MISMATCHES
 

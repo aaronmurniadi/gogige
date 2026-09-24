@@ -215,7 +215,7 @@ func TestImposedAccessMode(t *testing.T) {
 	if err := nm.SetInteger("Gain", 3); err == nil || !strings.Contains(err.Error(), "read-only") {
 		t.Fatalf("ImposedAccessMode RO write: want read-only error, got %v", err)
 	}
- 	if v, err := nm.ReadInteger("Gain"); err != nil || v != 0 {
+	if v, err := nm.ReadInteger("Gain"); err != nil || v != 0 {
 		t.Fatalf("ImposedAccessMode read: %v %d", err, v)
 	}
 }

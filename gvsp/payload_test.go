@@ -374,8 +374,8 @@ func buildGenDCContainer(w, h int, pixels []byte) []byte {
 	binary.LittleEndian.PutUint64(comp[32:], 1) // intensity
 	binary.LittleEndian.PutUint32(comp[40:], color.PixelFormatMono8)
 	binary.LittleEndian.PutUint16(comp[46:], 1)
-	partAbs := 64 + 56                     // part header sits right after the component
-	dataAbs := partAbs + 56                // part data follows the part header
+	partAbs := 64 + 56                                        // part header sits right after the component
+	dataAbs := partAbs + 56                                   // part data follows the part header
 	binary.LittleEndian.PutUint64(comp[48:], uint64(partAbs)) // PartOffset: container-absolute
 	buf.Write(comp)
 
