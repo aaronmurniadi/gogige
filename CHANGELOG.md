@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.10.0] - 2026-09-24
+
+### Added
+
+- `sfnc.go` — exported SFNC feature-name constants (`FeatureDeviceVendorName`, `FeatureDeviceModelName`, `FeatureDeviceSerialNumber`, `FeatureDeviceUserID`, `FeatureDeviceTLType`, `FeatureDeviceSFNCVersionMajor`, `FeatureDeviceLinkHeartbeatTimeout`, `FeatureDeviceStreamChannelCount`, `FeatureGevSCPSPacketSize`, `FeatureGevSCPD`, `FeatureGevSCDA`, `FeatureGevSCPHostPort`, `FeatureGevCCP`, `FeatureGevGVSPExtendedIDMode`, `FeatureGevHeartbeatTimeout`).
+- `Camera` typed convenience getters: `DeviceVendorName()`, `DeviceModelName()`, `DeviceSerialNumber()`, `DeviceUserID()`, `GevSCPSPacketSize()`, `GevSCPD()`.
+- `gvcp.GVCP.MaximumDeviceResponseTime()` — reads the GenCP MDRT bootstrap register (0x01CC).
+- `gvcp.GVCP.SetTimeout()` — adjusts the GVCP transaction deadline after construction.
+- `gvcp.GVCP.StartHeartbeat()` now accepts an optional `time.Duration` override to skip the device-register read and use a caller-provided heartbeat timeout (e.g. the SFNC `DeviceLinkHeartbeatTimeout` GenApi feature).
+
+### Changed
+
+- `connectCamera` reads `MaximumDeviceResponseTime` after taking control and widens the GVCP deadline when the device advertises a slow response (floor = MDRT + 500 ms).
+- `Session.startHeartbeatLocked` tries the SFNC `DeviceLinkHeartbeatTimeout` GenApi feature first, falling back to the GigE Vision SBRM register when the camera does not declare it.
+
+### Tests
+
+- `gvcp.TestSetTimeout`, `gvcp.TestStartHeartbeatOverride`, `gvcp.TestStartHeartbeatNilGVCP`, `gvcp.TestMaximumDeviceResponseTimeFromPort`.
+- `gogige.TestSFNCFeatureConstants` — verifies all exported feature-name constants are non-empty.
+
 ## [1.9.0] - 2026-09-24
 
 ### Removed

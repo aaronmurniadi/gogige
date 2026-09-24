@@ -4,7 +4,7 @@ Pure-Go GigE Vision client (`package gige`) for Huaray/Dahua 3D volume cameras.
 
 ![Go Version](https://img.shields.io/badge/Go-1.23-blue)
 ![License](https://img.shields.io/badge/License-BSD--3--Clause-blue)
-![Release](https://img.shields.io/badge/Release-v1.9.0-blue)
+![Release](https://img.shields.io/badge/Release-v1.10.0-blue)
 ![Pure Go](https://img.shields.io/badge/Pure%20Go-Yes-green)
 
 > Tested on:
@@ -152,6 +152,8 @@ Omit `-ip` to pick the first camera from GigE discovery (or pass `-ip` explicitl
 - Dump GenICam XML: [`examples/dump-xml`](examples/dump-xml)
 - Configure volume TCP preset: [`examples/configure-camera`](examples/configure-camera)
 - Browser live stream: [`examples/websocket-stream`](examples/websocket-stream)
+- Bounding-box overlay on grabbed frames: [`examples/bbox`](examples/bbox)
+- SFNC feature probe (identity, streaming, MDRT, heartbeat): [`examples/sfnc-probe`](examples/sfnc-probe)
 - CLI discover: [`cmd/gogige-discover`](cmd/gogige-discover)
 - CLI N-frame capture: [`cmd/gogige-stream`](cmd/gogige-stream)
 

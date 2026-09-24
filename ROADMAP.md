@@ -12,7 +12,7 @@ Hand-complete rows still open against the reference specs; this is the canonical
 | ----------------- | ------------------------------------------------------------------------- | ------ |
 | GenApi 2.1.1      | `Category` / `StructReg` as first-class node types (parsed/skipped today) | [x]    |
 | GenApi 2.1.1      | SwissKnife `**` exponent (rest of § formula grammar done)                 | [x]    |
-| GenApi + SFNC 2.7 | Formal `Gev*` / `Device*` streaming-feature coverage                      | [~]    |
+| GenApi + SFNC 2.7 | Formal `Gev*` / `Device*` streaming-feature coverage                      | [x]    |
 | CLI               | `cmd/` CLIs beyond discover/stream                                        | [~]    |
 
 ---
@@ -176,7 +176,7 @@ Refs: `_references/GenApi/GenICam_Standard_v2_1_1.pdf`, `_references/SFNC/GenICa
 | SwissKnife variable suffixes (`.Min/.Max/.Inc/.Value/.Entry`)    | [x]    | `formulaContext` + `suffixResolver` + float-domain `formulaContextFloat`/`FloatSuffixResolver` in `port.go` + `floatParser`/`evalFormulaFloat` in `evaluator.go` (float `pVariable`s and float `SwissKnife` nodes now evaluated in float domain; int reads truncate) |
 | SwissKnife funcs (`SQRT`, `FLOOR`, `CEIL`, `ABS`)                | [x]    | `ABS`, `FLOOR`, `CEIL`, `SQRT` in `evaluator.go`                                                                                                                                                                                                                     |
 | Dedicated `port.go` binding + endianness                         | [x]    | Port node → `gvcp.Port` Read/Write; complete with byte order awareness                                                                                                                                                                                               |
-| SFNC-required features for streaming                             | [~]    | `AcquisitionStart/Stop`, `AcquisitionMode`, `AcquisitionFrameRate` wired; formal `Gev*` (SCPS, heartbeat interval) + `Device*` coverage TBD per `GenICam_SFNC_v2_7.pdf`                                                                                              |
+| SFNC-required features for streaming                             | [x]    | `AcquisitionStart/Stop`, `AcquisitionMode`, `AcquisitionFrameRate` wired; `Gev*`/`Device*` constants + getters in `sfnc.go`/`camera.go`; `DeviceLinkHeartbeatTimeout` GenApi path; MDRT-aware GVCP timeout                                                           |
 
 ### Phase 4 — High-level API
 
@@ -191,6 +191,7 @@ GenTL `.cti` producer/consumer interop is dropped: the pure-Go GVCP/GVSP/GenApi 
 
 ## Migration log
 
+- **2026-09-24** — Formal `Gev*`/`Device*` streaming-feature coverage (v1.10.0): `sfnc.go` exports well-known SFNC feature-name constants; `Camera` gains typed convenience getters (`DeviceVendorName`, `DeviceModelName`, `DeviceSerialNumber`, `DeviceUserID`, `GevSCPSPacketSize`, `GevSCPD`); `gvcp.GVCP.MaximumDeviceResponseTime` reads the GenCP MDRT register and `connectCamera` uses it to widen the GVCP deadline for slow devices; `StartHeartbeat` accepts an optional timeout override and `Session` prefers the SFNC `DeviceLinkHeartbeatTimeout` GenApi feature when present, falling back to the GigE Vision SBRM register.
 - **2026-09-24** — Dropped GenTL interop: removed `gentl/` (constants only; `cti.go` already gone) and `_references/GenTL/`, `_references/GenTL SFNC/`; cleared the GenTL rows, spec-index entries, and the Phase 4 `.cti` module ladder from this roadmap. Stance: gogige stays pure-Go GVCP/GVSP/GenApi — portable to any GigE Vision + GenICam camera without vendor `.cti` producers; README notes the portability rationale.
 - **2026-09-24** — `gvsp.Sample.Overlay` (`Box2D`): `calib.ProjectPack`/`OverlayBoxes` project a pack's 3D oriented box onto the color image plane; `gogige.WithOverlay(bool, calib.CamCalib)` GrabOption toggles it (v1.8.0). Also `fix: genapi` command execution ignores the `pIsLocked` gate.
 - **2026-09-13** — GenApi `Category` + `StructReg` first-class nodes (v1.7.0): parsed `Category` with ordered `Features`, `NodeMap.Category`/`Categories`/`RootCategories`/`CategoryTree`; `StructReg` expands to `MaskedIntReg` entries at parse time. Offline Huaray XML replay `1777 → 1821` nodes, 0 regressions.
