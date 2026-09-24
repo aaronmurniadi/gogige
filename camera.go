@@ -192,6 +192,56 @@ func (c *Camera) ExecuteCommand(name string) error {
 	return c.nodes.Execute(name)
 }
 
+// --- SFNC convenience getters (well-known features) ---
+
+// DeviceVendorName reads the camera manufacturer name (SFNC DeviceVendorName).
+func (c *Camera) DeviceVendorName() (string, error) {
+	if c == nil || c.nodes == nil {
+		return "", errors.New("gige: camera not connected")
+	}
+	return c.nodes.ReadString(FeatureDeviceVendorName)
+}
+
+// DeviceModelName reads the camera model name (SFNC DeviceModelName).
+func (c *Camera) DeviceModelName() (string, error) {
+	if c == nil || c.nodes == nil {
+		return "", errors.New("gige: camera not connected")
+	}
+	return c.nodes.ReadString(FeatureDeviceModelName)
+}
+
+// DeviceSerialNumber reads the camera serial number (SFNC DeviceSerialNumber).
+func (c *Camera) DeviceSerialNumber() (string, error) {
+	if c == nil || c.nodes == nil {
+		return "", errors.New("gige: camera not connected")
+	}
+	return c.nodes.ReadString(FeatureDeviceSerialNumber)
+}
+
+// DeviceUserID reads the user-assigned device identifier (SFNC DeviceUserID).
+func (c *Camera) DeviceUserID() (string, error) {
+	if c == nil || c.nodes == nil {
+		return "", errors.New("gige: camera not connected")
+	}
+	return c.nodes.ReadString(FeatureDeviceUserID)
+}
+
+// GevSCPSPacketSize reads the current streaming packet size in bytes.
+func (c *Camera) GevSCPSPacketSize() (int64, error) {
+	if c == nil || c.nodes == nil {
+		return 0, errors.New("gige: camera not connected")
+	}
+	return c.nodes.ReadInteger(FeatureGevSCPSPacketSize)
+}
+
+// GevSCPD reads the inter-packet delay (ticks) for the stream channel.
+func (c *Camera) GevSCPD() (int64, error) {
+	if c == nil || c.nodes == nil {
+		return 0, errors.New("gige: camera not connected")
+	}
+	return c.nodes.ReadInteger(FeatureGevSCPD)
+}
+
 // Execute implements gvcp.Commander.
 func (c *Camera) Execute(name string) error { return c.ExecuteCommand(name) }
 

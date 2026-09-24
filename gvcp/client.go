@@ -454,6 +454,34 @@ func (g *GVCP) LocalAddr() *net.UDPAddr {
 	return a
 }
 
+// MaximumDeviceResponseTime reads the GenCP MaximumDeviceResponseTime
+// bootstrap register (0x01CC) and returns it as a time.Duration in
+// milliseconds. The spec caps this at 300 ms. Returns an error if the
+// register is unreadable or the value is zero.
+func (g *GVCP) MaximumDeviceResponseTime() (time.Duration, error) {
+	v, err := g.ReadReg(AbrmMaximumDeviceResponseTime)
+	if err != nil {
+		return 0, err
+	}
+	if v == 0 {
+		return 0, errors.New("gige: MaximumDeviceResponseTime is zero")
+	}
+	return time.Duration(v) * time.Millisecond, nil
+}
+
+// SetTimeout adjusts the GVCP transaction timeout. This allows the caller to
+// tighten or loosen the deadline after construction (e.g. based on
+// MaximumDeviceResponseTime). The change takes effect for all subsequent
+// ReadReg/WriteReg/ReadMem/WriteMem calls.
+func (g *GVCP) SetTimeout(d time.Duration) {
+	if d <= 0 {
+		return
+	}
+	g.mu.Lock()
+	g.timeout = d
+	g.mu.Unlock()
+}
+
 // RequestResend sends PACKETRESEND_CMD for inclusive packet_id range [first, last].
 // Fire-and-forget: cameras do not ACK; resent GVSP packets arrive on the stream socket.
 func (g *GVCP) RequestResend(streamChannel uint16, blockID uint64, first, last uint32, extended bool) error {

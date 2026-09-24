@@ -248,7 +248,17 @@ func (s *Session) startHeartbeatLocked() {
 	if s.cam == nil || s.cam.GVCP() == nil {
 		return
 	}
-	s.hb = s.cam.GVCP().StartHeartbeat()
+	// Prefer the SFNC DeviceLinkHeartbeatTimeout GenApi feature when the camera
+	// declares it (SFNC 2.7 replacement for the deprecated GevHeartbeatTimeout).
+	// The value is in milliseconds. Fall back to the GigE Vision SBRM register
+	// automatically when the feature is absent or unreadable.
+	var override []time.Duration
+	if ms, err := s.cam.Integer(FeatureDeviceLinkHeartbeatTimeout); err == nil && ms > 0 {
+		override = []time.Duration{time.Duration(ms) * time.Millisecond}
+		s.cam.Logger().Info("heartbeat using DeviceLinkHeartbeatTimeout",
+			"timeout_ms", ms)
+	}
+	s.hb = s.cam.GVCP().StartHeartbeat(override...)
 }
 
 func (s *Session) stopHeartbeatLocked() {

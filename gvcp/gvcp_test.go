@@ -358,3 +358,57 @@ func TestManifestTableURL(t *testing.T) {
 		t.Fatalf("url=%q", url)
 	}
 }
+
+func TestSetTimeout(t *testing.T) {
+	g := &GVCP{timeout: 2 * time.Second}
+	g.SetTimeout(5 * time.Second)
+	if g.timeout != 5*time.Second {
+		t.Fatalf("timeout=%v, want 5s", g.timeout)
+	}
+	// Zero/negative should be ignored.
+	g.SetTimeout(0)
+	if g.timeout != 5*time.Second {
+		t.Fatalf("timeout=%v after SetTimeout(0), want 5s", g.timeout)
+	}
+	g.SetTimeout(-1 * time.Second)
+	if g.timeout != 5*time.Second {
+		t.Fatalf("timeout=%v after SetTimeout(-1), want 5s", g.timeout)
+	}
+}
+
+func TestStartHeartbeatOverride(t *testing.T) {
+	g := &GVCP{timeout: 2 * time.Second}
+	// With override: should use 500ms timeout → 250ms interval.
+	// PulseHeartbeat will fail (no conn), but the goroutine should run and
+	// stop cleanly.
+	h := g.StartHeartbeat(500 * time.Millisecond)
+	if h == nil {
+		t.Fatal("nil heartbeat")
+	}
+	time.Sleep(50 * time.Millisecond)
+	h.Stop()
+}
+
+func TestStartHeartbeatNilGVCP(t *testing.T) {
+	var g *GVCP
+	if h := g.StartHeartbeat(); h != nil {
+		t.Fatal("expected nil heartbeat from nil GVCP")
+	}
+	if h := g.StartHeartbeat(500 * time.Millisecond); h != nil {
+		t.Fatal("expected nil heartbeat from nil GVCP with override")
+	}
+}
+
+func TestMaximumDeviceResponseTimeFromPort(t *testing.T) {
+	m := &memPort{regs: map[uint32]uint32{
+		AbrmMaximumDeviceResponseTime: 150,
+	}}
+	// ReadReg on memPort returns the value directly.
+	v, err := m.ReadReg(AbrmMaximumDeviceResponseTime)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if v != 150 {
+		t.Fatalf("MDRT=%d, want 150", v)
+	}
+}

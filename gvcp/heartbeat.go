@@ -41,11 +41,19 @@ type Heartbeat struct {
 // StartHeartbeat launches a goroutine that pulses CCP every HeartbeatTimeout/2.
 // Call Stop when control is no longer needed. Safe to call multiple times; each
 // StartHeartbeat returns an independent handle — prefer one per GVCP session.
-func (g *GVCP) StartHeartbeat() *Heartbeat {
+//
+// If one or more override durations are provided, the first positive value is
+// used as the heartbeat timeout instead of reading the device register. This
+// lets the caller use the SFNC DeviceLinkHeartbeatTimeout GenApi feature when
+// available, falling back to the GigE Vision SBRM register automatically.
+func (g *GVCP) StartHeartbeat(override ...time.Duration) *Heartbeat {
 	if g == nil {
 		return nil
 	}
 	to := g.HeartbeatTimeout()
+	if len(override) > 0 && override[0] > 0 {
+		to = override[0]
+	}
 	interval := to / 2
 	if interval < minHeartbeatInterval {
 		interval = minHeartbeatInterval

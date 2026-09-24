@@ -159,6 +159,16 @@ func connectCamera(ip string, timeout time.Duration, log Logger) (*Camera, error
 		_ = g.Close()
 		return nil, fmt.Errorf("gige: take control: %w", err)
 	}
+	// Read GenCP MaximumDeviceResponseTime and tighten the GVCP deadline when
+	// the device advertises a fast response. The floor is MDRT + 500 ms margin.
+	if mdrt, err := g.MaximumDeviceResponseTime(); err == nil {
+		floor := mdrt + 500*time.Millisecond
+		if floor > timeout {
+			g.SetTimeout(floor)
+			log.Info("gvcp timeout adjusted for MDRT",
+				"mdrt_ms", mdrt.Milliseconds(), "timeout_ms", floor.Milliseconds())
+		}
+	}
 	xmlData, err := genapi.FetchXML(g)
 	if err != nil {
 		_ = g.LeaveControl()
