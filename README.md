@@ -4,14 +4,14 @@ Pure-Go GigE Vision client (`package gige`) for Huaray/Dahua 3D volume cameras.
 
 ![Go Version](https://img.shields.io/badge/Go-1.23-blue)
 ![License](https://img.shields.io/badge/License-BSD--3--Clause-blue)
-![Release](https://img.shields.io/badge/Release-v0.8.1-blue)
+![Release](https://img.shields.io/badge/Release-v1.9.0-blue)
 ![Pure Go](https://img.shields.io/badge/Pure%20Go-Yes-green)
 
 > Tested on:
 
-| Manufacturer      | Model          | Description                                                                                        |
-| ----------------- | -------------- | -------------------------------------------------------------------------------------------------- |
-| Huaray Technology (iRAYPLE) | DS5131MG30CE   | 3D stereo industrial smart camera for machine vision, industrial automation, and precise depth measurement. |
+| Manufacturer                | Model        | Description                                                                                                 |
+| --------------------------- | ------------ | ----------------------------------------------------------------------------------------------------------- |
+| Huaray Technology (iRAYPLE) | DS5131MG30CE | 3D stereo industrial smart camera for machine vision, industrial automation, and precise depth measurement. |
 
 ## Table of Contents
 
@@ -26,6 +26,7 @@ Pure-Go GigE Vision client (`package gige`) for Huaray/Dahua 3D volume cameras.
 
 ## Features
 
+- **Portable by design** — pure Go (no CGO), speaking the open GigE Vision (GVCP/GVSP) and GenICam (GenApi) standards directly. Works with any standards-compliant GigE Vision camera — no vendor SDK, driver, or GenTL `.cti` producer required.
 - **GigE Vision control** — GVCP register read/write, heartbeat maintenance, and access-privilege management over a dedicated control channel.
 - **Streaming** — GVSP receiver with pre-allocated buffer pool, packet resend, and multi-part/GenDC payload parsing.
 - **GenICam GenApi XML** — Fetch, decompress, and build the camera node map (IntReg, Enumeration, SwissKnife, Converter, Port, …).
@@ -126,7 +127,6 @@ gogige/
 ├── genapi/                   # GenICam GenApi XML parser / node map
 ├── gvcp/                     # GigE Vision Control Protocol
 ├── gvsp/                     # GigE Vision Streaming Protocol
-├── gentl/                    # GenTL constants (no CGO)
 ├── internal/                 # color (PFNC decode + JPEG), genDC
 ├── grab/                     # One-shot GrabJPEG / FromCamera
 ├── live/                     # Continuous preview loop

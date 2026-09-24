@@ -8,7 +8,7 @@ Be brief.
 
 ## Project intent
 
-- **Pure Go, zero CGO.** Enforced via `mise.toml` (`CGO_ENABLED=0`) and the pre-commit hook. Do not add cgo dependencies on the hot path; `gentl/` CGO bindings are optional and off by default.
+- **Pure Go, zero CGO.** Enforced via `mise.toml` (`CGO_ENABLED=0`) and the pre-commit hook. Do not add cgo dependencies; GenTL `.cti` interop is out of scope — portability comes from speaking GVCP/GVSP/GenApi directly.
 - **Zero-alloc hot path.** `gvsp.Receiver` must allocate nothing per packet during streaming. Prefer pre-allocated ring buffers over maps on the streaming path; don't regress that invariant.
 - **Huaray BSCF.** Per-frame color/depth/mono components, mm-scale measurements (`WidthMm`, `HeightMm`, `LengthMm`, `PackCount`), JPEG encode. `examples/` are the executable spec / smoke surface.
 
@@ -70,7 +70,6 @@ gogige/
 │   ├── nodemap.go            # parse + feature get/set orchestration
 │   ├── evaluator.go          # SwissKnife formula evaluator (int + float)
 │   └── port.go               # Port node -> gvcp.Port byte-order-aware I/O
-├── gentl/                    # GenTL 1.6 constants (types.go) — cti.go loader not built yet
 ├── internal/color/           # PFNC decode: DebayerToRGBA, DecodeHighDepth (Bayer/packed), EncodeJPEG
 ├── internal/genDC/           # GenDC v1.1 container/component/part/flow-table parsing
 ├── grab/                     # one-shot GrabJPEG convenience
@@ -92,16 +91,15 @@ Options use functional patterns: `gige.WithLogger` (any `Logger`; default no-op)
 
 Authoritative standards live under `_references/` (`linguist-vendored`, excluded from archives). Map features to the pinned spec version:
 
-| Package | Standard | Target |
-| ------- | -------- | ------ |
-| gvcp | GenCP (control channel over GigE UDP) | 1.3.1 |
-| genapi | GenICam / GenApi | 2.1.1 |
-| gvcp/gvsp | GigE Vision | 2.0 / 2.1 |
-| gvsp (GenDC) | GenDC | 1.1 |
-| gvsp + internal/color | PFNC pixel formats | 2.4 |
-| gentl | GenTL | 1.6 (constants only today) |
+| Package               | Standard                              | Target    |
+| --------------------- | ------------------------------------- | --------- |
+| gvcp                  | GenCP (control channel over GigE UDP) | 1.3.1     |
+| genapi                | GenICam / GenApi                      | 2.1.1     |
+| gvcp/gvsp             | GigE Vision                           | 2.0 / 2.1 |
+| gvsp (GenDC)          | GenDC                                 | 1.1       |
+| gvsp + internal/color | PFNC pixel formats                    | 2.4       |
 
-Machine-readable truth for implementers: `GenDC/GenDC.h`, `GenTL/GenTL.h`, `SFNC/PFNC.h`. Track progress and open items in `ROADMAP.md`, not in prose.
+Machine-readable truth for implementers: `GenDC/GenDC.h`, `SFNC/PFNC.h`. GenTL (`.cti`) is out of scope — no vendor producer libraries. Track progress and open items in `ROADMAP.md`, not in prose.
 
 ## Committing (see .agents/skills/commit-changes)
 
@@ -110,5 +108,5 @@ The `commit-changes` skill defines the release workflow — follow it when invok
 - Group changes by related topic; brief ≈50-char subjects (`feat:`, `fix:`, `chore:`).
 - Put detail in `CHANGELOG.md` (Keep a Changelog style, dated under the next `## [X.Y.Z]`).
 - Mark completed items `[ ]`/`[~]` → `[x]` in `ROADMAP.md`.
-- Bump `Version` (root `options.go`) + annotated tag `vX.Y.Z` **only when code changed**. Version currently `1.4.0`.
+- Bump `Version` (root `options.go`) + annotated tag `vX.Y.Z` **only when code changed**. Version currently `1.8.0`.
 - Don't push unless asked.

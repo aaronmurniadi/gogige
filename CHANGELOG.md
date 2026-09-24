@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.9.0] - 2026-09-24
+
+### Removed
+
+- `gentl` package (GenTL 1.6 constant mirror) and the `_references/GenTL/`, `_references/GenTL SFNC/` specs. GenTL `.cti` producer/consumer interop is out of scope: gogige stays pure-Go GVCP/GVSP/GenApi, which keeps it portable to any standards-compliant GigE Vision + GenICam camera without vendor SDKs or producer libraries. `doc.go`, `AGENTS.md`, `README.md`, and `ROADMAP.md` (Phase 4 `.cti` module ladder, spec-index rows, outstanding-work rows) were scrubbed accordingly; the ROADMAP migration log caught up on releases through 1.8.0.
+
+### Changed
+
+- Formatting tooling: added `.prettierrc` (printWidth 100, double quotes, trailing commas, LF) and `.prettierignore` (excludes vendored `_references/`); repo markdown/HTML/JSON reformatted with Prettier and Go files with `go fmt ./...`.
+
 ## [1.8.0] - 2026-09-24
 
 ### Added
@@ -234,6 +244,7 @@
 - OOM on long-lived streams: `OOOPacketRing` pre-allocated every slot at `DefaultFrameSize` (8 MiB) — 256 slots × 8 MiB ≈ 2 GiB per in-flight `frameBuild` — ballooning RSS to >10 GiB on the websocket/live examples until the kernel killed the process. Slots are now capped at 16 KiB (one GVSP transport packet), and `gvsp.Stream` bounds concurrent in-flight frames (`maxInFlightFrames=64`), evicting the oldest incomplete build when full.
 
 ### Tests
+
 - `TestPayloadTypeNames`, `TestParsePayloadByTypeDispatch`, `TestGVSPLeaderPayloadType`, `FlowParseGenDCContainer`/`TestParseFlowTable` (internal/genDC), and color Bayer/packed decode tests.
 
 ## [0.12.0] - 2026-08-09
@@ -304,4 +315,4 @@
 - GenDC and multi-part/chunk parsers integrated into `gvsp/payload.go` payload dispatch
 
 - All tests pass, all examples build
-All notable changes to this project are documented in this file.
+  All notable changes to this project are documented in this file.
