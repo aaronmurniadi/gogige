@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0] - 2026-09-24
+
+### Added
+
+- `gvsp.Sample.Overlay` (and root `Box2D` alias): image-space bounding boxes for detected packs, populated by the new `calib.ProjectPack` / `calib.OverlayBoxes` which project a pack's 3D oriented box (center + dimensions + orientation) onto the color image plane using pinhole intrinsics. Zero-orientation packs default to world-axis-aligned boxes. Packs that cannot be projected (e.g. behind the camera) yield empty boxes so `Overlay` stays index-aligned with `Packs`.
+- `gogige.WithOverlay(bool, calib.CamCalib)` `GrabOption`: toggles pack-overlay projection on `Session.Grab` / `GrabAll` / `GrabComponents`. Pass `false` (default) to skip; pass `true` with a color calibration to attach `Sample.Overlay` boxes. Drawing (green box outline on the JPEG) is left to the consumer.
+
 ## [1.7.0] - 2026-09-13
 
 ### Added

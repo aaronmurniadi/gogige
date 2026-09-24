@@ -69,4 +69,4 @@ func WithOverlay(enabled bool, cam calib.CamCalib) GrabOption {
 }
 
 // Version is the library version.
-const Version = "1.7.0"
+const Version = "1.8.0"
