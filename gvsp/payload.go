@@ -72,6 +72,19 @@ type ComponentBlock struct {
 	PixelFormat uint32
 }
 
+// Box2D is an image-space bounding box in pixel coordinates. Min is inclusive,
+// Max is exclusive; coordinates are sub-pixel floats. Consumers may round when
+// drawing (e.g. green box outlines).
+type Box2D struct {
+	MinX, MinY float32
+	MaxX, MaxY float32
+}
+
+// Empty reports whether the box has no area.
+func (b Box2D) Empty() bool {
+	return b.MinX >= b.MaxX || b.MinY >= b.MaxY
+}
+
 // Sample is one grabbed frame: JPEG (filled by caller) + volume fields from BSCF.
 type Sample struct {
 	JPEG        []byte
@@ -86,6 +99,11 @@ type Sample struct {
 	WidthMm     float64
 	HeightMm    float64
 	Stable      bool
+	// Overlay holds image-space bounding boxes (pixel coords) for detected packs,
+	// populated only when overlay projection is enabled by the caller (see
+	// calib.ProjectPack). Each box maps 1:1 to Packs[i] (same index); a pack that
+	// cannot be projected to the image plane yields an empty Box2D.
+	Overlay []Box2D
 }
 
 // BSCFFrame is a parsed BSCF multi-result chunk.

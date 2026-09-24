@@ -9,6 +9,7 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/aaronmurniadi/gogige/calib"
 	"github.com/aaronmurniadi/gogige/gvcp"
 	"github.com/aaronmurniadi/gogige/gvsp"
 	"github.com/aaronmurniadi/gogige/internal/color"
@@ -26,8 +27,28 @@ type Session struct {
 	ip         string
 	packetSize int
 	component  Component
+	overlay    camCalib
 
 	hb *gvcp.Heartbeat
+}
+
+// overlayCalib is a sentinel; a non-zero cam calib enables pack overlay.
+type camCalib struct {
+	valid bool
+	color calib.CamCalib
+}
+
+// overlayFor populates sample.Overlay from the sample's packs when overlay
+// projection is enabled. It is a no-op otherwise.
+func (s *Session) overlayFor(sample *Sample) {
+	if len(sample.Packs) == 0 {
+		return
+	}
+	c := s.overlay
+	if !c.valid {
+		return
+	}
+	sample.Overlay = calib.OverlayBoxes(sample.Packs, sample.PixelWidth, sample.PixelHeight, c.color)
 }
 
 // NewSession returns an empty GVSP session (Connects on Open if no camera set).
@@ -103,7 +124,9 @@ func (s *Session) Open(ip string) error {
 	}
 	s.packetSize = actual
 	if actual < want {
-		s.cam.Logger().Warn("GevSCPSPacketSize negotiated lower than path MTU",
+		// The device clamped the packet size below the path MTU (e.g. a 1000BASE-T
+		// PHY that does not support jumbo frames); this is normal, not a fault.
+		s.cam.Logger().Info("GevSCPSPacketSize clamped below path MTU",
 			"want", want, "actual", actual, "path_mtu", mtu)
 	}
 	s.cam.Logger().Info("gvsp stream setup",
@@ -269,9 +292,11 @@ func (s *Session) Grab(ctx context.Context) (Sample, error) {
 	}
 	jpeg, jerr := color.EncodeJPEG(sample.RawColor, sample.PixelWidth, sample.PixelHeight, sample.PixelFormat, 60)
 	if jerr != nil {
+		s.overlayFor(&sample)
 		return sample, jerr
 	}
 	sample.JPEG = jpeg
+	s.overlayFor(&sample)
 	return sample, nil
 }
 
@@ -310,6 +335,7 @@ func (s *Session) GrabAll(ctx context.Context) ([]Sample, error) {
 			continue
 		}
 		sample.JPEG = jpeg
+		s.overlayFor(&sample)
 		out = append(out, sample)
 	}
 	if len(out) == 0 {
@@ -331,7 +357,14 @@ func (s *Session) GrabComponents(ctx context.Context) ([]Sample, error) {
 		return nil, err
 	}
 	if gvsp.IsBSCF(data) {
-		return gvsp.SampleAllFromBSCF(data)
+		samples, err := gvsp.SampleAllFromBSCF(data)
+		if err != nil {
+			return nil, err
+		}
+		for i := range samples {
+			s.overlayFor(&samples[i])
+		}
+		return samples, nil
 	}
 	return []Sample{{
 		RawColor:    data,

@@ -16,6 +16,7 @@ type (
 	GVSPStream   = gvsp.Stream
 	Frame        = gvsp.Frame
 	Sample       = gvsp.Sample
+	Box2D        = gvsp.Box2D
 	Component    = gvsp.Component
 )
 

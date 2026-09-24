@@ -1,6 +1,10 @@
 package gogige
 
-import "time"
+import (
+	"time"
+
+	"github.com/aaronmurniadi/gogige/calib"
+)
 
 // Option configures Open / device connection.
 type Option func(*openConfig)
@@ -48,6 +52,19 @@ func GrabComponent(comp Component) GrabOption {
 		if s != nil && comp != ComponentUnknown {
 			s.component = comp
 		}
+	}
+}
+
+// WithOverlay enables pack-detection bounding-box projection. When enabled with
+// a valid color calibration, every grabbed Sample gets its Overlay field
+// populated (one pixel box per pack, matching Packs order); the consumer draws
+// the green box outlines themselves. Pass false to disable (default).
+func WithOverlay(enabled bool, cam calib.CamCalib) GrabOption {
+	return func(s *Session) {
+		if s == nil {
+			return
+		}
+		s.overlay = camCalib{valid: enabled, color: cam}
 	}
 }
 
