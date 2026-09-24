@@ -202,7 +202,7 @@ func TestLockedDowngrade(t *testing.T) {
 }
 
 func TestImposedAccessMode(t *testing.T) {
-	const xml = `<?xml version="1.0"?>
+	const xml = `<?xml version="1.0" encoding="utf-8"?>
 <RegisterDescription>
   <IntReg Name="GainReg"><Address>0x1000</Address><Length>4</Length><AccessMode>RW</AccessMode></IntReg>
   <Integer Name="Gain"><AccessMode>RW</AccessMode><ImposedAccessMode>RO</ImposedAccessMode><pValue>GainReg</pValue></Integer>
@@ -215,8 +215,48 @@ func TestImposedAccessMode(t *testing.T) {
 	if err := nm.SetInteger("Gain", 3); err == nil || !strings.Contains(err.Error(), "read-only") {
 		t.Fatalf("ImposedAccessMode RO write: want read-only error, got %v", err)
 	}
-	if v, err := nm.ReadInteger("Gain"); err != nil || v != 0 {
+ 	if v, err := nm.ReadInteger("Gain"); err != nil || v != 0 {
 		t.Fatalf("ImposedAccessMode read: %v %d", err, v)
+	}
+}
+
+// TestCommandExecuteBypassesLock mirrors the real Huaray camera XML: a Command
+// whose pIsLocked formula is `VAR_TLPARAMSLOCKED = 0` evaluates true at idle
+// (TLParamsLocked is a constant 0), which would otherwise downgrade the WO
+// command register to NA and block AcquisitionStart. Execute must write the
+// CommandValue to the pValue register past the lock gate, while ordinary
+// locked-integer writes remain rejected (see TestLockedDowngrade).
+func TestCommandExecuteBypassesLock(t *testing.T) {
+	const xml = `<?xml version="1.0"?>
+<RegisterDescription>
+  <Integer Name="TLParamsLocked"><Value>0</Value><Min>0</Min><Max>1</Max></Integer>
+  <IntSwissKnife Name="AcquisitionStartLockedExpr">
+    <pVariable Name="VAR_TLPARAMSLOCKED">TLParamsLocked</pVariable>
+    <Formula>VAR_TLPARAMSLOCKED = 0</Formula>
+  </IntSwissKnife>
+  <IntReg Name="AcquisitionStartReg"><Address>0x13110</Address><Length>4</Length><AccessMode>WO</AccessMode></IntReg>
+  <Command Name="AcquisitionStart"><pIsLocked>AcquisitionStartLockedExpr</pIsLocked><pValue>AcquisitionStartReg</pValue><CommandValue>1</CommandValue></Command>
+  <Integer Name="LockedGainReg"><Address>0x2000</Address><Length>4</Length><AccessMode>WO</AccessMode><pIsLocked>AcquisitionStartLockedExpr</pIsLocked></Integer>
+  <Integer Name="LockedGain"><AccessMode>WO</AccessMode><pValue>LockedGainReg</pValue></Integer>
+</RegisterDescription>`
+	port := &memPort{regs: map[uint32]uint32{}}
+	nm, err := ParseNodeMap([]byte(xml), port)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if locked, err := nm.IsLocked("AcquisitionStart"); err != nil || !locked {
+		t.Fatalf("IsLocked=AcquisitionStart: want locked=true (idle), got %v (%v)", locked, err)
+	}
+	// Command execution must not be blocked by the pIsLocked lock.
+	if err := nm.Execute("AcquisitionStart"); err != nil {
+		t.Fatalf("Execute AcquisitionStart: want nil, got %v", err)
+	}
+	if port.regs[0x13110] != 1 {
+		t.Fatalf("AcquisitionStartReg: want 1, got 0x%x", port.regs[0x13110])
+	}
+	// Locked integer writes are still rejected.
+	if err := nm.SetInteger("LockedGain", 1); err == nil || !strings.Contains(err.Error(), "not available") {
+		t.Fatalf("locked integer write: want not-available error, got %v", err)
 	}
 }
 

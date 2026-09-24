@@ -18,6 +18,7 @@ type nodeFields struct {
 	PValue         string
 	PAddresses     []string
 	Value          string
+	CommandValue   string
 	OnValue        string
 	OffValue       string
 	Variables      map[string]string
@@ -101,6 +102,8 @@ func parseNodeFields(inner []byte) nodeFields {
 			if f.Value == "" {
 				f.Value = text
 			}
+		case "CommandValue":
+			f.CommandValue = text
 		case "OnValue":
 			f.OnValue = text
 		case "OffValue":
@@ -257,6 +260,7 @@ func parseNodeXML(kind string, name string, inner []byte) *gcNode {
 		PValue:         fields.PValue,
 		PAddresses:     fields.PAddresses,
 		Value:          fields.Value,
+		CommandValue:   fields.CommandValue,
 		OnValue:        fields.OnValue,
 		OffValue:       fields.OffValue,
 		Address:        fields.AddressSum,

@@ -173,7 +173,11 @@ func (nm *NodeMap) SetString(name, val string) error {
 	return fmt.Errorf("gige: feature %s is not string/enum", name)
 }
 
-// Execute runs a Command feature.
+// Execute runs a Command feature. The <CommandValue> (default 1) is written to
+// the command's <pValue> register. Command execution is a one-shot action
+// (GenApi 2.1.1 §2.8.8): locking formulas in vendor camera descriptions are
+// not consulted here because they are not meaningful for command triggering,
+// and several shipped descriptions invert-lock commands at idle time.
 func (nm *NodeMap) Execute(name string) error {
 	n, err := nm.lookup(name)
 	if err != nil {
@@ -183,12 +187,16 @@ func (nm *NodeMap) Execute(name string) error {
 		return fmt.Errorf("gige: %s is not a Command", name)
 	}
 	v := int64(1)
-	if n.Value != "" {
-		if parsed, err := strconv.ParseInt(n.Value, 0, 64); err == nil {
+	if n.CommandValue != "" {
+		if parsed, err := strconv.ParseInt(n.CommandValue, 0, 64); err == nil {
 			v = parsed
 		}
 	}
-	return nm.writeIntegerish(n, v)
+	target, err := nm.pa.resolveIntegerTarget(n, nm)
+	if err != nil {
+		return err
+	}
+	return nm.pa.writeIntReg(target, v, nm)
 }
 
 func (nm *NodeMap) lookup(name string) (*gcNode, error) {

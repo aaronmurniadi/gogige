@@ -55,6 +55,10 @@ type gcNode struct {
 	// Value is a constant <Value> for this node (used by Integer, Enumeration entries).
 	Value string
 
+	// CommandValue is the <CommandValue> written to the <pValue> register when a
+	// Command node is executed (GenApi 2.1.1 §2.8.8). Defaults to 1.
+	CommandValue string
+
 	// OnValue/OffValue define the wire values for Boolean true/false, when the
 	// camera overrides the §2.8.7 default of 1/0.
 	OnValue  string
