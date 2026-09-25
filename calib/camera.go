@@ -101,7 +101,9 @@ func ReadCalibTypes(p RegisterPort) ([]string, error) {
 	return names, nil
 }
 
-// readMemBank replicates the vendor readData flow for one memory bank.
+// readMemBank replicates the vendor readData flow for one memory bank
+// (CamMemTransmitter::readData in libStereoCamera.so): select the bank, read
+// its length and CRC32, pull the bytes through the data window, acknowledge.
 func readMemBank(p RegisterPort, memType uint32) ([]byte, error) {
 	if err := p.WriteReg(regMemType, memType); err != nil {
 		return nil, fmt.Errorf("calib: select bank %#x: %w", memType, err)
@@ -118,18 +120,57 @@ func readMemBank(p RegisterPort, memType uint32) ([]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf("calib: read crc: %w", err)
 	}
-	data, err := p.ReadMem(regMemData, int(size))
+	data, err := readWindow(p, int(size))
 	if err != nil {
 		return nil, fmt.Errorf("calib: read data: %w", err)
 	}
-	if crc32.ChecksumIEEE(data) != want {
-		return nil, fmt.Errorf("calib: crc mismatch (got %#08x want %#08x)", crc32.ChecksumIEEE(data), want)
+	if got := vendorCRC32(data); got != want {
+		return nil, fmt.Errorf("calib: crc mismatch (got %#08x want %#08x)", got, want)
 	}
-	if err := p.WriteReg(regMemAck, 0); err != nil {
-		return nil, fmt.Errorf("calib: ack: %w", err)
-	}
+	// End-of-transfer ack: the DS5131MG30CE rejects it with UNKNOWN and the
+	// vendor SDK ignores its result too, so a failure here is not fatal.
+	_ = p.WriteReg(regMemAck, 0)
 	return data, nil
 }
+
+// readWindow pulls size bytes out of the calibration data window. The window
+// is a *stream*: only regMemData..regMemData+0x1FF is mapped (anything above
+// returns INVALID_ACCESS), every read must target regMemData itself, and
+// successive reads return successive bytes. That is why the vendor's
+// readMemNoOffset never varies the address. Reads are capped at the 512-byte
+// GVCP maximum per request.
+func readWindow(p RegisterPort, size int) ([]byte, error) {
+	out := make([]byte, 0, size)
+	for len(out) < size {
+		n := 512
+		if rem := size - len(out); rem < n {
+			n = rem
+		}
+		b, err := p.ReadMem(regMemData, n)
+		if err != nil {
+			return nil, err
+		}
+		if len(b) < n {
+			return nil, fmt.Errorf("calib: short window read (%d < %d)", len(b), n)
+		}
+		out = append(out, b...)
+	}
+	return out, nil
+}
+
+// vendorCRC32 is Dahua::Utils::crc32 (libStereoCamera.so): the standard
+// reflected CRC-32 table (poly 0xEDB88320) run with initial value 0 and no
+// final complement. The camera stores it in bank register 0xE0000008. It is
+// NOT hash/crc32's IEEE variant, which uses 0xFFFFFFFF for both.
+func vendorCRC32(b []byte) uint32 {
+	crc := uint32(0)
+	for _, v := range b {
+		crc = vendorCRCTable[byte(crc)^v] ^ (crc >> 8)
+	}
+	return crc
+}
+
+var vendorCRCTable = crc32.MakeTable(crc32.IEEE)
 
 var le = binary.LittleEndian
 

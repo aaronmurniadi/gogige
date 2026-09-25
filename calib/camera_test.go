@@ -3,6 +3,7 @@ package calib
 import (
 	"encoding/binary"
 	"errors"
+	"fmt"
 	"hash/crc32"
 	"math"
 	"testing"
@@ -11,11 +12,14 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-// fakePort serves one memory bank the way the camera firmware does.
+// fakePort serves one memory bank the way the camera firmware does: the data
+// window is a stream, so every read at regMemData returns the next bytes and
+// re-selecting the bank rewinds it.
 type fakePort struct {
 	bank    []byte
 	writes  map[uint32]uint32
 	failCRC bool
+	cursor  int
 }
 
 func (f *fakePort) ReadReg(addr uint32) (uint32, error) {
@@ -26,7 +30,7 @@ func (f *fakePort) ReadReg(addr uint32) (uint32, error) {
 		if f.failCRC {
 			return 0xDEADBEEF, nil
 		}
-		return crc32.ChecksumIEEE(f.bank), nil
+		return vendorCRC32(f.bank), nil
 	}
 	return 0, errors.New("unexpected read")
 }
@@ -36,12 +40,22 @@ func (f *fakePort) WriteReg(addr, value uint32) error {
 		f.writes = map[uint32]uint32{}
 	}
 	f.writes[addr] = value
+	if addr == regMemType {
+		f.cursor = 0
+	}
 	return nil
 }
 
 func (f *fakePort) ReadMem(addr uint32, n int) ([]byte, error) {
-	off := int(addr) - regMemData
-	return f.bank[off : off+n], nil
+	if addr != regMemData {
+		return nil, fmt.Errorf("unexpected readmem at %#x", addr)
+	}
+	if f.cursor+n > len(f.bank) {
+		return nil, fmt.Errorf("window overrun (%d+%d > %d)", f.cursor, n, len(f.bank))
+	}
+	b := f.bank[f.cursor : f.cursor+n]
+	f.cursor += n
+	return b, nil
 }
 
 // buildStereoBlob encodes a MvSstereoCalibrateResult using values from the
@@ -143,4 +157,28 @@ func TestReadCalibTypes(t *testing.T) {
 	names, err := ReadCalibTypes(p)
 	require.NoError(t, err)
 	assert.Equal(t, []string{"calibration_pd", "volume"}, names)
+}
+
+// TestVendorCRC32 pins the camera's CRC variant: Dahua::Utils::crc32 runs the
+// reflected CRC-32 table with initial value 0 and no final complement, so it
+// differs from hash/crc32's IEEE value the camera does NOT store.
+func TestVendorCRC32(t *testing.T) {
+	assert.Equal(t, uint32(0), vendorCRC32(nil))
+	assert.Equal(t, uint32(0x2dfd2d88), vendorCRC32([]byte("123456789")))
+	assert.NotEqual(t, crc32.ChecksumIEEE([]byte("123456789")), vendorCRC32([]byte("123456789")))
+}
+
+// TestReadStereoCalibStreamsWindow checks the window is consumed as a stream
+// (repeated reads at regMemData) over a bank larger than one 512-byte page.
+func TestReadStereoCalibStreamsWindow(t *testing.T) {
+	p := &fakePort{bank: buildStereoBlob(t)} // 1600 bytes = 4 pages
+	s, err := ReadStereoCalib(p)
+	require.NoError(t, err)
+	assert.Equal(t, 1280, s.ColorImgW)
+	assert.InDelta(t, 0.10674393575477786, s.StereoRmsError, 1e-12, "last page reached")
+
+	// a second read after re-selection must start over at the bank head
+	s2, err := ReadStereoCalib(p)
+	require.NoError(t, err)
+	assert.Equal(t, s, s2)
 }
