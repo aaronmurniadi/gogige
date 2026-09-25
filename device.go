@@ -7,6 +7,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/aaronmurniadi/gogige/calib"
 	"github.com/aaronmurniadi/gogige/genapi"
 	"github.com/aaronmurniadi/gogige/gvcp"
 )
@@ -97,6 +98,15 @@ func (d *device) StartGrabber(ctx context.Context, opts ...GrabOption) (Grabber,
 		return nil, err
 	}
 	return s, nil
+}
+
+// WriteCalibFile downloads the camera's current calibration and writes it to
+// path in the vendor JSON format (e.g. "calib.json").
+func (d *device) WriteCalibFile(path string) (*calib.StereoCalib, error) {
+	if d == nil || d.cam == nil {
+		return nil, errors.New("gige: device closed")
+	}
+	return d.cam.WriteCalibFile(path)
 }
 
 func (d *device) Close() error {

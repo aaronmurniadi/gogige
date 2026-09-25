@@ -63,20 +63,50 @@ func (c CamCalib) DeprojectPixel(u, v, z float64, imgW, imgH int) (x, y float64)
 	return (u*scale - c.K[CX]) / c.K[FX] * z, (v*scale - c.K[CY]) / c.K[FY] * z
 }
 
+// CameraCalibJSON is the CameraCalib object of a vendor calibration export:
+// every field CalibFile::struct2Json serializes from MvSstereoCalibrateResult
+// (libStereoCamera.so), which StereoCameraViewer saves as CalibData.json and
+// vendor tools as "IPC4.94 Camera Calibration.json".
+//
+// Fields are declared in ASCII order because the vendor serializer stores keys
+// in a std::map and therefore writes them sorted ("Q" first, then the lower-case
+// keys); marshaling this struct reproduces that layout. rightCamValidRoi is
+// deliberately absent — the vendor never serializes it.
+type CameraCalibJSON struct {
+	Q                               []float64 `json:"Q"`
+	WorkDistance                    float64   `json:"WorkDistance,omitempty"`
+	AveEpipolarError                float64   `json:"aveEpipolarError"`
+	ColorCamDistortion              []float64 `json:"colorCamDistortion"`
+	ColorCamImgHeight               int       `json:"colorCamImgHeight"`
+	ColorCamImgWidth                int       `json:"colorCamImgWidth"`
+	ColorCamIntrinsic               []float64 `json:"colorCamIntrinsic"`
+	ColorCamRmsError                float64   `json:"colorCamRmsError"`
+	LeftCamDistortion               []float64 `json:"leftCamDistortion"`
+	LeftCamImgHeight                int       `json:"leftCamImgHeight"`
+	LeftCamImgWidth                 int       `json:"leftCamImgWidth"`
+	LeftCamIntrinsic                []float64 `json:"leftCamIntrinsic"`
+	LeftCamValidRoi                 []int32   `json:"leftCamValidRoi"`
+	LeftP                           []float64 `json:"leftP"`
+	LeftRectifyR                    []float64 `json:"leftRectifyR"`
+	LeftToColorCamRmsError          float64   `json:"leftToColorCamRmsError"`
+	LeftToRightExtrinsic            []float64 `json:"leftToRightExtrinsic"`
+	RectLeftCamToColorCamExtrinsic  []float64 `json:"rectLeftCamToColorCamExtrinsic"`
+	RectRightCamToColorCamExtrinsic []float64 `json:"rectRightCamToColorCamExtrinsic"`
+	RightCamDistortion              []float64 `json:"rightCamDistortion"`
+	RightCamImgHeight               int       `json:"rightCamImgHeight"`
+	RightCamImgWidth                int       `json:"rightCamImgWidth"`
+	RightCamIntrinsic               []float64 `json:"rightCamIntrinsic"`
+	RightP                          []float64 `json:"rightP"`
+	RightRectifyR                   []float64 `json:"rightRectifyR"`
+	RightToColorCamRmsError         float64   `json:"rightToColorCamRmsError"`
+	StereoRmsError                  float64   `json:"stereoRmsError"`
+}
+
 // VendorCalibJSON mirrors the calibration export written by the vendor tools
 // ("IPC4.94 Camera Calibration.json" style): a top-level CameraCalib object
 // with per-camera intrinsics and resolutions.
 type VendorCalibJSON struct {
-	CameraCalib struct {
-		ColorCamImgWidth  int       `json:"colorCamImgWidth"`
-		ColorCamImgHeight int       `json:"colorCamImgHeight"`
-		ColorCamIntrinsic []float64 `json:"colorCamIntrinsic"`
-		LeftCamImgWidth   int       `json:"leftCamImgWidth"`
-		LeftCamImgHeight  int       `json:"leftCamImgHeight"`
-		LeftCamIntrinsic  []float64 `json:"leftCamIntrinsic"`
-		LeftP             []float64 `json:"leftP"`
-		WorkDistance      float64   `json:"WorkDistance"`
-	} `json:"CameraCalib"`
+	CameraCalib CameraCalibJSON `json:"CameraCalib"`
 }
 
 // Color returns the color-camera intrinsics from a vendor calibration export.

@@ -9,6 +9,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/aaronmurniadi/gogige/calib"
 	"github.com/aaronmurniadi/gogige/genapi"
 	"github.com/aaronmurniadi/gogige/gvcp"
 )
@@ -240,6 +241,18 @@ func (c *Camera) GevSCPD() (int64, error) {
 		return 0, errors.New("gige: camera not connected")
 	}
 	return c.nodes.ReadInteger(FeatureGevSCPD)
+}
+
+// WriteCalibFile downloads the camera's current calibration (stereo + color
+// intrinsics, distortion, rectification, extrinsics, error metrics) and writes
+// it to path in the vendor JSON format, e.g. "calib.json"; read it back with
+// calib.LoadVendorFile. Returns ErrNoCalib-style errors when the device has no
+// calibration bank.
+func (c *Camera) WriteCalibFile(path string) (*calib.StereoCalib, error) {
+	if c == nil || c.GVCP() == nil {
+		return nil, errors.New("gige: camera not connected")
+	}
+	return calib.WriteCalibFile(c.GVCP(), path)
 }
 
 // Execute implements gvcp.Commander.

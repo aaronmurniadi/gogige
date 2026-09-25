@@ -1,12 +1,21 @@
 package gogige
 
-import "context"
+import (
+	"context"
+
+	"github.com/aaronmurniadi/gogige/calib"
+)
 
 // Device is a connected camera handle (control + ability to start streaming).
 type Device interface {
 	IP() string
 	Features() Features
 	StartGrabber(ctx context.Context, opts ...GrabOption) (Grabber, error)
+	// WriteCalibFile downloads the camera's current calibration and writes it
+	// to path in the vendor JSON format (e.g. "calib.json"), the way
+	// StereoCameraViewer's save-calibration does. Read it back with
+	// calib.LoadVendorFile.
+	WriteCalibFile(path string) (*calib.StereoCalib, error)
 	Close() error
 }
 
