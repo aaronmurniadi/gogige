@@ -7,6 +7,10 @@
 // outlines around each pack on the color JPEG.
 //
 //	go run . -ip 192.168.1.108 -calib ./calib.json -out boxes.png
+//
+// When -calib does not exist yet (or -refresh is set), the calibration is
+// downloaded from the camera and written to that path first, so the example
+// works on a fresh checkout without a vendor export at hand.
 package main
 
 import (
@@ -30,6 +34,7 @@ import (
 func main() {
 	ip := flag.String("ip", "192.168.1.108", "camera IP")
 	calibPath := flag.String("calib", "calib.json", "path to vendor camera calibration JSON")
+	refresh := flag.Bool("refresh", false, "re-download the calibration from the camera into -calib")
 	out := flag.String("out", "boxes.png", "output PNG path")
 	maxTries := flag.Int("tries", 200, "max frames to wait for a detection")
 	flag.Parse()
@@ -39,6 +44,15 @@ func main() {
 		log.Fatal(err)
 	}
 	defer cam.Close()
+
+	if *refresh || !fileExists(*calibPath) {
+		s, err := cam.WriteCalibFile(*calibPath)
+		if err != nil {
+			log.Fatalf("calib download: %v", err)
+		}
+		fmt.Printf("wrote %s from camera (stereo rms %.4f px, epipolar %.4f px)\n",
+			*calibPath, s.StereoRmsError, s.AveEpipolarError)
+	}
 
 	vendor, err := calib.LoadVendorFile(*calibPath)
 	if err != nil {
@@ -77,6 +91,11 @@ func main() {
 		// color component had no packs yet; try again
 	}
 	log.Fatalf("no detections after %d frames", *maxTries)
+}
+
+func fileExists(path string) bool {
+	_, err := os.Stat(path)
+	return err == nil
 }
 
 func drawBoxes(s gogige.Sample, out string) {
