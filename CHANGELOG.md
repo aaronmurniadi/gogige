@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.11.0] - 2026-09-25
+
+### Added
+
+- `calib.WriteCalibFile(RegisterPort, path)` — downloads the camera's current stereo/color calibration from memory bank `0x20001` and writes it as vendor calibration JSON (e.g. `calib.json`), the same document StereoCameraViewer saves as `CalibData.json`; returns the `*calib.StereoCalib` that was written. `calib.NewVendorCalibJSON` converts a `*StereoCalib` to that document and `calib.SaveVendorFile` writes it, so `calib.LoadVendorFile` round-trips the output.
+- `(*Camera).WriteCalibFile(path)` and `Device.WriteCalibFile(path)` — the export is reachable from both consumer API paths (`OpenDevice` → `*Camera`, `Open` → `Device`).
+- `calib.CameraCalibJSON` — the full 26-key vendor `CameraCalib` object (`Q`, `*CamDistortion`, `leftRectifyR`, `leftToRightExtrinsic`, `rect*CamToColorCamExtrinsic`, `stereoRmsError`, `leftCamValidRoi`, …) declared in the vendor's ASCII-sorted key order, so marshaling reproduces the vendor layout byte-for-byte. `VendorCalibJSON.CameraCalib` is now that named type; `WorkDistance` marshals only when set (it lives in the separate `VolumeCalib` bank, not the camera calibration bank).
+- `examples/bbox` — downloads the calibration into `-calib` when the file is missing, and a new `-refresh` flag forces a re-download, so the example runs on a fresh checkout with no vendor export at hand.
+
+### Fixed
+
+- `calib.ReadStereoCalib` / `calib.ReadCalibTypes` on live cameras: the `0xE0000100` calibration data window is a *stream* — only `0xE0000100..0xE00002FF` is mapped, every read must target `0xE0000100`, and successive reads return successive bytes (the vendor's `readMemNoOffset` never varies the address). The old chunk loop advanced the address and failed with `INVALID_ACCESS (0x03)` on the second 512-byte chunk; `readWindow` now streams at the fixed address.
+- The bank CRC check used `hash/crc32`'s IEEE value, which the camera does not store. It now uses the vendor variant (`vendorCRC32`: reflected poly `0xEDB88320`, initial value 0, no final complement — `Dahua::Utils::crc32`), verified against the live `0xE0000008` register.
+- A failed end-of-transfer ack (`0xE000000C`) no longer aborts a successful read: the camera rejects it with `UNKNOWN` and the vendor SDK ignores its result too.
+
+### Tests
+
+- `TestNewVendorCalibJSONMatchesVendorExport`, `TestVendorKeyOrderPinned`, `TestSaveVendorFileRoundTrip`, `TestSaveVendorFileError`, `TestWriteCalibFile`, `TestWriteCalibFileEmptyBank` — export fidelity against a real DS5131MG30CE vendor export (`calib/testdata/ds5131_calib.json`), vendor key order pinned, and the camera-bank → `calib.json` path including its failure mode.
+- `TestVendorCRC32`, `TestReadStereoCalibStreamsWindow` — vendor CRC vectors (distinct from IEEE) and streaming-window behavior across pages, including rewind on bank re-selection.
+- `TestWriteCalibFileRequiresConnection` — nil/disconnected `Camera` and closed `Device` report an error instead of writing.
+
 ## [1.10.0] - 2026-09-24
 
 ### Added
